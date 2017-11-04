@@ -1,0 +1,2 @@
+E	part	mass	beta	beta_err	temp	temp_err	n(v-prof.)	n_err	norm	norm_err	dETdEta_d	dETdEta_d_err	dETdEta_left	dETdEta_leftErr	dETdEta_right	dETdEta_rightErr
+0	pi-	0.13957	0.76945	0.0289299	0.077771	0.00709861	4.05539	0.618016	22243.6	9061.18	7.11245	0.467489	3.35204	ETlErr	0.00842914	ETrErr
