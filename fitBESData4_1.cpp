@@ -45,6 +45,7 @@ int fitBESData4_1(){
 	std::ofstream datFile ("fitResults4.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
+			<< "centrality"<< "\t"
 			<< "mass" << "\t"
 			<< "beta" <<"\t"
 			<< "betaErr" <<"\t"
@@ -343,6 +344,7 @@ int fitBESData4_1(){
 		//-- Output results to file-----------------------------
 		datFile << collEn << "\t"	
 			<< particleID << "\t"
+			<< 0 << "\t" // centrality
 			<< mass << "\t"
 			<< beta <<"\t"
 			<< betaErr <<"\t"

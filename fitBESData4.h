@@ -169,10 +169,10 @@ Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t getdNdptPars[5];
 	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
+	getdNdptPars[1]=par[1];
+	getdNdptPars[2]=par[2];
+	getdNdptPars[3]=par[3];
+	getdNdptPars[4]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
@@ -190,10 +190,10 @@ Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t getdNdptPars[5];
 	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
+	getdNdptPars[1]=par[1];
+	getdNdptPars[2]=par[2];
+	getdNdptPars[3]=par[3];
+	getdNdptPars[4]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
@@ -212,10 +212,10 @@ Double_t getdNdEtaIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t getdNdptPars[5];
 	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
+	getdNdptPars[1]=par[1];
+	getdNdptPars[2]=par[2];
+	getdNdptPars[3]=par[3];
+	getdNdptPars[4]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
@@ -234,10 +234,10 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t getdNdptPars[5];
 	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
+	getdNdptPars[1]=par[1];
+	getdNdptPars[2]=par[2];
+	getdNdptPars[3]=par[3];
+	getdNdptPars[4]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];

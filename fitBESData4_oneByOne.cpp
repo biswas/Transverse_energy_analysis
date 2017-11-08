@@ -44,7 +44,7 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par);
 int fitBESData4_oneByOne(){
 	int breakOutForTesting =0;
 	// now debugging: 18
-	int stop = 19;// histo num to test: 1 for histo #1
+	int stop = 17;// histo num to test: 1 for histo #1
 	
 	std::ofstream datFile ("fitResults4_oneByOne.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
@@ -488,6 +488,7 @@ int fitBESData4_oneByOne(){
 	datFile.close();
 return 0;
 }
+
 
 
 

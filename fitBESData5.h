@@ -1,58 +1,6 @@
-#ifndef fitBESData4_H
-#define fitBESData4_H
+#ifndef fitBESData5_H
+#define fitBESData5_H
 
-
-// FIXME: make separate method for error?
-          // make sure redundancies of calculation are avoided
-//getEtFromPt();
-
-
-// calculate 4 different integrals without their errors:
-	// dEt/dEta, dEt/dy, dN/dEta, dN/dy
-	// return array of 4 elements
-	
-/*
-Double_t* getIntegralsAndErrorsFromFit(Double_t* myPt, Double_t* par){
-	Double_t integrandArr[4];
-	static Double_t integralArr[4]; //array to return
-	Double_t pt   = myPt[0]; // x-axis of integration
-	Double_t getdNdptPars[5];
-	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
-	Double_t mass = par[0];
-	//Double_t beta = par[1];
-	//Double_t temp = par[2];
-	//Double_t n    = par[3];
-	//Double_t norm = par[4];
-	Double_t type = par[5];
-	//funcBGBW-> SetParameters(mass,beta,temp,n,norm);
-	Double_t funcVal = getdNdpt(myPt,par);
-	//cout<< "funcVal: " << funcVal<< " pt: "<< pt<< endl;
-	Double_t dEtdEtaIntegrand = funcVal*
-								(pt/TMath::Sqrt(pt*pt+mass*mass))*
-								(TMath::Sqrt(pt*pt+mass*mass)+type*mass);
-								// i.e. (d^N/(dydpt))*J*et
-	Double_t dEtdyIntegrand   = funcVal*
-								(TMath::Sqrt(pt*pt+mass*mass)+type*mass);
-	Double_t dNdEtaIntegrand  = funcVal*
-								(pt/TMath::Sqrt(pt*pt+mass*mass));
-	Double_t dNdyIntegrand    = funcVal;
-	
-	integrandArr[0] = dEtdEtaIntegrand;
-	integrandArr[1] = dEtdyIntegrand;
-	integrandArr[2] = dNdEtaIntegrand;
-	integrandArr[3] = dNdyIntegrand;
-	
-	return integrandArr;
-}
-*/
-
-// calculate four different integrals and their errors:
-	// dEt/dEta, dEt/dy, dN/dEta, dN/dy
-	// return array of 8 elements
 Double_t* getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass){
 	static Double_t integralArr[8]; //array to return
 	//^ if not static, error:
@@ -131,6 +79,7 @@ Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par){
 	Double_t betaMax 	= par[2];
 	Double_t temp 		= par[3];
 	Double_t n 			= par[4];
+	Double_t type		= par[5];
 
 	Double_t beta = betaMax*TMath::Power(r,n);
 	if(beta > 0.99999999999999999999) beta = 0.99999999999999999999;
@@ -140,7 +89,7 @@ Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par){
 	if(avoidFPE > 700.) avoidFPE = 700.;
 	Double_t bk1arg = mT*TMath::CosH(rho0)/temp;
 	Double_t integrand = /*definition*/
-	r*mT*TMath::BesselI0(avoidFPE)*TMath::BesselK1(bk1arg);
+	r*mT*TMath::BesselI0(avoidFPE)*TMath::BesselK1(bk1arg)+type*0.;
 	return integrand;
 }// end of method getdNdptOverptIntegrand
 
@@ -148,7 +97,7 @@ Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par){
 Double_t getdNdpt(Double_t* pT, Double_t* params){
 	TF1* dNdptOverptIntegrandFunc = new TF1("integrandFunc", 
 									getdNdptOverptIntegrand, 
-									0, 1, 5 );
+									0, 1, 6 );
 	
 	Double_t pt		= pT[0];
 	Double_t mass 	= params[0];// not mT
@@ -156,24 +105,19 @@ Double_t getdNdpt(Double_t* pT, Double_t* params){
 	Double_t temp 	= params[2];
 	Double_t n 		= params[3];
 	Double_t norm	= params[4];
+	Double_t type	= params[5];
 	dNdptOverptIntegrandFunc->SetParameters(mass,pt,beta,temp,n);
 
 	Double_t dNdptOverpt 	= dNdptOverptIntegrandFunc->Integral(0,1);
 	// ^ normalized r goes from 0 to 1 instead of from 0 to R
-	Double_t dNdpt_normalized			= 2 * TMath::Pi() * pt * norm * dNdptOverpt;
+	Double_t dNdpt_normalized			= 2 * TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
 	gSystem->ProcessEvents();
 	gROOT->Reset();
 	return dNdpt_normalized;
 }
 Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
-	Double_t getdNdptPars[5];
-	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
-	Double_t mass = par[0];
+	Double_t mass  = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
 	//Double_t n    = par[3];
@@ -188,12 +132,6 @@ Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par){
 }
 Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
-	Double_t getdNdptPars[5];
-	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
@@ -210,12 +148,6 @@ Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par){
 
 Double_t getdNdEtaIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
-	Double_t getdNdptPars[5];
-	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
@@ -232,12 +164,6 @@ Double_t getdNdEtaIntegrand(Double_t* myPt, Double_t* par){
 
 Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
-	Double_t getdNdptPars[5];
-	getdNdptPars[0]=par[0];
-	getdNdptPars[0]=par[1];
-	getdNdptPars[0]=par[2];
-	getdNdptPars[0]=par[3];
-	getdNdptPars[0]=par[4];
 	Double_t mass = par[0];
 	//Double_t beta = par[1];
 	//Double_t temp = par[2];
@@ -286,6 +212,205 @@ void outputDatFile(Double_t* results, int centra, string partName){
 	datFile.close();	
 }
 
+Int_t* getNpartAndErr(Double_t en, string cent){// args energy and centrality
+	Int_t Npart = 0;
+	Int_t NpartErr = 0;
+		if (en == 7.7){
+			if (cent == "0"){
+				Npart 		= 337;
+				NpartErr 	= 2;
+			}
+			else if (cent == "1"){
+				Npart 		= 290;
+				NpartErr 	= 6;
+			}
+			else if (cent == "2"){
+				Npart 		= 226;
+				NpartErr	= 8;
+			}
+			else if (cent == "3"){
+				Npart 		= 160;
+				NpartErr 	= 10;
+			}
+			else if (cent == "4"){
+				Npart 		= 110;
+				NpartErr 	= 11;
+			}
+			else if (cent == "5"){
+				Npart 		= 72;
+				NpartErr 	= 10;
+			}
+			else if (cent == "6"){
+				Npart 		= 45;
+				NpartErr	= 9;
+			}
+			else if (cent == "7"){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == "8"){
+				Npart 		= 14;
+				NpartErr 	= 4;
+			}
+		}
+		if (en == 11.5){
+			if (cent == "0"){
+				Npart 		= 338;
+				NpartErr 	= 2;
+			}
+			else if (cent == "1"){
+				Npart 		= 291;
+				NpartErr 	= 6;
+			}
+			else if (cent == "2"){
+				Npart 		= 226;
+				NpartErr	= 8;
+			}
+			else if (cent == "3"){
+				Npart 		= 160;
+				NpartErr 	= 9;
+			}
+			else if (cent == "4"){
+				Npart 		= 110;
+				NpartErr 	= 10;
+			}
+			else if (cent == "5"){
+				Npart 		= 73;
+				NpartErr 	= 10;
+			}
+			else if (cent == "6"){
+				Npart 		= 45;
+				NpartErr	= 9;
+			}
+			else if (cent == "7"){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == "8"){
+				Npart 		= 14;
+				NpartErr 	= 4;
+			}
+		}
+		if (en == 19.6){
+			if (cent == "0"){
+				Npart 		= 338;
+				NpartErr 	= 2;
+			}
+			else if (cent == "1"){
+				Npart 		= 289;
+				NpartErr 	= 6;
+			}
+			else if (cent == "2"){
+				Npart 		= 225;
+				NpartErr	= 9;
+			}
+			else if (cent == "3"){
+				Npart 		= 158;
+				NpartErr 	= 10;
+			}
+			else if (cent == "4"){
+				Npart 		= 108;
+				NpartErr 	= 11;
+			}
+			else if (cent == "5"){
+				Npart 		= 71;
+				NpartErr 	= 10;
+			}
+			else if (cent == "6"){
+				Npart 		= 44;
+				NpartErr	= 9;
+			}
+			else if (cent == "7"){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == "8"){
+				Npart 		= 14;
+				NpartErr 	= 5;
+			}
+		}
+		if (en == 27){
+			if (cent == "0"){
+				Npart 		= 343;
+				NpartErr 	= 2;
+			}
+			else if (cent == "1"){
+				Npart 		= 299;
+				NpartErr 	= 6;
+			}
+			else if (cent == "2"){
+				Npart 		= 234;
+				NpartErr	= 9;
+			}
+			else if (cent == "3"){
+				Npart 		= 166;
+				NpartErr 	= 11;
+			}
+			else if (cent == "4"){
+				Npart 		= 114;
+				NpartErr 	= 11;
+			}
+			else if (cent == "5"){
+				Npart 		= 75;
+				NpartErr 	= 10;
+			}
+			else if (cent == "6"){
+				Npart 		= 47;
+				NpartErr	= 9;
+			}
+			else if (cent == "7"){
+				Npart 		= 27;
+				NpartErr 	= 8;
+			}
+			else if (cent == "8"){
+				Npart 		= 14;
+				NpartErr 	= 6;
+			}
+		}
+		if (en == 39){
+			if (cent == "0"){
+				Npart 		= 342;
+				NpartErr 	= 2;
+			}
+			else if (cent == "1"){
+				Npart 		= 294;
+				NpartErr 	= 6;
+			}
+			else if (cent == "2"){
+				Npart 		= 230;
+				NpartErr	= 9;
+			}
+			else if (cent == "3"){
+				Npart 		= 162;
+				NpartErr 	= 10;
+			}
+			else if (cent == "4"){
+				Npart 		= 111;
+				NpartErr 	= 11;
+			}
+			else if (cent == "5"){
+				Npart 		= 74;
+				NpartErr 	= 10;
+			}
+			else if (cent == "6"){
+				Npart 		= 46;
+				NpartErr	= 9;
+			}
+			else if (cent == "7"){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == "8"){
+				Npart 		= 14;
+				NpartErr 	= 5;
+			}
+		}
+	static Int_t npartAndErrArr[2];// first element is Npar, second Npar_err
+	npartAndErrArr[0] = Npart;
+	npartAndErrArr[1] = NpartErr;
+	
+	return npartAndErrArr;
+}
 
 void classifyParticleKmeans(){
 
