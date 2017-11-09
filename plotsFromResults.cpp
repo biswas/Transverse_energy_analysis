@@ -55,6 +55,7 @@ int plotsFromResults(){
 	string skipContent;// read and skip content that has no use
 	const int cents = 9; // 9 different centralities
 	const int collEns = 5; // 5 different collision energies
+	const int parts = 6; // 6 different particles
 	const int funcsOfCollEn = 2; // there are two quantities that
 							// are to be plotted as functions of
 							// collision energy:
@@ -72,21 +73,32 @@ int plotsFromResults(){
 	for(int i=0;i<46;i++){ // loop through 46 column names
 		in >> skipContent;
 		// (tested) print first and last header names to check:
-		if (i==0) cout << "Col. 1: " << skipContent << endl;
-		else if (i==45) cout << "Col. 45: " << skipContent << endl;
+		//if (i==0) cout << "Col. 1: " << skipContent << endl;
+		//else if (i==45) cout << "Col. 45: " << skipContent << endl;
 	}
 	Double_t collEn;
 	Double_t cent;// centrality value obtained from data file
 	string part; // particle name
-	Double_t dETdEta;
-	Double_t dETdEtaErr;
-	Double_t Npart;
+	Double_t dETdEtaSum[cents][collEns] = {0};// initialize element [0][0] to 0, 
+											//and initialize all other elements as if 
+											// they had static storage duration, hence
+											// set them to zero as well
+											
+	Double_t dETdEtaErrSum[cents][collEns] = {0};
+	Double_t Npart[cents][collEns];// Npart function of cent and en only
+	Double_t dETdEtaOverNpartBy2Sum[cents][collEns];
+	// Add elements below (for all 6 particles)
+		// in order to get the above elements
+	Double_t dETdEta[cents][collEns][parts];
+	Double_t dETdEtaErr[cents][collEns][parts];
+	//Double_t dETdEtaOverNpartBy2[cents][collEns][parts];
 	// enPlotArr element indexed as: 
 	// enPlotArr[centIndex][enIndex][funcIndex]
 	int centIndex;
 	int enIndex;
+	int partIndex;
 	int funcIndex;
-	for(int j=0; j<270; j++){// for 270 rows in the data file
+	for(int j=0; j<270; j++){// for 270 rows below header in the data file
 		//for(int i=0; i<46; i++){
 		in >> collEn; cout << collEn << "\t";
 		in >> part; cout << part << "\t";
@@ -94,11 +106,6 @@ int plotsFromResults(){
 		for(int k=0; k<15;k++){// skip content in next 15 columns
 		in >> skipContent;
 		}
-		in >> dETdEta;cout << dETdEta << "\t";
-		in >> dETdEtaErr;
-		for(int l=0; l<24; l++) in >> skipContent;
-		in >> Npart; cout << Npart << "\n";
-		in >> skipContent;
 		
 		// now adding things up
 		// for each centrality there are 5 different energies
@@ -121,7 +128,22 @@ int plotsFromResults(){
 		else if (collEn == 19.6) enIndex = 2;
 		else if (collEn == 27) enIndex = 3;
 		else if (collEn == 39) enIndex = 4;
+		// particle set: {ka-,ka+,pi-,pi+,pro,pba}
+		if (part =="pi-") partIndex = 0;
+		else if (part == "pi+") partIndex = 0;
+		else if (part == "ka-") partIndex = 2;
+		else if (part == "ka+") partIndex = 3;
+		else if (part == "pro") partIndex = 4;
+		else if (part == "pba") partIndex = 5;
 		
+		in >> dETdEta[centIndex][enIndex][partIndex];
+		cout << dETdEta[centIndex][enIndex][partIndex] << "\t";
+		in >> dETdEtaErr[centIndex][enIndex][partIndex];
+		for(int l=0; l<24; l++) in >> skipContent;
+		in >> Npart[centIndex][enIndex];
+		cout << Npart[centIndex][enIndex] << "\n";
+		in >> skipContent;
+		dETdEtaSum[centIndex][enIndex] += dETdEta[centIndex][enIndex][partIndex];
 		
 		/*
 		if (i==0) cout << headerBuffer << "\t";
@@ -131,10 +153,39 @@ int plotsFromResults(){
 		*/
 		//}//end of for loop with index i
 	} //end of for loop with index j
-	// create 5by3 (3 cols, 5 rows) array of Doubles:
-	//Double_t colEnPlotsArr[5][3];
-	
-	in.close();
-
+	in.close();// all information from file extracted, so it should be closed
+	// print dETdEtaSum for 9 centralities and 5 collision energies
+		// and assign values to dETdEtaOverNpartBy2Sum[i][j]
+		for(int i=0; i<cents; i++){
+			for(int j=0; j<collEns; j++){
+				cout << "dETdEtaSum["<<i<<"]["<<j<<"] = "<<dETdEtaSum[i][j]<<endl;
+				dETdEtaOverNpartBy2Sum[i][j] = dETdEtaSum[i][j]/Npart[i][j];
+			}
+		}
+	Double_t collEnArr[5] = {7.7,11.5,19.6,27,39};
+	// TODO the following code is only a trial, after whose completion
+	 // make a loop to produce all the plots at once
+	 // using TGraphErrors
+	Double_t dETdEtaOverNpartBy2SumCent0[collEns];
+	for(int i=0; i<collEns; i++){
+		dETdEtaOverNpartBy2SumCent0[i] = dETdEtaOverNpartBy2Sum[0][i];
+	}
+	TGraph* g;
+	Double_t* collEnPtr = &collEnArr[0];
+	Double_t* dETdEtaOverNpartBy2SumCent0Ptr = &dETdEtaOverNpartBy2SumCent0[0];
+	g = new TGraph(5, collEnPtr, dETdEtaOverNpartBy2SumCent0Ptr);// TGraph constructor
+	TCanvas *c = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
+	c->SetLogx();
+	g->Draw();
+	// string imgPathAndName = "./"+histoName+".png";
+	string imgPathAndName = "./dETdEtaOverNpartBy2SumCent0.png";
+				//c1 -> SaveAs("./fittedPlots/trial1.png");
+	TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
+	png->FromPad(c);
+	const char* imgPathAndNameConstCharPtr = imgPathAndName.c_str();
+	png->WriteImage(imgPathAndNameConstCharPtr);
+	//delete g;
+	delete png;
+	delete c;
 	return 0;
 }
