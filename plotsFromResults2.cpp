@@ -141,7 +141,7 @@ int plotsFromResults2(){
 		else if (collEn == 39) enIndex = 4;
 		// particle set: {ka-,ka+,pi-,pi+,pro,pba}
 		if (part =="pi-") partIndex = 0;
-		else if (part == "pi+") partIndex = 0;
+		else if (part == "pi+") partIndex = 1;
 		else if (part == "ka-") partIndex = 2;
 		else if (part == "ka+") partIndex = 3;
 		else if (part == "pro") partIndex = 4;
@@ -159,11 +159,22 @@ int plotsFromResults2(){
 		cout << Npart[centIndex][enIndex] << "\n";
 		in >> skipContent;
 		// TODO: what about lambdas while adding ET?
+		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam
+		// at high energies, numer of negative and positive charges in the collision
+			// product are roughly the same
+			// which is not true at low energies since the colliding nuclei have +ve nucleons
 		//FIXME: fix the sum formulas below:
-		//if(partIndex==){
-			dETdEtaSum[centIndex][enIndex] += dETdEta[centIndex][enIndex][partIndex];
+		if(partIndex==0 || partIndex==1){
+			dETdEtaSum[centIndex][enIndex] += (3.0/2.0)*dETdEta[centIndex][enIndex][partIndex];
+			// ^ since number of pi0 = num of pi+ or pi-
 			dNchdEtaSum[centIndex][enIndex] += dNchdEta[centIndex][enIndex][partIndex];
-		//}
+		}
+		else if(partIndex==2 || partIndex==3 || partIndex == 4 || partIndex == 5){
+			dETdEtaSum[centIndex][enIndex] += 2.0*dETdEta[centIndex][enIndex][partIndex];
+			// ^ since num of k0_s ~ num og k0_l = num of k+ or k-
+				// also, num of p ~ num of pbar ~ num of n or nbar
+			dNchdEtaSum[centIndex][enIndex] += dNchdEta[centIndex][enIndex][partIndex];
+		}
 		/*
 		if (i==0) cout << headerBuffer << "\t";
 		else if (i==1) cout << headerBuffer << "\t";
@@ -206,7 +217,7 @@ int plotsFromResults2(){
 		string imgPathAndName1 = 
 		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName1+".png";
 					//c1 -> SaveAs("./fittedPlots/trial1.png");
-		TImage *png1 = TImage::Create();// FIXME try to use canvas method instead of png object
+		TImage *png1 = TImage::Create();//TODO try to use canvas method instead of png object
 		png1->FromPad(c1);
 		const char* imgPathAndNameConstCharPtr1 = imgPathAndName1.c_str();
 		png1->WriteImage(imgPathAndNameConstCharPtr1);
