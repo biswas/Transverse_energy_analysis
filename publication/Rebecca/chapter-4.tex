@@ -1,0 +1,1146 @@
+\chapter{Analysis} \label{ch:analysis}
+
+\section{pPb Collisions in ALICE}
+The Large Hadron Collider collided protons with lead ions in January and February of 2013. To collide proton and lead ions, the LHC circulated bunches of protons with energy of 4 TeV and fully stripped lead ions at 82 $\times$ 4 TeV \cite{ALICE:2012xs}. The bunches crossed at the interaction points along the LHC. The pPb collisions had center of mass per nucleon energy of 5.02 TeV. One of the interaction points was in the center of the ALICE detector. 
+
+Charged particles coming away from the collision can create tracks in the TPC. The TPC covers the range 0 $< \phi < 2\pi$, but the EMCal covers a smaller range, of $1.4 < \phi < 3.3$ or $80^{\circ} < \phi < 187^{\circ}$ \cite{Aamodt:2008zz}. ALICE has a 0.5 Tesla magnetic field that makes the charged particles spiral as they travel. The momentum of the particles can be measured using the curvature of the bend of the tracks. However, if the momentum of the particles is low, then the particles will spiral too tightly to make it out to the EMCal. To be able to hit and deposit energy into the EMCal, charged particles must have a momentum of at least around 0.5 GeV/c and be heading towards the region of the EMCal, $1.4 < \phi < 3.3$ and $-0.7 < \eta < 0.7 $. The signal from the energy deposited in the cells of the EMCal is later reconstructed into EMCal clusters. The total energy and position of the EMCal clusters are calculated and saved as objects that can be accessed in the data files. See section \ref{sec:data objects} for a discussion of objects available in ALICE data files. 
+
+For minimum bias p-Pb collisions in ALICE, there are about 24 total number of tracks in the TPC per event on average. The number of tracks that are in the region of the EMCal are about 3 per event. There are about 8 clusters in the EMCal per event. Of these EMCal clusters about 1.5 are matched to tracks. Only a few of these matched clusters pass the particle identification criteria for being an electron candidate. The number of electron candidates found using the TPC tracks and the EMCal is 0.003 per event on average. 
+
+The track multiplicity varies considerably for different event classes. For the highest multiplicity events, centrality of 0-20\%, the number of tracks per event is about 47 on average. For the lowest multiplicity, centrality 80-100\%, the number of tracks per event is about 6 on average. The tracks in the region of the EMCal are about 6 and 0.6 for high and low multiplicity events respectively. The number of electron candidates is 0.006 and 0.0006 per event for high and low multiplicity events.
+
+
+
+\section{Run selection}
+
+A single run is minutes or hours of data taking, thousands to millions of events. Run periods are days or weeks of these runs. The labels for run periods and run numbers are specific to each experiment. 
+
+%Define run period and run number% 
+The run periods for pPb collisions used in this analysis were LHC13b, LHC13c, LHC13d, LHC13e, and LHC13f. See Table \ref{tab:runs} for a summary of run periods used for this analysis. All run periods have Minimum Bias data, but only LHC13d, LHC13e, and LHC13f have EMCal triggered data as well. (See section~\ref{sec:triggerscaling} for more information about Minimum Bias events and EMCal triggered events.) In LHC13f, the directions of the circulating proton and lead ions were switched. 
+
+%The run period used for the proton-proton reference was LHC13g. The data was taken in February 2013 with center of mass energy of 2.76 TeV. LHC13g includes Min Bias and EMCal triggered data.
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Runs used for this Analysis. Information obtained from the MonALISA Repository\cite{alimonitorRunTable}.}
+    \label{tab:runs}
+    \begin{tabular}{| c|c|c|c|c |}
+    \hline
+    Configuration & Run Period & Total number  & EMCal & Date of data\\
+    & & of physics events& triggered data & taken in 2013 \\
+    \hline
+    \hline
+    p - Pb & LHC13b & 36 million & no & Jan 20-22 \\
+    \hline
+    p - Pb & LHC13c & 102 million & no & Jan 22-25\\
+        \hline
+    p - Pb & LHC13d & 26 million & yes & Jan 25-27\\
+        \hline
+    p - Pb & LHC13e & 38 million & yes& Jan 28 - Feb 1\\
+            \hline
+    Pb - p & LHC13f & 111 million & yes & Feb 2 - Feb 10\\
+            \hline
+    %pp & LHC13g & 49 million & yes & yes & Feb 11-14\\
+
+    \end{tabular}
+  \end{center}
+\end{table} 
+
+Runs from these run periods that had the EMCal on and running normally and had good global quality were selected. Runs were determined to be good (Quality Assurance) by creating histograms and checking if the particle identification measurements, energy distribution in the EMCal, and other distributions are as expected. No detector is perfect. A run can be labeled as good even if some parts of the detector have dead or noisy areas.
+
+\section{Event and Track Selection}\label{sec:Event and Track Selection}
+ %Events were required to have two contributors that were used to reconstruct the primary vertex. in the Silicon Pixel Detector, the innermost layer of the Inner Tracking System, or from the VZERO-A or VZERO-C detector. 
+Events that could not be well measured were rejected. To be considered good, an event must have a well-defined primary vertex position. In order to find the primary vertex, tracks in the ITS and TPC are propagated inward to the center of the detector. Events were required to have a minimum of two contributors that were used to reconstruct the primary vertex, from either the Silicon Pixel Detector, VZERO-A or VZERO-C detector. The number of contributors, before any event cuts, for pPb collisions in ALICE is shown in figure \ref{fig:NcontV}. In this plot, there are very few events with only a single contributor to the primary vertex. This cut removes beam-gas events or events that were not well measured by ALICE. 
+
+The event was also required to be near the center of the detector, where the detector has the best performance. The primary vertex was required to be within $\pm$10 centimeters of the center of the detector along the beam direction, in the z-direction. This cut should not bias the data sample because the physics of the collision should be independent on the location of the collision. The z-vertex position, before event cuts, for collisions in ALICE are shown in figure \ref{fig:ZVertexPosition}. Most physics collisions do occur within $\pm$10 centimeters of the center of the detector, and almost no collisions occur outside of $\pm$20 cm. 
+%(The TPC detector is 510 cm along the beam line.)
+
+
+\begin{figure}
+\centering
+\parbox{6.8cm}{
+\includegraphics[width=6.8cm]{NcontV.pdf}
+\caption{Number of contributors that were used to reconstruct the primary vertex for collisions in ALICE.}
+\label{fig:NcontV}}
+\qquad
+\begin{minipage}{6.8cm}
+\includegraphics[width=6.8cm]{ZVertexPosition.pdf}
+\caption{Position along the beam line of the primary vertex for collisions inside of ALICE.}
+\label{fig:ZVertexPosition}
+\end{minipage}
+\end{figure}
+
+%ITS 6 maximum layers.
+Tracks in the ITS and TPC were required to be well measured. The number of pad rows hit as particle crossed while traveling through the ITS is shown in figure \ref{fig:ITSNcls}. The ITS is a small detector, only 6 layers, making the maximum number of possible hits very small. Tracks were required to have at least one hit in the inner layer of the ITS, one of the Silicon Pixel Detector layers. The TPC is a larger detector with many readout pads. A track can leave many hits in the TPC as shown in figure \ref{fig:TPCNcls}. The minimum number of hits allowed in this analysis for a track in the TPC was 50.
+
+\begin{figure}
+\centering
+\parbox{6.8cm}{
+\includegraphics[width=6.8cm]{ITSNcls.pdf}
+\caption{Number of pad rows hits for ITS tracks.}
+\label{fig:ITSNcls}}
+\qquad
+\begin{minipage}{6.8cm}
+\includegraphics[width=6.8cm]{TPCNcls.pdf}
+\caption{Number of hits for the TPC.}
+\label{fig:TPCNcls}
+\end{minipage}
+\end{figure}
+
+Hits in the ITS and TPC are reconstructed into tracks, starting from the outermost points on the TPC and tracking inwards to the ITS and back to the primary vertex. Then the track reconstruction is restarted from the primary vertex outwards to the ITS and TPC and extrapolated to the outer detectors. Then the tracks are ``refit'' back to the primary vertex. To assure tracks with good momentum resolution and vertex parameters, tracks were required to pass the final refit in the ITS and TPC. 
+
+The raw signal of hits in the TPC are traced and reconstructed as tracks. The tracks in the TPC need to be a good fit in order to be considered a good track. The $\chi^{2}$, or ``chi-square'', tests the quality of the fit of the track on the TPC hits. The TPC $\chi^{2}$/NDF, chi-square per degree of freedom, is shown in figure \ref{fig:Chi2perNDF}. Tracks were required to have a TPC $\chi^{2}$/NDF less than 4. Tracks were also required to have $\chi^{2}$ per hit in the ITS less than 36. 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{Chi2perNDF}\\
+  \caption{Quality of the the fit of the TPC track, $\chi^{2}$ per degree of freedom, is shown for pPb collisions in ALICE.}\label{fig:Chi2perNDF}
+\end{figure}
+
+To narrow down the large data set and to identify electrons produced from heavy flavor decays, several cuts were applied on the tracks. Heavy flavor mesons have a decay length of a couple hundred micrometers, so they will appear to originate very close to the primary vertex. The DCA, distance of closest approach of the track to the primary vertex, will be very small for electrons from heavy flavor decays. To enhance the sample of heavy flavor electrons, a loose DCA cut was used on the tracks. The maximum distance from the track to the primary vertex in the transverse plane (DCA$_{XY}$) was 2.4 cm. The maximum longitudinal distance (DCA$_{Z}$) allowed was 3.2 cm. 
+%http://aliroot-docs.web.cern.ch/aliroot-docs/AliCFTrackIsPrimaryCuts.html#AliCFTrackIsPrimaryCuts:fMaxDCAToVertexXY
+%GetStandardITSTPCTrackCuts2011(kFALSE)  http://aliroot-docs.web.cern.ch/aliroot-docs/src/AliESDtrackCuts.cxx.html#eeIc3D
+% - esdTrackCuts->SetMinNClustersTPC(50);
+% - esdTrackCuts->SetMaxChi2PerClusterTPC(4);
+% - esdTrackCuts->SetAcceptKinkDaughters(kFALSE);
+% - esdTrackCuts->SetRequireTPCRefit(kTRUE);
+% - esdTrackCuts->SetRequireITSRefit(kTRUE);
+% - esdTrackCuts->SetClusterRequirementITS(AliESDtrackCuts::kSPD,AliESDtrackCuts::kAny); //Check to see what this means with Christine. I think it means it's required to have a hit in the SPD. 
+% - esdTrackCuts->SetMaxChi2PerClusterITS(36);
+
+% - SetMaxDCAToVertexXY(2.4) cut value: max distance to main vertex in transverse plane
+% - SetMaxDCAToVertexZ(3.2) cut value: max longitudinal distance to main vertex
+%SetDCaToVertex2D(kTRUE) flag: cut on ellipse in xy - z plane
+
+
+Some tracks can have a `kink'. If a particle decays while traveling through the detector, the reconstructed track can have a decay vertex, with mother and daughter tracks. Since heavy flavor mesons will decay before reaching the detector, electrons from heavy flavor decays are not expected from tracks with a kink.  Any tracks with a kink were rejected in this analysis.
+
+
+
+%Tracks had standard track quality cuts. 
+%\color{red}
+%(Rebecca needs to figure this out specifically with numbers. In my code: TestFilterMask(AliAODTrack::kTrkGlobalNoDCA)) It's probably ITS and TPC refit, chi square/TPC cluster $<$ 4, because this is what Shingo and Deepa report doing and they have this same line, but need to make sure.) 
+
+%http://aliweb.cern.ch/Offline/faq/30#t30n1647 AOD has only the TPC Chi2 per dof. GetTPCNcls() returns the number of bits set in the fTPCClusterMap, i.e. the number of pad rows crossed, similarly for GetITSNcls()
+%http://aliroot-docs.web.cern.ch/aliroot-docs/AliAODTrack.html fChi2perNDF	chi2/NDF of momentum fit
+
+%The aliroot file that was used for track cuts: http://git.cern.ch/pubweb/AliRoot.git/blob/a24c677865ec812ba17602a0a80579c3a7a59d9f:/ANALYSIS/macros/AddTaskESDFilter.C
+%Presentation about track cuts: https://twiki.cern.ch/twiki/pub/ALICE/ESDtoAODfiltering/rs_aodbits_130214_copy.pdf
+%
+
+%\color{black}
+
+\section{EMCal Cluster and Track Matching}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{2012-Oct-10-dEtaPhi}\\
+  \caption{EMCal cluster and track matching \cite{EMCALTrack-Cluster} for pp collisions at $\sqrt{s}$ = 7 TeV measured in ALICE.}\label{fig:dEtadPhi}
+\end{figure}
+
+
+Charged particles traveling from the collision out through the detector can make a track in the TPC and a cluster in the EMCal. These tracks need to be matched to the clusters in the EMCal. This is accomplished by extrapolating the position of the TPC track and the EMCal cluster position to the surface of the EMCal. Then the difference in position, $\delta\eta$ and $\delta\phi$, of the track and clusters at the surface of the EMCal are calculated. Figure \ref{fig:dEtadPhi} shows the distribution of residuals for all tracks and clusters with $p_{T,track}>1$~GeV/$c$ and $E_{cluster}>1$~GeV in p-p collisons at $\sqrt{s}=7$~TeV. The color on figure \ref{fig:dEtadPhi} represents the density of counts.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{dEtadPhiClusterandTrackMatching.pdf}\\
+  \caption{The difference in position, $\delta\eta$ and $\delta\phi$, of the track and clusters at the surface of the EMCal. The cut $\sqrt[]{\delta\eta^2 + \delta\phi^2} < 0.1$ has been applied. pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:dEtadPhiClusterandTrackMatching}
+\end{figure}
+
+Tracks and clusters that are really from the same particle will have a small $\delta\eta$ and $\delta\phi$. The radius, or the distance between the track and the cluster, can be defined as $\sqrt[]{\delta\eta^2 + \delta\phi^2}$. The cluster and track are found to be matched if $\sqrt[]{\delta\eta^2 + \delta\phi^2}$ is less than 0.1. Figure \ref{fig:dEtadPhiClusterandTrackMatching} shows the track and cluster $\delta\eta$ and $\delta\phi$ for tracks and clusters that are labeled as matched. In this plot, a cut is applied removing any track and cluster matches with a radius, $\sqrt[]{\delta\eta^2 + \delta\phi^2} > 0.1$. The color on the figure \ref{fig:dEtadPhiClusterandTrackMatching} represents the density of counts with red being the most counts. The color on the figure shows that most matched tracks and clusters have a radius near 0.014 (the size of an EMCal cell). Clusters with a radius further away from tracks are less likely to be matched. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{TrackClusterMatch20150908LHC13bcdef.pdf}\\
+  \caption{EMCal cluster and track matching. The cut $\sqrt[]{\delta\eta^2 + \delta\phi^2} < 0.1$ has been applied. pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:TrackClusterMatch20150908LHC13bcdef}
+\end{figure}
+
+Figure \ref{fig:TrackClusterMatch20150908LHC13bcdef} shows the radius, $\sqrt[]{\delta\eta^2 + \delta\phi^2}$, of matched tracks and clusters. Figure \ref{fig:TrackClusterMatch20150908LHC13bcdef} is consistent with figure \ref{fig:dEtadPhiClusterandTrackMatching}, showing that there is a maximum of counts with a radius about the size of an EMCal cell. The number of matches decreases with an increasing radius. 
+%A cut has been applied for cluster and track matching so $\sqrt[]{\delta\eta^2 + \delta\phi^2}$ cuts off at 0.1.
+
+%\color{red}(not sure on units). (Reference is this webpage. It would be cool to find a paper about this instead. : \begin{verbatim}https://twiki.cern.ch/twiki/bin/viewauth/ALICE/EMCalCode:HowTo#Track_cluster_matching_in_EMCal \end{verbatim}) 
+%\color{red}
+%(If the radius of the difference of the position is smaller than the cell size of the EMCal then the track is matched to the EMCal cluster.) $<$-- Maybe not true...   Cell size of the EMCal is 0.014. If $\sqrt[]{\delta\eta^2 + \delta\phi^2}$ is $<$ 0.1 then the cluster is matched to the track, in my analysis. Maybe I'm supposed to do a cut on this myself. 
+%\color{black} 
+
+
+
+
+%===========================================================================
+
+
+\section{Trigger Scaling} \label{sec:triggerscaling}
+The ALICE detector cannot record every event that occurs. The rate of collisions is faster than the rate that the detector can collect data and save the events. ALICE must decide which events to record and save. The Minimum Bias trigger is activated when the detector determines that an event has occurred, and the detector is not busy writing a past event. The minimum bias trigger requires a signal in the VZERO-A and VZERO-C detector \cite{Abelev:2014epa}. 
+
+%\color{red}(Source: Performance of the ALICE VZERO system. but, this is just pp and PbPb. I might need to find one that is specific to pPb.)\color{black} 
+
+%(Source: ALICE EMCal Physics Performance Report) 
+The EMCal detector implements the EMC7, EG1 and EG2 triggers. The EMCal is divided into areas of 2 $\times$ 2 adjacent towers. When the EMCal records an energy in these towers that is higher than a threshold, then the EMCal trigger is activated. The EMC7, EG1 and EG2 triggers send a signal to record an event if the EMCal has a hit in the 2 $\times$ 2 EMCal towers that has a total energy higher than about 3, 11, and 7 GeV respectively. See section \ref{sub:EMCalTrigger} for a more detailed review of the EMCal triggers.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.0in]{EnergySpectrumAllTriggersLHC13bcdef20150513.pdf}\\
+  \caption{EMCal cluster energy per event for EMC7, EG1 and EG2 triggered events for pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:LHC13bcdefEnergySpectrum}
+\end{figure}
+
+Figure \ref{fig:LHC13bcdefEnergySpectrum} shows the EMCal Cluster Energy spectrum for various triggers. The x-axis is the energy for every cluster in the EMCal. The y-axis is the number of clusters per event from energy deposited by photons, electrons, and hadrons that hit the detector. Most of the hits in the EMCal have a low energy. The Minimum Bias trigger, the black points, peaks near zero and falls with increasing energy. The EMC7 triggered events, green points, peaks around the EMC7 trigger threshold of 3 GeV and then follows the shape of the Minimum Bias triggered events. The EG1 and EG2 trigger peak at their trigger thresholds of 11 and 7 GeV. The EMC7 triggered events is a biased sample that has more 3 GeV cluster energies per event than a sample of random events. In order to compare to the minimum bias data and eventually calculate cross sections, the amount of enhancement of triggered events needs to be determined.
+
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=5.0in]{EMC7ClusterDivideFittedLHC13f20150423.pdf}\\
+%  \caption{Finding the EMC7 Trigger Efficiency. The number of clusters per event in EMC7 triggered events is divided by the number of clusters per event in minimum bias events. pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE}\label{fig:EMC7ClusterDivideFittedLHC13bcdef20150513}
+%\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{EMC7EG2EG1Square}\\
+  \caption{Determining the EMC7, EG1 and EG2 Trigger Efficiency. The number of clusters per event in triggered events is divided by the number of clusters per event in minimum bias events. The y-coordinate of the fit is the trigger scaling. pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE}\label{fig:EMC7EG2EG1Square}
+\end{figure}
+
+The triggered events have a higher number of electrons per event as compared to the minimum bias events. The trigger scaling factor corrects the triggered events to make them equivalent to minimum bias events. 
+ 
+\begin{equation}
+\frac{\textrm{Electrons}_{MB}}{\textrm{Events}_{MB}} = \frac{\textrm{Electrons}_{trigger}}{\textrm{(Trigger Scaling)} \times \textrm{Events}_{trigger}}
+\end{equation}
+
+By dividing the cluster energy spectrum for each trigger with the minimum bias spectrum, the trigger scaling factor can be extracted as seen in figure \ref{fig:EMC7EG2EG1Square}. Since the cluster spectrum for the EMC7 triggered events follows the shape of the Minimum Bias triggered events after the trigger threshold, the EMC7 divided by Min Bias cluster spectrum is consistent with a straight line after the trigger threshold. The y-coordinate of the straight line indicates trigger scaling factor. The same technique was repeated to find the trigger efficiency for EG1 and EG2 triggered events.
+
+
+%The EMC7 trigger found to have 79.28$\pm$ 0.23 times more events with an energy greater than 3 GeV as compared to Minimum Bias triggered events. In order to put EMC7 triggered events on the same footing as Min Bias events, then divide EMC7 triggered events by 79.28.
+
+%The same technique was repeated to find the trigger efficiency for EG1 and EG2 triggered events. Figure \ref{fig:EG1ClusterDivideFittedLHC13bcdef20150513} and Figure \ref{fig:EG2ClusterDivideFittedLHC13bcdef20150513} show that EG1 events need to be scaled by 6677$\pm$109 and EG2 by 1623$\pm$14. 
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.5in]{EG1ClusterDivideFittedLHC13bcdef20150513.eps}\\
+%  \caption{Finding the EG1 Trigger Efficiency. The x-axis is EMCal cluster Energy in GeV. The y-axis is number of clusters per event for EG1 divided by Min Bias.}\label{fig:EG1ClusterDivideFittedLHC13bcdef20150513}
+%\end{figure}
+%
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.5in]{EG2ClusterDivideFittedLHC13bcdef20150513.eps}\\
+%  \caption{Finding the EG2 Trigger Efficiency. The x-axis is EMCal cluster Energy in GeV. The y-axis is counts per number of events for EG2 divided by Min Bias.}\label{fig:EG2ClusterDivideFittedLHC13bcdef20150513}
+%\end{figure}
+
+%ALICE recorded triggered p-Pb events for 3 weeks, from January 25 to Feburary 14 2013. If ALICE only recorded min bias data then in order to get the statistics at 20 GeV comparable to the EG1 triggered events then ALICE would have had to record data for 6677 $\times$ 3 weeks. 
+
+Figure \ref{fig:EnergyTriggerScaled} shows the same plot as figure \ref{fig:LHC13bcdefEnergySpectrum} after all of the trigger efficiencies are applied. After the trigger thresholds are applied all of the triggered data points align with the minimum bias data points.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.0in]{EnergyTriggerScaled.pdf}\\
+  \caption{EMCal cluster energy for each trigger after trigger efficiencies are applied.}\label{fig:EnergyTriggerScaled}
+\end{figure}
+
+The triggered events can be used to increase the statistics for finding electrons at a higher $p_{T}$ range since the triggered events have an enhancement of statistics at higher $p_{T}$ as compared to minimum bias data. However the triggered scaling number introduces a systematic error, since there is some uncertainty in the number. For this analysis, only minimum bias, EG2 and EG1 triggered events were used. The EMC7 sample was found to have lower statistics for electrons and covered a smaller $p_{T}$ range as compared to minimum bias events. The EMC7 triggered events did not increase the $p_{T}$ coverage of the analysis and had a larger systematic and statistical error as compared to minimum bias events.
+%===========================================================================
+
+\section{Particle Identification cuts}
+
+It cannot be determined with complete certainty whether a specific track was created by an electron or another particle. Using the known properties and behaviors of the electron we can define some cuts that will enhance the sample for electrons. The cuts may cause some electrons to be lost but the cuts should remove more of the hadron background than electrons, increasing the purity of the electron sample. 
+
+%We can't tell for certain if a track belongs to an electron or a pion. However, we can make some filters. We will lose some of the electron signal, but we should remove more of the hadron background, and increase the purity of the electron sample. We can increase the probability that a certain track belongs to an electron vs a hadron.
+
+%===========================================================================
+
+\subsection{TPC electron identification: $n^{TPC}_{\sigma}$}\label{subsec:TPCnSigma}
+The TPC can identify particles by using the rate of energy loss of the particles as they pass through the gas in the detector. See section \ref{sub:TPC dE/dx} for a more detailed description. Figure \ref {fig:TPC_p20150908LHC13bcdef} shows the particle identification using the TPC. In this figure, the x-axis is momentum of the tracks. The y-axis is energy loss of the particles going through the detector, scaled by the number of standard deviations away from the electron hypothesis for energy loss in the TPC. Electrons can be seen as a horizontal line with some width at $n^{TPC}_{\sigma}$ = 0. For this analysis, an asymmetric $n^{TPC}_{\sigma}$ cut for electrons of -1 to 3 was used.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{TPC_p20150908LHC13bcdef.pdf}\\
+  \caption{Particle identification in the TPC. The vertical axis is the number of sigmas away from the electron hypothesis of energy loss in the TPC. The horizontal axis is the momentum of the track.}\label{fig:TPC_p20150908LHC13bcdef}
+\end{figure}
+
+The TPC cut works well at lower momenta, but runs out of distinguishing power at momenta above 15 GeV/c. More particle identification cuts are needed in order to get a clean sample of electrons at $p_{T} > 10$ GeV/c. 
+
+
+
+%===========================================================================
+
+
+
+
+\subsection{EMCal electron identification: $E/p$}\label{subsec:E/p}
+
+%\begin{wrapfigure}{r}{4in}
+%\includegraphics[width=4in]{EmcalShowers}
+%\caption{Graphic of particle interactions with the EMCal. Photons do not create tracks in the TPC. Electrons and charged hadrons create tracks in the TPC and can deposit energy in the EMCal.}\label{fig:EmcalShowers}
+%\end{wrapfigure} 
+
+The EMCal responds to electrons and hadrons differently. The $E/p$ measurement can be used to exploit this fact and enhance the sample of electrons.
+
+\vspace{5mm}
+
+$E/p$ = ( Energy deposited in the EMCal ) / (Momentum of the track in the TPC)
+
+\vspace{5mm}
+
+The graphic in figure \ref{fig:EmcalShowers} shows photons, electrons, and hadrons and their interaction with the detector. The photon does shower in the EMCal and deposits its full energy but does not create a track in the TPC. Photons will not have an $E/p$ measurement since it does not have a track in the TPC and will not have a momentum measurement. 
+
+%%EmcalShowers
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{EmcalShowers}\\
+  \caption{Graphic of particle interactions with the EMCal. Photons do not create tracks in the TPC. Electrons and charged hadrons create tracks in the TPC and can deposit energy in the EMCal. }\label{fig:EmcalShowers}
+\end{figure}
+
+The electron makes a track in the TPC and deposits all of its energy in the EMCal. Electrons observed in ALICE will be moving at relativistic speeds. For relativistic particles, energy is related to momentum by the following equation.
+
+\begin {equation}
+E^2 = p^2 c^2 + m^2 c^4
+\end{equation}
+
+Electrons have a small mass of 0.0005 GeV/c$^{2}$ and electrons measured in this analysis have a momentum of $p > 1$ GeV/c. Consequently, $p^2 c^2 >> m^2 c^4$ and $E \approx p$. The $E/p$ measurement for electrons will be near unity. In general, electrons will be considered in the region $0.8 < E/p < 1.2$. 
+
+Hadrons can have a varied response to the EMCal. Hadrons can pass through and deposit a minimum amount of energy in the EMCal. This behavior is called a MIP, or a minimum ionizing particle. The $E/p$ measurement for a MIP will be near zero.
+
+Hadrons can also shower in the EMCal. Some hadrons will deposit a fraction of their energy in the EMCal. For these hadrons, the measured energy divided by the measured momentum will usually be less than one, $E/p < 1$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{Eop_ptWithLine.pdf}\\
+  \caption{E/p for all particles with tracks in the TPC matched to energy clusters in the EMCal. Going clockwise from top left plot shows minimum bias events, EMC7, EG1, and EG2 EMCal triggered events. The EMC7, EG1, and EG2 EMCal triggered events have a function overlaid of $E/p = E_{Threshold}/p_{T}$ shown in a dotted pink line. All events are pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:Eop_ptWithLine}
+\end{figure}
+
+
+EMCal triggered events have an additional $E/p$ component. Since collisions occur in ALICE at a rate faster than can be recorded, the EMCal trigger is used to identify and prioritize saving of events that have a strong signal in the EMCal. Compared to minimum bias events, EMCal triggered events have a larger percentage of high energy-depositing electrons and photons, but also have a larger percentage of high energy-depositing hadrons. EMCal triggered events enhance the signal of electrons, but also add an additional background of hadrons that deposit energy in the EMCal above the trigger threshold. Figure \ref{fig:Eop_ptWithLine} shows $E/p$ as a function of energy for minimum bias and EMCal triggered events in pPb collisions in ALICE. In the minimum bias events (top left plot, figure \ref{fig:Eop_ptWithLine}), the MIP can be seen as a horizontal line near $E/p = 0$. The hadrons with a partial shower are mostly in the range $0 < E/p < 1$ but with a peak near $E/p \approx 0.5$. A horizontal line near $E/p = 1$, representing the electrons, is barely visible in the minimum bias data. The three EMCal triggered events have an additional component which can be seen as a crescent shape in each of the three EMCal triggered data sets. This additional component is due to the hadrons that deposited energy in the EMCal above the trigger threshold that fired the EMCal trigger.
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.25in]{Eop_ptAll4Triggers.pdf}\\
+%  \caption{E/p for all particles with tracks in the TPC matched to energy clusters in the EMCal. Going clockwise from top left plot shows minimum bias events, EMC7, EG1, and EG2 EMCal triggered events. All events are pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:Eop_ptAll4Triggers}
+%\end{figure}
+
+The EMC7 triggered data require a cluster in the EMCal with an energy near or above 3 GeV. A hadron that passes the EMC7 trigger will have an $E/p$ measurement of $E/p \geq 3/p$. The EMCal is sitting in the pseudorapidity region $|\eta| < 0.7$ so $p \approx p_{T}$. In a given energy interval, it is more likely for a particle to have a lower energy than a higher energy. For these reasons, most hadrons that fire the EMC7 trigger will have an $E/p \approx 3/p_{T}$. The EG1 and EG2 trigger have an energy threshold of 11 and 7 GeV. The EG2 events will have an enhancement of hadrons with $E/p \approx 7/p_{T}$, and EG1 with $E/p \approx 11/p_{T}$. To check that this is a good estimation, figure \ref{fig:Eop_ptWithLine} has a function overlaid on all of the triggered data sets of $E/p = E_{Threshold}/p_{T}$. This function seems to describe the peak of this background well.
+
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.5in]{ElectronAndHadronEoverPShape.pdf}\\
+  \caption{E/p for Electrons and Hadrons. Minimum Bias p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:ElectronAndHadronEoverPShape}
+\end{figure}
+
+Electrons and hadrons have a different $E/p$ shape. Figure \ref{fig:ElectronAndHadronEoverPShape} shows $E/p$ for minimum bias events in  $p_{T}$ window 2-4 GeV/c. In these plots, the x-axis is $E/p$, the energy measured in the EMCal divided by the momentum of the track. The y-axis is counts. In the left figure a $n^{TPC}_{\sigma}$ and shower shape cut are applied to enhance the signal of electrons. A peak centered near $E/p = 1$ can clearly be seen in the left hand plot.
+
+The plot in the right of figure \ref{fig:ElectronAndHadronEoverPShape} shows the $E/p$ shape for hadrons. The TPC $dE/dx$ information has been used to enhance the sample of hadrons. The minimum ionizing particles create an $E/p$ peak near 0. The hadrons that leave a partial shower in the EMCal are seen around $E/p = 0.4$ with a tail that goes out to 1 in $E/p$. 
+
+It is important to note that the counts in figure \ref{fig:ElectronAndHadronEoverPShape} for the hadrons are much higher than the counts for the electrons. The y-axis for the right plot in figure \ref{fig:ElectronAndHadronEoverPShape} is a factor of $10^3$ higher than the left plot. Even at $E/p = 0.8$, the hadron count is much larger than the electron counts (approximately 30,000 to 700). This demonstrates the importance of purifying the electron signal.
+
+
+
+
+
+
+
+
+%===========================================================================
+
+\subsection{EMCal electron identification: M20 and M02}\label{subsec:ShowerShape}
+
+Since electrons have a predictable shower in the EMCal, the background of hadrons can be further reduced by making a cut on the shape that electrons make when showering in the EMCal. Figure \ref{fig:Hadron_Electron_showershape_cartoon} shows a drawing of electrons and hadrons and the shape of their showers in the EMCal. The left side of this figure shows the side view of the electron and hadron showers. The right side of this figure shows a view from the front face of the EMCal. The right side is indicative of the actual signal coming from the EMCal. 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4.0in]{Hadron_Electron_showershape_cartoon}\\
+  \caption{Schematic showing electrons and hadrons and the shape of their showers in the EMCal.}\label{fig:Hadron_Electron_showershape_cartoon}
+\end{figure}
+
+
+The size of a shower from an electron is slightly larger than one EMCal tower. Electrons will usually leave a signal in five to ten adjacent EMCal towers. The shape of the adjacent towers with a signal will be round or ellipsoid.
+%8 is number of lines vertically that this picture takes up.
+%\begin{wrapfigure}[8]{l}{1in} 
+%  \begin{center}
+%    \includegraphics[width=1.0in]{M02-M20Def}
+%    \caption{M20 and M02 defined.}
+%    \label{fig:M02-M20Def}
+%  \end{center}
+%\end{wrapfigure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1.0in]{M02-M20Def}\\
+  \caption{M20 and M02 axis defined. M20 is the shorter axis. M02 is the longer axis.}\label{fig:M02-M20Def}
+\end{figure}
+
+Hadronic showers are more variable. If a hadron goes through the EMCal without showering (MIP), then the hadron will deposit a signal in one or two towers. If the hadron does shower in the EMCal then the shower size varies substantially. A hadron shower can cover three to fifteen towers. Fully contained hadron shower is larger longitudinally and laterally as compared to an EM shower. (For a more in depth discussion on electron and hadron showers in the EMCal, see section \ref{sub:Electron and Photon interactions with the EMCal} and \ref{sub:Other particle interactions with the EMCal}.)
+
+ 
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=1.0in]{M02-M20Def}\\
+%  \caption{M20 and M02 defined.}\label{fig:M02-M20Def}
+%\end{figure}
+
+The electron sample can be enhanced by making a cut on the shower shape that agrees with the electron's behavior in the EMCal. The shower shape parameters are drawn in figure \ref{fig:M02-M20Def}. The long axis is called M02 (``m-zero-two'') and the short axis is called M20 (``m-twenty''). After a cluster is found, the long and short axis is calculated using the cell weights, given by the energy of the signal in the cells, and the coordinates of the cells in the cluster. The equations \cite{ShowerShapePage} \cite{Zhu:2014oca} for M02 and M20 are:
+
+%Source: https://twiki.cern.ch/twiki/bin/viewauth/ALICE/ShowerShapeParameters
+
+\begin{equation}\label{eqn:M02}
+M_{02} = \frac{dxx + dzz}{2} + \sqrt{ \Bigg( \frac{dxx - dzz}{2} \Bigg)^{2} + \big( dxz \big)^{2} } 
+\end{equation}
+
+\begin{equation}\label{eqn:M20}
+M_{20} = \frac{dxx + dzz}{2} - \sqrt{ \Bigg( \frac{dxx - dzz}{2} \Bigg)^{2} + \big( dxz \big)^{2} }
+\end{equation}
+
+In these equations, \ref{eqn:M02} and \ref{eqn:M20}, $dxx$, $dzz$ and $dxz$ are functions of the position, $\eta_{k}$ and $\phi_{k}$, of each $k$-th cell in the cluster and weighted by the energy in each cell:
+
+\begin{equation}\notag
+dxx = \frac{\sum_{k} w_{k} \eta_{k}^{2} }{\sum_{k} w_{k}} - \frac{ \Big[ \sum_{k} w_{k} \eta_{k} \Big]^{2} }{\Big[ \sum_{k} w_{k} \Big]^{2} }  \qquad   dzz = \frac{\sum_{k} w_{k} \phi_{k}^{2} }{\sum_{k} w_{k}} - \frac{ \Big[ \sum_{k} w_{k} \phi_{k} \Big]^{2} }{\Big[ \sum_{k} w_{k} \Big]^{2} }  
+\end{equation}
+
+  \begin{equation}\notag
+ dxz = \frac{\sum_{k} w_{k} \eta_{k} \phi_{k} }{\sum_{k} w_{k}} - \frac{ \sum_{k} w_{k} \eta_{k} \sum_{k} w_{k} \phi_{k}  }{\Big[ \sum_{k} w_{k} \Big]^{2} }  \qquad  w_{k} = w_{0_{k}} + \log \Big(  \frac{ E_{k} } {\sum_{k} E_{k} } \Big)
+ \end{equation}
+
+
+Figure \ref{fig:ULSShowerShape} shows the shower shape parameters as a function of $E/p$ for two samples. The top two plots have a $n^{TPC}_{\sigma}$ cut to enhance the sample of electrons. The two bottom plots have a cut to increase the sample of hadrons. In these plots, electrons are most likely to be found in the top two plots, around $E/p = 1$.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.3in]{ULSShowerShape}\\
+  \caption{The top two plots show the shower shape parameters, M02 and M20, for a sample enhanced with electrons. The bottom two plots show M02 and M20 for a sample enhanced with hadrons. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. }\label{fig:ULSShowerShape}
+\end{figure}
+
+The exact value for the best shower shape cut is not immediately clear from looking at these plots. From comparing the top and bottom left plot in figure \ref{fig:ULSShowerShape}, a potentially good shower shape cut could be M02 = 0.35, 0.4, or 0.8. From comparing the left plots, a good value for a shower shape cut could be M20 = 0.14, or 0.25.
+
+
+%For TPC n$\sigma_{electron}$ near -5 (hadrons), M02 ranges between 0 and 2 and has a high density of counts around M02 of 0, 0.3, 0.65, 1.25, and 1.9. For TPC n$\sigma_{electron}$ near 0 (electrons), M02 ranges between 0 and 2, but has a high density of counts around M02 of 0, 0.3 and 0.65. Since electrons are expected to have a round shower distribution covering five to ten adjacent EMCal towers, the electron M02 is expected to be mostly in the range 0.006 $<$ M02 $<$ 0.35. The clusters with M02 $<$ 0.006 are most likely MIPs, noisy towers, or clusters that were not reconstructed well. The cluster with M02 $>$ 0.35 are most likely hadrons, or clusters that were accidentally merged. 
+
+
+
+
+%We can use the EMCal information to cut out some hadron background using the cluster shape. When electrons hit the EMCal they deposit all of their energy into the EMCal by an electromagnetic shower. The shower will be completely contained inside of the EMCal. However, when a hadron hits the EMCal some of the hadron's energy is deposited in the EMCal, but the EMCal isn't deep enough to contain an entire hadron shower. If the hadron does shower in the EMCal, then it will can leave a wider shower then the electron. 
+
+%%%%Need a better picture for the cluster shape and M02 and M20 than this one. It sucks.
+%Source is from here: https://twiki.cern.ch/twiki/bin/viewauth/ALICE/ShowerShapeParameters
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3.0in]{ShowerShapeParameters.pdf}\\
+%  \caption{ }\label{fig:ShowerShapeParameters}
+%\end{figure}
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3.0in]{M02andM20defined}\\
+%  \caption{An example of an EMCal cluster shape with the shower shape parameters, M20 and M02 overlaid.}\label{fig:M02andM20defined}
+%\end{figure}
+
+
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.5in]{EopAndShowerShape.pdf}\\
+%  \caption{Shower shape parameters as a function of E/p.}\label{fig:EopAndShowerShape}
+%\end{figure}
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.5in]{TPCnSigmaAndShowerShape.pdf}\\
+%  \caption{Shower shape parameters, M20 (left figure) and M02 (right figure) as a function of TPC n$\sigma$. }\label{fig:TPCnSigmaAndShowerShape}
+%\end{figure}
+
+
+If a shower shape cut can help enhance the signal of electrons, it will have the most impact in the region $p_{T} > 10$ GeV/c since the $n^{TPC}_{\sigma}$ measurement runs out of distinguishing power at this point. Figure \ref{fig:ShowerShapeCutsEG1} shows three $E/p$ $p_{T}$ windows with various M02 (top three plots) and M20 cuts (bottom three plots). In these figures, the black points do not have any shower shape cut applied. When a shower shape cut is applied, the counts are decreased in the areas $E/p < 0.8$ and  $E/p > 1.2$. Applying a shower shape requirement appears to be a good way to remove some hadron contamination. The cut of M20 $< 0.14$ (orange points) seems to remove the most background, however it also removes some signal. The cuts M20 $< 0.35$ (green) and M02 $< 0.8$ (blue) are not removing as much background but also leave the signal intact. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.5in]{ShowerShapeCutsEG1.pdf}\\
+  \caption{$E/p$ plots in EG1 triggered events for various shower shape cuts. All plots include a $n^{TPC}_{\sigma}$ cut of -1 to 3. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:ShowerShapeCutsEG1}
+\end{figure}
+
+A way of determining the best shower shape cut is to estimate the purity and efficiency for each cut. In order to do this, the $E/p$ plot for each $p_{T}$ bin was fitted with a function (see \ref{subsec:Hadron Background Subtraction} for more information). The signal and background were estimated using a fit. Figure \ref{fig:Eop_M02_M20cuts} shows an example of the $10 < p_{T} < 12$ GeV/c $E/p$ plot for three different shower shape cuts, and no shower shape cut. The purity can be estimated using the signal and background areas.
+
+Purity = (area signal) / (area signal + area background)
+
+The signal was defined as the area between the red and blue curve, between $0.8 < E/p < 1.2$. In figure \ref{fig:Eop_M02_M20cuts}, the  signal area is shown in red. The background was defined as the area under the blue curve in $0.8 < E/p < 1.2$ and is shown in blue. The background area is almost completely eliminated from the bottom right plot for the cut M20 $< 0.14$. The purity for this $p_{T}$ bin will be very high. The top right plot, with no shower shape cut applied, has the largest background area and should have the lowest purity. If the only consideration was purity, then the best cut out of these four would be the M20 $< 0.14$ shower shape cut.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{ShowerShapeEop}\\
+  \caption{$E/p$ plots for $10 < p_{T} < 12$ GeV/c in EG2 triggered events. All plots include a $n^{TPC}_{\sigma}$ cut of -1 to 3. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:Eop_M02_M20cuts}
+\end{figure}
+
+Another consideration is how much signal is being lost with a cut. In figure \ref{fig:Eop_M02_M20cuts}, the red signal area is the largest in the $E/p$ plot with no shower shape cut. The red signal area is the smallest in the $E/p$ plot with M20 $< 0.14$. Estimating the efficiency of each cut gives an idea of how much signal is retained with a certain cut. 
+
+Efficiency = (area signal with cut) / (area signal without cut)
+
+Since the red area in the top right plot in figure \ref{fig:Eop_M02_M20cuts} is almost the same size as the red area in the top left plot, the efficiency for M20 $< 0.35$ will be near 1. The efficiency for M20 $< 0.14$ will be the lowest for these plots. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.5in]{EffPurShower}\\
+  \caption{Efficiency and purity for various M02 and M20 cuts in EG1 triggered events. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:EffPurShower}
+\end{figure}
+
+Figure \ref{fig:EffPurShower} shows the efficiency and purity for various M02 and M20 cuts. The cuts with the highest purity are M20 $< 0.14$ and M02 $< 0.35$. Since these two cuts also remove signal with the background, the $p_{T}$ range of M20 $< 0.14$ ends at $p_{T} = 24$ because the statistics were too low to fit with a function. The M20 $< 0.35$ cut has the highest efficiency of the shower shape cuts shown. It is important to note that even though the efficiency has a large difference between cuts, the purity is similar for each cut. For example, in the $16 < p_{T} < 18$ bin, the difference in efficiency for the M20 $< 0.35$ cut and M20 $< 0.14$ cut is about 0.6. However the difference in purity is around 0.1. A tight shower shape does not gain much purity, but loses a lot of efficiency and total statistics. For these reasons a loose shower shape cut such as M20 $< 0.35$  is ideal.  
+
+
+
+%========================================================
+
+
+\section{Hadron Background Subtraction} \label{subsec:Hadron Background Subtraction}
+
+In order to get the electron $p_{T}$ spectrum, the number of electrons in each $p_{T}$ bin needs to be determined. One method is to look at the $E/p$ measurement in a given $p_{T}$ window, subtract as much background as possible and estimate the number of electrons. The background can be subtracted knowing the detector response and $E/p$ ranges for electrons and background particles, as explained in section \ref{subsec:E/p}.
+
+Figure \ref{fig:ElectronAndHadronEoverPShape} shows the $E/p$ distribution for electrons and hadrons for minimum bias events. From the left and right figures in figure \ref{fig:ElectronAndHadronEoverPShape}, one can see that the electron $E/p$ distribution is Gaussian with a peak around $E/p$ of 1. The hadron distribution has a main peak near $E/p$ of 0, but it also has a little hump around $E/p$ of 0.4 and a tail that continues out past $E/p$ of 1. A rough estimate of the number of electrons in the range $2 < p_{T} < 4$ can be obtained by integrating the area under the electron peak, $0.8 < E/p < 1.2$ in the left plot in figure \ref{fig:ElectronAndHadronEoverPShape}. However there is some hadron contamination under the electron $E/p$ peak that needs to be subtracted away to get the best estimation of the number of electrons. 
+
+%EoverPMBp_{T}2-4
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.0in]{EopHistosMB0}\\
+  \caption{E/p in 2 GeV/c $p_{T}$ windows in Minimum Bias p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. The red line is the total fitting function. The blue line is the background component.}\label{fig:EoverPMBp_{T}2-4}
+\end{figure}
+
+This analysis used a function to fit the signal and background to obtain the number of electrons. The function took into account the detector response to each component of the $E/p$ signal. For minimum bias events, there are three components that will be seen in $E/p$ windows, background due to the minimum ionizing particles, background due to hadrons with a partial shower, and the electron signal. Under the electron signal, in the range $0.8 < E/p < 1.2$, the main background component will be due to hadrons with a partial shower. The functional form for fitting $E/p$ in minimum bias events is shown in equation \ref{eqn:MBfit function}. The background is a wide Gaussian peak. The signal is a narrow Gaussian peak.
+
+\vspace{5mm}
+
+Minimum Bias Events: 
+
+$f$(E/p) = (Hadrons with a partial shower) $+$ (Electrons)
+\begin{equation}\label{eqn:MBfit function}
+f(E/p) \ = \ B \cdot exp \Big( {-\frac{[(E/p)-\mu_{B}]^2}{2\ \cdot \ \sigma_{B}^2}} \Big) \ + \ S \cdot exp \Big({-\frac{[(E/p)-\mu_{S}]^2}{2\ \cdot \ \sigma_{S}^2}} \Big)
+\end{equation}
+%TF1 totalfitEoverP("totalfitEoverP","[0]/(exp(9*x)) + [1]*TMath::Gaus(x, 0.61, 0.24) + [2]*TMath::Gaus(x, [3], 0.063)",0.1,1.5);
+
+In this equation, $B$ and $S$ are parameters that are fit to the data. $B$ and $S$ are proportional to the number of counts in the $E/p$ histograms. The values $\mu_{B}$ and $\mu_{S}$ are the position of the peak of the background and the position of the peak of the signal. The background peak position was between $0.4 < E/p < 0.62$. The signal peak position was in the range $0.9 < E/p < 1.1$. The width of the background was fixed to $\sigma_{B}= 0.26$. The width of the electron peak was 0.055 $ < \sigma_{S} < $ 0.07.
+
+
+
+Figure \ref{fig:EoverPMBp_{T}2-4} shows the fitting function at work in 2 GeV/c $p_{T}$-windows in minimum bias pPb events in ALICE. The red line is the total fitting function as written in equation \ref{eqn:MBfit function}. The blue line is only the background components in the fitting function. In this analysis, the number of electrons is proportional to the area between the red and blue curve, between $0.8 < E/p < 1.2$.
+
+
+
+
+
+
+
+The EMCal triggered events had an extra $E/p$ functional component due to the EMCal trigger threshold, as explained in section \ref{subsec:E/p} and shown in figure \ref{fig:Eop_ptWithLine}. For EMCal triggered events there are four components that will be seen in $E/p$ windows. The first three components are the same as seen in minimum bias events. The fourth is from the hadrons that fired the EMCal trigger. Under the electron signal, in the range $0.8 < E/p < 1.2$, the main component is due to the hadrons that fired the shower.
+
+The Landau distribution describes the energy loss of charged particles in a thin layer of material. The $E/p$ distributions are the energy lost scaled by the momentum, for a small momentum range. It could be argued that the EMCal is a ``thin layer'' for charged hadrons since the EMCal is too shallow to fully contain the hadronic shower of the protons, pions, and other charged hadrons. For these reasons, the Landau distribution is a reasonable guess at the form of the background component. The functional form used for the background in triggered data was the Landau distribution with a peak near $E_{Threshold}/p_{T}$.
+ 
+\vspace{5mm}
+EMCal Triggered events: 
+
+%$f$(E/p) = (MIP) $+$ (Hadrons with a partial shower) + (Hadrons with a partial shower that fire the EMCal trigger) $+$ (Electrons)
+%%\begin{equation}\label{eqn:EMCal triggered fit function}
+%%f(E/p) \ =\  A \cdot e^{- 9 \cdot (E/p)} \ + \ B \cdot exp \Big( {-\frac{[(E/p)-0.61]^2}{2\ \cdot \ 0.24^2}} \Big) \ + \ C \cdot exp \Big( {-\frac{[(E/p)-(E_{Threshold}/p_{T}]^2}{2\ \cdot \ 0.15^2}} \Big) \ + \ D \cdot exp \Big({-\frac{[(E/p)-1.0]^2}{2\ \cdot \ 0.063^2}} \Big)
+%%\end{equation}
+%%TF1 totalfitEoverP("totalfitEoverP","[0]/(exp(9*x)) + [1]*TMath::Gaus(x, 0.61, 0.24) + [2]*TMath::Gaus(x, [3], 0.15) + [4]*TMath::Gaus(x, 1.0, 0.063)",0.1,1.5);
+%
+%\begin{eqnarray*}\label{eqn:EMCal triggered fit function}
+%  f(E/p) & = & B_{1} \cdot e^{- b_{1} \cdot (E/p)} \\\
+%  & & {} + B_{2} \cdot exp \Big( {-\frac{[(E/p)-\mu_{b2}]^2}{2\ \cdot \ \sigma_{b2}^2}} \Big) \\\
+%  & & {} + B_{3} \cdot exp \Big( {-\frac{[(E/p)-(E_{Threshold}/p_{T}]^2}{2\ \cdot \ \sigma_{b3}^2}} \Big) \\
+%  & & {} + S \cdot exp \Big({-\frac{[(E/p)-\mu_{s}]^2}{2\ \cdot \ \sigma_{s}^2}} \Big)
+%\end{eqnarray*}
+  
+ $f$(E/p) = (Hadrons that fired the EMCal trigger) $+$ (Electrons)
+ \begin{equation}\label{eqn:EMCal triggered fit function}
+f(E/p) \ = \ B \cdot \textrm{Landau}( (E/p) , \mu_{B} , \sigma_{B} ) \ + \ S \cdot \textrm{Gaus}( (E/p) , \mu_{S} , \sigma_{S} )
+\end{equation}
+  
+  
+Just like the minimum bias functional form, $B$, and $S$ are parameters that are fit to the data and depend on the number of counts in the $E/p$ windows. The value $\mu_{b}$ is the peak position of the background and was $E_{Threshold}/p_{T} \pm 0.1$. The width of the background, $\sigma_{b}$ was set at 0.0775. The signal peak position was in the range $0.9 < \mu_{s} < 1.1$. The width of the electron peak was 0.055 $ < \sigma_{S} < $ 0.07.
+  
+%  
+% Figure \ref{fig:EoverPEMC7p_{T}6-8} shows the $E/p$ windows for $6 < p_{T} < 14$ GeV/c for EMC7 (trigger threshold $\approx$ 3 GeV) EMCal triggered events. The EG2 (trigger threshold $\approx$ 7 GeV) EMCal triggered events are shown in figure \ref{fig:EG2EoverP} for $10 < p_{T} < 26$. The EG1 EMCal triggered events (trigger threshold $\approx$ 11 GeV) are shown in figure \ref{fig:EG1EoverP} for $14 < p_{T} < 28$.
+% 
+%%EoverPEMC7p_{T}6-8
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=6in]{EoverPEMC7p_{T}6-8.pdf}\\
+%  \caption{$E/p$ fitting shown for EMC7 EMCal triggered events, trigger threshold $\approx$ 3 GeV. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. }\label{fig:EoverPEMC7p_{T}6-8}
+%\end{figure}
+
+%%EoverPEG2p_{T}10-12.pdf and EoverPEG2p_{T}18-20.pdf
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=6in]{EG2EoverP}\\
+%  \caption{$E/p$ fitting shown for EG2 EMCal triggered events, trigger threshold $\approx$ 7 GeV. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:EG2EoverP}
+%\end{figure}
+%
+%%EoverPEG1p_{T}14-16.pdf and EoverPEG1p_{T}22-24.pdf
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=6in]{EG1EoverP}\\
+%  \caption{$E/p$ fitting shown for EG1 EMCal triggered events, trigger threshold $\approx$ 11 GeV. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:EG1EoverP}
+%\end{figure}
+
+%EoverPEG2p_{T}10-12.pdf and EoverPEG2p_{T}18-20.pdf
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.0in]{EopHistosEG20.pdf}\\
+  \caption{$E/p$ fitting shown for EG2 EMCal triggered events, trigger threshold $\approx$ 7 GeV. p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.}\label{fig:EopHistosEG20}
+\end{figure}
+
+Figure \ref{fig:EopHistosEG20} shows the fitting in EG2 triggered events. The red line is the total fit, equation \ref{eqn:EMCal triggered fit function}. The blue line is the background function. The number of electrons is proportional to the area between the red and blue line, in the area $0.8 < E/p < 1.2$. 
+
+
+
+%\clearpage %puts all of the figures which have not been placed yet somewhere
+
+%Since the electrons have a peak at $E/p$ of approximately 1, the number of electrons can be related to the area under the peak, between $E/p$ of 0.8 and 1.2. However, the number of hadrons that contaminate the area under the electron peak needs to be subtracted away. This analysis assumed that the $E/p$ shape of the total electrons and hadrons can be fit with two gaussians, Equation \ref{eqn:fit function}.
+%
+%\begin{equation}\label{eqn:fit function}
+%f(E/p) \ =\  p0\cdot exp({-\frac{((E/p)-0.5)^2}{2\  \cdot \ 0.3^2}}) \ + \ p1\cdot exp({-\frac{((E/p)-0.97)^2}{2\ \cdot \ 0.068^2}})
+%\end{equation}
+%
+%This fit function is the hadron gaussian plus the electron gaussian. The hadron and electron gaussian peak position and widths were fixed. The hadron and electron gaussian had an average peak at E/p of 0.5 and 0.97, respectively. The hadron and electron gaussian width was 0.3 and 0.068. The height of the hadron and electron gaussian, p0 and p1, are free parameters. The parameters p0 and p1 are varied until the best fit to the data is found. 
+%
+%Figure \ref{fig:EoverPpPbMB_Centrality_0_to_100EoverPp_T2-4} and \ref{fig:EoverPpPbMB_Centrality_0_to_100p_T8-10} show fitting for two $E/p$ windows for minimum bias events. Figure \ref{fig:EoverPpPbMB_Centrality_0_to_100EoverPp_T2-4} is for a low transverse momentum, $p_{T}$, window of 2 to 4 GeV/c and Figure \ref{fig:EoverPpPbMB_Centrality_0_to_100p_T8-10} is for a higher $p_{T}$ window of 8 to 10 GeV/c. The red line is the total fit, shown in Equation \ref{eqn:fit function}, to the electron signal plus the hadron background. This was fit in the range of E/p 0.6 to 1.2. The blue line is a copy of the hadron component of the red line.
+%
+%After the parameters p0 and p1 are optimized, the number of electrons and number of hadrons can be estimated. The total fit, red line, and the hadron copy, blue line, is integrated between the E/p range of 0.8 to 1.2. The number of electrons given by the area between the red curve and blue curve and between E/p of 0.8 and 1.2. The error on the number of electrons is the square root of the area under the total fit, red line, between E/p of 0.8 and 1.2.
+%
+%
+%
+%\begin{figure}
+%\centering
+%\parbox{7cm}{
+%\includegraphics[width=8cm]{EoverPpPbMB_Centrality_0_to_100EoverPp_T2-4.pdf}
+%\caption{Fitting E/p in low $p_{T}$ in min bias events}
+%\label{fig:EoverPpPbMB_Centrality_0_to_100EoverPp_T2-4}}
+%\qquad
+%\begin{minipage}{7cm}
+%\includegraphics[width=8cm]{EoverPpPbMB_Centrality_0_to_100p_T8-10.pdf}
+%\caption{Fitting E/p in high $p_{T}$ in min bias events}
+%\label{fig:EoverPpPbMB_Centrality_0_to_100p_T8-10}
+%\end{minipage}
+%\end{figure}
+
+
+%========================================================
+
+
+
+\section{Photonic Electron Background}\label{sec: Photonic Background}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4.5in]{2013-Jan-04-inclusive_versus_cocktail_TPCEMCal_mult}\\
+  \caption{Inclusive electron yield and background electron cocktail as a function of $p_{T}$ for p-p collisions at $\sqrt s =$ 7 TeV measured in ALICE \cite{Abelev:2012xe}. Bottom panel shows the ratio of inclusive electron yield to background electron cocktail.}\label{fig:inclusive_versus_cocktail}
+\end{figure}
+
+After finding the electron candidates, and subtracting off the hadron contamination, the remainder is called the ``inclusive electrons''. Inclusive electrons are the number of measured electrons from all sources. This analysis measured electrons from decays of heavy flavor mesons. It is impossible to tell the origin of a specific electron. However, it is possible to estimate on a statistical basis the number of electrons from various sources and therefore infer the number of heavy flavor electrons. The number of heavy flavor electrons is the inclusive electrons minus the number of electrons from other sources. 
+
+Figure \ref{fig:inclusive_versus_cocktail} shows inclusive electron yield (black points) for pp collisions at $\sqrt s =$ 7 TeV measured in ALICE \cite{Abelev:2012xe}. The estimated yield of electrons is drawn for various background sources. The sum total of all background sources, the background ``cocktail'', is drawn (black line). Sources of electrons include the Dalitz decay of light neutral mesons, namely $\pi^0$, $\eta$ and $\eta^{\prime}$ mesons. The decay products from the Dalitz decay of these mesons are a photon and a pair of unlike sign electrons, $\pi^0 \rightarrow \gamma + \mathrm{e}^+ + \mathrm{e}^-$, and $\eta \rightarrow \gamma + \mathrm{e}^+ + \mathrm{e}^-$, and $\eta^{\prime} \rightarrow \gamma + \mathrm{e}^+ + \mathrm{e}^-$. Photon conversion (``conv. of $\gamma_{meson}$'') is a large source of electrons. When a photon interacts with matter in the detector material the energy of the photon can be converted into an electron-positron pair, $\gamma  \rightarrow \mathrm{e}^+ + \mathrm{e}^-$. The vector mesons $\rho$, $\omega$, $\phi$ have dielectron decay modes. Real and virtual photons (``direct $\gamma , \gamma^{*}$'') that are produced in the collision can also convert into an electron-positron pair. The charged and neutral kaons have a semileptonic decay mode (``$K_{\mathrm{e}3}$''), $K \rightarrow \mathrm{e} \pi \nu$.
+
+%The $\eta$ and $\eta^{\prime}$ mesons have a the Dalitz decay, $\eta \rightarrow \gamma + e^+ + e^-$ and $\eta^{\prime} \rightarrow \gamma + e^+ + e^-$. 
+
+% $\eta^{\prime}$ http://pdg.lbl.gov/2015/listings/rpp2015-list-eta-prime-958.pdf
+% http://pdg.lbl.gov/2015/listings/rpp2015-list-rho-770.pdf   http://pdg.lbl.gov/2015/listings/rpp2015-list-omega-782.pdf  http://pdg.lbl.gov/2015/listings/rpp2015-list-phi-1020.pdf  http://pdg.lbl.gov/2010/listings/rpp2010-list-J-psi-1S.pdf
+
+The $J/\Psi$ and $\Upsilon$ are mesons with heavy flavor. The $J/\Psi$ is a meson composed of a charm and anti-charm quark. The $\Upsilon$ meson is made up of a bottom and anti-bottom quark. The $D$ and $B$ mesons, measured in this analysis, are composed a single heavy flavor quark and a light quark. The $J/\Psi$ and $\Upsilon$ have different formation time and interact with the medium somewhat differently from the $D$ and $B$. For these reasons, the $J/\Psi$ and $\Upsilon$ are measured separately from $D$ and $B$ mesons and are considered background of this measurement.
+
+
+The background sources in figure \ref{fig:inclusive_versus_cocktail} \cite{Abelev:2012xe} were calculated using a cocktail method. For this thesis, an alternative method was used for measuring background sources called the \textit{invariant mass method}. As can be seen from figure \ref{fig:inclusive_versus_cocktail} the main sources of background electrons are from photon conversion and from Dalitz decay of light mesons, so called \textit{photonic electrons}. The invariant mass method takes advantage of the fact that the main source of background electrons are from sources which produce electrons in pairs, e$^- \ + $ e$^+$. The invariant mass of electron-positron pairs from photon conversions and from Dalitz decays of neutral mesons is near zero. The number of photonic electrons can be estimated by finding electron-positron pairs and calculating the invariant mass.
+
+Since the inclusive electrons include the signal from heavy flavor electrons and the background from various sources (mainly photonic electrons), the number of heavy flavor electrons is approximately the number of inclusive electrons minus the number of photonic electrons, equation \ref{eqn:HFE}. The efficiency of finding a pair of photonic electrons is $\epsilon_{Photonic}$. 
+
+%The invariant mass method uses the fact that the majority of background sources of electrons are produced in e$^-$ and e$^+$ pairs.
+
+\begin{equation}\label{eqn:HFE}
+N^{raw}_{HFE} = N_{Inclusive} - N^{raw}_{Photonic}/\epsilon_{Photonic}
+\end{equation}
+
+%The invariant mass cut chosen was 0.15 GeV/c$^2$.
+
+The photonic electron subtraction does not include the sources of real electrons from the decays of neutral kaons, $J/\Psi$, $\Upsilon$, and W and Z bosons. The invariant yield of the electrons from the decay of the W and Z bosons has a near constant shape across $p_{T}$, while the invariant yield of the electrons from heavy flavor decreases across $p_{T}$. Therefore the yield of electrons from the W and Z bosons is most important at higher $p_{T}$, around $p_{T}>$ 20 GeV/c, and the yield may rival the photonic electron background yield in this $p_{T}$ region. These background sources that are not included in the photonic electron subtraction were estimated to be smaller than the systematic error, and therefore negligible. Neglecting these background contributions would constitute a modest, one-sided, contribution to the overall systematic error. This systematic error would be dominated by other contributions, mainly the systematic error due to hadron background determination from fitting. (See table \ref{tab:TotalSyst} for the magnitude of various systematic errors in this analysis.)
+
+%Briefly mention or discuss other sources of real electrons not addressed by the photonic subtraction as implemented with near zero invariant mass, in particular: neutral kaon, J/psi, Upsilon, W, and Z. 
+%Mention that W and Z backgrounds become more important by your highest pT interval and may rival some backgrounds/subtractions that you _do_ consider and subtract.
+%Neglecting such contributions constitutes a modest, one-sided, contribution to the overall systematic error (that is rather dominated by other sources of systematic error).
+
+% \break
+
+\vspace{10mm}
+\textbf{Steps involved in the Invariant Mass Method:}
+\begin{enumerate}
+\item Find an electron candidate with a track that has a good match to an EMCal cluster. To be an electron candidate it must pass the electron identification cuts, $-1 < n^{TPC}_{\sigma} < 3$ , $0.8 < E/p < 1.2$, and M20 $<$ 0.35.
+\item Loop over all of the other tracks in the event. Find an associated track that passes the associated track cuts shown in table \ref{tab:associated track cuts}. The associated track cuts are loose in order to increase the chances of finding a photonic pair. 
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Cuts on associated track.}
+    \label{tab:associated track cuts}
+    \begin{tabular}{| c|c | }
+    \hline
+    TPC number of clusters & $>$ 80 \\
+    \hline
+    p$_{T}$ & $>$ 0.3 \\
+    \hline
+    Eta & -0.9, 0.9 \\
+        \hline
+    $n^{TPC}_{\sigma}$ & -3.5, 3.5 \\
+        \hline
+    TestFilterMask & kTrkTPCOnly\\
+    \hline
+    TPC and ITS refit & yes \\
+    \hline
+    $\chi^{2}$/NDF track & $<$ 4.0 \\
+    \hline
+    reject kink daughters & yes \\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\item Check the sign of the charge of the original and associated track. If they have the same charge, e$^+ \ + $ e$^+$ or e$^- \ + $ e$^-$, then they are tagged as Like Sign pairs (LS). If the charges do not match, they are labeled as Unlike Sign pairs (ULS), e$^- \ + $ e$^+$.
+\item Calculate the invariant mass of the original and associated track. The square of the invariant mass is given in equation \ref{eqn:Invariant mass relativistic} for relativistic particles.
+\begin{equation}\label{eqn:Invariant mass relativistic}
+M^2 =  2p_{T1}p_{T2}(cosh(\eta_{1} - \eta_{2})-cos(\phi_{1}-\phi_{2}))
+\end{equation}
+
+\item If the calculated invariant mass is less than the invariant mass cut, then the original electron candidate is tagged as having found a LS or ULS pair. The invariant mass cut chosen was 0.15 GeV/c$^2$.
+\end {enumerate}
+
+\vspace{10mm}
+%\begin{equation}\label{eqn:Invariant mass}
+%M^2 =  m^2_{1} + m^2_{2} + 2(E_{1}E_{2} - \bold{p}_{1} \cdot \bold{p}_{2})
+%\end{equation}
+
+%\begin{equation}\label{eqn:Invariant mass relativistic}
+%M^2 =  2p_{T1}p_{T2}(cosh(\eta_{1} - \eta_{2})-cos(\phi_{1}-\phi_{2}))
+%\end{equation}
+
+
+%\begin{table}[h!]
+%  \begin{center}
+%    \caption{Cuts on associated track.}
+%    \label{tab:associated track cuts}
+%    \begin{tabular}{c|c}
+%    TPC number of clusters & $>$ 70 \\
+%    \hline
+%    p$_{T}$ & $>$ 0.2 \\
+%    \hline
+%    Eta & -0.9, 0.9 \\
+%        \hline
+%    TPC n$\sigma_{electron}$ & -3, 3 \\
+%        \hline
+%    TestFilterMask & kTrkTPCOnly\\
+%    \end{tabular}
+%  \end{center}
+%\end{table}
+
+Two random opposite sign electrons can be consistent by chance with an invariant mass near zero without originating from a photon. The Like Sign (LS) pairs can be used to estimate the number of the uncorrelated pairs since there are few known processes that produce electron pairs of the same sign. The difference between Unlike Sign (ULS) and LS gives the number of photonic pairs. N$_{Photonic}$ = N$_{ULS}$ - N$_{LS}$.
+
+%was using the figure: InvMasspPbMB_Centrality_0_to_100.pdf
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{InvMassMB.pdf}\\
+  \caption{Invariant mass of pairs of electrons with a $p_{T} >$ 1 GeV/c in pPb collisions at $\sqrt{s} = 5.02$ TeV measured in ALICE. Unlike Sign Electrons, Like Sign Electrons, and the difference, ULS - LS, is shown.}\label{fig:InvMasspPbMB_Centrality_0_to_100}
+\end{figure}
+
+Figure \ref{fig:InvMasspPbMB_Centrality_0_to_100} shows the invariant mass distribution for LS and ULS electron pairs. The difference between ULS and LS is also shown. Due to electrons from photon conversions, there is a distinct peak for invariant mass near zero in the ULS and ULS-LS distributions. There is a minimum in the invariant mass ULS-LS distribution around 0.1 GeV/c$^2$. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{ULSandLS_CompareInvMassCuts}\\
+  \caption{The yield with respect to transverse momentum of and Unlike Sign (left plot) and Like Sign (right plot), electron pairs are shown for three invariant mass cuts, 0.18, 0.15, and 0.12 GeV/c$^2$ are shown for EG2 pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE.}\label{fig:CompareULSandLSInvMassMB0_100cent}
+\end{figure}
+
+The invariant mass for photonic electrons is near zero, however the exact numerical value for the cut off point to be tagged as a photonic electron is subjective. Figure \ref{fig:CompareULSandLSInvMassMB0_100cent} shows the LS and ULS $p_{T}$ distribution for electron candidates for various invariant mass cuts in EG2, 7 TeV trigger threshold, events for pPb collisions measured in ALICE. Three invariant mass cuts, 0.18, 0.15, and 0.12 GeV/c$^2$, are shown for unlike sign and like sign pairs. The yield of ULS and LS electrons are dependent on the value of the invariant mass cut chosen. A larger invariant mass cut produces a slightly greater yield of LS and ULS electrons across the full $p_{T}$ range.
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.5in]{Photonic_CompareInvMassCuts.pdf}\\
+  \caption{Yield of photonic electrons (Like Sign - Unlike Sign) with respect to transverse momentum for various invariant mass cuts are shown for minimum bias pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE. The ratio of the yield in configuration/reference is also shown, where the reference cut is 0.15 GeV/c$^2$. The configuration cut is 0.18 GeV/c$^2$ and 0.12 GeV/c$^2$}\label{fig:ULS-LSCompareInvMassMB0_100}
+\end{figure}
+
+Changing the invariant mass cuts does impact the yield of LS and ULS electrons, but how does changing the invariant mass cut effect the yield of photonic electrons? In figure \ref{fig:ULS-LSCompareInvMassMB0_100}, the $p_{T}$ distribution for the difference, ULS-LS, is shown for various invariant mass cuts in minimum bias data for pPb collisions measured in ALICE. The same invariant mass cuts as in figure \ref{fig:CompareULSandLSInvMassMB0_100cent} are shown here. The yields of ULS-LS all agree within error bars for the three invariant mass cuts plotted. The ratio of the yield for the 0.18 GeV/c$^2$ cut divided by the yield for the 0.15 GeV/c$^2$ cut, and the ratio of the yield for the cut 0.12 GeV/c$^2$ divided by the yield for 0.15 GeV/c$^2$ cut is also shown. Varying the invariant mass cut does not seem to greatly effect the yield of photonic electrons. The invariant mass cut chosen in this analysis was 0.15 GeV/c$^2$.
+
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=5.75in]{ULS_LS_Photonic_Three.pdf}\\
+%  \caption{Photonic Electrons per event with respect to $p_{T}$ for Min Bias, EG2 (7 GeV threshold) and EG1 (11 GeV threshold) triggered events. pPb collisions at $\sqrt{s} = 5.02$ TeV measured in ALICE.}\label{fig:ULS_LS_Photonic_Three}
+%\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.0in]{Photonic_MB_EG1_EG2.pdf}\\
+  \caption{Photonic Electrons per event with respect to $p_{T}$ for Min Bias, EG1 and EG2 triggered events. pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE. Invariant mass cut is 0.15 GeV/c$^2$.}\label{fig:PhotTriggerspPb_Cent_0_to_100}
+\end{figure}
+
+The minimum bias data for photonic electrons run out at about $p_{T} \sim 10$ GeV/c. However with the use of the EMCal triggered data, the inclusive electron data in pPb events reach up to $p_{T} \sim 30$ GeV/c. In order to get the heavy flavor spectrum, a photonic electron spectrum with the same $p_{T}$ range as the inclusive electron $p_{T}$ range is needed. Figure \ref{fig:PhotTriggerspPb_Cent_0_to_100} shows the yield of photonic electrons for Min Bias, EG1 and EG2 triggered events. The yields were scaled by number of events and the efficiency of the trigger for triggered events. The distribution of the yields for photonic electrons for minimum bias and EMCal triggered events align when using the trigger scaling. Adding EMCal triggered events in order to extend the $p_{T}$ reach of the photonic electron data appears to be appropriate.
+
+
+
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=4.5in]{2015-Sep-24-Fig_eff_inv_mass}\\
+%  \caption{Tagging efficiency for photonic electrons reconstructed using the invariant mass method for pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE.}\label{fig:HFEElectronspPb_Centrality_0_to_100}
+%\end{figure}
+
+\begin{figure}
+\centering
+\parbox{6.8cm}{
+\includegraphics[width=6.8cm]{2013-Jul-12-photonic_eff_final}
+\caption{Efficiency of reconstructing a photonic electron \cite{Non-HFEreconstruction}.}
+\label{fig:2013-Jul-12-photonic_eff_final}}
+\quad
+\begin{minipage}{6.8cm}
+\includegraphics[width=6.8cm]{2015-Sep-24-Fig_eff_inv_mass}
+\caption{Efficiency of tagging a photonic electron \cite{TaggingEfficiency}.}
+\label{fig:2015-Sep-24-Fig_eff_inv_mass}
+\end{minipage}
+\end{figure}
+
+The efficiency for tagging a photonic electron was measured by another analysis in ALICE \cite{Non-HFEreconstruction} \cite{TaggingEfficiency}. The efficiency is shown in figures \ref{fig:2013-Jul-12-photonic_eff_final} and \ref{fig:2015-Sep-24-Fig_eff_inv_mass} for two different $p_{T}$ ranges. The same method, partner cuts, and invariant mass cuts were used in figures \ref{fig:2013-Jul-12-photonic_eff_final} and \ref{fig:2015-Sep-24-Fig_eff_inv_mass} as in this analysis so the efficiency of finding a photonic electron should be the same. From figure \ref{fig:2015-Sep-24-Fig_eff_inv_mass}, the efficiency for tagging a photonic electron pair appears to be nearly a constant as a function of $p_{T}$ for $p_{T} >$ 8. The photonic reconstruction efficiency for 20$> p_{T} >$ 30 was assumed to be constant, extrapolating from figure \ref{fig:2015-Sep-24-Fig_eff_inv_mass}.
+%The efficiency is near 0.83 in the $p_{T}$ range of interest. 
+
+
+
+
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=5.5in]{AllPhotAndHFEpPb_Cent_0_to_100.pdf}\\
+%  \caption{Inclusive electrons (cyan solid points), photonic electrons (purple solid line), and heavy flavor electrons (dotted black points) are shown per event for pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE. Events are Min Bias, EMC7, EG1 and EG2 triggers. Triggers are scaled to match MB using triggering efficiency and triggers are added with weights based on their statistics. Invariant mass cut used is 0.15 GeV/c$^2$.}\label{fig:AllPhotAndHFEpPb_Cent_0_to_100}
+%\end{figure}
+
+%After getting the yield of the inclusive electrons and the photonic electrons, the number of heavy flavor electrons can be found using equation \ref{eqn:HFE}. The yield of photonic electrons for minimum bias and EMCal triggered events from figure \ref{fig:PhotTriggerspPb_Cent_0_to_100} are corrected for $\epsilon_{Photonic}$ and then added based on their statistical error bars and shown in figure \ref{fig:AllPhotAndHFEpPb_Cent_0_to_100}. The inclusive electrons (electrons after hadron subtraction) is found for each trigger and then added weighted by their statistical error and shown in figure \ref{fig:AllPhotAndHFEpPb_Cent_0_to_100}. For each trigger, the corrected number of photonic electrons is subtracted from the inclusive electrons creating a yield of heavy flavor electrons per trigger. Then the heavy flavor electrons per trigger are added together and shown in figure \ref{fig:AllPhotAndHFEpPb_Cent_0_to_100}.
+
+
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.5in]{HFEElectronspPb_Centrality_0_to_100.pdf}\\
+%  \caption{Heavy flavor electrons per event. Events included are Min Bias, EMC7, EG1 and EG2 triggers. Triggers are scaled to match MB using triggering efficiency and triggers are added with weights based on their statistics.}\label{fig:HFEElectronspPb_Centrality_0_to_100}
+%\end{figure}
+
+The number of heavy flavor electrons can be found using the number of inclusive electrons and photonic electrons, equation \ref{eqn:HFE}. Figure \ref{fig:Incl_and_Phot} shows the number per event of inclusive and photonic electrons. In this plot, the number of photonic electrons is corrected by the efficiency of tagging a photonic electron, $\epsilon_{Photonic}$. 
+
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4.0in]{Incl_and_Phot.pdf}\\
+  \caption{Inclusive electrons and photonic electrons are shown per event for Min Bias, EG1 and EG2 pPb collisions at $\sqrt{s} = 5.02$ TeV measured in ALICE. Invariant mass cut used is 0.15 GeV/c$^2$.}\label{fig:Incl_and_Phot}
+\end{figure}
+
+
+
+\section{Acceptance and Efficiency}\label{Efficiency}
+%https://twiki.cern.ch/twiki/bin/view/CALICE/MonteCarloProduction Maybe it was actually GEANT4?
+The total acceptance and efficiency was obtained by using Monte Carlo simulations. The Monte Carlo production used in this analysis was LHC14b3c, which is anchored to the LHC13e run. This production was enhanced with heavy-flavor electrons up to $p_{T}$ of 30 GeV/c. The event generator used in the Monte Carlo production was HIJING. The particles generated were then propagated through the detector using GEANT3. 
+
+\begin{equation}\label{eqn:EfficiencyMC}
+\text{Total Acceptance } \times \text{ Efficiency}= \frac{\text{Electrons reconstructed with the analysis}}{\text{Electrons generated in MC simulation}}
+\end{equation}
+
+The method is given in equation \ref{eqn:EfficiencyMC}. The numerator is given by number of electrons that were reconstructed using the same algorithms and cuts used in the data analysis.
+
+The numerator and denominator for equation \ref{eqn:EfficiencyMC} are shown in figure \ref{fig:M02TightTPCCompareThrownFound}. The red points are the number of heavy flavor electrons reconstructed using the data analysis method. The blue points are the number of heavy flavor electrons generated.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4.5in]{ElectronsThrownAndFound.pdf}\\
+  \caption{Heavy flavor electrons generated and reconstructed for Monte Carlo simulations}\label{fig:M02TightTPCCompareThrownFound}
+\end{figure}
+
+The acceptance and efficiency can be written in terms of the following four factors: $\epsilon^{geo}$, $\epsilon^{reco}$, $\epsilon^{eID}$, $\epsilon^{track-cluster-matching}$.
+
+\begin{equation}\label{eqn:EfficiencyFactors}
+\text{Total Acceptance } \times \text{ Efficiency} = \epsilon^{geo} \times \epsilon^{reco} \times \epsilon^{eID} \times \epsilon^{track-cluster-matching}
+\end{equation}
+
+The factor $\epsilon^{geo}$ is the geometrical acceptance of the detector. This factor accounts for the fact that the electrons can only be measured in the active area of the detectors used in this analysis. The detector that covers the smallest active area in $\phi$ and $\eta$ space is the EMCal. This analysis is limited by the geometrical size of the EMCal since a signal in the EMCal is required to identify electrons. The electrons in the numerator and denominator were given a cut of $-0.6<\eta<0.6$, the same as the analysis acceptance. The electrons were generated across all of $0 < \phi < 2 \pi$, but were only found in the EMCal acceptance region $\sim$ 107$^{\circ}$.
+
+%The physical area of the EMCal is inside of $-0.7<\eta<0.7$ and $0.5 < \phi < 4$. Figure \ref{fig:EtaPhiOfMatchedTracks} gives an impression of the geometrical acceptance of the EMCal. Shown in the figure is the $\eta$ and $\phi$ of tracks that are matched to clusters in the EMCal. The horizontal and vertical pattern seen is due to support structure and detectors underneath the EMCal that hinders tracks from depositing a signal. There are some edge effects in $0.6 < | \eta | < 0.7$.
+%
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=4in]{MatchedTracksEtaPhi.pdf}\\
+%  \caption{$\eta$ and $\phi$ of all tracks matched to clusters in the EMCal. pPb MC simulation}\label{fig:EtaPhiOfMatchedTracks}
+%\end{figure}
+
+The factor $\epsilon^{reco}$ is the reconstruction efficiency which determines how well the hits in the ITS and TPS were reconstructed into tracks. The efficiency that the electrons pass the identification cuts are given by $\epsilon^{eID}$. This includes the cuts $-1 < n^{TPC}_{\sigma} < 3$, $0.8 < E/p < 1.2$ and M20 $<$ 0.35. The efficiency of how well tracks are matched to EMCal clusters is given by $\epsilon^{track-cluster-matching}$.
+
+
+%The number of electrons reconstructed can miss real electrons. It can also include pions that were misidentified as electrons. It can be artificially enhanced by the background.
+
+
+%the event generator for the used Monte Carlo production was HIJING [13]. The primary vertex distribution is made to be similar to the one in data, as shown in Fig. 8. In order to remove unphysical contribution for the generated particles a cut for the production vertex in z direction of ±15cm and the xy plane of 3cm was applied. The generated particles were propagated through the apparatus using GEANT3 [14]. The same reconstruction algorithms and cuts were applied on the MC samples as used in the data analysis.
+%https://twiki.cern.ch/twiki/bin/view/ALICE/TrackParametersMCTruth
+%The first is that these are particles created in the initial (strong) interaction, plus all strong and electroweak decay products. These are all interactions that happen at small range from the detector, which means that this is also (in sloppy terms) the group of particles that points back to the primary vertex.
+
+The total acceptance and efficiency is shown in figure \ref{fig:M02TightTPCEfficiency}. The total acceptance and efficiency varies between 0.5 to 0.12 in the region $2 < p_{T} < 20$. There is more background at low $p_{T}$ which lowers the efficiency. At high $p_{T}$ the tracks are straighter, making them easier to reconstruct.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4.5in]{TotalElectronEfficiency.pdf}\\
+  \caption{Total acceptance $\times$ efficiency as a function of $p_{T}$ for heavy flavor electrons. pPb Monte Carlo simulation.}\label{fig:M02TightTPCEfficiency}
+\end{figure}
+
+%Figure \ref{fig:CompareEfficiency} shows the effect of tighter or looser electron identification cuts on the total acceptance and efficiency. The green points have the most liberal particle identification cuts. The red points have the tightest cuts on electron identification, which include a shower shape and TPC particle identification cut. All four have an EMCal electron identification cut $0.8 < E/p < 1.2$ and background contamination subtracted. The geometrical acceptance of the detector does not depend on the particle identification cuts used. The variation on the total acceptance and efficiency is due to the efficiency's dependence on the particle identification cuts chosen. As expected, as the cuts on the electron get narrower, the efficiency decreases. However, the purity of the electron sample should increase with more stringent particle identification cuts.
+%
+%
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=5.5in]{CompareEfficiency}\\
+%  \caption{Effect of various electron identification cuts on the total acceptance and efficiency. The green points have the most loose particle identification cuts. The red points have the tightest cuts. All four have a $0.8 < E/p < 1.2$ cut. pPb MC simulation}\label{fig:CompareEfficiency}
+%\end{figure}
+
+
+
+
+
+\section{Error Analysis}
+
+Sources of uncertainties in this analysis are due to systematic errors associated with particle identification cuts, systematic errors of the background determination from fitting, uncertainty in the trigger scaling, and systematic errors of the photonic electron background. 
+%limited Monte Carlo simulation statistics,
+%error on the uncertainty MB cross section
+%, and uncertainty of the cocktail background.
+%Add the errors in quadrature 
+
+\subsection{Particle identification systematics: $n^{TPC}_{\sigma}$}
+In order to determine the magnitude of the systematic error of the particle identification cuts, the cut is varied and the spectra of heavy flavor electrons is calculated with the varied cut. The ratio of the yield of heavy flavor electrons for the reference and the variation gives an approximate size of the systematic effect of the cut \cite{Barlow:2002yb}. The ratio is fitted with a straight line to find the magnitude of the systematic error.
+% \cite(Barlow:2002yb) Systematic Errors: Facts and Fictions Roger Barlow
+
+The reference spectrum has the particle identification cuts of -1 $<$ $n^{TPC}_{\sigma}$ $<$ 3, M02 $<$ 0.35, and 0.8 $< E/p <$ 1.2. The variation spectrum only differs from the reference by one PID cut at a time. For example, 
+
+\vspace{3mm}
+
+\begin{tabular}{| l c c c |}
+\hline
+Reference: & -1 $<$ $n^{TPC}_{\sigma}$ $<$ 3 & M02 $<$ 0.35 & 0.8 $< E/p <$ 1.2 \\
+Variation: & -0.8 $<$ $n^{TPC}_{\sigma}$ $<$ 3 & M02 $<$ 0.35 & 0.8 $< E/p <$ 1.2  \\
+\hline
+\end{tabular}
+
+\vspace{3mm}
+
+For brevity, in the following tables and plots the only cuts that are different from the reference cuts will be explicitly stated.
+
+The equation for the invariant yield is given by \ref{eqn:Inv Yield}. The geometrical acceptance, $p_{T}$ bin size, and number of events accepted will be the same for the default and variation ID cuts. With a tighter electron identification cut, the number of electrons found will be smaller. However, the efficiency of finding an electron will also be smaller with a tighter identification cut. Given a perfect detector and infinite statistics, the two yields should be identical. The difference in spectra is assumed to be due to the systematic error in the particle identification cut. 
+
+
+%The ratio in yield is given by: 
+%\begin{equation}\label{eqn:Inv Yield ratio}
+%\frac{N_{configuration}}{N_{reference}} = \frac{ \big( N_{All \, e^{\pm}} - N_{Phot \, e^{\pm}}/\epsilon_{Phot \, e^{\pm}} \big)_{configuration} }{\big( N_{All \, e^{\pm}} - N_{Phot \, e^{\pm}}/\epsilon_{Phot \, e^{\pm}} \big)_{reference}} \times \frac{\epsilon^{eID}_{reference}}{\epsilon^{eID}_{configuration}}
+%\end{equation}
+
+
+The $n^{TPC}_{\sigma}$ cut was used to enhance electrons. Most of the background contamination is on the negative side of $n^{TPC}_{\sigma}$ so the default cut chosen was asymmetrical,  -1 $<$ $n^{TPC}_{\sigma}$ $<$ 3. Table \ref{tab: TPC syst} lists the variations used to determine the systematic uncertainty of the TPC PID cut. 
+
+\begin{table}[h]
+\begin{center}
+\caption{Table of $n^{TPC}_{\sigma}$ variation cuts} \label{tab: TPC syst}
+\begin{tabular}{| l c r c l |}
+\hline
+Reference: & -1 $<$ $n^{TPC}_{\sigma}$ $<$ 3 &  &  &  \\
+ &  & Effect at $p_{T}$ 2-10 & 8-16 & 14-30 GeV/c\\
+ \hline
+Variation: & -1.25 $<$ $n^{TPC}_{\sigma}$ $<$ 3.5 &  -1\% & +6\% & +7\% \\
+Variation: & -1.2 $<$ $n^{TPC}_{\sigma}$ $<$ 3 &  -1\% & +2\% & +4\%  \\
+Variation: & -1 $<$ $n^{TPC}_{\sigma}$ $<$ 3.5 &  negl. & negl. & negl. \\
+Variation: & -1 $<$ $n^{TPC}_{\sigma}$ $<$ 2.5 &  negl. & negl. & negl. \\
+Variation: & -0.8 $<$ $n^{TPC}_{\sigma}$ $<$ 3 &  -1\% & +3\% & +2\% \\
+Variation: & -0.5 $<$ $n^{TPC}_{\sigma}$ $<$ 1 &  -1\% & -6\% & +1\% \\
+%Variation: & -1.5 $<$ $n^{TPC}_{\sigma}$ $<$ 3.5 &  -3\% & +12\% & +12\% \\
+%Variation: & -0.5 $<$ $n^{TPC}_{\sigma}$ $<$ 2.5 &  -1\% & -13\% & +1\% \\
+%Variation: & -0.5 $<$ $n^{TPC}_{\sigma}$ $<$ 3 &  -1\% & -14\% & +1\% \\
+\hline
+& Total Effect: & $\pm$1\% & $\pm$6\% & $\pm$7\% \\
+\hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+Changing the positive side of the $n^{TPC}_{\sigma}$ produces a negligible effect. This is expected because there is little background contamination on the positive side of $n^{TPC}_{\sigma}$and because the number of electrons should change very little at 3$\sigma$ away from the electron signal. Changing the cut on the negative side has a more noticeable effect. 
+
+Figure \ref{fig:Sys125_35TPC} shows a sample of plots for the $n^{TPC}_{\sigma}$ cut systematics. All of the plots have the variation of -1.25 $<$ $n^{TPC}_{\sigma}$ $<$ 3.5. The left figure shows Minimum Bias events for 2 $< p_{T} < 10$. The ratio of the variation yield to the reference yield is approximately 0.9896, indicating a systematic effect of -1\% in this $p_{T}$ range. The middle figure shows EG2 events, with a trigger threshold around 7 GeV. The effect in middle plot, 8 $< p_{T} < 16$, is approximately +6\%. The right plot shows EG1 events that have a trigger threshold of about 11 GeV/c. The ratio indicates approximately a +7\% effect in the 14 $< p_{T} < 30$ region.
+
+%Sys125_35TPC.pdf
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6.0in]{Sys125_35TPC}\\
+\caption{Estimating the systematic effect of the $n^{TPC}_{\sigma}$ cut. The variation configuration has a cut of -1.25 $<$ $n^{TPC}_{\sigma}$ $<$ 3.5. The reference cut is  -1 $<$ $n^{TPC}_{\sigma}$ $<$ 3. pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE.}\label{fig:Sys125_35TPC}
+\end{figure}
+
+\subsection{Particle identification systematics: Shower Shape}
+
+The same procedure from the $n^{TPC}_{\sigma}$ systematics was applied to the shower shape cut. The default cut chosen for this analysis was M20 $<$ 0.35.  Table \ref{tab: ShowerShapeSyst} shows a list of tighter and looser cuts on M20 that was used to determine the systematics. (Refer to figure \ref{fig:ULSShowerShape} to see common values for M20 for electrons and hadrons.) The shower shape cut was determined to have a weak systematic effect at low $p_{T}$ and an effect of $\pm$6\% at high $p_{T}$. Table \ref{tab: ShowerShapeSyst} shows the systematic errors in each $p_{T}$ range of the variations that were implemented and the total systematic effect of the shower shape cut.
+
+\begin{table}[h]
+\begin{center}
+\caption{Table of shower shape variation cuts} \label{tab: ShowerShapeSyst}
+\begin{tabular}{| l c r c l |}
+\hline
+Reference: & M02 $<$ 0.35 &  &  & \\
+ & & Effect at $p_{T}$ 2-10 & 8-16 & 14-30 GeV/c\\
+\hline
+Variation: & M20 $<$ 0.38 &  -1\% & -1\% & -5\% \\
+Variation: & M20 $<$ 0.32 &  +1\% & +2\% & +1\% \\
+Variation: & M20 $<$ 0.3 & +1\% & +1\% & +2\% \\
+Variation: & M20 $<$ 0.28 &  -1\% & +2\% & +4\% \\
+Variation: & M20 $<$ 0.25 &  -1\% & -1\% & +6\% \\
+%Variation: & M20 $<$ 0.45 & -1\% & -1 \% & -12\% \\
+%Variation: & M20 $<$ 0.4 &  -1\% & +1\% & -9\% \\
+\hline
+& Total Effect: & $\pm$1\% & $\pm$2\% & $\pm$6\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Figure \ref{fig:Sys32M20.pdf} shows some example plots for the shower shape systematics. For low transverse momentum, $p_{T} <$ 10, the shower shape cut has a weak systematic effect. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5.5in]{Sys32M20.pdf}\\
+\caption{EMCal Shower Shape systematic effect. The reference cut is M20 $<$ 0.35. pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE.}\label{fig:Sys32M20.pdf}
+\end{figure}
+
+
+
+\subsection{Particle identification systematics: $E/p$}
+
+Electrons are expected to have an $E/p$ near unity. The default cut was chosen to be 0.8 $< E/p <$ 1.2. Table \ref{tab:E/p Syst} shows the variations of $E/p$ cuts used to determine the systematics. Various looser and tighter cuts on $E/p$ were studied. Minimum bias data were the most sensitive to the $E/p$ cuts. This is most likely due to the fact that the $E/p$ signal peak varies between 0.95 and 1.0 in minimum bias data, which is not reproduced in the Monte Carlo simulations. 
+
+\begin{table}[h]
+\begin{center}
+\caption{Table of $E/p$ variation cuts} \label{tab:E/p Syst}
+\begin{tabular}{| l c r c l |}
+\hline
+Reference: & 0.8 $< E/p <$ 1.2 &  &  &  \\
+ &  & Effect at $p_{T}$ 2-10 & 8-16 & 14-30 GeV/c\\
+ \hline
+%Variation: & 0.7 $< E/p <$ 1.3 &  -9\% & -5\% & -7\% \\
+Variation: & 0.75 $< E/p <$ 1.2 &  -5\% & -2\% & -2\% \\
+Variation: & 0.775 $< E/p <$ 1.225 &  -3\% & -2\% & -2\% \\
+%Variation: & 0.9 $< E/p <$ 1.2 &  +13\% & +7\% & -5\% \\
+Variation: & 0.8 $< E/p <$ 1.3 &  -1\% & -2\% & -4\% \\
+Variation: & 0.8 $< E/p <$ 1.1 &  -1\% & -2\% & +2\% \\
+%Variation: & 0.925 $< E/p <$ 1.075 &  +17\% & +4\% & -7\% \\
+%Variation: & 0.9 $< E/p <$ 1.1 &  +12\% & +5\% & -2\% \\
+Variation: & 0.825 $< E/p <$ 1.175 &  +3\% & +2\% & +1\% \\
+Variation: & 0.85 $< E/p <$ 1.15 &  +5\% & +3\% & +2\% \\
+\hline
+& Total Effect: & $\pm$5\% & $\pm$3\% & $\pm$4\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+Figure \ref{fig:Sys825_1175Eop.pdf} shows a representative plot for the $E/p$ systematic determination. These plots show the tighter cut variation of 0.825 $< E/p <$ 1.175 as compared to the reference cut for minimum bias, and EG2 and EG1 triggered data. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{Sys825_1175Eop.pdf}\\
+  \caption{EMCal $E/p$ systematic effect. The reference cut is 0.8 $< E/p <$ 1.2. pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE.}\label{fig:Sys825_1175Eop.pdf}
+\end{figure}
+
+%$E/p$ changing on the left side makes me too sensitive to the hadronic background. I'm just trying to get a feeling for the systematic error on the $E/p$ PID cut, not on the hadronic background on this section. The hadronic background is interfering with the left edge.
+
+%Christine said to just put a few example plots in the thesis and put the rest in the appendix, or don't include them because it might open myself to questions.
+
+
+%\begin{tabular}{ | r r c c |  }\label{tab:PID Syst}
+%\hline
+%&PID Systematics&& \\
+%\hline
+% Cut &  Effect at $p_{T}$ 2-10 GeV/c & 8-18 GeV/c & 14-24 GeV/c\\
+% \hline
+%Shower Shape & 1\% & 1\% & 8\% \\
+%TPC n$\sigma_{electron}$ & $<$2\% & 1\% &  4\% \\
+%$E/p$ &  ?  & 4\% & 7\% \\
+%\hline
+%\end{tabular}
+
+
+\subsection{Background Determination Systematics}
+
+    There is a systematic error in the expected number of electrons due to not knowing the exact function to use to fit the background and signal in the $E/p$ windows. (Refer to \ref{subsec:Hadron Background Subtraction} for more information on background fitting and subtraction.) To estimate the size of this systematic error, the fitting function was varied. The ratio of number of electrons found with the varied and default fitting function gives an estimation of the size of the fitting systematic error. 
+    
+  \begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{SampleBackgroundFits}\\
+  \caption{Fitting E/p windows with various functions in pPb collisions at $\sqrt{s} = 5.02$ TeV, measured in ALICE.}\label{fig:SampleBackgroundFits}
+\end{figure}
+
+    To estimate the size of the systematic error due to the background fitting, an exponential function and second order polynomial function was used for the variation background function. The settings of the default function were also varied. Figure \ref{fig:SampleBackgroundFits} shows the default fitting function and three sample functions tried for the same $p_{T}$ range and PID cuts. The top left plot shows the default fit with the default PID cuts. In the top right plot, the default function was used but the range of the fit region was decreased. Altering the range of the fit region modified the shape of the background function slightly, which can enhance or reduce the number of electrons found. In the bottom left plot, a second order polynomial function was used for the background function. The polynomial function in this plot created a larger signal area and a smaller background area as compared to the default, causing the number of electrons found to be increased for this $p_{T}$ bin. In the bottom right plot, an exponential function was used for the background. The exponential function has less of a bend as compared to the reference fit, which has a result of estimating a larger background area. The number of electrons found was slightly less for this $p_{T}$ bin.
+    
+    \begin{table}[h]
+\begin{center}
+\caption{Table of the hadron background subtraction systematics}\label{tab:fittingbackground}
+\begin{tabular}{| l c r c l |}
+\hline
+& Background Variation & Effect at p$_{T}$ 2-10 & 8-16 & 14-30 GeV/c \\
+\hline
+Variation: & Exponential Background &  +6\%  &  -2\% & -8\% \\
+Variation: & Polynomial Background & +3\% & +7\% & -8\% \\
+Variation: & Smaller Fit Range & +1\% & +1\% & -1\% \\
+Variation: & Larger Fit Range & -1\% & +1\% & +2\% \\
+\hline
+&Total Effect: & $\pm$6\% & $\pm$7\% & $\pm$8\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+    
+        Table \ref{tab:fittingbackground} shows the background functions and variations and their estimated systematic effect. To be conservative, the larger numbers were used to estimate the total size of the systematic error due to fitting the background area.
+    
+    There is also a systematic error due to not knowing the true shape of the signal shape. To get an estimation of this effect, the fitting of the electron signal width and peak position were varied. 
+    In order to get the best estimation of the number of electrons the default function allows the $E/p$ peak to be inside of a small range near $E/p$ = 1.0. One variation that was tried restricted the signal $E/p$ peak to be at 1.0. This had a larger effect in minimum bias data, since the electron signal peak drifts with $p_{T}$ in the minimum bias data. In the 2 $< p_{T} < $4 range, the signal peaks at around $E/p$ = 0.95. For the next three $p_{T}$ bins the signal peaks at around $E/p$ = 0.975, 0.99, and 1.0. Above $p_{T}$ = 10, and for the triggered data, the $E/p$ peak is stable at 1. Varying the signal $E/p$ peak has a larger effect in minimum bias data than in the triggered data due to the shifting electron signal position. 
+    The default fitting function allows the width of the signal Gaussian width to be in a small range. One variation tried was restricting the Gaussian width to be exactly 0.063, the average signal width. Table \ref{tab:signalFitting} shows the systematic effect of these variations on the electron signal fitting.
+
+    
+\begin{table}
+\begin{center}
+\caption{Table of the electron signal fitting systematics}\label{tab:signalFitting}
+\begin{tabular}{| l c r c l |}
+\hline
+& Signal Fitting Variation & Effect at p$_{T}$ 2-10 & 8-16 & 14-30 GeV/c \\
+\hline
+Variation: & Restricting $e^{\pm}$ peak position & -6\% & +1\% & -2\%\\
+Variation: & Restricting $e^{\pm}$ peak width & -3\% & +1\% & -2\% \\
+\hline
+&Total Effect: & $\pm$6\% & $\pm$1\% & $\pm$2\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Total Systematics}
+
+Table \ref {tab:TotalSyst} shows a summary of the systematic errors from this analysis. The total systematics for the heavy flavor electron yield in minimum bias events was 10.4\%. The systematics for EG2 events is 16\% and EG1 events is 14\%. 
+
+To calculate the heavy flavor electron cross section, the yield needs to be multiplied by $\sigma_{MB}^{V0} = 2.09$ barns $\pm 0.07$ (syst)\cite{Abelev:2014epa}. This value has a systematic error of 3.4\%.
+
+\begin{table}[h]
+\begin{center}
+\caption{Table of the summary of systematic errors}\label{tab:TotalSyst}
+\begin{tabular}{| r r c l |}
+\hline
+Source &  Effect at $p_{T}$ 2-10 & 8-16 & 14-30 GeV/c\\
+\hline
+\rule{0pt}{3ex}$n^{TPC}_{\sigma}$ & $\pm$1\% & $\pm$6\% & $\pm$7\% \\
+Shower Shape & $\pm$1\% & $\pm$2\% & $\pm$6\% \\
+$E/p$ & $\pm$5\% & $\pm$3\% & $\pm$4\% \\
+Background signal fitting & $\pm$6\% & $\pm$7\% & $\pm$8\% \\
+Electron signal fitting & $\pm$6\% & $\pm$1\% & $\pm$2\% \\
+Trigger Scaling & NA & 12\% & 3\%\\
+Track matching & & 1\% & \\
+Photonic Electron & & 3\% & \\
+\hline
+\rule{0pt}{3ex}Total Systematics for yield & 10\% & 16\% & 14\%\\
+\hline
+\rule{0pt}{3ex}Systematics for $\sigma_{MB}^{V0}$ &  & 3.4\% & \\
+%Cocktail background & & 0.06 & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+    
+
+

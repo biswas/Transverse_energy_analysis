@@ -1,0 +1,1000 @@
+    4  r BESData.cpp
+    5  clear
+    6  r constObjTest.cpp 
+    7  clear
+    8  r BESData.cpp
+    9  clear
+   10  r BESData.cpp
+   11  clear
+   12  r BESData.cpp
+   13  clear
+   14  r constObjTest.cpp 
+   15  clear
+   16  r constObjTest.cpp 
+   17  r BESData.cpp
+   18  r
+   19  r BESData.cpp
+   20  exit
+   21  trialdir
+   22  l
+   23  pluma BESData.cpp &
+   24  r BESData.cpp
+   25  clear
+   26  r BESData.cpp
+   27  r
+   28  r BESData_sortingRemains.cpp
+   29  clear
+   30  r BESData_sortingRemains.cpp
+   31  clear
+   32  r BESData_sortingRemains.cpp
+   33  l
+   34  mv BESData_sortingRemains.cpp BESData_forSorted.cpp
+   35  pluma BESData_forSorted.cpp &
+   36  clear
+   37  r BESData_sortingRemains.cpp
+   38  r BESData_forSorted.cpp
+   39  clear
+   40  r BESData_forSorted.cpp
+   41  l
+   42  clear
+   43  r BESData_forSorted.cpp
+   44  clear
+   45  r BESData_forSorted.cpp
+   46  exit
+   47  ## create list of histo objects instead of histos that have the same pointer variable for different object constructs
+   48  trialdir 
+   49  l
+   50  pluma BESData_forSorted.cpp &
+   51  r BESData_forSorted.cpp
+   52  clear
+   53  r BESData_forSorted.cpp
+   54  clear
+   55  r BESData_forSorted.cpp
+   56  clear
+   57  r BESData_forSorted.cpp
+   58  clear
+   59  r BESData_forSorted.cpp
+   60  clear
+   61  r BESData_forSorted.cpp
+   62  clear
+   63  r BESData_forSorted.cpp
+   64  clear
+   65  r BESData_forSorted.cpp
+   66  clear
+   67  r BESData_forSorted.cpp
+   68  clear
+   69  r BESData_forSorted.cpp
+   70  clear
+   71  r BESData_forSorted.cpp
+   72  clear
+   73  r BESData_forSorted.cpp
+   74  clear
+   75  r BESData_forSorted.cpp
+   76  clear
+   77  r
+   78  history | grep pluma
+   79  pluma BESData_sorted.txt &
+   80  exit
+   81  trialdir
+   82  l
+   83  pluma BESData_sorted.txt &
+   84  exit
+   85  trialdir 
+   86  l
+   87  r BESData_forSorted.cpp 
+   88  ### utk paper repository
+   89  ### svn
+   90  ### utkpapers
+   91  ### revtex for prc style
+   92  ### rebecca's thesis/template
+   93  ### should be using bibtex: manages the order of all your references... handles all your styles
+   94  ### copy and paste in bibtex: https://inspirehep.net/record/1427723/export/hx   and then ~\cite{name}
+   95  ### intro start with.... phase diagram
+   96  ### use figure from christinne's colloquium
+   97  ### intro from the paper you're getting the spectra from, the figure is also there
+   98  ### .... search for the critical point... and why we are even doing this
+   99  ### i.e., the BES paper
+  100  ### that intro, in your own words, should be enough
+  101  ### whole point in the paper is to look for phase transition..... also strangeness enhancement
+  102  ### you need stuff about formation of QGP/Bjorken energy density equation
+  103  ### 2. Method
+  104  ### A. Brief description of BES data; B.Description of fit method for calculating E_T; C. Description of Sys. uncertainties (add them in quadrature? lets see!)
+  105  ### 3.Results; A. Comparison to previous results; B. Fractions of energy by particle; C. E_T vs sqrt(s), N_ch, etc. by particle
+  106  exit
+  107  history
+  108  trialdir
+  109  l
+  110  pluma BESData_sorted.txt &
+  111  r BESData_forSorted.cpp 
+  112  r
+  113  l
+  114  pluma BESData_forSorted.cpp &
+  115  r BESData_forSorted.cpp 
+  116  l
+  117  cd integrals/
+  118  ls
+  119  l
+  120  cd -
+  121  r BESData_forSorted.cpp 
+  122  l
+  123  r BESData_forSorted.cpp 
+  124  l
+  125  cd piPlusFits/
+  126  l
+  127  cd rootFiles/
+  128  l
+  129  cd ../macros/
+  130  l
+  131  cd ~
+  132  l
+  133  history>history_11Oct2017
+  134  pluma history_11Oct2017 &
+  135  cd rhip/
+  136  find .-name FitSTARData.C
+  137  find . -name FitSTARData.C
+  138  pluma forcharles/FitSTARData.C &
+  139  pluma ./forcharles/backgroundgeneratorlevyfitfunctions/FitSTARData.C &
+  140  trialdir
+  141  l
+  142  r BESData_forSorted.cpp 
+  143  r
+  144  r BESData_forSorted.cpp 
+  145  cd ..
+  146  l
+  147  l forcharles
+  148  l fromCharles/
+  149  l fromCharles/macros/
+  150  cd -
+  151  l
+  152  l integrals/
+  153  pluma integrals/fitTrialClean.cpp &
+  154  cd integrals/
+  155  r fitTrialClean.cpp
+  156  cp ../BESData.root ./BESData.root
+  157  cp fitTrialClean.cpp fitBESData.cpp
+  158  pluma fitBESData.cpp &
+  159  cd -
+  160  r BESData_forSorted.cpp 
+  161  cd -
+  162  r fitBESData.cpp
+  163  r fitTrialClean.cpp
+  164  r fitBESData.cpp
+  165  cd -
+  166  r BESData_forSorted.cpp 
+  167  cd-
+  168  cd -
+  169  l
+  170  cp ../BESData.root ./BESData.root
+  171  r fitBESData.cpp
+  172  l
+  173  mv cent8_ka+_Au+Au_39.pdf cent8_ka+_Au+Au_39.png
+  174  display cent8_ka+_Au+Au_39.png 
+  175  exit
+  176  trialdie
+  177  trialdir 
+  178  l
+  179  cd integrals/
+  180  l
+  181  pluma fitBESData.cpp &
+  182  r fitBESData.cpp
+  183  l
+  184  pluma ../BESData_sorted.txt &
+  185  pluma fitBESData.cpp &
+  186  r fitBESData.cpp
+  187  l .
+  188  l ..
+  189  l ../
+  190  cp ../BESData_forSorted.cpp ../BESData_forSorted_YaxisTransformed.cpp
+  191  l ..
+  192  pluma ../BESData_forSorted_YaxisTransformed.cpp &
+  193  cd ..
+  194  l
+  195  r BESData_forSorted_YaxisTransformed.cpp
+  196  l
+  197  cp BESData_transformed.root integrals/BESData_transformed.root
+  198  cd integrals/
+  199  l
+  200  r fitBESData.cpp 
+  201  l
+  202  r fitBESData.cpp 
+  203  exit
+  204  trialdir
+  205  cd integrals/
+  206  l
+  207  r fitBESData.cpp 
+  208  exit
+  209  trialdir
+  210  cd integrals/
+  211  r fitBESData.cpp 
+  212  l
+  213  exit
+  214  trialdir/integrals
+  215  trialdir
+  216  cd integrals/
+  217  l
+  218  pluma fitBESData.cpp &
+  219  r fitBESData.cpp 
+  220  exit
+  221  trialdir 
+  222  cd integrals/
+  223  l
+  224  pluma fitBESData.cpp &
+  225  r fitBESData.cpp 
+  226  l
+  227  pluma fitBESoneByone.cpp &
+  228  exit
+  229  history | grep #
+  230  history | grep grep
+  231  history | grep "##"
+  232  su yum install emacs
+  233  su pip install emacs
+  234  sudo yum install emacs
+  235  sudo yum install texlive
+  236  which texlive
+  237  whereis texlive
+  238  l Downloads/
+  239  mkdir rhip/publication
+  240  mv Downloads/Rebecca\ Thesis\ Latex\ Files.zip rhip/publication/
+  241  l Downloads/
+  242  cd rhip/publication/
+  243  l
+  244  mv Rebecca\ Thesis\ Latex\ Files.zip RebeccaThesisLatexFiles.zip
+  245  l
+  246  gunzip RebeccaThesisLatexFiles.zip
+  247  tar unzip RebeccaThesisLatexFiles.zip 
+  248  unzip RebeccaThesisLatexFiles.zip 
+  249  l
+  250  mv RebeccaThesisLatexFiles.zip  ../
+  251  l
+  252  rm *
+  253  l
+  254  mkdir Rebecca
+  255  unzip ../RebeccaThesisLatexFiles.zip -d Rebecca/
+  256  l
+  257  l Rebecca/
+  258  emacs references-Rebecca.bib &
+  259  emacs &
+  260  l
+  261  pluma references.bib &
+  262  pluma Rebecca/appendix-1.tex &
+  263  pluma Rebecca/abstract.tex &
+  264  pluma abstract1.tex &
+  265  pluma ../trialCodes/integrals/fitBESData.cpp &
+  266  pluma Rebecca/RebeccaScott-dissertation.tex &
+  267  l
+  268  pluma dissertation.tex &
+  269  latex abstract1.tex 
+  270  l
+  271  latex dissertation.tex 
+  272  sudo texconfig rehash
+  273  latex dissertation.tex 
+  274  cd -
+  275  cd rhip/trialCodes/integrals/
+  276  ls
+  277  cd ..
+  278  l
+  279  pluma BESData_sorted_transformed.cpp &
+  280  cp BESData_sorted_transformed.cpp ~/rhip/analysisCodes/
+  281  cp BESData.txt ~/rhip/analysisCodes/
+  282  cp BESData_sorted.txt ~/rhip/analysisCodes/
+  283  l
+  284  cd integrals/
+  285  ;
+  286  l
+  287  cp fitBESData.cpp ~/rhip/analysisCodes/
+  288  cp fitBESoneByone.cpp ~/rhip/analysisCodes/
+  289  cd ../analysisCodes/
+  290  l
+  291  pluma BESData_sorted_transformed.cpp &
+  292  mv BESData_sorted_transformed.cpp BESDataToRootFile.cpp
+  293  l
+  294  r BESDataToRootFile.cpp 
+  295  l
+  296  pluma fitBESData.cpp &
+  297  mkdir fittedPlots
+  298  l
+  299  r fitBESData.cpp 
+  300  l
+  301  r fitBESData.cpp 
+  302  l
+  303  pluma fitResults.dat &
+  304  r fitBESData.cpp 
+  305  exit
+  306  cd rhip/analysisCodes/
+  307  l
+  308  pluma fitResults.dat &
+  309  pluma fitBESData.cpp &
+  310  r fitBESData.cpp 
+  311  exit
+  312  trialdir
+  313  l
+  314  history | grep find
+  315  find . -name allinone*
+  316  cd integrals/
+  317  l
+  318  pluma allinone.cpp &
+  319  r allinone.cpp 
+  320  cd ..
+  321  l
+  322  cd ..
+  323  l
+  324  cd analysisCodes/
+  325  l
+  326  pluma fitBESData.cpp &
+  327  r fitBESData.cpp
+  328  exit
+  329  cd rhip/analysisCodes/
+  330  r fitBESData.cpp
+  331  exit
+  332  ### use glauber model for Et/(2 N_part) calculation
+  333  ### see link Christinne sent
+  334  ### paper gonna be one of our references
+  335  ### assume the percentage error remains the largest when you combine centrality bins
+  336  ### look in the STAR paper and see if it has N_part values
+  337  exit
+  338  cd rhip/analysisCodes/
+  339  l
+  340  fittedPlots
+  341  cd fittedPlots/
+  342  l
+  343  cd ..
+  344  l
+  345  pluma fitBESoneByone.cpp &
+  346  r fitBESoneByone.cpp
+  347  r fitBESData.cpp
+  348  cd rhip/analysisCodes/
+  349  l
+  350  cd fittedPlots
+  351  l
+  352  display cent0_pi-_Au+Au_7.7.png
+  353  cd -
+  354  pluma fitBESData.cpp &
+  355  pluma fitBESoneByone.cpp &
+  356  r fitBESoneByone.cpp
+  357  r fitBESData.cpp
+  358  r fitBESoneByone.cpp
+  359  r fitBESData.cpp
+  360  exit
+  361  cd rhip/analysisCodes/
+  362  l
+  363  pluma fitBESData.cpp &
+  364  exit
+  365  cd rhip/analysisCodes/
+  366  l
+  367  pluma fitBESData.cpp &
+  368  r fitBESData.cpp
+  369  r
+  370  r fitBESData.cpp
+  371  exit
+  372  cd rhip/analysisCodes/
+  373  k
+  374  l
+  375  pluma fitResults.dat &
+  376  r fitBESData.cpp
+  377  pluma fitBESData.cpp &
+  378  r fitBESData.cpp
+  379  pluma fitBESData.cpp &
+  380  exit
+  381  cd rhip/analysisCodes/
+  382  l
+  383  pluma fitBESData_main.cpp &
+  384  mkdir fittedPlots2
+  385  l
+  386  pluma fitResults.dat &
+  387  r fitBESData_main.cpp
+  388  clear
+  389  r fitBESData_main.cpp
+  390  clear
+  391  r fitBESData_main.cpp
+  392  clear
+  393  r fitBESData_main.cpp
+  394  clear
+  395  r fitBESData_main.cpp
+  396  clear
+  397  r fitBESData_main.cpp
+  398  clear
+  399  r fitBESData_main.cpp
+  400  clear
+  401  r fitBESData_main.cpp
+  402  clear
+  403  r fitBESData_main.cpp
+  404  clear
+  405  r fitBESData_main.cpp
+  406  clear
+  407  r fitBESData_main.cpp
+  408  clear
+  409  r fitBESData_main.cpp
+  410  clear
+  411  r fitBESData_main.cpp
+  412  clear
+  413  r fitBESData_main.cpp
+  414  exit
+  415  cd rhip/analysisCodes/
+  416  l
+  417  pluma fitBESData_main.cpp &
+  418  r fitBESData_main.cpp
+  419  pluma fitBESData_main.cpp &
+  420  r fitBESData_main.cpp
+  421  exit
+  422  cd rhip/analysisCodes/
+  423  l
+  424  r fitBESData_main.cpp
+  425  exit
+  426  cd rhip/analysisCodes/
+  427  r fitBESData_main.cpp
+  428  pluma fitBESData_main.cpp &
+  429  exit
+  430  cd rhip/analysisCodes/
+  431  r fitBESData_main.cpp
+  432  exit
+  433  cd rhip/analysisCodes/
+  434  r fitBESData_main.cpp
+  435  exit
+  436  cd rhip/analysisCodes/
+  437  r fitBESData_main.cpp
+  438  exit
+  439  cd rhip/analysisCodes/
+  440  r fitBESData_main.cpp
+  441  exit
+  442  cd rhip/analysisCodes/
+  443  r fitBESData_main.cpp
+  444  exit
+  445  cd rhip/analysisCodes/
+  446  r fitBESData_main.cpp
+  447  r fitBESData.cpp
+  448  cd rhip/analysisCodes/
+  449  l
+  450  r fitBESData_main.cpp 
+  451  r fitBESData
+  452  r fitBESData.cpp
+  453  l
+  454  mkdir fittedPlots3
+  455  r fitBESData3.cpp
+  456  exit
+  457  r
+  458  r .q
+  459  exit
+  460  cd rhip/analysisCodes/
+  461  l
+  462  r fitBESData3.cpp
+  463  exit
+  464  cd rhip/analysisCodes/
+  465  r fitBESData3.cpp
+  466  exit
+  467  cd rhip/analysisCodes/
+  468  exit
+  469  cd rhip/analysisCodes/
+  470  r fitBESData3.cpp
+  471  exit
+  472  rhip/analysisCodes/
+  473  cd rhip/analysisCodes/
+  474  cd .
+  475  cd -
+  476  cd ~
+  477  l
+  478  history | grep *aliases*
+  479  history | grep *aliases
+  480  history | grep ./alia*
+  481  find *alia*
+  482  l ?
+  483  ls
+  484  clear
+  485  l -all
+  486  history | grep ./
+  487  history | grep ./al
+  488  history | grep ./bas
+  489  history | grep . bashr
+  490  history | grep .bashr
+  491  source ~/.bashrc
+  492  pluma ~/.bashrc &
+  493  p
+  494  hg
+  495  hgrep
+  496  source ~/.bashrc
+  497  source .bashrc
+  498  source ~/.bashrc
+  499  pluma .bashrc &
+  500  source .bashrc
+  501  sourcebash
+  502  source .bashrc
+  503  p rhip/analysisCodes/fitBESData.cpp
+  504  system-detect-virt
+  505  systemd-detect-virt
+  506  systemd-path
+  507  monitor
+  508  cd rhip/analysisCodes/
+  509  l
+  510  p fitBESData.h &
+  511  p fitBESData3.cpp &
+  512  p fitBESData3.h &
+  513  cd ..
+  514  l
+  515  cd ..
+  516  cd rhip/analysisCodes/
+  517  l
+  518  p fitBESData3.h
+  519  p fitBESData3.h &
+  520  p fitBESData3.cpp &
+  521  p fitBESData3.h &
+  522  r fitBESData3.cpp
+  523  exit
+  524  cd rhip/analysisCodes/
+  525  l
+  526  p fitBESData3.cpp &
+  527  r fitBESData3.cpp
+  528  p fitBESData3.h &
+  529  r fitBESData3.cpp
+  530  r
+  531  ### each iteration of the loop consumes, cumulatively, ~30 MB memory!!!
+  532  r fitBESData3.cpp
+  533  exit
+  534  cd rhip/analysisCodes/
+  535  r fitBESData3.cpp
+  536  clear
+  537  r fitBESData3.cpp
+  538  exit
+  539  cd rhip/analysisCodes/
+  540  r fitBESData3.cpp
+  541  exit
+  542  cd rhip/analysisCodes/
+  543  r fitBESData3.cpp
+  544  exit
+  545  cd rhip/analysisCodes/
+  546  r fitBESData3.cpp
+  547  exit
+  548  cd rhip/analysisCodes/
+  549  r fitBESData3.cpp
+  550  cd rhip/analysisCodes/
+  551  r fitBESData3.cpp
+  552  cd rhip/analysisCodes/
+  553  r fitBESData3Test.cpp
+  554  cd rhip/analysisCodes/
+  555  r fitBESData3Test.cpp
+  556  cd rhip/analysisCodes/
+  557  r fitBESData3Test.cpp
+  558  cd rhip/analysisCodes/
+  559  r fitBESData3Test.cpp
+  560  cd rhip/analysisCodes/
+  561  r fitBESData3Test.cpp
+  562  exit
+  563  top
+  564  htop -s=MEM
+  565  top -s=MEM
+  566  top -s MEM
+  567  cd rhip/analysisCodes/
+  568  l
+  569  pluma fitBESData3Test.cpp &
+  570  r fitBESData3Test.cpp
+  571  cd rhip/analysisCodes/
+  572  pluma fitBESData3Test.cpp &
+  573  r fitBESData3Test.cpp
+  574  r fitBESData3.cpp
+  575  cd rhip/analysisCodes/
+  576  r fitBESData3.cpp
+  577  pluma fitBESData3.cpp &
+  578  r fitBESData3.cpp
+  579  cd rhip/analysisCodes/
+  580  r fitBESData3.cpp
+  581  cd rhip/analysisCodes/
+  582  l
+  583  cp fitBESData3.cpp fitBESData4.cpp
+  584  cp fitBESData3.h fitBESData4.h
+  585  l
+  586  pluma fitBESData4.cpp &
+  587  r fitBESData3.cpp+
+  588  cd -
+  589  find TH1*
+  590  hgrep find
+  591  find .-name TH1*
+  592  find . -name TH1*
+  593  cd -
+  594  r fitBESData3.cpp+
+  595  l
+  596  chmod u+x analyzeAllHistos.bash
+  597  l
+  598  mv fitBESData4.cpp fitBESData4_1.cpp
+  599  l
+  600  mv fitBESData5.cpp fitBESData4_2.cpp
+  601  l
+  602  source analyzeAllHistos.bash
+  603  exit
+  604  cd rhip/analysisCodes/
+  605  l
+  606  pluma fitResults4.dat &
+  607  mkdir fittedPlots4
+  608  L
+  609  l
+  610  source analyzeAllHistos.bash
+  611  l
+  612  libreoffice fitResults4.dat &
+  613  p fitResults4.dat &
+  614  exit
+  615  cd rhip/analysisCodes/
+  616  l
+  617  pluma fitBESData3.cpp &
+  618  r fitBESData3.cpp
+  619  l
+  620  pluma fitResults3.dat &
+  621  exit
+  622  cd rhip/analysisCodes/
+  623  r fitBESData3.cpp
+  624  l
+  625  pluma fitResults3.dat &
+  626  pluma fitBESData3.cpp &
+  627  source analyzeAllHistos.bash
+  628  l
+  629  p fitResults4.dat &
+  630  pluma fitResults4_1.dat &
+  631  pluma fitBESData4_1.cpp &
+  632  source analyzeAllHistos.bash
+  633  l
+  634  p fitResults4.dat &
+  635  exit
+  636  cd rhip/
+  637  cd analysisCodes/
+  638  l
+  639  r
+  640  l
+  641  fitBESData.root fitResults.root
+  642  mv fitBESData.root fitResults.root
+  643  l
+  644  r
+  645  l
+  646  cd ..
+  647  l
+  648  cd trialCodes/
+  649  l
+  650  l *.cpp
+  651  hgrep BESData_sorted_transformed.cpp 
+  652  hgrep BESData_forSorted.cpp 
+  653  hgrep BESData_sorted_transformed.cpp 
+  654  l
+  655  p BESData_sorted_transformed.cpp  &
+  656  exit
+  657  cd rhip/analysisCodes/
+  658  l
+  659  p fitBESData4.h &
+  660  p fitResultsToTFile.C &
+  661  source analyzeAllHistos.bash
+  662  l
+  663  p fitResults4.dat &
+  664  r fitResultsToTFile.C 
+  665  l
+  666  exit
+  667  cd rhip/analysisCodes/
+  668  l
+  669  r fitBESoneByone.cpp 
+  670  r fitBESData4_1.cpp 
+  671  l
+  672  p fitResults4.dat &
+  673  r fitBESData4_1.cpp 
+  674  clear
+  675  r fitBESData4_1.cpp 
+  676  exit
+  677  cd rhip/analysisCodes/
+  678  source analyzeAllHistos.bash
+  679  r fitBESData4_2.cpp 
+  680  hgrep tar
+  681  hgrep zip
+  682  exit
+  683  firefox gmail.com &
+  684  cd Downloads/
+  685  l
+  686  tar -xvzf BESstrangeness.tgz 
+  687  l
+  688  cd bes_strangeness/
+  689  l
+  690  cd sqm2011/
+  691  l
+  692  cd dNdy/
+  693  l
+  694  pluma ks_cent_7.txt &
+  695  cd ..
+  696  l
+  697  cd ..
+  698  l
+  699  cd ..
+  700  mv bes_strangeness/ ~/rhip/analysisCodes/
+  701  cd ~/rhip/analysisCodes/
+  702  l
+  703  l bes_strangeness/
+  704  l bes_strangeness/19_27/
+  705  l bes_strangeness/19_27/spectra/
+  706  p bes_strangeness/19_27/spectra/auau19_ks_spectra.txt &
+  707  l bes_strangeness/19_27/spectra/
+  708  l bes_strangeness/19_27/
+  709  l bes_strangeness/
+  710  l bes_strangeness/15GeV_sqm15/
+  711  l bes_strangeness/15GeV_sqm15/spectra/
+  712  p bes_strangeness/15GeV_sqm15/spectra/auau15_ks_spectra_cut0.txt &
+  713  l bes_strangeness/
+  714  l
+  715  libreoffice --calc fitResults4.dat &
+  716  p fitBESData4_1.cpp &
+  717  mkdir debugPlots
+  718  l
+  719  r fitBESData4_oneByOne.cpp 
+  720  l
+  721  p fitResults4_oneByOne.dat &
+  722  r -l -q fitBESData4_oneByOne.cpp 
+  723  exit
+  724  cd ~/rhip/analysisCodes/
+  725  l
+  726  p fitResults4_oneByOne.dat &
+  727  p fitBESData4_oneByOne.cpp &
+  728  r -l -q fitBESData4_oneByOne.cpp 
+  729  p fitResults4_oneByOne.dat &
+  730  r -l -q fitBESData4_oneByOne.cpp 
+  731  exit
+  732  cd ~/rhip/analysisCodes/
+  733  r -l -q fitBESData4_oneByOne.cpp 
+  734  l
+  735  r -l -q fitBESData4_oneByOne.cpp 
+  736  exit
+  737  cd rhip/analysisCodes/
+  738  l
+  739  cp fitBESData4_1.cpp fitBESData5_1.cpp
+  740  p fitBESData5_1.cpp &
+  741  cp fitBESData4.h fitBESData5.h
+  742  r -l -q fitBESData4_oneByOne.cpp 
+  743  l
+  744  cd debugPlots/
+  745  ;
+  746  l
+  747  r -l -q ../fitBESData4_oneByOne.cpp 
+  748  cd ..
+  749  r -l -q fitBESData4_oneByOne.cpp 
+  750  cd -
+  751  l
+  752  rm fitResults4_oneByOne.dat 
+  753  display cent8_pi+_Au+Au_7.7.png &
+  754  cd -
+  755  r -l -q fitBESData4_oneByOne.cpp 
+  756  display -/cent8_pi+_Au+Au_7.7.png &
+  757  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  758  cd -
+  759  l
+  760  cd -
+  761  r -l -q fitBESData4_oneByOne.cpp 
+  762  cd -
+  763  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  764  display cent8_pi+_Au+Au_7.7.png &
+  765  cd -
+  766  r -l -q fitBESData4_oneByOne.cpp 
+  767  cd -
+  768  display cent8_pi+_Au+Au_7.7.png &
+  769  cd -
+  770  r -l -q fitBESData4_oneByOne.cpp 
+  771  cd -
+  772  display cent8_pi+_Au+Au_7.7.png &
+  773  cd -
+  774  r -l -q fitBESData4_oneByOne.cpp 
+  775  cd -
+  776  display cent8_pi+_Au+Au_7.7.png &
+  777  cd -
+  778  r -l -q fitBESData4_oneByOne.cpp 
+  779  cd -
+  780  display cent8_pi+_Au+Au_7.7.png &
+  781  cd -
+  782  r -l -q fitBESData4_oneByOne.cpp 
+  783  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  784  r -l -q fitBESData4_oneByOne.cpp 
+  785  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  786  r -l -q fitBESData4_oneByOne.cpp 
+  787  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  788  r -l -q fitBESData4_oneByOne.cpp 
+  789  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  790  r -l -q fitBESData4_oneByOne.cpp 
+  791  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  792  r -l -q fitBESData4_oneByOne.cpp 
+  793  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  794  r -l -q fitBESData4_oneByOne.cpp 
+  795  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  796  r -l -q fitBESData4_oneByOne.cpp 
+  797  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  798  r -l -q fitBESData4_oneByOne.cpp 
+  799  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  800  r -l -q fitBESData4_oneByOne.cpp 
+  801  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  802  r -l -q fitBESData4_oneByOne.cpp 
+  803  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  804  r -l -q fitBESData4_oneByOne.cpp 
+  805  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  806  r -l -q fitBESData4_oneByOne.cpp 
+  807  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  808  r -l -q fitBESData4_oneByOne.cpp 
+  809  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  810  r -l -q fitBESData4_oneByOne.cpp 
+  811  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  812  cd debugPlots/
+  813  l
+  814  display cent7_pi+_Au+Au_7.7.png &
+  815  r -l -q fitBESData4_oneByOne.cpp 
+  816  cd -
+  817  r -l -q fitBESData4_oneByOne.cpp 
+  818  display cent7_pi+_Au+Au_7.7.png &
+  819  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  820  r
+  821  r -l -q fitBESData4_oneByOne.cpp 
+  822  r
+  823  r -l -q fitBESData4_oneByOne.cpp 
+  824  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  825  r -l -q fitBESData4_oneByOne.cpp 
+  826  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  827  r -l -q fitBESData4_oneByOne.cpp 
+  828  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  829  r -l -q fitBESData4_oneByOne.cpp 
+  830  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  831  r -l -q fitBESData4_oneByOne.cpp 
+  832  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  833  r -l -q fitBESData4_oneByOne.cpp 
+  834  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  835  r -l -q fitBESData4_oneByOne.cpp 
+  836  display debugPlots/cent8_pi+_Au+Au_7.7.png &
+  837  r -l -q fitBESData4_oneByOne.cpp 
+  838  exit
+  839  cd rhip/analysisCodes/
+  840  l
+  841  hgrep p
+  842  hgrep p f
+  843  hgrep "p f"
+  844  p fitBESData4_oneByOne.cpp &
+  845  r -l -q fitBESData4_oneByOne.cpp 
+  846  r
+  847  r -l -q fitBESData4_oneByOne.cpp 
+  848  r
+  849  r -l -q fitBESData4_oneByOne.cpp 
+  850  r
+  851  l
+  852  p fitBESData4_oneByOne.h &
+  853  r -l -q fitBESData4_oneByOne.cpp 
+  854  hgrep source
+  855  source analyzeAllHistos.bash
+  856  hgrep libre
+  857  l
+  858  hgrep libre
+  859  libreoffice --calc fitResults4.dat &
+  860  r -l -q fitBESData4_oneByOne.cpp 
+  861  r -l -q fitBESData4_oneByOne_6Params.cpp 
+  862  l
+  863  p fitBESData4_oneByOne.cpp &
+  864  l
+  865  p fitResults4_oneByOne.dat &
+  866  r -l -q fitBESData4_oneByOne_6Params.cpp 
+  867  git pull CollEnparticlemassbetabetaErrtemptempErrn-v_profnErrnormnormErrdETdEta_datadETdEta_d_errdETdEtaLeftdETdEtaLErrdETdEtaRightdETdEtaRErrdETdEtaTotaldETdEtaTErrdETdy_ddETdy_d_errdETdyLeftdETdyLErrdETdyRightdETdyRErrdETdyTotaldETdyTErrdNdEta_ddNdEta_d_errdNdEtaLeftdNdEtaLErrdNdEtaRightdNdEtaRErrdNdEtaTotaldNdEtaTErrdNdy_ddNdy_d_errdNdyLeftdNdyLErrdNdyRightdNdyRErrdNdyTotaldNdyTErr
+  868  r -l -q fitBESData4_oneByOne.cpp 
+  869  r -l -q fitBESData4_oneByOne_6Params.cpp 
+  870  p fitBESData4_oneByOne_6Params.cpp &
+  871  r -l -q fitBESData4_oneByOne_6Params.cpp 
+  872  l
+  873  p fitBESData5_1.cpp &
+  874  p fitBESData4_1.cpp &
+  875  p fitBESData4_2.cpp &
+  876  p fitBESData5_2.cpp &
+  877  exit
+  878  cd rhip/analysisCodes/
+  879  source analyzeAllHistos.bash 
+  880  .q
+  881  exit
+  882  cd rhip/anal
+  883  cd rhip/analysisCodes/
+  884  l
+  885  p BESDataToRootFile.cpp &
+  886  p fitBESData4_oneByOne.cpp &
+  887  exit
+  888  cd rhip/analysisCodes/
+  889  l
+  890  p plotsFromResults.cpp &
+  891  libreoffice --calc fitResults5.dat &
+  892  l
+  893  r -q fitBESData4_oneByOne_6Params.cpp
+  894  r -l -q fitBESData4_oneByOne_6Params.cpp 
+  895  source analyzeAllHistos.bash 
+  896  l
+  897  libreoffice --calc fitResults5.dat &
+  898  exit
+  899  cd rhip/analysisCodes/
+  900  l
+  901  hgrep git
+  902  git add .
+  903  git commit -m "Add existing file"
+  904  git push origin master
+  905  hgrep git
+  906  l
+  907  libreoffice --calc fitResults5.dat &
+  908  l
+  909  p fitResultsToPlottableFormat.cpp &
+  910  p plotsFromResults.cpp &
+  911  r -l -q plotsFromResults.cpp
+  912  hgrep git
+  913  git add .
+  914  git commit -m "Add existing file"
+  915  git push origin master
+  916  l
+  917  exit
+  918  cd rhip/analysisCodes/
+  919  l
+  920  p plotsFromResults.cpp &
+  921  libreoffice --calc fitResults5.dat &
+  922  r -l -q plotsFromResults.cpp
+  923  clear
+  924  r -l -q plotsFromResults.cpp
+  925  clear
+  926  r -l -q plotsFromResults.cpp
+  927  clear
+  928  r -l -q plotsFromResults.cpp
+  929  exit
+  930  cd rhip/analysisCodes/
+  931  l
+  932  r -l -q plotsFromResults.cpp
+  933  clear
+  934  r -l -q plotsFromResults.cpp
+  935  exit
+  936  cd rhip/analysisCodes/
+  937  r -l -q plotsFromResults.cpp
+  938  l
+  939  display dETdEtaSumCent0.png 
+  940  r -l -q plotsFromResults.cpp
+  941  display dETdEtaSumCent0.png 
+  942  r -l -q plotsFromResults.cpp
+  943  l
+  944  display dETdEtaOverNpartBy2SumCent0.png &
+  945  r -l -q plotsFromResults.cpp
+  946  display dETdEtaOverNpartBy2SumCent0.png &
+  947  hgrep git
+  948  git add .; git commit -m "Add existing file"; git push origin master
+  949  exit
+  950  cd rhip/analysisCodes/
+  951  l
+  952  mkdir finalPlots
+  953  mkdir finalPlots/crossCheckPlots
+  954  mkdir finalPlots/newPlots
+  955  p plotsFromResults.cpp &
+  956  r -l -q plotsFromResults.cpp
+  957  display dETdEtaOverNpartBy2SumCent0.png &
+  958  l
+  959  l finalPlots/
+  960  r -l -q plotsFromResults.cpp
+  961  l
+  962  cd finalPlots/crossCheckPlots/
+  963  l
+  964  mkdir finalPlots/crossCheckPlots/dETdEtaOverNpartBy2Sum
+  965  mkdir dETdEtaOverNpartBy2Sum
+  966  mkdir dETdEtaOverNpartBy2perParticle
+  967  rm dETdEtaOverNpartBy2perParticle
+  968  rmdir dETdEtaOverNpartBy2perParticle
+  969  l
+  970  mv dETdEtaOverNpartBy2Sum dETdEtaOverNpartBy2vsEn
+  971  l
+  972  mkdir dETdEtaOverdNchdEta_En
+  973  mv dETdEtaOverNpartBy2vsEn dETdEtaOverNpartBy2_En
+  974  l
+  975  mkdir dETdEtaOverdNchdEta_Npart
+  976  mkdir dETdEtaOverNpartBy2_Npart
+  977  l
+  978  cd ../..
+  979  r -l -q plotsFromResults.cpp
+  980  l
+  981  r -l -q plotsFromResults2.cpp
+  982  hgrep libre
+  983  libreoffice --calc fitResults5.dat &
+  984  r -l -q plotsFromResults2.cpp
+  985  exit
+  986  cd rhip/analysisCodes/
+  987  r -l -q plotsFromResults2.cpp
+  988  cd ..
+  989  cd -
+  990  r -l -q plotsFromResults2.cpp
+  991  exit
+  992  cd rhip/analysisCodes/
+  993  l
+  994  p plotsFromResults2.cpp &
+  995  r -l -q plotsFromResults2.cpp
+  996  exit
+  997  cd rhip/analysisCodes/
+  998  l
+  999  exit
+ 1000  cd rhip/analysisCodes/
+ 1001  l
+ 1002  hgrep git
+ 1003  history>history_11-13-2017.txt

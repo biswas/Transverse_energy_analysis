@@ -1,0 +1,564 @@
+\chapter{Theoretical and Experimental Status} \label{ch:Experimental and Theoretical Status}
+
+\section{QCD prediction of heavy flavor production}
+
+%Heavy flavor discovery.
+
+%Charm
+%Bottom
+%Plots showing the discovery of charm and bottom. 
+%(Look at Donny's thesis)
+%Soren wants Fundamental theory for how heavy flavor is produced. How well does theory fit? Single vs Octet. 
+%The fact that no free quarks are observed comes from the assumption that bound hadrons must be colorless to the outside, which means that any bound quark state is a color singlet.
+
+%Donny's thesis: Unlike light quark flavors (u,d,s), ?hard? processes are responsible for the production of heavy quarks (c,b,t) which have masses, mHQ, greater than about 1.3-1.5 GeV/c2 (and hence a QQ? creation threshold of ?3.0 GeV/c2). The large masses of the heavy quarks motivates pQCD calculations of total QQ? cross section calculations, while is not justified for light quarks.
+
+Hard partonic scatterings are the main contribution to heavy-quark production. QCD has a running coupling constant $\alpha_{s}$, which depends on distance and momentum transfer, $Q^2$.  The coupling constant, $\alpha_{s}$, as a function of energy, $Q$, is shown in Figure \ref{fig:BethkeCouplingStrengthDependenceOnEnergy} \cite{Bethke:2012jm}. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=3in]{BethkeCouplingStrengthDependenceOnEnergy}\\
+  \caption{Summary of strong coupling constant, $\alpha_{s}$, as a function of energy scale $Q$. The degree of QCD perturbation is shown in parenthesis. (NLO: next-to-leading order; NNLO: next-to-next-to leading order; res. NNLO: NNLO matched with resummed next-to-leading logs; N3LO: next-to-NNLO) \cite{Bethke:2012jm}.} \label{fig:BethkeCouplingStrengthDependenceOnEnergy}
+\end{figure}
+
+The value of $\alpha_{s}$ increases with large distances, known as the principle of confinement. When trying to pull apart two quarks the energy of the system increases and at some point the energy is larger than creating a quark-antiquark pair. The new quark-antiquark pair then forms hadrons with the original quarks. Quarks are never seen as independent particles over distances greater than 1 fm. 
+
+The value of  $\alpha_{s}$ decreases with small distances and high energy, leading to the concept of asymptotic freedom. An important consequence from asymptotic freedom is that at sufficiently large momentum transfers and energies $\alpha_{s}$ is small enough to use the application of perturbation theory. Since charm and bottom quarks have a large mass, their production can be described by perturbative QCD. The cross section for production of heavy flavor can be expressed by a perturbation series in powers of the coupling constant, $\alpha_{s}$.
+
+%The value of $\alpha_{s}$ increasing in strength with increasing distance. The increasing coupling constant with large distance leads to a stronger force with larger separation, thus the energy of the system increases when trying to pull two quarks apart.  At some point the energy is larger than the threshold of creating additional quark-antiquark pairs, which then form hadrons with the original quarks. This is the basic principle of confinement. The $\alpha_{s}$ is not a constant but decreases with smaller distances and increasing energy. This concept is known as asymptotic freedom.
+
+%Renormalization: Physical quantities, such as cross sections, decay rates, jet production rates can be expressed by a perturbation series in powers of the coupling parameter $\alpha_{s}$. If these couplings are sufficiently small, if $\alpha_{s} << 1$, the series may converge sufficiently quickly such that it provides a realistic prediction of R event if only a limited number of perturbative orders will be known. Q is larger than any other relevant, dimensional parameter such as quark masses. 
+%This permits one to express the cross section as a power series in the strong coupling constant evaluated at a renormalization scale close to the heavy quark mass.
+
+\begin{equation}
+\sigma = A_{1} \alpha_{s} + A_{2} \alpha_{s}^{2} + ...
+\end{equation}
+
+For cases where the transverse momentum, $p_{T}$, of the heavy quark is larger than its mass, $m$, then large logarithms with the ratio $p_{T}/m$ emerge in the perturbative expansion. The logarithmic terms in the $p_{T}$ expansion are classified in terms depending on their order \cite{Cacciari:1998it}. Terms with the form $\alpha_{s}^{2}(\alpha_{s} \log p_{T} / m)^{k} $ are leading-logarithmic terms, or LL. Terms with the form $\alpha_{s}^{3}(\alpha_{s} \log p_{T} / m)^{k} $ are next-to-leading logarithmic terms, or NLL.
+
+The order of the calculation has a large effect on the magnitude of the predicted cross section. The introduction of the $\alpha_{s}^{3}$ term was found to double the total cross section as compared to the $\alpha_{s}^{2}$ calculation for collisions with center of mass energies in the range $10 < \sqrt{s} < 630 $ GeV \cite{Botner:1989jg}.
+
+% there is no single characteristic scale for the problem, and the perturbative series no longer converges with the use of either $m$ or $p_{T}$ as the value of the renormalization scale, $\mu_{R}$, and factorization scale $\mu_{F}$ . For these larger $p_{T}$ values convergence of the series is spoiled by the emergence of large logarithms of the ratio $p_{T}/m$ at all orders in the perturbative expansion. The logarithmic terms in the $p_{T}$ expansion are classified as either
+%$\alpha_{s}^{2}(\alpha_{s} \log p_{T} / m)^{k} $ leading-logarithmic terms, or LL
+%$\alpha_{s}^{3}(\alpha_{s} \log p_{T} / m)^{k} $ next-to-leading logarithmic terms, or NLL
+
+
+
+
+\subsection{FONLL}
+
+FONLL \cite{Cacciari:1998it} is a calculation for the production of heavy flavor in hadronic collisions. FONLL stands for  ``Fixed Order + Next-to-Leading Log''. The FONLL approach combines the fixed-order next-to-leading order calculations (FO NLO), and all logarithmic terms summed to the next-to-leading logarithmic terms (NLL). The details of the calculation can be found in \cite{Cacciari:1998it}.
+
+The fixed-order next-to-leading order calculations for the heavy flavor cross section can be written as \cite{Cacciari:1998it}
+\begin{equation} \label{eqn:FO}
+\frac{d \sigma}{d p_{T}^{2}} = A(m) \alpha_{s}^{2} + B(m) \alpha_{s}^{3} + \mathcal{O} (\alpha_{s}^{4}) 
+\end{equation}
+
+The all-order resummation to next-to-leading log calculation can be written as \cite{Cacciari:1998it}
+
+%%This equation is really wide
+%\begin{equation}\label{eqn:NLL}
+%\frac{d \sigma}{d p_{T}^{2}} = \alpha_{s}^{2} \sum_{i=0}^{\infty} a_{i} (\alpha_{s} \log \mu / m)^{i} +     \alpha_{s}^{3} \sum_{i=0}^{\infty} b_{i} (\alpha_{s} \log \mu / m)^{i} +  \mathcal{O} (\alpha_{s}^{4}(\alpha_{s} \log \mu / m)^{i}) + \mathcal{O} (\alpha_{s}^{2} \times PST)
+%\end{equation}
+
+
+\begin{equation}\label{eqn:NLL}
+\begin{aligned}
+ \frac{d \sigma}{d p_{T}^{2}}  ={} & \alpha_{s}^{2} \sum_{i=0}^{\infty} a_{i} (\alpha_{s} \log \mu / m)^{i}  + \alpha_{s}^{3} \sum_{i=0}^{\infty} b_{i} (\alpha_{s} \log \mu / m)^{i}\\
+      & +  \mathcal{O} (\alpha_{s}^{4}(\alpha_{s} \log \mu / m)^{i}) + \mathcal{O} (\alpha_{s}^{2} \times PST) \\
+\end{aligned}
+\end{equation}
+
+The coefficients $a_{i}$ and $b_{i}$ depend on the center of mass energy of the collision and $p_{T}$.  PST are terms that are suppressed in the limit where $p_{T}$ is large. The value $\mu$ is the scale of choice, either renormalization or factorization. The FONLL calculation combines equations \ref{eqn:FO} and \ref{eqn:NLL}.
+
+
+
+%FONLL includes the terms of order $\alpha_{s}^{2}$ and $\alpha_{s}^{3}$ and terms of order $\alpha_{s}^{2}\alpha_{s}^{k} \log ^{k} p_{T} / m $ 
+
+
+% fixed next-to-leading order (NLO) QCD with all-order resummation to next-to-leading log (NLL) accuracy in the limit where the transverse momentum ($p_{T}$ ) of a heavy quark is much larger than its mass ($m$). 
+
+FONLL \cite{Cacciari:1998it} is used in this thesis as a calculation for the production of heavy flavor in pp collisions. The FONLL predictions used in this analysis were obtained from a publicly accessible web page \cite{FONLLwebpage}.
+%http://www.lpthe.jussieu.fr/~cacciari/fonll/fonllform.html 
+
+FONLL has been used for many years now to predict charm and bottom production at the Tevatron and at RHIC. There has been good agreement between FONLL theory and data. Figure \ref{fig:CacciariFONLLRHICSTAR} \cite{Cacciari:2005rk} shows the cross section for electrons coming from heavy flavor hadrons from the PHENIX and STAR experiment at RHIC. FONLL is drawn as two black lines, representing the theoretical uncertainty band. Theoretical uncertainties in FONLL arise from the uncertainty in the charm and bottom mass, the error in factorization and renormalization scale variations, and the uncertainty in the parton distribution functions. Results have begun to show that FONLL also agrees with the production of heavy flavor at the LHC energies as shown in Figure \ref{fig:2013-Jan-03-CombinedLog_ALICE_ATLAS}.
+
+
+%from the error in the deter- mination of the strong coupling constant, of the structure functions and of the b-quark mass
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{CacciariFONLLRHICSTAR}\\
+  \caption{Comparison of FONLL to electrons coming from charm and bottom hadron decays at RHIC for pp collisions at $\sqrt{s} = 200$ GeV \cite{Cacciari:2005rk}.} \label{fig:CacciariFONLLRHICSTAR}
+\end{figure}
+
+
+
+
+
+%\section{Experimental Status}
+
+\section{Early Single Lepton Measurements}
+%Look at \cite{Abelev:2012xe} Measurement of electrons from semileptonic heavy-flavor decays in pp collisions
+%Page 1 of this has a lot of resources for some historical measurements.
+%Single electrons from heavy-flavour decays were first observed in the range 1.6 < pt < 4.7 GeV/c in ?pp collisions at the CERN ISR at s = 52.7 GeV [12], before the actual discovery of charm. At the CERNS pp?S,the UA1 experiment measured beauty production via single muons (10<pt<40GeV/c)at s = 630 GeV [13] while the UA2 experiment used single electrons (0.5 < pt < 2 GeV/c) to measure the charm production cross section [14]. At the Tevatron, both the CDF and D0 experiments measured beauty production via single electrons (7 < pt < 60 GeV/c) [15] and single muons (3.5 < pt < 60 GeV/c) [16], respectively.
+
+%http://home.cern/about/accelerators/intersecting-storage-rings
+The first measurement for single electrons from the decays of heavy-flavor was made at CERN in Switzerland with the Intersection Storage Rings (ISR). This measurement was done before the discovery of charm and the source of the single electrons was undetermined at the time. The ISR measured electrons \cite{Busser:1974ej} at 90$^{\circ}$ with respect to the beam line in the region 1.6 $< p_{T}^{e} <$ 4.7 GeV/c in $pp$ collisions at a center-of-mass energy $\sqrt{s}$ = 52.7 GeV. Figure \ref{fig:CERN_ISR_Busser1974ej_Fig4} \cite{Busser:1974ej} shows the invariant cross section of single electrons from that first measurement. The ISR ran from 1971 to 1984 and was the world's first hadron collider, and performed the first proton-proton and proton-antiproton collisions. Many techniques were developed at the ISR that made later accelerator projects possible. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3in]{CERN_ISR_Busser1974ej_Fig4}\\
+  \caption{One of the first measurements of electrons from heavy flavor decays \cite{Busser:1974ej}. Invariant cross section of single electrons as a function of the electron $p_{T}$ measured by ISR at $\sqrt{s}$ = 52.7 GeV. The solid line is the fit to the pion cross-section scaled by a factor 10$^{-4}$.} \label{fig:CERN_ISR_Busser1974ej_Fig4}
+\end{figure}
+
+
+%Look at Tavernier Charmed and bottom flavoured particle production in hadronic interactions page 1444 for history of Charm and Bottom.
+
+
+
+%12 CERN ISR electrons \cite{Busser:1974ej}
+%Intersection Storage Rings, world's first hadron collider. Ran from 1971 to 1984. Two interlaced rings with a diameter of 150 meters. First ever proton-proton and proton-antiproton collisions. First developed stochastic cooling. This technique reduces both the transverse dimension of the beam and the spread in the energy of the particles. 
+%CERN ISR proton-proton collisions at $\sqrt(s)$ = 52.7 GeV. 1974. Set up was located at 90 degrees with respect to the beam line. Measured the cross section of single electrons in $p_{T}$ region 1.6 $< p_{T} <$ 4.7 GeV/c. Electrons were measured with a gas Cerenkov counter. Momentum was measured with a magnetic spectrometer. Energy was meausred in a total absorption lead-glass Cerenkov counter array. 
+%Background was the same as mine. From photon conversions, and Dalitz decays of $\pi ^(0)$ and $\eta^(0)$ and hadrons that pass the electron cuts.
+%This was before the discovery of J/$\psi$ and charm. The source of the single electrons were unknown. It was unknown if they were directly produced from the proton-proton collision, or the decay of some heavy particle. 
+
+%Look at \cite{Abelev:2012xe} Measurement of electrons from semileptonic heavy-flavor decays in pp collisions
+%At the CERNS pp?S,the UA1 experiment measured beauty production via single muons (10<pt<40GeV/c)at s = 630 GeV [13] while the UA2 experiment used single electrons (0.5 < pt < 2 GeV/c) to measure the charm production cross section [14].
+The UA1 (Underground Area 1) and UA2 (Underground Area 2) were movable particle detectors at the Super Proton Synchrotron (SPS) collider at CERN in Switzerland. The UA1 and UA2 experiments ran from 1981 to 1990. 
+
+UA2 measured semi-leptonic decay of charm to electrons \cite{Botner:1989jg} (data from 1985) for the region 0.5 $< p_{T}^{e} <$ 2.0 GeV/c for $p \bar p$ collisions $\sqrt{s} = $630 GeV. The total charm cross section was determined to be $\sigma _{tot}(c \bar c) = 0.68 \pm 0.56$ (stat.) $ \pm 0.25$ (sys., exp.) $ \pm 0.21 $ (sys., theory) mb. The cross section was compared to other experimental measurements from CERN ISR and the theoretical calculations at the time as shown in figure \ref{fig:UA2CharmBotner_1989jg}. The cross section found from the UA2 measurement is the upper right point in this figure.  The experimental cross section measured was found to agree with the theoretical next-to leading order ($a_{s}^{3}$) predictions of the time. However, the experimental errors were too large to make a distinction in the calculation parameters, the charm quark mass and the gluon structure function.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{UA2CharmBotner_1989jg}\\
+  \caption{Total cross section of charm production as a function of collision energy \cite{Botner:1989jg}. The upper right point is $p \bar p$ collisions at $\sqrt{s} = $630 GeV measured by UA2. All other points are $pp$ collisions measured by ISR. The curves represent NLO QCD calculations with various parameters.} \label{fig:UA2CharmBotner_1989jg}
+\end{figure}
+%Figure 4 in Production of Prompt Electrons in the Charm $p_T$ Region at $\sqrt{s}=630$GeV Botner_1989jg
+
+
+
+UA1 measured bottom production with single muons \cite{Albajar:1990zu} (data taken 1988-89) in the region 10 $< p_{T}^{\mu} <$ 40 GeV/c for $p \bar p$ collisions $\sqrt{s} = $630 GeV. The total production cross-section for b-quarks was measured as $\sigma _{tot}(b \bar b) = 19.3 \pm 7 $(exp.)$ \pm 9 $(th.)$ \mu $b. The cross section measured was found to agree across the $p_{T}$ range with the theoretical next-to leading order ($a_{s}^{3}$) prediction within the experimental error. The theoretical error due to the uncertainty in the bottom quark mass and the gluon structure function allowed the theoretical prediction to match with a wide variety of values for the cross section.
+
+%UA1 Underground Area 1
+%%http://home.cern/about/experiments/ua1
+%13 Beauty production at the CERN p$\bar p$ collider \cite{Albajar:1990zu}
+%UA1 collaboration. published 1991. Data is from 1988-1989
+%UA1 ran from 1981 to 1990. proton-antiproton collider
+%muon decay channel for b hadrons.
+%background is muons that decay from pions and kaons. 
+%$\sqrt(s)$ = 630 GeV
+%beauty production via single muons (10<pt<40GeV/c)
+
+%14 charm production cross section \cite{Botner:1989jg}
+%Production of Prompt Electrons in the Charm $p_T$ Region at $\sqrt{s}=630$GeV
+%UA2 experiment (Data from 1985)
+%p $\bar p$ collisions $\sqrt{s}=630$GeV
+%semi-leptonic decay of charm to electrons. 0.5 $< p_{T} <$ 2.0 GeV/c
+
+
+
+%Look at \cite{Abelev:2012xe} Measurement of electrons from semileptonic heavy-flavor decays in pp collisions
+% At the Tevatron, both the CDF and D0 experiments measured beauty production via single electrons (7 < pt < 60 GeV/c) [15] and single muons (3.5 < pt < 60 GeV/c) [16], respectively.
+The Tevatron collider was completed in 1983 and built at Fermi National Accelerator Laboratory (Fermilab) just outside Batavia, Illinois in the United States. Two experiments were at the Tevatron, the Collider Detector at Fermilab (CDF) and the D0 experiment. 
+
+During the same time (1988-89) that the UA1 and UA2 experiments were taking data at the SPS, the CDF in Fermilab was measuring bottom production by semileptonic decay electrons \cite{Abe:1993sj} in the range 7 $< p_{T}^{e} <$ 60 GeV/c in $p\bar p$ collisions at $\sqrt{s} = $ 1.8 TeV. The theoretical next-to leading order calculation matched the shape of the $p_{T}$ distribution of the cross section, but was 1.4 to 2.2 standard deviations lower than the central values in data. 
+
+For the same data set (1988-89, $p\bar p$ collisions at $\sqrt{s} = $ 1.8 TeV), the CDF experiment also measured bottom production using decay muons \cite{Abe:1993hr}. This muon measurement \cite{Abe:1993hr} only had two $p_{T}^{\mu}$ bins, 12 $< p_{T}^{\mu} <$ 17 GeV/c  and 17 $< p_{T}^{\mu} <$ 22 GeV/c. The experimental cross section measured was compared with the theoretical next-to leading order ($a_{s}^{3}$) prediction. For the lower $p_{T}^{\mu}$ bin, the central theoretical value was 2.1 standard deviations lower than the experimental value. The theoretical value for the higher $p_{T}^{\mu}$ bin agreed within experimental error. The NLO QCD calculation underestimates the heavy flavor production cross section.
+
+The D0 detector measured bottom production \cite{Abachi:1994kj} (data taken 1992-93, $p\bar p$ collisions at $\sqrt{s} = $ 1.8 TeV) for single muons for the range 3.5 $< p_{T}^{\mu} <$ 60 GeV/c. Figure \ref{fig:Abachi_1994kjFig3bD0Muons} is a summary of bottom production cross sections as a function of the transverse momentum of the b-quark, $p_{T}^{b}$, for the CDF and D0 experiments for single electrons and single muons. The D0 experiment was able to extend the $p_{T}$ reach and confirm the previous findings from the CDF experiment. The theoretical next-to leading order ($a_{s}^{3}$) prediction is shown on figure \ref{fig:Abachi_1994kjFig3bD0Muons} as a black line. Dotted lines show the theoretical uncertainty. The data and theory agree within errors, but the central value for the theoretical prediction is lower than the data value. 
+ 
+ %Figure: Abachi_1994kjFig3bD0Muons
+   \begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{Abachi_1994kjFig3bD0Muons}\\
+  \caption{The b-quark production cross sections as a function of $p_{T}^{b}$ shown for various measurements of inclusive leptons from CDF and D0 experiments at Fermilab \cite{Abachi:1994kj}. Curves represent the Next-to-Leading Order calculation by Nason, Dawson, and Ellis with MRSD0 parton distribution function.} \label{fig:Abachi_1994kjFig3bD0Muons}
+\end{figure}
+
+
+%
+%Fermi National Accelerator Laboratory (Fermilab), located just outside Batavia, Illinois, near Chicago, is a United States Department of Energy national laboratory specializing in high-energy particle physics. 
+%There is another experiment similar to CDF called D0 located at another point on the Tevatron ring. There are currently two particle detectors located on the Tevatron at Fermilab: CDF and D0. CDF predates D0 as the first detector on the Tevatron. Construction of CDF began in 1982 under the leadership of John Peoples. The Tevatron was completed in 1983 and CDF began to take data in 1985. Over the years, two major updates have been made to CDF. The first upgrade began in 1989 and the second upgrade began in 2001.
+%%https://en.wikipedia.org/wiki/Collider_Detector_at_Fermilab
+
+%15 Measurement of the bottom quark production cross section using semileptonic decay electrons in $p\bar p$ collisions at s = 1.8 TeV \cite{Abe:1993sj}
+%The Collider Detector at Fermilab (CDF) experimental collaboration 
+%The Tevatron accelerated protons and antiprotons close to the speed of light, made them collide head-on inside the CDF detector and we study the products of such collisions.
+% CDF experiment $\sqrt{s}=1.8$TeV
+%  The data were taken in 1988-89 using the Collider Detector at Fermilab in the Fermilab Tevatron $\bar p p$ collider
+%measured beauty production via single electrons  (7 $< p_{T}^{e} <$ 60 GeV/c)
+%  \begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3in]{Abe_1993sjFig3CDFBottom}\\
+%  \caption{The b-quark production cross sections as a function of  $p_{t}^{b}$  from several measurements from the CDF experiment at Fermilab Tevatron for $\bar p p$ collisions at $\sqrt{s}=1.8$TeV.  Also shown is the theoretical calculation by Nason, Dawson and Ellis. \cite{Abe:1993sj}} \label{fig:Abe_1993sjFig3CDFBottom}
+%\end{figure}
+
+
+
+%CDF collaboration
+%Measurement of Bottom Quark Production in 1.8 TeV $p \bar p$ Collisions using semileptonic Decay muons
+%\cite{Abe:1993hr}
+%1988-89 using the Collider Detector at Fermilab in the Fermilab Tevatron
+% $p \bar p$ collisions at $\sqrt{s}=1.8$TeV  using high $p_{T}$ muons from semileptonic b quark decays.
+%12 $< p_{T}^{\mu} <$ 22 GeV/c. Only two bins. 12 $< p_{T}^{\mu} <$ 17 GeV/c  and 17 $< p_{T}^{\mu} <$ 22 GeV/c
+  
+  
+
+%16 Inclusive ? and B quark production cross sections in pp? collisions at s=1.8TeV \cite{Abachi:1994kj}
+%b-quark production single muons (3.5 $< p_{t}^{\mu} <$ 60 GeV/c) 1992-93 Tevatron collider run.
+% $\bar p p$ collider D0 detector at the Fermilab Tevatron. 
+% %Figure: Abachi_1994kjFig3bD0Muons
+%   \begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3in]{Abachi_1994kjFig3bD0Muons}\\
+%  \caption{The b-quark production cross sections as a function of  $p_{t}^{b}$ shown for various measurements of inclusive leptons from CDF and D0 experiments at Fermilab. Curves represent the Next-to-Leading Order calculation by Nason, Dawson, and Ellis with MRSD0 parton distribution function. \cite{Abachi:1994kj}} \label{fig:Abachi_1994kjFig3bD0Muons}
+%\end{figure}
+
+
+
+
+
+%Look at \cite{Abelev:2012xe} Measurement of electrons from semileptonic heavy-flavor decays in pp collisions
+%Page 1 of this has a lot of resources for some historical measurements.
+%At RHIC, semileptonic heavy-flavour decays were extensively studied in pp and, for the first time, in heavy-ion collisions, mainly in the electron channel. With the PHENIX experiment the range 0.3 < pt < 9 GeV/c was covered [17], and with the STAR experiment electrons from heavy-flavour hadron decays were measured in the range 3 < pt < 10 GeV/c [18]. Within experimental and theoretical uncertainties pQCD calculations are in agreement with the measured production cross sections of electrons from charm [18, 19] and beauty decays [20, 21] at mid-rapidity in pp collisions at s = 0.2 TeV. In Au-Au collisions, the total yield of electrons from heavy-flavour decays was observed to scale with the number of binary nucleon-nucleon collisions [22]. However, a strong suppression of the electron yield was discovered for pt > 2 GeV/c [23, 24] with a simultaneous observation of a nonzero electron elliptic flow strength v2 for pt < 2 GeV/c [10], indicating the substantial interaction of heavy quarks with the medium produced in Au-Au collisions at RHIC.
+%At the LHC, heavy-flavour production is studied in pp collisions at higher energies. Perturbative QCD calculations agree well with lepton production cross sections from heavy-flavour hadron decays measured for pt > 4 GeV/c with the ATLAS experiment at s = 7 TeV [25]. Furthermore, pQCD calcula- tions of beauty hadron decays are in good agreement with production cross sections of non-prompt J/? at mid-rapidity as measured with the CMS experiment at high pt (pt > 6.5 GeV/c) [26] and with ALICE (A Large Ion Collider Experiment) at lower pt (pt > 1.3 GeV/c) [27]. D-meson production cross sections measured with ALICE are reproduced by corresponding calculations within substantial uncertainties at 7 TeV [28] and at 2.76 TeV [29]. In addition, pQCD calculations are in agreement with the spectra of muons from heavy-flavour hadron decays at moderate pt as measured with ALICE at 7 TeV [30] and at 2.76 TeV [31]. It is of particular importance to investigate charm production at low pt [28] in order to measure the total charm production cross section with good precision. Furthermore, low-pt charm measurements at the LHC probe the parton distribution function of the proton in the region of parton fractional momenta x ? 10?4 and squared momentum transfers Q2 ? (4 GeV)2, where gluon saturation effects might play a role [32].
+
+
+%17 Heavy Quark Production in pp and Energy Loss and Flow of Heavy Quarks in Au-AU Collisions at sNN = 200 GeV. \cite{Adare:2010de}
+%Relativistic Heavy Ion Collider (RHIC) at Brookhaven National Laboratory (BNL) , PHENIX
+%The method which is em- ployed by this analysis is to measure single leptons from heavy flavor decay.
+%0.3 $< p_{T} <$ 9 GeV/c pp to single electrons and same range for Au-Au collisons
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3in]{Adare2010de_Fig30}\\
+%  \caption{(a) Top panel: Invariant cross section of single electrons as measured in PHENIX. pp collisions at $\sqrt(s)$ = 200 GeV. The curves represent FONLL calculations. (b) Bottom panel: Data/FONLL as a function of $p_{T}$ \cite{Adare:2010de}} \label{fig:Adare2010de_Fig30}
+%\end{figure}
+
+
+
+
+
+\section{Single lepton measurements at RHIC}
+%Maybe I want to do these: RHIC by measuring the production of leptons from heavy-flavour hadrons decays in d?Au collisions at sNN = 200 GeV [32-34]
+%[32] A. Adare et al. [PHENIX Collaboration], Phys. Rev. Lett. 109 (2012) 242301.
+%[33] A. Adare et al. [PHENIX Collaboration], arXiv:1310.1005.
+%[34] J. Adams et al. [STAR Collaboration], Phys. Rev. Lett. 94 (2005) 062301.
+
+
+%At RHIC, the STAR collaboration measured the charm spectra at midrapidity from direct reconstruction of D0 mesons and from indirect electron/positron measurements of charm semileptonic decays [14]. The measured yields were found to be consistent within the uncer- tainties with the hypothesis of binary scaling (no modification with respect to nucleon-nucleon (NN) cross section scaled by the number of incoherent NN binary collisions). However, the PHENIX collaboration measured a significant enhancement of the production of heavy-flavor decay electrons at midrapidity in high-multiplicity dAu events with respect to a combined, data and theory, pp reference [15]. Recently, PHENIX also measured a significant enhancement of heavy-flavor production via single-muon detection at backward rapidity (Au-going direction), and a suppression at forward rapidities (d-going direction) [16]. This measured difference in heavy-flavor production between forward and backward rapidities is significantly larger than predicted by leading-order perturbative QCD calculations with nuclear PDFs.
+%[14] STAR Collaboration, ?Open Charm Yields in d+Au Collisions at ?sNN = 200 GeV?, Phys. Rev. Lett. 94 (2005) 062301, doi:10.1103/PhysRevLett.94.062301, arXiv:nucl-ex/0407006.
+%[15] PHENIX Collaboration, ?Cold-Nuclear-Matter Effects on Heavy-Quark Production in d+Au Collisions at ?sNN = 200 GeV?, Phys. Rev. Lett. 109 (2012) 242301, doi:10.1103/PhysRevLett.109.242301, arXiv:1208.1293.
+%[16] PHENIX Collaboration, ?Cold-Nuclear-Matter Effects on Heavy-Quark Production at Forward and Backward Rapidity in d+Au Collisions at ?sNN = 200 GeV?, Phys. Rev. Lett. 112 (2014) 252301, doi:10.1103/PhysRevLett.112.252301, arXiv:1310.1005.
+
+
+%\subsection{Comparison with other small collision systems}
+
+%Phenix collided deuteron, which contains one proton and one neutron, with a gold nucleus. These d+Au collisions provide a control experiment to study initial state effects. HFE were measured at mid-rapidity (same as ALICE). Should match with what I do in ALICE.
+%Figure \ref {fig:PhenixdAu1408_3906} enhanced at moderate $p_{T}$ in central collisions (top plot). But $R_{dA} \sim 1$ for peripheral (bottom plot). \cite{Lim:2014axa} 
+%
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=4.5in]{PhenixdAu1408_3906}\\
+%  \caption{Heavy Flavor electrons measured in Phenix in d+Au collision system \cite{Lim:2014axa} } \label{fig:PhenixdAu1408_3906}
+%\end{figure}
+
+
+
+
+
+%Phenix Au+Au paper 2004 RHIC run. PRL 98, 172301 (2007)
+%\cite{Adare:2006nq}
+
+The PHENIX experiment at the Relativistic Heavy Ion Collider (RHIC) at Brookhaven National Lab saw a suppression of the production of electrons from heavy flavor hadrons in the 2004 run of $Au+Au$ collisions at $\sqrt{s_{NN}} = 200$ GeV as compared to the production in $p + p$ collisions scaled by the number of binary collisions \cite{Adare:2006nq}. However, there was a question of whether the suppression seen was caused by a quark-gluon plasma created in the $Au+Au$ collisions or from cold nuclear matter effects.
+
+%@article{PhenixCold-nuclear-matter-effects-on-heavy-quark-production,
+%was calling it this. Might have some bad stuff happen cause of that. Ok, I think I found all the places.
+
+% A. Adare et al. [PHENIX Collaboration], Phys. Rev. Lett. 109 (2012) 242301.
+%@article{Adare:2012yxa,
+%      author         = "Adare, A. and others",
+%      title          = "{Cold-nuclear-matter effects on heavy-quark production in
+%                        $d+$Au collisions at $\sqrt{s_{NN}}=200$ GeV}",
+%      collaboration  = "PHENIX",
+%      journal        = "Phys. Rev. Lett.",
+%      volume         = "109",
+%      year           = "2012",
+%      number         = "24",
+%      pages          = "242301",
+%      doi            = "10.1103/PhysRevLett.109.242301",
+%      eprint         = "1208.1293",
+%      archivePrefix  = "arXiv",
+%      primaryClass   = "nucl-ex",
+%      SLACcitation   = "%%CITATION = ARXIV:1208.1293;%%"
+%}
+
+% \cite{Adare:2012yxa}
+In order to answer this question, PHENIX measured heavy flavor hadrons in $d + Au$ (deuteron $+$ gold nucleus) collisions at $\sqrt{s_{NN}} = 200$ GeV \cite{Adare:2012yxa}. The electrons were measured in the momentum range $0.85 \leq p_{T}^{e} \leq 8.5$ GeV/$c$. Figure \ref{fig:CNMEffectsPRL109-242301} shows the production of heavy flavor electrons in central and peripheral $d + Au$ collisions compared to the production in $p + p$ collisions scaled by the number of binary collisions, $R_{dA}$. The central most $d + Au$ collisions show an enhanced $R_{dA}$, in the range $1.5 < p_{T} < 5$ GeV/$c$. This implies that the suppression seen in $Au+Au$ collisions \cite{Adare:2006nq} can not be solely explained by initial state effects.
+
+% I have this plot twice in my thesis. Also called \ref{fig:CNMEffectsPRL109-242301}
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=3.5in]{RdAsPhenixdAu}\\
+%  \caption{Electrons from the decay of hadrons containing a charm or bottom quark, measured by the PHENIX experiment at RHIC\cite{Adare:2012yxa}. The top plot is central $d+Au$ collisions compared to $p+p$ collisions. The bottom plot is peripheral $d+Au$ compared to $p+p$. All systems have center of mass energy $\sqrt{s_{NN}} = 200$ GeV.} \label{fig:RdAsPhenixdAu}
+%\end{figure}
+
+
+
+
+%[33] A. Adare et al. [PHENIX Collaboration], arXiv:1310.1005.
+%   \cite{Adare:2013lkk}
+%@article{Adare:2013lkk,
+%      author         = "Adare, A. and others",
+%      title          = "{Cold-Nuclear-Matter Effects on Heavy-Quark Production at
+%                        Forward and Backward Rapidity in d+Au Collisions at
+%                        $\sqrt{s_{NN}}=200$??GeV}",
+%      collaboration  = "PHENIX",
+%      journal        = "Phys. Rev. Lett.",
+%      volume         = "112",
+%      year           = "2014",
+%      number         = "25",
+%      pages          = "252301",
+%      doi            = "10.1103/PhysRevLett.112.252301",
+%      eprint         = "1310.1005",
+%      archivePrefix  = "arXiv",
+%      primaryClass   = "nucl-ex",
+%      SLACcitation   = "%%CITATION = ARXIV:1310.1005;%%"
+%}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{Figure4PhenixMuonPaper}\\
+  \caption{$J/\Psi$ and heavy flavor decay muons in $d+Au$ collisions $\sqrt{s_{NN}} = 200$ GeV, for the $0-20\%$ centrality class measured by the PHENIX experiment at RHIC \cite{Adare:2013lkk}. The blue points show the backward, $Au$-going direction. The red points show the forward, $d$-going direction.} \label{fig:Figure4PhenixMuonPaper}
+\end{figure}
+
+The PHENIX detector measures electrons at mid-rapidity, at pseudorapidity range $| \eta | < 0.35$ \cite{Adare:2012yxa}. The muon measurement from PHENIX offers more insight, since the muon detectors are located at forward and backward rapidity and can see the collision at a different angle. PHENIX looked at muons from heavy flavor decays in $d+Au$ collisions at center of mass energy $\sqrt{s_{NN}} = 200$ GeV \cite{Adare:2013lkk}. Figure \ref{fig:Figure4PhenixMuonPaper} \cite{Adare:2013lkk} shows $R_{dA}$ for muons from heavy flavor as compared to the $J/\Psi$ (meson composed of charm and anti-charm). The heavy flavor muons from the $Au$-going direction, ``backward'' direction, $- 2.0 < y < -1.4$, show an enhancement. The muons in the $d$-going direction, ``forward'' direction, $1.4 < y < 2.0$, show a suppression. It's also interesting to note that the $J/\Psi$ and the heavy flavor muons agree in the forward, $d$-going direction, but differ in the backward $Au$-going direction. The $J/\Psi$ are more suppressed as compared to the open-heavy flavor in the $Au$-going direction. Figure \ref{fig:Figure4PhenixMuonPaper} shows that the production of heavy flavor depends on initial spatial parameters and closed heavy flavor production is sensitive to cold nuclear matter effects. The leading-order perturbative QCD calculations with nuclear PDFs do not predict the large measured difference in heavy flavor production between $Au$-going and the $d$-going direction \cite{Adare:2013lkk}. Future theoretical models will need to describe these cold nuclear matter effects.
+
+
+
+
+%[34] J. Adams et al. [STAR Collaboration], Phys. Rev. Lett. 94 (2005) 062301.
+%\cite{Adams:2004fc}
+%@article{Adams:2004fc,
+%      author         = "Adams, J. and others",
+%      title          = "{Open charm yields in d + Au collisions at s(NN)**(1/2) =
+%                        200-GeV}",
+%      collaboration  = "STAR",
+%      journal        = "Phys. Rev. Lett.",
+%      volume         = "94",
+%      year           = "2005",
+%      pages          = "062301",
+%      doi            = "10.1103/PhysRevLett.94.062301",
+%      eprint         = "nucl-ex/0407006",
+%      archivePrefix  = "arXiv",
+%      primaryClass   = "nucl-ex",
+%      SLACcitation   = "%%CITATION = NUCL-EX/0407006;%%"
+%}
+%Star paper. I'm not sure what it shows. I didn't get the main message.
+
+
+
+\section{Single lepton measurements at the LHC}
+
+\subsection{Electrons from heavy flavor in pp collisions}
+%\cite{Abelev:2012xe} single electrons from semileptonic decays of charm and beauty hadrons in the transverse momentum range 0.5 $< p_{T}<$8 GeV/c at mid-rapidity ($|y|<$0.5) in pp collisions at $\sqrt{s}$ = 7 TeV with ALICE. TPC-TOF/TPC-TRD-TOF analysis and TPC-EMCal analysis. The data used in the present analysis were recorded during the 2010 running period. Used a ``cocktail'' to calculate and weight electrons from various background sources. 
+% FONLL pQCD calculation CTEQ6.6 parton distribution functions were used. Uncertainty was due to the mass of the charm and beauty quark and factorization and renormalisation scales $\mu_{F}$ and $\mu_{R}$ Within substantial throretical uncertainties the FONLL pQCD calculation is in agreement with the data. 
+%The ATLAS experiment has measured electrons from heavy-flavor decays in pp collisions in the $p_{T}$ range 7 $< p_{T}<26 GeV/c and in the rapidity interval $|y|<$2 where the regions 1.37$<|y|<1.52$ are excluded. the data from ATLAS extend the measurement to higher $p_{T}$ Within the experimental and theoretical uncertainties FONLL is in agreement with both data sets. Corresponding FONLL pQCD calculations in the rapidity intervals covered by ALICE and ATLAS are included for comparison. It should be noted that the invariant cross section per unit rapidity decreases with increasing width of the rapidity interval because the heavy-flavour production cross section decreases towards larger absolute rapidity values. However this effect is small in pp collisions at $\sqrt{s} = 7 $ TeV ($<5$\% for electrons from charm decays and $<10$\% for electrons from beauty decays according to FONLL calculations. \
+%The low $p_{T}$ region includes the dominant fraction of the total heavy-flavor production cross section, and future higher precision data might be sensitive to the parton distribution function of the proton at low $x$.
+
+The Large Hadron Collider has collided protons at center of mass energies 2.76, 7, and 8 TeV. Figure \ref{fig:2013-Jan-03-CombinedLog_ALICE_ATLAS} \cite{Abelev:2012xe} shows the invariant cross section per unit rapidity of heavy flavor electrons in pp collisions recorded during the 2010 running period for $\sqrt{s}$ = 7 TeV. ALICE measured electrons at mid-rapidity ($|y|<0.5$) and in the low transverse momentum region ($0.5 < p_{T}<8$ GeV/c) \cite{Abelev:2012xe}. Most of the total heavy-flavor production cross section is produced in the low transverse momentum region. In this measurement, a cocktail calculation was used to estimate the production of electrons from various background sources. The experimentally measured neutral pion production cross section was used as the main input for the cocktail calculation. The neutral pion decays to electrons by Dalitz decay and by decaying to photons which can convert to electrons. The production of the light mesons $\eta$, $\eta '$, $\rho$, $\omega$, and $\phi$ were calculated from the neutral pion production using transverse mass scaling. More details about the cocktail calculation can be found in reference \cite{Abelev:2012xe}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{2013-Jan-04-CombinedLog_ALICE_ATLAS}\\
+  \caption{Heavy Flavor electrons in ALICE for pp collisions at center of mass energy 7 TeV. Data compared with ATLAS data, at the same energy, and FONLL \cite{Abelev:2012xe}.} \label{fig:2013-Jan-03-CombinedLog_ALICE_ATLAS}
+\end{figure}
+
+Data from ATLAS from the same period in 2010 at $\sqrt{s}$ = 7 TeV are superimposed on figure \ref{fig:2013-Jan-03-CombinedLog_ALICE_ATLAS}. ATLAS data extend the $p_{T}$ reach of the ALICE data, covering $7 < p_{T}<26$ GeV/c. ATLAS has a wider rapidity acceptance as compared to ALICE. ATLAS has the rapidity coverage $|y|<2$ where the regions $1.37<|y|<1.52$ are excluded \cite{Abelev:2012xe}. The data from ATLAS agree with ALICE data. 
+
+The FONLL pQCD calculation in the matching rapidity regions for ALICE and ATLAS is also shown on figure \ref{fig:2013-Jan-03-CombinedLog_ALICE_ATLAS}. The FONLL calculation has experimental and theoretical uncertainties due to the factorization and renormalization scales, $\mu_{F}$ and $\mu_{R}$, and due to the uncertainty of the mass of the charm and bottom quark. The invariant cross section per unit rapidity decreases slightly with a larger rapidity acceptance. The FONLL pQCD calculation agrees with the ALICE and ATLAS data within the FONLL theoretical uncertainty. 
+
+
+
+\subsection{Electrons from heavy flavor in pPb collisions}
+
+%Measurements of the heavy-flavor nuclear modification factor in p-Pb collisions at snn = 5.02 TeV with ALICE at the LHC
+%Quark Matter 2014 Book  page c547
+%The pPb pictures in here are now labeled as obsolete: ALI-DER-53763, 
+
+
+%Measurement of electrons from heavy-flavour hadron decays in pPb collisions at sNN = 5.02 TeV 
+%\cite{Adam:2015qda}
+%https://arxiv.org/abs/1509.07491
+%https://aliceinfo.cern.ch/ArtSubmission/node/1178
+%https://aliceinfo.cern.ch/Figure/node/8620
+%https://aliceinfo.cern.ch/Figure/node/8618
+%published : Figure \ref{fig:2016-Feb-05-hfe_cross_compareID} and Figure \ref{fig:2016-Feb-05-rPa_minbias_theory_merged}
+%minimum-bias p-Pb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV using the ALICE detector at the LHC. 
+%$0.5 < p_{T}<12$ GeV/c
+%$-1.065 < y_{cm} < 0.135$ in the center of mass reference frame. 
+%The contribution of electrons from background sources was subtracted using an invariant mass approach. 
+%The nuclear modification factor $R_{pPb}$ was calculated by comparing the pT differential invariant cross section in p-Pb collisions to a pp reference at the same center of mass energy, which was obtained by interpolating measurements at $\sqrt{s} = $ 2.76 TeV and 7 TeV. The $R_{pPb}$ is consistent with unity within uncertainties of about 25\%. The measurement shows that heavy-flavor production is consistent with binary scaling, so that a suppression in the high-pT yield in Pb-Pb collisions has to be attributed to effects induced by the hot medium produced in the final state. 
+%The influence of the CNM effects can be studied by measuring the nuclear modification factor $R_{pA}$. The $R_{pA}$ is defined such that it is unity if there are no nuclear effects. To obtain the nuclear modification factor $R_{pPb}$ of electrons from heavy-flavour hadron decays, the $p_{T}$ differential invariant cross section in p-Pb collisions at $\sqrt{s_{NN}} = $ 5.02 TeV was compared to a pp reference multiplied by 208, the Pb mass number. 
+%The minimum bias (MB) p-Pb data sample used in this analysis was collected in 2013. 
+%Photonic electrons are produced in $e^{+} e^{-}$ pairs and can thus be identified using an invariant mass technique (photonic method).
+
+The Large Hadron Collider collided proton and lead ions, pPb collisions, in 2013. Figure \ref{fig:2016-Feb-05-hfe_cross_compareID} shows the $p_{T}$ differential invariant cross section for electrons from heavy flavor decay hadrons for the minimum-bias pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. Three methods for electron identification are shown using combinations of ALICE detectors: the Time Projection Chamber, Time Of Flight, and Electromagnetic Calorimeter. In this measurement the total transverse momentum range for all three electron identification methods is $0.5 < p_{T}<12$ GeV/c. The rapidity coverage for this measurement is $-1.065 < y_{cm} < 0.135$ in the center of mass reference frame, and $-0.6 < y < 0.6$ in the lab frame. The yield of electrons from background sources was subtracted using an invariant mass technique, similar to the method used in this thesis. The invariant mass method takes advantage of the fact that electrons from background sources are mostly produced in $e^{+} e^{-}$ pairs. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{2016-Feb-05-hfe_cross_compareID}\\
+  \caption{Differential invariant cross section for electrons from heavy flavor decay hadrons in minimum bias pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE \cite{Adam:2015qda}.} \label{fig:2016-Feb-05-hfe_cross_compareID}
+\end{figure}
+
+
+The nuclear modification factor, $R_{pPb}$, shows if there are any nuclear effects in pPb collisions as compared to pp collisions. Figure \ref{fig:2016-Feb-05-rPa_minbias_theory_merged} \cite{Adam:2015qda} shows the nuclear modification factor of electrons from heavy flavor hadron decays in pPb collisions. Data for pp collisions at a matching center of mass energy to pPb collisions are needed to calculate $R_{pPb}$. However, there was no proton-proton $\sqrt{s}$ = 5 TeV data at the time. The pp reference used in figure \ref{fig:2016-Feb-05-rPa_minbias_theory_merged} was interpolated from measurements at $\sqrt{s} = $ 2.76 TeV and 7 TeV from ALICE and ATLAS. $R_{pPb}$ is consistent with unity with a slight enhancement at transverse momentum $\sim 1.5$ GeV/c. The pQCD calculation of FONLL + EPS09NLO (nuclear shadowing parametrization) and uncertainties are plotted on figure \ref{fig:2016-Feb-05-rPa_minbias_theory_merged}. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{2016-Feb-05-rPa_minbias_theory_merged}\\
+  \caption{Nuclear modification factor, $R_{pPb}$ shown for single electrons from open heavy flavor in pPb minimum bias collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE \cite{Adam:2015qda}.} \label{fig:2016-Feb-05-rPa_minbias_theory_merged}
+\end{figure}
+
+
+%
+%%\cite{Adam:2015qda}
+%\begin{figure}
+%\centering
+%\begin{minipage}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{2016-Feb-05-hfe_cross_compareID}
+%  \captionof{figure}{Differential invariant cross section for electrons from heavy flavor decay hadrons in minimum bias pPb collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE.\cite{Adam:2015qda}}
+%  \label{fig:2016-Feb-05-hfe_cross_compareID}
+%\end{minipage}   \begin{minipage}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{2016-Feb-05-rPa_minbias_theory_merged}
+%  \captionof{figure}{Nuclear modification factor, $R_{pPb}$ shown for single electrons from open heavy flavor in pPb minimum bias collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. \cite{Adam:2015qda}}
+%  \label{fig:2016-Feb-05-rPa_minbias_theory_merged}
+%\end{minipage}
+%\end{figure}
+
+
+The pPb measurements shown in figures \ref{fig:2016-Feb-05-hfe_cross_compareID} and \ref{fig:2016-Feb-05-rPa_minbias_theory_merged} used the minimum bias pPb data. However, the ALICE detector also recorded EMCal triggered data for pPb collisions. Using the EMCal triggered data would extend the $p_{T}$ reach of the analysis since the trigger makes saving events with energetic particles a priority. This thesis focuses on the EMCal triggered data in order to extend the pPb results for ALICE. 
+
+
+
+\subsection{D Mesons at the LHC}
+
+% \cite{Abelev:2014hha} Measurement of prompt D-meson production in p-Pb collisions at snn = 5.02 TeV
+ALICE measured the production cross section for prompt D mesons \cite{Abelev:2014hha} in pPb collisions at the center of mass energy $\sqrt{s_{NN}} = 5.02$ TeV. D mesons were measured in the rapidity interval $|y_{lab}|<0.5$ which corresponds to the center of mass reference frame $-0.96 < y_{cms} < 0.04$. Prompt charmed mesons $D^{0}, D^{+}, D^{\ast +}, D^{+}_{s}$ and their charge conjugates were measured using their hadronic decay channels, listed in table \ref{tab:InvMassHadronicDecays}. The D meson candidates were found by calculating the invariant mass of two or three tracks from kaons and pions. 
+
+%http://pdg.lbl.gov/2011/tables/rpp2011-tab-mesons-charm.pdf
+%http://pdg.lbl.gov/2010/listings/rpp2010-list-Ds-plus-minus.pdf
+\begin{table}[h]
+  \begin{center}
+    \caption{D-mesons and their hadronic decay channels measured with the ALICE detector with the invariant mass method \cite{Abelev:2014hha}.}
+    \label{tab:InvMassHadronicDecays}
+    \begin{tabular}{|r|r|l|}
+    \hline
+    Decay channels measured & Branching Ratio\\
+    \hline
+    \rule{0pt}{2.2ex} \rule[-1.1ex]{0pt}{0pt}  $D^{0} \to K^{+} \pi^{-}$ and $\bar D^{0} \to K^{-} \pi^{+}$ & 3.88 $\pm$ 0.05\% \\
+    \hline
+    \rule{0pt}{2.2ex} $D^{+} \to K^{-} \pi ^{+} \pi ^{+}$ and $D^{-} \to K^{+} \pi ^{-} \pi ^{-}$ & 9.13 $\pm$ 0.19 \% \\
+    \hline
+   \rule{0pt}{2.2ex} $D^{\ast +} \to D^{0} \pi^{+} \to K^{-} \pi ^{+} \pi ^{+}$ and $D^{\ast -}  \to D^{0} \pi^{-} \to K^{-} \pi ^{+} \pi ^{-}$ & 67.7 $\pm$ 0.5 \%\\
+   \hline
+   \rule{0pt}{2.2ex} $D^{+}_{s} \to \phi \pi^{+} \to K^{+} K^{-} \pi ^{+} $ and $D^{-}_{s} \to \phi \pi^{-} \to K^{-} K^{+} \pi ^{-} $& 2.28 $\pm$ 12\%\\
+   \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.0in]{2014-May-15-R_pPb_4in1_taller}\\
+  \caption{$R_{pPb}$ of $D^{0}, D^{+}, D^{\ast +}, D^{+}_{s}$ and their charge conjugates measured \cite{Abelev:2014hha} in the ALICE experiment at the LHC for pPb collisions at $\sqrt{s_{NN}} = 5.02$ TeV.}\label{fig:2014-May-15-R_pPb_4in1_taller}
+\end{figure}
+
+The $R_{pPb}$, nuclear modification factor, is shown for $D^{0}, D^{+}, D^{\ast +}, D^{+}_{s}$ and their charge conjugates in figure \ref{fig:2014-May-15-R_pPb_4in1_taller} \cite{Abelev:2014hha} for the transverse momentum interval $1 < p_{T} < 24$ GeV/$c$. The $R_{pPb}$ for the four D-mesons agree with unity within the statistical and systematic uncertainties. 
+
+%Image pPb and PbPb with D mesons using the invariant mass method %2014-May-15-pPbAndPbPb
+%Quark Matter 2014 Book  page c516
+%https://aliceinfo.cern.ch/Figure/node/6902
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.5in]{2014-May-15-pPbAndPbPb}\\
+  \caption{Nuclear modification factor shown for D meson production in pPb collisions at $\sqrt{s_{NN}} = 5.02$, and central and peripheral Pb-Pb collisions at $\sqrt{s_{NN}}=2.76$ TeV. All three are measured \cite{Abelev:2014hha} by the ALICE experiment at the LHC.}\label{fig:2014-May-15-pPbAndPbPb}
+\end{figure}
+
+The $D^{0}, D^{+}, D^{\ast +}$ mesons species were averaged, weighted by their relative uncertainties. The average $R_{pPb}$ of D mesons is shown in figure \ref{fig:2014-May-15-pPbAndPbPb} \cite{Abelev:2014hha} compared to the $R_{PbPb}$ for central and peripheral Pb-Pb collisions at $\sqrt{s_{NN}}=2.76$ TeV. The $R_{pPb}$ for D mesons is consistent with unity, showing that the production of D mesons in pPb collisions is what is expected from binary collision scaling of the production of D mesons in pp collisions. However, the production of D mesons in Pb-Pb collisions show suppression. The most central, 0-20\% centrality, collisions show the most suppression. Since the nuclear modification factor for D mesons in pPb collisions is consistent with unity, then the suppression of D mesons seen in Pb-Pb collisions can not be due to initial state effects. Figure \ref{fig:2014-May-15-pPbAndPbPb} shows a strong case for the presence of hot partonic matter created in Pb-Pb collisions.
+
+%\clearpage %puts all of the figures which have not been placed yet somewhere
+
+
+
+\subsection{B Mesons at the LHC}
+
+%=======================================================%
+
+% \cite{Khachatryan:2015uja}
+%Image from pPb B Mesons from CMS. Figure 3, Study of B Meson production in pPb collisions at sNN = 5.02 TeV using exclusive hadronic decays
+%CMS-HIN-14-004 %CERN-PH-EP/2015-209 2015/08/28 %arXiv:1508.06678v1
+
+CMS measured production cross sections of $B^{+}, B^{0},$ and  $B^{0}_{s}$ mesons and their charge conjugates ($B^{-}, \bar B^{0},$ and  $\bar B^{0}_{s}$) by their hadronic decays in pPb collisions at $\sqrt{s_{NN}} = 5.02$ TeV with the CMS detector at the CERN LHC. Table \ref{tab:CMSInvMassHadronicDecays} shows the hadronic decay modes used for $B^{+}, B^{0},$ and  $B^{0}_{s}$ and their branching ratios. B mesons candidates were identified by first finding two muons of opposite charge with an invariant mass near the $J/\psi$ mass. Then the $J/\psi$ candidate was combined with charged tracks to create a B-meson invariant mass distribution. Tracks were reconstructed with the interval $|\eta_{lab}| < 2.5$ and muons in the interval $|\eta_{lab}| < 2.4$. 
+%Magnetic field is 3.8T of a superconducting solenoid.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{CMSBMesonsRpA}\\
+  \caption{B meson production in pPb $\sqrt{s_{NN}} = 5.02$ TeV collisions as compared to the FONLL pp prediction as measured \cite{Khachatryan:2015uja} in the CMS experiment at the CERN LHC. Shown are $B^{+}$ (left), $B^{0}$ (center), $B^{0}_{s}$ (right) with transverse momentum range $10 < p_{T} < 60$ GeV/c.}\label{fig:CMSBMesonsRpA}
+\end{figure}
+
+%http://pdg.lbl.gov/2015/listings/rpp2015-list-B-zero.pdf
+\begin{table}[h]
+  \begin{center}
+    \caption{B-mesons and their hadronic decay channels measured in the CMS detector with the invariant mass method \cite{Khachatryan:2015uja}.}
+    \label{tab:CMSInvMassHadronicDecays}
+    \begin{tabular}{|r|r|l|}
+    \hline
+    Decay channels measured & Branching Ratio\\
+    \hline
+    \rule{0pt}{2.2ex} \rule[-1.1ex]{0pt}{0pt}    $B^{0} \to J/\psi + K^{\ast}(892) \to \mu^{+} + \mu^{-} + K^{+} + \pi^{-}$ & (5.24$\pm 0.24) \times 10^{-5}$ \% \\
+   \hline
+    \rule{0pt}{2.2ex} \rule[-1.6ex]{0pt}{0pt}  $B^{+} \to J/\psi + K^{+} \to \mu^{+} + \mu^{-} + K^{+}$ & (6.12$\pm 0.19) \times 10^{-5}$ \% \\
+       \hline
+    \rule{0pt}{2.2ex} \rule[-1.6ex]{0pt}{0pt}  $B^{0}_{s} \to J/\psi + \phi \to \mu^{+} + \mu^{-} + K^{+} + K^{-} $ & (3.12$\pm 0.27) \times 10^{-5}$ \% \\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+The nuclear modification factor for $B^{+}, B^{0},$ and  $B^{0}_{s}$ and ($B^{-}, \bar B^{0},$ and  $\bar B^{0}_{s}$) mesons compared to the pp cross sections obtained from FONLL (fixed-order plus next-to-leading-logarithm) calculations are shown in figure \ref{fig:CMSBMesonsRpA}. The $R_{pPb}^{FONLL}$ is shown for the transverse momentum range $10 < p_{T} < 60$ GeV/$c$. The modification factor for all B mesons species are consistent with unity. No significant suppression or enhancement is observed as compared to pp perturbative QCD calculations scaled by the number of binary collisions. 
+
+
+
+%Due to the energy difference of the colliding beams, the nucleon-nucleon center-of-mass frame in pPb collisions was not at rest with respect to the laboratory frame. The results presented here use the convention that the proton-going side corresponds to positive pseudorapidity. This implies that massless particles emitted at pseudorapidity ?CM in the NN center-of-mass frame are detected at ?lab = ?CM + 0.465.
+
+
+
+
+
+
+%\subsection{HF Muons in pPb}
+%The muon spectrometer is located at the forward region in ALICE. The muon spectrometer is located at $-4.0 < \eta_{lab} < -2.5$. The EMCal is located in $ -0.7 < \eta_{lab} < 0.7$. The muon measurement is at a different rapidity range from the electron measurement. 
+%
+%Muon must have a track and a hit in the muon spectrometer. 
+%
+%There's only a muon detector on one side of ALICE, right? So I think forward and backward rapidity in Figure \ref{fig:2014-May-15-RpA_RAp_RAA} is measured in the same detector, but one is for p-Pb collisions and the other is Pb-p collisions. 
+%%Look at this reference ALICE collaboration Phys. Lett. B 708 (2012) 265.
+%
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=4.5in]{2014-May-15-RpA_RAp_RAA}\\
+%  \caption{(Couldn't find anything published from ALICE for RAA for HF Muons.) Nuclear modification factor for heavy-flavor muons for forward and backward rapidity for pPb collisions and central Pb-Pb collisions. } \label{fig:2014-May-15-RpA_RAp_RAA}
+%\end{figure}
+
+\clearpage %puts all of the figures which have not been placed yet somewhere
+
+
+
+
+

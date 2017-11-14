@@ -1,0 +1,250 @@
+\chapter{Results and Discussion} \label{ch:results and discussion}
+
+The major components of the steps of the analysis have been described in Chapter \ref{ch:analysis}. In section \ref{sec:Event and Track Selection} any events or tracks with bad quality or were known to be from a source of background were removed. Then the electrons were enhanced from the background by applying particle identification cuts $n^{TPC}_{\sigma}$ (section \ref{subsec:TPCnSigma}), $E/p$ (section \ref{subsec:E/p}), and M20 (section \ref{subsec:ShowerShape}). The hadrons that passed the electron identification cuts and misidentified as electrons were subtracted in section \ref{subsec:Hadron Background Subtraction}. From the inclusive electron yield the main sources of background were calculated and removed using the invariant mass method (section \ref{sec: Photonic Background}). The electrons remaining were then corrected for the geometrical acceptance and efficiency of reconstructing an electron from semileptonic heavy-flavor hadron decays, shown in section \ref{Efficiency}. After putting all of these components together, the $p_{T}$-differential invariant yield and cross section for electrons from decays of heavy flavor hadrons can be obtained.
+
+\section{Invariant Yield of HFE}
+
+%\begin{equation}
+%\frac{1}{2 \pi p_{T}} \frac{\textnormal{d}^{2} \sigma_{hfe}}{\textnormal{d}p_{T}\textnormal{d}y} = \frac{1}{2} \frac{1}{\Delta \phi p^{center}_{T}} \frac{1}{\Delta y \Delta p_{T}} \hat U [\frac{N^{raw}_{hfe}}{(\epsilon^{geo} \times \epsilon^{reco} \times \epsilon^{eID})}] \frac{\sigma^{V0}_{MB}}{N_{MB}}
+%\end{equation}
+
+The $p_{T}$-differential invariant yield of single electrons from decays of bottom and charm hadrons, (e$^{+}$ + e$^{-}$)/2, is given by:
+
+\begin{equation}\label{eqn:Inv Yield}
+\frac{1}{2 \pi p_{T}} \frac{\textnormal{d}^{2} N_{HFE}}{\textnormal{d}p_{T}\textnormal{d}y} = \frac{1}{2} \frac{1}{2 \pi p^{center}_{T}} \frac{1}{\Delta y \Delta p_{T}} \frac{N^{raw}_{HFE}}{(\epsilon^{geo} \times \epsilon^{reco} \times \epsilon^{eID})} \frac{1}{N_{MB} N_{Trigg.Scaling}}
+\end{equation}
+
+In this equation \cite{Abelev:2012xe}, $p^{center}_{T}$ is the mean $p_{T}$ of each $p_{T}$ bin. The geometrical acceptance in rapidity in the lab frame is given by $\Delta y$. The width of the $p_{T}$ bin is $\Delta p_{T}$. $N_{MB}$ is the number of minimum bias collisions analyzed. $N_{Trigg.Scaling}$ is the trigger scaling, described in detail in \ref{sec:triggerscaling}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{HFEYieldAllTriggers.pdf}\\
+  \caption{Yield for heavy flavor electrons in $pPb$ collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. Minimum Bias events are shown in black dots. EG2 triggered events are shown in red triangles. EG1 triggered events are shown in blue squares.} \label{fig:HFEYieldAllTriggers}
+\end{figure}
+
+Figure \ref{fig:HFEYieldAllTriggers} shows $p_{T}$-differential invariant yield for heavy flavor electrons. The yield per minimum bias events is shown for minimum bias, EG2 and EG1 triggered events. The horizontal bars show the width of the $p_{T}$ bin. The vertical error bars show the statistical errors and the shaded vertical error bars show the systematic errors. The yield for Minimum Bias events and triggered events agree within statistical and systematic error bars in the overlapping $p_{T}$ regions, $8<  p_{T} < 20$ GeV/c. 
+%The fluctuations after $p_{T} > 24$ are due to low statistics in this region and could be improved by merging these last few bins.
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6in]{HFEYieldTriggersCombinedpPb_Centrality_0_to_100}\\
+%  \caption{Yield for HFE. All triggers are added weighted based on their statistical errors.} \label{fig:HFEYieldTriggersCombinedpPb_Centrality_0_to_100}
+%\end{figure}
+
+
+\section{Cross Section of HFE}
+
+The equation for the cross section is similar to the equation for the invariant yield:
+
+%\begin{equation}\label{eqn:cross section}
+%\frac{1}{2 \pi p_{T}} \frac{\textnormal{d}^{2} \sigma_{hfe}}{\textnormal{d}p_{T}\textnormal{d}y} = \frac{1}{2} \frac{1}{2 \pi \ p^{center}_{T}} \frac{1}{\Delta y \Delta p_{T}} \frac{N^{raw}_{hfe}}{(\epsilon^{geo} \times \epsilon^{reco} \times \epsilon^{eID})} \frac{\sigma^{V0}_{MB}}{N_{MB} N_{Trigg.Scaling}}
+%\end{equation}
+
+\begin{equation}\label{eqn:cross section}
+\frac{1}{2 \pi p_{T}} \frac{\textnormal{d}^{2} \sigma_{HFE}}{\textnormal{d}p_{T}\textnormal{d}y}  = \frac{1}{2 \pi p_{T}} \frac{\textnormal{d}^{2} N_{HFE}}{\textnormal{d}p_{T}\textnormal{d}y}  \times \sigma^{V0}_{MB}
+\end{equation}
+
+In this equation, $\sigma^{V0}_{MB}$ is the cross section for Minimum Bias events in measured in ALICE using the VZERO trigger and is $\sigma^{V0}_{MB} = 2.09 \pm 0.07$ barns \cite{Abelev:2014epa}.
+%Look at Measurement of visible cross sections in proton-lead collisions at $\sqrt{s_{\rm NN}}$ = 5.02 TeV in van der Meer scans with the ALICE detector
+% Papers refer to ALICE Collaboration B. Abelev et al., "Pseudorapidity density of charged particles in p?Pb collisions at ?sNN = 5.02 TeV", but I don't see 2.09 in there.
+
+Figure \ref{fig:HFECSAllTriggers} shows the $p_{T}$-differential invariant cross section for heavy flavor electrons. The various triggers agree within their systematic and statistical error bars in the overlapping $p_{T}$ regions.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{HFECSAllTriggers.pdf}\\
+  \caption{Cross Section for heavy flavor electrons in $pPb$ collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. Minimum Bias events are shown in black dots. EG2 triggered events are shown in red triangles. EG1 triggered events are shown in blue squares.} \label{fig:HFECSAllTriggers}
+\end{figure}
+
+The measurements for the three event samples can be combined using a weighted mean, where the weighting factor is the inverse square of the error. The weighted mean of the Minimum Bias, EG2 and EG1 triggered events is drawn in figure \ref{fig:HFECSCombined}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{HFECSCombined.pdf}\\
+  \caption{Cross Section for heavy flavor electrons in $pPb$ collisions at $\sqrt{s_{NN}}$ = 5.02 TeV measured in ALICE. Minimum Bias, EG2 and EG1 triggered events are combined using a weighted average.} \label{fig:HFECSCombined}
+\end{figure}
+
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6in]{HFECSTriggersCombinedpPb_Centrality_0_to_100}\\
+%  \caption{Cross Section for HFE. All triggers are added with weights based on their statistical errors.} \label{fig:HFECSTriggersCombinedpPb_Centrality_0_to_100}
+%\end{figure}
+
+
+%\begin{figure}
+%\centering
+%\parbox{7cm}{
+%\includegraphics[width=8cm]{HFECSAllTriggerspPb_Centrality_0_to_100}
+%\caption{My Cross Section. All triggers combined}
+%\label{fig:HFECSAllTriggerspPb_Centrality_0_to_100}}
+%\qquad
+%\begin{minipage}{7cm}
+%\includegraphics[width=8cm]{HFECSTriggersCombinedpPb_Centrality_0_to_100}
+%\caption{My cross section with the published ALICE pPb published cross section overlayed. }
+%\label{fig:HFECSTriggersCombinedpPb_Centrality_0_to_100}
+%\end{minipage}
+%\end{figure}
+
+
+\section{Nuclear Modification Factor $R_{pA}$}
+The nuclear modification factor can help understanding the cold nuclear matter effects with respect to those in proton-proton collisions. 
+
+The $R_{pPb}$ can be calculated as the ratio of the cross section of electrons from decays of bottom and charm hadrons in p-Pb collisions and pp collisions scaled by the number of nucleons in the Pb nucleus.
+The pp reference spectrum should be multiplied by the number of nucleons in the lead nucleus, A=208.
+
+\begin{equation}\label{eqn:RpPb}
+R_{pPb} =  \frac{1}{A} \frac{d\sigma_{pPb}/dp_{T}}{d\sigma_{pp}/dp_{T}} 
+\end{equation}
+
+The $R_{pPb}$ can also be calculated using the yield in $pPb$ and pp collisions. In this case, the pp collisions are scaled by the average number of binary nucleon-nucleon collisions as calculated by the Glauber model, $\langle N^{Glauber}_{coll} \rangle = 6.87 \pm 5.10$ for minimum bias $pPb$ collisions \cite{Adam:2014qja}. When comparing the yield in pPb collisions and cross section in pp collisions, pp should be scaled by the thickness function, $\langle T^{Glauber}_{pPb} \rangle = 0.0983 \pm 0.0728$ mb$^{-1}$ for minimum bias $pPb$ collisions \cite{Adam:2014qja}. All of these equations for $R_{pPb}$ will give an equivalent result. 
+
+%Page 29 Particle production and centrality in p-Pb ALICE https://arxiv.org/pdf/1412.6828v2.pdf
+\begin{equation}\label{eqn:QNcoll}
+R_{pPb} =  \frac{1}{\langle N^{Glauber}_{coll} \rangle} \frac{ \textnormal{d} N^{ \textnormal{pPB} }  / \textnormal{d}p_{T} }{\textnormal{d} N^{ \textnormal{pp} } / \textnormal{d}p_{T} } =  \frac{1}{\langle T^{Glauber}_{pPb} \rangle} \frac{ \textnormal{d} N^{ \textnormal{pPB} } / \textnormal{d}p_{T} }{\textnormal{d} \sigma^{ \textnormal{pp} } / \textnormal{d}p_{T} } 
+\end{equation}
+
+
+%\begin{equation}\label{eqn:QThickness}
+%R_{pPb} =  \frac{1}{\langle T^{Glauber}_{pPb} \rangle} \frac{ \textnormal{d} N^{ \textnormal{pPB} } / \textnormal{d}p_{T} }{\textnormal{d} \sigma^{ \textnormal{pp} } / \textnormal{d}p_{T} } 
+%\end{equation}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{CombinedCSandFONLL.pdf}\\
+  \caption{FONLL pQCD theory calculation for the single electron cross section at $\sqrt{s}$ = 5.02 TeV compared to the cross section from this analysis.} \label{fig:CombinedCSandFONLL}
+\end{figure}
+
+There is currently no pp measurement at $\sqrt{s}$ = 5.02 TeV for electrons from decays of bottom and charm hadrons. The Fixed Order plus Next-to-Leading-Log perturbative Quantum Chromodynamics (FONLL pQCD) theory calculations have been demonstrated to agree with heavy flavor measurements at the LHC \cite{ALICE:2011aa} \cite{Abelev:2012xe}, especially in the $p_{T}$ region relevant to this analysis. Figure \ref{fig:CombinedCSandFONLL} shows the FONLL calculation \cite{Cacciari:1998it} for pp collisions at $\sqrt{s}$ = 5.02 TeV for heavy flavor electron decays along with the cross section from this analysis. 
+
+
+The FONLL calculation \cite{Cacciari:1998it} included the standard parameter set and standard parton distribution function, CTEQ6.6. The FONLL prediction has some uncertainty associated with the factorization and renormalization scales, $\mu_{F}$ and $\mu_{R}$ and the uncertainty of the mass of charm and bottom quark, $m_{c}$ and $m_{b}$. The central value calculation used the mass of bottom $m_{b} = 4.75$ GeV, and mass of charm $m_{c} = 1.5$ GeV. In figure \ref{fig:CombinedCSandFONLL}, the central value for FONLL is drawn with a solid line. The width of the filled area is the uncertainties due to scales and masses are summed in quadrature.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{CombinedCSandScaledFONLL.pdf}\\
+  \caption{Cross section from this analysis compared to scaled FONLL \cite{Cacciari:1998it} pQCD calculation.} \label{fig:CombinedCSandScaledFONLL}
+\end{figure}
+
+The FONLL reference was scaled by the number of nucleons in the lead nucleus, as in equation \ref{eqn:RpPb} and demonstrated on figure \ref{fig:CombinedCSandScaledFONLL}. The scaled FONLL reference matches well with the measurement in $pPb$ collisions.
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=4in]{pPbCSand208ATLASFONLL.pdf}\\
+%  \caption{Cross section from this analysis compared to scaled pp ATLAS+ALICE and FONLL pQCD calculation.} \label{fig:pPbCSand208ATLASFONLL}
+%\end{figure}
+%
+%In order to compare with FONLL, another reference was made from combining results from ALICE for pp collisions at $\sqrt{s} = 2.76$ TeV \cite{Abelev:2014gla} and ATLAS results at $\sqrt{s} = 7$ TeV \cite{Aad:2011rr}. The results were scaled to $\sqrt{s} = 5$ TeV using FONLL. This reference and the FONLL reference were both scaled by the number of nucleons in the lead nucleus, as in equation \label{eqn:RpPb} and demonstrated on figure \ref{fig:pPbCSand208ATLASFONLL}. The scaled ATLAS+ALICE reference and the scaled FONLL reference both match well with the measurement in $pPb$ collisions.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{CombinedRAAFONLL.pdf}\\
+  \caption{$R_{pPb}$ using FONLL pQCD theory calculation as a reference.} \label{fig:CombinedRAAFONLL}
+\end{figure}
+
+Figure \ref{fig:CombinedRAAFONLL} shows the $R_{pA}$ using the FONLL reference. The error due to the uncertainty in the FONLL calculation is not included in the systematic error in this plot. The $R_{pA}$ shows a slight enhancement at low $p_{T}$, and is consistent with unity within statistical and systematic error bars for $p_{T} > 8$. 
+%There is an overall systematic error due to the uncertainty in the FONLL calculation that is not included in the systematic errors on this plot. 
+
+
+
+%Figure \ref{fig:RpACS_208FONLL} shows the $R_{pA}$ using ATLAS+ALICE for a reference for Minimum Bias collisions and FONLL reference for the triggered events. The ATLAS+ALICE reference is slightly higher than the FONLL reference. When comparing figure \ref{fig:RpACS_208FONLL} and figure \ref{fig:RpACS_208FONLL}, the ATLAS+ALICE scaled reference moved the $R_{pA}$ for the Minimum Bias points downwards. Both figure \ref{fig:RpACS_208FONLL} and figure \ref{fig:RpACS_208FONLL} both show that cold nuclear matter effects are small in $pPb$ collisions.
+%
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=4in]{RAAwith208ATLASFONLL.pdf}\\
+%  \caption{$R_{pPb}$ using the scaled ALICE+ATLAS measurement for the reference for Minimum Bias collisions. FONLL pQCD theory calculations were used as a reference for EG1 and EG2 triggered events.} \label{fig:RAAwith208ATLASFONLL}
+%\end{figure}
+
+
+
+
+
+
+%==================================
+
+
+
+
+
+\section{Comparison to previous measurement}
+
+The cross section in this analysis agrees with a previous analysis \cite{Adam:2015qda} measured in ALICE with Minimum Bias events, as shown in figure \ref{fig:PubAndRebCSCombined}. This analysis was able to extend the $p_{T}$ reach of the previous analysis. The cross sections agree within systematic and statistical error bars. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4.5in]{PubAndRebCSCombined.pdf}\\
+  \caption{Heavy flavor electron cross section compared with the published \cite{Adam:2015qda} ALICE $pPb$ cross section drawn in purple.} \label{fig:PubAndRebCSCombined}
+\end{figure}
+
+
+
+
+
+Figure \ref{fig:RebeccaAndJanRAA} \cite{Adam:2016wyz}, compares the $R_{pA}$ from this analysis with the previous analysis \cite{Adam:2015qda} measured in ALICE with Minimum Bias events. The $R_{pPb}$ obtained is consistent within systematic and statistical error bars. Both analyses measure $R_{pPb}$ as unity within uncertainties. This suggests that cold nuclear matter effects are small in $pPb$ collisions at LHC energies. Several theoretical models are shown on figure \ref{fig:RebeccaAndJanRAA}. Included in the theory curves shown are FONLL+ EPS09NLO \cite{Eskola:NewGeneration} nuclear modification and parameterization from input of deep inelastic scattering, Drell-Yan dilepton production and inclusive pion production. The blast wave calculation \cite{Sickles:2013yna} is a hydrodynamic model that assumes that the heavy quarks flow with the expansion of a medium. Also shown are theories that include coherent multiple scattering \cite{Sharma:2009hn} and incoherent multiple scatterings \cite{Kang:2014hha}. All four of these theory calculations predict small cold nuclear matter effects in $pPb$ collisions and agree with the data. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.0in]{JanAndMineCombinedRAA.pdf}\\
+  \caption{$R_{pPb}$ measured in this analysis compared to the published result \cite{Adam:2015qda}. Four theoretical models are included: incoherent multiple scatterings \cite{Kang:2014hha}, coherent multiple scattering \cite{Sharma:2009hn}, FONLL+ EPS09NLO \cite{Eskola:NewGeneration} and blast wave calculation \cite{Sickles:2013yna}.} \label{fig:RebeccaAndJanRAA}
+\end{figure}
+
+
+
+
+
+
+\section{Comparison to similar analysis}
+
+Figure \ref{fig:Dmesons} shows $R_{pPb}$ for the average of $D^{0}$, $D^{+}$ and $D^{*+}$ mesons and their charge conjugates measured in $pPb$ collisions in ALICE \cite{Abelev:2014hha} as compared to the $R_{pPb}$ from this analysis. The $D$ mesons were measured by reconstructing their hadronic decay channel. When comparing these plots it is important to note that the x-axis of the $D$ mesons plot is the $D$ meson $p_{T}$, while the x-axis of this analysis is $p^{\mathrm{e}}_{T}$. The electrons from decays of $D$ and $B$ mesons carry away a fraction of the $p_{T}$ of the $D$ or $B$ meson. The heavy flavor decay electron at a $p_{T}$ bin samples a range of $D$ and $B$ mesons at a higher $p_{T}$. The $R_{pPb}$ for electrons from heavy flavor decays agrees and the average D meson measurement both show an $R_{pPb}$ consistent with unity. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{DmesonsAndMineCombined}\\
+  \caption{$R_{pPb}$ for the average of $D^{0}$, $D^{+}$ and $D^{*+}$ mesons \cite{Abelev:2014hha} in ALICE, for $pPb$ collisions at $\sqrt{s_{NN}}$ = 5.02 TeV as compared to the $R_{pPb}$ from this analysis.} \label{fig:Dmesons}
+\end{figure}
+
+Figure \ref{fig:DAuPhenixAndMineCombined} compares the $R_{pPb}$ for this analysis to the measurement of electrons from heavy flavor decays in d+Au (deuteron+gold) collisions at $\sqrt{s_{NN}}$ = 200 GeV measured by the PHENIX experiment at RHIC, drawn with red points. The $R_{d+Au}$ exhibits evidence of an enhancement as compared to pp collisions. 
+
+%Figure \ref{fig:dAuAndAuAuPhenix} compares the $R_{pPb}$ for this analysis to the measurement of electrons from heavy flavor decays in two systems from the PHENIX experiment at RHIC. The top 0-10\% centrality Au+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV measured by PHENIX \cite{Adare:2006nq} is shown in green points. A strong suppression is seen for these central Au+Au collisions relative to pp collisons. The 0-100\% centrality d+Au $\sqrt{s_{NN}}$ = 200 GeV measured by PHENIX \cite{Adare:2012yxa} is shown in red. The $R_{d+Au}$ shows some evidence of an enhancement as compared to pp collisions. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{DAuPhenixAndMineCombined}\\
+  \caption{Nuclear modification factor for electrons from heavy flavor decays for this analysis as compared to d+Au collisions measured in PHENIX at $\sqrt{s_{NN}}$ = 200 GeV \cite{Adare:2012yxa}. } \label{fig:DAuPhenixAndMineCombined}
+\end{figure}
+
+
+Figure \ref{fig:2016-Sep-23-hfe_00_10RHIC} shows $R_{AA}$ of electrons from heavy-flavor hadron decays in heavy ion collisions measured by ALICE and PHENIX \cite{Adare:2006nq} experiments for 0-10\% centrality Pb+Pb and the Au+Au collisions. The two measurements both show a nuclear modification factor consistent with unity at low $p_{T}$ and a large suppression when moving to higher $p_{T}$. Since $R_{dAu}$ and $R_{pPb}$ is consistent with a slight enhancement or unity, then the suppression seen in $R_{AA}$ cannot be explained by initial state effects or cold nuclear matter effects. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{2016-Sep-23-hfe_00_10RHIC}\\
+  \caption{$R_{AA}$ of electrons from heavy-flavor hadron decays measured in ALICE and RHIC. The black and red points show 0-10\% most central Pb-Pb events at $\sqrt{s_{NN}}$ = 2.76 TeV measured in ALICE \cite{HFERAAPbPb}. The green points show the 0-10\% most central Au-Au events at $\sqrt{s_{NN}}$ = 200 GeV measured by Phenix \cite{Adare:2006nq}. } \label{fig:2016-Sep-23-hfe_00_10RHIC}
+\end{figure}
+
+
+
+
+\section{Comparison to other results}
+
+How does the $R_{pA}$ for heavy flavor compare to other particle types? Figure \ref{fig:PionsKaonsProtons} shows $R_{pA}$ for  inclusive charged pions ($\pi ^{+} + \pi^{-}$) and protons (p$^{+}$+ $\bar{\mathrm{p}}$) measured in ALICE \cite{Adam:2016dau} as compared to electrons from heavy flavor hadron decays measured in this analysis. The protons show the most enhancement. All of the hadrons are consistent with unity at high transverse momentum. $R_{pA}$ for electrons from heavy-flavor hadron decays agrees well with the $R_{pA}$ for charged pions.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5in]{PionsProtonsAndMineCombined.pdf}\\
+  \caption{$R_{pA}$ for charged pions and protons \cite{Adam:2016dau} measured in ALICE for $pPb$ collisions at $\sqrt{s_{NN}}$ = 5.02 TeV compared to the $R_{pA}$ for this analysis.} \label{fig:PionsKaonsProtons}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+%\section{Comparison to Model}
+

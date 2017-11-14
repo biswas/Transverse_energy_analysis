@@ -1,0 +1,70 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+
+#alias sourceme = "source .bashrc" why can't this be done?
+
+#find command used in history
+alias hgrep="history | grep"
+
+# pluma text editor
+alias p="pluma"
+
+# skip intro graphics when starting root
+alias r="root -l"
+# use l as ls -ltr
+alias l="ls -ltr"
+
+#cd to Et working directory
+alias etdir="cd ~/rhip/etCodes"
+#cd to trialCodes directory
+alias trialdir="cd ~/rhip/trialCodes/"
+
+#for geant4
+export G4ROOT="/home/bsharma/Research/install"
+source $G4ROOT/bin/geant4.sh
+
+#for root
+source /usr/local/bin/thisroot.sh
+
+#for CRY
+export CRYHOME="/home/bsharma/Research/tools/cry_v1.7"
+export CRYDATA=${CRYHOME}/data
+
+#for PG-4
+export PG4_BUILD=~/Research/tools/PG4/bld
+export LD_LIBRARY_PATH=${PG4_BUILD}/lib/:${LD_LIBRARY_PATH}
+export PG4_CODE=~/Research/tools/PG4/PROSPECT-G4
+
+#for PG-4 simulation output directory
+export PG4_OUTDIR=~/Research/tools/PG4/PROSPECT_Simulations
+
+
+#for P2x_Analysis
+export P2X_ANALYSIS_CODE=/home/bsharma/Research/tools/P2X_ANALYSIS/PROSPECT2x_Analysis/
+
+# Add to the LD_LIBRARY_PATH (so that p2x make will look for it):
+export LIBCONFIG_LIB_DIR=/home/bsharma/Research/EXTERN/LIBCONFIG/libconfig-1.5-install/lib/
+export LD_LIBRARY_PATH=${LIBCONFIG_LIB_DIR}:${LD_LIBRARY_PATH}
+
+# Add to Library paths (so you don't need to mess with makefiles in p2x):
+export LDFLAGS="-L/home/bsharma/Research/EXTERN/LIBCONFIG/libconfig-1.5-install/lib/ $LDFLAGS"
+export CXXFLAGS="-I/home/bsharma/Research/EXTERN/LIBCONFIG/libconfig-1.5-install/include/"
+
+export PulseCruncher_LIB_DIR=~/Research/tools/P2X_ANALYSIS/PROSPECT2x_Analysis/PulseCruncher
+export miniMPM_LIB_DIR=~/Research/tools/P2X_ANALYSIS/PROSPECT2x_Analysis/miniMPM
+export LD_LIBRARY_PATH=${miniMPM_LIB_DIR}:${LD_LIBRARY_PATH}
+
+export P2XE=$P2X_ANALYSIS_CODE/Examples/
+export PCR=$P2X_ANALYSIS_CODE/../PulseCruncher/
+
+export PROSPECT_CALDB=~/Research/tools/P2X_ANALYSIS/PROSPECT2x_Analysis/CalDB.db
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions

@@ -1,0 +1,684 @@
+\chapter{Experimental Overview}\label{ch:experimental overview}
+
+This chapter describes the ALICE detector and the sub-detectors primarily used in this analysis. The VZERO, or V0, described in section \ref{sec:VZERO}, provides a trigger to record physics event data. Particle tracking is supplied by the Inner Tracking System, section \ref{sec:ITS}, and the Time Projection Chamber, section \ref{sec:TPC}. The Electromagnetic Calorimeter, section \ref{sec:EMCal}, provides an energy measurement. The EMCal was the primary detector used for identifying electrons in this analysis and is a major focus of this chapter. The information from the detectors for each saved event is summarized in data files, section \ref{sec:data objects}. 
+
+\section{Large Hadron Collider}
+
+The Large Hadron Collider at CERN (European Organization for Nuclear Research) is located on the border of France and Switzerland and is the largest and highest energy particle accelerator in the world. The LHC was designed to collide opposing beams of protons or heavy ions. During the years 2011 to 2013, the LHC has provided proton-proton collisions (p-p) at energies $\sqrt s =$ 2.76, 7, and 8 TeV. In November and December of 2011, the LHC collided two beams of fully stripped lead ions, (Pb-Pb), at $\sqrt s_{NN} =$ 2.76 TeV. In January and February of 2013, the LHC collided protons and lead ions (p-Pb) at $\sqrt s_{NN} =$ 5.02 TeV. The LHC shut down from 2013 to 2015 for a planned upgrade.
+%In November and December of 2011, the LHC collided two beams of fully stripped lead ions, (Pb-Pb), at $\sqrt s_{NN} =$ 2.76 TeV. 
+
+The tunnels of the LHC are about 100 m underground below the border of France and Switzerland and are 27 km in circumference. Inside the tunnels are superconducting magnets that guide and accelerate protons or lead ions. The beams circulate inside of the magnets, one clockwise and one counterclockwise, and cross at 8 fixed points known as interaction regions. The experiments ALICE, ATLAS, CMS and LHCb are situated at four of these interaction regions. For more information about the technical details of LHC, see reference \cite{Evans:2008zzb}.
+
+
+\section{ALICE Experiment}
+The ALICE detector \cite{Aamodt:2008zz} was specifically designed with an aim to study heavy-ion collisions. The ALICE detector is 26 m long, 16 m high and 16 m wide. It is located underground at Point 2, the second interaction region of the LHC, in St. Genis-Pouilly in France. The detector is shown schematically in Figure \ref{fig:alicepic} \cite{Aamodt:2008zz}. The people drawn in front of the detector give a reference of size.
+
+%%Alice with no labels.
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=6.5in]{ALICE}\\
+%  \caption{The ALICE experiment}\label{fig:alicepic}
+%\end{figure}
+
+%ALICE with labels https://aliceinfo.cern.ch/Figure/node/3400
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.0in]{ALICE_3D_v0_with_Text}\\
+  \caption{The ALICE experiment \cite{Aamodt:2008zz}. }\label{fig:alicepic}
+\end{figure}
+
+The collisions provided by the LHC take place at the center of the ALICE detector, inside a beam pipe that is 3 cm in radius. The ALICE detector consists of a large number of detector subsystems wrapped around the beam pipe like layers of an onion. The detector systems are all contained inside a solenoidal magnet with a magnetic field of 0.5 T. For this analysis the VZERO and Electromagnetic Calorimeter (EMCal) were used for event triggering. The Inner Tracking system (ITS), the Time Projection Chamber (TPC) and EMCal were used for tracking and particle identification. The ALICE detector subsystems were calibrated during months of running with cosmic rays in 2008 and 2009.
+
+% From the inside layer out, ALICE includes the VZERO, Inner Tracking System (ITS), Time-Projection Chamber (TPC), and Electromagnetic Calorimeter (EMCal).  
+
+\subsection{ALICE coordinate system} \label{sec:ALICE coordinate system}
+The coordinates primarily used are z, $\eta$, and $\phi$. Figure \ref{fig:VZERO_position} shows a drawing of the ALICE detector, cut in half and viewed from the side. Only a few of the inner detectors are drawn. In this figure, the z and y directions are labeled. The beam direction is along the z direction. The z = 0 position is the approximate region where the beams cross and collisions occur, called the interaction point. The positive z direction is towards the left of figure \ref{fig:VZERO_position}, towards the A side. The C side is in the negative z direction and on the right of the figure towards the Muon Spectrometer. The positive y direction is pointing up towards the sky. The positive x direction is pointing out of the page in figure \ref{fig:VZERO_position}. The azimuthal angle is $\phi$, which has a range 0 $< \phi < 2 \pi$ and rotates through the page. The polar angle is related to pseudorapidity, $\eta$, where $\eta = - \ln [ \tan(\theta/2) ]$ and $\theta$ is the polar angle with respect to the beam line. 
+
+%Perpendicular to the beam line z = 0, $\theta = 90^{\circ}$, and $\eta = 0$. At $\theta = 45^{\circ}$, $\eta$ is 0.88. Along the beam line $\theta = 0^{\circ}$ and $\eta = \infty$.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{VZERO_position}\\
+  \caption{The position of the VZERO-A and VZERO-C in ALICE with respect to some of the inner most detectors in ALICE. The beam line is along the z axis \cite{Abbas:2013taa}.}\label{fig:VZERO_position}
+\end{figure}
+
+\section{VZERO}\label{sec:VZERO}
+%Performance of the ALICE VZERO system \cite{Abbas:2013taa}
+
+%ALICE technical design report on forward detectors: FMD, T0 and V0 ALICE Collaboration (P Cortese (CERN) et al.) \cite{Cortese:2004aa}
+
+The role of the ALICE VZERO system is to provide a trigger for the ALICE experiment so that the background events such as beam gas interactions can be separated from real physics events. The VZERO also measures basic event characteristics such as centrality, multiplicity, and reaction plane direction. The VZERO also monitors the LHC beam conditions and can measure luminosity. 
+
+\subsection{Design of the VZERO}
+
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=5.5in]{VZERO_position}\\
+%  \caption{The position of the VZERO-A and VZERO-C in ALICE with respect to some of the inner most detectors in ALICE. The beam line is along the z axis. \cite{Abbas:2013taa}}\label{fig:VZERO_position}
+%\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{VZERO-A_VZERO-C}\\
+  \caption{Diagram of the VZERO-A and VZERO-C detector subsystems in ALICE showing the scintillator segmentation and relative size \cite{Abbas:2013taa}.}\label{fig:VZERO-A_VZERO-C}
+\end{figure}
+
+The VZERO system is located in the forward regions of the ALICE detector. It is composed of two disks which are placed on either side of the interaction region \cite{Abbas:2013taa} \cite{Cortese:2004aa}. The VZERO-A is located on the A side of ALICE and VZERO-C on the C side. Figure \ref{fig:VZERO_position}  \cite{Abbas:2013taa} shows the position of the V0-A and V0-C in ALICE with respect to a few other detectors. The V0A is located farther away from the interaction point as compared to the V0C. The V0A was installed in the positive z-direction 329 cm away from the interaction point. The V0C was placed in the negative z-direction 86 cm away from the interaction point. The VZERO-A covers the pseudorapidity range 2.8 $< \eta <$5.1 while the VZERO-C covers the range -3.7 $< \eta <$ -1.7  \cite{Abbas:2013taa}. 
+%The V0A device is installed on the positive z-direction (RB24) at a distance of about 340 cm from the interaction point
+%page 55 ALICE technical design report on forward detectors: FMD, T0 and V0 ALICE Collaboration (P Cortese (CERN) et al.)
+%Page 3 has a table of the positions of the V0A and C. Performance of the ALICE VZERO system 
+
+Figure \ref{fig:VZERO-A_VZERO-C} shows the V0A and V0C schematically. Both of the VZERO arrays are composed of four rings with each ring having eight sections, making a total of 32 channels for each array \cite{Abbas:2013taa} \cite{Cortese:2004aa}. The V0A disk has a radius 4.3 $< r <$41.2 cm. The V0C is smaller with a radius 4.5 $< r <$32.0 cm. The VZERO arrays are made out of plastic scintillator and have a thickness of 2.5 and 2.0 cm for the V0A and V0C respectively. The scintillator provides a signal when hit from incoming particles by absorbing energy and emitting light. Light is then transferred through wave-length shifting fibers that are attached to the scintillator. The light travels to photomultiplier tubes (PMT) which convert the light into an electronic signal. The signal is then sent to the Front End Electronics (FEE). The time of a signal relative to the LHC clock time and charge from the PMT is measured.
+%Page 3 has a table of the sizes of the V0A and C. Performance of the ALICE VZERO system 
+
+%Page 2 Performance of the ALICE VZERO system. Each channel of both arrays is made of a BC404 plastic scintillator from Bicron [5] with a thickness of 2.5 and 2.0 cm for VZERO-A and VZERO-C respectively.
+
+ 
+\subsection{VZERO Event trigger}
+
+There is some residual gas in the LHC vacuum chamber which will interact with the beam and produce particles that can hit the VZERO. These events are beam-gas events and considered background events where the data should not be saved. The VZERO is used to decide if an event was a beam-beam event or a background event. The background events can be separated from real physics events by using precise time measurements from the VZERO. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{Time_of_flight_distribution}\\
+  \caption{Time of flight for beam-beam and beam-gas events measured by the VZERO detector in ALICE \cite{Abbas:2013taa}.}\label{fig:Time_of_flight_distribution}
+\end{figure}
+
+The VZERO can discriminate between physics events and background events by using the time-of-flight difference between the V0A and V0C arrays \cite{Abbas:2013taa} \cite{Cortese:2004aa}. There is about a 6 ns difference between real beam-beam events and beam-gas events. Particles coming from the interaction point during beam-beam physics events will take 11 ns (with respect to the LHC clock time) to hit the VZERO-A, and 3 ns to hit the VZERO-C. The time of flight difference for these beam-beam physics events is about 8 ns. The time of flight difference for beam-gas events is about 14 ns. This is caused by a coincidence of a signal coming from the C side to the V0A with a time of 11 ns and a signal coming from the A side to the V0C with a time of -3 ns. It is also caused by a signal coming from the A side to the V0C with a time of 3 ns and a signal coming from the C side to the V0A with a time of -11 ns. This is shown in Figure \ref{fig:Time_of_flight_distribution} \cite{Abbas:2013taa}. The beam-beam events (pp collisions) are shown in the upper right quadrant with a VZERO-A and VZERO-C time of flight of 11 and 3 ns. The beam-gas (p-gas collisions) are shown in the upper left and lower right quadrant and have a time of flight of -11, 3 ns and 11, -3 ns in the VZERO-A and VZERO-C. The darkness of the points in the plot corresponds to the density of counts.
+
+
+ %contribute to the L0 trigger decision. The  Central Trigger Processor  CTP collects signals from all trigger devices, provides trigger decisions and distributes global trigger signals to the whole ALICE experiment, together with the LHC clock and timing synchronization information. 
+ %1.2 ?s, L0 trigger decision
+ %The time of flight of particles coming from the Interaction Point (IP) to the VZERO-A (VZERO-C) is about 11 ns (3 ns).
+ 
+ %TDR 3.3.1 Background from secondaries in pp collisions page 57. 
+
+
+\subsection{VZERO Centrality and Multiplicity measurement}
+
+
+The VZERO system can provide a charged particle multiplicity measurement based on the energy deposited in the scintillator arrays and this signal is often used for centrality determination. The centrality measurement is explained in detail in section \ref{sub:Collision Geometry}.
+
+
+\section{Inner Tracking System}\label{sec:ITS}
+
+The Inner Tracking System is the innermost detector in ALICE. The ITS sits between the beam pipe and the Time Projection Chamber. The ITS provides a measurement of primary vertex, particle identification, and particle momentum and position measurements. Refer to figure \ref{fig:VZERO_position} for a graphic of the cross section and location of the ITS as compared to the other inner detectors in ALICE.
+
+%ALICE technical design report of the inner tracking system (ITS)} Section 6.4 - Helps to provide an event trigger.
+
+%%%%Reference needed for this picture!!!! https://aliceinfo.cern.ch/Figure/node/3403
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{ITSwithLabels}\\
+  \caption{The layout for the ALICE Inner Tracking System \cite{ITSInlay}. The ITS is composed of the Silicon Pixel Detector, Silicon Drift Detector, Silicon Strip Detector. Also shown is the Forward Multiplicity Detectors (FMD) and V-Zero (V0) detector which provide centrality measurement and event triggers.}\label{fig:ITSwithLabels}
+\end{figure}
+
+The ITS is made up of six layers and is drawn schematically in figure \ref{fig:ITSwithLabels}. In figure \ref{fig:ITSwithLabels}, the beam pipe is drawn as a copper colored tube that goes left to right across the middle of the picture. The proton and lead ions travel in bunches inside of the beam pipe. Collisions occur in the center of the detector, near the middle of the picture, and particles created in the collision will travel outwards through the layers of the detector. The first layer of the ITS surrounds the beam pipe. The Silicon Pixel Detector, SPD, comprises the first and second layer of the ITS. The inner layer of the SPD has a pseudorapidity coverage $|\eta| < $1.75, a wide coverage. The rest of the ITS and the TPC spans $| \eta | < 0.9$. The third and fourth layer of the ITS, the Silicon Drift Detector, SDD, are drawn in blue on figure \ref{fig:ITSwithLabels}. The fifth and sixth layer of the ITS, the Silicon Strip Detector, SSD, are shown in purple in the figure. Table \ref{tab:ITS measurements} \cite{Dellacasa:1999kf} lists the dimensions and the detector types of the ITS layers. 
+
+%Inner detectors are the silicon pixel and silicon drift detectors and then the double-sided silicon microstrip detectors
+
+%%Numbers in The CERN Large Hadron Collider: Accelerator and Experiments Volume 1 (big blue book) has slightly different numbers for the active areas than the numbers in the ALICE technical design report of the inner tracking system (ITS)} \cite{Dellacasa:1999kf}
+\begin{table}[h!]
+\begin{center}
+    \caption{Active Areas of the ALICE Inner Tracking System \cite{Dellacasa:1999kf}}
+    \label{tab:ITS measurements}
+  \begin{tabular}{ | c | c | c | c | c |}
+    \hline
+    Layer & Detector Type & Radius (cm) & $\pm z$ (cm) & Area (m$^{2}$)\\
+    \hline
+    1 & pixel & 4 & 16.5 & 0.09 \\
+    2 & pixel & 7 & 16.5 & 0.18 \\
+    3 & drift & 14.9 & 22.2 & 0.42 \\
+    4 & drift & 23.8 & 29.7 & 0.89 \\
+    5 & strip & 39.1 & 45.1 & 2.28\\
+    6 & strip & 43.6 & 50.8 & 2.88 \\
+    \hline
+  \end{tabular}
+\end{center}
+\end{table}
+
+The ITS provides a good measurement of the primary vertex and of secondary vertices for particles, such as D and B mesons, that decay near the primary vertex. The SPD, SDD, and SSD have spatial resolutions ($r \phi \times z$) of $12 \times 70$, $38 \times 28$, $20 \times 830$ $\mu$m respectively \cite{Dellacasa:1999kf}. Figure \ref{fig:ITS_impact_parameter} \cite{Dellacasa:1999kf} shows the ITS resolution of the distance of closest approach from the track to the primary vertex as a function of $p_{T}$ for various particle species. D and B mesons have a decay length, or impact parameter, of $\sim$ 300 - 500 $\mu$m. The electrons from the decays of D and B mesons measured in this experiment have a transverse momentum $p_{T} > 1$ GeV/c. The resolution of the impact parameter from the ITS is excellent for electrons from heavy flavor mesons. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{ITS_impact_parameter}\\
+  \caption{Performance of the ITS on the impact parameter resolution with respect to transverse momentum for protons, kaons, pions and electrons \cite{Dellacasa:1999kf}.}\label{fig:ITS_impact_parameter}
+\end{figure}
+
+%The Silicon Pixel detectors have a spatial precision $r \phi$, $z$ of 12, 70 $\mu$m. 
+%%The decay products of a charm particle have typically an impact parameter comparable with their c?, i.e. of the order of ? 100 ?m. The ITS of the ALICE detector was specially optimized in order to achieve an impact parameter resolution of about ? 50 ?m in the pT range, corresponding to the decay products of charm particles
+%Silicon Drift 38, 28
+%Silicon Strip 20, 830
+%%Jiri thesis: Spatial resolutions of the silicon technologies are 12×100, 35×25 and 20×830 ?m respectively (r? × z, where z is along beam axis).
+%The Silicon Pixel was chosen for the inside layers of the ITS in order to provide the best resolution for the primary vertex measurement and to be able to handle the high density of tracks expected in such a small surface area in the inner layer of the ITS. 
+%%The ITS is designed to locate the position of the primary vertex with a resolution of better than 100 $\mu$m.
+
+
+
+% https://aliceinfo.cern.ch/Figure/node/4050
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{2013-Mar-06-ITS_Performance}\\
+  \caption{Particle identification in the ITS \cite{Morales}. The $dE/dx$ of charged particles as a function of momentum is shown for minimum bias pPb collisions at $\sqrt{s} =$ 5.02 TeV measured in ALICE. The color shows the density of hits; red is the highest and blue is the lowest. The black lines show the parametrization of the detector response based on the Bethe-Bloch formula for electrons, pions, kaons, and protons.}\label{fig:2013-Mar-06-ITS_Performance}
+\end{figure}
+
+The drift and strip layers in the ITS perform particle identification using $dE/dx$, specific energy loss. The $dE/dx$ measurement uses the fact that a charged particle ionizes the detector material as it crosses the detector. A drift field pushes the electrons freed from the ionization to read-out pads at the edge of the detector. Figure \ref{fig:2013-Mar-06-ITS_Performance} shows particle identification using the ITS for pPb collisions in ALICE. The ITS is wonderful for separating low momentum particles, $ p < 1$ GeV/c. However for particles with momentum greater than 1 GeV/c, the ITS can not identify particle species. Since this analysis is focused on electrons with $1 < p_{T} < 30$ GeV/c, the ITS is not used to identify electrons in this analysis. 
+%ionization density
+
+%The Silicon Drift detectors provides $dE/dx$ information. exploit the measurement of the transport time of the charge deposited by a traversing particle to localize the impact point in one of the dimensions 
+%%The energy deposited in the ITS is measured in the four outer drift and strip layers by collecting the charge from the ionization process.
+%%Electron-hole pairs are created by the charged particles crossing the detector. The holes are collected by the nearest p+ electrode, while the electrons are focused into the middle plane of the detector and driven by the drift field towards the edge of the detector where they are collected by an array of anodes composed of n+ pads.
+%%The detectors are mounted with the strips (nearly) parallel to the magnetic field, so that the best position resolution is obtained in the bending direction.
+%The low-momentum particles (below 100 MeV/c) will be detectable only by the ITS.
+
+
+The Time Projection Chamber (see section \ref{sec:TPC} for more information on the TPC) is a much larger and deeper detector with more space points than the ITS. For this reason, the TPC provides the main particle tracking in ALICE. However, the ITS improves on the momentum,  impact parameter, and position measurements. The outer layers of the ITS connect the tracks from the ITS and TPC. The ITS improves the low momentum range of ALICE, and can track particles as low as $p \sim 0.1$ GeV/c.
+
+%The ITS improves the momentum and position measurements of the tracks supplied by the primary tracking detector, the Time Projection Chamber (see section \ref{sec:TPC} for more information on the TPC).  
+%The outer layers of the ITS are comprised of double-sided silicon microstrip detectors, the Silicon Strip Detectors. The outer layers of the ITS do not need to be as precise, can have larger cells. Save on $\Chi_{0}$, material thickness. This corresponds to the amount of material seen by the particle, lessens the negative influence of multiple scattering 
+%The two outer layers of the ITS are crucial for the connection of tracks from the ITS to the TPC.
+
+
+
+
+
+
+% ALICE technical design report of the inner tracking system (ITS)} \cite{Dellacasa:1999kf}
+
+
+
+
+
+
+
+
+\section{Time Projection Chamber} \label{sec:TPC}
+%ALICE Technical Design Report of the Time Projection Chamber
+%The ALICE TPC, a large 3-dimensional tracking device with fast readout for ultra-high multiplicity events
+The ALICE Time Projection Chamber \cite{Dellacasa:2000bm} \cite{Alme:2010ke} is the main tracking detector in ALICE. The TPC can provide particle identification and momentum measurement for charged particles with transverse momentum, p$_{T} < $  10 GeV/c. 
+
+The TPC is shaped as a cylinder with the center axis along the beam line. Figure \ref{fig:TPC_Layout} shows a drawing of the TPC and components. The TPC has a volume of about 95 m$^{3}$, with an inner radius of 85 cm and an outer radius of 250 cm and length of 510 cm. This translates to a coverage of pseudorapidity in the range $-0.9 < \eta < 0.9$ and azimuthal range of $0 < \phi < 2\pi$. The TPC sits inside of the 0.5 T solenoidal magnetic field. The TPC is filled with gas that is a mixture of neon, carbon dioxide, and nitrogen.  A conducting electrode, charged to 100 kV, divides the detector in half creating two drift regions of 250 cm in length. The TPC has a uniform electric field of 400 V/cm that runs parallel to the beam line.
+
+%Can't find a source for this image. Used to be here: http://alice-tpc.web.cern.ch/TPC/sites/aliceinfo.cern.ch.secure.TPC/files/images/TPCpics/TPC-Layout.gif
+% It is here: http://aliceinfo.cern.ch/Public/en/Chapter2/Chap2_TPC.html
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{TPC_Layout.eps}\\
+  \caption{The layout for the ALICE Time Projection Chamber \cite{TPCImage}.}\label{fig:TPC_Layout}
+\end{figure}
+
+
+\subsection{Charged particles interactions with the TPC}
+
+When charged particles travel through the TPC, they will trace out a path by ionizing the gas liberating electrons on the way. Due to the electric field, the free electrons drift to the ends of the TPC to the readout pads. The position, r and $\phi$, and time of the hit on the end plates by the ionization electrons is recorded. Then the position along the beam axis, z, can be determined using the arrival time and the known drift velocity. The trajectory that a charged particle took while traveling in the TPC can be reconstructed using these hits. The reconstructed trajectory is called a track. Figure \ref{fig:TPC_tracks} shows tracks in the TPC from a beam gas interaction that was recorded in March 2010 \cite{TPCTracks}.
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{30_03_10_ev2_c}\\
+  \caption{Tracks in the TPC from an event display from beam gas interactions from March 2010 \cite{TPCTracks}.}\label{fig:TPC_tracks}
+\end{figure}
+%Picture from http://aliceinfo.cern.ch/Public/en/Chapter1/news2010.html
+%18:30 Monday 29.3.2010 ALICE is ready to record 7 TeV pp collisions
+%During the nignt of 29->30 March beam gas interactions were recorded
+
+The 0.5 T magnetic field, will cause the charged particles to have a spiral track. The momentum can be determined by the radius of curvature of the charged particle's track. The direction that the track bends will tell the charge, either positive or negative, of the particle. The density of the ionization can give a dE/dx measurement which will help determine the identity of the particle.
+
+%The Time Projection Chamber, TPC, is large cylindrical chamber filled with gas. As a charged particle moves through the TPC it ionizes the gas along its path, freeing electrons from the gas. These electrons drift toward the end plates of the cylinder to the readout chambers. The TPC can provide particle tracking information by tracing the charged particle's path. The momentum can be determined by the radius of curvature of the charged particle's track in the magnetic field. 
+
+\subsection{TPC dE/dx}\label{sub:TPC dE/dx}
+The TPC can give mean rate of energy loss measurements, $dE/dx$, for charged particle tracks. Relativistic charged heavy particles traveling through a gas will lose energy over a distance due to ionization of the atoms in the gas. The mean rate of energy loss depends on the particle's speed and mass described by the Bethe-Bloch equation \cite{Amsler:2008zzb}.
+
+\begin{equation}
+- \Bigg \langle \frac{dE}{dx}\Bigg \rangle = Kz^2 \frac{Z}{A} \frac{1}{\beta ^2} \Bigg[ \frac{1}{2} ln \frac{2m_{e} c^2 \beta^2 \gamma^2 T_{max}}{I^2} - \beta^2 - \frac{\delta (\beta \gamma)}{2} \Bigg ]
+\end{equation}
+%http://pdg.lbl.gov/2009/reviews/rpp2009-rev-passage-particles-matter.pdf \cite{Amsler:2008zzb}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{TPCdEdx}\\
+  \caption{Charged particle dE/dx measurement in the TPC. Black lines are drawn based on the Bethe-Bloch predictions for various particles. ALI-PERF-60751 \cite{TPCdEdx} }\label{fig:TPCdEdx}
+\end{figure}
+
+Here, $T_{max}$ is the maximum kinetic energy which can be imparted to a free electron in a single collision, $ze$ is the charge of the incident particle, $m_{e}$ is the electron mass, c is the speed of light, $\beta= v/c$, and I is the mean excitation energy. K, Z, and A are properties of the gas absorber. In a given material, dE/dx is a function of the incident particle's velocity and mass.
+
+Figure \ref{fig:TPCdEdx} shows $dE/dx$ versus momentum of charged particles measured by the TPC. The lines are a parametrization of the detector response based on the Bethe-Bloch formula. Various particles can be seen in Figure \ref{fig:TPCdEdx} along these curves: pions ($\pi$), kaons (K), protons (p), deuterons (d) which are composed of a proton and a neutron, and tritons (t) which are one proton and two neutrons. Electrons (e) are along the horizontal line on this figure. Since electrons have a small mass, they lose energy differently. Relativistic electrons lose energy passing through matter mostly by bremsstrahlung. A sample of particles with momentum below 10 GeV/c can be enhanced with electrons by using $dE/dx$ measurements in the TPC.
+
+%\subsection{Design of the TPC}
+%
+%The TPC's main components are the field cage, readout chamber and the front-end electronics.
+%
+%The purpose of the field cage is to provide a gas-tight containment and a uniform electrostatic field. The field cage holds a mixture of neon, carbon dioxide, and nitrogen. The electric field provides a force to move the ionization electrons to the readout chambers. An electrode in the center of the TPC is charged to 100 kV, creating two drift regions with the maximum drift distance of 250 cm. 
+%
+%%field-defining strips 
+%
+%% t is a classical TPC field cage with the high voltage elec- trode in the middle of the detector. Electrons drift to both end plates in a uniform electric field that runs parallel to the axis of the cylinder. However, to also have fast electron drift ve- locities requires putting 100 kV on the central electrode.
+%
+%%Field Cage - provide a uniform electric field. With a drift field of 400 V/cm.  the field cage will have to sustain a maximum potential of 100 kV at its central electrode. A composite honeycomb sandwich structure was thus chosen for its favorable stability/mass ratio. Although this system compromises physical acceptance it benefits from a substantial improvement in field uniformity due to the absence of charges accumulated between strips if glued on an insulating surface.
+%%cage? The potential of the drift region is defined by Mylar strips wound around 18 inner and outer support rods.
+%
+%Readout Chamber
+%
+%Front-End Electronics
+
+
+
+%
+%Charged particles traversing the TPC volume ionise the gas along their path, liberating electrons that drift towards the end plates of the cylinder. the positive ions created in the avalanche induce a positive current signal on the pad plane. The readout of the signal is done by the 570132 pads that form the cathode plane of the multi-wire proportional chambers located at the TPC end plates.
+%
+%an acceptable drift time (92ms).
+%
+%The TPC end-plates are each segmented into 18 trapezoidal sectors and equipped with multi-wire proportional chambers with cathode pad readout covering an overall active area of 32.5 m2. The sectors are segmented radially in two chambers with varying pad sizes, optimized for the radial dependence of the track density. There are about 560 000 pads with 3 different sizes: 4 for the inner readout chambers (IROC), 6 x 10 and 6 x 15 mm2 for the outer chambers (OROC), with 159 pad rows radially. 
+
+%
+%Readout chambers - 570 000 readout pads with three different sizes varying from 0.3 cm$^2$ near the inner radius to 0.9 cm$^2$ near the outer radius.
+%
+%Front-End Electronics  
+%The signals from the pads are passed via flexible Kapton cables to 4356 front-end cards located some 10 cm away from the pad plane. In the front-end card a custom-made charge sensitive shaping amplifier transforms the charge induced in the pads into a differential semigaussian signal that is fed to the input of the ALTRO chip.
+%In the front-end card a custom-made charge- sensitive shaping amplifier transforms the charge induced in the pads into a differential semi- gaussian signal that is fed to the input of the ALTRO chip. Each ALTRO contains 16 channels that digitise and process the input signals. Upon arrival of a first level trigger, the data stream is stored in a memory. When the second level trigger (accept or reject) is received, the latest event data stream is either frozen in the data memory, until its complete readout takes place, or discarded. The readout takes place, at a speed of up to 300 MB/s. In one single chip, the analogue signals from 16 channels are digitised, processed, compressed and stored in a memory ready for readout.
+%
+
+
+
+
+
+
+\section{Electromagnetic Calorimeter: EMCal}\label{sec:EMCal}
+
+The Electromagnetic Calorimeter \cite{Abeysekara:2010ze} \cite{Cortese:2008zza} provides the primary electron particle identification for high momentum particles and a triggering mechanism for saving events that are most likely to be populated with electrons. Our group at ORNL and UT played a major role in building and maintaining the EMCal. For these reasons the EMCal is an important component of this analysis and is described in significant detail in the following sections.
+
+Calorimeters are used to measure the energy of incident particles. While other detectors can only measure charged particles, calorimeters can measure charged and neutral particles, including photons, neutrons, electrons and pions. Calorimeters are useful because they can distinguish electrons from pions by their interactions with the material in the calorimeter. Electrons and photons will interact electromagnetically, through bremsstrahlung and pair production. Hadrons, such as pions, will interact hadronically, through strong and electromagnetic interactions.
+
+\subsection{Electron and Photon interactions with the EMCal}\label{sub:Electron and Photon interactions with the EMCal}
+%\cite{Abeysekara:2010ze} ALICE EMCal Physics Performance Report
+% \cite{Cortese:2008zza} ALICE electromagnetic calorimeter technical design report
+
+Charged particles incident on the EMCal will have a momentum of at least 0.5 GeV/c. ALICE's 0.5 Tesla magnetic field bends the charged particle's tracks. The EMCal sits 450 cm radially away from the beam line \cite{Cortese:2008zza}. Consequently, charged particles with less momentum than 0.5 GeV/c will spiral too tightly to be able to reach the EMCal. At these high energies, electrons primarily lose energy through bremsstrahlung. Charged particles lose energy by bremsstrahlung when the particle is deflected by atoms in a material and emits radiation in the form of photons. At low energies, electrons lose energy by ionization and thermal excitation, by collisions with the atoms in materials. 
+
+ At high energies, photons lose energy in matter through pair production, where a photon converts to an electron-positron pair, $\gamma \rightarrow e^{+} e^{-}$. At low energies, photons lose energy by Compton scattering and the photoelectric effect. 
+
+The Electromagnetic Calorimeter is very effective at detecting and measuring the energy of electrons and photons. The EMCal measures energy by absorbing the particle shower. When an electron passes through the dense material in the EMCal, it will lose energy through bremsstrahlung, and will emit radiation in the form of photons. Each of these photons will go through pair production. The number of particles will increase, but the particles will have lower energy at each step. When the energy of the particles generated fall lower than the critical energy, $E_{c}$, then the particles are less likely to lose energy by the generation of particles and the electromagnetic shower will stop. The EMCal measures the energy released in the detector material from the electromagnetic shower, which is proportional to the energy of the incident particle. 
+
+
+The critical energy, $E_{c}$, is the energy at which the electron's energy loss by bremsstrahlung and ionization are equal. In lead, the critical energy is about 7 MeV for solids (gases) \cite{Fabjan:2003aq},
+\begin{equation}
+E_{c} = \frac{610(710) \, MeV}{Z + 1.24(0.92)} .
+\end{equation}
+
+%Calorimetry for Particle Physics by Christian W. Fabjan and Fabiola Gianotti CERN-EP/2003-075
+The radiation length, $X_{0}$, describes the rate that electrons lose energy by bremsstrahlung \cite{Fabjan:2003aq}. The radiation length is the mean distance that an electron travels to fall to $(1/e)$ of its original energy, $E_{0}$,
+\begin{equation}
+ \langle E(x) \rangle = E_{0} \,  e^{- (x/X_{0})} .
+ \end{equation}
+ 
+In one radiation length, an incident electron will give up about two-thirds of its energy. The radiation length depends on the atomic number and weight of the material, Z and A. Materials with a higher Z will have a shorter radiation length.
+
+\begin{equation}\label{eqn:RadiationLength}
+X_{0} \, (g/cm^2) \simeq \frac{716 \,g\, cm^{-2} \,\,A}{Z(Z+1) \, \ln(287/ \sqrt{Z})}
+\end{equation}
+
+The EMCal is made from lead and scintillating material, and has an effective radiation length of 12.3 mm. The growth of the shower scales with the radiation length and the energy of the incident particle. The shower length is given by $X_{s} = X_{0}/b$, where b depends on the material Z and energy of the incident particle.
+ 
+The shower spread is described by the Moli\`{e}re radius $R_{M}$, which is the average deflection of electrons transverse to the shower axis after one radiation length. About 90$\%$ of the shower energy is contained in a cylinder with a radius equal to the Moli\`{e}re radius. The effective Moli\`{e}re radius for the EMCal is 3.20 cm \cite{Cortese:2008zza}. The EMCal tower's front face has dimensions of 6 $\times$ 6 cm. Most of the deposited energy is expected to be contained within one EMCal tower if an electron is incident on the center of the tower
+\begin{equation}\label{eqn:MoliereRadius}
+R_{M} = \frac{ X_{0} \, E_{S}}{E_{c}} = 21 \, MeV \frac{ X_{0} }{E_{c} \, MeV} .
+\end{equation}
+
+The shower maximum $t_{max}$, measured in radiation lengths, is the depth at which most of the secondary particles are produced
+\begin{equation}
+t_{max} \simeq \ln\Big( \frac{E_{0}}{E_{c}} \Big) + t_{0} .
+\end{equation}
+In this equation $t_{0}$ is  -0.5 for electrons and +0.5 for photons. The detector thickness needed to absorb a shower only increases logarithmically with the energy of the incident particle. This makes calorimeters space effective. The electrons seen in the EMCal for pPb collisions have an energy below $\sim$ 40 GeV. The electron shower is well contained in the EMCal, which has a thickness of 20.1 radiation lengths. 
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{EMCal parameters \cite{Cortese:2008zza}}
+    \label{tab:EMCal parameters}
+    \begin{tabular}{| c|c |}
+    \hline
+    Sampling Ratio & 1.44 mm Pb / 1.76 mm Scintillator\\
+    \hline
+    Effective Radiation Length X$_{0}$ & 12.3 mm\\
+    \hline
+    Effective Moliere Radius R$_{M}$ & 3.20 cm\\
+    \hline
+    Number of Radiation Lengths & 20.1\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+%Reference from ALICE Electromagnetic Calorimeter Technical Design Report
+
+\subsection{Other particle interactions with the EMCal} \label{sub:Other particle interactions with the EMCal}
+
+%Nuclear Instruments and Methods in Physics Research A , Review Hadron Calorimetry , Nural Akchurin n, Richard Wigmans \cite{akchurin2012hadron}
+%?SELECTED TOPICS IN SAMPLING CALORIMETRY Dan Green \cite{green1993selected}
+
+Hadronic showers show larger spatial fluctuations than electron showers \cite{akchurin2012hadron} \cite{green1993selected}. There isn't a typical hadronic shower profile, but instead it depends on energy and can vary event to event. Hadronic showers consist of two different components, electromagnetic and non-electromagnetic. The non-electromagnetic component is defined as everything that is not included in the electromagnetic component. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{Hshower}\\
+  \caption{Neutron interacts with an absorber and showers with hadronic and electromagnetic components \cite{HadronicShower}.}\label{fig:Hshower}
+\end{figure}
+%Figure from here   http://mathsconcepts.com/node20.html
+
+The hadronic interaction can produce neutral and charged pions. Neutral particles such as $\pi^{0}$ and $\eta$ will generate an electromagnetic response. The neutral pion, $\pi^{0}$, has a main decay mode, with branching ratio of 0.98823, into two photons, $\pi^0 \rightarrow \gamma + \gamma$ \cite{Beringer:1900zz}. The secondary photons from the $\pi^{0}$ will induce an electromagnetic shower in the EMCal. 
+
+The charged pions, $\pi^{-}$ and $\pi^{+}$, have a main decay mode with a branching fraction of 0.999877 into a muon and a muon neutrino, $\pi^{-} \rightarrow \mu^{-} + \bar{v_{\mu}}$ and $\pi^{+} \rightarrow \mu^{+} + v_{\mu}$ \cite{Beringer:1900zz}. Charged pions will have a hadronic interaction with the detector.
+
+Figure \ref{fig:Hshower} shows a neutron encountering an absorber and showering with electromagnetic and hadronic components. When a $\pi^{0}$ is created in the absorption process it drops out of the hadronic cascade and only contributes to the EM component. The charged pion, $\pi^{-}$, continues to contribute to the hadronic component of the shower.
+
+An additional complication is that calorimeters usually have different response to electromagnetic and non-electromagnetic shower components. Hadrons will generate a lower signal from the EMCal than electrons with the same incident energy. The electromagnetic shower includes bremsstrahlung and pair production. These EM processes involve small momentum transfers and do not disrupt the nucleus of the absorber material. However for hadronic processes, the nucleus can be disrupted. Some fraction of the energy of the incident particle can go into binding energy. This fraction can vary largely event to event. 
+
+Energy is also lost due to neutrinos. When a charged pion decays into a muon and neutrino, the neutrino does not interact with the detector. The energy that the neutrino carried is not measured by the detector and is lost.
+
+Muons can also contribute to energy losses in the cascades. Some particles, for example muons, will not shower at all and will lose a minimum rate, $dE/dx$, of energy as they travel through the depth of the EMCal. These particles are said to be Minimum Ionizing Particles, or MIP. The minimum ionizing particles do not deposit all of their energy into the EMCal. For particles such as electrons the EMCal is a destructive detector. However for MIPs, they can be further measured after passing through the EMCal. MIPs will enter the detector, deposit some energy in the detector, and continue through. If muons are created in the hadronic cascade, then a fraction of their energy will not be measured. 
+
+In EM showers, a detector with a certain amount of depth is needed to contain the full length of the shower and collect the most amount of incident energy. The hadronic showers also need a detector with a certain depth in order to be measured. 
+
+As the unit of length of electromagnetic showers is the radiation length, $X_{0}$, the hadronic showers length is described by the nuclear absorption length, $\lambda_{0}$. The nuclear absorption length is usually larger than the radiation length. For the same absorber material, a thicker detector is needed to measure hadronic showers than is needed to measure electromagnetic showers. The ratio $\lambda_{0}$/$X_{0}$ scales as Z, the atomic number of the absorber material \cite{green1993selected}.
+%Review Hadron Calorimetry 2.2 : Since the ratio lint=X0 is proportional to Z
+
+\begin{equation}
+\lambda_{0} \sim [ 35 (g/cm^{2}) ][A^{1/3}]
+\end{equation} 
+
+Hadronic showers begin at a larger depth and are more diffuse than electromagnetic showers. For example, in lead the radiation length for electromagnetic shower is 6.3 g/cm$^2$ while the hadronic shower's nuclear interaction length is 193 g/cm$^2$. The EMCal was not designed to be thick enough to fully contain the hadronic shower. Some hadrons will go through the EMCal without showering and will behave as MIPs. In these cases, the energy deposited and measured in the EMCal will be less than the hadron's original energy.
+
+
+\subsection{Design of the EMCal}
+
+%\cite{Abeysekara:2010ze} ALICE EMCal Physics Performance Report
+% \cite{Cortese:2008zza} ALICE electromagnetic calorimeter technical design report
+
+EMCal is a Pb-scintillator sampling calorimeter \cite{Cortese:2008zza}. Sampling calorimeters are made of alternating layers of material. One material degrades the energy of the incident particle and produces the particle shower, the lead material in the EMCal. The other material provides a detectable signal by absorbing the energy and re-emitting it in the form of light, the scintillating material in the EMCal. The light produced in the scintillating material provides a measurement of the original particle energy. 
+
+The sandwich of Pb and scintillating material makes up an EMCal module. The photons converted from the scintillating layers are carried along the wavelength shifting fibers that run down the modules. The photons are then converted into an electric signal that can be measured. When an electron hits the EMCal then this signal will be proportional to the energy deposited by the electron in the calorimeter. 
+
+%This signal is proportional to the energy deposited by electrons in the calorimeter. 
+%The energy deposited by electrons is proportional to the signal measured. 
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{EMCal}\\
+  \caption{The ALICE EMCal super modules and support structure \cite{Cortese:2008zza}.}\label{fig:EMCal}
+\end{figure}
+
+
+Calorimeters are destructive detectors, making any further measurements of the particles unreliable. For this reason, the ALICE EMCal was installed outside of the ITS and TPC. It sits inside of the solenoid magnet. The front face of the EMCal sits 450 cm radially away from the collision point. The EMCal spans -0.7 $< \eta <$ 0.7 in pseudorapidity and 110$^{\circ}$ in azimuth. The EMCal weighs roughly 90 tons and the support structure for the EMCal, the CalFrame, weighs 25 tons. Figure \ref{fig:EMCal} shows the ALICE EMCal mounted in its support structure.
+ 
+The smallest building block of the EMCal is a module which is a self supporting and self contained detector unit \cite{Cortese:2008zza}. Each module is made up of 2 $\times$ 2 = 4 towers, also referred to as cells. Each tower is an independent detection channel. The modules are built from stacking 76 and 77 alternating layers of Pb and scintillator. The module is closed around the sides by a thin layer of stainless steel. The module has an aluminum front, back, and compression plate. 36 wavelength shifting fibers are inserted longitudinally through the tower. The fibers connect through the light guide to the Avalanche PhotoDiode photosensor and a preamplifier. Figure \ref{fig:module_cross_section} shows the cross section of a module and two towers. Figure \ref{fig:EmcalModule} shows the rear of a prototype EMCal module with green fibers, black plastic tube light guide and APD and preamplifier. 
+
+\begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{EmcalModule}
+  \captionof{figure}{Module prototype with fibers, APD and preamplifier \cite{Cortese:2008zza}.}
+  \label{fig:EmcalModule}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{module_cross_section}
+  \captionof{figure}{Cross section of one module \cite{Cortese:2008zza}.}
+  \label{fig:module_cross_section}
+\end{minipage}
+\end{figure}
+%pictures from ALICE Electromagnetic Calorimeter Technical Design Report
+
+A tower has active dimensions of 6.0 $\times$ 6.0 $\times$ 24.6 cm$^3$. The acceptance of the front face of the tower at $\eta = 0$ is $\Delta\eta \times \Delta \phi \sim 0.014 \times 0.014$. The ALICE EMCal is comprised of 12,288 towers \cite{Cortese:2008zza}. 
+
+In order to stabilize and install the modules into their final position inside of the ALICE magnet, the modules were assembled into strip modules and then into super modules \cite{Cortese:2008zza}. The strip modules are 12 $\times$ 1 modules held in a structural strong-back. The super module is assembled by stacking and securing 24 strip modules into a crate. The strip modules are installed to be projective in the $\eta$ direction. The super module is made from a total of 288 modules or 1152 towers. Like the module, the strip and super modules are also self-supported detector units. ALICE has a total of 10 super modules and 2 one-third size super modules, as shown in Figure \ref{fig:EMCal}. The one-third size super module was assembled from 4$\times$ 24 = 96 modules (384 towers). The super modules were mounted and installed as a unit on the support structure and inside of the ALICE magnet. 
+%Reference from ALICE Electromagnetic Calorimeter Technical Design Report \cite{Cortese:2008zza}
+
+
+\subsection{EMCal Electronics}
+%Reference from ALICE Electromagnetic Calorimeter Technical Design Report \cite{Cortese:2008zza}s
+Energy deposited into the EMCal are converted into visible photons in the lead and scintillating layers of the EMCal modules. The photons are guided along by the optical fibers that run along vertically through the modules. The optical fibers from a tower connect to an Avalanche PhotoDiode photosensor and a Charge Sensitive Preamplifier. The APD converts the visible photons into an electric signal. 
+
+The raw signal, called ADC counts, is in the form of a semi-Gaussian pulse shape. The ADC signal as a function of time can be described as equation \ref{eqn:ADC}, \cite{Cortese:2008zza}
+\begin{equation}\label{eqn:ADC}
+ADC(t) = Pedestal + A \cdot x^{\gamma} \cdot exp^{\gamma(1-x)}, \,\,\,where\,\, x\, = (t-t_{max}+\tau)/\tau
+\end{equation}
+%page 70 ALICE Electromagnetic Calorimeter Technical Design Report
+where $Pedestal$ is the threshold for background energy of the towers. The function peaks at time value of $t_{max}$. The decay constant is $\tau$. The power parameter of the fit is $\gamma$. The energy deposited in the tower is proportional to the parameter A. 
+
+The raw signal from the Charge Sensitive Preamplifier has high gain and low gain signals which are sampled separately. The signal is split into energy and trigger shaper channels by the Front End Electronics, FEE, boards. One FEE board reads the signal in 32 EMCal towers \cite{Cortese:2008zza}. Each FEE board requires four ALTRO chips. These chips were originally designed for the TPC and ALTRO is an abbreviation for ALICE Time Projection Chamber ReadOut chips. Each ALTRO chip has 16 10-bit flash ADC buffers, so four ALTRO chips are required to read 32 EMCal towers with 32 high and 32 low gain channels. The raw signal is a 10-bit ADC word and the ALTRO chip converts the data into 40-bit words.
+
+Each FEE card sums 2 $\times$ 2 tower signals to provide Level-0 and Level-1 triggers. This signal is passed to the Trigger Region Unit that can make a decision to generate a trigger. See section \ref{sub:EMCalTrigger} for more detailed information about EMCal triggers.
+
+The FEE boards are connected to the Gunning Transceiver Logic (GTL) bus and then the Readout Control Unit (RCU) \cite{Zhang:2014ioa}. The GTL bus transmits data and commands from the RCU to the FEE boards. A single GTL bus is connected to 9 FEE cards and subsequently 384 EMCal towers. An RCU card can drive two independent GTL buses. The RCU relays commands from the ALICE DAQ (Data Acquisition) system. The DAQ control system makes programmed decisions, but the operator can issue commands through user interfaces.
+%A group of 9 FEE cards (384 towers for EMCal) is read out by a custom 200 MByte/s GTL+ bus under mastership of an external RCU card. Event data, triggers, and commands are transmitted over the Gunning Transceiver Logic (GTL)-based readout bus between the RCU and multiple FEE boards
+%Reference from ALICE Electromagnetic Calorimeter Technical Design Report page 27
+
+Reading a single channel on the GTL bus takes 0.5 $\mu$s. By only reading the ALTRO channels with hits, the readout time of the EMCal has a minimum time of 270 $\mu$s \cite{Zhang:2014ioa}.
+% Point-to-point readout for the ALICE EMCal detector \cite{Zhang:2014ioa}
+
+\subsection{EMCal Calibration}
+
+The towers in the EMCal each have some slight variation and will generate a slightly different response to the same energy deposit unless they are relatively calibrated. A method for calibrating a calorimeter is to study the interaction of particles with known energy with the detector. Some particles, like muons, pass through the EMCal without creating a shower, instead they lose energy at the minimum rate while interacting with the matter in the detector. These are known as minimum ionizing particles, or MIPs. 
+
+Cosmic muons are useful for calibrating the detector because they are a permanent and free source of particles with known energy. These are muons created in the upper atmosphere by cosmic rays. Cosmic muons can test the full span of the detector and behave as a MIP.
+% and deposit a mean energy of about 28 MeV \cite{Faivre:2011zz} (corresponding to a $\simeq$ 300 MeV electron) in the active part of the EMCal. 
+
+%page 70 ALICE Electromagnetic Calorimeter Technical Design Report talks about calibrating the towers with MIP hadrons.
+%Relative pre-calibration of the alice electromagnetic calorimeter emcal - J Faivre for the alice collaboration \cite{Faivre:2011zz} 
+
+Cosmic muons calibration was performed on the full EMCal before it was inserted in the ALICE experiment \cite{Faivre:2011zz}. Figure \ref{fig:cosmic_muon_calibration} shows the experimental setup of the cosmic muon calibration. Scintillator paddles were placed above and below the strip modules, which are 12 modules (and 48 towers) in a strong back. When a cosmic muon with MIP behavior passes through the strip modules, then a signal will be present in the pair of scintillator paddles above and below the strip modules. When this signal is seen, a trigger is prompted and the data from the 1/3 super module section is read. Data were taken for 24 hours. 
+
+To get a clear signal, muons that crossed multiple towers were eliminated. This was done by choosing events that had signal in only one tower with no signal or low signal seen in the neighboring towers. A calibration factor was given to every tower based on the response to the minimum ionizing cosmic muons signal. All towers in the EMCal were normalized using the MIP signal.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4in]{cosmic_muon_calibration}\\
+  \caption{Schematic of the experimental setup for the cosmic muon calibration \cite{Faivre:2011zz}.}\label{fig:cosmic_muon_calibration}
+\end{figure}
+
+
+Another calibration was done to track the EMCal's response over time and due to temperature fluctuations \cite{Cortese:2008zza}. Each full EMCal Super Module has 37 FEE boards. Of the 37 FEE boards, 36 FEE cards read data from 1152 towers and one FEE board is used for an LED calibration channel \cite{Zhang:2014ioa}. In an LED event, all towers view a calibrated pulsed LED light source. The LED event, temperature, and time is recorded. The LED events are separated from the physics events and used for calibration purposes. The LED calibration addresses the EMCal ADC count's dependence on temperature and operation time.
+% Point-to-point readout for the ALICE EMCal detector  %Each full EMCal SM requires 3 TRUs and 37 FEE boards where one FEE board is used to read out reference channels of the EMCal LED-based monitoring system.
+
+%Page 67 of ALICE Electromagnetic Calorimeter Technical Design Report   %A LED calibration system, in which all towers view a calibrated pulsed LED light source, has been successfully tested to track and adjust for the temperature dependence of the APD gains during operation. The LED triggers where collected in parallel with the beam particle events throughout the entire CERN test beam measurements.
+
+
+
+\subsection{Cluster Algorithms}
+When an electron hits the EMCal, it will deposit some energy across several towers. The energy needs to be summed together to a single cluster. The basic algorithms will be described here, the Version 1, Version 2 and the N$\times$N clusterizer \cite{Aronsson} \cite{Zhu:2014oca}.
+%(kClusterizerv1 or kClusterizerv2 or kClusterizerNxN or kClusterizerv2+1)
+%https://twiki.cern.ch/twiki/bin/view/ALICE/EMCalTenderSupplyOld
+
+The Version 1, V1, clusterizer sorts the towers by the signal from highest to lowest. The towers with the highest signal are the seed towers. The clusterizer will then look at the 4 adjacent towers. If the neighboring towers have a signal greater than a minimum then the energy will be added to the cluster. This will continue until there is no more neighbors with signal. This algorithm is useful because it can accept clusters with any size. Some hadrons will leave a huge shower in the EMCal across many towers and the V1 clusterizer can accommodate it. Figure \ref{fig:EMCalClusterizers} shows different cluster algorithms. The upper left picture shows the EMCal with a signal in 17 towers. The V1 clusterizer accepts the entire signal as a single cluster. The V1 algorithm does a good job finding the correct clusters if the density of signal in the EMCal is low, like in pp collisions. However if the EMCal has a high hit density, as seen in PbPb collisions, then the V1 clusterizer can merge energy deposits from multiple particles into a single cluster. In figure \ref{fig:EMCalClusterizers} in the upper right hand picture, two particles have deposited energy in the EMCal next to each other. The V1 algorithm has merged them into a single cluster. The V1 algorithm does not have a maximum cluster size and could merge the entire area of the EMCal into a single cluster.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.0in]{EMCalClusterizers.png}\\
+  \caption{EMCal clusterizers Version 1, Version 2 and 3$\times$3 \cite{Aronsson} \cite{Zhu:2014oca}.}\label{fig:EMCalClusterizers}
+\end{figure}
+%picture is from Tomas Aronsson's thesis 
+%and poster from Quark Matter 2012, Neutral pion-hadron correlations in pp and Pb-Pb collisions at snn = 2.76 with ALICE
+
+The Version 2, V2, clusterizer works similar to the V1 clusterizer. However V2 limits the size of the cluster by requiring that a cluster can only contain one energy maximum. The V2 clusterizer starts with a seed tower and then adds neighboring tower energies. V2 stops adding when it encounters a neighboring tower that has an energy larger than the energy of a tower already in the cluster. This way, the V2 clusterizer stops when it finds another local maximum and the energy gradient is reversed. In the lower right image in figure \ref{fig:EMCalClusterizers} shows the V2 clusterizer. The V2 clusterizer separates the two local maximums into their own clusters where the V1 clusterizer merged them.
+%Look at email "precise definition of v2 clusterizer" with Peter Jacobs, Constantin, Rongrong Ma
+%If I understand the algorithm correctly, the v2 clusterizer stops if the energy gradient is reversed, namely the next neighboring tower has energy LARGER than the one already in the cluster. Right? 
+%EMCal clusters are formed by a clustering algorithm that combines signals from adjacent EMCal towers, with cluster size limited by the requirement that each cluster contain only one local energy maximum.
+
+The N$\times$N clusterizer also starts with a seed tower with the highest energy. However, the N$\times$N clusterizer has geometrical limits to the cluster that can be found. It will only add a square area of N$\times$N towers together to form a cluster. The 3 $\times$ 3 clusterizer will only make a cluster with 9 adjacent towers, with the seed tower being in the center. The lower left image in figure \ref{fig:EMCalClusterizers} shows the 3 $\times$ 3 clusterizer. The cluster formed has some remnant energy that was not added into the cluster. This creates two effects. First, the  3 $\times$ 3 clusterizer can underestimate the energy deposited by some particles with large showers. Second, the remnant energy gets picked up as new  3 $\times$ 3 clusters with small energy, creating a lot of lower energy clusters. However the  3 $\times$ 3 clusterizer has the benefit that it is conceptually easy to understand and it will not merge separate signals together. 
+
+
+%Tomas's thesis says: The cluster finding algorithm in ALICE does combinations of these algorithms and have merging and splitting techniques. 
+
+The raw signal from the EMCal is converted to clusters and saved into ALICE data. The default clusterizer used for this reconstruction is the V1 clusterizer. However, there is no single clusterizer than the entire EMCal group uses. A specific analysis can choose the best cluster algorithm for their analysis by running a task that reclusterizes. The EMCal `tender' is such a task that runs before the user task and can use any of these clustering algorithms. The tender also cleans up the data for EMCal analysis by removing bad channels. The EMCal tender default clusterizer is V2. 
+
+The size of electron clusters is usually less than 10 cells. A 3 $\times$ 3 clusterizer would be an adequate size to find electron clusters. The pPb data have low EMCal hit density, with only about 8 clusters in the EMCal per event on average. The V1 clusterizer would work fine in this low hit density environment. Since this analysis is on electrons and on pPb data, it is not sensitive to the clusterizer chosen. The clusterizer used for analysis is the EMCal tender default V2 clusterizer. 
+%(Source is a private email from Deepa Thomas, who helped write the EMCal tender.)
+
+%During reconstruction the default clusterizer is v1. In case you want to change the clusterizer you can do it with the tender. You can give it as an argument in the AddTaskEmcalPreparation task. 
+%AddTaskEmcalPreparation(const char *perstr  = "LHC11h", UInt_t clusterizer  = AliEMCALRecParam::kClusterizerv2). When you use the EMCAL tender you should note that the default is clusterizerv2. So if you dont change the clusterizer it will be v2. If you want documentation on clusterizers you can refer the doc in aliroot/.../src/EMCAL/docEMCALDocumentation.pdf
+%And there is no single clusterizer that the whole of EMCAL uses. It depends on analysis. For electrons we are not much affected by different clusterizers, so we use v1 which is the default. You can of course try to study the affect of different clusterizers on E/p. I dont think we have done it in recent times. 
+
+
+
+
+
+
+
+\subsection{EMCal Trigger}\label{sub:EMCalTrigger}
+The rate of collisions at the LHC is higher than the rate that the ALICE detector can read and record data. The EMCal trigger provides a way to record events with a high potential for interesting physics. The EMCal trigger is issued for events with EMCal activity. 
+
+The EMCal has a Level 0 trigger, Level 1-gamma trigger and Level 1-jet trigger \cite{Bourrion:2012vn} \cite{Abeysekara:2010ze}. The triggers of interest for this analysis are the Level 0 and Level 1-gamma triggers. The Level 0 and Level 1-gamma triggers are designed specifically to record events with photons and electrons. The EMCal trigger works by dividing the EMCal into predetermined areas called a patch. If the summed signal in a patch is higher than a certain threshold, then the trigger is fired. Table \ref{tab:trigger} shows the EMCal trigger names and thresholds for the 2013 pPb data in ALICE.
+ 
+ \begin{table}[h!]
+  \begin{center}
+    \caption{EMCal triggers for pPb events}
+    \label{tab:trigger}
+    \begin{tabular}{| c|c|c |}
+    \hline
+    Trigger Name & Level & Threshold\\
+    \hline
+    EMC7 & Level 0 & 3 GeV \\
+    \hline
+    EG1 & Level 1-gamma & 11 GeV\\
+    \hline
+    EG2 & Level 1-gamma & 7 GeV\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table} 
+
+Figure \ref{fig:EMCalTriggerElectronics} shows a flat view of the entire EMCal with the 10 full size Super Modules and two 1/3 size Super Modules along with the trigger electronics. Each Super Module is divided into three regions. Each region is read out by 12 Front End Electronic (FEE) cards, which computes the local L0 trigger. The signal goes to The Trigger Region Unit, TRU, which then computes the global L0 trigger. The Summary Trigger Unit, STU, then uses the TRU data and computes the L1 trigger. 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=4in]{EMCalTriggerElectronics}\\
+  \caption{EMCal Super Modules with the trigger electronics, Front End Electronics, Trigger Region Unit, and Summary Trigger Unit \cite{Bourrion:2012vn}.}\label{fig:EMCalTriggerElectronics}
+\end{figure}
+
+%ALICE EMCal Physics Performance Report \cite{Abeysekara:2010ze}
+%The earliest trigger decision (Level 0, or L0) is issued 1.2 ?s after the event L1 is issued at 6.5 ?s, and L2 is issued at 88 ?s. L1 and L2 decisions provide rejection of L0 triggers.
+For the Level 0 and Level 1-gamma trigger, the EMCal is divided into trigger patches of predetermined areas of 4 $\times$ 4 adjacent towers, or 2 $\times$ 2 adjacent modules\cite{Bourrion:2012vn}. The patches overlap by 2 towers, 1 module. Since the L0 trigger is determined from the TRU's, the patches that can fire an L0 trigger are limited to the region that a single TRU is connected which is 1/3 of a Super Module. The L1 trigger is computed later, at the STU level, and can cross these boundaries. 
+
+Figure \ref{fig:TriggerPatches} shows a drawing of a 1 and 1/3 of a Super Modules of the EMCal. Each cell in this figure is one module (2$\times$2 towers). The two yellow squares show that energy has been deposited into these modules. If the energy deposit is high enough, then it can fire a trigger. The red and green square show the L0 and L1-gamma trigger patch size of 2 $\times$ 2 modules and possible trigger patch locations. The L0 trigger patches are limited to boundaries of 1/3 of a Super Modules which are shown by the thick black lines. The  L1 trigger patch can cross these regions and is shown sitting on a boundary. Due to these spatial inefficiencies, there are fewer L0 trigger patches than L1. There are a total of 2208 L0 trigger patches and 2961 L1-gamma trigger patches. However, the L0 trigger is processed faster than the L1 trigger. The L0 trigger is decided 1.2 $\mu$s after the event while the L1 trigger is decided 6.5 $\mu$s after the event \cite{Bourrion:2012vn}.
+
+
+% Reference for the number of trigger patches: The ALICE EMCal L1 trigger first year of operation experience  O.Bourrion, N. Arbor, G. Conesa-Balbastre \cite{Bourrion:2012vn}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{TriggerPatches}\\
+  \caption{A cartoon of 1 and 1/3 Super Module. Each cell is one module. Possible L0, L1-gamma (labeled as L1 photon patch) and L1-jet trigger patches are shown \cite{Bourrion:2012vn}. }\label{fig:TriggerPatches}
+\end{figure}
+
+
+
+%ALICE Electromagnetic Calorimeter Technical Design Report -  page 45
+%The EMCal L0/L1 trigger for photons and electrons. The FEE generates fast analog 2 × 2 tower sums which are then summed in the FPGA of the Trigger Region Unit (TRU) into 4 × 4 regions for high energy shower trigger decisions at L1 Consequently, the EMCal - like the PHOS - will provide trigger input at L0 for p?p using a low threshold in order to record all events with EMCal activity (electrons and photons) without bias of other trigger detectors
+%The EMCal L1 jet trigger The jet patch size is expected be about ?? × ?? ? 0.3 × 0.3
+
+
+%Pictures from this paper:
+% The ALICE EMCal L1 trigger first year of operation experience  O.Bourrion, N. Arbor, G. Conesa-Balbastre
+
+%https://twiki.cern.ch/twiki/bin/viewauth/ALICE/EMCalTriggerOffline#L0_trigger_algorithm_description
+%https://twiki.cern.ch/twiki/bin/view/ALICE/EMCalTriggerAlgorithm
+
+
+
+
+
+
+%aronsson thesis
+%The full EMCal spans 110 degrees in azimuth with an ?-acceptance of |?| < 0.7
+%The electromagnetic calorimeter is a destructive detector since it absorbs parts or all of the incoming particle energy, distorting or destroying any subsequent mea- surement. It relies upon an absorbing medium to slow down and absorb the particle, and a scintillating material to convert the particles? incident energy into photons. These photons are then detected and converted into an electric signal that can be measured.
+%The ALICE EMCal is a lead/plastic layered calorimeter.
+%From the electrons that are created close to the collision, only those with momentum greater than ?750 MeV will reach the EMCal due to the bending of charged particles in a magnetic field.
+%Electrons interact through a few well understood QED processes, such as Compton scattering, e+e? pair production and bremsstrahlung.
+%At this energy Bremsstrahlung is the dominant source of energy loss, in fact any electron above 10 MeV will dissipate energy mainly though Bremsstrahlung.
+%One radiation length is the distance an electron travels in a material such that its initial energy E0 is reduced to E0/e  The ALICE EMCal has X0 = 3.2 cm.
+%A thickness of a few tenths of a centimeter is sufficient to absorb electrons at hundreds of GeV
+%Radiation length, Average energy in a distance traveled, Maximum depth of a shower tmax. Moliere radius, 
+%The ALICE EMCal has a square granularity of 6×6 cm and most of the energy is expected to be deposited within one tower if the detected particle is incident at the center of the tower.
+%page 70
+%The calorimeter signal itself is derived from an electric signal delivered by a PMT that amplifies and converts visible photons into an electric signal. For the ALICE EMCal these optical fibers run along vertical holes in the Pb/scintillator sandwich array.
+% It has a cylindrical curvature with a depth of about 110 cm, The full detector spans about 107 degrees in azimuth and about ±0.7 in \eta.
+%Pb-scintillator sampling calorimeter with 76 alternating layers of 1.44 mm Pb and 77 layers of 1.76 mm scintillator (polystyrene based, injection-modulated scintillator; BASF143E + 1.5 % pTP + 0.04 % POPOP).
+%It is divided into 10 large so-called ?super modules? (SMs) and two 1/3 size SMs. The SMs are further divided into modules, each module containing 4 towers (sometimes referred to as cells) each. Each full SM has 12 \times 24 = 288 modules arranged in 12 \times1 strip modules (24 in each SM) for a total of 1152 towers per SM. The 1/3 SMs are each made from 4 \times 24 = 96 modules for a total of 384 towers per 1/3 SM. Each full SM spans  \delta \eta = 0.7 and 7  \degrees in \phi . 
+
+%Good table on page 74 of all of the EMCal physical properties.
+% Test beam: 8 times 8 towers are sufficient to study the response of electrons and hadrons, and the resulting electron showers, since most showers have a maximum radius of about 2-3 towers. Such full-tower data were taken for three energies, 6 GeV electrons from the PS beam and 10 and 50 GeV electrons from the SPS beam. This MIP calibration was performed on the full EMCal before it was inserted into ALICE.
+%The calibration coeffi cient is defined to be the coe cient that the detector response is multiplied with in order to convert the response into energy, i.e. E = cX, where E is the actual particle energy, c is the calibration coe cient (sometimes calibration constant) and X the signal from the detector.
+%For the ALICE EMCal RM = 3.5 cm  which is roughly the dimension of one tower, thus a first approximation would be that about 90% of the energy of the incident electron is contained within one cell.
+% Clustering algorithms page 79
+%The two algorithms are called ?v1? and ?3\times3? clusterizers.
+%v1 algorithm: 
+
+
+%Read
+%P. Cortese, et al., ?ALICE Electromagnetic Calorimeter Technical Design Report,? 2008.
+
+%ALICE EMCal Physics Performance Report, for submission to the U.S. Department of Energy, 2009.
+
+
+
+
+
+
+\section{Data Objects}\label{sec:data objects}
+
+The raw data from the collisions are converted into calibrated objects and put into ESD files, Event Summary Data, and AOD files, Analysis Object Data. AOD files contain less information than ESD files. For example, the ESD contains several values for momentum. The ESD contains information for the momentum near the collision vertex as a result of the ITS and TPC tracking, the TPC only momentum, and the momentum at the front face of the TPC. When running over AOD files, only two choices are available: tracks with momentum measured by the ITS+TPC, or tracks with momentum measured from the TPC. Since the AOD files are more condensed, they require much less CPU cost and running time in order to analyze them. This analysis used AOD files since the information in the AOD files was sufficient.
+
+The event, track, and EMCal objects can be accessed in the ESD and AOD files. Event object information available from the data files includes the primary vertex position, centrality, trigger class, and run number. The ITS and TPC track information includes the $\eta$ and $\phi$ position of the track, the TPC $dE/dx$, momentum of the track, the charge of the particle that made the track, and the number of space points that made the track. Some EMCal cluster objects available are the $\eta$ and $\phi$ position of the cluster, the energy deposited, the shower shape parameters (see \ref{subsec:ShowerShape}), and the number of cells in the EMCal shower.
+
+%Table \ref{tab:table data summary} shows some of the information that is available in AOD files.
+
+%\begin{table}[h!]
+%  \begin{center}
+%    \caption{Some information available in ALICE event data files.}
+%    \label{tab:table data summary}
+%    \begin{tabular}{c||c||c}
+%    Event information & ITS and TPC track information & EMCal cluster information\\
+%    \hline
+%    \hline
+%    Primary vertex position & $\eta$ and $\phi$ position & $\eta$ and $\phi$ position\\
+%    \hline
+%    Multiplicity & TPC dEdx & Energy deposited\\
+%    \hline
+%    Trigger class & Momentum & Shower Shape Parameters\\
+%    \hline
+%    Run Number & Number of ITS or TPC& Number of EMCal\\
+%     & hits in a track & cells in an EMCal shower\\
+%    \end{tabular}
+%  \end{center}
+%\end{table}
+
+%After the event is recorded, and the detector is calibrated and running great, there is still some dead areas or stuff that went wrong. This is seen in the QA. It can be fixed by running macros over the data after the data is generated. It is common to run a task on event data, before running your own task, that creates objects for your task to use. TPC response . EMCal tender fixes the data, removes dead areas or masks noisy towers. 
+%\color{red}
+%more here
+%\color{black}
+
+%\begin{table}[h!]
+%  \begin{center}
+%    \caption{Some information available from macros.}
+%    \label{tab:add task}
+%    \begin{tabular}{c|c}
+%    objects created & add task name\\
+%    \hline
+%    \hline
+%    Trigger class & AddTaskEmcalPhysicsSelection.C\\
+%    \hline
+%   TPC PID, TPC number of $\sigma$ & AddTaskPIDResponse.C\\
+%    \hline
+%    Centrality classes & AddTaskCentrality.C \\
+%    \hline
+%    EMCal tender, reclusterized & AddTaskEmcalCompat.C\\ 
+%     and good track and cluster matches & AddTaskEmcalPreparation.C \\
+%     & AddTaskEmcalSetup.C\\
+%     & AddTaskEmcalPreparation.C\\
+%     & AddTaskMatchingChain.C \\
+%    \end{tabular}
+%  \end{center}
+%\end{table}
+

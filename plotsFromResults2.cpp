@@ -1,3 +1,9 @@
+/* in this version, got rid of functionality to produce
+	a single trial graph and replaced it with the functionality
+	to produce many graphs at the same time;
+	and added other functionalities
+*/
+
 // cross check plots:
 	// a) 4 energy-dependent plots * 9 centrality bins 	= 36 plots
 	// b) 4 N_part-dependent plots * 5 energies			= 20 plots
@@ -49,7 +55,7 @@ using namespace std;
 
 // main function:
 
-int plotsFromResults(){
+int plotsFromResults2(){
 
 	ifstream in;
 	string skipContent;// read and skip content that has no use
@@ -85,12 +91,17 @@ int plotsFromResults(){
 											// set them to zero as well
 											
 	Double_t dETdEtaErrSum[cents][collEns] = {0};
+	Double_t dNchdEtaSum[cents][collEns] = {0};
+	Double_t dNchdEtaErrSum[cents][collEns] = {0};
 	Double_t Npart[cents][collEns];// Npart function of cent and en only
 	Double_t dETdEtaOverNpartBy2Sum[cents][collEns];
+	Double_t dETdEtaOverdNchdEtaSum[cents][collEns];
 	// Add elements below (for all 6 particles)
 		// in order to get the above elements
 	Double_t dETdEta[cents][collEns][parts];
 	Double_t dETdEtaErr[cents][collEns][parts];
+	Double_t dNchdEta[cents][collEns][parts];
+	Double_t dNchdEtaErr[cents][collEns][parts];
 	//Double_t dETdEtaOverNpartBy2[cents][collEns][parts];
 	// enPlotArr element indexed as: 
 	// enPlotArr[centIndex][enIndex][funcIndex]
@@ -139,12 +150,20 @@ int plotsFromResults(){
 		in >> dETdEta[centIndex][enIndex][partIndex];
 		cout << dETdEta[centIndex][enIndex][partIndex] << "\t";
 		in >> dETdEtaErr[centIndex][enIndex][partIndex];
-		for(int l=0; l<24; l++) in >> skipContent;
+		for(int l=0; l<14; l++) in >> skipContent;
+		in >> dNchdEta[centIndex][enIndex][partIndex];
+		cout << dNchdEta[centIndex][enIndex][partIndex] << "\t";
+		in >> dNchdEtaErr[centIndex][enIndex][partIndex];
+		for(int l=0; l<8; l++) in >> skipContent;
 		in >> Npart[centIndex][enIndex];
 		cout << Npart[centIndex][enIndex] << "\n";
 		in >> skipContent;
-		dETdEtaSum[centIndex][enIndex] += dETdEta[centIndex][enIndex][partIndex];
-		
+		// TODO: what about lambdas while adding ET?
+		//FIXME: fix the sum formulas below:
+		//if(partIndex==){
+			dETdEtaSum[centIndex][enIndex] += dETdEta[centIndex][enIndex][partIndex];
+			dNchdEtaSum[centIndex][enIndex] += dNchdEta[centIndex][enIndex][partIndex];
+		//}
 		/*
 		if (i==0) cout << headerBuffer << "\t";
 		else if (i==1) cout << headerBuffer << "\t";
@@ -159,64 +178,83 @@ int plotsFromResults(){
 		for(int i=0; i<cents; i++){
 			for(int j=0; j<collEns; j++){
 				cout << "dETdEtaSum["<<i<<"]["<<j<<"] = "<<dETdEtaSum[i][j]<<endl;
+				cout << "dNchdEtaSum["<<i<<"]["<<j<<"] = "<<dNchdEtaSum[i][j]<<endl;
 				dETdEtaOverNpartBy2Sum[i][j] = dETdEtaSum[i][j]/Npart[i][j];
+				dETdEtaOverdNchdEtaSum[i][j] = dETdEtaSum[i][j]/dNchdEtaSum[i][j];
 			}
 		}
-	Double_t collEnArr[5] = {7.7,11.5,19.6,27,39};
-	// TODO the following code is only a trial, after whose completion
-	 // make a loop to produce all the plots at once
-	 // using TGraphErrors
-	Double_t dETdEtaOverNpartBy2SumCent0[collEns];
-	for(int i=0; i<collEns; i++){
-		dETdEtaOverNpartBy2SumCent0[i] = dETdEtaOverNpartBy2Sum[0][i];
-	}
-	TGraph* g;
-	//Double_t* collEnPtr = &collEnArr[0];
-	//Double_t* dETdEtaOverNpartBy2SumCent0Ptr = &dETdEtaOverNpartBy2SumCent0[0];
-	//g = new TGraph(5, collEnPtr, dETdEtaOverNpartBy2SumCent0Ptr);// TGraph constructor
-	g = new TGraph(5, collEnArr, dETdEtaOverNpartBy2SumCent0);
-	TCanvas *c = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
-	c->SetLogx();
-	g->Draw();
-	// string imgPathAndName = "./"+histoName+".png";
-	string imgPathAndName = "./dETdEtaOverNpartBy2SumCent0.png";
-				//c1 -> SaveAs("./fittedPlots/trial1.png");
-	TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
-	png->FromPad(c);
-	const char* imgPathAndNameConstCharPtr = imgPathAndName.c_str();
-	png->WriteImage(imgPathAndNameConstCharPtr);
-	
-	
-	
+	Double_t collEnArr[5] = {7.7,11.5,19.6,27,39};	
 	
 	/// ------ begin - plot all graphs at once -------------------------------//
 	for(int centInd=0; centInd<cents; centInd++){ // loop through all centralities
 	
 		Double_t dETdEtaOverNpartBy2SumCentByCent[collEns];// one centrality per centInd
+		Double_t dETdEtaOverdNchdEtaSumCentByCent[collEns];
 		for(int i=0; i<collEns; i++){
 			dETdEtaOverNpartBy2SumCentByCent[i] = dETdEtaOverNpartBy2Sum[centInd][i];
+			dETdEtaOverdNchdEtaSumCentByCent[i] = dETdEtaOverdNchdEtaSum[centInd][i];
 		}
-		TGraph* g;
+		TGraph* g1;
 		//Double_t* collEnPtr = &collEnArr[0];
 		//Double_t* dETdEtaOverNpartBy2SumCent0Ptr = &dETdEtaOverNpartBy2SumCent0[0];
 		//g = new TGraph(5, collEnPtr, dETdEtaOverNpartBy2SumCent0Ptr);// TGraph constructor
-		g = new TGraph(5, collEnArr, dETdEtaOverNpartBy2SumCentByCent);
-		TCanvas *c = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
-		c->SetLogx();
-		g->Draw();
-		// string imgPathAndName = "./"+histoName+".png";
-		string graphName = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
-		string imgPathAndName = 
-					"./finalPlots/crossCheckPlots/"+graphName+".png";
+		g1 = new TGraph(5, collEnArr, dETdEtaOverNpartBy2SumCentByCent);
+		TCanvas *c1 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
+		c1->SetLogx();
+		g1->Draw("A*");
+		string graphName1 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
+		string imgPathAndName1 = 
+		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName1+".png";
 					//c1 -> SaveAs("./fittedPlots/trial1.png");
-		TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
-		png->FromPad(c);
-		const char* imgPathAndNameConstCharPtr = imgPathAndName.c_str();
-		png->WriteImage(imgPathAndNameConstCharPtr);
+		TImage *png1 = TImage::Create();// FIXME try to use canvas method instead of png object
+		png1->FromPad(c1);
+		const char* imgPathAndNameConstCharPtr1 = imgPathAndName1.c_str();
+		png1->WriteImage(imgPathAndNameConstCharPtr1);
+		delete g1;
+		delete png1;
+		delete c1;
+	
+		// TODO make a function to take care of different types of graph instead of creating new objects here
+		TGraph* g2;
+		g2 = new TGraph(5, collEnArr, dETdEtaOverdNchdEtaSumCentByCent);
+		TCanvas *c2 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
+		c2->SetLogx();
+		g2->Draw("A*");
+		string graphName2 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
+		string imgPathAndName2 = 
+					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName2+".png";
+					//c1 -> SaveAs("./fittedPlots/trial1.png");
+		TImage *png2 = TImage::Create();// TODO try to use canvas method instead of png object
+		png2->FromPad(c2);
+		const char* imgPathAndNameConstCharPtr2 = imgPathAndName2.c_str();
+		png2->WriteImage(imgPathAndNameConstCharPtr2);
+		delete g2;
+		delete png2;
+		delete c2;
+		/* //TODO: stuff vs Npart: 9 centralities times 5 energies -> 45 Nparts
+		// each energy gets a different plot
+		
+		TGraph* g3;
+		g3 = new TGraph(5, collEnArr, dETdEtaOverdNchdEtaSumCentByCent);
+		TCanvas *c2 = new TCanvas();
+		c2->SetLogx();
+		g2->Draw();
+		string graphName2 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
+		string imgPathAndName2 = 
+					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName2+".png";
+					//c1 -> SaveAs("./fittedPlots/trial1.png");
+		TImage *png2 = TImage::Create();// TODO try to use canvas method instead of png object
+		png2->FromPad(c2);
+		const char* imgPathAndNameConstCharPtr2 = imgPathAndName2.c_str();
+		png2->WriteImage(imgPathAndNameConstCharPtr2);
+		delete g2;
+		delete png2;
+		delete c2;
+		*/
+		
 	} // end of for loop with index centInd
 	/// ------ begin - plot all graphs at once -------------------------------//
 	//delete g;
-	delete png;
-	delete c;
+	
 	return 0;
 }
