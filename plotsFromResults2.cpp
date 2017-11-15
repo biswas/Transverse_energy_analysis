@@ -213,6 +213,13 @@ int plotsFromResults2(){
 		TCanvas *c1 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
 		c1->SetLogx();
 		g1->Draw("A*");
+		g1->SetMarkerStyle(29);
+		g1->SetMarkerColor(kBlue);
+		g1->SetMarkerSize(2);
+		TString xlabel_snn = "#sqrt{#it{s}_{NN}} (GeV)";
+		TString ylabel_etOverEtaOverNpartOver2 = "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}/2#GT (GeV)";
+		g1->GetHistogram()->GetXaxis()-> SetTitle(xlabel_snn);
+		g1->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNpartOver2);
 		string graphName1 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
 		string imgPathAndName1 = 
 		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName1+".png";
@@ -231,7 +238,14 @@ int plotsFromResults2(){
 		TCanvas *c2 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
 		c2->SetLogx();
 		g2->Draw("A*");
-		string graphName2 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
+		g2->SetMarkerStyle(29);
+		g2->SetMarkerColor(kBlue);
+		g2->SetMarkerSize(2);
+		TString xlabel_snn_2 = "#sqrt{#it{s}_{NN}} (GeV)";
+		TString ylabel_etOverEtaOverNpartOver2_2 = "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
+		g2->GetHistogram()->GetXaxis()-> SetTitle(xlabel_snn_2);
+		g2->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNpartOver2_2);
+		string graphName2 = "dETdEtaOverdNchdEtaSumCent" + std::to_string(centInd);
 		string imgPathAndName2 = 
 					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName2+".png";
 					//c1 -> SaveAs("./fittedPlots/trial1.png");
