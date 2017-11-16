@@ -1,6 +1,6 @@
 /* in this version .....
-	adding npart graphs
-	jump to TODO current
+	automatized npart graph formatting
+	next: automatize snn graph formatting
 */
 
 
@@ -16,6 +16,7 @@
 using namespace std;
 
 std::string doubToString(Double_t);
+void formatGraph(TGraph* g1, Double_t collEnArr[], int enInd);
 // main function:
 
 int plotsFromResults3(){
@@ -173,7 +174,7 @@ int plotsFromResults3(){
 	}
 	*/
 	
-	/// ------ begin - plot all snn graphs at once -------------------------------//
+	/// ------ begin - plot all graphs at once -------------------------------//
 	for(int centInd=0; centInd<cents; centInd++){ // loop through all centralities
 	
 		Double_t dETdEtaOverNpartBy2SumCentByCent[collEns];// one graph per centInd
@@ -277,7 +278,11 @@ int plotsFromResults3(){
 		}
 		TGraph* g1; // okay to use identifier g1 in local scope as was the case in previous use
 		g1 = new TGraph(9, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
-		TCanvas *c1 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
+		g1 -> SetName("dETdEtaOverNpartBy2Sum_vs_Npart"); // unique identifier for graph
+														// see use in function formatGraph
+		formatGraph(g1, collEnArr, enInd);
+		/* // trying to put the following in a function
+		TCanvas *c1 = new TCanvas();
 		//c1->SetLogx(); Npart graphs not in log scale
 		g1->Draw("A*");
 		g1->SetMarkerStyle(28);
@@ -287,17 +292,17 @@ int plotsFromResults3(){
 		TString ylabel_etOverEtaOverNpartOver2 = "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}/2#GT (GeV)";
 		g1->GetHistogram()->GetXaxis()-> SetTitle(xlabel_Npart);
 		g1->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNpartOver2);
-		string graphText1 = "#sqrt{#it{s}_{NN}} ="+doubToString(collEnArr[enInd])+" GeV";
-		const char* graphText1ConstCharPtr = graphText1.c_str();// required for TText constructor
-		//TText* t1 = new TText(200,.62,graphText1ConstCharPtr);
+		string graphTextNpart = "#sqrt{#it{s}_{NN}} ="+doubToString(collEnArr[enInd])+" GeV";
+		const char* graphTextNpartConstCharPtr = graphTextNpart.c_str();// required for TText constructor
+		//TText* t1 = new TText(200,.62,graphTextNpartConstCharPtr);
 		TLatex* t1= new TLatex();;
 		t1 -> SetNDC(kTRUE);
-		t1 -> DrawLatex(0.2,0.8,graphText1ConstCharPtr);
+		t1 -> DrawLatex(0.2,0.8,graphTextNpartConstCharPtr);
 		
 		//t1 -> SetTextAlign(22);
 		t1 -> SetTextSize(0.05);
 		//t1 -> DrawText();
-		// FIXME t1 -> DrawText(0.2,0.8,graphText1ConstCharPtr);
+		// FIXME t1 -> DrawText(0.2,0.8,graphTextNpartConstCharPtr);
 		string graphName1 = "dETdEtaOverNpartBy2SumEn" + std::to_string(collEnArr[enInd]);
 		string imgPathAndName1 = 
 		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName1+".png";
@@ -309,6 +314,8 @@ int plotsFromResults3(){
 		delete t1;
 		delete c1;
 		delete png1;
+		*/
+		
 		delete g1;
 		
 		
@@ -316,7 +323,10 @@ int plotsFromResults3(){
 		// TODO make a function to take care of different types of graph instead of creating new objects here
 		TGraph* g2;
 		g2 = new TGraph(9, NpartArrEnByEn, dETdEtaOverdNchdEtaSumEnByEn);
-		TCanvas *c2 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
+		g2 -> SetName("dETdEtaOverdNchdEtaSum_vs_Npart");
+		formatGraph(g2, collEnArr, enInd);
+		/*
+		TCanvas *c2 = new TCanvas();
 		//c2->SetLogx();
 		g2->Draw("A*");
 		g2->SetMarkerStyle(28);
@@ -334,12 +344,14 @@ int plotsFromResults3(){
 		png2->FromPad(c2);
 		const char* imgPathAndNameConstCharPtr2 = imgPathAndName2.c_str();
 		png2->WriteImage(imgPathAndNameConstCharPtr2);
-		delete g2;
 		delete png2;
 		delete c2;
+		*/
+		delete g2;
+		
 		
 	} // end of for loop with index centInd
-	/// ------ end - plot all snn graphs at once -------------------------------//
+	/// ------ end - plot all graphs at once -------------------------------//
 	
 	return 0;
 }
@@ -349,4 +361,62 @@ std::string doubToString(Double_t d){
 	stream << fixed << setprecision(1) << d;
 	return stream.str();
 
+}
+
+void formatGraph(TGraph* g1, Double_t collEnArr[], int enInd){
+	// for reference:
+		// g1 = new TGraph(9, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
+	TCanvas *c1 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
+	//c1->SetLogx(); Npart graphs not in log scale
+	TString xlabel_Npart;
+	TString ylabel;
+	string imgPathAndName1;
+	g1->Draw("A*");
+	g1->SetMarkerSize(2);
+	TString npart1("dETdEtaOverNpartBy2Sum_vs_Npart"); // name of first kind of
+												// graph with Npart in the X-axis
+	TString npart2("dETdEtaOverdNchdEtaSum_vs_Npart"); // name of second kind of
+												// graph with Npart in the X-axis
+	if (g1 -> GetName()==npart1){
+		g1->SetMarkerStyle(28);
+		g1->SetMarkerColor(kGreen);
+		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}/2#GT (GeV)";
+		string graphName1 = "dETdEtaOverNpartBy2SumEn" + doubToString(collEnArr[enInd]);
+		imgPathAndName1 = 
+		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName1+".png";
+	}
+	else if (g1 -> GetName()==npart2){
+		g1->SetMarkerStyle(28);
+		g1->SetMarkerColor(kRed);
+		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
+		string graphName1 = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEnArr[enInd]);
+		imgPathAndName1 = 
+		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName1+".png";
+	}
+	xlabel_Npart = "#it{N}_{part}";
+	//cout << g1->GetName() << endl;
+	
+	
+	g1->GetHistogram()->GetXaxis()-> SetTitle(xlabel_Npart);
+	g1->GetHistogram()->GetYaxis()-> SetTitle(ylabel);
+	string graphTextNpart = "#sqrt{#it{s}_{NN}} ="+doubToString(collEnArr[enInd])+" GeV";
+	const char* graphTextNpartConstCharPtr = graphTextNpart.c_str();// required for TText constructor
+	//TText* t1 = new TText(200,.62,graphTextNpartConstCharPtr);
+	TLatex* t1= new TLatex();;
+	t1 -> SetNDC(kTRUE);
+	t1 -> DrawLatex(0.2,0.8,graphTextNpartConstCharPtr);
+	
+	//t1 -> SetTextAlign(22);
+	t1 -> SetTextSize(0.05);
+	//t1 -> DrawText();
+	// FIXME t1 -> DrawText(0.2,0.8,graphTextNpartConstCharPtr);
+	
+				//c1 -> SaveAs("./fittedPlots/trial1.png");
+	TImage *png1 = TImage::Create();//TODO try to use canvas method instead of png object
+	png1->FromPad(c1);
+	const char* imgPathAndNameConstCharPtr1 = imgPathAndName1.c_str();
+	png1->WriteImage(imgPathAndNameConstCharPtr1);
+	delete t1;
+	delete c1;
+	delete png1;
 }
