@@ -6,15 +6,16 @@
 
 #include "Riostream.h"
 //#include <cstdio>
-#include <vector>
+//#include <vector>
 #include <string>
 #include <fstream>
-#include "TString.h"
-#include "TMath.h"
-#include "TH1D.h"
+//#include "TString.h"
+//#include "TMath.h"
+//#include "TH1D.h"
 #include <iostream> // to use cout for debugging
 using namespace std;
 
+std::string doubToString(Double_t);
 // main function:
 
 int plotsFromResults3(){
@@ -151,7 +152,7 @@ int plotsFromResults3(){
 		else if (i==45)cout << headerBuffer << "\n";
 		*/
 		//}//end of for loop with index i
-	} //end of for loop with index j
+	} //end of for loop with index j - captured all 270 rows from data file
 	in.close();// all information from file extracted, so it should be closed
 	// print dETdEtaSum for 9 centralities and 5 collision energies
 		// and assign values to dETdEtaOverNpartBy2Sum[i][j]
@@ -164,12 +165,7 @@ int plotsFromResults3(){
 			}
 		}
 	Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
-	Double_t NpartArrEnByEn[9]; // for each collEn, there is a unique Npart Array
-	// unlike for the snn graphs in which 
-	// for each cent, there is the same collEnArr
-	// hence, the above array should be used in a loop instead of directly as in
-	// the usage of collEnArr.
-	// TODO current: populate NpartArr for each energy:
+
 	/*
 	for(int i=0; i<cents; i++){ // i is cent index
 		for(int j=0; j<collEns;j++)
@@ -224,9 +220,9 @@ int plotsFromResults3(){
 		g2->SetMarkerColor(kBlue);
 		g2->SetMarkerSize(2);
 		TString xlabel_snn_2 = "#sqrt{#it{s}_{NN}} (GeV)";
-		TString ylabel_etOverEtaOverNpartOver2_2 = "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
+		TString ylabel_etOverEtaOverNchOverEta = "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
 		g2->GetHistogram()->GetXaxis()-> SetTitle(xlabel_snn_2);
-		g2->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNpartOver2_2);
+		g2->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNchOverEta);
 		string graphName2 = "dETdEtaOverdNchdEtaSumCent" + std::to_string(centInd);
 		string imgPathAndName2 = 
 					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName2+".png";
@@ -261,61 +257,78 @@ int plotsFromResults3(){
 		
 	} // end of for loop with index centInd
 	/// ------ end - plot all snn graphs at once -------------------------------//
-
 	
+	Double_t NpartArrEnByEn[9]; // for each collEn, there is a unique Npart Array
+	// unlike for the snn graphs in which 
+	// for each cent, there is the same collEnArr
+	// hence, the above array should be used in a loop instead of directly as in
+	// the usage of collEnArr.
+	// TODO current: populate NpartArr for each energy:
 	/// ------ begin - plot all Npart graphs at once -------------------------------//
 	for(int enInd=0; enInd<collEns; enInd++){ // loop through all coll Ens
 	
-		Double_t dETdEtaOverNpartBy2SumEnByEn[cents];// one graph per collEn
-		Double_t dETdEtaOverdNchdEtaSumEnByEn[cents];
-		for(int i=0; i<cents; i++){ // loop through all cents for current collEn
+		Double_t dETdEtaOverNpartBy2SumEnByEn[cents];// one graph per collEn;
+		Double_t dETdEtaOverdNchdEtaSumEnByEn[cents];	// cents = num of Nparts
+		for(int i=0; i<cents; i++){ // loop through all cents/Nparts for current collEn
 		// because TGraphErrors does not take a 2d array as argument
 			dETdEtaOverNpartBy2SumEnByEn[i] = dETdEtaOverNpartBy2Sum[i][enInd];
 			dETdEtaOverdNchdEtaSumEnByEn[i] = dETdEtaOverdNchdEtaSum[i][enInd];
+			NpartArrEnByEn[i]				= Npart[i][enInd];
 		}
-		TGraph* g1;
-		//Double_t* collEnPtr = &collEnArr[0];
-		//Double_t* dETdEtaOverNpartBy2SumCent0Ptr = &dETdEtaOverNpartBy2SumCent0[0];
-		//g = new TGraph(5, collEnPtr, dETdEtaOverNpartBy2SumCent0Ptr);// TGraph constructor
-		g1 = new TGraph(9, NpartArr, dETdEtaOverNpartBy2SumCentByCent);
+		TGraph* g1; // okay to use identifier g1 in local scope as was the case in previous use
+		g1 = new TGraph(9, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
 		TCanvas *c1 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
-		c1->SetLogx();
+		//c1->SetLogx(); Npart graphs not in log scale
 		g1->Draw("A*");
-		g1->SetMarkerStyle(29);
-		g1->SetMarkerColor(kBlue);
+		g1->SetMarkerStyle(28);
+		g1->SetMarkerColor(kGreen);
 		g1->SetMarkerSize(2);
-		TString xlabel_snn = "#sqrt{#it{s}_{NN}} (GeV)";
+		TString xlabel_Npart = "#it{N}_{part}";
 		TString ylabel_etOverEtaOverNpartOver2 = "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}/2#GT (GeV)";
-		g1->GetHistogram()->GetXaxis()-> SetTitle(xlabel_snn);
+		g1->GetHistogram()->GetXaxis()-> SetTitle(xlabel_Npart);
 		g1->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNpartOver2);
-		string graphName1 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
+		string graphText1 = "#sqrt{#it{s}_{NN}} ="+doubToString(collEnArr[enInd])+" GeV";
+		const char* graphText1ConstCharPtr = graphText1.c_str();// required for TText constructor
+		//TText* t1 = new TText(200,.62,graphText1ConstCharPtr);
+		TLatex* t1= new TLatex();;
+		t1 -> SetNDC(kTRUE);
+		t1 -> DrawLatex(0.2,0.8,graphText1ConstCharPtr);
+		
+		//t1 -> SetTextAlign(22);
+		t1 -> SetTextSize(0.05);
+		//t1 -> DrawText();
+		// FIXME t1 -> DrawText(0.2,0.8,graphText1ConstCharPtr);
+		string graphName1 = "dETdEtaOverNpartBy2SumEn" + std::to_string(collEnArr[enInd]);
 		string imgPathAndName1 = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName1+".png";
+		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName1+".png";
 					//c1 -> SaveAs("./fittedPlots/trial1.png");
 		TImage *png1 = TImage::Create();//TODO try to use canvas method instead of png object
 		png1->FromPad(c1);
 		const char* imgPathAndNameConstCharPtr1 = imgPathAndName1.c_str();
 		png1->WriteImage(imgPathAndNameConstCharPtr1);
-		delete g1;
-		delete png1;
+		delete t1;
 		delete c1;
+		delete png1;
+		delete g1;
+		
+		
 	
 		// TODO make a function to take care of different types of graph instead of creating new objects here
 		TGraph* g2;
-		g2 = new TGraph(5, collEnArr, dETdEtaOverdNchdEtaSumCentByCent);
+		g2 = new TGraph(9, NpartArrEnByEn, dETdEtaOverdNchdEtaSumEnByEn);
 		TCanvas *c2 = new TCanvas(/*"c1","A Simple Graph Example",200,10,700,500*/);
-		c2->SetLogx();
+		//c2->SetLogx();
 		g2->Draw("A*");
-		g2->SetMarkerStyle(29);
-		g2->SetMarkerColor(kBlue);
+		g2->SetMarkerStyle(28);
+		g2->SetMarkerColor(kGreen);
 		g2->SetMarkerSize(2);
-		TString xlabel_snn_2 = "#sqrt{#it{s}_{NN}} (GeV)";
-		TString ylabel_etOverEtaOverNpartOver2_2 = "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
-		g2->GetHistogram()->GetXaxis()-> SetTitle(xlabel_snn_2);
-		g2->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNpartOver2_2);
-		string graphName2 = "dETdEtaOverdNchdEtaSumCent" + std::to_string(centInd);
+		TString xlabel_Npart_2 = "#it{N}_{part}";
+		TString ylabel_etOverEtaOverNchOverEta = "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
+		g2->GetHistogram()->GetXaxis()-> SetTitle(xlabel_Npart_2);
+		g2->GetHistogram()->GetYaxis()-> SetTitle(ylabel_etOverEtaOverNchOverEta);
+		string graphName2 = "dETdEtaOverdNchdEtaSumEn" + std::to_string(collEnArr[enInd]);
 		string imgPathAndName2 = 
-					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName2+".png";
+					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName2+".png";
 					//c1 -> SaveAs("./fittedPlots/trial1.png");
 		TImage *png2 = TImage::Create();// TODO try to use canvas method instead of png object
 		png2->FromPad(c2);
@@ -324,29 +337,16 @@ int plotsFromResults3(){
 		delete g2;
 		delete png2;
 		delete c2;
-		/* //TODO: stuff vs Npart: 9 centralities times 5 energies -> 45 Nparts
-		// each energy gets a different plot
-		
-		TGraph* g3;
-		g3 = new TGraph(5, collEnArr, dETdEtaOverdNchdEtaSumCentByCent);
-		TCanvas *c2 = new TCanvas();
-		c2->SetLogx();
-		g2->Draw();
-		string graphName2 = "dETdEtaOverNpartBy2SumCent" + std::to_string(centInd);
-		string imgPathAndName2 = 
-					"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName2+".png";
-					//c1 -> SaveAs("./fittedPlots/trial1.png");
-		TImage *png2 = TImage::Create();// TODO try to use canvas method instead of png object
-		png2->FromPad(c2);
-		const char* imgPathAndNameConstCharPtr2 = imgPathAndName2.c_str();
-		png2->WriteImage(imgPathAndNameConstCharPtr2);
-		delete g2;
-		delete png2;
-		delete c2;
-		*/
 		
 	} // end of for loop with index centInd
 	/// ------ end - plot all snn graphs at once -------------------------------//
 	
 	return 0;
+}
+
+std::string doubToString(Double_t d){
+	stringstream stream;
+	stream << fixed << setprecision(1) << d;
+	return stream.str();
+
 }
