@@ -59,3 +59,9 @@ Description of contents in the repository:
 	- uses 11. to produce cross-check plots and new plots for publication
 	- plots saved as .png files in subdirectories under directory finalPlots
 
+
+*******************************************************************************
+Current debugging note:
+	- available BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2] in pt bins
+	- taken care of in fitBESData5.h: Double_t dNdpt_normalized			= 2 * TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
+	- need to apply similar transformation in calculating integral from data points

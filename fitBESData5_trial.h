@@ -1,9 +1,3 @@
-/*
-In this version: applied transformation to 
-account for the fact that BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
-instead of d^2N/(dpt*dy)[(GeV/c)^-2]
-*/
-
 #ifndef fitBESData5_H
 #define fitBESData5_H
 
