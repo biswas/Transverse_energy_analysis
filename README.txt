@@ -1,5 +1,10 @@
 Description of contents in the repository:
 
+-1. directory: oldVersions
+	- contains codes and results from the past
+	- not deleted because these codes contain 
+		functionalities that may be relevant in the future
+		
 0. directory: finalPlots
 	- contains subdirectories containing cross-check plots and new plots
 
