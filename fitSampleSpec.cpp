@@ -123,7 +123,7 @@ int fitSampleSpec(){
 
 		// read histogram object for current iteration of key:
 		/////////// TODO h = (TH1D*)mikey->ReadObj();
-		h = (TH1D*)myFile->Get(Form("cent%i_pion_minus",0));
+		h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		string histoName = h->GetName();
 		cout << "test bin content: " << h->GetBinContent(17) << endl;
@@ -141,11 +141,11 @@ int fitSampleSpec(){
 		string centrality = histoName.substr(4,1);// starting position in array:4, 1 char total
 		
 		//------------ Assign mass & type to particle -----------------//
-		Double_t mass = 0.13957; // in GeV
+		Double_t mass = 0.93827; // in GeV
 		
 		// type Double_t instead of Int_t 
 		 //to use as argument in TF1 method SetParameters()
-		Double_t type = 0.;// 0 for mesons, -1 for baryons, 1 for antibaryons
+		Double_t type = -1.;// 0 for mesons, -1 for baryons, 1 for antibaryons
 		if		(particleID=="pi-"||particleID=="pi+"||particleID == "pio")
 				{mass = 0.13957; type = 0.;}
 		else if	(particleID=="ka-"||particleID=="ka+")

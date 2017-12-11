@@ -30,7 +30,7 @@ Double_t* getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass
 	for(Int_t binx = binx1; binx <= binx2; binx++){
 		//Double_t pt = (hist->GetXaxis()->GetBinLowEdge(binx));
 		Double_t pt = hist->GetXaxis()->GetBinLowEdge(binx)+
-					(hist->GetXaxis()->GetBinUpEdge(binx)-hist->GetXaxis()->GetBinLowEdge(binx))*0.3;// avg of bin edges
+					(hist->GetXaxis()->GetBinUpEdge(binx)-hist->GetXaxis()->GetBinLowEdge(binx))*.5;// avg of bin edges
 		//float pt = h->GetXaxis()->GetBinLowEdge(binx);
 		// calculate E_T needed for dE_T/dy:
 		Double_t et = TMath::Sqrt(pt*pt+mass*mass)+type*mass;
@@ -38,7 +38,7 @@ Double_t* getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass
 		
 		// calculate J*E_T needed for dE_T/dEta:
 		///////Double_t JTimeset = pt/(TMath::Sqrt(pt*pt+mass*mass))*et; 
-		Double_t J = pt/(TMath::Sqrt(pt*pt+mass*mass));
+		Double_t J = pt/(TMath::Sqrt(pt*pt+mass*mass)); // Jacobian
 		Double_t dx = hist->GetXaxis()->GetBinWidth(binx);
 		//cout << "bin width from bin " << binx << ": " << dx << endl;
 		//cout << "content in bin " << binx << ": " << h->GetBinContent(binx) << endl;
