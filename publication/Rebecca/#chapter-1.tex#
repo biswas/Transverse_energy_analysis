@@ -1,0 +1,777 @@
+\chapter{Introduction} \label{ch:introduction}
+
+The main goal of the ALICE (A Large Ion Collider Experiment) detector at the Large Hadron Collider is to study nuclear matter under high temperature and energy density by creating a Quark Gluon Plasma (QGP) in ultra relativistic nucleus-nucleus collisions. Complementary studies of proton-proton collisions and proton-nucleus collisions are not expected to produce a Quark-Gluon Plasma and are essential to provide a baseline for the measurements carried out in heavy-ion collisions. Proton-nucleus collisions are also interesting in their own right, providing a view into cold nuclear matter effects and the modifications to parton distributions in the proton and the nucleus.
+
+Heavy flavor quarks, charm and bottom, are produced from hard parton scattering early in the collision and traverse the medium throughout its evolution, making them a good probe. The production of heavy-flavor is sensitive to the parton distributions and the medium produced in the collisions. Due to the large mass of the charm and bottom quark, their production cross sections can be calculated by perturbative Quantum Chromodynamics. Single electrons from the semileptonic decays of charm and bottom mesons provide one way of measuring heavy flavor production.
+
+This dissertation describes the measurement of the production of single electrons that come from the decay of heavy flavor D and B mesons. Chapter \ref{ch:introduction} provides the context for this measurement and defines the basic words and concepts. Chapter \ref{ch:Experimental and Theoretical Status} describes the experimental status of the field. Chapter \ref{ch:experimental overview} describes the ALICE experiment in detail. Chapter \ref{ch:analysis} describes the steps taken in this analysis. Chapter \ref{ch:results and discussion} reports the final results and provides a discussion of the results compared to other relevant measurements. Chapter \ref{ch:conclusions} summarizes the final conclusions.
+%The dominant backgrounds are hadrons misidentified as electrons, and the so-called ``photonic electrons'', which are produced in pairs. 
+
+%Ultrarelativistic nucleus-nucleus collisions at the Large Hadron Collider are used to study nuclear matter under high temperature and energy density by creating a Quark Gluon Plasma (QGP). In heavy ion collisions, heavy quarks, charm and bottom, are created early in the collision and traverse the entire evolution thus making them a good probe of the medium. 
+
+%Electrons from semileptonic decays of charm and bottom hadrons provide one way of measuring heavy flavor production in p-Pb collisions. The measurement of non-photonic electrons is representative of the measurement of heavy quarks since the spectrum is dominated by electrons from the semileptonic decays of D and B mesons. 
+%
+%The interaction with heavy flavor and the medium can be studied with the production of electrons from heavy flavor decays from Pb-Pb collisions as compared to p-p collisions. Complementary studies of p-Pb collisions were meant to isolate cold nuclear matter effects and mechanisms unrelated to the presence of a QGP.  Initial and final state effects related to the presence of cold nuclear matter can affect the heavy-flavor yield in p-Pb collisions. However there are some recent hints that there may also be collective effects in p-Pb collisions making the separation of cold and hot nuclear matter effects more challenging. 
+
+\section{The Standard Model}
+%Donald H. Perkins Introduction to High Energy Physics 4th Edition, page 7
+%David Griffiths Introduction to Elementary Particles, page 47
+%pg 25 Quarks & Leptons An Introductory course in Modern Particle Physics. Francis Halzen and Alan D. Martin
+
+The Standard Model of particle physics, formulated in the 1970s, describes all of the known elementary particle interactions except for gravity \cite{Griffiths:2008zz}. The current view is that all matter is comprised of three fundamental pieces: quarks, leptons, and force mediators. The names of these fundamental constituents along with their mass, charge, and spin are shown in figure \ref{fig:Standard Model of Elementary Particles} \cite{StandardModelofElementaryParticles}. The spin is given in units of $\hbar$. The charges are written in units of $e$, where the charge of an electron is $-e$. The quarks and leptons also have antiparticles which were omitted from \ref{fig:Standard Model of Elementary Particles}. The antiparticles (antiquarks: $\bar{u}, \bar{d}, \bar c, \bar s, \bar t, \bar b,$ antileptons: e$^+$ (positron), $\mu^+, \tau^+, \bar{\nu_{\mathrm{e}}}, \bar{\nu_{\mu}}, \bar{\nu_{\tau}}$) have the same mass and spin as their particle counterparts but have opposite charge.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{Standard_Model_of_Elementary_Particlespng}\\
+  \caption{The standard model of particle physics \cite{StandardModelofElementaryParticles}.}\label{fig:Standard Model of Elementary Particles}
+\end{figure}
+
+The electron, muon and tau are leptons, all with $- e$ charge. The electron is thought to be stable. However, the muon and tau will spontaneously decay. The muon has a mean lifetime of $2.1969811 \pm 0.0000022 \times 10^{-6}$ s \cite{Beringer:1900zz} and its primary decay is into an electron, electron antineutrino and muon neutrino: $\mu^{-} \rightarrow \mathrm{e}^{-} \, \bar{\nu_{\mathrm{e}}} \, \nu_{\mu} $. The tau has a much shorter lifetime of $2.906 \pm 0.010 \times 10^{-13}$ s and can decay into hadrons and other particles. The muon is about 200 times more massive than the electron. The tau is about 3,500 times more massive than the electron and about twice the mass of a proton.
+%lifetimes from pdg
+
+The leptons also include three flavors of neutrinos. Neutrinos have no electric charge and a very light mass.
+ 
+There are six flavors of quarks: up, down, charm, strange, top (also referred to as ``truth''), and bottom (also referred to as ``beauty''). Up, charm and top quarks carry charges of $+ \frac{2}{3}e$ while down, strange and bottom carry a charge of $- \frac{1}{3}e$. Individual quarks can not be directly observed, a phenomenon called quark confinement.
+
+%pg 9 Perkins %pg47 on Griffiths
+The interactions between fermions (quarks, leptons, and baryons) can be described as an exchange of bosons. The strong interaction is mediated by the gluon, which is responsible for binding quarks in baryons and binding the protons and neutrons in a nucleus. Interactions between electrically charged particles are governed by the electromagnetic force and mediated by photons. Weak interactions have 
+three intermediate bosons, W$^+$, W$^-$ and Z$^0$. Weak interactions are responsible for $\beta$-decay.
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Fundamental forces \cite{Griffiths:2008zz} \cite{Halzen:1984mc}} 
+    \label{tab:Interactions}
+    \begin{tabular}{| c|c|c|c |}
+    \hline
+    Interaction & Mediator &Theory & Range\\
+    \hline
+    \rule{0pt}{4ex} \rule[-1.6ex]{0pt}{0pt} Strong & gluon, g & Chromodynamics & 1F $\simeq \frac{1}{m_{\pi}}$\\
+    \rule{0pt}{4ex} Electromagnetic & photon, $\gamma$ & Electrodynamics & $\infty$ \\
+   \rule{0pt}{4ex} \rule[-1.6ex]{0pt}{0pt} Weak & W$^{\pm}$, Z$^0$ & Flavordynamics & $\frac{1}{M_{W}}$\\
+   \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+%table from page 26 Quarks & Leptons Halzen and Martin
+%page 10 Perkins
+%page 55 Griffiths Introduction to Elementary Particles.
+
+
+%pg 8 Perkins
+%While leptons exist as free particles, quarks seem not to do so. It is a peculiarity of the strong forces between the quarks that they can be found only in combinations such as uud, not singly. 
+
+
+\section{Quantum Chromodynamics (QCD)}
+%M. Gyulassy The QGP Discovery Not really that helpful. I don't know. 
+%Introduction to High Energy Physics Donald H. Perkins page 171
+%Griffiths Introduction to Elementary particles page 60
+
+Quantum chromodynamics describes the interactions between quarks. Quarks have a degree of freedom, called color. Quarks can have three possible values of a color charge and anti-quarks have anti-color making six total types of color charge. The color values are red (r), blue (b), and green (g).
+
+The force between the quark-quark interaction is mediated by the exchange of a vector boson called the gluon. A gluon is a massless particle with spin 1 and has one unit of color and anticolor. There are eight possible gluon color states. One way of presenting the color octet is shown in the list \ref{eqn:Gluon octet} \cite{Griffiths:2008zz} \cite{Halzen:1984mc}. 
+%page 61 Griffiths. Page 171 Perkins
+
+\begin{equation}\label{eqn:Gluon octet}
+\begin{aligned}[c]
+\frac{1}{\sqrt 2}(r\bar b + b \bar r) \;\;\;  \;\;\; \\
+\frac{1}{\sqrt 2}(r\bar g + g \bar r) \;\;\; \;\;\;\\
+\frac{1}{\sqrt 2}(b\bar g + g \bar b) \;\;\;  \;\;\; \\
+\frac{1}{\sqrt 2}(r\bar r - b \bar b) \;\;\;  \;\;\; 
+\end{aligned}
+\begin{aligned}[c]
+\frac{-i}{\sqrt 2}(r\bar b - b \bar r) \\
+\frac{-i}{\sqrt 2}(r\bar g - g \bar r)\\
+\frac{-i}{\sqrt 2}(b\bar g - g \bar b) \\
+\frac{1}{\sqrt 6}(r\bar r + b \bar b -2g \bar g) 
+\end{aligned}
+\end{equation}
+%Griffiths page 280 for 8 states of gluons. There are many ways of presenting these states.
+%Perkin's list: $r\bar b, r\bar g, b\bar g, b\bar r, g\bar r, g\bar b, \frac{1}{\sqrt 2} (r\bar r - b \bar b), \frac{1}{\sqrt 6} (r\bar r + b \bar b-2g\bar g)$
+
+
+Leptons can be found as free particles but quarks are confined into colorless composite particles called hadrons. Quarks are only seen in baryons (three quarks, QQQ) and mesons (quark and antiquark, Q$\bar Q$). The proton is a baryon and composed of two up quarks and one down quark. An example of a meson is the D$^+$ which is composed of a charm and antidown. 
+
+The strength of the strong force is given by the running coupling constant, $\alpha_{s}$. $\alpha_{s}$ decreases with smaller distances and increasing energy. At large distances, such as the size of atoms, $\alpha_{s}$ is large and quarks are confined. However, for small distances and high energies, $\alpha_{s}$ approaches zero and quark-quark interactions are minor and quarks can be treated as free particles. This is known as asymptotic freedom. (See figure \ref{fig:BethkeCouplingStrengthDependenceOnEnergy} \cite{Bethke:2012jm}.)
+%Perkins 185
+
+
+
+%entropy density $\sigma (T)$
+
+\section{Heavy Flavor}
+%%%%Kyle's thesis said QGP is 1 fm/c. %%%%%
+%time scales from page 53 of Bruna's thesis, %phenix white papers page 19 for heavy-flavor.
+
+Because the QGP is very short lived ($\tau \sim 10 fm/c$), the medium must be studied with the particles created during the collision. Heavy-flavor quarks, charm and bottom, are produced early in the collision from hard partonic scatterings. For c$\bar c$ production, the time scale is $\sim \hbar / (2 m_{Q} c^2) \simeq 0.2/2.4 \simeq 0.08 fm/c$\cite{Adcox:2004mh}. Production or annihilation of heavy-flavor quarks at later times in the evolution of the collision is not expected, therefore the total number of heavy flavor quarks is constant after the initial stages of the collision. The heavy quarks can interact with the partons in the medium while traversing the medium. In this way, the heavy flavor quarks can carry information about the medium. This makes charm and bottom quarks a good probe for the QGP. 
+
+%%%%%%%%measurements have shown%% Needs a reference.
+
+Since the charm and bottom quark are heavier than the light up and down quarks, they were expected to not react as strongly to the medium. However measurements have shown that charm and bottom undergo a suppression similar to light quarks. This makes the measurement of heavy flavor particularly interesting.
+
+% page 165 Griffiths talks about the history of charm. Intro to Elem Particles
+%$\psi$ was found in 1974 in the SLAC experiments. $\psi ' $ was found two weeks later by increasing the beam energy. 
+
+\subsection{Heavy Flavor Quark Production}
+%Nuclear Physics B263 (1986) 37-60 Heavy Particle production in high-energy hadron collisions John C. Collins, Davison Soper, George Sterman
+
+The factorization theorem can be used to calculate the cross section for the production of the heavy quarks. Heavy quarks are made in the hard collision of light partons a and b of each hadron $A$ and $B$ and produce heavy quarks $C$ and $D$. The cross section can be expressed as the factorized form in equation \ref{eqn:factorization theorem} \cite{Collins:1985gm}. In this equation, $C$ and $D$ refers to heavy flavored quarks with mass M. $Y$ is the rapidity in the center of mass frame of partons $a$ and $b$, $Y = \frac{1}{2} \ln (x_{A}/x_{B})$. 
+
+\begin{equation}\label{eqn:factorization theorem}
+\frac{d \sigma}{dy_{c}dy_{D}} = \sum_{a,b} \int d x_{A} f_{a/A} (x_{A}) \int dx_{B} f_{b/B} (x_{B}) H_{ab}(y_{C} - Y, y_{D} - Y, x_{A}x_{B}s, M)
+\end{equation}
+%equation from 5.1 -  in Nuclear Physics B263 (1986) 37-60 Heavy Particle production in high-energy hadron collisions John C. Collins, Davison Soper, George Sterman
+
+This cross section can be described by the multiplication of three components. The first ingredient is $f_{a/A} (x_{A})$, the parton distribution function. This describes the probability of finding a parton of type $a$ with some momentum fraction $x_{A}$ in a hadron. The second factor is the probability of finding another parton of type $b$ with some momentum $x_{B}$ in another hadron. The third component is $H_{ab}$, the hard scattering function for the production of a heavy quark pair from partons $a$ and $b$. This describes the probability that these two partons will produce a heavy flavor quark pair.
+
+Figure \ref{fig:Leading Order Feynman diagrams} shows the lowest-order QCD diagrams for flavor creation process \cite{Kang:2014hha}. The diagrams show the production of charm/anti-charm or bottom/anti-bottom pairs. Time is shown going left to right in the figures \ref{fig:Leading Order Feynman diagrams}. The thin lines represent light quarks. Heavy quarks are represented by a thick line. Gluons are represented by corkscrew lines. These are the most common processes for creating heavy flavor. The left most diagram shows light quark and anti-quark annihilating and producing a heavy quark and anti-quark pair. The next three diagrams show two gluons interacting and producing a heavy quark and anti-quark pair.
+
+%The figures \ref{subfig-1:LO diagrams}, \ref{subfig-2:LO diagrams}, and \ref{subfig-3:LO diagrams} show two gluons interacting and producing a c$\bar c$ pair. In figure \ref{subfig-4:LO diagrams} a quark and antiquark collide and produce a charm and anti-charm pair.
+
+%  \begin{figure}[!ht]
+%    \subfloat[ \label{subfig-1:LO diagrams}]{%
+%      \includegraphics[width=0.25\textwidth]{gg2ccbar1}
+%    }
+%    \subfloat[ \label{subfig-2:LO diagrams}]{%
+%      \includegraphics[width=0.25\textwidth]{gg2ccbar2}
+%    }
+%    \subfloat[ \label{subfig-3:LO diagrams}]{%
+%      \includegraphics[width=0.25\textwidth]{gg2ccbar3}
+%    }
+%    \subfloat[ \label{subfig-4:LO diagrams}]{%
+%      \includegraphics[width=0.25\textwidth]{qq2ccbar}
+%    }
+%    \caption{Leading Order Feynman diagrams for heavy quark production.}
+%    \label{fig:Leading Order Feynman diagrams}
+%  \end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.5in]{Feynman}\\
+  \caption{Leading Order Feynman diagrams for heavy quark production \cite{Kang:2014hha}.}\label{fig:Leading Order Feynman diagrams}
+\end{figure}
+
+
+%\subsection{Heavy Quark production models}
+Heavy quarkonium, a $c \bar c$ or $b \bar b$ pair, can be created by gluon fusion in either the color singlet or color octet state\cite{Schuler:1995sf} \cite{Vogt:2004dh}. In the color singlet model, the quarkonium is formed with the same quantum numbers in a color singlet state. The bound state is a colorless meson, $J/\Psi$ for $c \bar c$ and $\Upsilon$ for $b \bar b$. If quarkonium is produced in the color octet state, the quark-antiquark pair will have ``extra, unwanted'' color. The quarkonium can neutralize its color by radiating off soft gluons, or combine with a light quark-antiquark pair and create charm or bottom mesons.
+
+The color singlet state is formed at shorter distances than the color octet state. The color octet cross section is substantially larger than the color singlet cross section. The color singlet state is more tightly bound and is more likely to produce $J/\Psi$ and $\Upsilon$. The octet state is fragile and is more likely to produce open heavy flavor.
+
+
+
+
+%
+%the colour octet (cc?8) is not bound, in contrast to the colour singlet (cc?)1 Hence any (cc?g) interaction will generally lead to its break-up, so that there is no threshold factor.
+%
+%The same argumentation also provides the suppression of bottonium production in p ? A collisions. The radius of the (b?b)8g state is (see Eq. (7)) a factor  mc/mb ? ?3 smaller than that of the (cc?g), so that ?(b?bg)N ? (1/3)?(cc?g)N ? 2 mb.
+%Bottom and antibottom is the Upsilon meson
+
+
+
+
+%\subsection{Fragmentation and Recombination}
+
+\subsection{Electrons from Semileptonic Decays of Charm and Bottom Hadrons}
+
+This analysis measured the production of open heavy flavor, that is hadrons containing a single charm or bottom quark. The $J/\Psi$ (comprised of charm-anticharm) and $\Upsilon$ (comprised of bottom-antibottom) are considered background. 
+
+Heavy flavor hadrons measured in this analysis are made up of one charm or bottom quark and a light quark: $D^+ , D^- , D^0 , \bar D^0, B^+ , B^- , B^0 , \bar B^0$. Table \ref{tab:Decays} shows a list of the open heavy flavor hadrons, the quark constituents, decay length and decay fraction relevant to this analysis \cite{Beringer:1900zz}. B mesons can also have decay daughters $D^+ , D^- , D^0,$ and $\bar D^0$, making it difficult to separate the contribution from bottom and charm.
+
+\begin{table}
+\begin{center}
+\caption{Table of Heavy Flavor Mesons and their decays \cite{Beringer:1900zz}} \label{tab:Decays}
+\begin{tabular}{|r|r|r|r l |}
+\hline
+ Meson & Quark & Decay & Relevant e$^{\pm}$ decay&fraction\\
+ Name & content & length, c$\tau$ &  & \\
+  \hline
+\rule{0pt}{3ex} \rule[-1.0ex]{0pt}{0pt} $D^{+}$ , D$^{-}$ & $c \bar d$ , $\bar c d$ & 311.8 $\mu$m & $D^{+} \to$ e$^+$ + anything & 16.0 $\pm$ 0.4\%\\
+ $D^0$ ,  $\bar D^0$ & $c \bar u$ , $\bar c u$ & 122.9 $\mu$m & $D^{0} \to$ e$^+$ + anything & 6.53 $\pm$ 0.17\% \\
+ $B^{+}$ , $B^{-}$ & $u \bar b$ , $\bar u b$ & 492.0 $\mu$m & $B^{+} \to$ e$^+ \nu_{e} X_{C}$ & 10.99 $\pm$ 0.28\% \\
+ $B^0$ , $\bar B^0$ & $d \bar b$, $\bar d b$ &455.4 $\mu$m & $B^{0} \to$ e$^+ \nu_{e} X_{C}$ & 10.1 $\pm$ 0.4\%\\
+ &  & & $B \to D \to$ e & 9.6\%\\
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+%\begin{table}
+%\begin{center}
+%\caption{Table of Heavy Flavor Mesons and their decays \cite{Beringer:1900zz}} \label{tab:Decays}
+%\begin{tabular}{|r|r|r|r|r|}
+%\hline
+% Meson & Quark & Decay & Decay to $\mu ^{\pm}$ & Decay to e$^{\pm}$\\
+% Name & content & length, c$\tau$ &  & \\
+%  \hline
+%\rule{0pt}{3ex} \rule[-1.0ex]{0pt}{0pt} $D^{+}$ , D$^{-}$ & $c \bar d$ , $\bar c d$ & 311.8 $\mu$m & 17.6 $\pm$ 3.2\% & 16.07 $\pm$ 0.3\%\\
+% $D^0$ ,  $\bar D^0$ & $c \bar u$ , $\bar c u$ & 122.9 $\mu$m & 6.7 $\pm$ 0.6 & 6.49 $\pm$ 0.11\% \\
+% $B^{+}$ , $B^{-}$ & $u \bar b$ , $\bar u b$ & 492.0 $\mu$m & 10.99 $\pm$ 0.28\% & 10.99 $\pm$ 0.28\% \\
+% $B^0$ , $\bar B^0$ & $d \bar b$, $\bar d b$ &455.4 $\mu$m &  10.33 $\pm$ 0.28\% & 10.33 $\pm$ 0.28\%\\
+% \hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+
+
+The decay length of the D and B mesons are on the order of a few hundred micrometers while the innermost detectors in ALICE have a radius of a few centimeters. For this reason, a meson containing a heavy quark does not survive long enough to travel through the detector to be studied directly. Instead they must be studied by their decay products. A meson containing a charm or bottom quark can decay hadronically or semileptonically as shown in the diagram in figure \ref{fig:Ddecay} \cite{Hornback}.
+
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=5in]{Ddecay}\\
+  \caption{Schematic of a hadronic and semileptonic decay of D mesons \cite{Hornback}. }\label{fig:Ddecay}
+\end{figure}
+
+In the center of the drawing on figure \ref{fig:Ddecay}, a charm and anti-charm pair is created. The $c$ quark goes into a $D^0$ meson and the $\bar c$ quark goes into a $\bar D^0$ meson. Shown on the left half of the figure, the $D^0$ undergoes a hadronic decay into a $K^-$ and a $\pi^+$. On the right hand side of the figure, the $\bar D^0$ has a semileptonic decay into a $K^+$ meson and a lepton (which could be an electron, muon or tau) and the corresponding neutrino. The kaon, pion, and lepton can be measured in the detector. In this way, charm and bottom mesons can be studied by their hadronic or their semileptonic decay products. 
+
+The focus of this dissertation is the type of decay drawn on the right half of figure \ref{fig:Ddecay}, where the decay product contains a \textit{single electron}. Electrons produced in pairs, e$^{+}$ + e$^{-}$, are the main source of background to this measurement. These background electrons are often referred to as \textit{photonic electrons}, as a main source is photon conversion. The spectrum of single electrons is dominated by electrons from the semileptonic decays of D and B mesons. The measurement of electrons from semileptonic decays of charm and bottom mesons is also labeled as the measurement of  \textit{non-photonic electrons} and \textit{single electrons}.
+
+
+
+\section{Relativistic Proton-Nucleus Collisions}
+
+In this section basic terms and concepts of relativistic collisions will be discussed. The kinematic variables are general for proton-proton, proton-nucleus, and nucleus-nucleus collisions. The initial geometry of proton-nucleus collisions differs from proton-proton and nucleus-nucleus collisions. 
+
+
+%\subsection{Motivation for pPb and pp Collisions}
+
+%Proton-nucleus collisions give insight into the parton structure of the nucleus, giving context to the results from nucleus-nucleus collisions at similar energies. 
+%In p-Pb collisions, initial and final state effects related to the presence of cold nuclear matter can affect the heavy-flavor yield.
+%
+%The main goal of the ALICE detector at the Large Hadron Collider is to study nuclear matter under high temperature and energy density by creating a Quark Gluon Plasma in ultra relativistic nucleus-nucleus collisions. Complementary studies of proton-proton collisions and proton-nucleus collisions are not expected to produce a quark-gluon plasma and are essential to provide a baseline for the measurements carried out in heavy-ion collisions. Proton-nucleus collisions are also interesting in their own right, providing a view into cold nuclear matter effects and the modifications to parton distributions in the proton and the nucleus.
+
+%p+A collisions and provide a baseline for A+A collisions. Initial state and final state effects that are present for p-Pb collisions also appear in Pb-Pb collisions. However, Pb-Pb collisions also possibly create the QGP.
+%There are large uncertainties in the nuclear Parton Distribution function at the LHC kinematics. pPb can give insight to the parton structure of the nucleus in the kinematic region of the LHC. 
+%p-Pb and p-p are different geometrically. Saturation of gluons and nuclei are different. 
+%
+%DIS experiments is the cleanest experiment for saturation physics. LHeC or EIC would be better, but not coming soon. p-Pb would take less alteration of the current machine, change in magnets and injectors, than e-hadron or d+A collisions
+
+%\subsection{Motivation for Charm and Bottom}
+%Several probes: Jet quenching, prompt photon production, Heavy Flavor, quarkonium. Each tell it's own story.
+%Charm and Bottom are created in the hard scattering, early in the collision. The measurement of the open charm yield brings information about the early, hotter stages of the heavy-ion collision. Up and down quarks can be made in the soft scatterings later in the collision. Charm and Bottom can tell the entire evolution of the medium. 
+%Nuclear effects for charm and bottom are not very large, but still there. 
+
+
+\subsection{Kinematic Variables}
+In relativistic collisions, it is convenient to use kinematic variables in relation to the beam axis and the laboratory frame. The coordinate system used for the ALICE experiment places the beam direction along the z direction, with positive y pointing towards the sky. The z = 0 position is the approximate region where the beams cross and collisions occur. Figure \ref{fig:VZERO_position} has z and y labeled in a drawing of the ALICE detector.
+
+\textbf{Transverse momentum}, $\mathbf{p_{T}}$ is a kinetic variable that is used frequently in heavy-ion physics. Cross sections and yields are often shown with respect to $p_{T}$. A particle's $p_{T}$ is the magnitude of the particle's momentum component perpendicular to the beam axis.
+\begin{equation}
+p_{T} = \sqrt{p_{x}^2 + p_{y}^2 } = p \sin \theta = p_{z} \tan \theta
+\end{equation}
+
+
+% \cite{Wong:1995jf}
+%   (I don't think I said this correctly) 
+\textbf{Rapidity,} $\mathbf{y}$, is a useful quantity for relativistic velocities because the rapidities can be added and subtracted like the velocity in the non-relativistic case if the two frames of reference are moving at a constant velocity relative to each other. A great reference with an example and a more detailed description of rapidity is \cite{Wong:1995jf}. The rapidity can be calculated using the energy and the longitudinal momentum component of a particle. 
+
+\begin{equation}\label{eqn:rapidity}
+y = \frac{1}{2} \ln \Big( \frac{E+p_{z}}{E-p_{z}} \Big)
+\end{equation}
+
+The \textbf{pseudorapidity}, $\mathbf{\eta}$, variable is often more convenient because it can be measured solely based on the angle of a particle's trajectory. Rapidity is dependent on knowing the momentum and identity of a particle which is not always known in an experiment. The pseudorapidity is given by equation \ref{eqn:pseudorapidity}. 
+%$\pm 45 ^{\circ} $ and $|\eta| < 0.9$.
+
+\begin{equation}\label{eqn:pseudorapidity}
+\eta \equiv -\ln \Big[\tan \frac{\theta}{2} \Big] \qquad\text{and}\qquad \eta =  \frac{1}{2} \ln \Big[ \frac{|\textbf{p}|+p_{z}}{|\textbf{p}|-p_{z}} \Big]
+\end{equation}
+ 
+The pseudorapidity can be positive or negative, depending on the particle's direction, and can range from $ - \infty$ to $ \infty$. Figure \ref{fig:Pseudorapidity2} shows the values of pseudorapidity that correspond to various angles with respect to the beam axis. The detectors used to identify electrons in this analysis are the tracking detectors, with a range $|\eta| < 0.9$, and the Electromagnetic Calorimeter, inside of $|\eta| < 0.7$.
+
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=2.5in]{Pseudorapidity2}\\
+  \caption{Various pseudorapidity values that correspond to the angle relative to the beam axis \cite{Pseudorapidity2WikipediaEN}.}\label{fig:Pseudorapidity2}
+\end{figure}
+
+%%Cheuk-Yin page 25 \cite{Wong:1995jf}
+%\begin{equation}\label{eqn:rapidity conversion}
+%y = \frac{1}{2} \ln \Bigg[ \frac{ \sqrt{p_{T}^{2} \cosh^{2} \eta + m^{2}  }  + p_{T} \sinh \eta }{ \sqrt{p_{T}^{2} \cosh^{2} \eta + m^{2}  }  - p_{T} \sinh \eta } \Bigg]
+%\end{equation}
+
+%Pseudorapidity can be converted to rapidity using equation \ref{eqn:rapidity conversion} \cite{Wong:1995jf}. 
+The rapidity and pseudorapidity are approximately equal for particles with momenta about equal to their energy, $|\textbf{p}| \approx E$, which can be seen by comparing equation \ref{eqn:rapidity} and \ref{eqn:pseudorapidity}. Electrons have a small mass of 0.0005 GeV/c$^{2}$. Typical values measured in this analysis for electrons are 1 GeV/c $< p_{T} <$ 30 GeV/c. Consequently for this electron analysis, $|\textbf{p}| \approx E$ and $y \approx \eta$.
+
+
+%The acceptance for electrons measured in this analysis has the range of, $| \eta | < 0.9$ and 1 GeV/c $< p_{T} <$ 30 GeV/c. The electron mass is 0.0005 GeV/c$^{2}$. Since electrons have a small mass and the electrons measured in this experiment have relativistic speeds, $|\textbf{p}| \approx E$. Consequently for this electron analysis $y \approx \eta$. 
+
+\subsection{Collision Geometry}\label{sub:Collision Geometry}
+
+%impact parameter
+%central collisions, peripheral collisions
+%
+%
+%Centrality dependence of particle production in p-A collisions measured by ALICE
+%one needs to take into account the bias arising when sampling the p?A events in centrality classes.  In p?Pb collisions, the range of multiplicities used to select a centrality class is of similar magnitude as the fluctuations, with the consequence that a centrality selection based on multiplicity may select a biased sample of nucleon?nucleon collisions. These fluctuations are partly related to qualitatively different types of collisions, described in all recent Monte Carlo generators by fluctuations of the number of particle sources via multi-parton interaction.
+%
+%jet-veto effect, due to the trivial correlation between the centrality estimator and the presence of a high-pT particles in the event
+%
+%the geometric bias, resulting from the mean impact parameter between nucleons rising for most peripheral events
+%
+%Charged particle multiplicity is dominated by soft particles while hard processes are expected to scale with Ncoll
+%
+%
+%
+%
+%ALICE measurements in p?Pb collisions: Charged particle multiplicity, centrality determination and implications for binary scaling
+%Since many initial state effects are expected to vary as function of the impact parameter of the collision, it is crucial to estimate the centrality-dependence of various observables, including multiplicity and transverse momentum, and to categorize each event according to its centrality. One then needs to determine Ncoll for each centrality class.
+%
+%overlap function ?TpA? is determined by total geometric p?A cross- section.
+%
+%To make these measurement centrality- dependent, event classes have to be defined using centrality estimators, that can be either particle multiplicity or energy deposited in a given pseudo-rapidity region.
+%
+%Particle production measured by detectors around mid-rapidity can be modeled with a negative binomial distribution, 
+%
+%while the zero-degree energy of the slow nucleons emitted in the nucleon fragmentation requires more sophisticated models [3,4].
+%
+%Main estimators used for centrality are: 
+%CL1 $| \eta | < 1.4 $ cluster in the silicon Pixel detector
+%V0A $2.8 < \eta < 5.1$ amplitude measured by the VZERO on the A-side (the Pb- remnant side.)
+%V0M : Sum of V0A ( $2.8 < \eta < 5.1$) and V0C ($-3.7 < \eta < 1.7$)
+%ZNA: Energy deposited in ZN calorimeter on the A- side. 
+%
+%Using these estimators we are sensitive to the reaction products of p?N collisions, the Pb fragmentation products that go mainly in the direction of the Pb beam (V0A) and the so-called slow nucleons from evaporation and knock-out that are emitted into the very forward directions and are detected by the zero degree calorimeters.
+%
+%I am doing centrality from V0A currently. 
+%
+%V0A - The measured multiplicity distribution is divided in percentiles of the hadronic cross-section. The distribution P(Npart) is calculated with a p?Pb Glauber-MC. For each Npart, the multiplicity is calculated according to a Negative Binomial Distribution (NBD). The NBD parameters are fitted to the measured distribution. Then the ?Ncoll? are calculated for each centrality class. 
+%
+%Alberica Toia talk https://indico.cern.ch/event/198724/contributions/1480633/attachments/294645/411792/pA_centrality_06072012.pdf
+%ZDC: detect slow nucleons ? C.Oppedisano
+%VZERO: detect high pT particles from the nucleus breaking up. The idea of using just the VZERO in backward (Pb-going) direction is that this is the direction of the high momentum particles from the nucleus breaking up (of course not really nuclear fragments at this pseudorapidity though).
+%It is expected that the number of charged particles in the Pb-going direction should be roughly proportional to the number of participating nucleons in the Pb nucleus.
+%VZERO Multiplicity proportional to Ncoll. For each Ncoll: VZERO multiplicity is related to a negative binomial distribution (NBD) with parameters ? and k
+%Centrality determination with least bias wrt true Npart: VZERO-A (backward region)
+%p-Pb <Npart> = <Ncoll> + 1 = 8
+%Problem with centrality measurement:
+%Measurements at mid-rapidity are biased by hard processes
+%How far out in ? is ?safe? at LHC?
+%
+%https://indico.cern.ch/event/250006/contributions/555094/attachments/432767/600596/Presentation1.pdf
+%p-A & SLOW NUCLEONS
+%
+%Centrality dependence of particle production in p-Pb collisions at ?sNN = 5.02 TeV
+%PHYSICAL REVIEW C 91, 064905 (2015)
+%The procedures to determine the centrality, quantified by the number of participants (Npart) or the number of nucleon-nucleon binary collisions (Ncoll) are described.
+%We show that, in contrast to Pb-Pb collisions, in p-Pb collisions large multiplicity fluctuations together with the small range of participants available generate a dynamical bias in centrality classes based on particle multiplicity. 
+%Under the assumption that the multiplicity measured in the Pb-going rapidity region scales with the number of Pb participants, an approximate independence of the multiplicity per participating nucleon measured at mid-rapidity of the number of participating nucleons is observed.
+%The Glauber model is generally used to calculate geometrical quantities of nuclear collisions (A-A or p-A). In this model, the impact parameter b controls the average number of participating nucleons (hereafter referred as ?participants? or also ?wounded nucleons? Npart and the corresponding number of collisions, Ncoll. It is expected that variations of the amount of matter overlapping in the collision region will change the number of produced particles, and parameters such as Npart and Ncoll have traditionally been used to describe those changes quantitatively and to relate them to pp collisions.
+%By using the Glauber model one can calculate the probability distributions ??(?), where ? stands for Npart or Ncoll. Since
+%? cannot be measured directly it has to be related via a model to an observable M. Once the model has been validated, for each event class defined by an M-interval, the average ? is calculated. In order to unambiguously determine ?, one chooses observables whose mean values depend monotonically on ?. Note that, in p-A collisions, the impact parameter is only loosely correlated to ?. 
+%Of particular interest are estimators from kinematic regions that are causally disconnected after the collision. The measurement of a finite correlation between them unambiguously establishes their connection to the common collision geometry. Typically these studies are performed with observables from well-separated pseudorapidity (?) intervals, e.g., at zero degree (spectators, slow nucleons, deuteron breakup probability) and multiplicity in the rapidity plateau.
+%The use of centrality estimators in p-A collisions based on multiplicity or summed energy in certain pseudorapidity intervals is motivated by the observation that they show a linear dependence on Npart or Ncoll. This is also in agreement with models for the centrality dependence of particle production (e.g., the wounded nucleon model [17,18]),
+%In d-Au collisions at the BNL Relativistic Heavy Ion Collider (RHIC; ?sNN = 200 GeV), the PHENIX and STAR collaborations [22,23] have used the multiplicity measured in an ? interval of width 0.9 centered at ? ? ?3.5 (Au-going direction) as a centrality estimator.
+%Since, for example, hard scatterings can significantly contribute to the overall particle multiplicity, correlations between high-pT particle production and bulk multiplicity can also be induced after the collisions and, hence, they are not only related to the collision geometry.
+
+%Centrality dependence of particle production in p-Pb collisions at $\sqrt{s_{\rm NN} }$= 5.02 TeV Phys. Rev. C 91 (2015) 064905   \cite{Adam:2014qja}
+
+
+%In practice, this is all somewhat approximate anyway, because you can't definitively identify the centrality of a collision from the information collected by a detector. All you can do is estimate the centrality based on how many particles come out and how strongly they are scattered. If you get a lot of particles coming out roughly perpendicular to the beamline (pseudorapidity ??0), then that means a lot of nucleons were involved in the collision, and thus it is characterized as central. If there are few particles coming out perpendicular to the beamline, then few nucleons were scattered, meaning the collision was peripheral.
+
+
+
+The collision geometry is defined by the impact parameter, $b$. In a nucleus-nucleus collision the impact parameter is easy to visualize as shown in  figure \ref{fig:impactParameter}. The value of $b$ can be in the range $0 < b < R_{1} + R_{2}$, where the radii of the colliding nuclei are $R_{1}$ and $R_{2}$. Figure \ref{fig:AAGeometry} shows drawings of longitudinal and transverse views of an Au-Au collision with impact parameter $b = 6$ fm. The nucleons in the overlapping regions are the participants, and drawn as darker red and blue circles.
+
+%Pretty pictures are also in fromKyle/Glauber.pdf \cite{Miller:2007ri}
+%GlauberMCEvent
+%OpticalGlauberModel
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.2\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{impactParameter}
+  \captionof{figure}{  Impact parameter, b.}
+  \label{fig:impactParameter}
+\end{minipage}%
+\begin{minipage}{0.75\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{AAGeometry}
+  \captionof{figure}{An illustration showing two views of a A-A collision \cite{Miller:2007ri}.}
+  \label{fig:AAGeometry}
+\end{minipage}
+\end{figure}
+
+In nucleus-nucleus collisions, the initial system's geometry can be primarily characterized by $b$ and the general size and shape of the overlapping region. However, in p-Pb collisions the initial geometry and number of participants are sensitive to the finer details of the spatial distribution of the proton and nucleus. Figure \ref{fig:pAGeometry} shows an illustration of a proton-nucleus collision. The number of participants depends on the effective path length, L($b$), that the proton takes when colliding with the nucleons.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.0in]{pAGeometry}\\
+  \caption{Schematic illustration of the impact parameter, b, in a proton-nucleus collision \cite{Bruinsma}.}\label{fig:pAGeometry}
+\end{figure}
+
+An impact parameter of $b = 0$ is a perfectly central collision. Central nucleus-nucleus collisions have the most overlap. Central collisions are expected to have the largest number of nucleons participating in the collision ($N_{part}$) and the largest number of nucleon-nucleon binary collisions, ($N_{coll}$). The most central events, in general, are classified in the 0-5 percentile centrality class. For 0-5\% centrality pPb collisions, $\langle b \rangle = 3.12 \pm 1.39$ fm and $\langle N_{part} \rangle = 15.7 \pm 3.84$ and $\langle N_{coll} \rangle = 14.7 \pm 3.84$ \cite{Adam:2014qja}.
+%page 8 Particle production and centrality in p-Pb https://arxiv.org/pdf/1412.6828v2.pdf
+
+An impact parameter of $b = R_{1} + R_{2}$ is a peripheral collision. The most peripheral events are in the 80-100 percentile centrality class. For 80-100\% centrality pPb collisions, $\langle b \rangle = 7.51 \pm 1.11$fm and $\langle N_{part} \rangle = 2.94 \pm 1.42$ and $\langle N_{coll} \rangle = 1.94 \pm 1.42$ \cite{Adam:2014qja}.
+
+The geometrical values of the collision such as b, $N_{part}$, or $N_{coll}$ can not be measured directly. Instead, the centrality has to be estimated using some observable from the collision. For nucleus-nucleus collisions, the energy expelled in the collision and the particle multiplicity are approximately proportional to $N_{part}$. The centrality can be determined by measuring the particle multiplicity or transverse energy distribution. 
+
+%I had: Within the small range of $N_{part}$ there are large fluctuations of particle multiplicity.
+As compared to nucleus-nucleus collisions, pPb collisions have a much smaller range of the number of participants. Within the small range of $N_{part}$ there are large fluctuations of particle multiplicity. For p-Pb collisions, the impact parameter is weakly correlated with $N_{coll}$. Estimating the impact parameter based on the particle multiplicity or transverse energy in pPb collisions will produce a bias for events that contain  high $p_{T}$ particles. For these reasons, in pPb collisions, it is more difficult to estimate the impact parameter. Figure \ref{fig:ScatteringCenters}  \cite{Borghini:2006xh} shows a drawing of two pPb collisions. Even though these collisions have the same impact parameter, they have differing number of collisions, number of particles produced, and transverse energy. 
+
+%\cite{Borghini:2006xh}
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=3.5in]{ScatteringCenters}\\
+  \caption{Two scenarios for pPb collisions with the same impact parameter \cite{Borghini:2006xh}. In the left figure, there are many semi-hard collisions and a production of a high $p_{T}$ particle. In the right figure, there are fewer total collisions and a single hard collision, producing a pair of high $p_{T}$ particles. }\label{fig:ScatteringCenters}
+\end{figure}
+
+Estimating the centrality using transverse energy in a given $\eta$ region, then measuring a $p_{T}$ spectrum in the same $\eta$ region will also produce a biased measurement. To reduce the centrality bias in pPb collisions, one can use observables that are in kinematic regions that are causally disconnected from the measurement's $\eta$ region. The measurement in this thesis relies heavily on the EMCal detector, with acceptance $-0.7 <\eta< 0.7$. The V0A detector is located at $2.8 < \eta < 5.1$, making it a good candidate for a centrality measurement with minimal bias. The amplitude measured in the V0A is approximately proportional to the number of participants in a pPb collision. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=5.0in]{2015-Sep-24-V0AGlau.pdf}\\
+  \caption{Distribution of the amplitudes in the V0A detector \cite{Adam:2014qja}. The fit is the negative binomial distribution (NBD). Centrality classes are shown with vertical shading. The top left corner shows a zoom-in on the most peripheral events. }\label{fig:2015-Sep-24-V0AGlau}
+\end{figure}
+
+Glauber Monte Carlo simulations with a Woods-Saxon nuclear density distribution is used to relate the impact parameter to information that can be collected from the detector. In the Glauber MC simulations, the impact parameter is varied and the properties of the collision geometry, such as $N_{part}$ is determined. The negative binomial distribution (NBD) is used to describe the probability distribution of the contributions to the V0A multiplicity from each nucleon in the collision. The NBD-Glauber calculation for the V0A amplitude distribution is fit to the pPb data. The NBD-Glauber fit has two parameters: $\mu$, the mean amplitude per participant and $k$, the dispersion parameter. The parameters $\mu$ and $k$ are fit to the V0A amplitude data from pPb collisions, as shown in Figure \ref{fig:2015-Sep-24-V0AGlau} \cite{Adam:2014qja}. 
+
+After the model is fit to the data, each event class can be defined. The 0-5\% centrality class is the top 5\% central collisions. The mean values for the geometric properties, $N_{part}$ and  $N_{coll}$, are calculated for the generated distribution in each event class. Table \ref{tab:Centrality} lists the mean values for impact parameter, cross section, $N_{part}$, and $N_{coll}$ for pPb collisions found from the V0A distribution \cite{Adam:2014qja}.
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Geometric properties of pPb collisions for centrality classes defined by V0A measurements \cite{Adam:2014qja}.}
+    \label{tab:Centrality}
+    \begin{tabular}{| c|c|c|c |}
+    \hline
+    Centrality & $\langle b \rangle$ (fm), $\sigma$ (fm) & $\langle N_{part}  \rangle$,  $\sigma$ & $\langle N_{coll} \rangle$,  $\sigma$\\
+    \hline
+    0-5\%& 3.12, 1.39 & 15.7, 3.84 &14.7, 3.84\\
+    5-10\%& 3.50, 1.48 & 14.0, 3.78 & 13.0, 3.78\\
+    10-20\%& 3.85, 1.57  & 12.7, 3.85 & 11.7, 3.85\\
+    20-40\% & 4.54, 1.69 & 10.4, 3.93 & 9.36, 3.93\\
+    40-60\% & 5.57, 1.69 & 7.42, 3.61 & 6.42, 3.61\\
+    60-80\% & 6.63, 1.45 & 4.81, 2.69 & 3.81, 2.69\\
+    80-100\% & 7.51, 1.11 & 2.94, 1.42 & 1.94, 1.42\\
+    0-100\% & 5.56, 2.07 & 7.87, 5.10 & 6.87, 5.10\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+
+
+
+
+
+%Or should I move these to Section \ref{sec:ALICE coordinate system}, which talks about the ALICE coordinate system? Or maybe move some of that section here?
+
+
+\subsection{Transverse Energy and Charged Particle Multiplicity}
+
+%Transverse energy production and charged-particle multiplicity at midrapidity in various systems from sNN =7.7 to 200 GeV
+% \cite{Adare:2015bua}
+% Systematic measurements of the centrality dependence of transverse energy production and charged particle multiplicity at midrapidity provide excellent characterization of the nuclear geometry of the reaction and are sensitive to the dynamics of the colliding system.
+
+% Bruna thesis: The average charged-particle multiplicity per unit rapidity ($dN_{ch}/dy$) related to the energy of the collision and to the properties of the medium produced in the collision, like the number of gluons in the initial state.
+%Transverse energy per rapidity unit, determines how much of the total initial energy is converted in particles produced in the transverse direction. 
+%$N_{part}$ number of participants is 2 for pp collisions, and 2A for central AA collisions and varies with centrality. 
+%Dividing by $N_{part}$ gives a measure of how efficient are AA collisions for each subcollision 
+
+%The Physics of the Quark-Gluon Plasma Page 48
+% \cite{Sarkar:2010zza}
+% \cite{Sarkar:2010zza} Transverse energy: measurement of energy flow into calorimeter cells centered at angle $\theta_{i}$ relative to the beam.
+
+%https://arxiv.org/pdf/1412.6828v2.pdf
+%Particle Production and centrality in p-Pb
+%Page 24 1) The charged-particle multiplicity at mid-rapidity is proportional to the number of participants (Npart)
+%Page 24 2) The yield of charged high-pT particles at mid-rapidity is proportional to the number of binary NN collisions.
+%Page 24 3) The target-going charged-particle multiplicity is proportional to the number of wounded target nucleons (N^{target}_{part} = N_{part} - 1 = N_{coll} ).
+% For minimum bias, p-Pb collisions, \langle N_{part} \rangle_{MB} = 7.9 and \langle N_{part} \rangle_{MB} = 6.9
+
+Measurements such as transverse energy and charged particle multiplicity reveal global characteristics of the colliding system. Transverse energy, $E_{T}$, is defined as the energy emitted in the plane perpendicular to the beam axis. The total $E_{T}$ is a sum over all particles emitted in the event, equation \ref{eqn:TransverseEnergy} \cite{Adare:2015bua}
+ %deposited in the calorimeter cells at an angle $\theta$ measured from the positive z-axis (beam axis), $E_{T} = E \sin \theta$.
+
+\begin{equation}\label{eqn:TransverseEnergy} % \cite{Adare:2015bua}
+E_{T} = \sum_{i} E_{i} \sin \theta_{i} 
+\end{equation}
+ 
+where $\theta_{i}$ is the scattering angle for the $i$'th particle. Since all of the particles prior to the collision are traveling along the beam axis, the $E_{T}$ of the initial system is zero. 
+
+The average transverse energy per unit rapidity, $dE_{T}/dy$, measures how much of the initial collision energy was converted into transverse energy directed per rapidity interval. $dN_{ch}/dy$ is the average charged-particle multiplicity per unit rapidity.
+ 
+Both $dE_{T}/dy$ and $dN_{ch}/dy$ are often normalized by number of participants, $N_{part}$. If a quantity scales with $N_{part}$ then it is considered a ``soft'' process with small momentum transfers. 
+ 
+Figure \ref{fig:ETandNch} (a) shows $(dE_{T}/d\eta)/(0.5N_{part})$ and (b) $(dN_{ch}/d\eta)/(0.5N_{part})$ as a function of collision energy for central Au+Au and Pb+Pb collisions for experiments around the world. The PHENIX (Pioneering High Energy Nuclear Interaction eXperiment), STAR (Solenoidal Tracker at RHIC), and PHOBOS (not an acronym) experiment are at the Relativistic Heavy Ion Collider at Brookhaven National Laboratory located in New York. The CMS (Compact Muon Solenoid), ALICE (A Large Ion Collider Experiment),  and the ATLAS (A Toroidal LHC ApparatuS) experiment are at the Large Hadron Collider at the CERN lab in Geneva, Switzerland. The NA49 experiment was situated in the North Area of the Super Proton Synchrotron at CERN. The E802 experiment was at the Brookhaven National Laboratory. FOPI (named after 4$\pi$, the solid angle of the detector) was at GSI (Gesellschaft f{\"u}r Schwerionen-forschung) in Darmstadt, Germany. Figure \ref{fig:ETandNch} (a) and (b) are drawn as a log-log scale. $(dE_{T}/d\eta)/(0.5N_{part})$ and $(dN_{ch}/d\eta)/(0.5N_{part})$ both appear as a straight line after $\sqrt{s_{NN}} = 7.7$ GeV, demonstrating a power law behavior of the collision energy dependency. $(dE_{T}/d\eta)/(0.5N_{part})$ and $(dN_{ch}/d\eta)/(0.5N_{part})$ both seem to be consistent with Au-Au and Pb-Pb systems, indicating that transverse energy and charged particle multiplicity scales with the number of participating nucleons. 
+ 
+ 
+%Examining the $N_{part}$ dependence of ($dE_{T}/d\eta$) and ($dN_{ch}/d\eta$) normalized by the number of nucleon participant pairs is useful to determine if the data scales by $N_{part}$ and if the scaling changes as a function of $\sqrt{s_{NN}}$
+ 
+%initial energy in particles travelling transverse to the beam axis is zero, so any net momentum in the transverse direction indicates missing transverse energy (MET).
+
+
+%ETandNch.png
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5.5in]{ETandNch.png}\\
+  \caption{(a) Transverse energy per unit pseudorapidity scaled by number of participants, $(dE_{T}/d\eta)/(0.5N_{part})$, and (b) charged particle multiplicity per unit of pseudorapidity scaled by number of participants, $(dN_{ch}/d\eta)/(0.5N_{part})$, shown as a function of center of mass energy for central Au+Au and Pb+Pb collisions measured in experiments around the world. Data are summarized in \cite{Adare:2015bua}.} \label{fig:ETandNch}
+\end{figure}
+
+
+
+%\begin{figure}
+%\centering
+%\begin{minipage}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{ppg174_detNormExcite.png}
+%  \captionof{figure}{Transverse energy per unit pseudorapidity scaled by number of participants, $(dE_{T}/d\eta)/(0.5N_{part})$, as a function of center of mass energy for central Au+Au and Pb+Pb collisions measured in experiments around the world. Data summarized in \cite{Adare:2015bua}}
+%  \label{fig:ppg174_detNormExcite}
+%\end{minipage}\begin{minipage}{.5\textwidth}
+%  \centering
+%  \includegraphics[width=1\linewidth]{ppg174_dnNormExcite.png}
+%  \captionof{figure}{$(dN_{ch}/d\eta)/(0.5N_{part})$, charged particle multiplicity per unit of pseudorapidity scaled by number of participants as a function of center of mass energy for central Au+Au and Pb+Pb collisions measured in experiments around the world. The vertical error bars show the statistical and systematic uncertainties. Data summarized in \cite{Adare:2015bua}}
+%  \label{fig:ppg174_dnNormExcite}
+%\end{minipage}
+%\end{figure}
+
+
+
+
+\subsection{Lund Model}
+
+%INTERACTIONS BETWEEN HADRONS AND NUCLEI: THE LUND MONTE CARLO
+%Cheuk-Yin Wong suggests ref 16. B.Nilsson-Almqvist and E. Stenlund, Comp. Physics Comm. 43, 387 (1987)
+%\cite{NilssonAlmqvist:1986rx}
+% When two hadrons collide, momenta are exchanged and two longitudinally excited objects are created. In hadron?nucleus or nucleus?nucleus interactions each hadron can make several encounters. In each of the repeated binary encounters, the objects can get further excited, thereby increasing their masses during the passage through the nucleus. Finally, all the excited objects hadronize independently, like massless relativistic strings, according to the Lund model for jet fragmentation. The hadronization takes place outside the nuclei and thus no intranuclear cascading is considered.
+%in which a hadron is treated as a vortex line in a superconducting vacuum. The vortex line consists of a hard core which is surrounded by an ex- ponentially damped field. In a soft interaction a momentum transfer between two colliding hadrons is assumed to be due to the overlap of those fields, Having transferred momenta we end up with two longitudinally excited string states which finally fragment into hadrons. When the model is ex- tended into hadron?nucleus interactions, the in- coming hadrons may collide more than once and the excited states continue to collide during their passage through the nucleus.
+%As mentioned in the introduction the hadrons are treated as vortex lines in a superconducting vacuum. A vortex line consists of a hard core surrounded by an exponentially damped field. This field is equivalent to a field formed by coloured dipoles, lined up along the vortex line, and damped by the surrounding medium. Most of the energy is contained in the hard core which means that an overlap of the extended fields involves only a small part of the available energy and an interac- tion of this kind is treated as soft. Hard scattering may occur if the cores are involved which may cause the string to fold or recouple. This possibil- ity is not included in the present version.
+%As the fields overlap during the collision, the dipole links are treated as partons, which ex- change momenta and many such incoherent momentum transfers between the dipoles will add up to sizable excitations of the strings. The total transverse momentum exchange is believed to be small and the important part is the longitudinal transferred momentum. The incoming hadrons will after the collision stretch out as longitudinally excited strings which have the same colour struc- ture as the original hadron strings. In other words, the momentum transfer is believed to occur without colour exchange.
+
+
+A high energy proton-proton collision or proton-nucleus collision can be modeled with the Lund Model \cite{NilssonAlmqvist:1986rx} \cite{Wong:1995jf}. In this model, the proton is treated as a vortex line with a hard core surrounded by an exponentially damped field. When two protons collide they transfer momentum becoming longitudinally stretched objects. These longitudinally excited strings will fragment into hadrons. In this model, most of the produced particles will travel along the beam direction. The drawing \ref{fig:StringBreakQCDforColliderSkands20} depicts a pair of quarks moving in opposite directions, left and right. Time is represented vertically.  Because of confinement, there is a potential $V(r) = \kappa r$ between the pair of quarks. This potential can be described as a string with string tension $\kappa$ being stretched between the pair.  The string tension is $\kappa \approx 1$ GeV/fm \cite{Skands:2011pf}. At some point as the pair of quarks moves apart, it is more energetically favorable to pull a pair of quarks out of the vacuum than to stretch the string more. The string breaks and a new quark-antiquark pair are produced. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=5in]{StringBreakQCDforColliderSkands20}\\
+  \caption{String breaking from a quark pair \cite{Skands:2011pf}. The x-axis is space and the y-axis is time.}\label{fig:StringBreakQCDforColliderSkands20}
+\end{figure}
+
+%QCD for Collider Physics Skands (page 35 of 48)
+The model for a proton-proton collision is similar to the fragmentation of a string stretched between a $q \bar q$ pair produced from the vacuum. In the figure \ref{fig:Fig23Andersson} particles $q_{0}$ and $\bar q_{0}$ are created at the same point in space and time. After the pair is created they move in opposite directions. There is a string stretched between the particles $q_{0}$ and $\bar q_{0}$. At some point as the pair $q_{0}$ and $\bar q_{0}$ moves apart, the string breaks producing $q_{1} \bar q_{1}$ pair. Later, the pair $q_{2} \bar q_{2}$ is produced. A hadron can be formed by $\bar q_{1}$ and $q_{2}$. The process of breaking strings and producing $q \bar q$ pairs continues until only hadrons remain.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{Fig23Andersson}\\
+  \caption{The particles $q_{0}$ and $\bar q_{0}$ are produced and move apart \cite{Andersson:1983ia}. The x-axis represents space, while the y-axis represents time.}\label{fig:Fig23Andersson}
+\end{figure}
+
+In a similar way, the proton-nucleus collision can also be modeled under the Lund model. The proton is viewed as a projectile that hits a series of $n$ targets as it travels through the nucleus. The number of collisions is calculated by counting all of the nucleons in a cylinder in the projectile's path after giving each nucleon an assigned space coordinate. The time between collisions is smaller than the time that it would take to fragment. Each collision adds to the excitation and mass of the projectile string. After the $n$ collisions there will be a total of $n+1$ strings, which accounts for the $n$ targets and the string from the projectile. Each string will fragment independently.
+
+
+%\cite{Wong:1995jf}
+%Introduction to High-Energy Heavy-Ion Collisions Cheuk-Yin Wong page 127
+%In the Lund model for hadron-hadron collisions, it is assumed that the hadrons are not transversely excited but are only longitudinally stretched. The collision of a beam hadron b with a target hadron a will result in two excited hadrons. The longitudinally excited hadrons subsequently decay. They are the sources of particle production. The decay of these stretched hadrons is analyzed in the same way as in the fragmentation of a string stretched between a a q and a $\bar q$.
+%The Lund Model for hadron-hadron collisions has been generalized for hadron-nucleus collisions. When one considers the collisions of the projectile hadron wiht a sequence of n target hadrons in a hadron-nucleus collision, the initial light-cone momenta if the projectile hadron before the collision is .. In the Lund model for a hadron-nucleus collision each binary collision between the hadrons will lead to the transfer of their light-cone momenta between them. The transfer is assumed to go from the hadron with the greater light-cone momentum to the hadron with the lesser light cone momentum. Ther is otherise no quantum number flow from one baryon to another. After the sequence of collisions the ith target baryons in the set ... It is assumed that the momentum transfer obeys a probability distribution. 
+
+
+
+%
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3.5in]{Fig23Andersson}\\
+%  \caption{Stuff \cite{Andersson:1983ia} }\label{Fig23Andersson}
+%\end{figure}
+%
+%\begin{figure}[b!]
+%  \centering
+%  \includegraphics[width=3.5in]{StringBreakQCDforColliderSkands20}\\
+%  \caption{Stuff \cite{Skands:2011pf} }\label{fig:StringBreakQCDforColliderSkands20}
+%\end{figure}
+
+
+%\section{The Quark Gluon Plasma}
+%Quarks and gluons, the building blocks of nuclear matter, are normally bound in hadrons such as protons and neutrons. The phase of nuclear matter where quarks and gluons are asymptotically free and no longer confined inside of individual hadrons is called a Quark-Gluon Plasma.
+%Observation and study of the QGP has impacts in nuclear physics, high-energy physics, and astrophysics. Developing an understanding of the phase transition of hadronic matter to the QGP phase will help map out the phase diagram. Studying the QGP will aid in learning about the fundamental components of matter and how they interact with one another.
+%The QGP is created in the laboratory by colliding two heavy nuclei at high energy. At this energy and density, the coupling constant becomes weak enough that the quarks and gluons are asymptotically free and are no longer bound inside of individual hadrons. At this state nuclear matter no longer exists as color neutral hadrons (protons, neutrons, etc.) but instead as their fundamental components, quarks and gluons.
+
+
+\section{Nuclear Modification Factor}
+
+% \cite{Abelev:2014hha} Measurement of prompt D-meson production in p-Pb collisions at snn = 5.02 TeV
+%This paper says, The total cross section for hard processes $\sigma^{hard}_{pA}$ in proton?nucleus collisions scales as $\sigma^{hard}_{pA} = A \sigma^{hard}_{NN} [42], where $\sigma^{hard}_{NN}$ is the equivalent cross section in pp collisions. Therefore, the $R_{pA}$ is given by \ref{eqn:RpPb}
+%[42] D. G. d?Enterria, arXiv:nucl-ex/0302016.
+
+In order to quantify the effect of nuclear matter on the yields of particles produced, the nuclear modification factor can be defined. The nuclear modification factor is usually written as $R_{AA}$, but different subscripts can be used to signify the collision systems being considered. For p-Pb collisions, $R_{pPb}$ can be defined as
+
+\begin{equation}\label{eqn:RpA}
+R_{pPb} = \frac{d N_{pPb} / dp_{T}}{ \langle N_{coll} \rangle dN_{pp} / dp_{T}}
+\end{equation}
+
+\noindent where $d N_{pPb} / dp_{T}$ is the yield as a function of $p_{T}$ in p-Pb collisions, $\langle N_{coll} \rangle$ is the average number of binary collisions, and $dN_{pp} / dp_{T}$ is the yield as a function of $p_{T}$ in p-p collisions. 
+
+An $R_{pPb}$ of unity indicates that p-Pb collisions are a superposition of p-p collisions scaled according to the binary collision assumption. An $R_{pA}$ less than one indicates a suppression of the yield in p-Pb as compared to p-p. $R_{pPb}$ greater than one points to an enhancement in the yield as compared to p-p collisions.
+
+% which is the measured yield of hadrons relative to the expected yield from proton-proton reactions scaled according to the binary collision assumption, as a function of pT for unidentified and identified hadrons. In contrast to the direct photon data, we observe a suppression by a factor of five for these hadrons. The observed suppression can be viewed as a modification of the fragmentation functions of quarks and gluons due to the surrounding medium.
+%
+%A QGP is expected to be created in the nucleus-nucleus collisions at the LHC energies, but not in the proton-proton collisions. In order to study the QGP and its properties, one can compare some observables in proton-proton (pp) collisions to nucleus-nucleus (AA) collisions.  If some observable is seen in pp collisions, but missing in AA collisions, then the working hypothesis is that this observable may have been suppressed due to the presence of the QGP. The nuclear modification factor, $R_{AA}$, quantifies the amount of alteration on a distribution in nucleus-nucleus collisions as compared to proton-proton collisions. 
+
+%However, it has been realized that pp and AA collisions will not tell the full story about the QGP. It is also important to study pA collisions. A QGP was not expected to be produced in pA collisions, and are meant to provide
+
+%In addition to comparing pp and AA collisions, it is important to study pA collisions such as pPb collisions. pA collisions are not expected to produce a QGP and therefore can provide a baseline to study background effects. pA collisions contain more nuclear matter than pp collisions which will alter the initial state wavefunctions and can affect the production of observables. These effects are referred to as cold nuclear matter effects, in contrast to hot nuclear matter effects which are caused by the QGP. Cold nuclear matter effects are also present in AA collisions and can affect the measurement of $R_{AA}$ and be mistaken for a signature of the QGP. 
+%
+%$R_{pA}$ is the equivalent of $R_{AA}$ but for pA collisions. $R_{pA}$, is the ratio of the yield of an observable in proton-lead (pPb) collisions divided by the yield from proton-proton (pp) collisions, scaled by a factor to account for the fact that there are more nucleon-nucleon collisions in proton-lead collisions than proton-proton.
+%
+%
+%An $R_{pA}$ of unity indicates that pA collisions are a superposition of many pp collisions and there is no cold nuclear matter effects. An $R_{pA}$ less than one indicates a suppression, while a $R_{pA}$ greater than one indicates an enhancement. 
+
+
+\section{Cold Nuclear Matter Effects}
+
+% \cite{Abelev:2014hha} Measurement of prompt D-meson production in p-Pb collisions at snn = 5.02 TeV
+%Really liked how they said this sentence: "A complete understanding of the Pb-Pb results requires an understanding of cold-nuclear matter effects in the initial and final state, which can be accessed by studying p-Pb collisions assuming that the QGP is not formed in these collisions. 
+
+
+%Nuclear Physics A 830 (2009) 27c-34c in the Quark Matter 2009 book: Highlights from Phenix-I: Initial State and Early Times by Michael Leitch
+
+%From Quark Matter 2014 CMS heavy-ion overview Nuclear Physics A 931 (2014) c13-21
+%To investigate the hypothesis that they may be due to collective flow, the high-multiplicity pPb collisions are carefully studied. When possible they are compared to the corresponding PbPb collisions: the highest multiplicity range explored, namely the top 3 $\times 10^{-6}$ fraction of pPb collisions, reaches for instance that of 55-60% centrality PbPb collisions.
+
+Physics effects that modify processes in nuclear collisions in absence of or before the formation of the Quark Gluon Plasma are often referred to as Cold Nuclear Matter (CNM) effects. The creation of charm and beauty quarks occurs very early in the collision. Consequently the production of heavy flavor electrons is sensitive to the initial conditions and could be modified by CNM effects. 
+
+%%%%%Don't know if I want to say "are expected" or "were expected" %%%%%%
+CNM effects are present in Nucleus-Nucleus, Nucleus-proton and proton-proton collisions. However only the Nucleus-Nucleus collisions are expected to create a QGP and have both cold and hot nuclear matter effects. Studying the CNM in a simpler system such as pPb collisions can help isolate the hot from the cold effects. The CNM effects include the Cronin effect, gluon shadowing, and gluon saturation at small momentum fraction \cite{Leitch:HighlightsFromPhenix}.
+%The effects in pPb collisions can be extrapolated to PbPb collisions by comparing the collisions at the same multiplicity. For example, the top $3 \times 10^{-6}$ fraction of pPb collisions is comparable to the 55-60$\%$ centrality PbPb collisions \cite{CMSheavyion}. 
+%%%%%I haven't defined multiplicity yet%%%%%%
+
+
+
+
+                                                                                                                                                                                                                                              
+\subsection{Cronin Effect}
+%Tannenbaum page 40- 47
+%page 146 Experimental and theoretical challenges in the search for the quark?gluon plasma: The STAR Collaboration?s critical assessment of the evidence from RHIC collisions. STAR Collaboration
+%Cronin Effect in proton-nucleus collisions a survey of theoretical models, A. Accardi
+
+%M. Lev, B. Petersson, Z. Phys. C 21 (1987) 155 This paper is Nuclear effects at large transverse momentum in a QCD parton model Zeitschrift für Physik C Particles and Fields
+
+%page 146 Star paper
+%Cronin effect [141], is generally attributed [142] to the influence of multiple parton scattering through cold nuclear matter prior to the hard scattering that produces the observed high-pT hadron
+%initial-state multiple scattering
+
+%page 303 ?X.-N. Wang/ Physics Reports 280 (1997)
+%Since all hadrons have the same flow velocity, heavy particles tend to have larger transverse momentum when they finally freeze out. If the average transverse momentum is plotted against the total multiplicity, it is anticipated that for heavy particles it will be larger and the increase with the multiplicity will be faster than for light ones. They noted that these observations could be understood if an equilibrated quark-gluon plasma. However, as also noted by Levai and Mullet-, the common transverse flow of hadrons may also arise accidentally from the fragmentation of minijets. 
+
+
+%(Reference is A pQCD-Based Approach to Parton Production and Equilibration in High-energy Nuclear Collisions, X.-N. Wang Physics Reports 280 (1997) Section 2 starts the Cronin stuff)
+
+The Cronin effect \cite{Cronin:1974zm} is seen in nuclear modification factor plots, $R_{AA}$, as an enhancement, $R>1$, at moderate $p_{T}$ \cite{CroninEffectInProtonNucleusCollisions} as shown in the drawing in Figure \ref{fig:Cronin}. In other words, the observables at low $p_{T}$ in pp collisions are ``moved'' to higher $p_{T}$ in pPb collisions. The Cronin effect is attributed to multiple parton scatterings in the initial state through cold nuclear matter before the observed hadrons are produced.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3.0in]{Cronin}\\
+  \caption{Illustration of the Cronin Effect shown in a $R_{AA}$ plot \cite{CroninEffectInProtonNucleusCollisions}.}\label{fig:Cronin}
+\end{figure}
+
+In the initial stages of p-Pb and Pb-Pb collisions, partons might undergo multiple scattering while they traverse the nuclei before producing heavy flavor quarks. During each collision the parton's direction will change. The average transverse momentum will increase with multiple scatterings. Because of the increase of targets in p-Pb and Pb-Pb collision as compared to p-p collisions, the $p_{T}$ distribution for heavy flavor electrons will be wider in p-Pb and Pb-Pb collisions as compared to p-p collisions.
+
+%The Cronin effect is observed to be strongly mass dependent.
+
+The PHENIX experiment at the Relativistic Heavy Ion Collider (RHIC) observed the Cronin effect in the production of heavy flavor electrons in d+Au collisions as compared to p-p collisions at $\sqrt{S_{NN}} = 200$ GeV \cite{Adare:2012yxa}. Figure \ref{fig:CNMEffectsPRL109-242301} shows $R_{dA}$ for heavy flavor decay electrons as a function of $p_{T}$ for the most-central centrality bins (top plot) and most-peripheral bins (bottom plot). The most-central centrality bins (top plot) shows an enhancement in the region $1.5 < p^{\mathrm{e}}_{T} < 5$ GeV/c due to CNM effects. The most peripheral centrality collisions have a cross section closer to p-p collisions so it is expected that the peripheral nuclear modification factors (bottom plot) show less enhancement and are consistent with unity.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=3.5in]{CNMEffectsPRL109-242301}\\
+  \caption{$R_{dA}$ for heavy flavor decay electrons as a function of $p_{T}$ for the most-central centrality bins (top plot) and most-peripheral bins (bottom plot), measured by the PHENIX experiment \cite{Adare:2012yxa}.}\label{fig:CNMEffectsPRL109-242301}
+\end{figure}
+
+\subsection{Shadowing and Anti-Shadowing}
+%Reference Quark Matter 2009 book: Understanding saturation and AA collisions with an eA collider T. Lappi Nuclear Physics A 830 (2009) 403c-410c
+
+%https://arxiv.org/pdf/0902.4154v2.pdf
+
+Deep Inelastic Scattering (DIS) of leptons and nucleons has shown that the nucleon parton distribution functions (nPDF) of a bound nucleon differ from a free nucleon \cite{Lappi:UnderstandingSaturationAndAACollisions} \cite{Eskola:NewGeneration}. Quark and anti-quark distributions are described as functions of the square of the momentum transfer, $Q^2$, and the fraction of total momentum carried by a parton, $x$. 
+
+In p-Pb collisions, the partons inside of the proton can collide with more than one nucleon in the lead nucleus. A parton in the proton can ``see'' in the surface of the target nucleus, but the partons in the back of the target might be shadowed by the partons in front of it. Nucleons \textit{shadowing} each other modify the nPDFs relative to those of the free nucleons. The amount of shadowing depends on $Q^2$ and $x$. The parton density can also be enhanced in the nucleus as compared to the free nucleon, \textit{antishadowing}.
+
+Figure \ref{fig:shadowing} shows the ratio, $R_{i}^{A}$, of the bound parton nPDF as compared to the free proton parton distribution function, for a parton flavor $i$. The shadowing and antishadowing regions are labeled. The EMC effect refers to the effect measured by the European Muon Collaboration. The production of heavy flavor at the LHC is mostly due to gluon fusion, making the gluon nPDF of highest interest. Figure \ref{fig:GluonParametrizationsLappi} shows $R_{i}^{A}$ for gluons bound in the lead nucleus at the charm quark mass threshold $Q^{2} =$ 1.69 GeV$^2$ for several theoretical nPDF models.
+
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{shadowing}
+  \captionof{figure}{Illustration of the nuclear modification factor, $R_{i}^{A}$, of the bound parton as compared to the free proton parton distribution function \cite{Eskola:NewGeneration}. }
+  \label{fig:shadowing}
+\end{minipage}%
+\qquad
+\begin{minipage}{0.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{GluonParametrizationsLappi}
+  \captionof{figure}{Nuclear Modification of the gluon at the charm quark mass threshold as compared to the free proton PDF as a function of momentum fraction, $x$ for the Pb nucleus \cite{Eskola:NewGeneration}.}
+  \label{fig:GluonParametrizationsLappi}
+\end{minipage}
+\end{figure}
+
+
+%
+%in the left moving nucleus. The nucleons in the target can not be treated as a collection of independent nucleons, therefore the bound nucleons have a different nucleon parton distribution functions (nPDF) than a free nucleon. A parton on the surface of the nucleus can ``see'' in the surface of the target nucleus, but the partons in the back of the target might be shadowed by the partons in front of it. Nucleons ``shadowing'' each other modify the nPDFs relative to those of the free nucleons. The amount of shadowing depends on $Q^2$ and $x$. Some experiments found an enhancement of partons at moderate $x$ as compared to free nucleons, called ``antishadowing''. Figure \ref{fig:shadowing} shows the effect shadowing and antishadowing has on the Nuclear Modification factor and the rough $x$-regions.
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=3.5in]{GluonParametrizationsLappi}\\
+%  \caption{Nuclear Modification of the gluon as compared to the free proton nuclear parton distribution as a function of momentum fraction, $x$. Comparision of Nuclear Modification factor as a function of momentum fraction, $x$, for different nPDF calculations for gluon modifications at $Q^{2} =$ 1.69 GeV$^{2}$ in Pb nuclei. \cite{Eskola:NewGeneration}}\label{fig:GluonParametrizationsLappi}
+%\end{figure}
+
+
+%\begin{figure}[h!]
+%  \centering
+%  \includegraphics[width=5.5in]{KinematicsInDISLappi}\\
+%  \caption{Kinematics in nuclear collisions (left), Deep Inelastic Scattering (center), and DIS at small x \cite{Lappi:UnderstandingSaturationAndAACollisions}}\label{fig:KinematicsInDISLappi}
+%\end{figure}
+
+%The right (left) going nucleus has momentum $P^{+}$ ($P^{-}$) and the parton in the left going nucleus has a momentum of $p^{+}_{1}$ ($p^{-}_{2}$). The parton in the left going nucleus has momentum fraction $x = p^{+}_{1}/P^{+}$. 
+
+%The left image in figure \ref{fig:KinematicsInDISLappi} shows the kinematics in a nuclear collision. The nucleus moving to the right and its parton have momenta $P^{+}$ and $p^{+}_{1}$ respectively; those moving to the left $P^{+}$ and $p^{-}_{2}$. The parton in the right going nucleus has momentum fraction $x = p^{+}_{1}/P^{+}$. The partons inside of the right moving nucleus can collide with more than one nucleon in the left moving nucleus. The nucleons in the target can not be treated as a collection of independent nucleons, therefore the bound nucleons have a different nucleon parton distribution functions (nPDF) than a free nucleon. A parton on the surface of the nucleus can ``see'' in the surface of the target nucleus, but the partons in the back of the target might be shadowed by the partons in front of it. Nucleons ``shadowing'' each other modify the nPDFs relative to those of the free nucleons. The amount of shadowing depends on $Q^2$ and $x$. Some experiments found an enhancement of partons at moderate $x$ as compared to free nucleons, called ``antishadowing''. Figure \ref{fig:shadowing} shows the effect shadowing and antishadowing has on the Nuclear Modification factor and the rough $x$-regions.
+
+%the momenta of the incoming partons can not be reconstructed based on the measured $p_{T}$ and the beam energies alone. The kinematics in DIS the incoming momenta P and k and the outgoing electron k' are measured and the kinematics of the struck parton can be reconstructed from these values. DIS at small x in the dipole frame. 
+%Deep Inelastic Scattering (DIS) of leptons from nuclei can provide the values of $x$ and $Q^2$ \cite{Lappi:UnderstandingSaturationAndAACollisions}.
+
+
+%Bound nucleon parton distribution functions (nPDF) differ from the free nPDF. Rightmoving nucleus will not be able to resolve the individual nucleons of the leftmoving one. The whole nucleus must therefore be treated as one coherent target, not as a collection of independent nucleons. 
+%free and bound nucleon parton distribution functions 
+
+%Abhisek's thesis: Nucleons shadow each other modifying the nPDFs relative to those of the free nucleons, a phenomenon called ?shadowing?, which depends on the momentum fraction $x$ and square of the momentum transfer $Q^2$
+
+%Gluon saturation is studied with Deep Inelastic Scattering (DIS) \cite{Lappi:UnderstandingSaturationAndAACollisions}. 
+%Kinematic variables are the momentum transfer $Q^2$ and $x$, the fraction of longitudinal momentum carried by the parton in a frame where the hadron momentum is large. In DIS, the outgoing electron is measured and it is therefore possible to know exactly the values of $x$ and $Q^2$ probed from the measured momenta.
+
+
+
+
+
+
+
+
+
+
+%Reference Quark Matter 2009 book: Looking Forward for Color Glass Condensate Signature, Ermes Braidot  Nuclear Physics A 830 (2009) 603c-606c
+
+%Abhisek's thesis Gluon shadowing: The quark and anti-quark distributions as a function of momentum fraction (i.e. fraction of total momentum carried by a parton, x) and momentum transfer Q2 have been probed through the deep inelastic scattering (DIS) of leptons and neutrinos from nuclei.
+
+
+
+
+
+%\subsection{Shadowing and Anti-Shadowing}
+%(Reference is A pQCD-Based Approach to Parton Production and Equilibration in High-energy Nuclear Collisions, X.-N. Wang Physics Reports 280 (1997) Section 3.1 )
+%a hadron can only ``see'' the surface of a nucleus
+
+%shadowing at small x can be attributed to parton fusions before the hard scattering which probes the parton distributions. In this case, ``shadowing'' refers to the saturation of the actual parton distributions caused by fusions of overcrowding gluons at very small x.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

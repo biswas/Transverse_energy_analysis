@@ -28,7 +28,7 @@ int ALICE2013ToRootFile_trans(){ // main
 	
 	in.open(Form("/home/bsharma/rhip/analysisCodes/ALICE2013Data.txt"));
 	// ^ data file with Beam Scan Energy data, !!!!!!bins sorted!!!!!
-	TFile* f = new TFile("ALICE2013Spec_transformed.root","RECREATE");// .root file to be created
+	TFile* f = new TFile("ALICE2013Spec_transformed_0.3.root","RECREATE");// .root file to be created
 	//const char* collidingSpeciesPtr = NULL;
 	
 /*
@@ -104,7 +104,7 @@ nested loop structure:
 				// Y-axis of data transformed to match BGBW fit y-axis:
 				h->SetBinContent(j+1,
 							binContent[j]*2*TMath::Pi()*
-							(binEdgesVec[j]+0.5*(binEdgesVec[j+1]-binEdgesVec[j])));
+							(binEdgesVec[j]+0.3*(binEdgesVec[j+1]-binEdgesVec[j])));
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
 				
 				// add errors in quadrature:

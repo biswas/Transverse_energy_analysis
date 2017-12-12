@@ -27,8 +27,8 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par);
 Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 
 // main function:
-int fitALICE2013Data1(){
-	std::ofstream datFile ("ALICE2013Results.dat", std::ofstream::out);
+int fitSpecFromETAnalasysNote(){
+	std::ofstream datFile ("ETAnalysisNoteSpecResults.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
 			<< "centrality" << "\t"
@@ -75,7 +75,7 @@ int fitALICE2013Data1(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("ALICE2013Spec_transformed.root");
+	TFile* myFile = new TFile("SPECTRA_COMB_20120709.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
@@ -87,7 +87,7 @@ int fitALICE2013Data1(){
 	TF1* dNdEtaIntegrandFunc;
 	TF1* dNdyIntegrandFunc;
 	int breakOutForTesting =0;
-	int stop =3; // breakOut after this many iterations (if achieved); default: 140
+	int stop =1; // breakOut after this many iterations (if achieved); default: 140
 	while((mikey=(TKey*)next())){// TODO!!! delete mikey at the end of every loop
 		class1 = gROOT->GetClass(mikey->GetClassName());
 		if(!class1->InheritsFrom("TH1")){
@@ -121,8 +121,8 @@ int fitALICE2013Data1(){
 		c1->Update();
 
 		// read histogram object for current iteration of key:
-		h = (TH1D*)mikey->ReadObj();
-		string histoName = h->GetName();
+		h = (TH1D*)myFile->Get(Form("cent0_kaon_plus"));
+		string histoName = "cent0_kaon_plus";
 		Double_t collEn = 0.;// initialize
 		//cent8_ka+_Au+Au_7.7 // sample histo name
 		if(histoName.substr( histoName.length() - 4 ) == "_7.7") collEn = 7.7;
@@ -143,13 +143,13 @@ int fitALICE2013Data1(){
 		Double_t type;// 0 for mesons, -1 for baryons, 1 for antibaryons
 		if		(particleID=="pi-"||particleID=="pi+")
 				{mass = 0.13957; type = 0.;}
-		else if	(particleID=="ka-"||particleID=="ka+")
+		else if	(particleID=="ka-"||particleID=="ka+" || particleID=="kao")
 				{mass = 0.49368; type = 0.;}
 		else if	(particleID=="pro")
 				{mass = 0.93827; type = -1.;}
 		else if	(particleID=="pba")
 				{mass = 0.93827; type = 1.;}
-		else if		(particleID=="pis")
+		else if		(particleID=="pis" || particleID=="pio")
 				{mass = 0.13957; type = 0.;}
 		else {cout << "Check particle: "
 				<< particleID<<endl;return 1;}
@@ -195,7 +195,7 @@ int fitALICE2013Data1(){
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
-		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,3.);
+		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,5.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
 		h->SetMaximum(5*(h->GetMaximum()));
