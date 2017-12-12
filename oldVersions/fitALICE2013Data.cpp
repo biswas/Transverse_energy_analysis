@@ -1,24 +1,15 @@
-/// evolved from fitBESData_4_1.cpp
-// added centrality column in output file : DONE
-	// corresponding change in code to retreive centrality information from root file: DONE
-// changed all functions (esp the fitting function funcBGBW) to have 6 parameters
-	// otherwise the cov. matrix in later functions, with 5 parameters, is not consistent 
-// added // h->SetMaximum(5*(h->GetMaximum()));
-
 #include <iostream>
 #include <string>
 #include "TKey.h"
 #include <fstream>
 #include "fitBESData5.h"
 using namespace std;
-////// FIXME: verify integral values from wolframalpha
 
-// forward declarations for methods in fitBESData.h:
+// forward declarations for methods in fitBESData5.h:
 Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par);// not used
 Double_t getdNdpt(Double_t* pT, Double_t* params);
 string concatenateHistoname(string,string,string,string);
 Double_t* getIntegralsAndErrorsFromData(TH1D*, Double_t, Double_t);
-/////Double_t* getIntegralsAndErrorsFromFit(Double_t* myPt, Double_t* par);
 Double_t getdNdpt(Double_t* pT, Double_t* params);
 Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par);
 Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par);

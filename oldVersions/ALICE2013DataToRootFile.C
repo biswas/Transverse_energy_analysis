@@ -1,6 +1,4 @@
-//#include <iostream>
-//#include "fitBESData5.h"
-//void fitALICE2013Data(){
+// Saves the spectra into a ROOT file as a TGraphAsymmErrors object
 {
 	f = TFile("ALICE2013Spec.root","RECREATE");
 	gROOT->SetStyle("Plain");

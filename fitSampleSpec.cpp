@@ -1,9 +1,22 @@
-/// evolved from fitBESData_4_1.cpp
-// added centrality column in output file : DONE
-	// corresponding change in code to retreive centrality information from root file: DONE
-// changed all functions (esp the fitting function funcBGBW) to have 6 parameters
-	// otherwise the cov. matrix in later functions, with 5 parameters, is not consistent 
-// added // h->SetMaximum(5*(h->GetMaximum()));
+/*
+Evolved from fitBESData5.cpp
+
+Used to analyze any TH1D object within a TFile object by customizing:
+1. the name of the input TFile object myFile
+2. name of the output file (stream) datFile
+3. method to read TH1D object from Tfile depending on how it was created:
+	3.1. h = (TH1D*)mikey->ReadObj();
+			(only) in this case, string histoName = h->GetName(); makes sense
+	3.2. h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
+			this is the case applicable to SPECTRA_COMB_20120709.root
+4. depending on the histoName, particleID and its dependent variables
+5. fit parameters: funcBGBW->SetParameters(mass,0.99,0.30,0.1,1000.,type);
+6. ylabel: ylabel = "#frac{d^{2}N}{dydp_{T}}";
+7. depending on the ylabel, possible transformation to be applied
+	under fitALICE2013Data.h within functions:
+	7.1. getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass)
+	7.2. getdNdpt(Double_t* pT, Double_t* params)
+*/
 
 #include <iostream>
 #include <string>
@@ -11,14 +24,12 @@
 #include <fstream>
 #include "fitALICE2013Data.h"
 using namespace std;
-////// FIXME: verify integral values from wolframalpha
 
-// forward declarations for methods in fitBESData.h:
+// forward declarations for methods in fitALICE2013Data.h:
 Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par);// not used
 Double_t getdNdpt(Double_t* pT, Double_t* params);
 string concatenateHistoname(string,string,string,string);
 Double_t* getIntegralsAndErrorsFromData(TH1D*, Double_t, Double_t);
-/////Double_t* getIntegralsAndErrorsFromFit(Double_t* myPt, Double_t* par);
 Double_t getdNdpt(Double_t* pT, Double_t* params);
 Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par);
 Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par);
@@ -89,7 +100,7 @@ int fitSampleSpec(){
 	int breakOutForTesting =0;
 	int stop =1; // breakOut after this many iterations (if achieved); default: 140
 	while(1){
-	/*while((mikey=(TKey*)next())){// TODO!!! delete mikey at the end of every loop
+	/*while((mikey=(TKey*)next())){
 		class1 = gROOT->GetClass(mikey->GetClassName());
 		if(!class1->InheritsFrom("TH1")){
 			delete class1;

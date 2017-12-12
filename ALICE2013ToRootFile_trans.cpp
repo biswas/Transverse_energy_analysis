@@ -1,6 +1,10 @@
-// transformation: data y-value multiplied by 2pi*pt; pt = ptLow+0.5 of binWidth
-// TODO make sure errors are transformed the right way
+/*
+transformation: data y-value multiplied by 2pi*pt; pt = ptLow+0.5 (or 0.3) of binWidth
+applied in order to see if this gives a spectrum comparable to the ones in
+SPECTRA_COMB_20120709.root
 
+ TODO make sure errors are transformed the right way
+*/
 #include "Riostream.h"
 #include <cstdio>
 #include <vector>
@@ -104,7 +108,7 @@ nested loop structure:
 				// Y-axis of data transformed to match BGBW fit y-axis:
 				h->SetBinContent(j+1,
 							binContent[j]*2*TMath::Pi()*
-							(binEdgesVec[j]+0.3*(binEdgesVec[j+1]-binEdgesVec[j])));
+							(binEdgesVec[j]+0.5*(binEdgesVec[j+1]-binEdgesVec[j])));
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
 				
 				// add errors in quadrature:
