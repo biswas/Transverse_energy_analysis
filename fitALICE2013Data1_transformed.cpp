@@ -1,13 +1,18 @@
 /*
-For details, see the beginning of fitSampleSpec.cpp
+same as fitALICE2013Data1.cpp but for ALICE2013Spec_transformed.root
 
-So far this code does not produce good fit!
+So far, does not produce good fit!
+FIXME Recognized fatal error:
+Transformed histogram does not contain error bars
+Hence, chi-square method is obsolete
+
+For more details, see the beginning of fitSampleSpec.cpp
 */
 #include <iostream>
 #include <string>
 #include "TKey.h"
 #include <fstream>
-#include "fitALICE2013Data.h"
+#include "fitALICE2013Data_transformed.h"
 using namespace std;
 
 // forward declarations for methods in fitBESData.h:
@@ -23,7 +28,7 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par);
 Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 
 // main function:
-int fitALICE2013Data1(){
+int fitALICE2013Data1_transformed(){
 	std::ofstream datFile ("ALICE2013Results.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
@@ -71,7 +76,7 @@ int fitALICE2013Data1(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("ALICE2013Spec_th1d.root");
+	TFile* myFile = new TFile("ALICE2013Spec_transformed.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
@@ -176,7 +181,7 @@ int fitALICE2013Data1(){
 		else if(histoName == "cent0_pis_Pb+Pb_2.76")
 			{
 			cout << "check1" << endl;
-			funcBGBW->SetParameters(mass,0.9,0.20,0.1,10000000.,type);
+			funcBGBW->SetParameters(mass,0.9,0.10,0.2,100.,type);
 			}
 			
 			
@@ -191,7 +196,7 @@ int fitALICE2013Data1(){
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
-		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,3.);
+		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,5.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
 		h->SetMaximum(5*(h->GetMaximum()));
@@ -369,7 +374,7 @@ int fitALICE2013Data1(){
 			//<< nDFBGBW<< "\nchi2/ndf: " << chi2BGBW/nDFBGBW <<endl;
 	
 		/* FIXME */
-		string imgPathAndName = "./debugPlots/"+histoName+"42.png";
+		string imgPathAndName = "./debugPlots/"+histoName+"_trans.png";
 				//c1 -> SaveAs("./fittedPlots/trial1.png");
 		TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
 		png->FromPad(c1);

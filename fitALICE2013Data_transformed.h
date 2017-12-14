@@ -1,25 +1,23 @@
 /*
-In this version: applied transformation to 
+Evolved from fitBESData5.h
+
+In fitBESData5.h, transformation is applied to 
 account for the fact that BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
 instead of d^2N/(dpt*dy)[(GeV/c)^-2]
+
+In this header file, that transformation is commented out
+because the affected functions in this header file act on
+the version of ALICE 2013 that has already been transformed
+to contain d^2N/(dpt*dy)[(GeV/c)^-2]
+
+affected functions:
+- getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass)
+- getdNdpt(Double_t* pT, Double_t* params)
 */
 
 #ifndef fitBESData5_H
 #define fitBESData5_H
 
-/* Function that returns an array containing, in order:
-dEt/dEta
-dEt/dEta_Error;
-dEt/dy;
-dEt/dy_Error;
-dN/dEta;
-dNd/Eta_Error;
-dN/dy;
-dN/dy_Error
-
-corresponding to the data points in the passed histogram, i.e.,
-without extrapolation:
-*/
 Double_t* getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass){
 	static Double_t integralArr[8]; //array to return
 	//^ if not static, error:
@@ -32,65 +30,69 @@ Double_t* getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass
 	Double_t dNdEtaError;
 	Double_t dNdy;
 	Double_t dNdyError;
+	//Double_t dx = 1.; // gets redefined in the loop
 	Int_t binx1 = 0;
 	Int_t binx2 = 1000; // arbitrary, large value
 	Double_t integral = 0.;
 	Int_t totBins = hist -> GetNbinsX();
 	if (binx1 < 0) binx1 = 0; // sanity check
-	   	if (binx2 > totBins+1 || binx2 < 0) binx2 = totBins+1;
-		for(Int_t binx = binx1; binx <= binx2; binx++){
-			Double_t pt = (hist->GetXaxis()->GetBinLowEdge(binx)+
-						hist->GetXaxis()->GetBinUpEdge(binx))/2;// avg of bin edges
-			//float pt = h->GetXaxis()->GetBinLowEdge(binx);
-			// calculate E_T needed for dE_T/dy:
-			Double_t et = TMath::Sqrt(pt*pt+mass*mass)+type*mass;
-			// ^ sin(theta)=1 at midrapidity
-			
-			// calculate J*E_T needed for dE_T/dEta:
-			Double_t JTimeset = pt/(TMath::Sqrt(pt*pt+mass*mass))*et; 
-			Double_t J = pt/(TMath::Sqrt(pt*pt+mass*mass));
-			Double_t dx = hist->GetXaxis()->GetBinWidth(binx);
-			//cout << "bin width from bin " << binx << ": " << dx << endl;
-			//cout << "content in bin " << binx << ": " << h->GetBinContent(binx) << endl;
-			//dE_tdEtaIntegralData +
-			Double_t tr = 2. * TMath::Pi() * pt; // transformation to be applied becaue
-								// BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
-			dEtdEta += hist->GetBinContent(binx)*tr*J*et*dx;
-			dEtdy 	+= hist->GetBinContent(binx)*tr*et*dx;
-			dNdEta 	+= hist->GetBinContent(binx)*tr*J*dx;
-			dNdy 	+= hist->GetBinContent(binx)*tr*dx;
-			//dE_tdyIntegralData += h->GetBinContent(binx)*et*dx;
-			// checking with et0:
-			//if (width) integralData += h->GetBinContent(binx)*et0*dx; 
-			dEtdEtaError 	+= hist->GetBinError(binx)*tr*J*et*dx;
-			dEtdyError 		+= hist->GetBinError(binx)*tr*et*dx;
-			dNdEtaError		+= hist->GetBinError(binx)*tr*J*dx;
-			dNdyError		+= hist->GetBinError(binx)*tr*dx;
-			//igerr2 += h->GetBinError(binx)*dx*et; //// !!look up details later
-			// ^ if the errors are completely correlated
-			// if uncorrelated: take the square root of igerr2
-			}
-			integralArr[0] = dEtdEta;
-			integralArr[1] = dEtdEtaError;
-			integralArr[2] = dEtdy;
-			integralArr[3] = dEtdyError;
-			integralArr[4] = dNdEta;
-			integralArr[5] = dNdEtaError;
-			integralArr[6] = dNdy;
-			integralArr[7] = dNdyError;
-		/* check: 
-			for(int i=0; i<8; i++){
-			
-			cout<<"Int result "<<i+1<<": "<<integralArr[i]<<endl;
+   	if (binx2 > totBins+1 || binx2 < 0) binx2 = totBins+1;
+   	cout << "mass: " << mass << endl;
+	for(Int_t binx = binx1; binx <= binx2; binx++){
+		//Double_t pt = (hist->GetXaxis()->GetBinLowEdge(binx));
+		Double_t pt = hist->GetXaxis()->GetBinLowEdge(binx)+
+					(hist->GetXaxis()->GetBinUpEdge(binx)-hist->GetXaxis()->GetBinLowEdge(binx))*.5;// avg of bin edges
+		//float pt = h->GetXaxis()->GetBinLowEdge(binx);
+		// calculate E_T needed for dE_T/dy:
+		Double_t et = TMath::Sqrt(pt*pt+mass*mass)+type*mass;
+		// ^ sin(theta)=1 at midrapidity
+		
+		// calculate J*E_T needed for dE_T/dEta:
+		///////Double_t JTimeset = pt/(TMath::Sqrt(pt*pt+mass*mass))*et; 
+		Double_t J = pt/(TMath::Sqrt(pt*pt+mass*mass)); // Jacobian
+		Double_t dx = hist->GetXaxis()->GetBinWidth(binx);
+		//cout << "bin width from bin " << binx << ": " << dx << endl;
+		//cout << "content in bin " << binx << ": " << h->GetBinContent(binx) << endl;
+		//dE_tdEtaIntegralData +
+		Double_t tr = 1.; // initialize to this value, and in case no transformation
+						// needs to be applied, comment out the following line:
+		//tr = 2. * TMath::Pi() * pt; // transformation to be applied becaue
+							// BES/ALICE2013 data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
+		dEtdEta += hist->GetBinContent(binx)*tr*J*et*dx;
+		dEtdy 	+= hist->GetBinContent(binx)*tr*et*dx;
+		dNdEta 	+= hist->GetBinContent(binx)*tr*J*dx;
+		dNdy 	+= hist->GetBinContent(binx)*tr*dx;
+		//dE_tdyIntegralData += h->GetBinContent(binx)*et*dx;
+		// checking with et0:
+		//if (width) integralData += h->GetBinContent(binx)*et0*dx; 
+		dEtdEtaError 	+= hist->GetBinError(binx)*tr*J*et*dx;
+		dEtdyError 		+= hist->GetBinError(binx)*tr*et*dx;
+		dNdEtaError		+= hist->GetBinError(binx)*tr*J*dx;
+		dNdyError		+= hist->GetBinError(binx)*tr*dx;
+		//igerr2 += h->GetBinError(binx)*dx*et; //// !!look up details later
+		// ^ if the errors are completely correlated
+		// if uncorrelated: take the square root of igerr2
 		}
-		*/
-			
+		integralArr[0] = dEtdEta;
+		integralArr[1] = dEtdEtaError;
+		integralArr[2] = dEtdy;
+		integralArr[3] = dEtdyError;
+		integralArr[4] = dNdEta;
+		integralArr[5] = dNdEtaError;
+		integralArr[6] = dNdy;
+		integralArr[7] = dNdyError;
+	/* check: 
+		for(int i=0; i<8; i++){
+		
+		cout<<"Int result "<<i+1<<": "<<integralArr[i]<<endl;
+	}
+	*/
+		
 		
 	return integralArr;
 }
 
-// Function to return 1/pt dN/dpt integrand (which is used in...
-	// ...function getdNdpt):
+//method to return 1/pt dN/dpt integrand
 Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par){
 	// (dN/dpt)/pt= r*dr*mt*I0((pt*sinh(rho))/T)*K1((mt*cosh(rho))/T)
 	// rho=arctanh(beta); beta=betaMax*(r/R)^n
@@ -116,11 +118,7 @@ Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par){
 	return integrand;
 }// end of method getdNdptOverptIntegrand
 
-// Function to return dN/dpt 
-	//(normalized using free parameter 'norm'
-	// and transformed by multiplying with 2pi*pT;
-	// result of this function is used 
-	// in the function getdETdyIntegrand):
+// method to return dN/dpt
 Double_t getdNdpt(Double_t* pT, Double_t* params){
 	TF1* dNdptOverptIntegrandFunc = new TF1("integrandFunc", 
 									getdNdptOverptIntegrand, 
@@ -137,15 +135,11 @@ Double_t getdNdpt(Double_t* pT, Double_t* params){
 
 	Double_t dNdptOverpt 	= dNdptOverptIntegrandFunc->Integral(0,1);
 	// ^ normalized r goes from 0 to 1 instead of from 0 to R
-	Double_t dNdpt_normalized			= 2 * TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
+	Double_t dNdpt_normalized			= /*2 * TMath::Pi() * pt **/ norm * dNdptOverpt+type*0.;
 	gSystem->ProcessEvents();
 	gROOT->Reset();
 	return dNdpt_normalized;
 }
-
-// Function to return the integrand to be used
-	// to calculate dET/dy using Boltzmann-Gibbs Blast wave
-	// fit to available d^2N/(dpt*dy) vs pt histogram: 
 Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t mass  = par[0];
@@ -161,10 +155,6 @@ Double_t getdETdyIntegrand(Double_t* myPt, Double_t* par){
 	
 	return integrand;
 }
-
-// Function to return the integrand to be used
-	// to calculate dET/dEta using Boltzmann-Gibbs Blast wave
-	// fit to available d^2N/(dpt*dy) vs pt histogram: 
 Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t mass = par[0];
@@ -181,9 +171,6 @@ Double_t getdETdEtaIntegrand(Double_t* myPt, Double_t* par){
 	return integrand;
 }
 
-// Function to return the integrand to be used
-	// to calculate dET/dy using Boltzmann-Gibbs Blast wave
-	// fit to available d^2N/(dpt*dy) vs pt histogram: 
 Double_t getdNdEtaIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t mass = par[0];
@@ -200,9 +187,6 @@ Double_t getdNdEtaIntegrand(Double_t* myPt, Double_t* par){
 	return integrand;
 }
 
-// Function to return the integrand to be used
-	// to calculate dN/dy using Boltzmann-Gibbs Blast wave
-	// fit to available d^2N/(dpt*dy) vs pt histogram:
 Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par){
 	Double_t pt   = myPt[0]; // x-axis of integration
 	Double_t mass = par[0];
@@ -218,6 +202,7 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par){
 	
 	return integrand;
 }
+
 
 /*Double_t use_funcBGBW(TF1* funcObj, Double_t* pt){
 	return funcObj->Eval(pt);

@@ -5,9 +5,7 @@ In fitBESData5.h, transformation is applied to
 account for the fact that BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
 instead of d^2N/(dpt*dy)[(GeV/c)^-2]
 
-This holds true for ALICE 2013 data as well, except for the version
-in which transformation is applied during the creation of the 
-root file with the histogram object 
+This holds true for ALICE 2013 data (hence this header file) as well. 
 
 affected functions:
 - getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass)

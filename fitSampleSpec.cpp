@@ -9,11 +9,11 @@ Used to analyze any TH1D object within a TFile object by customizing:
 			(only) in this case, string histoName = h->GetName(); makes sense
 	3.2. h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 			this is the case applicable to SPECTRA_COMB_20120709.root
-4. depending on the histoName, particleID and its dependent variables
+4. (depending on the histoName) particleID and its dependent variables
 5. fit parameters: funcBGBW->SetParameters(mass,0.99,0.30,0.1,1000.,type);
 6. ylabel: ylabel = "#frac{d^{2}N}{dydp_{T}}";
 7. depending on the ylabel, possible transformation to be applied
-	under fitALICE2013Data.h within functions:
+	under the associated header file (eg. fitALICE2013Data.h) within functions:
 	7.1. getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass)
 	7.2. getdNdpt(Double_t* pT, Double_t* params)
 */
