@@ -30,9 +30,9 @@ int ALICE2013ToRootFile_trans(){ // main
 	//TODO: std::vector<TH1D> 	histoList; // vector (list) of histograms
 	ifstream 			in;
 	
-	in.open(Form("/home/bsharma/rhip/analysisCodes/ALICE2013Data.txt"));
+	in.open(Form("/home/bsharma/rhip/analysisCodes/ALICE2013Data_v2.txt"));
 	// ^ data file with Beam Scan Energy data, !!!!!!bins sorted!!!!!
-	TFile* f = new TFile("ALICE2013Spec_transformed.root","RECREATE");// .root file to be created
+	TFile* f = new TFile("ALICE2013Spec_v2_transformed.root","RECREATE");// .root file to be created
 	//const char* collidingSpeciesPtr = NULL;
 	
 /*

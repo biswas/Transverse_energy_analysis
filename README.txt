@@ -89,16 +89,19 @@ directory: publication
 	- combined pi- & pi+ spectrum (0-5% central) from ALICE 2013 data
 	- as available in http://aliceinfo.cern.ch/ArtSubmission/node/544
 	- layout formatted to match 1.
+	- ordinate is 1/(2pi*pT) * dN/dpT as opposed to dN/dpT
 
 17. ALICE2013DataToRootFile_th1.cpp
-	- organizes 16. into a TH1D object in a .root file
+	- organizes 16. or 31. into a TH1D object in a .root file
 
 18. ALICE2013Spec_th1d.root
-	- result of 17.
+	- result of 17. using 16.
+	- ordinate is 1/(2pi*pT) * dN/dpT as opposed to dN/dpT
 
 19. SPECTRA_COMB_20120709.root
 	- ROOT file with spectra that result to table 2.2 in transverse energy analysis note
 	- used to test reasonability of dET/dEta estimates produced by codes in this repository
+	- ordinate is dN/dpT as opposed to 1/(2pi*pT) * dN/dpT
 
 20. sampleResults.dat
 	- buffer file containing results (to test on the fly) of .cpp codes since 16.
@@ -155,15 +158,36 @@ directory: publication
 	- ... in the process of producing the input ROOT file ...
 	- ... and hence neglects the transformations in the relevant functions
 
+31. ALICE2013Data_v2.txt
+	- data available from http://hepdata.cedar.ac.uk/view/ins1222333
+	- reference http://aliceinfo.cern.ch/ArtSubmission/node/501
+	- replacement for 16. which had suboptimal data
+
+32. ALICE2013Spec_v2_th1d.root
+	- result of 17. using 31.
+	- ordinate is 1/(2pi*pT) * dN/dpT [i.e., d^2N/(N_ev*2pi*pt*dpt*dy)]
+		as opposed to dN/dpT
+
+33. ALICE2013Spec_v2_transformed.root
+	- result of 24. using 31.
+	- ordinate is dN/dpT
+
 *******************************************************************************
 Current debugging note:
+
+0. pi- and pi+ spectra (ALICE2013Spec_v2_transformed.root) from ALICE 2013 data (31.) lower than those from SPECTRA_COMB_20120709.root as can be compared from 1/13/2018 screenshots (of plots) available in directory debugPlots
+
 1. Estimated values of dET/dEta lower than those found in publications
 	- However, dET/dEta estimates fairly match those in transverse energy analysis note
+	
 2. BGBW function not producing good fits to pi+ & pi- combined spectrum from:
 	http://aliceinfo.cern.ch/ArtSubmission/node/544
 -------------------------------------------------------------------------------
 
 Past debugging notes:
+..................................................................................
 	- available BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2] in pt bins
-	- taken care of in fitBESData5.h: Double_t dNdpt_normalized	= 2 * TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
+	- taken care of in fitBESData5.h: Double_t dNdpt_normalized	= 2 * 
+		TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
 	- need to apply similar transformation in calculating integral from data points
+..................................................................................

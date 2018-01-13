@@ -29,9 +29,9 @@ int ALICE2013DataToRootFile_th1(){ // main
 	Int_t				histonum = 0; // track number of histos created/parsed
 	ifstream 			in;
 	
-	in.open(Form("/home/bsharma/rhip/analysisCodes/ALICE2013Data.txt"));
+	in.open(Form("/home/bsharma/rhip/analysisCodes/ALICE2013Data_v2.txt"));
 	// ^ data file with ALICE 2013 data, !!!!!!bins sorted!!!!!
-	TFile* f = new TFile("ALICE2013Spec_th1d.root","RECREATE");// .root file to be created		
+	TFile* f = new TFile("ALICE2013Spec_v2_th1d.root","RECREATE");// .root file to be created		
 
 	while(in >> collidingSpecies){
 		while(collidingSpecies!="Pb+Pb") {in >> collidingSpecies;}
