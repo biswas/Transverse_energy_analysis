@@ -100,12 +100,13 @@ int ALICE2013DataToRootFile_th1(){ // main
 											// j=1 instead of 0 because first bin is empty
 				// Y-axis of data transformed to match BGBW fit y-axis:
 				h->SetBinContent(j+1,
-							binContent[j]);//*2*TMath::Pi());//*(binEdgesVec[j]+binEdgesVec[j+1])/2);
+							binContent[j-1]);//*2*TMath::Pi());//*(binEdgesVec[j]+binEdgesVec[j+1])/2);
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
 				
 				// add errors in quadrature:
-				h->SetBinError(j+1,TMath::Sqrt(binContentErrStat[j]*binContentErrStat[j]
-								+binContentErrSys[j]*binContentErrSys[j]));
+				h->SetBinError(j+1,TMath::Sqrt(binContentErrStat[j-1]*binContentErrStat[j-1]
+								+binContentErrSys[j-1]*binContentErrSys[j-1]));
+				///////////////////////cout << binContent[j] << "\t" << 
 			}
 			cout <<"--------------------------------------------"<< endl<< endl;
 

@@ -175,6 +175,11 @@ directory: publication
 *******************************************************************************
 Current debugging note:
 
+-1. Around line 102 in ALICE2013DataToRootFile_th1.cpp, trying to check if the j+1 in h->SetBinContent(j+1,binContent[j]) should actually be j.
+Turns out binContent[j] needed to be changed to binContent[j-1] (even though that did not fix the discrepancy in the pion spectra)
+Need to make similar changes to all the codes from the beginning.
+Do it with Nathan tomorrow (1/18/2018) so he gets to see what each of the codes does.
+
 0. pi- and pi+ spectra (ALICE2013Spec_v2_transformed.root) from ALICE 2013 data (31.) lower than those from SPECTRA_COMB_20120709.root as can be compared from 1/13/2018 screenshots (of plots) available in directory debugPlots
 
 1. Estimated values of dET/dEta lower than those found in publications

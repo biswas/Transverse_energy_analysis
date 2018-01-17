@@ -107,13 +107,19 @@ nested loop structure:
 											// j=1 instead of 0 because first bin is empty
 				// Y-axis of data transformed to match BGBW fit y-axis:
 				h->SetBinContent(j+1,
-							binContent[j]*2*TMath::Pi()*
-							(binEdgesVec[j]+0.5*(binEdgesVec[j+1]-binEdgesVec[j])));
+							binContent[j-1]*2*TMath::Pi()*
+							(binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1])));
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
 				
 				// add errors in quadrature:
-				h->SetBinError(j+1,TMath::Sqrt(binContentErrStat[j]*binContentErrStat[j]
-								+binContentErrSys[j]*binContentErrSys[j]));
+				h->SetBinError(j+1,TMath::Sqrt(binContentErrStat[j-1]*binContentErrStat[j-1]
+								+binContentErrSys[j-1]*binContentErrSys[j-1]));
+				cout << binEdgesVec[j-1] << "-" << binEdgesVec[j] << ", " 
+					<< (binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1])) <<"\t"
+					<< binContent[j-1] << ", "<< binContent[j-1]*2*TMath::Pi()*
+							(binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1]))
+							 << "\t" << binContentErrStat[j-1] << "(stat) "
+					<< binContentErrSys[j-1] << "(sys)" << endl;
 			}
 			cout <<"--------------------------------------------"<< endl<< endl;
 			// TODO: histoList.push_back(*h);	// Not necessary if histo list not created		
