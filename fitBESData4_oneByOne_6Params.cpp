@@ -45,7 +45,7 @@ Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 int fitBESData4_oneByOne_6Params(){
 	int breakOutForTesting =0;
 	// now debugging: 18
-	int stop = 140;// histo num to test: 1 for histo #1
+	int stop = 234;// histo num to test: 1 for histo #1
 	
 	std::ofstream datFile ("fitResults4_oneByOne.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
@@ -201,6 +201,12 @@ int fitBESData4_oneByOne_6Params(){
 			||	histoName == "cent4_pi-_Au+Au_19.6"
 			||	histoName == "cent5_ka+_Au+Au_27"
 			||	histoName == "cent5_ka-_Au+Au_7.7"
+			||	histoName == "cent2_ka-_Au+Au_27"
+			||	histoName == "cent3_ka+_Au+Au_27"
+			||	histoName == "cent6_ka-_Au+Au_27"
+			||	histoName == "cent6_pi+_Au+Au_27"
+			||	histoName == "cent7_pbar_Au+Au_27"
+			||	histoName == "cent8_pi+_Au+Au_39"
 			||	histoName == "cent6_pi+_Au+Au_11.5"){
 			funcBGBW->SetParameters(0.1,0.9,0.03,0.01,10000.,1.);
 			}			

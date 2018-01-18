@@ -177,7 +177,13 @@ int fitBESData5_2(){
 			||	histoName == "cent4_pi-_Au+Au_19.6"
 			||	histoName == "cent5_ka+_Au+Au_27"
 			||	histoName == "cent5_ka-_Au+Au_7.7"
-			||	histoName == "cent6_pi+_Au+Au_11.5"){
+			||	histoName == "cent6_pi+_Au+Au_11.5"
+			||	histoName == "cent2_ka-_Au+Au_27"
+			||	histoName == "cent3_ka+_Au+Au_27"
+			||	histoName == "cent6_ka-_Au+Au_27"
+			||	histoName == "cent6_pi+_Au+Au_27"
+			||	histoName == "cent7_pbar_Au+Au_27"
+			||	histoName == "cent8_pi+_Au+Au_39"){
 			funcBGBW->SetParameters(0.1,0.9,0.03,0.01,10000.,type);
 			}			
 		else{

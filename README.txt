@@ -44,6 +44,7 @@ directory: publication
 	- older version of fitBESData5_1.cpp
 	- has the convenient functionality to run said code on individual
 		histograms instead of all at once
+	- change the definition of variable stop to select histogram
 
 6. fitResults4_oneByOne.dat
 	- result of 5.
@@ -179,6 +180,7 @@ Current debugging note:
 Turns out binContent[j] needed to be changed to binContent[j-1] (even though that did not fix the discrepancy in the pion spectra)
 Need to make similar changes to all the codes from the beginning.
 Do it with Nathan tomorrow (1/18/2018) so he gets to see what each of the codes does.
+Done upto 11.
 
 0. pi- and pi+ spectra (ALICE2013Spec_v2_transformed.root) from ALICE 2013 data (31.) lower than those from SPECTRA_COMB_20120709.root as can be compared from 1/13/2018 screenshots (of plots) available in directory debugPlots
 

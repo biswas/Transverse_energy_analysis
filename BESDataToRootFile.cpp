@@ -43,7 +43,6 @@ nested loop structure:
 		for(int i = 0; i<8; i++) in >> myString; // skipping 8 strings
 		// single histogram creation:
 		for(int cent = 0; cent<9; cent++){// iterate 9X for 9 centralities
-		// TODO: move these vector declarations up for global scope if this doesn't work
 			std::vector<Double_t> binEdgesVec;
 			std::vector<Double_t> binContent;
 			std::vector<Double_t> binContentErrStat;
@@ -56,7 +55,7 @@ nested loop structure:
 			Double_t tempDouble; /////////// flag used in debugging
 			Double_t binHighEdge; // only pushed_back after completion of while loop
 									// to avoid redundancy
-			binEdgesVec.push_back(0.0);// to set the left-most edge to zero
+			/////// FIXME binEdgesVec.push_back(0.0);// to set the left-most edge to zero
 			while(in>>myDouble){// get single content from each of the 5 columns, and repeat
 									// until in.fail(), i,e. fail bit encountered
 								// fstream malfunction if input stream statement within loop body
@@ -70,6 +69,7 @@ nested loop structure:
 				binContentErrStat.push_back(myDouble);
 				in >> myDouble;
 				binContentErrSys.push_back(myDouble);
+				cout << "bin: " << binNum << " " << binEdgesVec[binNum-1] << " " << binContent[binNum-1] << endl;
 			}// end of while loop to capture every histo bin
 			//TODO:
 			/*if (in.fail())cout << "Error! Fail bit!"<< endl; // this is what happens
@@ -96,23 +96,24 @@ nested loop structure:
 			cout << "his. pointer " << histonum <<":" << h << endl;
 			cout << "arr. pointer " << histonum <<":" << /*a*/&binEdgesVec[0] << endl;
 			h->GetXaxis()->SetRangeUser(0.,10.);
-			for(int j = 1; j<binNum; j++){// fill in bin content and error for every bin
-											// j=1 instead of 0 because first bin is empty
+			cout << "bin num: " << binNum << endl;
+			for(int j = 1; j<=binNum; j++){// fill in bin content and error for every bin
 				// Y-axis of data transformed to match BGBW fit y-axis:
-				h->SetBinContent(j+1,
-							binContent[j]);//*2*TMath::Pi());//*(binEdgesVec[j]+binEdgesVec[j+1])/2);
+				h->SetBinContent(j,
+							binContent[j-1]);//*2*TMath::Pi());//*(binEdgesVec[j]+binEdgesVec[j+1])/2);
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
 				
 				// add errors in quadrature:
-				h->SetBinError(j+1,TMath::Sqrt(binContentErrStat[j]*binContentErrStat[j]
-								+binContentErrSys[j]*binContentErrSys[j]));
+				h->SetBinError(j,TMath::Sqrt(binContentErrStat[j-1]*binContentErrStat[j-1]
+								+binContentErrSys[j-1]*binContentErrSys[j-1]));
+				
 			}
 			cout <<"--------------------------------------------"<< endl<< endl;
 			// TODO: histoList.push_back(*h);	// Not necessary if histo list not created		
 		}// end of for loop to capture each centrality
 	}// end of global while loop to capture each collisionEnergy
 	in.close();
-	f->Write();
+	f->Write(); // writes objects in memory (TH1D objects in this case) to TFile
 	delete f; // instead of f->Close(), in order to automatically delete all objects
 				// owned by this file
 	//f->Close();
