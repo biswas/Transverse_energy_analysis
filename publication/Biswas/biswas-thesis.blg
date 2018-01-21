@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: biswas-thesis.aux
+A level-1 auxiliary file: front-matter/dedication.aux
+A level-1 auxiliary file: front-matter/acknowledgments.aux
+A level-1 auxiliary file: front-matter/abstract.aux
+A level-1 auxiliary file: front-matter.aux
+A level-1 auxiliary file: chapters/chapter-1.aux
+A level-1 auxiliary file: chapters/chapter-2.aux
+A level-1 auxiliary file: chapters/chapter-3.aux
+A level-1 auxiliary file: chapters/chapter-4.aux
+The style file: apalike.bst
+A level-1 auxiliary file: back-matter/appendix-1.aux
+A level-1 auxiliary file: back-matter/appendix-2.aux
+A level-1 auxiliary file: back-matter/vita.aux
+Database file #1: references-Biswas.bib
+Reallocated buffer (elt_size=1) to 40000 items from 20000.
+Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
+Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
+Reallocated out_buf (elt_size=1) to 40000 items from 20000.
+Reallocated name_tok (elt_size=4) to 40000 items from 20000.
+Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
+while executing--line 1098 of file apalike.bst
+*Please notify the bibstyle designer*
+You've used 12 entries,
+            1935 wiz_defined-function locations,
+            568 strings with 70331 characters,
+and the built_in function-call counts, 113109 in all, are:
+= -- 7446
+> -- 17656
+< -- 8
++ -- 7054
+- -- 7050
+* -- 14401
+:= -- 21812
+add.period$ -- 37
+call.type$ -- 12
+change.case$ -- 3584
+chr.to.int$ -- 12
+cite$ -- 12
+duplicate$ -- 167
+empty$ -- 348
+format.name$ -- 7067
+if$ -- 18397
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 64
+num.names$ -- 36
+pop$ -- 3553
+preamble$ -- 1
+purify$ -- 3584
+quote$ -- 0
+skip$ -- 130
+stack$ -- 0
+substring$ -- 386
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 0
+while$ -- 36
+width$ -- 0
+write$ -- 159
+(There was 1 warning)
