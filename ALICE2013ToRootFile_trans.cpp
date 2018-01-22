@@ -63,7 +63,7 @@ nested loop structure:
 			Double_t tempDouble; /////////// flag used in debugging
 			Double_t binHighEdge; // only pushed_back after completion of while loop
 									// to avoid redundancy
-			binEdgesVec.push_back(0.0);// to set the left-most edge to zero
+			/////// shifts data one bin to the leftbinEdgesVec.push_back(0.0);// to set the left-most edge to zero
 			while(in>>myDouble){// get single content from each of the 5 columns, and repeat
 									// until in.fail(), i,e. fail bit encountered
 								// fstream malfunction if input stream statement within loop body
@@ -103,16 +103,16 @@ nested loop structure:
 			cout << "his. pointer " << histonum <<":" << h << endl;
 			cout << "arr. pointer " << histonum <<":" << /*a*/&binEdgesVec[0] << endl;
 			h->GetXaxis()->SetRangeUser(0.,30.);
-			for(int j = 1; j<binNum; j++){// fill in bin content and error for every bin
+			for(int j = 1; j<=binNum; j++){// fill in bin content and error for every bin
 											// j=1 instead of 0 because first bin is empty
 				// Y-axis of data transformed to match BGBW fit y-axis:
-				h->SetBinContent(j+1,
+				h->SetBinContent(j,
 							binContent[j-1]*2*TMath::Pi()*
 							(binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1])));
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
 				
 				// add errors in quadrature:
-				h->SetBinError(j+1,TMath::Sqrt(binContentErrStat[j-1]*binContentErrStat[j-1]
+				h->SetBinError(j,TMath::Sqrt(binContentErrStat[j-1]*binContentErrStat[j-1]
 								+binContentErrSys[j-1]*binContentErrSys[j-1]));
 				cout << binEdgesVec[j-1] << "-" << binEdgesVec[j] << ", " 
 					<< (binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1])) <<"\t"
