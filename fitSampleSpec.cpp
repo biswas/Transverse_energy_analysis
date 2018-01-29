@@ -86,7 +86,7 @@ int fitSampleSpec(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("SPECTRA_COMB_20120709.root");
+	TFile* myFile = new TFile("ALICE2013Spec_v2_transformed.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
@@ -100,22 +100,22 @@ int fitSampleSpec(){
 	int breakOutForTesting =0;
 	int stop =1; // breakOut after this many iterations (if achieved); default: 140
 	while(1){
-	/*while((mikey=(TKey*)next())){
+	while((mikey=(TKey*)next())){
 		class1 = gROOT->GetClass(mikey->GetClassName());
 		if(!class1->InheritsFrom("TH1")){
 			delete class1;
 			mikey->DeleteBuffer();
 			continue;
 		}
-	*/		
+			
 		c1 = new TCanvas(); // a la Rademakers
 		funcBGBW = new TF1("getdNdpt",getdNdpt,0.00000000000001,30.,6); // actually has 5 parameters
 												// 6th parameter, type, multiplied by 0 and added
 												// for consistency of cov. matrix needed later		
 		dETdEtaIntegrandFunc = new TF1("dETdEtaIntegrand", 
 									getdETdEtaIntegrand, 
-									0, 30, 6 );// function goes from 0 to 10
-										// and has 6 parameters"
+									0, 30, 6 );// function goes from 0 to 10, 30 etc.
+										// and has 6 parameters
 										// mass, beta, temp, n, norm, type
 		dETdyIntegrandFunc = new TF1("dETdyIntegrand",
 								  getdETdyIntegrand,
@@ -133,11 +133,12 @@ int fitSampleSpec(){
 		c1->Update();
 
 		// read histogram object for current iteration of key:
-		/////////// TODO h = (TH1D*)mikey->ReadObj();
-		h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
+		
+		h = (TH1D*)mikey->ReadObj();
+		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		string histoName = h->GetName();
-		cout << "test bin content: " << h->GetBinContent(17) << endl;
+		cout << "test bin content: " << h->GetBinContent(1) << endl;
 		Double_t collEn = 0.;// initialize
 		//cent8_ka+_Au+Au_7.7 // sample histo name
 		if(histoName.substr( histoName.length() - 4 ) == "_7.7") collEn = 7.7;
@@ -171,9 +172,9 @@ int fitSampleSpec(){
 				<< particleID<<endl;/*return 1;*/}
 		
 		Double_t* integralDataPtr;
-		// TODO : need to fix what function this should be:
+
 		integralDataPtr = getIntegralsAndErrorsFromData(h,type,mass);
-					// ^ method verified!!!
+							// ^ method verified!!!
 		
 		
 		//------------- Begin BGBW fit --------------------------//
@@ -317,7 +318,7 @@ int fitSampleSpec(){
 		Double_t dNdyTotal = dNdyLeft+dNdy_d+dNdyRight;
 		Double_t dNdyTErr = dNdyLErr+dNdy_d_err+dNdyRErr;
 		
-		cout <<"Integral from data for "<<histoName<<": "<<*(integralDataPtr+0)<<endl;// 357.633 for pi minus cent 0
+		cout <<"Integral from data for "<<histoName<<": "<<*(integralDataPtr+0)<<endl;// should be 363.7 for pi minus cent 0
 		cout<<"-----------------------------------"<<endl;				
 		//------ end Find integrals left and right of data points ----//
 		//------ begin - assign Npart and errors from BES paper -----//
@@ -415,7 +416,7 @@ int fitSampleSpec(){
 		//delete mikey; // FIXME 9 segmentation violation
 		//delete class1; // segmentation violation
 	}
-	//}// end of while loop to iterate through every key
+	}// end of while loop to iterate through every key
 	/////////////delete c1;
 	//delete mikey;
 	//delete h;

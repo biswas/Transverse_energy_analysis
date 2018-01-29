@@ -5,7 +5,8 @@ In fitBESData5.h, transformation is applied to
 account for the fact that BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
 instead of d^2N/(dpt*dy)[(GeV/c)^-2]
 
-This holds true for ALICE 2013 data (hence this header file) as well. 
+This holds true for ALICE 2013 data (hence this header file) as well...
+unless the ROOT file that is used here already accounts for the transformation
 
 affected functions:
 - getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass)
@@ -51,10 +52,11 @@ Double_t* getIntegralsAndErrorsFromData(TH1D* hist, Double_t type, Double_t mass
 		//cout << "bin width from bin " << binx << ": " << dx << endl;
 		//cout << "content in bin " << binx << ": " << h->GetBinContent(binx) << endl;
 		//dE_tdEtaIntegralData +
-		Double_t tr = 1.; // initialize to this value, and in case no transformation
-						// needs to be applied, comment out the following line:
-		tr = 2. * TMath::Pi() * pt; // transformation to be applied becaue
+		Double_t tr = 1.; // initialize to this value, and in case no transformation...
+						// ... needs to be applied, comment out the following line:
+		///////tr = 2. * TMath::Pi() * pt; // transformation to be applied becaue
 							// BES/ALICE2013 data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2]
+		cout << "pt: " << pt << " content: " << hist->GetBinContent(binx) << endl;
 		dEtdEta += hist->GetBinContent(binx)*tr*J*et*dx;
 		dEtdy 	+= hist->GetBinContent(binx)*tr*et*dx;
 		dNdEta 	+= hist->GetBinContent(binx)*tr*J*dx;
@@ -132,7 +134,7 @@ Double_t getdNdpt(Double_t* pT, Double_t* params){
 
 	Double_t dNdptOverpt 	= dNdptOverptIntegrandFunc->Integral(0,1);
 	// ^ normalized r goes from 0 to 1 instead of from 0 to R
-	Double_t dNdpt_normalized			= 2 * TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
+	Double_t dNdpt_normalized			= /*2 * TMath::Pi() * pt * */ norm * dNdptOverpt+type*0.;
 	gSystem->ProcessEvents();
 	gROOT->Reset();
 	return dNdpt_normalized;

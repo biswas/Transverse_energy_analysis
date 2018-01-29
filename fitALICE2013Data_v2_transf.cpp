@@ -1,10 +1,10 @@
 /*
-same as fitSampleSpec.cpp but customized specifically 
-to use for SPECTRA_COMB_20120709.root
+same as fitALICE2013Data1.cpp but for ALICE2013Spec_transformed.root
 
-changes to be made to analyze different histos in lines:
-h = (TH1D*)myFile->Get(Form("cent0_pion_minus"));
-string histoName = "cent0_pion_minus";
+So far, does not produce good fit!
+FIXME Recognized fatal error:
+Transformed histogram does not contain error bars
+Hence, chi-square method is obsolete
 
 For more details, see the beginning of fitSampleSpec.cpp
 */
@@ -12,8 +12,11 @@ For more details, see the beginning of fitSampleSpec.cpp
 #include <string>
 #include "TKey.h"
 #include <fstream>
-#include "fitALICE2013Data.h"
+//////////#include "fitALICE2013Data_transformed.h"
+#include "fitALICE2013Data.h" // transformation removed from this header...
+								// ... so it's the same as the one above
 using namespace std;
+
 // forward declarations for methods in fitBESData.h:
 Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par);// not used
 Double_t getdNdpt(Double_t* pT, Double_t* params);
@@ -27,8 +30,8 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par);
 Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 
 // main function:
-int fitSpecFromETAnalasysNote(){
-	std::ofstream datFile ("ETAnalysisNoteSpecResults.dat", std::ofstream::out);
+int fitALICE2013Data_v2_transf(){
+	std::ofstream datFile ("ALICE2013Results.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
 			<< "centrality" << "\t"
@@ -75,7 +78,7 @@ int fitSpecFromETAnalasysNote(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("SPECTRA_COMB_20120709.root");
+	TFile* myFile = new TFile("ALICE2013Spec_v2_transformed.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
@@ -87,7 +90,7 @@ int fitSpecFromETAnalasysNote(){
 	TF1* dNdEtaIntegrandFunc;
 	TF1* dNdyIntegrandFunc;
 	int breakOutForTesting =0;
-	int stop =1; // breakOut after this many iterations (if achieved); default: 140
+	int stop =3; // breakOut after this many iterations (if achieved); default: 140
 	while((mikey=(TKey*)next())){// TODO!!! delete mikey at the end of every loop
 		class1 = gROOT->GetClass(mikey->GetClassName());
 		if(!class1->InheritsFrom("TH1")){
@@ -121,8 +124,8 @@ int fitSpecFromETAnalasysNote(){
 		c1->Update();
 
 		// read histogram object for current iteration of key:
-		h = (TH1D*)myFile->Get(Form("cent0_pion_plus"));
-		string histoName = "cent0_pion_plus";
+		h = (TH1D*)mikey->ReadObj();
+		string histoName = h->GetName();
 		Double_t collEn = 0.;// initialize
 		//cent8_ka+_Au+Au_7.7 // sample histo name
 		if(histoName.substr( histoName.length() - 4 ) == "_7.7") collEn = 7.7;
@@ -143,13 +146,13 @@ int fitSpecFromETAnalasysNote(){
 		Double_t type;// 0 for mesons, -1 for baryons, 1 for antibaryons
 		if		(particleID=="pi-"||particleID=="pi+")
 				{mass = 0.13957; type = 0.;}
-		else if	(particleID=="ka-"||particleID=="ka+" || particleID=="kao")
+		else if	(particleID=="ka-"||particleID=="ka+")
 				{mass = 0.49368; type = 0.;}
 		else if	(particleID=="pro")
 				{mass = 0.93827; type = -1.;}
 		else if	(particleID=="pba")
 				{mass = 0.93827; type = 1.;}
-		else if		(particleID=="pis" || particleID=="pio")
+		else if		(particleID=="pis")
 				{mass = 0.13957; type = 0.;}
 		else {cout << "Check particle: "
 				<< particleID<<endl;return 1;}
@@ -180,7 +183,7 @@ int fitSpecFromETAnalasysNote(){
 		else if(histoName == "cent0_pis_Pb+Pb_2.76")
 			{
 			cout << "check1" << endl;
-			funcBGBW->SetParameters(mass,0.99,0.30,0.1,100000.,type);
+			funcBGBW->SetParameters(mass,0.9,0.10,0.2,100.,type);
 			}
 			
 			
@@ -373,7 +376,7 @@ int fitSpecFromETAnalasysNote(){
 			//<< nDFBGBW<< "\nchi2/ndf: " << chi2BGBW/nDFBGBW <<endl;
 	
 		/* FIXME */
-		string imgPathAndName = "./debugPlots/"+histoName+"03.png";
+		string imgPathAndName = "./debugPlots/"+histoName+"_trans.png";
 				//c1 -> SaveAs("./fittedPlots/trial1.png");
 		TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
 		png->FromPad(c1);

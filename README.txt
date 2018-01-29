@@ -29,6 +29,7 @@ directory: publication
 		pi-, pi+, k-, k+, proton and antiproton
 	- recorded at 9 different centralities:
 		0-5% (0), 5-10% (1), 10-20% (2), 20-30% (3), ....., 70-80% (8)
+	- ordinate is 1/(2pi*pT) * dN/dpT as opposed to dN/dpT
 	** per unit transverse momentum per unit pseudorapidity
 	
 2. BESDataToRootFile.cpp
@@ -87,6 +88,7 @@ directory: publication
 	- result of 14.
 	
 16. ALICE2013Data.txt
+	- old data; v2 in 31.
 	- combined pi- & pi+ spectrum (0-5% central) from ALICE 2013 data
 	- as available in http://aliceinfo.cern.ch/ArtSubmission/node/544
 	- layout formatted to match 1.
@@ -137,6 +139,7 @@ directory: publication
 	- data y-value multiplied by 2pi*pt; pt = ptLow+0.5 (or 0.3) of binWidth
 	- transformation applied in order to see if this gives a ...
 	- ... spectrum comparable to the ones in 19., i.e., SPECTRA_COMB_20120709.root
+	- ordinate is dN/dpT as opposed to 1/(2pi*pT) * dN/dpT
 
 25. ALICE2013Spec_transformed.root
 	- result of 24, with pt = ptLow+0.5
@@ -154,7 +157,7 @@ directory: publication
 	- same as 22. but customized specifically to use for 25. or 26.
 	
 30. fitALICE2013Data_transformed.h
-	- header file used by 29.
+	- header file used by 29 or 34.
 	- accounts for the fact that a transformation had already been applied ...
 	- ... in the process of producing the input ROOT file ...
 	- ... and hence neglects the transformations in the relevant functions
@@ -172,26 +175,32 @@ directory: publication
 33. ALICE2013Spec_v2_transformed.root
 	- result of 24. using 31.
 	- ordinate is dN/dpT
-
+34. fitALICE2013Data_v2_transf.cpp
 *******************************************************************************
 Current debugging note:
 
--1. Around line 102 in ALICE2013DataToRootFile_th1.cpp, trying to check if the j+1 in h->SetBinContent(j+1,binContent[j]) should actually be j.
-Turns out binContent[j] needed to be changed to binContent[j-1] (even though that did not fix the discrepancy in the pion spectra)
-Need to make similar changes to all the codes from the beginning.
-Do it with Nathan tomorrow (1/18/2018) so he gets to see what each of the codes does.
-Done upto 11.
-
-0. pi- and pi+ spectra (ALICE2013Spec_v2_transformed.root) from ALICE 2013 data (31.) lower than those from SPECTRA_COMB_20120709.root as can be compared from 1/13/2018 screenshots (of plots) available in directory debugPlots
-
-1. Estimated values of dET/dEta lower than those found in publications
-	- However, dET/dEta estimates fairly match those in transverse energy analysis note
+1. BGBW function not producing good fits to pi+ & pi- combined spectrum from:
+	http://aliceinfo.cern.ch/ArtSubmission/node/501
+	- good fits produced to spectra that are almost the same and available in SPECTRA_COMB_20120709.root
+	- the two spectra maily differ in that the latter has some bins in the beginning and at the end with bin content zero, whereas the former does not have those bins altogether
+Debug: see if limiting the range of fit to <3 produces similar fits
 	
-2. BGBW function not producing good fits to pi+ & pi- combined spectrum from:
-	http://aliceinfo.cern.ch/ArtSubmission/node/544
+2. Estimated values of dET/dEta lower than those found in publications
+	- However, dET/dEta estimates fairly match those in transverse energy analysis note
 -------------------------------------------------------------------------------
 
 Past debugging notes:
+..................................................................................
+-2. ALICE spectra match, but the errors and ETs don't match yet.
+Debugged: ETs match within error bars, so they are considered consistent after consultation with Dr. Nattrass.
+-1. Around line 102 in ALICE2013DataToRootFile_th1.cpp, trying to check if the j+1 in h->SetBinContent(j+1,binContent[j]) should actually be j.
+Debugged: j+1 changed to j, j changed to j-1, loop stop condition changed to j<=binNum, and commented out binEdgesVec.push_back(0.0);
+Need to make similar changes to all the codes from the beginning.
+Do it with Nathan tomorrow (1/18/2018) so he gets to see what each of the codes does.
+Done upto 15. -- DONE
+
+0. pi- and pi+ spectra (ALICE2013Spec_v2_transformed.root) from ALICE 2013 data (31.) lower than those from SPECTRA_COMB_20120709.root as can be compared from 1/13/2018 screenshots (of plots) available in directory debugPlots -- FIXED (errors don't match yet)
+
 ..................................................................................
 	- available BES data contains d^2N/(2pi*pt*dpt*dy)[(GeV/c)^-2] in pt bins
 	- taken care of in fitBESData5.h: Double_t dNdpt_normalized	= 2 * 

@@ -1,0 +1,416 @@
+.q
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+new TBrowser
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+new TBrowser
+.q
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_minus"))
+TH1D* h2 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+h1 -> Add(h2)
+gPad -> SetLogy()
+c1->Update()
+h1->Draw()
+new TBrowser
+TCanvas* c2 = new TCanvas()
+h2->Draw()
+gPad->SetLogy()
+h1->SetTitle("pi+ & pi- spectrum from analysis note")
+c1->Update()
+h1-Draw("same")
+h1->Draw("same")
+c1->Update()
+   TPaveLabel *title = new TPaveLabel(.11,.95,.35,.99,"new title","brndc");
+TPaveLabel *title1 = new TPaveLabel(.11,.95,.35,.99,"new title","pi+ & pi- spectrum from analysis note");
+title1->Draw()
+title1->Draw("same")
+TPaveLabel *title1 = new TPaveLabel(.11,.95,.35,.99,"new title","cent0_pis_analysis-note");
+delete title1
+TPaveLabel *title1 = new TPaveLabel(.11,.95,.35,.99,"new title","cent0_pis_analysis-note");
+gStyle->SetOptTitle(0)
+TPaveLabel *title1 = new TPaveLabel(.11,.95,.35,.99,"new title","cent0_pis_analysis-note");
+TPaveLabel *title2 = new TPaveLabel(.11,.95,.35,.99,"new title","cent0_pis_analysis-note");
+title2->Draw("same")
+TPaveLabel *title2 = new TPaveLabel(.11,.95,.35,.99,"new title","cent0_pis_analysis-note");
+TPaveLabel *title3 = new TPaveLabel(.11,.95,.35,.99,"new title","cent0_pis_analysis-note");
+.q
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_minus"))
+TH1D* h2 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+h1 -> Add(h2)
+gPad -> SetLogy()
+h1->Draw()
+h1->SetTitle("cent0_pis_analysis-note")
+new TBrowser
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.q
+.x ALICE2013ToRootFile_trans.cpp
+new TBrowser
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_minus"))
+TH1D* h2 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+h1 -> Add(h2)
+gPad -> SetLogy()
+h1->Draw()
+h1->SetTitle("cent0_pis_analysis-note")
+.q
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_minus"))
+TH1D* h2 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+h1 -> Add(h2)
+gPad -> SetLogy()
+h1->Draw()
+h1->SetTitle("cent0_pis_analysis-note")
+new TBrowser
+.q
+.x ALICE2013ToRootFile_trans.cpp
+new TBrowser
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_minus"))
+TH1D* h2 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+h1 -> Add(h2)
+h1->Draw()
+h1->SetTitle("cent0_pis_analysis-note")
+h1->GetMaximum()
+TCanvas* c2 = new TCanvas()
+TFile* myFile2 = new TFile("ALICE2013Spec_transformed.root")
+new TBrowser
+TH1D* h3 = (TH1D*)myFile->Get(Form("cent0_pis_Pb+Pb_2.76"))
+TH1D* h3 = (TH1D*)myFile2->Get(Form("cent0_pis_Pb+Pb_2.76"))
+TH1D* h4 = (TH1D*)myFile2->Get(Form("cent0_pis_Pb+Pb_2.76"))
+h4->GetMaximum()
+100*(2407.66-2154.44)/(2154.44)
+.q
+.x fitALICE2013Data1.cpp
+.q
+.x fitALICE2013Data1.cpp
+.q
+.x fitALICE2013Data1.cpp
+.q
+new TBrowser
+.1
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.q
+.x fitALICE2013Data1_transformed.cpp
+.q
+.x fitALICE2013Data1_transformed.cpp
+.q
+.x fitALICE2013Data1_transformed.cpp
+.q
+.x fitALICE2013Data1_transformed.cpp
+.q
+.x fitALICE2013Data1_transformed.cpp
+.q
+.x fitALICE2013Data1.cpp
+.x fitALICE2013Data1.cpp
+.q
+.x fitALICE2013Data1.cpp
+.q
+.x fitALICE2013Data1.cpp
+.q
+.x fitALICE2013Data1_transformed.cpp
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.q
+.x insertionSortMacro.C
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.x fibonacci.C
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x fibonacci.C
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+new TBrowser
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+new TBrowser
+new TBrowser
+new TBrowser
+.q
+new TBrowser
+new TBrowser
+.q
+.x ALICE2013ToRootFile_trans.cpp
+new TBrowser
+.q
+new TBrowser
+new TBrowser
+.q
+TCanvas* c1 = new TCanvas
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1 -> Add(h2)
+h1->Draw()
+.q
+TCanvas* c1 = new TCanvas
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1->Draw()
+h2->Draw("same")
+h1->Draw()
+h2->Draw("same")
+.q
+.q
+.q
+new TBrowser
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+.q
+new TBrowser
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+.q
+new TBrowser
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.q
+new TBrowser
+TCanvas* c1 = new TCanvas
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1->Draw()
+h2->Draw("same")
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.q
+new TBrowser
+TCanvas* c1 = new TCanvas
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1->Draw()
+h2->Draw("same")
+.q
+.x BESDataToRootFile.cpp
+.q
+new TBrowser
+.q
+.x BESDataToRootFile.cpp
+new TBrowser
+.q
+.x BESDataToRootFile.cpp
+.q
+26-5
+.q
+.x BESDataToRootFile.cpp
+.q
+.x BESDataToRootFile.cpp
+.q
+.x BESDataToRootFile.cpp
+.q
+.x BESDataToRootFile.cpp
+new TBrowser
+.q
+.x BESDataToRootFile.cpp
+.q
+.x BESDataToRootFile.cpp
+new TBrowser
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData5_1.cpp
+.x fitBESData5_2.cpp
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData4_oneByOne_6Params.cpp
+.q
+.x fitBESData5_1.cpp
+.x fitBESData5_1.cpp
+.x fitBESData5_2.cpp
+.x fitBESData5_1.cpp
+.x fitBESData5_2.cpp
+.x plotsFromResults3.cpp
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+new TBrowser
+.q
+new TBrowser
+.q
+.x ALICE2013ToRootFile_trans.cpp
+.x ALICE2013ToRootFile_trans.cpp
+new TBrowser
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+.q
+new TBrowser
+.q
+.x ALICE2013DataToRootFile_th1.cpp
+new TBrowser
+.q
+.x ALICE2013ToRootFile_trans.cpp
+new TBrowser
+.q
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1->Draw()
+h2->Draw("same")
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.x ALICE2013ToRootFile_trans.cpp
+.q
+.q
+.x fitSampleSpec.cpp
+.x fitSampleSpec.cpp
+.q
+.x fitSampleSpec.cpp
+.x fitSampleSpec.cpp
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+.q
+.x fitSpecFromETAnalasysNote.cpp
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1->Draw()
+h2->Draw("same")
+.q
+TCanvas* c1 = new TCanvas()
+.q
+TCanvas* c1 = new TCanvas()
+TFile* myFile = new TFile("SPECTRA_COMB_20120709.root")
+TH1D* h1 = (TH1D*)myFile->Get(Form("cent0_pion_plus"))
+TFile* myFile2 = new TFile("ALICE2013Spec_v2_transformed.root")
+TH1D* h2 = (TH1D*)myFile2->Get(Form("cent0_pi+_Pb+Pb_2.76"))
+h1->Draw()
+h2->Draw("same")

@@ -1,0 +1,1000 @@
+    3  exit
+    4  cd rhip/analysisCodes/
+    5  l
+    6  p plotsFromResults.cpp &
+    7  libreoffice --calc fitResults5.dat &
+    8  l
+    9  r -q fitBESData4_oneByOne_6Params.cpp
+   10  r -l -q fitBESData4_oneByOne_6Params.cpp 
+   11  source analyzeAllHistos.bash 
+   12  l
+   13  libreoffice --calc fitResults5.dat &
+   14  exit
+   15  cd rhip/analysisCodes/
+   16  l
+   17  hgrep git
+   18  git add .
+   19  git commit -m "Add existing file"
+   20  git push origin master
+   21  hgrep git
+   22  l
+   23  libreoffice --calc fitResults5.dat &
+   24  l
+   25  p fitResultsToPlottableFormat.cpp &
+   26  p plotsFromResults.cpp &
+   27  r -l -q plotsFromResults.cpp
+   28  hgrep git
+   29  git add .
+   30  git commit -m "Add existing file"
+   31  git push origin master
+   32  l
+   33  exit
+   34  cd rhip/analysisCodes/
+   35  l
+   36  p plotsFromResults.cpp &
+   37  libreoffice --calc fitResults5.dat &
+   38  r -l -q plotsFromResults.cpp
+   39  clear
+   40  r -l -q plotsFromResults.cpp
+   41  clear
+   42  r -l -q plotsFromResults.cpp
+   43  clear
+   44  r -l -q plotsFromResults.cpp
+   45  exit
+   46  cd rhip/analysisCodes/
+   47  l
+   48  r -l -q plotsFromResults.cpp
+   49  clear
+   50  r -l -q plotsFromResults.cpp
+   51  exit
+   52  cd rhip/analysisCodes/
+   53  r -l -q plotsFromResults.cpp
+   54  l
+   55  display dETdEtaSumCent0.png 
+   56  r -l -q plotsFromResults.cpp
+   57  display dETdEtaSumCent0.png 
+   58  r -l -q plotsFromResults.cpp
+   59  l
+   60  display dETdEtaOverNpartBy2SumCent0.png &
+   61  r -l -q plotsFromResults.cpp
+   62  display dETdEtaOverNpartBy2SumCent0.png &
+   63  hgrep git
+   64  git add .; git commit -m "Add existing file"; git push origin master
+   65  exit
+   66  cd rhip/analysisCodes/
+   67  l
+   68  mkdir finalPlots
+   69  mkdir finalPlots/crossCheckPlots
+   70  mkdir finalPlots/newPlots
+   71  p plotsFromResults.cpp &
+   72  r -l -q plotsFromResults.cpp
+   73  display dETdEtaOverNpartBy2SumCent0.png &
+   74  l
+   75  l finalPlots/
+   76  r -l -q plotsFromResults.cpp
+   77  l
+   78  cd finalPlots/crossCheckPlots/
+   79  l
+   80  mkdir finalPlots/crossCheckPlots/dETdEtaOverNpartBy2Sum
+   81  mkdir dETdEtaOverNpartBy2Sum
+   82  mkdir dETdEtaOverNpartBy2perParticle
+   83  rm dETdEtaOverNpartBy2perParticle
+   84  rmdir dETdEtaOverNpartBy2perParticle
+   85  l
+   86  mv dETdEtaOverNpartBy2Sum dETdEtaOverNpartBy2vsEn
+   87  l
+   88  mkdir dETdEtaOverdNchdEta_En
+   89  mv dETdEtaOverNpartBy2vsEn dETdEtaOverNpartBy2_En
+   90  l
+   91  mkdir dETdEtaOverdNchdEta_Npart
+   92  mkdir dETdEtaOverNpartBy2_Npart
+   93  l
+   94  cd ../..
+   95  r -l -q plotsFromResults.cpp
+   96  l
+   97  r -l -q plotsFromResults2.cpp
+   98  hgrep libre
+   99  libreoffice --calc fitResults5.dat &
+  100  r -l -q plotsFromResults2.cpp
+  101  exit
+  102  cd rhip/analysisCodes/
+  103  r -l -q plotsFromResults2.cpp
+  104  cd ..
+  105  cd -
+  106  r -l -q plotsFromResults2.cpp
+  107  exit
+  108  cd rhip/analysisCodes/
+  109  l
+  110  p plotsFromResults2.cpp &
+  111  r -l -q plotsFromResults2.cpp
+  112  exit
+  113  cd rhip/analysisCodes/
+  114  l
+  115  exit
+  116  cd rhip/analysisCodes/
+  117  l
+  118  p plotsFromResults2.cpp &
+  119  r -l -q plotsFromResults2.cpp
+  120  r -l -q etVsSqrts.C 
+  121  clear
+  122  r -l -q etVsSqrts.C 
+  123  clear
+  124  r -l -q etVsSqrts.C 
+  125  clear
+  126  r -l -q etVsSqrts.C 
+  127  clear
+  128  r -l -q etVsSqrts.C 
+  129  clear
+  130  r -l -q etVsSqrts.C 
+  131  clear
+  132  r -l -q etVsSqrts.C 
+  133  clear
+  134  r -l -q etVsSqrts.C 
+  135  clear
+  136  r -l -q etVsSqrts.C 
+  137  clear
+  138  r -l -q etVsSqrts.C 
+  139  l
+  140  cd ../..
+  141  l
+  142  cd -
+  143  l
+  144  pwd
+  145  l
+  146  r -l -q etVsSqrts.C 
+  147  l
+  148  l debugPlots/
+  149  r -l -q plotsFromResults2.cpp
+  150  hgrep git
+  151  git add .; git commit -m "Add existing file"; git push origin master
+  152  hgrep libre
+  153  libreoffice --calc fitResults5.dat &
+  154  git add .; git commit -m "Add existing file"; git push origin master
+  155  exit
+  156  cd rhip/analysisCodes/
+  157  r
+  158  p TMVAClassification.C
+  159  hgrep libre
+  160  libreoffice --calc fitResults5.dat &
+  161  p &
+  162  exit
+  163  cd rhip/analysisCodes/
+  164  l
+  165  r TMVAClassification.C 
+  166  libreoffice --writer &
+  167  r -l -q TMVAClassification.C 
+  168  clear
+  169  r -l -q TMVAClassification.C 
+  170  cd rhip/analysisCodes/
+  171  l
+  172  p plotsFromResults3.cpp &
+  173  r -l -q plotsFromResults3.cpp
+  174  l
+  175  l debugPlots/
+  176  p etVsSqrts.C &
+  177  r -l -q plotsFromResults3.cpp
+  178  exit
+  179  cd rhip/analysisCodes/
+  180  r -l -q plotsFromResults3.cpp
+  181  hgrep git
+  182  git add .; git commit -m "Add existing file"; git push origin master
+  183  l
+  184  r -l -q plotsFromResults3.cpp
+  185  git add .; git commit -m "Add existing file"; git push origin master
+  186  exit
+  187  which python
+  188  python --version
+  189  pip install plotly
+  190  python
+  191  sudo pip install plotly
+  192  cd rhip/analysisCodes/
+  193  python
+  194  p parallelCoordTrial1.csv &
+  195  mv parallelCoordTrial1.csv parallelCoordTrial1.py
+  196  python parallelCoordTrial1.py 
+  197  pip install pandas
+  198  sudo pip install pandas
+  199  python parallelCoordTrial1.py 
+  200  sudo pip install pandas
+  201  python parallelCoordTrial1.py 
+  202  python
+  203  l
+  204  python parallelCoordTrial1.py 
+  205  python
+  206  python parallelCoordTrial1.py 
+  207  python
+  208  plotly --version
+  209  p ~/.plotly/.credentials &
+  210  python parallelCoordTrial1.py 
+  211  p parallelCoordTrial1.py &
+  212  plotly --version
+  213  python
+  214  python parallelCoordTrial1.py 
+  215  source ~/.plotly/.credentials
+  216  update ~/.plotly/.credentials
+  217  p ~/.plotly/.credentials &
+  218  p parallelCoordTrial1.py &
+  219  python parallelCoordTrial1.py 
+  220  p ~/.plotly/.credentials &
+  221  python parallelCoordTrial1.py 
+  222  p parallelCoordTrial1.py &
+  223  python parallelCoordTrial1.py 
+  224  python
+  225  exit
+  226  cd rhip/analysisCodes/
+  227  l
+  228  p plotsFromResults3.cpp &
+  229  r -l -q plotsFromResults3.cpp
+  230  clear
+  231  r -l -q plotsFromResults3.cpp
+  232  clear
+  233  r -l -q plotsFromResults3.cpp
+  234  hgrep git
+  235  git add .; git commit -m "Add existing file"; git push origin master
+  236  l
+  237  mkdir oldVersions
+  238  hgrep BESDataToRootFile
+  239  hgrep BESData_
+  240  r -l -q plotsFromResults3.cpp
+  241  l
+  242  git add .; git commit -m "Add existing file"; git push origin master
+  243  pip install anaconda
+  244  python -mpip install matplotlib
+  245  sudo python -mpip install matplotlib
+  246  sudo pip install python-dev
+  247  pip install --upgrade pip
+  248  sudo pip install --upgrade pip
+  249  sudo pip install python-dev
+  250  sudo apt-get install python-dev
+  251  sudo dnf install python2-devel
+  252  sudo python -mpip install matplotlib
+  253  python
+  254  hgrep sudo
+  255  sudo dnf install python2-Tk
+  256  sudo dnf install python2-tk
+  257  sudo dnf install python2-Tkinter
+  258  sudo dnf install python-Tkinter
+  259  sudo pip install python-tk
+  260  sudo pip install python-Tk
+  261  sudo pip install python2-Tk
+  262  sudo pip install python2-tk
+  263  sudo pip install python-tk
+  264  sudo install apt-get
+  265  sudo yum install python2-tk
+  266  sudo yum install python-tk
+  267  sudo yum install python2-Tk
+  268  sudo yum install python-tk
+  269  sudo dnf install python-tk
+  270  sudo dnf remove python-tk
+  271  firefox https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz
+  272  wget -O ~/Downloads/ "https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz"
+  273  wget -O /home/Downloads/ "https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz"
+  274  wget  -O /home/Downloads/ "https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz"
+  275  sudo dnf install wget
+  276  wget  -O /home/Downloads/ "https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz"
+  277  cd ~
+  278  wget "https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz"
+  279  l
+  280  find "tcl8.6.7-src.tar.gz"
+  281  find tcl8.6.7-src.tar.gz
+  282  l
+  283  l tc*
+  284  hgrep tar
+  285  tar -xvzf tcl8.6.7-src.tar.gz 
+  286  cd tcl8.6.7/unix
+  287  l
+  288  ./configure --prefix=/home/tcl --exec-prefix=/home/tcl
+  289  make
+  290  make install
+  291  sudo make install
+  292  wget "https://prdownloads.sourceforge.net/tcl/tk8.6.7-src.tar.gz"
+  293  l
+  294  mv tk8.6.7-src.tar.gz ~/Downloads/
+  295  cd ~/Downloads/
+  296  tar -xvzf tk8.6.7-src.tar.gz 
+  297  cd tk8.6.7/unix/
+  298  ./configure --prefix=/home/tk --exec-prefix=/home/tk --with-tcl=/home/tcl/tcl8.6.7/unix
+  299  ./configure --prefix=/home/tk --exec-prefix=~/tk --with-tcl=/home/tcl8.6.7/unix
+  300  ./configure --prefix=/home/ --exec-prefix=/home/ --with-tcl=/home/tcl8.6.7/unix
+  301  ./configure --prefix=/home/ --exec-prefix=/home/ --with-tcl=~/tcl8.6.7/unix
+  302  ./configure --prefix=/home/bsharma6 --exec-prefix=/home/bsharma6 --with-tcl=~/bsharma6/tcl8.6.7/unix
+  303  ./configure --prefix=/home/bsharma6 --exec-prefix=/home/bsharma6 --with-tcl=/home/bsharma/tcl8.6.7/unix
+  304  sudo make
+  305  sudo make install
+  306  whereis python
+  307  hgrep python
+  308  cd ../..
+  309  cd ..
+  310  find python
+  311  l
+  312  which python
+  313  cd /usr/bin/python
+  314  cd /usr/bin/
+  315  l py*
+  316  python setup.py
+  317  cd ../..
+  318  l
+  319  cd ~
+  320  find setup.py
+  321  l
+  322  cd rhip/analysisCodes/
+  323  l
+  324  libreoffice --calc fitResults5.dat &
+  325  p fitResults5_python.csv &
+  326  cd ~/tcl8.6.7/unix/
+  327  l tclC*
+  328  pwd
+  329  python
+  330  rpm -q vsftpd
+  331  sudo yum install vsftpd
+  332  ftp://195.220.108.108/linux/centos/7.3.1611/os/x86_64/Packages/tix-8.4.3-12.el7.x86_64.rpm
+  333  firefox ftp://195.220.108.108/linux/centos/7.3.1611/os/x86_64/Packages/tix-8.4.3-12.el7.x86_64.rpm
+  334  cat /etc/issue
+  335  which fedora
+  336  fedora --version
+  337  cat /etc/redhat-release 
+  338  l ./Downloads/
+  339  l
+  340  l tcl8.6.7/
+  341  cd tcl8.6.7/
+  342  which rpm
+  343  l ../
+  344  rpm ../Downloads/tix-8.4.3-17.fc24.x86_64.rpm 
+  345  rpm -ivh ../Downloads/tix-8.4.3-17.fc24.x86_64.rpm 
+  346  which tk
+  347  tk --version
+  348  sudo dnf install tk
+  349  python
+  350  hgrep python
+  351  sudo dnf install python2-tk
+  352  sudo dnf install python-tk
+  353  sudo dnf install python2-Tk
+  354  sudo dnf install python-Tk
+  355  sudo dnf install tkinter
+  356  l
+  357  cd ~
+  358  l
+  359  sudo dnf install Tkinter
+  360  sudo dnf install python-tk
+  361  sudo dnf install python-Tk
+  362  sudo dnf install python2-tk
+  363  sudo dnf install python2-Tk
+  364  python
+  365  exit
+  366  python
+  367  cd rhip/analysisCodes/
+  368  python parallelCoordinates.py
+  369  p parallelCoordinates.py &
+  370  python parallelCoordinates.py
+  371  p parallelCoordinates.py &
+  372  python parallelCoordinates.py
+  373  exit
+  374  hgrep git
+  375  git add .; git commit -m "Add existing file"; git push origin master
+  376  exit
+  377  exir
+  378  exit
+  379  cd rhip/analysisCodes/
+  380  l
+  381  pwd
+  382  head fitResults5_python.csv 
+  383  p parallelCoordinates.py
+  384  cd rhip/analysisCodes/
+  385  l
+  386  libreoffice --calc fitResults5.dat &
+  387  cd ..
+  388  l
+  389  cd trialCodes/
+  390  l
+  391  cd integrals/
+  392  l
+  393  p fitTrialClean.cpp &
+  394  r
+  395  l
+  396  r new TBrowser
+  397  r -l -q fitTrialClean.cpp 
+  398  l
+  399  p allinone.cpp &
+  400  r -l -q  allinone.cpp
+  401  l
+  402  r
+  403  cd ..
+  404  l
+  405  p BESData.txt &
+  406  p BESData_sorted_transformed.cpp &
+  407  hgrep *_sorted_trans*
+  408  hgrep *_forSorted*
+  409  hgrep *ToRoot*
+  410  hgrep ToRootFile
+  411  hgrep _forSorted
+  412  hgrep _sorted_trans
+  413  l
+  414  p BESData_forSorted.cpp &
+  415  cd ~/rhip/analysisCodes/
+  416  p README.txt &
+  417  cd -
+  418  cd integrals/
+  419  r -l -q  allinone.cpp
+  420  cd ../../analysisCodes/
+  421  l
+  422  p fitBESData5_1.cpp &
+  423  cd rhip/analysisCodes/
+  424  p fitBESData5_2.cpp &
+  425  hgrep source
+  426  source analyzeAllHistos.bash 
+  427  p fitBESData5_trial.h *
+  428  p fitBESData5_trial.h &
+  429  source analyzeAllHistos.bash 
+  430  l
+  431  r -l -q plotsFromResults3.cpp 
+  432  libreoffice --calc fitResults5.dat &
+  433  git add .; git commit -m "Add existing file"; git push origin master
+  434  l
+  435  p README.txt &
+  436  p fitBESData5.h &
+  437  exit
+  438  libreoffice --calc fitResults5.dat &
+  439  cd rhip/analysisCodes/
+  440  libreoffice --calc fitResults5.dat &
+  441  exit
+  442  cd rhip/analysisCodes/
+  443  l
+  444  p fitResults5.dat &
+  445  libreoffice --calc fitResults5.dat &
+  446  l
+  447  r -l -q plotFromResults3.cpp
+  448  r -l -q plotsFromResults3.cpp 
+  449  l
+  450  p plotsFromResults3.cpp &
+  451  exit
+  452  cd rhip/analysisCodes/
+  453  l
+  454  p ALICEDataMacro.C &
+  455  r ALICEDataMacro.C 
+  456  mv ALICEDataMacro.C ALICEDataToRootFile.C
+  457  p ALICEDataToRootFile.C &
+  458  p fitALICE2013.cpp &
+  459  r ALICEDataToRootFile.C 
+  460  cd rhip/analysisCodes/
+  461  l
+  462  p ALICEDataToRootFile.C &
+  463  .q
+  464  mv ALICEDataToRootFile.C ALICE2013DataToRootFile.C
+  465  r ALICEDataToRootFile.C 
+  466  p fitALICE2013Data.cpp &
+  467  l
+  468  mv ALICEDataToRootFile.C ALICE2013DataToRootFile.C
+  469  l
+  470  p ALICE2013DataToRootFile.C &
+  471  r ALICE2013DataToRootFile.C 
+  472  exit
+  473  cd rhip/analysisCodes/
+  474  l
+  475  p fitALICE2013Data.cpp &
+  476  r
+  477  r fitALICE2013Data.cpp &
+  478  .q
+  479  exit
+  480  cd rhip/analysisCodes/
+  481  r fitALICE2013Data.cpp &
+  482  .q
+  483  l
+  484  more ALICE2013Results.dat 
+  485  tail ALICE2013Results.dat 
+  486  l
+  487  r fitALICE2013Data.cpp &
+  488  .q
+  489  r fitALICE2013Data.cpp &
+  490  .q
+  491  r fitALICE2013Data.cpp &
+  492  .q
+  493  r fitALICE2013Data.cpp &
+  494  .q
+  495  r fitALICE2013Data.cpp &
+  496  exit
+  497  cd rhip/analysisCodes/
+  498  r fitALICE2013Data.cpp &
+  499  exit
+  500  r fitALICE2013Data.cpp &
+  501  exit
+  502  cd rhip/analysisCodes/
+  503  r fitALICE2013Data.cpp &
+  504  exit
+  505  r fitALICE2013Data.cpp &
+  506  exit
+  507  cd rhip/analysisCodes/
+  508  l
+  509  r fitALICE2013Data.cpp &
+  510  exit
+  511  cd rhip/analysisCodes/
+  512  r fitALICE2013Data.cpp &
+  513  .q
+  514  exit
+  515  r fitALICE2013Data.cpp &
+  516  .q
+  517  exit
+  518  l
+  519  r fitALICE2013Data.cpp &
+  520  q
+  521  r fitALICE2013Data.cpp &
+  522  q
+  523  exit
+  524  r fitALICE2013Data.cpp &
+  525  q
+  526  exit
+  527  r fitALICE2013Data.cpp &
+  528  exit
+  529  cd rhip/analysisCodes/
+  530  r fitALICE2013Data.cpp &
+  531  exit
+  532  cd rhip/analysisCodes/
+  533  r fitALICE2013Data.cpp &
+  534  exit
+  535  cd rhip/analysisCodes/
+  536  r fitALICE2013Data.cpp &
+  537  exit
+  538  cd rhip/analysisCodes/
+  539  r fitALICE2013Data.cpp &
+  540  r ALICE2013DataToRootFile.C &
+  541  q
+  542  exit
+  543  r fitALICE2013Data.cpp &
+  544  l
+  545  r fitALICE2013Data.cpp &
+  546  r ALICE2013DataToRootFile.C &
+  547  exit
+  548  r fitALICE2013Data.cpp &
+  549  exit
+  550  cd rhip/analysisCodes/
+  551  r fitALICE2013Data.cpp &
+  552  cp fitBESData5.h fitALICE2013Data.h
+  553  l
+  554  p fitALICE2013Data.h &
+  555  r fitALICE2013Data.cpp &
+  556  clear
+  557  r fitALICE2013Data.cpp &
+  558  exit
+  559  cd rhip/analysisCodes/
+  560  r fitALICE2013Data.cpp &
+  561  r
+  562  exit
+  563  cd rhip/analysisCodes/
+  564  r fitALICE2013Data.cpp &
+  565  exit
+  566  r fitALICE2013Data.cpp &
+  567  exit
+  568  cd rhip/analysisCodes/
+  569  r ALICE2013DataToRootFile.C &
+  570  exit
+  571  cd rhip/analysisCodes/
+  572  r fitALICE2013Data.cpp &
+  573  q
+  574  exit
+  575  r
+  576  r fitALICE2013Data.cpp &
+  577  exit
+  578  r fitALICE2013Data.cpp &
+  579  exit
+  580  cd rhip/analysisCodes/
+  581  r fitALICE2013Data.cpp &
+  582  exit
+  583  r fitALICE2013Data.cpp &
+  584  exit
+  585  cd rhip/analysisCodes/
+  586  r fitALICE2013Data.cpp &
+  587  exit
+  588  r fitALICE2013Data.cpp &
+  589  exit
+  590  cd rhip/analysisCodes/
+  591  r fitALICE2013Data.cpp &
+  592  exit
+  593  r fitALICE2013Data.cpp &
+  594  exit
+  595  cd rhip/analysisCodes/
+  596  r fitALICE2013Data.cpp &
+  597  exit
+  598  r fitALICE2013Data.cpp &
+  599  exit
+  600  cd rhip/analysisCodes/
+  601  r fitALICE2013Data.cpp &
+  602  exit
+  603  l
+  604  cp fitBESData5_1.cpp fitALICE2013Data.cpp
+  605  cp fitBESData5.h fitALICE2013Data.h
+  606  p fitALICE2013Data.cpp &
+  607  cd rhip/analysisCodes/
+  608  l
+  609  cp ALICE2013DataToRootFile.C ALICE2013DataToRootFile_th1.C
+  610  l
+  611  p ALICE2013DataToRootFile_th1.C &
+  612  p BESDataToRootFile.cpp &
+  613  p BESData_sorted.txt &
+  614  libreoffice --calc ALICE2013Data.txt &
+  615  p ALICE2013Data.txt &
+  616  libreoffice --calc ALICE2013Data.txt &
+  617  l
+  618  p ALICE2013Data.txt &
+  619  mv ALICE2013DataToRootFile_th1.C ALICE2013DataToRootFile_th1.cpp
+  620  l
+  621  p ALICE2013DataToRootFile_th1.cpp &
+  622  r ALICE2013DataToRootFile_th1.cpp
+  623  l
+  624  rm ALICE2013Spec_th1d.root 
+  625  r ALICE2013DataToRootFile_th1.cpp
+  626  libreoffice --calc ALICE2013Data.ods &
+  627  l
+  628  rm ALICE2013Spec_th1d.root 
+  629  l
+  630  r ALICE2013DataToRootFile_th1.cpp
+  631  r fitALICE2013Data1.cpp &
+  632  l
+  633  exit
+  634  cd rhip/analysisCodes/
+  635  r fitALICE2013Data1.cpp &
+  636  exit
+  637  r fitALICE2013Data1.cpp &
+  638  exit
+  639  cd rhip/analysisCodes/
+  640  cd debugPlots/
+  641  l
+  642  r ALICE2013DataToRootFile_th1.cpp
+  643  cd -
+  644  r ALICE2013DataToRootFile_th1.cpp
+  645  r fitALICE2013Data1.cpp &
+  646  exit
+  647  cd rhip/analysisCodes/
+  648  r
+  649  hgrep rm
+  650  rm ALICE2013Spec_th1d.root 
+  651  r ALICE2013DataToRootFile_th1.cpp
+  652  r fitALICE2013Data1.cpp &
+  653  exit
+  654  r fitALICE2013Data1.cpp &
+  655  l
+  656  libreoffice --calc ALICE2013Results.dat &
+  657  r fitALICE2013Data1.cpp &
+  658  exit
+  659  cd rhip/analysisCodes/
+  660  r fitALICE2013Data1.cpp &
+  661  cd rhip/analysisCodes/
+  662  r fitALICE2013Data1.cpp &
+  663  cd rhip/analysisCodes/
+  664  r fitALICE2013Data1.cpp &
+  665  cd rhip/analysisCodes/
+  666  l
+  667  p fitALICE2013Data1.cpp &
+  668  r fitALICE2013Data1.cpp &
+  669  cd rhip/analysisCodes/
+  670  l
+  671  r
+  672  exit
+  673  cd rhip/analysisCodes/
+  674  l
+  675  p fitALICE2013Data1.cpp &
+  676  r fitALICE2013Data1.cpp 
+  677  l
+  678  r
+  679  r fitSpecFromETAnalasysNote.cpp 
+  680  exit
+  681  cd rhip/analysisCodes/
+  682  l
+  683  cd publication
+  684  l
+  685  p abstract1.tex &
+  686  hgrep abstract1.tex 
+  687  l ..
+  688  p ../history_11-13-2017.txt &
+  689  hgrep .tex
+  690  hgrep appendix
+  691  hgrep "appendix
+  692  hgrep Rebecca*
+  693  hgrep "Rebecca*"
+  694  p Rebecca/RebeccaScott-dissertation.tex &
+  695  l
+  696  l Rebecca/
+  697  p Rebecca/chapter-1.tex &
+  698  emacs Rebecca/chapter-1.tex &
+  699  l
+  700  p b_chapter-1.tex &
+  701  cd rhip/analysisCodes/
+  702  l
+  703  hgrep git
+  704  git add .; git commit -m "Add existing file"; git push origin master
+  705  cd publication/
+  706  l
+  707  p b_chapter-1.tex &
+  708  cd ..
+  709  l
+  710  p ALICE2013DataToRootFile.C &
+  711  mv ALICE2013DataToRootFile.C ./oldVersions/
+  712  l
+  713  mv ALICE2013Spec.root ./oldVersions/
+  714  mv fitALICE2013Data_-1.h ./oldVersions/
+  715  mv fitALICE2013Data_-1.cpp ./oldVersions/
+  716  head fitALICE2013Data.cpp
+  717  p fitALICE2013Data.cpp &
+  718  hgrep fitALICE2013Data.cpp
+  719  l
+  720  mv fitALICE2013Data.cpp ./oldVersions/
+  721  l
+  722  head ALICE2013Data.txt 
+  723  head ALICE2013Data.ods
+  724  l
+  725  mv ALICE2013Data.ods ./oldVersions/
+  726  p ALICE2013DataToRootFile_th1.cpp &
+  727  exit
+  728  cd rhip/analysisCodes/
+  729  l
+  730  p ALICE2013DataToRootFile_th1.cpp &
+  731  p fitALICE2013Data.h &
+  732  p fitSampleSpec.cpp &
+  733  p fitALICE2013Data1.cpp &
+  734  p fitSpecFromETAnalasysNote.cpp &
+  735  l
+  736  hgrep git
+  737  history>history_12-12-2017.txt
+  738  git add .; git commit -m "Add existing file"; git push origin master
+  739  exit
+  740  cd rhip/analysisCodes/
+  741  l
+  742  p fitALICE2013Data1.cpp &
+  743  r ALICE2013ToRootFile_trans.cpp 
+  744  l
+  745  p ALICE2013ToRootFile_trans.cpp &
+  746  r ALICE2013ToRootFile_trans.cpp 
+  747  l
+  748  p fitALICE2013Data.h &
+  749  l
+  750  r fitALICE2013Data1_transformed.cpp
+  751  l
+  752  r fitALICE2013Data1.cpp &
+  753  .q
+  754  p fitALICE2013Data1.cpp &
+  755  r fitALICE2013Data1.cpp
+  756  p fitALICE2013Data1.cpp &
+  757  r fitALICE2013Data1.cpp
+  758  r fitALICE2013Data1_transformed.cpp
+  759  exit
+  760  cd rhip/analysisCodes/
+  761  l
+  762  l *.h
+  763  more README
+  764  more README.txt 
+  765  l
+  766  l *.h
+  767  mv fitBESData5_trial.h ./oldVersions/
+  768  p fitBESData5.h &
+  769  p README.txt &
+  770  l *.h
+  771  p fitALICE2013Data_transformed.h &
+  772  l
+  773  clear
+  774  l
+  775  clear
+  776  l
+  777  p fitResultsToTFile.C &
+  778  mv fitResultsToTFile.C ./oldVersions/
+  779  p etVsSqrts.C &
+  780  mv etVsSqrts.C ./oldVersions/
+  781  p parallelCoordinates.py &
+  782  p ALICE2013Data.txt &
+  783  p fitSampleSpec.cpp &
+  784  p fitSpecFromETAnalasysNote.cpp &
+  785  p ALICE2013ToRootFile_trans.cpp &
+  786  p fitALICE2013Data1.cpp &
+  787  hgrep git
+  788  git add .; git commit -m "Add existing file"; git push origin master
+  789  exit
+  790  cd rhip
+  791  l
+  792  cd trialCodes/
+  793  l
+  794  p fibonacci.C &
+  795  r fibonacci.C 
+  796  exittttttt
+  797  exit
+  798  cd rhip/analysisCodes/
+  799  l
+  800  p README.txt &
+  801  r -l
+  802  p fitSpecFromETAnalasysNote.cpp &
+  803  p ETAnalysisNoteSpecResults &
+  804  more ETAnalysisNoteSpecResults
+  805  more ETAnalysisNoteSpecResults.dat 
+  806  p ETAnalysisNoteSpecResults.dat &
+  807  libreoffice --calc ETAnalysisNoteSpecResults.dat &
+  808  l
+  809  l debugPlots/
+  810  r 
+  811  l
+  812  p ALICE2013Data_v2.txt &
+  813  p ALICE2013ToRootFile_trans.cpp &
+  814  r ALICE2013ToRootFile_trans.cpp
+  815  l
+  816  hgrep git
+  817  git add .; git commit -m "Add existing file"; git push origin master
+  818  cd rhip/
+  819  cd analysisCodes/
+  820  l
+  821  r
+  822  hgrep find
+  823  cd ~
+  824  find PiPlus*
+  825  find "PiPlus*"
+  826  find "PiPlus.C"
+  827  find "piPlus.C"
+  828  cd -
+  829  l
+  830  l oldVersions/
+  831  p ../fromCharles/macros/piPlus.C &
+  832  l
+  833  p fitALICE2013Data1_transformed.cpp &
+  834  p ~/.root_hist &
+  835  r
+  836  l
+  837  r
+  838  p fitALICE2013Data1_transformed.cpp &
+  839  p ALICE2013ToRootFile_trans.cpp &
+  840  p ALICE2013Data_v2.txt &
+  841  r
+  842  p ALICE2013DataToRootFile_th1.cpp &
+  843  p BESDataToRootFile.cpp &
+  844  l oldVersions/
+  845  p oldVersions/BESData_sorted_transformed.cpp &
+  846  cd rhip/analysisCodes/
+  847  k
+  848  l
+  849  p ALICE2013DataToRootFile_th1.cpp &
+  850  r
+  851  p ALICE2013DataToRootFile_th1.cpp &
+  852  p README.txt &
+  853  r h->SetBinContent(j+1,
+  854  r ALICE2013DataToRootFile_th1.cpp
+  855  ls -ltr
+  856  r
+  857  r ALICE2013DataToRootFile_th1.cpp
+  858  l
+  859  r
+  860  l
+  861  p fitALICE2013Data1_transformed.cpp &
+  862  p ALICE2013ToRootFile_trans.cpp &
+  863  r ALICE2013ToRootFile_trans.cpp
+  864  l
+  865  r
+  866  p ALICE2013ToRootFile_trans.cpp &
+  867  r ALICE2013ToRootFile_trans.cpp
+  868  l
+  869  r
+  870  hgrep git
+  871  git add .; git commit -m "Add existing file"; git push origin master
+  872  exit
+  873  cd rhip/analysisCodes/
+  874  l
+  875  history
+  876  source *.bash
+  877  exit
+  878  cd rhip/analysisCodes/
+  879  source *.bash
+  880  hgrep git
+  881  git add .; git commit -m "Add existing file"; git push origin master
+  882  exit
+  883  cd rhip/analysisCodes/publication/
+  884  l
+  885  cd references/
+  886  l
+  887  p references-Biswas.bib &
+  888  cd ..
+  889  l
+  890  emacs Rebecca/chapter-1.tex &
+  891  l
+  892  p b_chapter-1.tex &
+  893  l Rebecca/
+  894  emacs Rebecca/chapter-1.tex &
+  895  which latex
+  896  which texlive
+  897  whereis latex
+  898  whereis texlive
+  899  l
+  900  pdflatex b_chapter-1.tex 
+  901  sudo texconfig rehash
+  902  pdflatex b_chapter-1.tex 
+  903  whereis updmap.d
+  904  cd /usr/bin/
+  905  l
+  906  whereis texmf
+  907  cd ../share/
+  908  cd texmf/
+  909  l
+  910  sudo texconfig rehash
+  911  pdflatex b_chapter-1.tex 
+  912  cd /usr/local/
+  913  sudo dnf install texlive
+  914  pdflatex b_chapter-1.tex 
+  915  sudo dnf install texlive-
+  916  sudo dnf install texlive*
+  917  l
+  918  cd ~
+  919  l
+  920  cd rhip/analysisCodes/publication/
+  921  l
+  922  pdflatex b_chapter-1.tex 
+  923  cd ..
+  924  l
+  925  hgrep git
+  926  git add .; git commit -m "Add existing file"; git push origin master
+  927  exit
+  928  l
+  929  sudo dnf install texmaker-5.0.2-fedora_27.x86_64.rpm
+  930  sudo dnf install -- allowerasing texmaker-5.0.2-fedora_27.x86_64.rpm
+  931  sudo dnf --allowerasing install texmaker-5.0.2-fedora_27.x86_64.rpm
+  932  sudo dnf install Qt
+  933  sudo dnf update && sudo dnf upgrade
+  934  sudo dnf --allowerasing install texmaker-5.0.2-fedora_27.x86_64.rpm
+  935  sudo dnf install texmaker-1\:4.5-2.fc25.x86_64 
+  936  which texmaker 
+  937  whereis texmaker
+  938  cd ~/rhip/analysisCodes/publication/
+  939  l
+  940  texmaker &
+  941  cd ..
+  942  git add .; git commit -m "Add existing file"; git push origin master
+  943  l
+  944  r plotsFromResults3.cpp 
+  945  libreoffice --calc fitResults5.dat &
+  946  l
+  947  cp parallelCoordinates.py ./debugPlots/
+  948  python parallelCoordinates.py 
+  949  exit
+  950  p ALICE2013DataToRootFile_th1.cpp &
+  951  p fitBESData5_1.cpp &
+  952  p BESDataToRootFile.cpp &
+  953  l
+  954  r ALICE2013DataToRootFile_th1.cpp
+  955  l
+  956  r
+  957  r ALICE2013ToRootFile_trans.cpp &
+  958  l
+  959  p ALICE2013ToRootFile_trans.cpp &
+  960  r ALICE2013ToRootFile_trans.cpp
+  961  r ALICE2013DataToRootFile_th1.cpp 
+  962  r
+  963  r ALICE2013DataToRootFile_th1.cpp 
+  964  l
+  965  r ALICE2013ToRootFile_trans.cpp
+  966  history
+  967  p ~/.root_hist &
+  968  r
+  969  git add .; git commit -m "Add existing file"; git push origin master
+  970  exit
+  971  cd rhip/analysisCodes/
+  972  l
+  973  p README.txt &
+  974  p ALICE2013ToRootFile_trans.cpp &
+  975  p BESData_sorted.txt &
+  976  p fitSampleSpec.cpp &
+  977  r fitSampleSpec.cpp 
+  978  exit
+  979  cd rhip/analysisCodes/
+  980  r fitSampleSpec.cpp 
+  981  exit
+  982  cd rhip/analysisCodes/
+  983  l
+  984  p ALICE2013ToRootFile_trans.cpp &
+  985  exit
+  986  cd rhip/analysisCodes/
+  987  l
+  988  p ALICE2013ToRootFile_trans.cpp &
+  989  r ALICE2013ToRootFile_trans.cpp
+  990  l
+  991  r
+  992  r fitSampleSpec.cpp 
+  993  exit
+  994  r fitSampleSpec.cpp 
+  995  exit
+  996  r fitSampleSpec.cpp 
+  997  exit
+  998  r fitSpecFromETAnalasysNote.cpp 
+  999  exit
+ 1000  cd rhip/analysisCodes/
+ 1001  l
+ 1002  history > history_01-29-2018.txt

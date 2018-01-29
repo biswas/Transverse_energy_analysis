@@ -63,7 +63,7 @@ nested loop structure:
 			Double_t tempDouble; /////////// flag used in debugging
 			Double_t binHighEdge; // only pushed_back after completion of while loop
 									// to avoid redundancy
-			/////// shifts data one bin to the leftbinEdgesVec.push_back(0.0);// to set the left-most edge to zero
+			/////// shifts data one bin to the left binEdgesVec.push_back(0.0);// to set the left-most edge to zero
 			while(in>>myDouble){// get single content from each of the 5 columns, and repeat
 									// until in.fail(), i,e. fail bit encountered
 								// fstream malfunction if input stream statement within loop body
