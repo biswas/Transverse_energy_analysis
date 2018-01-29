@@ -179,17 +179,20 @@ directory: publication
 *******************************************************************************
 Current debugging note:
 
+1. Estimated values of dET/dEta lower than those found in publications
+	- However, dET/dEta estimates fairly match those in transverse energy analysis note
+-------------------------------------------------------------------------------
+
+Past debugging notes:
+..................................................................................
 1. BGBW function not producing good fits to pi+ & pi- combined spectrum from:
 	http://aliceinfo.cern.ch/ArtSubmission/node/501
 	- good fits produced to spectra that are almost the same and available in SPECTRA_COMB_20120709.root
 	- the two spectra maily differ in that the latter has some bins in the beginning and at the end with bin content zero, whereas the former does not have those bins altogether
 Debug: see if limiting the range of fit to <3 produces similar fits
-	
-2. Estimated values of dET/dEta lower than those found in publications
-	- However, dET/dEta estimates fairly match those in transverse energy analysis note
--------------------------------------------------------------------------------
-
-Past debugging notes:
+--> It does not
+Hence, the only way the two spectra could have produced such different fits is that the errors are consistently smaller in the former
+^ Right! scaled up the errors similarly, and now the fits are good
 ..................................................................................
 -2. ALICE spectra match, but the errors and ETs don't match yet.
 Debugged: ETs match within error bars, so they are considered consistent after consultation with Dr. Nattrass.

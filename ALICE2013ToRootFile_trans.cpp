@@ -110,7 +110,11 @@ nested loop structure:
 							binContent[j-1]*2*TMath::Pi()*
 							(binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1])));
 				// ^ (data y-value multiplied by 2pi// not:*pt; pt = ptLow+0.5 of binWidth)
-				
+				//transform errors:
+				binContentErrStat[j-1] = binContentErrStat[j-1]*2*TMath::Pi()*
+							(binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1]));
+				binContentErrSys[j-1] = binContentErrSys[j-1]*2*TMath::Pi()*
+							(binEdgesVec[j-1]+0.5*(binEdgesVec[j]-binEdgesVec[j-1]));
 				// add errors in quadrature:
 				h->SetBinError(j,TMath::Sqrt(binContentErrStat[j-1]*binContentErrStat[j-1]
 								+binContentErrSys[j-1]*binContentErrSys[j-1]));
