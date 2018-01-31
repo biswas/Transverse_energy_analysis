@@ -122,7 +122,8 @@ directory: publication
 					(only) in this case, string histoName = h->GetName(); makes sense
 			3.2. h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 					this is the case applicable to SPECTRA_COMB_20120709.root
-		4. (depending on the histoName) particleID and its dependent variables
+		4. histoName in if(histoName != "cent7_ka-_Au+Au_7.7")
+			- (depending on the histoName) particleID and its dependent variables
 		5. fit parameters: funcBGBW->SetParameters(mass,0.99,0.30,0.1,1000.,type);
 		6. ylabel: ylabel = "#frac{d^{2}N}{dydp_{T}}";
 		7. depending on the ylabel, possible transformation to be applied
@@ -178,12 +179,59 @@ directory: publication
 34. fitALICE2013Data_v2_transf.cpp
 *******************************************************************************
 Current debugging note:
+..................................................................................
+- Need to fix the zeroes that appear in integral error calculation in the
+following rows in the result:
 
-1. Estimated values of dET/dEta lower than those found in publications
-	- However, dET/dEta estimates fairly match those in transverse energy analysis note
+5	7.7		pi-	3 STATUS=FAILED, CONVERGED with alt par
+6	7.7		pi-	4 STATUS=FAILED, CONVERGED with alt par
+7	7.7		pi-	5 STATUS=FAILED, CONVERGED with alt par
+9	7.7		pi-	7 STATUS=FAILED,	OK with alt par
+28	7.7		ka-	8 STATUS=CALL LIMIT, no fix with alt par
+37	7.7		ka+	8 STATUS=CALL LIMIT, no fix with alt par
+39	7.7		pba	1 STATUS=CALL LIMIT, no fix with alt par
+41	7.7		pba	3 STATUS=CALL LIMIT, no fix with alt par
+42	7.7		pba	4 OK with alt par
+44	7.7		pba	6 no fix with alt par
+45	7.7		pba	7 no fix with alt par
+46	7.7		pba	8 no fix with alt par
+52	7.7		pro	5 no fix with alt par
+62	11.5	pi-	6
+65	11.5	pi+	0
+72	11.5	pi+	7
+100	11.5	pba	8
+151	19.6	pba	5
+154	19.6	pba	8
+163	19.6	pro	8
+201	27		pba	1
+211	27		pro	2
+259	39		pba	5
+
+Strategy 1: analyze individual histograms using 22. fitSampleSpec.cpp
+-> problem found: STATUS of minimizing chi-squared for above
+histograms = either FAILED or CALL LIMIT, which means the
+error matrix is probably problematic in these cases
+Strategy 1.1: customize initial fit parameters
+..................................................................................
+- need to add lamda spectra from STAR Preliminary data on BES strangeness from email thread
+labeled "RHIP data"
+..................................................................................
+- add errors to cross-check plots and see if they match better with:
+https://arxiv.org/pdf/1509.06727.pdf#page=12
+-------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 
+
+
 Past debugging notes:
+..................................................................................
+1. Estimated values of dET/dEta lower than those found in publications
+	- However, dET/dEta estimates fairly match those in transverse energy analysis note
+Debugged: new estimates in agreement with publication
+(39 GeV 0-5% central pi- dET/dETA 76.6687, so that times 5 is around 380,
+a ballpark upper limit for total dET/dETA, which from publication, 
+https://arxiv.org/pdf/1509.06727.pdf#page=25, is 303. Ballpark lower limit
+is 76*3, which is around 230, so reasonable.)
 ..................................................................................
 1. BGBW function not producing good fits to pi+ & pi- combined spectrum from:
 	http://aliceinfo.cern.ch/ArtSubmission/node/501

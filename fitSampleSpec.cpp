@@ -22,7 +22,7 @@ Used to analyze any TH1D object within a TFile object by customizing:
 #include <string>
 #include "TKey.h"
 #include <fstream>
-#include "fitALICE2013Data.h"
+#include "fitBESData5.h"
 using namespace std;
 
 // forward declarations for methods in fitALICE2013Data.h:
@@ -39,7 +39,7 @@ Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 
 // main function:
 int fitSampleSpec(){
-	std::ofstream datFile ("sampleResults.dat", std::ofstream::out);
+	std::ofstream datFile ("debugZeroErrors.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
 			<< "centrality" << "\t"
@@ -86,7 +86,7 @@ int fitSampleSpec(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("ALICE2013Spec_v2_transformed.root");
+	TFile* myFile = new TFile("BESData.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
@@ -98,8 +98,8 @@ int fitSampleSpec(){
 	TF1* dNdEtaIntegrandFunc;
 	TF1* dNdyIntegrandFunc;
 	int breakOutForTesting =0;
-	int stop =1; // breakOut after this many iterations (if achieved); default: 140
-	while(1){
+	int stop =270; // breakOut after this many iterations (if achieved); default: 140
+	///while(1){
 	while((mikey=(TKey*)next())){
 		class1 = gROOT->GetClass(mikey->GetClassName());
 		if(!class1->InheritsFrom("TH1")){
@@ -138,6 +138,12 @@ int fitSampleSpec(){
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		string histoName = h->GetName();
+		if(histoName != "cent5_proton_Au+Au_7.7"){ // pi-/+, ka-/+, pbar, proton
+			breakOutForTesting++;
+			///cout << breakOutForTesting << endl;
+			if(breakOutForTesting>=stop) break;
+			else continue;
+		}
 		cout << "test bin content: " << h->GetBinContent(1) << endl;
 		Double_t collEn = 0.;// initialize
 		//cent8_ka+_Au+Au_7.7 // sample histo name
@@ -182,13 +188,31 @@ int fitSampleSpec(){
 		if (	histoName == "cent7_ka-_Au+Au_7.7"
 			|| 	histoName == "cent7_ka-_Au+Au_11.5"
 			||	histoName == "cent7_pi+_Au+Au_7.7"
-			||	histoName == "cent8_ka+_Au+Au_7.7"
 			||	histoName == "cent4_pi-_Au+Au_19.6"
 			||	histoName == "cent5_ka+_Au+Au_27"
 			||	histoName == "cent5_ka-_Au+Au_7.7"
-			||	histoName == "cent6_pi+_Au+Au_11.5")
+			||	histoName == "cent6_pi+_Au+Au_11.5"
+			
+			||	histoName == "cent3_pi-_Au+Au_7.7"
+			||	histoName == "cent4_pi-_Au+Au_7.7"
+			||	histoName == "cent5_pi-_Au+Au_7.7"
+			||	histoName == "cent7_pi-_Au+Au_7.7"
+			
+			
+			||	histoName == "cent4_pbar_Au+Au_7.7"
+			||	histoName == "cent8_pbar_Au+Au_7.7"
+			||	histoName == "cent5_proton_Au+Au_7.7"
+			// still not working:
+			||	histoName == "cent8_ka-_Au+Au_7.7"
+			||	histoName == "cent8_ka+_Au+Au_7.7"
+			||	histoName == "cent1_pbar_Au+Au_7.7"
+			||	histoName == "cent3_pbar_Au+Au_7.7"
+			||	histoName == "cent6_pbar_Au+Au_7.7"
+			||	histoName == "cent7_pbar_Au+Au_7.7"
+			)
 			{
 			funcBGBW->SetParameters(mass,0.9,0.03,0.01,10000.,type);
+			cout << "alternate init pars: 0.9,0.03,0.01,10000." << endl;
 			}
 			
 			
@@ -319,6 +343,7 @@ int fitSampleSpec(){
 		Double_t dNdyTErr = dNdyLErr+dNdy_d_err+dNdyRErr;
 		
 		cout <<"Integral from data for "<<histoName<<": "<<*(integralDataPtr+0)<<endl;// should be 363.7 for pi minus cent 0
+		cout << "dETdyLErr: " << dETdyLErr << endl;
 		cout<<"-----------------------------------"<<endl;				
 		//------ end Find integrals left and right of data points ----//
 		//------ begin - assign Npart and errors from BES paper -----//
@@ -390,7 +415,8 @@ int fitSampleSpec(){
 			//<< nDFBGBW<< "\nchi2/ndf: " << chi2BGBW/nDFBGBW <<endl;
 	
 		/* FIXME */
-		string imgPathAndName = "./debugPlots/"+histoName+".png";
+		time_t secFromEpoch;
+		string imgPathAndName = "./debugPlots/"+histoName+to_string(time(&secFromEpoch))+".png";
 				//c1 -> SaveAs("./fittedPlots/trial1.png");
 		TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
 		png->FromPad(c1);
@@ -404,6 +430,7 @@ int fitSampleSpec(){
 		/// sometimes when you delete objects, they stay in the program stack
 		//FIXME delete png;
 		mikey->DeleteBuffer();// works!
+		
 		breakOutForTesting++;
 		if(breakOutForTesting>=stop) break;
 		
@@ -415,8 +442,8 @@ int fitSampleSpec(){
 		delete c1;	// Rademakers
 		//delete mikey; // FIXME 9 segmentation violation
 		//delete class1; // segmentation violation
-	}
 	}// end of while loop to iterate through every key
+	///} // end of while(1)
 	/////////////delete c1;
 	//delete mikey;
 	//delete h;
