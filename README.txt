@@ -187,15 +187,15 @@ following rows in the result:
 6	7.7		pi-	4 STATUS=FAILED, CONVERGED with alt par
 7	7.7		pi-	5 STATUS=FAILED, CONVERGED with alt par
 9	7.7		pi-	7 STATUS=FAILED,	OK with alt par
-28	7.7		ka-	8 STATUS=CALL LIMIT, no fix with alt par
-37	7.7		ka+	8 STATUS=CALL LIMIT, no fix with alt par
-39	7.7		pba	1 STATUS=CALL LIMIT, no fix with alt par
-41	7.7		pba	3 STATUS=CALL LIMIT, no fix with alt par
+28	7.7		ka-	8 STATUS=CALL LIMIT, CONVERGED with alt par
+37	7.7		ka+	8 STATUS=CALL LIMIT, CONVERGED with alt par
+39	7.7		pba	1 STATUS=CALL LIMIT, NOT POS-DEF, but err fixed
+41	7.7		pba	3 STATUS=CALL LIMIT, CONVERGED with alt par
 42	7.7		pba	4 OK with alt par
-44	7.7		pba	6 no fix with alt par
-45	7.7		pba	7 no fix with alt par
-46	7.7		pba	8 no fix with alt par
-52	7.7		pro	5 no fix with alt par
+44	7.7		pba	6 insufficient iter, but err fixed
+45	7.7		pba	7 NOT POS-DEF, but err fixed
+46	7.7		pba	8 no fix with alt par, 17577 calls-------------
+52	7.7		pro	5 CONVERGED with alt par
 62	11.5	pi-	6
 65	11.5	pi+	0
 72	11.5	pi+	7
@@ -212,6 +212,10 @@ Strategy 1: analyze individual histograms using 22. fitSampleSpec.cpp
 histograms = either FAILED or CALL LIMIT, which means the
 error matrix is probably problematic in these cases
 Strategy 1.1: customize initial fit parameters
+- works for some but not all (see comments at the end of each of the data rows above)
+- worked for some after changing the maximum number of minimizer function calls to 10000 (default is 1000)
+Strategy 1.2: use maximum likelihood estimate/cross-validation instead of minimum chi-square
+- as elaborated in https://arxiv.org/pdf/1012.3754.pdf, chi-square minimization probably not a good way to fit non-linear models anyway!
 ..................................................................................
 - need to add lamda spectra from STAR Preliminary data on BES strangeness from email thread
 labeled "RHIP data"

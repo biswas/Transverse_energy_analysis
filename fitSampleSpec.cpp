@@ -138,7 +138,7 @@ int fitSampleSpec(){
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		string histoName = h->GetName();
-		if(histoName != "cent5_proton_Au+Au_7.7"){ // pi-/+, ka-/+, pbar, proton
+		if(histoName != "cent8_pbar_Au+Au_7.7"){ // pi-/+, ka-/+, pbar, proton
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
 			if(breakOutForTesting>=stop) break;
@@ -197,16 +197,15 @@ int fitSampleSpec(){
 			||	histoName == "cent4_pi-_Au+Au_7.7"
 			||	histoName == "cent5_pi-_Au+Au_7.7"
 			||	histoName == "cent7_pi-_Au+Au_7.7"
-			
-			
-			||	histoName == "cent4_pbar_Au+Au_7.7"
-			||	histoName == "cent8_pbar_Au+Au_7.7"
-			||	histoName == "cent5_proton_Au+Au_7.7"
-			// still not working:
-			||	histoName == "cent8_ka-_Au+Au_7.7"
-			||	histoName == "cent8_ka+_Au+Au_7.7"
-			||	histoName == "cent1_pbar_Au+Au_7.7"
+			||	histoName == "cent1_pbar_Au+Au_7.7"	// NOT POS-DEF		
 			||	histoName == "cent3_pbar_Au+Au_7.7"
+			||	histoName == "cent8_ka+_Au+Au_7.7"
+			||	histoName == "cent8_ka-_Au+Au_7.7"
+			||	histoName == "cent4_pbar_Au+Au_7.7"
+			//||	histoName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
+			||	histoName == "cent5_proton_Au+Au_7.7"
+						
+			// still not working:
 			||	histoName == "cent6_pbar_Au+Au_7.7"
 			||	histoName == "cent7_pbar_Au+Au_7.7"
 			)
@@ -236,6 +235,7 @@ int fitSampleSpec(){
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
+		ROOT::Math::MinimizerOptions::SetDefaultMaxFunctionCalls(20000);
 		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,5.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
