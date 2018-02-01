@@ -138,7 +138,7 @@ int fitSampleSpec(){
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		string histoName = h->GetName();
-		if(histoName != "cent8_pbar_Au+Au_7.7"){ // pi-/+, ka-/+, pbar, proton
+		if(histoName != "cent8_pi+_Au+Au_39"){ // pi-/+, ka-/+, pbar, proton
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
 			if(breakOutForTesting>=stop) break;
@@ -199,15 +199,24 @@ int fitSampleSpec(){
 			||	histoName == "cent7_pi-_Au+Au_7.7"
 			||	histoName == "cent1_pbar_Au+Au_7.7"	// NOT POS-DEF		
 			||	histoName == "cent3_pbar_Au+Au_7.7"
-			||	histoName == "cent8_ka+_Au+Au_7.7"
-			||	histoName == "cent8_ka-_Au+Au_7.7"
 			||	histoName == "cent4_pbar_Au+Au_7.7"
-			//||	histoName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
-			||	histoName == "cent5_proton_Au+Au_7.7"
-						
-			// still not working:
 			||	histoName == "cent6_pbar_Au+Au_7.7"
 			||	histoName == "cent7_pbar_Au+Au_7.7"
+			||	histoName == "cent8_ka+_Au+Au_7.7"
+			||	histoName == "cent8_ka-_Au+Au_7.7"
+			||	histoName == "cent6_pi-_Au+Au_11.5"
+			||	histoName == "cent0_pi+_Au+Au_11.5"
+			||	histoName == "cent7_pi+_Au+Au_11.5"
+			||	histoName == "cent8_proton_Au+Au_19.6"
+			||	histoName == "cent5_proton_Au+Au_7.7"
+			||	histoName == "cent6_pi+_Au+Au_27"
+			||	histoName == "cent2_ka-_Au+Au_27"
+			||	histoName == "cent3_ka+_Au+Au_27"
+			||	histoName == "cent7_pbar_Au+Au_27"
+			||	histoName == "cent8_pi+_Au+Au_39"
+						
+			// still not working:
+			// ||	histoName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
 			)
 			{
 			funcBGBW->SetParameters(mass,0.9,0.03,0.01,10000.,type);
@@ -217,7 +226,9 @@ int fitSampleSpec(){
 			
 			
 			
-		else if(histoName == "cent0_pis_Pb+Pb_2.76")
+		else if(histoName == "cent0_pis_Pb+Pb_2.76"
+			||	histoName == "cent8_pbar_Au+Au_7.7"
+			)
 			{
 			cout << "check2" << endl;
 			funcBGBW->SetParameters(mass,0.99,0.30,0.1,1000.,type);

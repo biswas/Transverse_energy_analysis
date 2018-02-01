@@ -178,7 +178,40 @@ directory: publication
 	- ordinate is dN/dpT
 34. fitALICE2013Data_v2_transf.cpp
 *******************************************************************************
+*******************************************************************************
+ToDos:
+..................................................................................
+- need to add lambda spectra from STAR Preliminary data on BES strangeness
+	1. clearify what "raw" means as opposed to "pT" in one of the directories
+	2. modify existing code to read data that is pointwise instead
+	 of binned and turn it into TGraphErrors objects instead of TH1D objects
+	3. modify existing code to use the fitting method of the TGraphErrors class
+	 instead of the TH1 class
+	4. figure out the correct method to take care of the fact that the lambda 
+	 spectra are available for slightly different centralities than the rest
+	 of the spectra; specifically, lambda spectra have centralities 40-60 and
+	 60-80 instead of 40-50, 50-60, 60-70, and 70-80; guess: combine the
+	 relevant centralities in the rest of the data to match lambda
+	 centralities; combine what quantities associated with the centralities
+	 though? the spectra (in which case, how do the errors add up?) 
+	 or the end results (in which case also, how do the errors add up)?
+
+..................................................................................
+- add errors to cross-check plots and see if they match better with:
+https://arxiv.org/pdf/1509.06727.pdf#page=12
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
 Current debugging note:
+..................................................................................
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+
+
+Past debugging notes:
 ..................................................................................
 - Need to fix the zeroes that appear in integral error calculation in the
 following rows in the result:
@@ -194,18 +227,18 @@ following rows in the result:
 42	7.7		pba	4 OK with alt par
 44	7.7		pba	6 insufficient iter, but err fixed
 45	7.7		pba	7 NOT POS-DEF, but err fixed
-46	7.7		pba	8 no fix with alt par, 17577 calls-------------
+46	7.7		pba	8 with alt2 par STATUS=FAILED, but dETdyLErr: 0.000557218
 52	7.7		pro	5 CONVERGED with alt par
-62	11.5	pi-	6
-65	11.5	pi+	0
-72	11.5	pi+	7
-100	11.5	pba	8
-151	19.6	pba	5
-154	19.6	pba	8
-163	19.6	pro	8
-201	27		pba	1
-211	27		pro	2
-259	39		pba	5
+62	11.5	pi-	6 STATUS=FAILED, CONVERGED with alt par
+65	11.5	pi+	0 CONVERGED with alt par
+72	11.5	pi+	7 CONVERGED with alt par
+100	11.5	pba	8 CONVERGED in 2215 calls
+151	19.6	pba	5 CONVERGED in 2006 calls
+154	19.6	pba	8 CONVERGED in 2848 calls
+163	19.6	pro	8 CONVERGED with alt par
+201	27		pba	1 CONVERGED in 2764 calls
+211	27		pro	2 CONVERGED in 2051 calls
+259	39		pba	5 CONVERGED in 2023 calls
 
 Strategy 1: analyze individual histograms using 22. fitSampleSpec.cpp
 -> problem found: STATUS of minimizing chi-squared for above
@@ -214,20 +247,22 @@ error matrix is probably problematic in these cases
 Strategy 1.1: customize initial fit parameters
 - works for some but not all (see comments at the end of each of the data rows above)
 - worked for some after changing the maximum number of minimizer function calls to 10000 (default is 1000)
+- works for all, now make corresponding changes
+in the original fitter code
+- some other spectra now giving similar errors.
+-> cause: some fitted parameter in each case has unreasonable value/error
+- trying to see if customizing parameters helps
+27	pi+	6 fixed with alt par
+27	ka-	2 "
+27	ka+	3 "
+27	pba	7 "
+39	pi+	8 "
+- !!!!!!!!!!Debugged!!!!!!!!!!!!!!!!!!
+
 Strategy 1.2: use maximum likelihood estimate/cross-validation instead of minimum chi-square
 - as elaborated in https://arxiv.org/pdf/1012.3754.pdf, chi-square minimization probably not a good way to fit non-linear models anyway!
-..................................................................................
-- need to add lamda spectra from STAR Preliminary data on BES strangeness from email thread
-labeled "RHIP data"
-..................................................................................
-- add errors to cross-check plots and see if they match better with:
-https://arxiv.org/pdf/1509.06727.pdf#page=12
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-
-
-
-Past debugging notes:
+- maximum likelihood method did not produce good fits - don't worry about it now, but go back to it later (out of curiosity)
+- use chi-squre now since it seems to be working after fixes in Strategy 1.1. It's not good for non-linear models in general, but if it's producing good fits with reasonable values for parameters, use it anyway because the interpretation of the goodness of fit matters only as long as it does not imply unusual extrapolations of the transverse energy. One important way for its validation is comparison of results with past publications, and so far it looks good.
 ..................................................................................
 1. Estimated values of dET/dEta lower than those found in publications
 	- However, dET/dEta estimates fairly match those in transverse energy analysis note

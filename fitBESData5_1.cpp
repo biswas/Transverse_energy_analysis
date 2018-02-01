@@ -162,20 +162,46 @@ int fitBESData5_1(){
 		if (	histoName == "cent7_ka-_Au+Au_7.7"
 			|| 	histoName == "cent7_ka-_Au+Au_11.5"
 			||	histoName == "cent7_pi+_Au+Au_7.7"
-			||	histoName == "cent8_ka+_Au+Au_7.7"
 			||	histoName == "cent4_pi-_Au+Au_19.6"
 			||	histoName == "cent5_ka+_Au+Au_27"
 			||	histoName == "cent5_ka-_Au+Au_7.7"
 			||	histoName == "cent6_pi+_Au+Au_11.5"
+			
+			||	histoName == "cent3_pi-_Au+Au_7.7"
+			||	histoName == "cent4_pi-_Au+Au_7.7"
+			||	histoName == "cent5_pi-_Au+Au_7.7"
+			||	histoName == "cent7_pi-_Au+Au_7.7"
+			||	histoName == "cent1_pbar_Au+Au_7.7"	// NOT POS-DEF		
+			||	histoName == "cent3_pbar_Au+Au_7.7"
+			||	histoName == "cent4_pbar_Au+Au_7.7"
+			||	histoName == "cent6_pbar_Au+Au_7.7"
+			||	histoName == "cent7_pbar_Au+Au_7.7"
+			||	histoName == "cent8_ka+_Au+Au_7.7"
+			||	histoName == "cent8_ka-_Au+Au_7.7"
+			||	histoName == "cent6_pi-_Au+Au_11.5"
+			||	histoName == "cent0_pi+_Au+Au_11.5"
+			||	histoName == "cent7_pi+_Au+Au_11.5"
+			||	histoName == "cent8_proton_Au+Au_19.6"
+			||	histoName == "cent5_proton_Au+Au_7.7"
+			||	histoName == "cent6_pi+_Au+Au_27"
 			||	histoName == "cent2_ka-_Au+Au_27"
 			||	histoName == "cent3_ka+_Au+Au_27"
-			||	histoName == "cent6_ka-_Au+Au_27"
-			||	histoName == "cent6_pi+_Au+Au_27"
 			||	histoName == "cent7_pbar_Au+Au_27"
-			||	histoName == "cent8_pi+_Au+Au_39"){
+			||	histoName == "cent8_pi+_Au+Au_39"
+			)
+			{
 			funcBGBW->SetParameters(mass,0.9,0.03,0.01,10000.,type);
-			}			
+			cout << "alternate init pars: 0.9,0.03,0.01,10000." << endl;
+			}
+			
+		else if(histoName == "cent8_pbar_Au+Au_7.7")
+			{
+			cout << "check2" << endl;
+			funcBGBW->SetParameters(mass,0.99,0.30,0.1,1000.,type);
+			}
+				
 		else{
+			cout << "histoname is: " << histoName << endl;
 			funcBGBW->SetParameters(mass,0.95,0.05,0.1,1000000.,type);
 			}
 		funcBGBW->SetParNames("mass","beta (c)","temp","n","norm","type");
@@ -183,6 +209,7 @@ int fitBESData5_1(){
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
+		ROOT::Math::MinimizerOptions::SetDefaultMaxFunctionCalls(20000);
 		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,10.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
