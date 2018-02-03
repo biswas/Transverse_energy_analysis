@@ -182,11 +182,25 @@ directory: publication
 ToDos:
 ..................................................................................
 - need to add lambda spectra from STAR Preliminary data on BES strangeness
-	1. clearify what "raw" means as opposed to "pT" in one of the directories
+	1. clearify what "raw" means as opposed to "pT" in one of the directories, 
+	 and what cut30 and cut0 mean
+	 -> later
+	 	
 	2. modify existing code to read data that is pointwise instead
 	 of binned and turn it into TGraphErrors objects instead of TH1D objects
+	 2.0 try to read data from all the input files in the directories within
+	  a directory recursively -- that did not work, so trying 2.1 (see past 
+	  debugging note for why it didn't work) 
+	 2.1 copy data from different files into a sinlge file and convert it to
+	  almost-original BES data format -- DONE: BES_lambdas.txt 
+	 2.2 Turn data in almost-original BES format into TGraphErrors objects
+	  in a ROOT TFile object -- DONE: BES_lambdas.root 
+	  using BESLambdasToRootFile.cpp
+	 
 	3. modify existing code to use the fitting method of the TGraphErrors class
 	 instead of the TH1 class
+	 -> in progress.............
+	 
 	4. figure out the correct method to take care of the fact that the lambda 
 	 spectra are available for slightly different centralities than the rest
 	 of the spectra; specifically, lambda spectra have centralities 40-60 and
@@ -195,6 +209,9 @@ ToDos:
 	 centralities; combine what quantities associated with the centralities
 	 though? the spectra (in which case, how do the errors add up?) 
 	 or the end results (in which case also, how do the errors add up)?
+	 -> for quantities k1 and k2 that add up as k = k1 + k2 and have
+	  associated uncertainties dk1 and dk2, the uncertainty in k is given
+	  by dk = sqrt(dk1^2 + dk2^2)
 
 ..................................................................................
 - add errors to cross-check plots and see if they match better with:
@@ -212,6 +229,24 @@ Current debugging note:
 
 
 Past debugging notes:
+..................................................................................
+- was trying to recursively read input files from a specified directory using
+ gcc's "#include <experimental/filesystem>", but that pointed to errors
+ in gcc's header
+
+/usr/lib/gcc/x86_64-redhat-linux/6.4.1/../../../../include/c++/6.4.1/bits/locale_conv.h:33:2: error: 
+      unterminated conditional directive
+#if __cplusplus < 201103L
+ ^
+/usr/lib/gcc/x86_64-redhat-linux/6.4.1/../../../../include/c++/6.4.1/bits/locale_conv.h:30:2: error: 
+      unterminated conditional directive
+#ifndef _LOCALE_CONV_H
+ ^
+ it can probably be fixed by editing the headers by just terminating the
+  conditional directives, but instead of doing  that, which might result in
+  other problems and consume a lot of time in any case, I'll either just read
+  the files one by one by manually customizing the input filename or copy the
+  data in the files into one data file in the original BES data format
 ..................................................................................
 - Need to fix the zeroes that appear in integral error calculation in the
 following rows in the result:
