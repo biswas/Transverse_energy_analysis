@@ -196,9 +196,14 @@ ToDos:
 	 2.2 Turn data in almost-original BES format into TGraphErrors objects
 	  in a ROOT TFile object -- DONE: BES_lambdas.root 
 	  using BESLambdasToRootFile.cpp
-	 
-	3. modify existing code to use the fitting method of the TGraphErrors class
-	 instead of the TH1 class
+	--> DONE 
+
+	3. Convert the TGraphErrors objets to TH1 objects because that's what
+		they are supposed to be
+		- algorithm: except for i=n, where n is the number of points
+		 in the graph, take the mid-point between the ith and the (i+1)th
+		 x-values 
+
 	 -> in progress.............
 	 
 	4. figure out the correct method to take care of the fact that the lambda 
@@ -228,8 +233,33 @@ Current debugging note:
 
 
 
-Past debugging notes:
+Past ToDos and debugging notes:
 ..................................................................................
+3. SCRATH THAT, JUST CONVERT THE GRAPHS TO HISTOGRAMS BECAUSE THAT'S WHAT THEY
+ARE SUPPOSED TO BE:
+modify existing code to use the fitting method of the TGraphErrors class
+	 instead of the TH1 class
+	 3.1 See if the methods (args) in the header need to be modified: DONE
+		- yes, they need to me modified
+		- spawned file fitSampleSpec_TH_TGE.cpp from fitSampleSpec.cpp
+		- From fitBESData5.h spawned fitSpec.h
+	 3.2 Modify methods in fitSpec.h
+		3.2.1 Modify method to estimate integral from data points
+		 - Integral() method exists for the TGraph class but not
+		   for the TGraphErrors class
+		 - Inside the method getIntegralsAndErrorsFromData:
+		 3.2.1.1 create TGraph objects corresponding to:
+			3.2.1.1.1 y-values
+			3.2.1.1.2 y-value + err
+			3.2.1.1.3 y-value - err
+		 3.2.1.2 find integrals corresponding to 3.2.1.1.*, then:
+			- integral from data points = 3.2.1.1.1
+			- integral err+ = 3.2.1.1.2 - 3.2.1.1.1
+			- integral err- = 3.2.1.1.1 - 3.2.1.1.3
+	 3.2 Modify fitSampleSpec.cpp and test on individual spectra
+	 3.3 Modify fitBESData5_1. cpp 
+..................................................................................
+
 - was trying to recursively read input files from a specified directory using
  gcc's "#include <experimental/filesystem>", but that pointed to errors
  in gcc's header

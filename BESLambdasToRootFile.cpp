@@ -26,7 +26,7 @@ int BESLambdasToRootFile(){ // main
 
 	ifstream 			in;
 	
-	in.open(Form("/home/bsharma/rhip/analysisCodes/BES_lambdas.txt"));
+	in.open(Form("./BES_lambdas.txt"));
 	// ^ data file with BES strangeness data (in this case lambdas)
 	TFile* f = new TFile("BESLambdas.root","RECREATE");// .root file to be created
 	//const char* collidingSpeciesPtr = NULL;
@@ -44,6 +44,7 @@ int BESLambdasToRootFile(){ // main
 			
 			in >> particleName;
 			if(!in.good()) cout<< "particleName not read correctly"<< endl;
+			else cout << particleName;
 			in >> myString;// read & skip string corresponding to centrality
 			Int_t xNum = 0;
 			Double_t tempDouble; /////////// flag used in debugging
@@ -98,6 +99,7 @@ int BESLambdasToRootFile(){ // main
 			// need to explicitly write TGraphErrors object to TFile:
 			tg -> Draw("AP"); // default is "ALP" that gives connecting lines between points
 			tg -> SetTitle(graphnameConstCharPtr);
+			tg -> SetName(graphnameConstCharPtr);
 			tg -> Write(graphnameConstCharPtr);
 			// check if pointers for two histos are not different:
 			cout << "gr. pointer " << graphnum <<":" << tg << endl;
