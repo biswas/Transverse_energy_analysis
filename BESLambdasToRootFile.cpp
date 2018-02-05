@@ -97,7 +97,7 @@ int BESLambdasToRootFile(){ // main
 			// TGraphErrors constructor (4/9 from documentation):
 			TGraphErrors *tg = new TGraphErrors(xNum, &xVec[0], &yVec[0], NULL, &yVecErrStat[0]);
 			// need to explicitly write TGraphErrors object to TFile:
-			tg -> Draw("AP"); // default is "ALP" that gives connecting lines between points
+			tg -> Draw("A*"); // default is "ALP" that gives connecting lines between points
 			tg -> SetTitle(graphnameConstCharPtr);
 			tg -> SetName(graphnameConstCharPtr);
 			tg -> Write(graphnameConstCharPtr);
