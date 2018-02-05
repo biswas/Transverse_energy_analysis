@@ -197,12 +197,32 @@ ToDos:
 	  in a ROOT TFile object -- DONE: BES_lambdas.root 
 	  using BESLambdasToRootFile.cpp
 	--> DONE 
-
-	3. Convert the TGraphErrors objets to TH1 objects because that's what
-		they are supposed to be
-		- algorithm: except for i=n, where n is the number of points
-		 in the graph, take the mid-point between the ith and the (i+1)th
-		 x-values 
+	
+	3. modify existing code to use the fitting method of the TGraphErrors class
+	 instead of the TH1 class
+	 3.1 See if the methods (args) in the header need to be modified: DONE
+		- yes, they need to me modified
+		- spawned file fitSampleSpec_TH_TGE.cpp from fitSampleSpec.cpp
+		- From fitBESData5.h spawned fitSpec.h
+	 3.2 Add/modify methods in fitSpec.h
+		3.2.1 Modify method to estimate integral from data points
+		-> alternate solution to use: since the bins are not clear,
+			just obtain fitting curves (3.2) for TGraphs mentioned in 3.2.1.1 
+			and then use the Integral() method of the TF1 class to
+			implement 3.2.1.2
+		 - Inside the method getIntegralsAndErrorsFromData:
+		 3.2.1.1 create TGraph objects corresponding to:
+			3.2.1.1.1 y-values
+			3.2.1.1.2 y-value + err
+			3.2.1.1.3 y-value - err
+		 3.2.1.2 find integrals corresponding to 3.2.1.1.*, then:
+			- integral from data points = 3.2.1.1.1
+			- integral err+ = 3.2.1.1.2 - 3.2.1.1.1
+			- integral err- = 3.2.1.1.1 - 3.2.1.1.3
+		3.2.2 Modify method to 
+	 3.2 Modify fitSampleSpec.cpp and test on individual spectra
+	 	-> file created: fitSampleSpec_TH_TGE.cpp
+	 3.3 Modify fitBESData5_1. cpp 
 
 	 -> in progress.............
 	 
@@ -237,27 +257,15 @@ Past ToDos and debugging notes:
 ..................................................................................
 3. SCRATH THAT, JUST CONVERT THE GRAPHS TO HISTOGRAMS BECAUSE THAT'S WHAT THEY
 ARE SUPPOSED TO BE:
-modify existing code to use the fitting method of the TGraphErrors class
-	 instead of the TH1 class
-	 3.1 See if the methods (args) in the header need to be modified: DONE
-		- yes, they need to me modified
-		- spawned file fitSampleSpec_TH_TGE.cpp from fitSampleSpec.cpp
-		- From fitBESData5.h spawned fitSpec.h
-	 3.2 Modify methods in fitSpec.h
-		3.2.1 Modify method to estimate integral from data points
-		 - Integral() method exists for the TGraph class but not
-		   for the TGraphErrors class
-		 - Inside the method getIntegralsAndErrorsFromData:
-		 3.2.1.1 create TGraph objects corresponding to:
-			3.2.1.1.1 y-values
-			3.2.1.1.2 y-value + err
-			3.2.1.1.3 y-value - err
-		 3.2.1.2 find integrals corresponding to 3.2.1.1.*, then:
-			- integral from data points = 3.2.1.1.1
-			- integral err+ = 3.2.1.1.2 - 3.2.1.1.1
-			- integral err- = 3.2.1.1.1 - 3.2.1.1.3
-	 3.2 Modify fitSampleSpec.cpp and test on individual spectra
-	 3.3 Modify fitBESData5_1. cpp 
+	 
+	3. SCRATCH THAT, LAMBDAS DON'T CONTRIBUTE THAT MUCH TO THE ET, SO THAT
+	MUCH "ACCURACY" IS NOT NECESSARY 
+	Convert the TGraphErrors objets to TH1 objects because that's what
+		they are supposed to be
+		- algorithm: except for i=n, where n is the number of points
+		 in the graph, take the mid-point between the ith and the (i+1)th
+		 x-values 
+
 ..................................................................................
 
 - was trying to recursively read input files from a specified directory using
