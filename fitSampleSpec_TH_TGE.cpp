@@ -42,7 +42,7 @@ Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 
 // main function:
 int fitSampleSpec(){
-	std::ofstream datFile ("debugZeroErrors.dat", std::ofstream::out);
+	std::ofstream datFile ("fitResults_la.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
 			<< "centrality" << "\t"
@@ -89,10 +89,11 @@ int fitSampleSpec(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("BESData.root");
+	TFile* myFile = new TFile("BESLambdas.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
+	TGraphErrors* tg;
 	TCanvas* c1;
 	TClass* class1;
 	TF1* funcBGBW;
@@ -105,7 +106,8 @@ int fitSampleSpec(){
 	///while(1){
 	while((mikey=(TKey*)next())){
 		class1 = gROOT->GetClass(mikey->GetClassName());
-		if(!class1->InheritsFrom("TH1")){
+		if(!class1->InheritsFrom("TH1") || !class1->InheritsFrom("TGraphErrors")){
+			cout << "Object not TH1 or TGraphErrors";
 			delete class1;
 			mikey->DeleteBuffer();
 			continue;
