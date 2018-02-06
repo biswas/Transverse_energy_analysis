@@ -148,26 +148,35 @@ int fitSampleSpec(){
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		////////....string histoName = h->GetName();
-		string graphname = tg->GetName();
+		string graphName = tg->GetName();
+		////////........
+		/*
 		if(histoName != "cent8_pi+_Au+Au_39"){ // pi-/+, ka-/+, pbar, proton
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
 			if(breakOutForTesting>=stop) break;
 			else continue;
 		}
-		cout << "test bin content: " << h->GetBinContent(1) << endl;
+		*/
+		if(graphName != "cent0_ala_Au+Au_39"){
+			breakOutForTesting++;
+			///cout << breakOutForTesting << endl;
+			if(breakOutForTesting>=stop) break;
+			else continue;
+		}
+		/////....cout << "test bin content: " << h->GetBinContent(1) << endl;
 		Double_t collEn = 0.;// initialize
 		//cent8_ka+_Au+Au_7.7 // sample histo name
-		if(histoName.substr( histoName.length() - 4 ) == "_7.7") collEn = 7.7;
-		else if(histoName.substr( histoName.length() - 4 ) == "11.5") collEn = 11.5;
-		else if(histoName.substr( histoName.length() - 4 ) == "19.6") collEn = 19.6;
-		else if(histoName.substr( histoName.length() - 4 ) == "u_27") collEn = 27;
-		else if(histoName.substr( histoName.length() - 4 ) == "u_39") collEn = 39;
-		else if(histoName.substr( histoName.length() - 4 ) == "2.76") collEn = 2760;
+		if(graphName.substr( graphName.length() - 4 ) == "_7.7") collEn = 7.7;
+		else if(graphName.substr( graphName.length() - 4 ) == "11.5") collEn = 11.5;
+		else if(graphName.substr( graphName.length() - 4 ) == "19.6") collEn = 19.6;
+		else if(graphName.substr( graphName.length() - 4 ) == "u_27") collEn = 27;
+		else if(graphName.substr( graphName.length() - 4 ) == "u_39") collEn = 39;
+		else if(graphName.substr( graphName.length() - 4 ) == "2.76") collEn = 2760;
 		else collEn = 77777.;
 		//get first three characters of particle name from histoName:
-		string particleID = histoName.substr(6,3);// starting position in array:6, 3 chars total
-		string centrality = histoName.substr(4,1);// starting position in array:4, 1 char total
+		string particleID = graphName.substr(6,3);// starting position in array:6, 3 chars total
+		string centrality = graphName.substr(4,1);// starting position in array:4, 1 char total
 		
 		//------------ Assign mass & type to particle -----------------//
 		Double_t mass = 0.93827; // in GeV
