@@ -138,11 +138,17 @@ int fitSampleSpec(){
 		c1->Update();
 
 		// read histogram object for current iteration of key:
-		
-		h = (TH1D*)mikey->ReadObj();
+		// was trying to make the method more generic, but due to time constraints,
+		// just have the functionality for TGraphErrors objects for the time being
+		/*
+		if(class1->InheritsFrom("TH1")) h = (TH1D*)mikey->ReadObj();
+		else tg = (TGraphErrors*)mikey->ReadObj();
+		*/
+		tg = (TGraphErrors*)mikry->ReadObj();
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
-		string histoName = h->GetName();
+		////////....string histoName = h->GetName();
+		string graphname = tg->GetName();
 		if(histoName != "cent8_pi+_Au+Au_39"){ // pi-/+, ka-/+, pbar, proton
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
