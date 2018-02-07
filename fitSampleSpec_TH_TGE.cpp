@@ -295,7 +295,7 @@ int fitSampleSpec_TH_TGE(){
 		Double_t tempErr 		= funcBGBW->GetParError(2);
 		Double_t nErr 			= funcBGBW->GetParError(3);
 		Double_t normErr 		= funcBGBW->GetParError(4);
-		tg-> Draw("P");
+		tg-> Draw("AP");
 		//------------- end BGBW fit ----------------------------
 		
 		
