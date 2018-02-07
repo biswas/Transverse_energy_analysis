@@ -202,7 +202,7 @@ int fitSampleSpec_TH_TGE(){
 		else {cout << "Check particle: "
 				<< particleID<<endl;/*return 1;*/}
 		
-		Double_t* integralDataPtr;
+		/////.....Double_t* integralDataPtr;
 
 		/////////...........integralDataPtr = getIntegralsAndErrorsFromData(h,type,mass);
 							// ^ method verified!!!
@@ -281,7 +281,7 @@ int fitSampleSpec_TH_TGE(){
 		cout << "chi-sq prob: " << chi2Prob << endl;
 		////////........h->SetMaximum(5*(h->GetMaximum()));
 		//h-> GetYaxis()->SetRangeUser(0.,maxY);
-		//TMatrixDSym cov = r->GetCovarianceMatrix();
+		///TMatrixDSym cov = r->GetCovarianceMatrix();
 		//////.......h-> GetXaxis()->SetRangeUser(0.,30.);
 		TString xlabel = "p_{T}";
 		TString ylabel = "#frac{d^{2}N}{dydp_{T}}";
@@ -295,6 +295,7 @@ int fitSampleSpec_TH_TGE(){
 		Double_t tempErr 		= funcBGBW->GetParError(2);
 		Double_t nErr 			= funcBGBW->GetParError(3);
 		Double_t normErr 		= funcBGBW->GetParError(4);
+		tg-> Draw("P");
 		//------------- end BGBW fit ----------------------------
 		
 		
@@ -319,12 +320,17 @@ int fitSampleSpec_TH_TGE(){
 		Int_t binx2 	= totPoints+1;
 		
 		/////.....Double_t leftCut 	= h->GetXaxis()->GetBinLowEdge(binx1+2); // TODO figure out why +2 with cout
-		Double_t leftCut	= tg->GetPoint(1, *(tg->GetX()), *(tg->GetY()));//->GetX();
+		//Double_t leftCut	= (tg->GetPoint(1, *(tg->GetX()), *(tg->GetY())));//->GetX();
+		Double_t leftCut;
+		Double_t leftCutY;
+		tg->GetPoint(0, leftCut, leftCutY);
 		cout << "totPoints: " << totPoints << endl;
-		cout << "leftcut: " << tg->GetPoint(1, *(tg->GetX()), *(tg->GetY())) << endl;
+		cout << "leftcut: " << leftCut << endl;
 		/////.....Double_t rightCut 	= h->GetXaxis()->GetBinUpEdge(binx2-1); // TODO figure out why -1 with cout
-		Double_t rightCut	= tg->GetPoint(totPoints-1, *(tg->GetX()), *(tg->GetY()));//->GetX();
-		cout << "rightcut: " << tg->GetPoint(totPoints-1, *(tg->GetX()), *(tg->GetY()));		
+		Double_t rightCut;
+		Double_t rightCutY;
+		tg->GetPoint(totPoints-1, rightCut, rightCutY);
+		cout << "rightcut: " << rightCut << endl; 		
 		Double_t dETdEtaLeft 	= dETdEtaIntegrandFunc -> Integral(0.,leftCut);
 		Double_t dETdEtaRight 	= dETdEtaIntegrandFunc -> Integral(rightCut,30.);
 		Double_t dETdyLeft 		= dETdyIntegrandFunc -> Integral(0.,leftCut);
@@ -392,7 +398,11 @@ int fitSampleSpec_TH_TGE(){
 		
 		cout <<"Integral from data for "<<graphName<<": "<<*(integralDataPtr+0)<<endl;// should be 363.7 for pi minus cent 0
 		*/		
-		cout << "dETdyLErr: " << dETdyLErr << endl;
+		cout << "dETdEtaLeft: " << dETdEtaLeft << endl;
+		cout << "dETdEtaRight: " << dETdEtaRight << endl;
+		cout << "dETdEtaData: " << dETdEtaIntegrandFunc -> Integral(leftCut,rightCut) << endl;
+		cout << "dETdEtaTotal: " << dETdEtaLeft+dETdEtaRight+ 
+			dETdEtaIntegrandFunc -> Integral(leftCut,rightCut)<< endl;
 		cout<<"-----------------------------------"<<endl;				
 		//------ end Find integrals left and right of data points ----//
 		//------ begin - assign Npart and errors from BES paper -----//
@@ -484,7 +494,7 @@ int fitSampleSpec_TH_TGE(){
 		if(breakOutForTesting>=stop) break;
 		
 		gSystem->ProcessEvents();
-		delete h;
+		/////.....delete h;
 		delete funcBGBW;
 		delete dETdEtaIntegrandFunc;
 		delete dETdyIntegrandFunc;
