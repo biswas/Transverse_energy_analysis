@@ -41,7 +41,7 @@ Double_t getdNdyIntegrand(Double_t* myPt, Double_t* par);
 Int_t* getNpartAndErr(Double_t collisionEnergy, string centrality);
 
 // main function:
-int fitSampleSpec(){
+int fitSampleSpec_TH_TGE(){
 	std::ofstream datFile ("fitResults_la.dat", std::ofstream::out);
 	datFile << "CollEn"<< "\t"	
 			<< "particle" << "\t"
@@ -106,13 +106,15 @@ int fitSampleSpec(){
 	///while(1){
 	while((mikey=(TKey*)next())){
 		class1 = gROOT->GetClass(mikey->GetClassName());
+		/////.....
+		/*
 		if(!class1->InheritsFrom("TH1") || !class1->InheritsFrom("TGraphErrors")){
 			cout << "Object not TH1 or TGraphErrors";
 			delete class1;
 			mikey->DeleteBuffer();
 			continue;
 		}
-			
+		*/	
 		c1 = new TCanvas(); // a la Rademakers
 		funcBGBW = new TF1("getdNdpt",getdNdpt,0.00000000000001,30.,6); // actually has 5 parameters
 												// 6th parameter, type, multiplied by 0 and added
@@ -144,9 +146,8 @@ int fitSampleSpec(){
 		if(class1->InheritsFrom("TH1")) h = (TH1D*)mikey->ReadObj();
 		else tg = (TGraphErrors*)mikey->ReadObj();
 		*/
-		tg = (TGraphErrors*)mikry->ReadObj();
+		tg = (TGraphErrors*)mikey->ReadObj();
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
-		////////// TODO string histoName = h->GetName();
 		////////....string histoName = h->GetName();
 		string graphName = tg->GetName();
 		////////........
@@ -192,6 +193,10 @@ int fitSampleSpec(){
 				{mass = 0.93827; type = -1.;}
 		else if	(particleID=="pba")
 				{mass = 0.93827; type = 1.;}
+		else if (particleID=="la_")
+				{mass = 1.11568; type = -1.;}
+		else if (particleID=="ala")
+				{mass = 1.11568; type = 1.;}
 		else if		(particleID=="pis")
 				{mass = 0.13957; type = 0.;}
 		else {cout << "Check particle: "
@@ -199,12 +204,14 @@ int fitSampleSpec(){
 		
 		Double_t* integralDataPtr;
 
-		integralDataPtr = getIntegralsAndErrorsFromData(h,type,mass);
+		/////////...........integralDataPtr = getIntegralsAndErrorsFromData(h,type,mass);
 							// ^ method verified!!!
 		
 		
 		//------------- Begin BGBW fit --------------------------//
-		//FIXME when you delete, use the "C"? option to delete all the inherited objects as well
+
+		//////...........
+		/*
 		if (	histoName == "cent7_ka-_Au+Au_7.7"
 			|| 	histoName == "cent7_ka-_Au+Au_11.5"
 			||	histoName == "cent7_pi+_Au+Au_7.7"
@@ -256,28 +263,30 @@ int fitSampleSpec(){
 			
 			
 			
-				
-		else{
-			cout << "histoname is: " << histoName << endl;
+		*/
+		/////...... may have to uncomment above code and edit if below...
+		// ... code doesn't work		
+		//////.....else{
+			cout << "graphname is: " << graphName << endl;
 			funcBGBW->SetParameters(mass,0.95,0.05,0.1,1000000.,type);
-			}
+		//////.....	}
 		funcBGBW->SetParNames("mass","beta (c)","temp","n","norm","type");
 		funcBGBW->SetParLimits(1,0.5,0.999999999999999999999);//param 1
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
 		ROOT::Math::MinimizerOptions::SetDefaultMaxFunctionCalls(20000);
-		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,5.);
+		TFitResultPtr r = tg->Fit("getdNdpt","S","",0.00000000000001,5.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
-		h->SetMaximum(5*(h->GetMaximum()));
+		////////........h->SetMaximum(5*(h->GetMaximum()));
 		//h-> GetYaxis()->SetRangeUser(0.,maxY);
 		//TMatrixDSym cov = r->GetCovarianceMatrix();
-		h-> GetXaxis()->SetRangeUser(0.,30.);
+		//////.......h-> GetXaxis()->SetRangeUser(0.,30.);
 		TString xlabel = "p_{T}";
 		TString ylabel = "#frac{d^{2}N}{dydp_{T}}";
-		h-> SetXTitle(xlabel);
-		h-> SetYTitle(ylabel);
+		tg-> GetHistogram()->GetXaxis()->SetTitle(xlabel);/////.....SetXTitle(xlabel);
+		tg-> GetHistogram()->GetYaxis()->SetTitle(ylabel);
 		Double_t beta 			= funcBGBW->GetParameter(1);
 		Double_t temp 			= funcBGBW->GetParameter(2);
 		Double_t n	  			= funcBGBW->GetParameter(3);
@@ -304,13 +313,18 @@ int fitSampleSpec(){
 		dNdyIntegrandFunc		-> FixParameter(0,mass);
 		dNdyIntegrandFunc		-> FixParameter(5,type);
 
-		Int_t totBins 	= h->GetNbinsX();		
+		///////....Int_t totBins 	= h->GetNbinsX();
+		Int_t totPoints = tg->GetN();		
 		Int_t binx1 	= 0;
-		Int_t binx2 	= totBins+1;
+		Int_t binx2 	= totPoints+1;
 		
-		Double_t leftCut 	= h->GetXaxis()->GetBinLowEdge(binx1+2); 
-		Double_t rightCut 	= h->GetXaxis()->GetBinUpEdge(binx2-1); 
-		
+		/////.....Double_t leftCut 	= h->GetXaxis()->GetBinLowEdge(binx1+2); // TODO figure out why +2 with cout
+		Double_t leftCut	= tg->GetPoint(1, *(tg->GetX()), *(tg->GetY()));//->GetX();
+		cout << "totPoints: " << totPoints << endl;
+		cout << "leftcut: " << tg->GetPoint(1, *(tg->GetX()), *(tg->GetY())) << endl;
+		/////.....Double_t rightCut 	= h->GetXaxis()->GetBinUpEdge(binx2-1); // TODO figure out why -1 with cout
+		Double_t rightCut	= tg->GetPoint(totPoints-1, *(tg->GetX()), *(tg->GetY()));//->GetX();
+		cout << "rightcut: " << tg->GetPoint(totPoints-1, *(tg->GetX()), *(tg->GetY()));		
 		Double_t dETdEtaLeft 	= dETdEtaIntegrandFunc -> Integral(0.,leftCut);
 		Double_t dETdEtaRight 	= dETdEtaIntegrandFunc -> Integral(rightCut,30.);
 		Double_t dETdyLeft 		= dETdyIntegrandFunc -> Integral(0.,leftCut);
@@ -353,7 +367,10 @@ int fitSampleSpec(){
 								r->GetParams(),
 								r->GetCovarianceMatrix().GetMatrixArray());
 								
-		Double_t dETdEta_d = *(integralDataPtr+0);
+		//////......Double_t dETdEta_d = *(integralDataPtr+0);
+		/////.....
+		/*
+	Double_t dETdEta_d = *(integralData);
 		Double_t dETdEta_d_err = *(integralDataPtr+1);
 		Double_t dETdEtaTotal = dETdEtaLeft+dETdEta_d+dETdEtaRight;
 		Double_t dETdEtaTErr = dETdEtaLErr+dETdEta_d_err+dETdEtaRErr;
@@ -373,7 +390,8 @@ int fitSampleSpec(){
 		Double_t dNdyTotal = dNdyLeft+dNdy_d+dNdyRight;
 		Double_t dNdyTErr = dNdyLErr+dNdy_d_err+dNdyRErr;
 		
-		cout <<"Integral from data for "<<histoName<<": "<<*(integralDataPtr+0)<<endl;// should be 363.7 for pi minus cent 0
+		cout <<"Integral from data for "<<graphName<<": "<<*(integralDataPtr+0)<<endl;// should be 363.7 for pi minus cent 0
+		*/		
 		cout << "dETdyLErr: " << dETdyLErr << endl;
 		cout<<"-----------------------------------"<<endl;				
 		//------ end Find integrals left and right of data points ----//
@@ -398,38 +416,38 @@ int fitSampleSpec(){
 				<< nErr <<"\t"
 				<< norm <<"\t"
 				<< normErr <<"\t"
-				<< dETdEta_d << "\t" //dETdEta_d
-				<< dETdEta_d_err<< "\t" //dETdEta_d_err
+				<< 7777 << "\t"//////......<< dETdEta_d << "\t" //dETdEta_d
+				<< 7777 << "\t"//////......<< dETdEta_d_err<< "\t" //dETdEta_d_err
 				<< dETdEtaLeft << "\t"
 				<< dETdEtaLErr << "\t"
 				<< dETdEtaRight << "\t"
 				<< dETdEtaRErr << "\t"
-				<< dETdEtaTotal<< "\t" // dETdEtaTotal
-				<< dETdEtaTErr << "\t"
-				<< dETdy_d << "\t" //dETdy_d
-				<< dETdy_d_err<< "\t" //dETdy_d_err
+				<< 7777 << "\t"//////......<< dETdEtaTotal<< "\t" // dETdEtaTotal
+				<< 7777 << "\t"//////......<< dETdEtaTErr << "\t"
+				<< 7777 << "\t"//////......<< dETdy_d << "\t" //dETdy_d
+				<< 7777 << "\t"//////......<< dETdy_d_err<< "\t" //dETdy_d_err
 				<< dETdyLeft << "\t"
 				<< dETdyLErr << "\t"
 				<< dETdyRight << "\t"
 				<< dETdyRErr << "\t"
-				<< dETdyTotal<< "\t" // dETdyTotal
-				<< dETdyTErr << "\t"
-				<< dNdEta_d << "\t" //dNdEta_d
-				<< dNdEta_d_err<< "\t" //dNdEta_d_err
+				<< 7777 << "\t"//////......<< dETdyTotal<< "\t" // dETdyTotal
+				<< 7777 << "\t"//////......<< dETdyTErr << "\t"
+				<< 7777 << "\t"//////......<< dNdEta_d << "\t" //dNdEta_d
+				<< 7777 << "\t"//////......<< dNdEta_d_err<< "\t" //dNdEta_d_err
 				<< dNdEtaLeft << "\t"
 				<< dNdEtaLErr << "\t"
 				<< dNdEtaRight << "\t"
 				<< dNdEtaRErr << "\t"
-				<< dNdEtaTotal << "\t" // dNdEtaTotal
-				<< dNdEtaTErr << "\t"
-				<< dNdy_d << "\t" //dNdy_d
-				<< dNdy_d_err<< "\t" //dNdy_d_err
+				<< 7777 << "\t"//////......<< dNdEtaTotal << "\t" // dNdEtaTotal
+				<< 7777 << "\t"//////......<< dNdEtaTErr << "\t"
+				<< 7777 << "\t"//////......<< dNdy_d << "\t" //dNdy_d
+				<< 7777 << "\t"//////......<< dNdy_d_err<< "\t" //dNdy_d_err
 				<< dNdyLeft << "\t"
 				<< dNdyLErr << "\t"
 				<< dNdyRight << "\t"
 				<< dNdyRErr << "\t"
-				<< dNdyTotal << "\t" // dNdyTotal
-				<< dNdyTErr << "\t"
+				<< 7777 << "\t"//////......<< dNdyTotal << "\t" // dNdyTotal
+				<< 7777 << "\t"//////......<< dNdyTErr << "\t"
 				<< Npart << "\t"
 				<< NpartErr << "\n";
 		
@@ -447,7 +465,7 @@ int fitSampleSpec(){
 	
 		/* FIXME */
 		time_t secFromEpoch;
-		string imgPathAndName = "./debugPlots/"+histoName+to_string(time(&secFromEpoch))+".png";
+		string imgPathAndName = "./debugPlots/"+graphName+to_string(time(&secFromEpoch))+".png";
 				//c1 -> SaveAs("./fittedPlots/trial1.png");
 		TImage *png = TImage::Create();// FIXME try to use canvas method instead of png object
 		png->FromPad(c1);
@@ -470,6 +488,7 @@ int fitSampleSpec(){
 		delete funcBGBW;
 		delete dETdEtaIntegrandFunc;
 		delete dETdyIntegrandFunc;
+		delete tg;
 		delete c1;	// Rademakers
 		//delete mikey; // FIXME 9 segmentation violation
 		//delete class1; // segmentation violation
