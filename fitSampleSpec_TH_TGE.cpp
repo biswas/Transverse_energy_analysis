@@ -159,7 +159,7 @@ int fitSampleSpec_TH_TGE(){
 			else continue;
 		}
 		*/
-		if(graphName != "cent0_ala_Au+Au_39"){
+		if(graphName != "cent0_la_Au+Au_39"){
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
 			if(breakOutForTesting>=stop) break;
@@ -211,41 +211,44 @@ int fitSampleSpec_TH_TGE(){
 		//------------- Begin BGBW fit --------------------------//
 
 		//////...........
-		/*
-		if (	histoName == "cent7_ka-_Au+Au_7.7"
-			|| 	histoName == "cent7_ka-_Au+Au_11.5"
-			||	histoName == "cent7_pi+_Au+Au_7.7"
-			||	histoName == "cent4_pi-_Au+Au_19.6"
-			||	histoName == "cent5_ka+_Au+Au_27"
-			||	histoName == "cent5_ka-_Au+Au_7.7"
-			||	histoName == "cent6_pi+_Au+Au_11.5"
+		
+		if (	graphName == "cent7_ka-_Au+Au_7.7"
+			|| 	graphName == "cent7_ka-_Au+Au_11.5"
+			||	graphName == "cent7_pi+_Au+Au_7.7"
+			||	graphName == "cent4_pi-_Au+Au_19.6"
+			||	graphName == "cent5_ka+_Au+Au_27"
+			||	graphName == "cent5_ka-_Au+Au_7.7"
+			||	graphName == "cent6_pi+_Au+Au_11.5"
 			
-			||	histoName == "cent3_pi-_Au+Au_7.7"
-			||	histoName == "cent4_pi-_Au+Au_7.7"
-			||	histoName == "cent5_pi-_Au+Au_7.7"
-			||	histoName == "cent7_pi-_Au+Au_7.7"
-			||	histoName == "cent1_pbar_Au+Au_7.7"	// NOT POS-DEF		
-			||	histoName == "cent3_pbar_Au+Au_7.7"
-			||	histoName == "cent4_pbar_Au+Au_7.7"
-			||	histoName == "cent6_pbar_Au+Au_7.7"
-			||	histoName == "cent7_pbar_Au+Au_7.7"
-			||	histoName == "cent8_ka+_Au+Au_7.7"
-			||	histoName == "cent8_ka-_Au+Au_7.7"
-			||	histoName == "cent6_pi-_Au+Au_11.5"
-			||	histoName == "cent0_pi+_Au+Au_11.5"
-			||	histoName == "cent7_pi+_Au+Au_11.5"
-			||	histoName == "cent8_proton_Au+Au_19.6"
-			||	histoName == "cent5_proton_Au+Au_7.7"
-			||	histoName == "cent6_pi+_Au+Au_27"
-			||	histoName == "cent2_ka-_Au+Au_27"
-			||	histoName == "cent3_ka+_Au+Au_27"
-			||	histoName == "cent7_pbar_Au+Au_27"
-			||	histoName == "cent8_pi+_Au+Au_39"
+			||	graphName == "cent3_pi-_Au+Au_7.7"
+			||	graphName == "cent4_pi-_Au+Au_7.7"
+			||	graphName == "cent5_pi-_Au+Au_7.7"
+			||	graphName == "cent7_pi-_Au+Au_7.7"
+			||	graphName == "cent1_pbar_Au+Au_7.7"	// NOT POS-DEF		
+			||	graphName == "cent3_pbar_Au+Au_7.7"
+			||	graphName == "cent4_pbar_Au+Au_7.7"
+			||	graphName == "cent6_pbar_Au+Au_7.7"
+			||	graphName == "cent7_pbar_Au+Au_7.7"
+			||	graphName == "cent8_ka+_Au+Au_7.7"
+			||	graphName == "cent8_ka-_Au+Au_7.7"
+			||	graphName == "cent6_pi-_Au+Au_11.5"
+			||	graphName == "cent0_pi+_Au+Au_11.5"
+			||	graphName == "cent7_pi+_Au+Au_11.5"
+			||	graphName == "cent8_proton_Au+Au_19.6"
+			||	graphName == "cent5_proton_Au+Au_7.7"
+			||	graphName == "cent6_pi+_Au+Au_27"
+			||	graphName == "cent2_ka-_Au+Au_27"
+			||	graphName == "cent3_ka+_Au+Au_27"
+			||	graphName == "cent7_pbar_Au+Au_27"
+			||	graphName == "cent8_pi+_Au+Au_39"
+			
+			||	graphName == "cent6_la_Au+Au_7.7"
 						
 			// still not working:
-			// ||	histoName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
+			// ||	graphName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
 			)
 			{
+			cout << "graphname is: " << graphName << endl;
 			funcBGBW->SetParameters(mass,0.9,0.03,0.01,10000.,type);
 			cout << "alternate init pars: 0.9,0.03,0.01,10000." << endl;
 			}
@@ -253,8 +256,8 @@ int fitSampleSpec_TH_TGE(){
 			
 			
 			
-		else if(histoName == "cent0_pis_Pb+Pb_2.76"
-			||	histoName == "cent8_pbar_Au+Au_7.7"
+		else if(graphName == "cent0_pis_Pb+Pb_2.76"
+			||	graphName == "cent8_pbar_Au+Au_7.7"
 			)
 			{
 			cout << "check2" << endl;
@@ -263,13 +266,13 @@ int fitSampleSpec_TH_TGE(){
 			
 			
 			
-		*/
+		
 		/////...... may have to uncomment above code and edit if below...
 		// ... code doesn't work		
-		//////.....else{
+		else{
 			cout << "graphname is: " << graphName << endl;
 			funcBGBW->SetParameters(mass,0.95,0.05,0.1,1000000.,type);
-		//////.....	}
+		}
 		funcBGBW->SetParNames("mass","beta (c)","temp","n","norm","type");
 		funcBGBW->SetParLimits(1,0.5,0.999999999999999999999);//param 1
 
