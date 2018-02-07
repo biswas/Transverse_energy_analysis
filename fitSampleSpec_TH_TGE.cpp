@@ -159,7 +159,7 @@ int fitSampleSpec_TH_TGE(){
 			else continue;
 		}
 		*/
-		if(graphName != "cent0_la_Au+Au_39"){
+		if(graphName != "cent0_la_Au+Au_7.7"){
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
 			if(breakOutForTesting>=stop) break;
@@ -242,7 +242,7 @@ int fitSampleSpec_TH_TGE(){
 			||	graphName == "cent7_pbar_Au+Au_27"
 			||	graphName == "cent8_pi+_Au+Au_39"
 			
-			||	graphName == "cent6_la_Au+Au_7.7"
+			||	graphName == "cent0_la_Au+Au_7.7"
 						
 			// still not working:
 			// ||	graphName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
@@ -274,12 +274,13 @@ int fitSampleSpec_TH_TGE(){
 			funcBGBW->SetParameters(mass,0.95,0.05,0.1,1000000.,type);
 		}
 		funcBGBW->SetParNames("mass","beta (c)","temp","n","norm","type");
-		funcBGBW->SetParLimits(1,0.5,0.999999999999999999999);//param 1
+		///.... changed the lower limit of beta from 0.5 to 0.2
+		funcBGBW->SetParLimits(1,0.2,0.999999999999999999999);//param 1
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
 		ROOT::Math::MinimizerOptions::SetDefaultMaxFunctionCalls(20000);
-		TFitResultPtr r = tg->Fit("getdNdpt","S","",0.00000000000001,5.);
+		TFitResultPtr r = tg->Fit("getdNdpt","LS","",0.00000000000001,5.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
 		////////........h->SetMaximum(5*(h->GetMaximum()));
