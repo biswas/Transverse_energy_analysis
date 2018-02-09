@@ -133,6 +133,8 @@ string concatenategraphname(string centStr,string pName,string colSp,string colE
 // takes constant reference to vector with...
 // x-values as an argument and...
 // returns pointer to array with bin edges
+// DID NOT PRODUCE OPTIMAL RESULTS, BUT A DIFFERENT ALGORITHM WORKED
+// see GetOptimalBinEdges
 vector<Double_t> xValsToBinEdges(const vector<Double_t> &xV){
 	cout << "function has been called" << endl;
 	const int N = xV.size(); // number of bins equal to number of data points
@@ -162,7 +164,7 @@ vector<Double_t> xValsToBinEdges(const vector<Double_t> &xV){
 	binEdgesVec[N-1]	= binEdgesVec[N-2] + width_secondLastBin;
 	binEdgesVec[N]		= xV[N-1] + (xV[N-1] - binEdgesVec[N-1]);
 	cout << "right edge of last bin: " << binEdgesVec[N] << endl;
-	cout << "vector of bin edges: " << endl;
+	cout << "vector of bin edges with first method (not working): " << endl;
 	for(int i = 0; i <= N+1; i++)
 	{
 		cout << binEdgesVec[i] << endl;
@@ -180,8 +182,8 @@ bool ascendingOrNot(const vector<Double_t> &xV)
 */
 
 // order does not matter
-// find a combination of bin edges that minimizes the difference 
-// between the sizes of adjacent bins for the 
+// find a combination of bin edges that minimizes the 
+// (squared?)difference  between the sizes of adjacent bins for the 
 // second to the second-last bins
 // (edge bins can have edge effects, so exclude them)
 // returns a vector of optimal bin edges:
@@ -196,17 +198,24 @@ vector<Double_t> GetOptimalBinEdges(const vector<Double_t> &xV)
 	Int_t nMinus1 = xVsize-1;
 	std::vector<Double_t> binEdgesVec(nMinus1, 0.); // n = xVsize
 	std::vector<Double_t> minVecSoFar(nMinus1, 0.);
-	for(int i = 0; i<1000000; i++){ // a million different vectors to try
-		for(int j = 0; j<nMinus1; j++){ // edit vector elements
+	for(int i = 0; i<1000000/*1000000*/; i++){ // a million different vectors to try
+	
+		//////////////.....................
+		// TODO instead of randomizing all the edge below, just randomize
+		// the first edge and get the rest of the edges iteratively
+		binEdgesVec[0] = randDoub(xV[0], xV[0+1]);
+		for(int j = 1; j<nMinus1; j++){ // edit vector elements
 						// < size-1 because optEdgVec has
 						// N+1 elements but only N-1 are used
 			//binEdgesVec[j] = TRandom::Uniform(xV[j],xV[j+1]);
-			binEdgesVec[j] = randDoub(xV[j], xV[j+1]);
+			binEdgesVec[j] = binEdgesVec[j-1] + (xV[j]-binEdgesVec[j-1])*2;
 		}
+		//////////////.....................
 		Double_t sum = 0.;
 		for(int j = 0; j<nMinus1-2; j++){
-			//sum += (binEdgesVec[j+2]-binEdgesVec[j+1])-(binEdgesVec[j+1]-binEdgesVec[j]);
-			sum += binEdgesVec[j+2] - 2.*binEdgesVec[j+1] + binEdgesVec[j];
+			sum += ((binEdgesVec[j+2]-binEdgesVec[j+1])-(binEdgesVec[j+1]-binEdgesVec[j]))*
+					((binEdgesVec[j+2]-binEdgesVec[j+1])-(binEdgesVec[j+1]-binEdgesVec[j]));// squared
+			//sum += binEdgesVec[j+2] - 2.*binEdgesVec[j+1] + binEdgesVec[j];
 		}
 		if(sum < minSoFar){
 			minSoFar = sum;
@@ -222,6 +231,10 @@ vector<Double_t> GetOptimalBinEdges(const vector<Double_t> &xV)
 		optEdgVec[1+i] = minVecSoFar[i];
 	}
 	optEdgVec[xVsize] = xV[nMinus1] + xV[nMinus1] - minVecSoFar[nMinus1-1];
+	cout << "elements of optimal edges vector: " << endl;
+	for (int i = 0; i < xVsize+1; i++){
+		cout << optEdgVec[i] << endl;
+	}
 return optEdgVec;
 }
 
