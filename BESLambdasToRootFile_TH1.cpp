@@ -14,6 +14,8 @@ using namespace std;
 
 string concatenategraphname(string,string,string,string);
 vector<Double_t> xValsToBinEdges(const vector<Double_t> &xV);
+vector<Double_t> GetOptimalBinEdges(const vector<Double_t> &xV);
+Double_t randDoub(Double_t min, Double_t max);
 
 int BESLambdasToRootFile_TH1(){ // main
 	string 				myString;// temporary string to hold ifstream instance	
@@ -29,7 +31,7 @@ int BESLambdasToRootFile_TH1(){ // main
 	
 	in.open(Form("./BES_lambdas.txt"));
 	// ^ data file with BES strangeness data (in this case lambdas)
-	TFile* f = new TFile("BESLambdas_TH1.root","RECREATE");// .root file to be created
+	TFile* f = new TFile("BESLambdas_optBins.root","RECREATE");// .root file to be created
 	
 	while(in >> collidingSpecies){
 		while(collidingSpecies!="Au+Au") {in >> collidingSpecies;}
@@ -89,14 +91,17 @@ int BESLambdasToRootFile_TH1(){ // main
 			//to list (of bin edges), in this case a vector:
 			////////........Double_t* a = &xVec[0];
 			std::vector<Double_t> binEdgesVector = xValsToBinEdges(xVec);
+			std::vector<Double_t> optimalBinEdgesVector = GetOptimalBinEdges(xVec);
 			cout << "line 92" << endl;
 			//Double_t* a = &binEdgesVector[0];
-			TH1D *h = new TH1D(graphnameConstCharPtr,graphnameConstCharPtr, xNum, &binEdgesVector[0]);
+			///...TH1D *h = new TH1D(graphnameConstCharPtr,graphnameConstCharPtr, xNum, &binEdgesVector[0]);
+			TH1D *h = new TH1D(graphnameConstCharPtr,graphnameConstCharPtr, xNum, &optimalBinEdgesVector[0]);
 			// ^ here graphname needs to be a const char*
 			
 			// check if pointers for two histos are not different:
 			cout << "his. pointer " << graphnum <<":" << h << endl;
-			cout << "arr. pointer " << graphnum <<":" << &binEdgesVector[0] << endl;
+			///...cout << "arr. pointer " << graphnum <<":" << &binEdgesVector[0] << endl;
+			cout << "arr. pointer " << graphnum <<":" << &optimalBinEdgesVector[0] << endl;
 			////////////........cout << "arr. pointer " << graphnum <<":" << /*a*/&xVec[0] << endl;
 			//////////.....h->GetXaxis()->SetRangeUser(0.,10.);
 
@@ -158,10 +163,69 @@ vector<Double_t> xValsToBinEdges(const vector<Double_t> &xV){
 	binEdgesVec[N]		= xV[N-1] + (xV[N-1] - binEdgesVec[N-1]);
 	cout << "right edge of last bin: " << binEdgesVec[N] << endl;
 	cout << "vector of bin edges: " << endl;
-	for(i = 0; i <= N+1; i++)
+	for(int i = 0; i <= N+1; i++)
 	{
 		cout << binEdgesVec[i] << endl;
 	}
 	cout << "*********************" << endl;
 return binEdgesVec;
 }
+
+// check if the differences in vector elements have an ascending order:
+/*
+bool ascendingOrNot(const vector<Double_t> &xV)
+{
+		
+}
+*/
+
+// order does not matter
+// find a combination of bin edges that minimizes the difference 
+// between the sizes of adjacent bins for the 
+// second to the second-last bins
+// (edge bins can have edge effects, so exclude them)
+// returns a vector of optimal bin edges:
+vector<Double_t> GetOptimalBinEdges(const vector<Double_t> &xV)
+{
+	//current minimum
+	Double_t minSoFar = 100.; // needs to be a large value to 
+				// make sure first sum is min
+				// at the beginning of the iteration
+	Int_t xVsize = xV.size();
+	std::vector<Double_t> optEdgVec(xVsize+1, 0.);
+	Int_t nMinus1 = xVsize-1;
+	std::vector<Double_t> binEdgesVec(nMinus1, 0.); // n = xVsize
+	std::vector<Double_t> minVecSoFar(nMinus1, 0.);
+	for(int i = 0; i<1000000; i++){ // a million different vectors to try
+		for(int j = 0; j<nMinus1; j++){ // edit vector elements
+						// < size-1 because optEdgVec has
+						// N+1 elements but only N-1 are used
+			//binEdgesVec[j] = TRandom::Uniform(xV[j],xV[j+1]);
+			binEdgesVec[j] = randDoub(xV[j], xV[j+1]);
+		}
+		Double_t sum = 0.;
+		for(int j = 0; j<nMinus1-2; j++){
+			//sum += (binEdgesVec[j+2]-binEdgesVec[j+1])-(binEdgesVec[j+1]-binEdgesVec[j]);
+			sum += binEdgesVec[j+2] - 2.*binEdgesVec[j+1] + binEdgesVec[j];
+		}
+		if(sum < minSoFar){
+			minSoFar = sum;
+			for(int j = 0; j<nMinus1; j++){
+				minVecSoFar[j] = binEdgesVec[j];
+			}
+		}
+	
+	}
+	// optEdgVec[0] = xV[0] - (minVecSoFar[0] - xV[0]);
+	optEdgVec[0] = 2*xV[0] - minVecSoFar[0]; // 
+	for(int i = 0; i < nMinus1; i++){
+		optEdgVec[1+i] = minVecSoFar[i];
+	}
+	optEdgVec[xVsize] = xV[nMinus1] + xV[nMinus1] - minVecSoFar[nMinus1-1];
+return optEdgVec;
+}
+
+Double_t randDoub(Double_t min, Double_t max){
+return (max - min) * ( (double)rand() / (double)RAND_MAX ) + min;
+}
+
