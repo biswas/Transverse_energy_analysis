@@ -280,7 +280,7 @@ int fitSampleSpec_TH_TGE(){
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
 		ROOT::Math::MinimizerOptions::SetDefaultMaxFunctionCalls(20000);
-		TFitResultPtr r = tg->Fit("getdNdpt","LS","",0.00000000000001,5.);
+		TFitResultPtr r = tg->Fit("getdNdpt","S","",0.00000000000001,5.);
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
 		////////........h->SetMaximum(5*(h->GetMaximum()));
