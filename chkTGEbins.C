@@ -42,9 +42,9 @@ int i;
 i = 0;
 rootFile = new TFile("BESLambdas.root");
 TIter next(rootFile->GetListOfKeys());
-cout << "#\t" << "Graph Name\t\t"<< "x(N)\t" << "x(N-1)\t" 
-	<< "x(N-2)\t" << "T or F\t" << "d(N, N-1)\t"
-	<< "d(N-1, N-2)\t" << "diff" << endl;
+cout << "#\t" << "Graph Name\t\t"<< "x(N-1)\t" << "x(N-2)\t" 
+	<< "x(N-3)\t" << "T or F\t" << "d(N-1, N-2)\t"
+	<< "d(N-2, N-3)\t" << "diff" << endl;
 while((mikey = (TKey*)next()))
 {
 	gr = (TGraphErrors*)mikey->ReadObj();
