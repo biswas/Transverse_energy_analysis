@@ -86,7 +86,7 @@ int fitSampleSpec(){
 			<< "dNdyTErr" << "\t"
 			<< "Npart" << "\t"
 			<< "NpartErr" << "\n";
-	TFile* myFile = new TFile("BESData.root");
+	TFile* myFile = new TFile("BESLambdas_optBins.root");
 	TIter next(myFile->GetListOfKeys());
 	TKey* mikey;
 	TH1D* h;
@@ -138,7 +138,7 @@ int fitSampleSpec(){
 		//////////h = (TH1D*)myFile->Get(Form("cent%i_proton_plus",0));
 		////////// TODO string histoName = h->GetName();
 		string histoName = h->GetName();
-		if(histoName != "cent8_pi+_Au+Au_39"){ // pi-/+, ka-/+, pbar, proton
+		if(histoName != "cent6_la_Au+Au_7.7"){ // pi-/+, ka-/+, pbar, proton
 			breakOutForTesting++;
 			///cout << breakOutForTesting << endl;
 			if(breakOutForTesting>=stop) break;
@@ -172,6 +172,10 @@ int fitSampleSpec(){
 				{mass = 0.93827; type = -1.;}
 		else if	(particleID=="pba")
 				{mass = 0.93827; type = 1.;}
+		else if (particleID=="la_")
+				{mass = 1.11568; type = -1.;}
+		else if (particleID=="ala")
+				{mass = 1.11568; type = 1.;}
 		else if		(particleID=="pis")
 				{mass = 0.13957; type = 0.;}
 		else {cout << "Check particle: "
@@ -183,8 +187,9 @@ int fitSampleSpec(){
 							// ^ method verified!!!
 		
 		
-		//------------- Begin BGBW fit --------------------------//
-		//FIXME when you delete, use the "C"? option to delete all the inherited objects as well
+		//------------- Begin BGBW fit --------------------------//\
+		/// TODO: make trying out different initial parameters more generic:
+		/*
 		if (	histoName == "cent7_ka-_Au+Au_7.7"
 			|| 	histoName == "cent7_ka-_Au+Au_11.5"
 			||	histoName == "cent7_pi+_Au+Au_7.7"
@@ -214,7 +219,8 @@ int fitSampleSpec(){
 			||	histoName == "cent3_ka+_Au+Au_27"
 			||	histoName == "cent7_pbar_Au+Au_27"
 			||	histoName == "cent8_pi+_Au+Au_39"
-						
+			
+			||	histoName == "cent0_la_Au+Au_7.7"			
 			// still not working:
 			// ||	histoName == "cent8_pbar_Au+Au_7.7" /// ------ FAILED
 			)
@@ -234,20 +240,29 @@ int fitSampleSpec(){
 			funcBGBW->SetParameters(mass,0.99,0.30,0.1,1000.,type);
 			}
 			
-			
+			*/
 			
 				
-		else{
+		//else{
 			cout << "histoname is: " << histoName << endl;
 			funcBGBW->SetParameters(mass,0.95,0.05,0.1,1000000.,type);
-			}
+			//}
 		funcBGBW->SetParNames("mass","beta (c)","temp","n","norm","type");
 		funcBGBW->SetParLimits(1,0.5,0.999999999999999999999);//param 1
 
 		funcBGBW->FixParameter(0,mass);// mass in GeV
 		funcBGBW->FixParameter(5,type);
 		ROOT::Math::MinimizerOptions::SetDefaultMaxFunctionCalls(20000);
-		TFitResultPtr r = h->Fit("getdNdpt","S","",0.00000000000001,5.);
+		
+		//bool fitSuccess = FALSE; // initialize
+		TFitResultPtr r;
+		int avoidInfLoop = 0;
+		while(avoidInfLoop<2){ // 2 for trying 2 different sets of initial parameters
+			r = h->Fit("getdNdpt","S","",0.00000000000001,5.);
+			if(r->IsValid()) break;
+			else funcBGBW->SetParameters(mass,0.9,0.03,0.01,10000.,type);
+			avoidInfLoop++;
+		}
 		Double_t chi2Prob = r->Prob();
 		cout << "chi-sq prob: " << chi2Prob << endl;
 		h->SetMaximum(5*(h->GetMaximum()));
@@ -354,6 +369,9 @@ int fitSampleSpec(){
 		Double_t dNdyTErr = dNdyLErr+dNdy_d_err+dNdyRErr;
 		
 		cout <<"Integral from data for "<<histoName<<": "<<*(integralDataPtr+0)<<endl;// should be 363.7 for pi minus cent 0
+		int fitStatus = r;
+		cout << "***********\nfit status: " << fitStatus << endl;
+		cout << "Successful?: " << r->IsValid() << endl;
 		cout << "dETdyLErr: " << dETdyLErr << endl;
 		cout<<"-----------------------------------"<<endl;				
 		//------ end Find integrals left and right of data points ----//
