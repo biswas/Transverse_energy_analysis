@@ -49,20 +49,29 @@ and $E_{i}$ is the energy deposited in the calorimeter by the $i^{th}$ particle.
 \begin{equation}\label{eqn:EiCaseByCase}
 E_{i} = 
 	\begin{cases}
-	E_{i}^{tot}-m_{N} & \text{for baryons} \\
-	E_{i}^{tot}+m_{N} & \text{for anti-baryons} \\	
+	E_{i}^{tot}-m_{0} & \text{for baryons} \\
+	E_{i}^{tot}+m_{0} & \text{for anti-baryons} \\	
 	E_{i}^{tot} & \text{otherwise} \\
 	\end{cases}
 \end{equation}
 %\ $E_{i}^{tot}$ - $m_{N}$ in case of baryons, $E_{i}^{tot}$ + $m_{N}$ in case of antibaryons, and the $E_{i}^{tot}$ in case of other particles, 
-where $E_{i}^{tot}$ is the total energy of the $i^{th}$ particle and  $m_{N}$ the nucleon mass.
+where $E_{i}^{tot}$ is the total energy of the $i^{th}$ particle and  $m_{0}$ is the rest mass in case of baryons and anti-baryons.
+In order to account for the particles that are not identified by the calorimeters, corrections are made based on GEANT simulations of the collision and detection physics using models of the nucleus such as the Glauber model. (Doesn't that mean we use the model to make corrections in the analysis and the result of the analysis to judge the model????)
+
+Corrections to account for unidentified particles are made for the tracking detectors also, but these turn out to be less than those made in case of the calorimeters. Hence, if the tracking detectors are able to give any information that can be used to estimate the total ET, we should be able to get a better estimate of the total ET than we would if we used the calorimeters. In fact, the tracking detectors in experiments such as the STAR experiment at the RHIC and the ALICE (A Large Ion Collider Experiment) experiment at CERN include Time Projection Chambers (TPCs) and Time-of-Flight (TOF) detectors that can give us the pT spectra, yields and particle ratios of the identified charged hadrons (https://arxiv.org/pdf/1111.0763.pdf, https://arxiv.org/pdf/1701.07065.pdf). The TPCs provide measurements of particle trajectories that can be used to determine the momenta for low-momentum particles and of their specific energy loss, 
+\begin{equation}\label{eqn:specificEnLoss}
+	\frac{dE}{dx} ,
+\end{equation}
+which can be used with the trajectories to make particle identification. TOF detectors, on the other hand, cover the high-momentum part of the measurements. In ALICE, the combination of the measurements of the TPC with those of the Inner Tracking System (ITS) effectively adds the tracking length, thereby improving the resolution of the measured pT spectrum. Details about the particle identification and momentum determination capabilities of the detectors in ALICE can be found in \cite{1748-0221-3-08-S08002} 
+
+In the STAR experiment, 
 
 %\ NOW!!!!!!!!!!!!! description of the instruments used to get the relevant variables:
-%\ 		primarily STAR (reference 12 from analysis note), include PHENIX and CMS later if neede
+%\ 		primarily STAR (reference 12 from analysis note), include PHENIX and CMS later if needed
+
 
 %\ NEXT: WRITE ABOUT THE ALTERNATIVE WAY, THAT IS, USING SPECTRA, AND WHAT DETECTOR THIS METHOD USES INSTEAD
 
-%\ WHAT'S THE DIFFERENCE BETWEEN THE TRACKING METHOD AND THE METHOD THAT USES SPECTRA?
 
 %\"The main detectors used to obtain the results on pT spectra, yields and particle ratios for charged hadrons are the Time Projection Chamber (TPC) [41] and Time-Of Flight detectors (TOF) [42]" https://arxiv.org/pdf/1701.07065.pdf
 %\ " The TPC data is used to determine particle trajectories, thereby their momenta, and particle types through ionization energy loss (dE/dx)."
