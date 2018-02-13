@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  21 JAN 2018 13:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  12 FEB 2018 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,8 +426,11 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (./biswas-thesis.aux (./front-matter/dedication.aux)
 (./front-matter/acknowledgments.aux) (./front-matter/abstract.aux)
-(./front-matter.aux) (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
-(./chapters/chapter-3.aux) (./chapters/chapter-4.aux)
+(./front-matter.aux) (./chapters/chapter-1.aux) (./chapters/chapter-2.aux
+
+LaTeX Warning: Label `eqn:ETDefSum' multiply defined.
+
+) (./chapters/chapter-3.aux) (./chapters/chapter-4.aux)
 (./back-matter/appendix-1.aux) (./back-matter/appendix-2.aux)
 (./back-matter/vita.aux))
 \openout1 = `biswas-thesis.aux'.
@@ -612,6 +615,8 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 ] (./biswas-thesis.lot)
@@ -693,7 +698,7 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
-] <figures/1742-6596-761-1-012066.png, id=101, 469.755pt x 374.39874pt>
+] <figures/1742-6596-761-1-012066.png, id=106, 469.755pt x 374.39874pt>
 File: figures/1742-6596-761-1-012066.png Graphic file (type png)
 
 <use figures/1742-6596-761-1-012066.png>
@@ -713,7 +718,7 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
- <./figures/1742-6596-761-1-012066.png>]) [3
+ <./figures/1742-6596-761-1-012066.png>] [3
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -728,7 +733,7 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
-] [4
+]) [4
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -738,7 +743,29 @@ color pop
 :<+ chapters/chapter-2.tex
 \openout2 = `chapters/chapter-2.aux'.
 
-No file chapters/chapter-2.tex.
+(./chapters/chapter-2.tex
+Chapter 2.
+[5
+color push 0 g 0 G
+color pop
+
+
+
+
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+]) [6
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+]
 :<-
 :<+ chapters/chapter-3.tex
 \openout2 = `chapters/chapter-3.aux'.
@@ -750,12 +777,9 @@ No file chapters/chapter-3.tex.
 
 No file chapters/chapter-4.tex.
 :<-
-[5
+[7
 color push 0 g 0 G
 color pop
-
-
-
 
 
 
@@ -775,19 +799,9 @@ color pop
 \tf@brf=\write7
 \openout7 = `biswas-thesis.brf'.
 
- [6
+ [8
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [7
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [8
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -805,10 +819,6 @@ color pop
 ] [11
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 ] [12
@@ -816,21 +826,8 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]
-[13
+] [13
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -843,7 +840,16 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [15
+]
+[15
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -854,6 +860,20 @@ color pop
 color push 0 g 0 G
 color pop
 ] [17
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -873,44 +893,66 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-])
-:<-
-[21
+] [21
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 ] [22
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [23
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [24
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+])
+:<-
+[25
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+] [26
 color push 0 g 0 G
 color pop
 
@@ -946,33 +988,38 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5747790B395988024242B7FCD3CC08E9;433.
+(rerunfilecheck)             Checksum: 71FA17C345FB49E1CD1ADABE0B5362D0;477.
 Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 18ECF5E1FC1BC83CFAFF71582929633A;823.
+(rerunfilecheck)             Checksum: 54F302036BE03F33A38A1E036E5E8B36;992.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 9126 strings out of 493046
- 135507 string characters out of 6137253
- 299005 words of memory out of 5000000
- 12399 multiletter control sequences out of 15000+600000
- 10645 words of font info for 41 fonts, out of 8000000 for 9000
+ 9157 strings out of 493046
+ 135971 string characters out of 6137253
+ 300674 words of memory out of 5000000
+ 12414 multiletter control sequences out of 15000+600000
+ 11346 words of font info for 43 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 39i,6n,50p,1144b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,50p,1144b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti12.pfb>
-Output written on biswas-thesis.pdf (27 pages, 174399 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+12.pfb>
+Output written on biswas-thesis.pdf (31 pages, 194049 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,71 @@
+\chapter{Method} \label{ch:method}
+%\Conventional method using calorimeters
+%\ first the math: definitions 1.3, 1.4 from analysis note
+%\ then the description of the instruments used to get the relevant variables:
+%\ 		primarily STAR (reference 12 from analysis note), include PHENIX and CMS later if needed
+
+%\ transition to:
+
+%\Spectra from the BES program
+%\ Beam Energy Scan program
+%\ particle identification
+%\ transverse momentum spectrum (using tracking detectors????)
+%\ errors associated with the spectra
+
+%\Getting ET estimates from the spectra for individual particles
+%\ equations relating dET/dy etc. to the pT integral of d2N/(dydpT)
+%\ extrapolation of spectra to cover regions not covered by the experiment
+%\ using ET estimates for individual particles to estimate total ET and the assumptions involved
+%\ analysis note pg 7: "In this new method, ET is measured from charged hardon tracks...
+%\ and the measured ET is SCALED UP to correct for neutral energy which is not observed...
+%\ in tracking detectors."
+%\ essentially, what really needs to be made clear is how the "scaling up" is done, because...
+%\ even conventionally, STAR "uses information from the tracking detectors to measure ET from...
+%\ charged hadrons and the electromagnetic calorimeter to measure ET from electrons, photons...
+%\ and neutral hadrons which dominantly decay to electromagnetic particles." (hybrid method)
+
+%\ centrality determination
+In theory, $E_{T}$ from a collision can be defined as the sum of the transverse masses, $m_{T}$, of all the particles produced in the collision, i.e.,
+\begin{equation}\label{eqn:ETDefTheory}
+E_{T}\equiv\sum_{i}m_{T,i}
+\end{equation}
+with
+\begin{equation}\label{eqn:mT}
+m_{T}\equiv\sqrt{p_{T}^{2}+m^2}
+\end{equation}
+where $m$ is the rest mass of the particle and $p_{T}$ is its transverse momentum. Using this definition to calculate the $E_{T}$ requires perfect identification of all the particles. It has not been possible to do so in experiments, and so a more feasible, operational definition of $E_{T}$ is fabricated. A commonly accepted definition in case of the feasibility of calorimetric measurements is \cite{PhysRevC.89.044905, 1742-6596-458-1-012024}:
+\begin{equation}\label{eqn:ETDefSum}
+E_{T} = \sum_{i}E_{i}\sin{\theta_{i}},
+\end{equation}
+\begin{equation}\label{eqn:dETdEta}
+\frac{dE_{T}}{d\eta}=\sin{\theta}\frac{dE}{d\eta},
+\end{equation}
+
+where the index $i$ runs over all the particles going into a fixed solid angle for each event, $\theta$ is the polar angle, i.e, the angle with respect to the beam axis, $\eta$ is the pseudorapidity defined as 
+\begin{equation}\label{eqn:ETDefSum}
+\eta\equiv-\ln\tan{\frac{\theta}{2}},
+\end{equation}
+and $E_{i}$ is the energy deposited in the calorimeter by the $i^{th}$ particle. $E_{i}$ is considered to be, by convention \cite{PhysRevC.89.044905}???, the following
+\begin{equation}\label{eqn:EiCaseByCase}
+E_{i} = 
+	\begin{cases}
+	E_{i}^{tot}-m_{N} & \text{for baryons} \\
+	E_{i}^{tot}+m_{N} & \text{for anti-baryons} \\	
+	E_{i}^{tot} & \text{otherwise} \\
+	\end{cases}
+\end{equation}
+%\ $E_{i}^{tot}$ - $m_{N}$ in case of baryons, $E_{i}^{tot}$ + $m_{N}$ in case of antibaryons, and the $E_{i}^{tot}$ in case of other particles, 
+where $E_{i}^{tot}$ is the total energy of the $i^{th}$ particle and  $m_{N}$ the nucleon mass.
+
+%\ NOW!!!!!!!!!!!!! description of the instruments used to get the relevant variables:
+%\ 		primarily STAR (reference 12 from analysis note), include PHENIX and CMS later if neede
+
+%\ NEXT: WRITE ABOUT THE ALTERNATIVE WAY, THAT IS, USING SPECTRA, AND WHAT DETECTOR THIS METHOD USES INSTEAD
+
+%\ WHAT'S THE DIFFERENCE BETWEEN THE TRACKING METHOD AND THE METHOD THAT USES SPECTRA?
+
+%\"The main detectors used to obtain the results on pT spectra, yields and particle ratios for charged hadrons are the Time Projection Chamber (TPC) [41] and Time-Of Flight detectors (TOF) [42]" https://arxiv.org/pdf/1701.07065.pdf
+%\ " The TPC data is used to determine particle trajectories, thereby their momenta, and particle types through ionization energy loss (dE/dx)."
+%\ "For higher momentum, we use time-of-flight information to identify particles. The TOF particle identification for this analysis is used above pT = 0.4 GeV/c."
+
+%\Historically, measurement of $E_{T}$ would be one of the first things done after heavy-ion collisions. Electromagnetic calorimeters (EMCals) would be used to perform the measurement of $E_{T}$. 
