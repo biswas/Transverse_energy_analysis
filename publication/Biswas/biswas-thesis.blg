@@ -14,6 +14,29 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
+I was expecting a `{' or a `('---line 1 of file references-Biswas.bib
+ : %\ @phdthesis 
+ :               bit undefined so using @article
+I'm skipping whatever remains of this entry
+I was expecting a `{' or a `('---line 2 of file references-Biswas.bib
+ : 
+ : @phdthesis{phdthesisnattrass,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 8 of file references-Biswas.bib
+ : 
+ : %  address      = {The address of the publisher},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `{' or a `('---line 13 of file references-Biswas.bib
+ : %\ Bethe Bloch formula @misc 
+ :                              but undefined so using @article
+I'm skipping whatever remains of this entry
+I was expecting a `{' or a `('---line 14 of file references-Biswas.bib
+ : 
+ : @article{bethe1953passage,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Reallocated buffer (elt_size=1) to 40000 items from 20000.
 Reallocated sv_buffer (elt_size=1) to 40000 items from 20000.
 Reallocated ex_buf (elt_size=1) to 40000 items from 20000.
@@ -21,49 +44,50 @@ Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--empty journal in bethe1953passage
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
 while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
-You've used 13 entries,
+You've used 17 entries,
             1935 wiz_defined-function locations,
-            575 strings with 77137 characters,
-and the built_in function-call counts, 125570 in all, are:
-= -- 8262
-> -- 19619
-< -- 8
-+ -- 7838
-- -- 7834
-* -- 15993
-:= -- 24218
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 3981
-chr.to.int$ -- 13
-cite$ -- 13
-duplicate$ -- 181
-empty$ -- 376
-format.name$ -- 7852
-if$ -- 20419
+            602 strings with 94679 characters,
+and the built_in function-call counts, 162787 in all, are:
+= -- 10703
+> -- 25459
+< -- 11
++ -- 10172
+- -- 10166
+* -- 20733
+:= -- 31410
+add.period$ -- 51
+call.type$ -- 17
+change.case$ -- 5166
+chr.to.int$ -- 17
+cite$ -- 18
+duplicate$ -- 234
+empty$ -- 467
+format.name$ -- 10190
+if$ -- 26457
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 13
-newline$ -- 69
-num.names$ -- 39
-pop$ -- 3948
+missing$ -- 16
+newline$ -- 88
+num.names$ -- 51
+pop$ -- 5128
 preamble$ -- 1
-purify$ -- 3981
+purify$ -- 5167
 quote$ -- 0
-skip$ -- 140
+skip$ -- 182
 stack$ -- 0
-substring$ -- 416
-swap$ -- 13
+substring$ -- 493
+swap$ -- 16
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
-warning$ -- 0
-while$ -- 39
+type$ -- 102
+warning$ -- 1
+while$ -- 49
 width$ -- 0
-write$ -- 172
-(There was 1 warning)
+write$ -- 221
+(There were 5 error messages)
