@@ -42,7 +42,7 @@ E_{T} = \sum_{i}E_{i}\sin{\theta_{i}},
 \end{equation}
 
 where the index $i$ runs over all the particles going into a fixed solid angle for each event, $\theta$ is the polar angle, i.e, the angle with respect to the beam axis, $\eta$ is the pseudorapidity defined as 
-\begin{equation}\label{eqn:ETDefSum}
+\begin{equation}\label{eqn:pseudorap}
 \eta\equiv-\ln\tan{\frac{\theta}{2}},
 \end{equation}
 and $E_{i}$ is the energy deposited in the calorimeter by the $i^{th}$ particle. $E_{i}$ is considered to be, by convention \cite{PhysRevC.89.044905}???, the following
@@ -55,19 +55,30 @@ E_{i} =
 	\end{cases}
 \end{equation}
 %\ $E_{i}^{tot}$ - $m_{N}$ in case of baryons, $E_{i}^{tot}$ + $m_{N}$ in case of antibaryons, and the $E_{i}^{tot}$ in case of other particles, 
-where $E_{i}^{tot}$ is the total energy of the $i^{th}$ particle and  $m_{0}$ is the rest mass in case of baryons and anti-baryons.
+where $E_{i}^{tot}$ is the total energy of the $i^{th}$ particle defined canonically as
+\begin{equation}\label{eqn:Etot}
+E^{tot}\equiv\sqrt{p^{2}+m_{0}^2}
+\end{equation}
+and  $m_{0}$ is the particle's rest mass.
 In order to account for the particles that are not identified by the calorimeters, corrections are made based on GEANT simulations of the collision and detection physics using models of the nucleus such as the Glauber model. (Doesn't that mean we use the model to make corrections in the analysis and the result of the analysis to judge the model????)
 
-Corrections to account for unidentified particles are made for the tracking detectors also, but these turn out to be less than those made in case of the calorimeters. Hence, if the tracking detectors are able to give any information that can be used to estimate the total ET, we should be able to get a better estimate of the total ET than we would if we used the calorimeters. In fact, the tracking detectors in experiments such as the STAR experiment at the RHIC and the ALICE (A Large Ion Collider Experiment) experiment at CERN include Time Projection Chambers (TPCs) and Time-of-Flight (TOF) detectors that can give us the pT spectra, yields and particle ratios of the identified charged hadrons (https://arxiv.org/pdf/1111.0763.pdf, https://arxiv.org/pdf/1701.07065.pdf). The TPCs provide measurements of particle trajectories that can be used to determine the momenta for low-momentum particles and of their specific energy loss, 
+Corrections to account for unidentified particles are made for the tracking detectors also, but these turn out to be less than those made in case of the calorimeters. Hence, if the tracking detectors are able to give any information that can be used to estimate the total $E_{T}$, then we should be able to get a better estimate of the total ET than we would if we used the calorimeters. In fact, the tracking detectors in experiments such as the STAR (Solenoidal Tracker At RHIC) experiment and ALICE (A Large Ion Collider Experiment) at CERN include Time Projection Chambers (TPCs) and Time-of-Flight (TOF) detectors that can give us the pT spectra, yields and particle ratios of the identified charged hadrons \cite{Preghenella:2011vy, PhysRevC.96.044904}. The TPCs provide measurements of particle trajectories -- that can be used to determine the momenta for low-momentum particles -- and of their specific energy loss, 
 \begin{equation}\label{eqn:specificEnLoss}
 	\frac{dE}{dx} ,
 \end{equation}
-which can be used with the trajectories to make particle identification. TOF detectors, on the other hand, cover the high-momentum part of the measurements. In ALICE, the combination of the measurements of the TPC with those of the Inner Tracking System (ITS) effectively adds the tracking length, thereby improving the resolution of the measured pT spectrum. Details about the particle identification and momentum determination capabilities of the detectors in ALICE can be found in \cite{1748-0221-3-08-S08002} 
+which can be used with the trajectories to make particle identifications using the Bethe-Bloch formula \cite{bethe1953passage}. TOF detectors, on the other hand, cover the high-momentum part of the measurements. In ALICE, the combination of the measurements of the TPC with those of the Inner Tracking System (ITS) effectively adds the tracking length, thereby improving the resolution of the measured pT spectrum. Details about the particle identification and momentum determination capabilities of the detectors in ALICE can be found in \cite{1748-0221-3-08-S08002}.
 
-In the STAR experiment, 
+In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m long and it cylindrically enshrouds the beam pipe from its outside, with an inner diameter of 1 m and an outer diameter of 4 m \cite{phdthesisnattrass}. !!!!!!!!! more details about the TPC, then its limitation in high momentum resolution, then transition to TOF and some of its details !!!!!!!!!
+%\Its drift volume is full of P10 gas (10% methane and 90% argon), the electrons from the molecules of which are knocked off by a charged particle travelling through the medium.
 
-%\ NOW!!!!!!!!!!!!! description of the instruments used to get the relevant variables:
-%\ 		primarily STAR (reference 12 from analysis note), include PHENIX and CMS later if needed
+%\Spectra from the BES program (PhysRevC.96.044904 : https://arxiv.org/pdf/1701.07065.pdf)
+%\ Beam Energy Scan program
+%\ particle identification
+%\ transverse momentum spectrum (using tracking detectors????)
+%\ errors associated with the spectra
+
+
+
 
 
 %\ NEXT: WRITE ABOUT THE ALTERNATIVE WAY, THAT IS, USING SPECTRA, AND WHAT DETECTOR THIS METHOD USES INSTEAD
