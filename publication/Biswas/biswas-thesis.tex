@@ -32,6 +32,7 @@
 % LOAD SOME USEFUL PACKAGES. 
 % No need to change anything here, although if you'd like to add packages you can do that here. Note that packages preloaded with the utthesis class are: amsmath,amsthm,amssymb,setspace,geometry,hyperref,and color
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{nomencl}                    % produces a nomenclature
 \usepackage{float}                      % figure floats
 \usepackage[numbers]{natbib}                     % this package allows you to link your references
@@ -46,6 +47,10 @@
 \usepackage{mathrsfs}                   % additional math scripts
 \usepackage[titletoc]{appendix}			% format appendix correctly
 \usepackage{pdflscape}					% to produce landscape pages if necessary
+
+\RequirePackage{lineno}
+\setlength{\linenumbersep}{6pt}
+\linenumbers
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This section formats landscape pages properly with the correct page number.
