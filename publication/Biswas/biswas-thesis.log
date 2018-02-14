@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  13 FEB 2018 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  14 FEB 2018 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,12 +768,32 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
-]) [7
+] [7
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+]) [8
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+] [9
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -789,7 +809,7 @@ No file chapters/chapter-3.tex.
 
 No file chapters/chapter-4.tex.
 :<-
-[8
+[10
 color push 0 g 0 G
 color pop
 
@@ -811,19 +831,9 @@ color pop
 \tf@brf=\write7
 \openout7 = `biswas-thesis.brf'.
 
- [9
+ [11
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [10
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [11
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -841,14 +851,9 @@ color pop
 ] [14
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-]
-[15
+] [15
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -858,17 +863,12 @@ color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [17
+]
+[17
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -882,13 +882,9 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -902,6 +898,24 @@ color pop
 color push 0 g 0 G
 color pop
 ] [20
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -927,6 +941,16 @@ color pop
 color push 0 g 0 G
 color pop
 ] [25
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [26
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [27
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1088,21 +1112,11 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [26
+ [28
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [27
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [28
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1112,8 +1126,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]
-[30
+] [30
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1123,7 +1136,18 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [32
+]
+[32
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [33
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [34
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -1148,13 +1172,11 @@ color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 g 0 G
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1164,7 +1186,7 @@ color push 0 g 0 G
 color pop
 ])
 :<-
-[33
+[35
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1173,7 +1195,19 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-] [34
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+] [36
 color push 0 g 0 G
 color pop
 
@@ -1216,18 +1250,18 @@ Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
-(rerunfilecheck)             Before: 428174BD8BBB474CBC40BB36C2BA093C;1213
-(rerunfilecheck)             After:  42AEBAFC01CA80A91E3F77F6EA05AC15;1267.
+(rerunfilecheck)             Before: E26AAF321FE7526C185FB75F69AFB4EA;1468
+(rerunfilecheck)             After:  1366A21D729B208362D085615E21A44C;1517.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 9198 strings out of 493046
- 136768 string characters out of 6137253
- 302206 words of memory out of 5000000
- 12441 multiletter control sequences out of 15000+600000
+ 9223 strings out of 493046
+ 137238 string characters out of 6137253
+ 302580 words of memory out of 5000000
+ 12460 multiletter control sequences out of 15000+600000
  11346 words of font info for 43 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 39i,9n,50p,1144b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,50p,1277b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -1239,10 +1273,10 @@ ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on biswas-thesis.pdf (39 pages, 212795 bytes).
+Output written on biswas-thesis.pdf (41 pages, 220860 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

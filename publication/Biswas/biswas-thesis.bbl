@@ -270,6 +270,12 @@ Adamczyk, L., Adkins, J.~K., Agakishiev, G., Aggarwal, M.~M., Ahammed, Z.,
   collisions from the beam energy scan program.
 \newblock {\em Phys. Rev. C}, 96:044904.
 
+\bibitem[Adams et~al., 2004]{Adams:2004cb}
+Adams, J. et~al. (2004).
+\newblock {Measurements of transverse energy distributions in Au + Au
+  collisions at s(NN)**(1/2) = 200-GeV}.
+\newblock {\em Phys. Rev.}, C70:054907.
+
 \bibitem[Adare et~al., 2016]{Adare:2015bua}
 Adare, A. et~al. (2016).
 \newblock {Transverse energy production and charged-particle multiplicity at
@@ -866,6 +872,14 @@ Kapusta, J.~I. (1979).
 \newblock Quantum chromodynamics at high temperature.
 \newblock {\em Nuclear Physics B}, 148(3):461 -- 498.
 
+\bibitem[Luo, 2016]{LUO201675}
+Luo, X. (2016).
+\newblock Exploring the qcd phase structure with beam energy scan in heavy-ion
+  collisions.
+\newblock {\em Nuclear Physics A}, 956:75 -- 82.
+\newblock The XXV International Conference on Ultrarelativistic Nucleus-Nucleus
+  Collisions: Quark Matter 2015.
+
 \bibitem[{Martinez}, 2013]{2013arXiv1304.1452M}
 {Martinez}, G. (2013).
 \newblock {Advances in Quark Gluon Plasma}.
@@ -887,6 +901,11 @@ Nattrass, C. (2009).
 \newblock {\em System, energy, and flavor dependence of jets through di-hadron
   correlations in heavy ion collisions}.
 \newblock PhD thesis, Yale University.
+
+\bibitem[Odyniec, 2013]{1742-6596-455-1-012037}
+Odyniec, G. (2013).
+\newblock The rhic beam energy scan program in star and what's next ...
+\newblock {\em Journal of Physics: Conference Series}, 455(1):012037.
 
 \bibitem[Preghenella, 2011]{Preghenella:2011vy}
 Preghenella, R. (2011).
