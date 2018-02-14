@@ -7,6 +7,7 @@ __________________________________________
 Description of contents in the repository:
 -----------------------------------------
 directory: oldVersions
+	- created before learning git
 	- contains codes and results from the past
 	- not deleted because these codes contain 
 		functionalities that may be relevant in the future
