@@ -61,7 +61,7 @@ E^{tot}\equiv\sqrt{p^{2}+m_{0}^2}
 \end{equation}
 and  $m_{0}$ is the particle's rest mass.
 In order to account for the particles that are not identified by the calorimeters, corrections are made based on GEANT simulations of the collision and detection physics using models of the nucleus such as the Glauber model. (Doesn't that mean we use the model to make corrections in the analysis and the result of the analysis to judge the model????)
-
+%\ split the following into a sub-chapter
 Corrections to account for unidentified particles are made for the tracking detectors also, but these turn out to be less than those made in case of the calorimeters. Hence, if the tracking detectors are able to give any information that can be used to estimate the total $E_{T}$, then we should be able to get a better estimate of the total $E_{T}$ than we would if we used the calorimeters. In fact, the tracking detectors in experiments such as the STAR (Solenoidal Tracker At RHIC) experiment and ALICE (A Large Ion Collider Experiment) at CERN include Time Projection Chambers (TPCs) and Time-of-Flight (TOF) detectors that can give us the $p_{T}$ spectra, yields and particle ratios of the identified charged hadrons \cite{Preghenella:2011vy, PhysRevC.96.044904}. The TPCs provide measurements of particle trajectories -- that can be used to determine the momenta for low-momentum particles -- and of their specific energy loss, 
 \begin{equation}\label{eqn:specificEnLoss}
 	\frac{dE}{dx} ,
@@ -77,11 +77,17 @@ In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m lo
 %\ transverse momentum spectrum (using tracking detectors????)
 %\ errors associated with the spectra
 
-The RHIC, in 2010, started a multi-phase program to study the QCD phase diagram. The collider has the unique facility to collide nulclei at a range of center-of-mass energies per nucleon, $\sqrt{s_{NN}}$. Table ... shows all the energies as well as ... By 2011, under the (..........) phase I of the BES program, 7.7, 11.5, 19.6, 27, and 39 GeV collisions were completed using pairs of nuclei listed in the table. One of the things that can be studied with the data associated with just this set of collision energies is statedly the possibility of a "turn-off of new phenomena already established at higher RHIC energies" (https://drupal.star.bnl.gov/STAR/starnotes/public/sn0493). That might be an evidence of the presence of a region in the phase diagram where a phase transition of some order has been observed.
+The RHIC, in 2010, started a multi-phase Beam Energy Scan (BES) program to study the QCD phase diagram. The collider has the unique facility to collide nulclei at a range of center-of-mass energies per nucleon, $\sqrt{s_{NN}}$. It also has two different detectors, STAR and PHENIX (Pioneering High Energy Nuclear Interactions eXperiment), which facilitate the cross-checking of results. Between 2010 and 2011, under the exploratory phase I of the BES program, 7.7, 11.5 (not completed in PHENIX), 19.6, 27, and 39 GeV collisions were completed using pairs of Au nuclei. Together with the data formerly collected by the RHIC at higher collision energies, BES phase I data can scan the interval from 450 MeV to 20 MeV in $\mu_{B}$ space \cite{1742-6596-455-1-012037, LUO201675}. One of the things that can be studied with the data associated with this region of the phase space is statedly the possibility of a "turn-off of new phenomena already established at higher RHIC energies" (https://drupal.star.bnl.gov/STAR/starnotes/public/sn0493). Results corresponding to the high-$\mu_{B}$ region might provide evidence of a first order phase transition, and possibly the critical point \cite{LUO201675}.
 
-One of the ways to study such a turn-off is by measuring the scaling of the transverse energy after the collision with the longidutional energy at the time of the collision, $\sqrt{s_{NN}}$. This can be done in several ways for a detector like STAR that is made up of sub-systems such as the TOF detectors, TPCs, and calorimeters. .......................... et al. analyzed the calorimetry and found out that ......... as listed in Table ... 
+One of the ways to study the fluctuations in the properties of the post-collision system of matter is by measuring the transverse energy. Specifically, one can study the scaling of the transverse energy after the collision with the longidutional energy at the time of the collision, $\sqrt{s_{NN}}$. This can be done in several ways for a detector like STAR or PHENIX that is made up of sub-systems such as the TOF detectors, TPCs/Time Expansion Chambers, and calorimeters. 
 
-Another method, employed in this analysis (or thesis???????), is to use the $p_{T}$ spectra available through the use of tracking detectors that can identify particles as well as their trajectories and ultimately their multiplicity distributions with respect to the momenta. ............. et al. (BES paper) report ............. Example plot from the paper. These ......... were used to calculate an estimate of the total transverse energy per event carried by each of the particles. This result was then used to estimate the total transverse energy due to all the collision products. 
+Adare et al. \cite{Adare:2015bua} use calorimetry in PHENIX to analyze the transverse energy corresponding to several different pairs of species colliding at a range of energies. They use the raw transverse energy measured by the EMCal, $E_{{T}EMC}$, to obtain the total hadronic $E_{T}$ by making corrections in three different steps. They first scale the data by a constant factor calculated to account for the fiducial acceptance in azimuth and pseudorapidity. The second factor is calculated to adjust for the effects of the calorimeter towers that are disabled. The third factor, $k$, is computed as follows
+\begin{equation}\label{eqn:AdareKfactor}
+k = k_{response} \times k_{inflow} \times k_{losses}
+\end{equation}
+where $k_{response}$ corresponds to hadronic particles only depositing a fraction of their total energy while passing through the EMCal, $k_{inflow}$ is attributable to the energy deposited by particles coming from outside the EMCal's fiducial aperture, and $k_{losses}$ accounts for the energy not registered in the EMCal due to energy thresholds, edge effects, and more importantly due to the particles that make it into the fiducial aperture but decay into products outside the aperture.
+
+Another method of transverse energy analysis, employed in this thesis, is to use the $p_{T}$ spectra available from the tracking detectors. The TPCs and TOF detectors in STAR, for instance, can identify particles as well as their trajectories and ultimately their multiplicity distributions with respect to the momenta. Adams et al. \cite{Adams:2004cb} report ............. Example plot from the paper. These ......... were used to calculate an estimate of the total transverse energy per event carried by each of the particles. This result was then used to estimate the total transverse energy due to all the collision products.
 
 ...... mathematics involved in getting ET out of pT spectra, including the extrapolation using the BGBW.............
 
@@ -97,6 +103,7 @@ plots and tables compared to what's been published.
 Anything interesting seen?
 
 chapter 5: conclusion
+chapter 6: future work
 
 acknowledgments
 christine, adam, charles, soren, andy, will, chrisanne.
