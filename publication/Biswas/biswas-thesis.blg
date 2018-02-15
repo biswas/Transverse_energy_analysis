@@ -44,41 +44,41 @@ Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--empty journal in bethe1953passage
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
+Warning--empty journal in bethe1953passage
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
 while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
 You've used 20 entries,
             1935 wiz_defined-function locations,
-            621 strings with 95172 characters,
-and the built_in function-call counts, 163861 in all, are:
-= -- 10810
-> -- 25486
-< -- 14
-+ -- 10182
-- -- 10174
-* -- 20819
-:= -- 31599
+            619 strings with 112433 characters,
+and the built_in function-call counts, 195753 in all, are:
+= -- 12866
+> -- 30631
+< -- 12
++ -- 12240
+- -- 12232
+* -- 24936
+:= -- 37773
 add.period$ -- 61
 call.type$ -- 20
-change.case$ -- 5184
+change.case$ -- 6215
 chr.to.int$ -- 20
 cite$ -- 21
 duplicate$ -- 276
-empty$ -- 553
-format.name$ -- 10202
-if$ -- 26670
+empty$ -- 552
+format.name$ -- 12258
+if$ -- 31810
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 19
 newline$ -- 104
 num.names$ -- 60
-pop$ -- 5136
+pop$ -- 6169
 preamble$ -- 1
-purify$ -- 5185
+purify$ -- 6216
 quote$ -- 0
-skip$ -- 216
+skip$ -- 212
 stack$ -- 0
 substring$ -- 588
 swap$ -- 19
