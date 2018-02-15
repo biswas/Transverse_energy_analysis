@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  15 FEB 2018 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  15 FEB 2018 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2134,8 +2134,6 @@ color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2931,6 +2929,8 @@ color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3457,24 +3457,22 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
 (rerunfilecheck)             Checksum: CFF5DF0731AD14CB31A5A357B9A7DA98;477.
+Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
+(rerunfilecheck)             Checksum: 82F127606678492BB6339F8CEA82AC5A;1762.
 
 
-Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
-(rerunfilecheck)             Before: 3943764FA94C56F049B2EBCFB8C78222;1758
-(rerunfilecheck)             After:  82F127606678492BB6339F8CEA82AC5A;1762.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
  9443 strings out of 493046
  140780 string characters out of 6137253
- 304129 words of memory out of 5000000
+ 304121 words of memory out of 5000000
  12666 multiletter control sequences out of 15000+600000
  11646 words of font info for 44 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 39i,9n,50p,1474b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,50p,1476b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
@@ -3488,7 +3486,7 @@ m/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on biswas-thesis.pdf (46 pages, 557498 bytes).
+Output written on biswas-thesis.pdf (46 pages, 557718 bytes).
 PDF statistics:
  445 PDF objects out of 1000 (max. 8388607)
  374 compressed objects within 4 object streams
