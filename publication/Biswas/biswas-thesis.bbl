@@ -551,6 +551,12 @@ Adler, S.~S., Afanasiev, S., Aidala, C., Ajitanand, N.~N., Akiba, Y.,
   heavy ion collisions at midrapidity.
 \newblock {\em Phys. Rev. C}, 71:034908.
 
+\bibitem[Anderson et~al., 2003]{Anderson:2003ur}
+Anderson, M. et~al. (2003).
+\newblock {The Star time projection chamber: A Unique tool for studying high
+  multiplicity events at RHIC}.
+\newblock {\em Nucl. Instrum. Meth.}, A499:659--678.
+
 \bibitem[Ayala, 2016]{1742-6596-761-1-012066}
 Ayala, A. (2016).
 \newblock Hadronic matter at the edge: A survey of some theoretical approaches
@@ -1052,6 +1058,11 @@ Elia, D. and the ALICE~Collaboration (2013).
 \newblock Strangeness production in alice.
 \newblock {\em Journal of Physics: Conference Series}, 455(1):012005.
 
+\bibitem[Hilke, 2010]{0034-4885-73-11-116201}
+Hilke, H.~J. (2010).
+\newblock Time projection chambers.
+\newblock {\em Reports on Progress in Physics}, 73(11):116201.
+
 \bibitem[{Jacobs} and {Wang}, 2005]{2005PrPNP..54..443J}
 {Jacobs}, P. and {Wang}, X.-N. (2005).
 \newblock {Matter in extremis: ultrarelativistic nuclear collisions at RHIC}.
@@ -1102,6 +1113,13 @@ Preghenella, R. (2011).
 \newblock {Transverse momentum spectra of identified charged hadrons with the
   ALICE detector in Pb-Pb collisions at $\sqrt{s_{NN}}$ = 2.76 TeV}.
 \newblock {\em PoS}, EPS-HEP2011:118.
+
+\bibitem[Shao et~al., 2006]{Shao:2005iu}
+Shao, M., Barannikova, O.~{\relax Yu}., Dong, X., Fisyak, Y., Ruan, L.,
+  Sorensen, P., and Xu, Z. (2006).
+\newblock {Extensive particle identification with TPC and TOF at the STAR
+  experiment}.
+\newblock {\em Nucl. Instrum. Meth.}, A558:419--429.
 
 \bibitem[Shuryak, 1988]{Shuryak1988}
 Shuryak, E.~V. (1988).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  15 FEB 2018 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  16 FEB 2018 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -623,7 +623,20 @@ No file front-matter/acknowledgments.tex.
 
 No file front-matter/abstract.tex.
 :<-
-(./biswas-thesis.toc)
+(./biswas-thesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+))
 \tf@toc=\write4
 \openout4 = `biswas-thesis.toc'.
 
@@ -662,13 +675,56 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (./biswas-thesis.lot)
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+(./biswas-thesis.lot)
 \tf@lot=\write5
 \openout5 = `biswas-thesis.lot'.
 
@@ -680,22 +736,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] (./biswas-thesis.lof
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-))
+] (./biswas-thesis.lof)
 \tf@lof=\write6
 \openout6 = `biswas-thesis.lof'.
 
@@ -706,6 +747,16 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
@@ -813,7 +864,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <figures/1742-6596-761-1-012066.png, id=121, 469.755pt x 374.39874pt>
+] <figures/1742-6596-761-1-012066.png, id=164, 469.755pt x 374.39874pt>
 File: figures/1742-6596-761-1-012066.png Graphic file (type png)
 
 <use figures/1742-6596-761-1-012066.png>
@@ -985,51 +1036,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [6
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1044,26 +1050,25 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 69.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 69.
+
+[6
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [7
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
@@ -1084,32 +1089,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
@@ -1128,15 +1107,218 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=197, 803.0pt x 452.
-69125pt>
-File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
- png)
- <use figures/../figures/PhysRevC-96-044904_pTSpectra_39.png>
-Package pdftex.def Info: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png
- used on input line 95.
-(pdftex.def)             Requested size: 397.48499pt x 224.0863pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\eta' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 80.
+
+[7
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+]
+<figures/../figures/0034-4885-73-11-116201_star_PID.jpg, id=240, 306.162pt x 24
+6.375pt>
+File: figures/../figures/0034-4885-73-11-116201_star_PID.jpg Graphic file (type
+ jpg)
+ <use figures/../figures/0034-4885-73-11-116201_star_PID.jpg>
+Package pdftex.def Info: figures/../figures/0034-4885-73-11-116201_star_PID.jpg
+ used on input line 127.
+(pdftex.def)             Requested size: 397.48499pt x 319.8664pt.
  [8
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+[9
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/../figures/0034-4885-73-11-116201_star_PID.jpg>] [10
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -1157,6 +1339,45 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 151.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 151.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 151.
+
+
+<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=275, 803.0pt x 452.
+69125pt>
+File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
+ png)
+ <use figures/../figures/PhysRevC-96-044904_pTSpectra_39.png>
+Package pdftex.def Info: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png
+ used on input line 155.
+(pdftex.def)             Requested size: 397.48499pt x 224.0863pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1168,6 +1389,20 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1195,6 +1430,8 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
@@ -1203,10 +1440,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-])
-[9
-color push 0 g 0 G
-color pop
+]) [12
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1214,6 +1448,10 @@ color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -1231,7 +1469,7 @@ No file chapters/chapter-3.tex.
 
 No file chapters/chapter-4.tex.
 :<-
-[10
+[13
 color push 0 g 0 G
 color pop
 
@@ -1255,204 +1493,9 @@ color pop
 \tf@brf=\write7
 \openout7 = `biswas-thesis.brf'.
 
- [11
+ [14
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [12
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [13
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [14
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1617,8 +1660,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1649,8 +1690,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]
-[17
+] [17
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1740,17 +1780,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1825,7 +1855,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1855,7 +1885,10 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [20
+color push 0 g 0 G
+color pop
+]
+[20
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1945,6 +1978,18 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1989,10 +2034,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2132,10 +2173,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2190,6 +2227,10 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2252,8 +2293,6 @@ color pop
 ] [26
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2262,19 +2301,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2342,6 +2369,8 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2461,7 +2490,15 @@ color pop
 ] [29
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2471,11 +2508,19 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2653,8 +2698,203 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+] [32
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [33
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [34
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ]
-[32
+[35
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2876,7 +3116,13 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [33
+ [36
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2930,217 +3176,14 @@ color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [34
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [35
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [36
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ] [37
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3313,6 +3356,209 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [40
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [41
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [42
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
@@ -3330,12 +3576,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -3345,41 +3585,7 @@ color push 0 g 0 G
 color pop
 ])
 :<-
-[40
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
+[43
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3410,6 +3616,14 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -3418,7 +3632,59 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [41
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [44
 color push 0 g 0 G
 color pop
 
@@ -3455,41 +3721,55 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 139.
 (./back-matter/vita.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 139.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 139.
-Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CFF5DF0731AD14CB31A5A357B9A7DA98;477.
-Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 82F127606678492BB6339F8CEA82AC5A;1762.
 
+
+Package rerunfilecheck Warning: File `biswas-thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `biswas-thesis.out':
+(rerunfilecheck)             Before: 2CCB34EAF6C89FF2A5A9DF8C9DCE6E31;1111
+(rerunfilecheck)             After:  3600FAD6A852E5761DFD7F090820A5F0;1083.
+
+Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
+(rerunfilecheck)             Before: 509CC33DDCA8C79C2C991FF212F4025E;2167
+(rerunfilecheck)             After:  D2AA3F737FA5FA554147AFB4531C1C48;2168.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 9443 strings out of 493046
- 140780 string characters out of 6137253
- 304121 words of memory out of 5000000
- 12666 multiletter control sequences out of 15000+600000
- 11646 words of font info for 44 fonts, out of 8000000 for 9000
+ 9523 strings out of 493046
+ 142298 string characters out of 6137253
+ 306984 words of memory out of 5000000
+ 12723 multiletter control sequences out of 15000+600000
+ 16460 words of font info for 65 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 39i,9n,50p,1476b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,11n,50p,1547b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on biswas-thesis.pdf (46 pages, 557718 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on biswas-thesis.pdf (49 pages, 692854 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 98 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 542 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

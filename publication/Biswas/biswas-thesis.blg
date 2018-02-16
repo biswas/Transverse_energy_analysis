@@ -14,25 +14,25 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
-I was expecting a `{' or a `('---line 45 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 90 of file references-Biswas.bib
  : %\ @phdthesis 
  :               bit undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 46 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 91 of file references-Biswas.bib
  : 
  : @phdthesis{phdthesisnattrass,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 52 of file references-Biswas.bib
+You're missing a field name---line 97 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 57 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 102 of file references-Biswas.bib
  : %\ Bethe Bloch formula @misc 
  :                              but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 58 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 103 of file references-Biswas.bib
  : 
  : @article{bethe1953passage,
 (Error may have been on previous line)
@@ -49,45 +49,45 @@ Warning--empty journal in bethe1953passage
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
 while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
-You've used 20 entries,
+You've used 23 entries,
             1935 wiz_defined-function locations,
-            619 strings with 112433 characters,
-and the built_in function-call counts, 195753 in all, are:
-= -- 12866
-> -- 30631
-< -- 12
-+ -- 12240
-- -- 12232
-* -- 24936
-:= -- 37773
-add.period$ -- 61
-call.type$ -- 20
-change.case$ -- 6215
-chr.to.int$ -- 20
-cite$ -- 21
-duplicate$ -- 276
-empty$ -- 552
-format.name$ -- 12258
-if$ -- 31810
+            642 strings with 112939 characters,
+and the built_in function-call counts, 197016 in all, are:
+= -- 12986
+> -- 30689
+< -- 14
++ -- 12260
+- -- 12252
+* -- 25049
+:= -- 37997
+add.period$ -- 70
+call.type$ -- 23
+change.case$ -- 6239
+chr.to.int$ -- 23
+cite$ -- 24
+duplicate$ -- 318
+empty$ -- 639
+format.name$ -- 12282
+if$ -- 32056
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 19
-newline$ -- 104
-num.names$ -- 60
-pop$ -- 6169
+missing$ -- 22
+newline$ -- 119
+num.names$ -- 69
+pop$ -- 6185
 preamble$ -- 1
-purify$ -- 6216
+purify$ -- 6240
 quote$ -- 0
-skip$ -- 212
+skip$ -- 245
 stack$ -- 0
-substring$ -- 588
-swap$ -- 19
+substring$ -- 684
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
+type$ -- 138
 warning$ -- 1
-while$ -- 58
+while$ -- 67
 width$ -- 0
-write$ -- 262
+write$ -- 301
 (There were 5 error messages)
