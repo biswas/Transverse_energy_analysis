@@ -1,6 +1,5 @@
-/* in this version .....
-	automatized npart graph formatting
-	next: automatize snn graph formatting
+/*
+	next: calculate uncertainties
 */
 
 
@@ -35,7 +34,7 @@ int plotsFromResults3(){
 					// TODO actually 4, but try two first
 	// array for energy-dependent plots:
 	Double_t enPlotArr[cents][collEns][funcsOfCollEn];
-	in.open(Form("/home/bsharma/rhip/analysisCodes/fitResults5.dat"));
+	in.open(Form("./fitResults5.dat"));
 	if (!in.good()){
 		cout << "Problem opening file!" << endl;
 		return 1;
@@ -55,12 +54,17 @@ int plotsFromResults3(){
 											// they had static storage duration, hence
 											// set them to zero as well
 											
-	Double_t dETdEtaErrSum[cents][collEns] = {0};
+	Double_t dETdEtaSum_errSq[cents][collEns] = {0}; // errors added in quadrature
+								// TODO don't forget to take the square root later
 	Double_t dNchdEtaSum[cents][collEns] = {0};
-	Double_t dNchdEtaErrSum[cents][collEns] = {0};
+	Double_t dNchdEtaSum_errSq[cents][collEns] = {0}; // errors added in quadrature
 	Double_t Npart[cents][collEns];// Npart function of cent and en only
+	Double_t Npart_err[cents][collEns];
 	Double_t dETdEtaOverNpartBy2Sum[cents][collEns];
+	Double_t dETdEtaOverNpartBy2Sum_err[cents][collEns]; // use formula involving...
+					//partial derivatives to evaluate uncertainty
 	Double_t dETdEtaOverdNchdEtaSum[cents][collEns];
+	Double_t dETdEtaOverdNchdEtaSum_err[cents][collEns]; // 
 	// Add elements below (for all 6 particles)
 		// in order to get the above elements
 	Double_t dETdEta[cents][collEns][parts];
@@ -113,7 +117,7 @@ int plotsFromResults3(){
 		else if (collEn == 27) enIndex = 3;
 		else if (collEn == 39) enIndex = 4;
 		// particle set: {ka-,ka+,pi-,pi+,pro,pba}
-		if (part =="pi-") partIndex = 0;
+		if 		(part == "pi-") partIndex = 0;
 		else if (part == "pi+") partIndex = 1;
 		else if (part == "ka-") partIndex = 2;
 		else if (part == "ka+") partIndex = 3;
@@ -129,36 +133,70 @@ int plotsFromResults3(){
 		in >> dNchdEtaErr[centIndex][enIndex][partIndex];
 		for(int l=0; l<8; l++) in >> skipContent;
 		in >> Npart[centIndex][enIndex];
-		cout << Npart[centIndex][enIndex] << "\n";
-		in >> skipContent;
+		cout << Npart[centIndex][enIndex] << "\t";
+		in >> Npart_err[centIndex][enIndex];
+		cout << Npart_err[centIndex][enIndex] << "\n";
 		// TODO: what about lambdas while adding ET?
 		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam
-		// at high energies, numer of negative and positive charges in the collision
+		// however lambda spectra available for centralities different from the rest
+		// at high energies, number of negative and positive charges in the collision
 			// product are roughly the same
 			// which is not true at low energies since the colliding nuclei have +ve nucleons
-		//FIXME: fix the sum formulas below:
+		// TODO: if the error bars don't look reasonable, cout results to check the errors
 		if(partIndex==0 || partIndex==1){
-			dETdEtaSum[centIndex][enIndex] += (3.0/2.0)*dETdEta[centIndex][enIndex][partIndex];
+			dETdEtaSum[centIndex][enIndex] 			+= (3.0/2.0)*dETdEta[centIndex][enIndex][partIndex];
 			// ^ since number of pi0 = num of pi+ or pi-
-			dNchdEtaSum[centIndex][enIndex] += dNchdEta[centIndex][enIndex][partIndex];
+			dETdEtaSum_errSq[centIndex][enIndex] 	+= ((3.0/2.0)*dETdEtaErr[centIndex][enIndex][partIndex])*
+												 	   ((3.0/2.0)*dETdEtaErr[centIndex][enIndex][partIndex]);
+			dETdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dETdEtaSum_errSq[centIndex][enIndex]);						 	   
+			dNchdEtaSum[centIndex][enIndex] 		+= dNchdEta[centIndex][enIndex][partIndex];
+			dNchdEtaSum_errSq[centIndex][enIndex] 	+= dNchdEtaErr[centIndex][enIndex][partIndex]*
+													   dNchdEtaErr[centIndex][enIndex][partIndex];
+			dNchdEtaSum_errcentIndex][enIndex]		=  TMath::Sqrt(dNchdEtaSum_errSq[centIndex][enIndex]);
 		}
 		else if(partIndex==2 || partIndex==3 || partIndex == 4 || partIndex == 5){
-			dETdEtaSum[centIndex][enIndex] += 2.0*dETdEta[centIndex][enIndex][partIndex];
+			dETdEtaSum[centIndex][enIndex] 			+= 2.0*dETdEta[centIndex][enIndex][partIndex];
+			dETdEtaSum_errSq[centIndex][enIndex] 	+= (2.0*dETdEtaErr[centIndex][enIndex][partIndex])*
+													(2.0*dETdEtaErr[centIndex][enIndex][partIndex]);
 			// ^ since num of k0_s ~ num og k0_l = num of k+ or k-
 				// also, num of p ~ num of pbar ~ num of n or nbar
-			dNchdEtaSum[centIndex][enIndex] += dNchdEta[centIndex][enIndex][partIndex];
+			dETdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dETdEtaSum_errSq[centIndex][enIndex]);						 	   
+			dNchdEtaSum[centIndex][enIndex] 		+= dNchdEta[centIndex][enIndex][partIndex];
+			dNchdEtaSum_errSq[centIndex][enIndex] 	+= dNchdEtaErr[centIndex][enIndex][partIndex]*
+													   dNchdEtaErr[centIndex][enIndex][partIndex];
+			dNchdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dNchdEtaSum_errSq[centIndex][enIndex]);
 		}
 	} //end of for loop with index j - captured all 270 rows from data file
 	in.close();// all information from file extracted, so it should be closed
 	// print dETdEtaSum for 9 centralities and 5 collision energies
 		// and assign values to dETdEtaOverNpartBy2Sum[i][j]
+	// for quantity q = a/b (such as dETdEtaOverNpartBy2Sum)
+	// q_err = sqrt((a_err/b)^2 + (-a*b_err/(b^2))^2)
 		for(int i=0; i<cents; i++){
 			for(int j=0; j<collEns; j++){
-				cout << "dETdEtaSum["<<i<<"]["<<j<<"] = "<<dETdEtaSum[i][j]<<endl;
-				cout << "dNchdEtaSum["<<i<<"]["<<j<<"] = "<<dNchdEtaSum[i][j]<<endl;
-				dETdEtaOverNpartBy2Sum[i][j] = dETdEtaSum[i][j]/Npart[i][j];
-				dETdEtaOverdNchdEtaSum[i][j] = dETdEtaSum[i][j]/dNchdEtaSum[i][j];// FIXME??
+				cout << "dETdEtaSum["<<i<<"]["<<j<<"] 	= "<<dETdEtaSum[i][j]<<endl;
+				cout << "dNchdEtaSum["<<i<<"]["<<j<<"] 	= "<<dNchdEtaSum[i][j]<<endl;
+				dETdEtaOverNpartBy2Sum[i][j] 		= dETdEtaSum[i][j]/Npart[i][j];
+				dETdEtaOverNpartBy2Sum_err[i][j]	= TMath::Sqrt(
+														(dETdEtaSum_err[i][j]/Npart[i][j])*
+														(dETdEtaSum_err[i][j]/Npart[i][j])
+																 +
+														(-dETdEtaSum[i][j]*Npart_err[i][j]/
+															(Npart[i][j]*Npart[i][j]))*
+														(-dETdEtaSum[i][j]*Npart_err[i][j]/
+															(Npart[i][j]*Npart[i][j]))
+																 );
+				dETdEtaOverdNchdEtaSum[i][j] 		= dETdEtaSum[i][j]/dNchdEtaSum[i][j];// FIXME??
 																	// graph does not look right
+				dETdEtaOverdNchdEtaSum_err[i][j]	= TMath::Sqrt(
+														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])*
+														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])
+																 +
+														(-dETdEtaSum[i][j]*dNchdEtaSum_err[i][j]/
+															(dNchdEtaSum[i][j]*dNchdEtaSum[i][j]))*
+														(-dETdEtaSum[i][j]*dNchdEtaSum_err[i][j]/
+															(dNchdEtaSum[i][j]*dNchdEtaSum[i][j]))
+																 );
 			}
 		}
 	Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
@@ -169,7 +207,7 @@ int plotsFromResults3(){
 		Npart[i][j] = 
 	}
 	*/
-	
+	///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
 	/// ------ begin - plot all graphs at once -------------------------------//
 	for(int centInd=0; centInd<cents; centInd++){ // loop through all centralities
 		centArr[centInd] = centInd*1.0;
