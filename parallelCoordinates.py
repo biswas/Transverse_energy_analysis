@@ -3,16 +3,18 @@ import pandas as pd
 import numpy as np
 from matplotlib import ticker
 
-df = pd.read_csv('~/rhip/analysisCodes/fitResults5_python.csv')
+df = pd.read_csv('./fitResults5_python.csv')
 
-cols = ['CollEn','mass', 'centrality', 'beta', 'temp', 'dETdEtaTotal']
+#cols = ['CollEn','mass', 'centrality', 'beta', 'temp', 'dETdEtaTotal']
+cols = ['centrality', 'beta', 'temp', 'dETdEtaTotal']
 x = [i for i, _ in enumerate(cols)]
 colors = ['#000080', '#006400', '#ff0000', '#98fb98', '#ff1493', '#b8860b']
+#colors = ['#000080', '#006400', '#ff0000', '#98fb98']
 df['particles'] = df['particle'].astype('category')
 #for i in range(len(df['particles'])):
 #	colors = df['particles'].cat.categories[i]
 colors ={df['particles'].cat.categories[i]: colors[i] for i, _ in enumerate(df['particles'].cat.categories)}
-fig, axes = plt.subplots(1, len(x)-1, sharey=False, figsize=(15,5))
+fig, axes = plt.subplots(1, len(x)-1, sharey=False, figsize=(15,10))
 min_max_range = {}
 for col in cols:
 	min_max_range[col] = [df[col].min(), df[col].max(), np.ptp(df[col])]
@@ -35,7 +37,7 @@ def set_ticks_for_axis(dim, ax, ticks):
     
 for dim, ax in enumerate(axes):
     ax.xaxis.set_major_locator(ticker.FixedLocator([dim]))
-    set_ticks_for_axis(dim, ax, ticks=6)
+    set_ticks_for_axis(dim, ax, ticks=10)
     ax.set_xticklabels([cols[dim]])
     
 ax = plt.twinx(axes[-1])
@@ -51,6 +53,6 @@ plt.legend(
     df['particles'].cat.categories,
     bbox_to_anchor=(1.2, 1), loc=2, borderaxespad=0.)
 
-plt.title("Parameters and Transverse Energy Results for Particles")
+plt.title("Parameters and Transverse Energy Results from BGBW Fit for 6 Different Particles")
 
 plt.show()
