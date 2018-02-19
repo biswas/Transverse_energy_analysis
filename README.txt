@@ -182,6 +182,7 @@ directory: publication
 *******************************************************************************
 ToDos:
 ..................................................................................
+- verify previous code to create cross-check plots and add errors in the plots
 - need to add lambda spectra from STAR Preliminary data on BES strangeness
 	1. clearify what "raw" means as opposed to "pT" in one of the directories, 
 	 and what cut30 and cut0 mean
@@ -201,6 +202,7 @@ ToDos:
 	
 	3. modify existing code to use the fitting method of the TGraphErrors class
 	 instead of the TH1 class
+	---> DONE (actually didn't need to use this method after all; constructed bins)
 	 3.1 See if the methods (args) in the header need to be modified: DONE
 		- yes, they need to me modified
 		- spawned file fitSampleSpec_TH_TGE.cpp from fitSampleSpec.cpp
@@ -225,7 +227,6 @@ ToDos:
 	 	-> file created: fitSampleSpec_TH_TGE.cpp
 	 3.3 Modify fitBESData5_1. cpp 
 
-	 -> in progress.............
 	 
 	4. figure out the correct method to take care of the fact that the lambda 
 	 spectra are available for slightly different centralities than the rest
