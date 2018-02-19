@@ -37,7 +37,7 @@ def set_ticks_for_axis(dim, ax, ticks):
     
 for dim, ax in enumerate(axes):
     ax.xaxis.set_major_locator(ticker.FixedLocator([dim]))
-    set_ticks_for_axis(dim, ax, ticks=10)
+    set_ticks_for_axis(dim, ax, ticks=9)
     ax.set_xticklabels([cols[dim]])
     
 ax = plt.twinx(axes[-1])
@@ -53,6 +53,6 @@ plt.legend(
     df['particles'].cat.categories,
     bbox_to_anchor=(1.2, 1), loc=2, borderaxespad=0.)
 
-plt.title("Parameters and Transverse Energy Results from BGBW Fit for 6 Different Particles")
+plt.title("Parameters and Transverse Energy Results from BGBW Fit for 6 Different Particles", x= -0.5, y= 1.08)
 
 plt.show()
