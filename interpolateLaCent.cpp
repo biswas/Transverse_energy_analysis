@@ -41,7 +41,7 @@ int plotsFromResults3(){
 		cout << "Problem opening file!" << endl;
 		return 1;
 	}
-	
+
 	for(int i=0;i<47;i++){ // loop through 47 column names
 		in >> skipContent;
 		// (tested) print first and last header names to check:
@@ -81,6 +81,7 @@ int plotsFromResults3(){
 	int enIndex;
 	int partIndex;
 	int funcIndex;
+	///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO	
 	for(int j=0; j<270; j++){// for 270 rows below header in the data file
 		//for(int i=0; i<46; i++){
 		in >> collEn; cout << collEn << "\t";
@@ -209,7 +210,7 @@ int plotsFromResults3(){
 		Npart[i][j] = 
 	}
 	*/
-	///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+
 	/// ------ begin - plot all graphs at once -------------------------------//
 	for(int centInd=0; centInd<cents; centInd++){ // loop through all centralities
 		centArr[centInd] = centInd*1.0;
@@ -311,7 +312,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverNpartBy2SumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==snn2){
 		c -> SetLogx();
@@ -322,7 +323,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverdNchdEtaSumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverdNchdEta_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart1){
 		g->SetMarkerStyle(28);
@@ -332,7 +333,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart2){
 		g->SetMarkerStyle(28);
@@ -342,7 +343,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
 	}
 	//cout << g->GetName() << endl;
 	
