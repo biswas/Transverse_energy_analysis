@@ -81,8 +81,8 @@ int plotsFromResults3(){
 	int enIndex;
 	int partIndex;
 	int funcIndex;
-	///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO	
-	for(int j=0; j<270; j++){// for 270 rows below header in the data file
+	
+	for(int j=0; j<70; j++){// for 70 rows below header in the data file
 		//for(int i=0; i<46; i++){
 		in >> collEn; cout << collEn << "\t";
 		in >> part; cout << part << "\t";
@@ -120,13 +120,16 @@ int plotsFromResults3(){
 		else if (collEn == 27) enIndex = 3;
 		else if (collEn == 39) enIndex = 4;
 		// particle set: {ka-,ka+,pi-,pi+,pro,pba}
+		/*
 		if 		(part == "pi-") partIndex = 0;
 		else if (part == "pi+") partIndex = 1;
 		else if (part == "ka-") partIndex = 2;
 		else if (part == "ka+") partIndex = 3;
 		else if (part == "pro") partIndex = 4;
 		else if (part == "pba") partIndex = 5;
-		
+		*/
+		if 		(part == "ala") partIndex = 0;
+		else if (part == "la_") partIndex = 1;
 		in >> dETdEta[centIndex][enIndex][partIndex];
 		cout << dETdEta[centIndex][enIndex][partIndex] << "\t";
 		in >> dETdEtaErr[centIndex][enIndex][partIndex];
@@ -139,6 +142,8 @@ int plotsFromResults3(){
 		cout << Npart[centIndex][enIndex] << "\t";
 		in >> Npart_err[centIndex][enIndex];
 		cout << Npart_err[centIndex][enIndex] << "\n";
+		in >> skipContent;
+		///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO	
 		// TODO: what about lambdas while adding ET?
 		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam
 		// however lambda spectra available for centralities different from the rest
