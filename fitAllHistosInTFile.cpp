@@ -299,16 +299,44 @@ int fitAllHistosInTFile(){
 		Double_t dNdyTotal = dNdyLeft+dNdy_d+dNdyRight;
 		Double_t dNdyTErr = dNdyLErr+dNdy_d_err+dNdyRErr;
 		
-		cout <<"Integral from data for histo "<<breakOutForTesting+1<<": "<<*(integralDataPtr+0)<<endl;// 357.633 for pi minus cent 0
+		cout <<"Integral from data for histo "<<breakOutForTesting+1<<": "<<*(integralDataPtr+0)
+				<<endl;// 357.633 for pi minus cent 0
 		cout<<"-----------------------------------"<<endl;				
 		//------ end Find integrals left and right of data points ----//
 		//------ begin - assign Npart and errors from BES paper -----//
 		Int_t* NpartAndArrPtr;
 		Int_t Npart;
 		Int_t NpartErr;
+		
+		// for lambdas, last four centrality classes are binned into two:
+		if ((particleID=="la_" || particleID=="ala") && 
+			(centrality == "5" || centrality == "6"))
+		{
+			 if(centrality == "5") // which should be 40-60% for lambdas
+			 {
+			 	NpartAndArrPtr = getNpartAndErr(collEn,centrality); // 40-50%
+			 	Npart = *(NpartAndArrPtr+0);
+			 	NpartAndArrPtr = getNpartAndErr(collEn,"6"); // 50-60%
+			 	
+			 } 
+			 else if(centrality == "6") // which should be 60-80% for lambdas
+			 {
+			 	NpartAndArrPtr = getNpartAndErr(collEn,"7"); // 60-70%
+			 	Npart = *(NpartAndArrPtr+0);
+			 	NpartAndArrPtr = getNpartAndErr(collEn,"8"); // 70-80%
+			 }
+			 Npart += *(NpartAndArrPtr+0); // added the two, next average:
+			 Double_t tempAvg = Npart/2.;
+			 Npart = ceil(tempAvg); // FIXME rounded down
+			 // for a conservative estimate, take the bigger error between the two (50-60%):
+			 NpartErr = *(NpartAndArrPtr+0);
+		}
+		else
+		{
 		NpartAndArrPtr = getNpartAndErr(collEn,centrality);
 		Npart = *(NpartAndArrPtr+0);
 		NpartErr = *(NpartAndArrPtr+1);
+		}
 		//------ end - assign Npart and errors from BES paper -------// 
 		//-- Output results to file-----------------------------
 		datFile << collEn << "\t"	
