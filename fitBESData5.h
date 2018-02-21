@@ -252,6 +252,7 @@ void outputDatFile(Double_t* results, int centra, string partName){
 	datFile.close();	
 }
 
+// get npart and its error for the STAR BES data as per the published table
 Int_t* getNpartAndErr(Double_t en, string cent){// args energy and centrality
 	Int_t Npart = 0;
 	Int_t NpartErr = 0;
