@@ -176,8 +176,8 @@ int plotsFromResults3(){
 			for(int j=0; j<collEns; j++){
 				cout << "dETdEtaSum["<<i<<"]["<<j<<"] 	= "<<dETdEtaSum[i][j]<<endl;
 				cout << "dNchdEtaSum["<<i<<"]["<<j<<"] 	= "<<dNchdEtaSum[i][j]<<endl;
-				dETdEtaOverNpartBy2Sum[i][j] 		= dETdEtaSum[i][j]/Npart[i][j];
-				dETdEtaOverNpartBy2Sum_err[i][j]	= TMath::Sqrt(
+				dETdEtaOverNpartBy2Sum[i][j] 		= dETdEtaSum[i][j]/(Npart[i][j]/2.);
+				dETdEtaOverNpartBy2Sum_err[i][j]	= 2.*TMath::Sqrt(
 														(dETdEtaSum_err[i][j]/Npart[i][j])*
 														(dETdEtaSum_err[i][j]/Npart[i][j])
 																 +
@@ -188,7 +188,7 @@ int plotsFromResults3(){
 																 );
 				dETdEtaOverdNchdEtaSum[i][j] 		= dETdEtaSum[i][j]/dNchdEtaSum[i][j];// FIXME??
 																	// graph does not look right
-				dETdEtaOverdNchdEtaSum_err[i][j]	= TMath::Sqrt(
+				dETdEtaOverdNchdEtaSum_err[i][j]	= 2.*TMath::Sqrt(
 														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])*
 														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])
 																 +
