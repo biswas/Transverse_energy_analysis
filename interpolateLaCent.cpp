@@ -22,7 +22,7 @@ std::string centIndToPercent(int centInd);
 void formatGraph(TGraph* g, Double_t collEnArr[], int enInd);
 // main function:
 
-int plotsFromResults3(){
+int interpolateLaCent(){
 
 	ifstream in;
 	string skipContent;// read and skip content that has no use
@@ -51,29 +51,30 @@ int plotsFromResults3(){
 	Double_t collEn;
 	Double_t cent;// centrality value obtained from data file
 	string part; // particle name
-	Double_t dETdEtaSum[cents][collEns] = {0};// initialize element [0][0] to 0, 
+	Double_t dETdEtaSum[cents][collEns] = {0.};// initialize element [0][0] to 0, 
 											//and initialize all other elements as if 
 											// they had static storage duration, hence
 											// set them to zero as well
-											
-	Double_t dETdEtaSum_errSq[cents][collEns] = {0}; // errors added in quadrature
-								// TODO don't forget to take the square root later
-	Double_t dNchdEtaSum[cents][collEns] = {0};
-	Double_t dNchdEtaSum_errSq[cents][collEns] = {0}; // errors added in quadrature
-	Double_t Npart[cents][collEns];// Npart function of cent and en only
-	Double_t Npart_err[cents][collEns];
-	Double_t dETdEtaOverNpartBy2Sum[cents][collEns];
-	Double_t dETdEtaOverNpartBy2Sum_err[cents][collEns]; // use formula involving...
+	// FIXME: faulty assignment of values to centIndex 6 & 7. Fix after interpolation										
+	Double_t dETdEtaSum_errSq[cents][collEns] = {0.}; // errors added in quadrature
+	Double_t dETdEtaSum_err[cents][collEns] = {0.}; // sq root of the above
+	Double_t dNchdEtaSum[cents][collEns] = {0.};
+	Double_t dNchdEtaSum_errSq[cents][collEns] = {0.}; // errors added in quadrature
+	Double_t dNchdEtaSum_err[cents][collEns] = {0.}; // sq root of the above
+	Double_t Npart[cents][collEns] = {0.};// Npart function of cent and en only
+	Double_t Npart_err[cents][collEns] = {0.};
+	Double_t dETdEtaOverNpartBy2Sum[cents][collEns] = {0.};
+	Double_t dETdEtaOverNpartBy2Sum_err[cents][collEns] = {0.}; // use formula involving...
 					//partial derivatives to evaluate uncertainty
-	Double_t dETdEtaOverdNchdEtaSum[cents][collEns];
-	Double_t dETdEtaOverdNchdEtaSum_err[cents][collEns]; // 
+	Double_t dETdEtaOverdNchdEtaSum[cents][collEns] = {0.};
+	Double_t dETdEtaOverdNchdEtaSum_err[cents][collEns] = {0.}; // 
 	// Add elements below (for all 6 particles)
 		// in order to get the above elements
-	Double_t dETdEta[cents][collEns][parts];
-	Double_t dETdEtaErr[cents][collEns][parts];
-	Double_t dNchdEta[cents][collEns][parts];
-	Double_t dNchdEtaErr[cents][collEns][parts];
-	Double_t centArr[cents]; // need to pass to formatGraph function
+	Double_t dETdEta[cents][collEns][parts] = {0.};
+	Double_t dETdEtaErr[cents][collEns][parts] = {0.};
+	Double_t dNchdEta[cents][collEns][parts] = {0.};
+	Double_t dNchdEtaErr[cents][collEns][parts] = {0.};
+	Double_t centArr[cents] = {0.}; // need to pass to formatGraph function
 	//Double_t dETdEtaOverNpartBy2[cents][collEns][parts];
 	// enPlotArr element indexed as: 
 	// enPlotArr[centIndex][enIndex][funcIndex]
@@ -128,8 +129,8 @@ int plotsFromResults3(){
 		else if (part == "pro") partIndex = 4;
 		else if (part == "pba") partIndex = 5;
 		*/
-		if 		(part == "ala") partIndex = 0;
-		else if (part == "la_") partIndex = 1;
+		if 		(part == "ala") partIndex = 6;
+		else if (part == "la_") partIndex = 7;
 		in >> dETdEta[centIndex][enIndex][partIndex];
 		cout << dETdEta[centIndex][enIndex][partIndex] << "\t";
 		in >> dETdEtaErr[centIndex][enIndex][partIndex];
@@ -142,41 +143,26 @@ int plotsFromResults3(){
 		cout << Npart[centIndex][enIndex] << "\t";
 		in >> Npart_err[centIndex][enIndex];
 		cout << Npart_err[centIndex][enIndex] << "\n";
-		in >> skipContent;
-		///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO	
+		in >> skipContent; // last column only contains the fit status
+
 		// TODO: what about lambdas while adding ET?
-		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam
+		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam (last term is valid if there's no antilambda)
 		// however lambda spectra available for centralities different from the rest
-		// at high energies, number of negative and positive charges in the collision
+		// At high energies, number of negative and positive charges in the collision
 			// product are roughly the same
 			// which is not true at low energies since the colliding nuclei have +ve nucleons
 		// TODO: if the error bars don't look reasonable, cout results to check the errors
-		if(partIndex==0 || partIndex==1){
-			dETdEtaSum[centIndex][enIndex] 			+= (3.0/2.0)*dETdEta[centIndex][enIndex][partIndex];
-			// ^ since number of pi0 = num of pi+ or pi-
-			dETdEtaSum_errSq[centIndex][enIndex] 	+= ((3.0/2.0)*dETdEtaErr[centIndex][enIndex][partIndex])*
-												 	   ((3.0/2.0)*dETdEtaErr[centIndex][enIndex][partIndex]);
-			dETdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dETdEtaSum_errSq[centIndex][enIndex]);						 	   
-			dNchdEtaSum[centIndex][enIndex] 		+= dNchdEta[centIndex][enIndex][partIndex];
-			dNchdEtaSum_errSq[centIndex][enIndex] 	+= dNchdEtaErr[centIndex][enIndex][partIndex]*
-													   dNchdEtaErr[centIndex][enIndex][partIndex];
-			dNchdEtaSum_errcentIndex][enIndex]		=  TMath::Sqrt(dNchdEtaSum_errSq[centIndex][enIndex]);
+		if(partIndex==6 || partIndex==7){
+			// lambdas are not charged particles:
+			dETdEtaSum[centIndex][enIndex] 			+= dETdEta[centIndex][enIndex][partIndex];
+			dETdEtaSum_errSq[centIndex][enIndex] 	+= (dETdEtaErr[centIndex][enIndex][partIndex])*
+												 	   (dETdEtaErr[centIndex][enIndex][partIndex]);
+			dETdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dETdEtaSum_errSq[centIndex][enIndex]);
+			 
 		}
-		else if(partIndex==2 || partIndex==3 || partIndex == 4 || partIndex == 5){
-			dETdEtaSum[centIndex][enIndex] 			+= 2.0*dETdEta[centIndex][enIndex][partIndex];
-			dETdEtaSum_errSq[centIndex][enIndex] 	+= (2.0*dETdEtaErr[centIndex][enIndex][partIndex])*
-													(2.0*dETdEtaErr[centIndex][enIndex][partIndex]);
-			// ^ since num of k0_s ~ num og k0_l = num of k+ or k-
-				// also, num of p ~ num of pbar ~ num of n or nbar
-			dETdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dETdEtaSum_errSq[centIndex][enIndex]);						 	   
-			dNchdEtaSum[centIndex][enIndex] 		+= dNchdEta[centIndex][enIndex][partIndex];
-			dNchdEtaSum_errSq[centIndex][enIndex] 	+= dNchdEtaErr[centIndex][enIndex][partIndex]*
-													   dNchdEtaErr[centIndex][enIndex][partIndex];
-			dNchdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dNchdEtaSum_errSq[centIndex][enIndex]);
-		}
-	} //end of for loop with index j - captured all 270 rows from data file
+	} //end of for loop with index j - captured all 70 rows from data file
 	in.close();// all information from file extracted, so it should be closed
-	// print dETdEtaSum for 9 centralities and 5 collision energies
+	// print dETdEtaSum for 7 centralities and 5 collision energies
 		// and assign values to dETdEtaOverNpartBy2Sum[i][j]
 	// for quantity q = a/b (such as dETdEtaOverNpartBy2Sum)
 	// q_err = sqrt((a_err/b)^2 + (-a*b_err/(b^2))^2)
@@ -194,8 +180,7 @@ int plotsFromResults3(){
 														(-dETdEtaSum[i][j]*Npart_err[i][j]/
 															(Npart[i][j]*Npart[i][j]))
 																 );
-				dETdEtaOverdNchdEtaSum[i][j] 		= dETdEtaSum[i][j]/dNchdEtaSum[i][j];// FIXME??
-																	// graph does not look right
+				dETdEtaOverdNchdEtaSum[i][j] 		= dETdEtaSum[i][j]/dNchdEtaSum[i][j];
 				dETdEtaOverdNchdEtaSum_err[i][j]	= TMath::Sqrt(
 														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])*
 														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])
@@ -218,7 +203,7 @@ int plotsFromResults3(){
 
 	/// ------ begin - plot all graphs at once -------------------------------//
 	for(int centInd=0; centInd<cents; centInd++){ // loop through all centralities
-		centArr[centInd] = centInd*1.0;
+		centArr[centInd] = centInd*1.0; // to avoid double-int conflict
 		Double_t dETdEtaOverNpartBy2SumCentByCent[collEns];// one graph per centInd
 		Double_t dETdEtaOverdNchdEtaSumCentByCent[collEns];
 		for(int i=0; i<collEns; i++){ // loop through all collEns for current centrality
@@ -242,7 +227,19 @@ int plotsFromResults3(){
 	} // end of for loop with index centInd
 	/// ------ end - plot all snn graphs at once -------------------------------//
 	
-	Double_t NpartArrEnByEn[9]; // for each collEn, there is a unique Npart Array
+	Double_t NpartArrEnByEn[cents] = {0.}; // for each collEn, there is a unique Npart Array
+	/*
+	// FOR LAMBDA INTERPOLATIONS, USE THE FOLLOWING INSTEAD OF THE ABOVE
+	// ACTUALLY, SCRATCH THAT: THE FLUCTUATIONS MAY BE MORE IN THAT CASE
+	Double_t centArrPercentEnByEn[cents] = {2.5, 7.5, 15, 25, }; // only needed for interpolating lambdas
+		// using the above instead of just centArr because the latter
+		// corresponds to a linear x-axis, whereas the former represents
+		// an x-axis corresponding to the non-linear list of centralities,
+		// that is, 0-5% = 2.5, 5-10% = 7.5, 10-20% = 15,
+		// 20-30% = 25, 30-40% = 35, 40-60% = 50, 60-80% = 70
+		// then obtain the interpolated y-values for 45, 55, 65 and 75
+	*/
+		
 	// unlike for the snn graphs in which 
 	// for each cent, there is the same collEnArr
 	// hence, the above array should be used in a loop instead of directly as in
@@ -257,10 +254,28 @@ int plotsFromResults3(){
 		// because TGraphErrors does not take a 2d array as argument
 			dETdEtaOverNpartBy2SumEnByEn[i] = dETdEtaOverNpartBy2Sum[i][enInd];
 			dETdEtaOverdNchdEtaSumEnByEn[i] = dETdEtaOverdNchdEtaSum[i][enInd];
+			
+			// automatic assignment of npart only valid for cents 0 through 4
+			// manually assign values for cents 5 and 6 in the following way:
+				// Use the average of the npart values corresponding to the 
+				// two sub-bins as the npart value for its super-bin. For example,
+				// use the average of the npart values for 40-50% and 50-60% bins
+				// to calculate the npart for the 40-60% bin.
+		///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+		
+			// first assign values for i = 0 through 8 using the function 
+			// Int_t* getNpartAndErr(Double_t en, string cent)
+			// Then use i=5 and 6 to get the averaged npart and error for new i=5
+			// and i=7 and 8 to get the averaged npart and error for new i=6
+			// ^ done by modifying the code that creates the labmdas fit results dat file
+			// i = 7 and 8 should be assigned 0 then
+			// ^ done in the declaration of Npart[][]
+			// after that, use the extrapolation to obtain the ET/npart for 
+			// new centIndex 5, 6, 7 and 8
 			NpartArrEnByEn[i]				= Npart[i][enInd];
 		}
 		TGraph* g1; // okay to use identifier g1 in local scope as was the case in previous use
-		g1 = new TGraph(9, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
+		g1 = new TGraph(cents, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
 		g1 -> SetName("dETdEtaOverNpartBy2Sum_vs_Npart"); // unique identifier for graph
 														// see use in function formatGraph
 		formatGraph(g1, collEnArr, enInd);
@@ -268,7 +283,7 @@ int plotsFromResults3(){
 		delete g1;
 		
 		TGraph* g2;
-		g2 = new TGraph(9, NpartArrEnByEn, dETdEtaOverdNchdEtaSumEnByEn);
+		g2 = new TGraph(cents, NpartArrEnByEn, dETdEtaOverdNchdEtaSumEnByEn);
 		g2 -> SetName("dETdEtaOverdNchdEtaSum_vs_Npart");
 		formatGraph(g2, collEnArr, enInd);
 		delete g2;
