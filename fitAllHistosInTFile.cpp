@@ -160,7 +160,6 @@ int fitAllHistosInTFile(){
 				<< particleID<<endl;return 1;}
 		
 		Double_t* integralDataPtr;
-		// TODO : need to fix what function this should be:
 		integralDataPtr = getIntegralsAndErrorsFromData(h,type,mass);
 					// ^ method verified!!!
 		
