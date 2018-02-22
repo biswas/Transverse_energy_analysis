@@ -234,12 +234,11 @@ int plotsFromResults3(){
 	} // end of for loop with index centInd
 	/// ------ end - plot all snn graphs at once -------------------------------//
 	
-	Double_t NpartArrEnByEn[9]; // for each collEn, there is a unique Npart Array
+	Double_t NpartArrEnByEn[cents]; // for each collEn, there is a unique Npart Array
 	// unlike for the snn graphs in which 
 	// for each cent, there is the same collEnArr
 	// hence, the above array should be used in a loop instead of directly as in
 	// the usage of collEnArr.
-	// TODO current: populate NpartArr for each energy:
 	/// ------ begin - plot all Npart graphs at once -------------------------------//
 	for(int enInd=0; enInd<collEns; enInd++){ // loop through all coll Ens
 	
@@ -266,7 +265,7 @@ int plotsFromResults3(){
 		delete g2;
 		
 		
-	} // end of for loop with index centInd
+	} // end of for loop with index enInd
 	/// ------ end - plot all graphs at once -------------------------------//
 	
 	return 0;
