@@ -453,6 +453,207 @@ Int_t* getNpartAndErr(Double_t en, string cent){// args energy and centrality
 	return npartAndErrArr;
 }
 
+// get npart and its error for the STAR BES data as per the published table
+ // overloaded function. takes int cent instead of string cent as argument
+Int_t* getNpartAndErr(Double_t en, int cent){// args energy and centrality
+	Int_t Npart = 0;
+	Int_t NpartErr = 0;
+		if (en == 7.7){
+			if (cent == 0){
+				Npart 		= 337;
+				NpartErr 	= 2;
+			}
+			else if (cent == 1){
+				Npart 		= 290;
+				NpartErr 	= 6;
+			}
+			else if (cent == 2){
+				Npart 		= 226;
+				NpartErr	= 8;
+			}
+			else if (cent == 3){
+				Npart 		= 160;
+				NpartErr 	= 10;
+			}
+			else if (cent == 4){
+				Npart 		= 110;
+				NpartErr 	= 11;
+			}
+			else if (cent == 5){
+				Npart 		= 72;
+				NpartErr 	= 10;
+			}
+			else if (cent == 6){
+				Npart 		= 45;
+				NpartErr	= 9;
+			}
+			else if (cent == 7){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == 8){
+				Npart 		= 14;
+				NpartErr 	= 4;
+			}
+		}
+		if (en == 11.5){
+			if (cent == 0){
+				Npart 		= 338;
+				NpartErr 	= 2;
+			}
+			else if (cent == 1){
+				Npart 		= 291;
+				NpartErr 	= 6;
+			}
+			else if (cent == 2){
+				Npart 		= 226;
+				NpartErr	= 8;
+			}
+			else if (cent == 3){
+				Npart 		= 160;
+				NpartErr 	= 9;
+			}
+			else if (cent == 4){
+				Npart 		= 110;
+				NpartErr 	= 10;
+			}
+			else if (cent == 5){
+				Npart 		= 73;
+				NpartErr 	= 10;
+			}
+			else if (cent == 6){
+				Npart 		= 45;
+				NpartErr	= 9;
+			}
+			else if (cent == 7){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == 8){
+				Npart 		= 14;
+				NpartErr 	= 4;
+			}
+		}
+		if (en == 19.6){
+			if (cent == 0){
+				Npart 		= 338;
+				NpartErr 	= 2;
+			}
+			else if (cent == 1){
+				Npart 		= 289;
+				NpartErr 	= 6;
+			}
+			else if (cent == 2){
+				Npart 		= 225;
+				NpartErr	= 9;
+			}
+			else if (cent == 3){
+				Npart 		= 158;
+				NpartErr 	= 10;
+			}
+			else if (cent == 4){
+				Npart 		= 108;
+				NpartErr 	= 11;
+			}
+			else if (cent == 5){
+				Npart 		= 71;
+				NpartErr 	= 10;
+			}
+			else if (cent == 6){
+				Npart 		= 44;
+				NpartErr	= 9;
+			}
+			else if (cent == 7){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == 8){
+				Npart 		= 14;
+				NpartErr 	= 5;
+			}
+		}
+		if (en == 27){
+			if (cent == 0){
+				Npart 		= 343;
+				NpartErr 	= 2;
+			}
+			else if (cent == 1){
+				Npart 		= 299;
+				NpartErr 	= 6;
+			}
+			else if (cent == 2){
+				Npart 		= 234;
+				NpartErr	= 9;
+			}
+			else if (cent == 3){
+				Npart 		= 166;
+				NpartErr 	= 11;
+			}
+			else if (cent == 4){
+				Npart 		= 114;
+				NpartErr 	= 11;
+			}
+			else if (cent == 5){
+				Npart 		= 75;
+				NpartErr 	= 10;
+			}
+			else if (cent == 6){
+				Npart 		= 47;
+				NpartErr	= 9;
+			}
+			else if (cent == 7){
+				Npart 		= 27;
+				NpartErr 	= 8;
+			}
+			else if (cent == 8){
+				Npart 		= 14;
+				NpartErr 	= 6;
+			}
+		}
+		if (en == 39){
+			if (cent == 0){
+				Npart 		= 342;
+				NpartErr 	= 2;
+			}
+			else if (cent == 1){
+				Npart 		= 294;
+				NpartErr 	= 6;
+			}
+			else if (cent == 2){
+				Npart 		= 230;
+				NpartErr	= 9;
+			}
+			else if (cent == 3){
+				Npart 		= 162;
+				NpartErr 	= 10;
+			}
+			else if (cent == 4){
+				Npart 		= 111;
+				NpartErr 	= 11;
+			}
+			else if (cent == 5){
+				Npart 		= 74;
+				NpartErr 	= 10;
+			}
+			else if (cent == 6){
+				Npart 		= 46;
+				NpartErr	= 9;
+			}
+			else if (cent == 7){
+				Npart 		= 26;
+				NpartErr 	= 7;
+			}
+			else if (cent == 8){
+				Npart 		= 14;
+				NpartErr 	= 5;
+			}
+		}
+	static Int_t npartAndErrArr[2];// first element is Npart, second Npart_err
+	npartAndErrArr[0] = Npart;
+	npartAndErrArr[1] = NpartErr;
+	
+	return npartAndErrArr;
+}
 void classifyParticleKmeans(){
 
 	
