@@ -7,6 +7,7 @@
  // FIXME: npart, not npart/2
 
 #include "Riostream.h"
+#include "fitBESData5.h" // for the function getNpartAndErr
 //#include <cstdio>
 //#include <vector>
 #include <string>
@@ -20,20 +21,28 @@ using namespace std;
 std::string doubToString(Double_t);
 std::string centIndToPercent(int centInd);
 void formatGraph(TGraph* g, Double_t collEnArr[], int enInd);
+Double_t* interpolateNpartGraph(TGraph* tg, int en);
+Int_t* getNpartAndErr(Double_t collisionEnergy, int centrality);
 // main function:
-
+Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
 int interpolateLaCent(){
-	std::ofstream datFile ("lambdasInterpolated.dat", std::ofstream::out);
-	datFile << "CollEn"<< "\t"	
-			<< "particle" << "\t"
-			<< "centrality" << "\t"
-			<< "npart" << "\t"
-			<< "npart_err" << "\t"
-			<< "dETdEtaByNpartOver2" << "\t"
-			<< "dETdEtaByNpartOver2_err" << "\n";
+	std::ofstream datfile ("lambdasInterpolated.dat", std::ofstream::out);
+	cout << "CollEn" << "\t"
+		<< "dETdEta1" << "\n";
+	datfile << "CollEn"<< "\t"	
+			//<< "particle" << "\t"
+			//<< "centrality" << "\t"
+			//<< "npart" << "\t"
+			//<< "npart_err" << "\t"
+			<< "dETdEta1" << "\t"
+			<< "dETdEta2" << "\t"
+			<< "dETdEta3" << "\t"
+			<< "dETdEta4" << "\n";
+			//<< "dETdEtaByNpartOver2_err" << "\n"; FIXME
 	ifstream in;
 	string skipContent;// read and skip content that has no use
 	const int cents = 7; // 7 different centralities for la only
+	//const int TRUECENTS = 9;
 	const int collEns = 5; // 5 different collision energies
 	const int parts = 2; // 2 different particles: la and ala
 	const int funcsOfCollEn = 1; // there is one quantity that
@@ -173,33 +182,33 @@ int interpolateLaCent(){
 		// and assign values to dETdEtaOverNpartBy2Sum[i][j]
 	// for quantity q = a/b (such as dETdEtaOverNpartBy2Sum)
 	// q_err = sqrt((a_err/b)^2 + (-a*b_err/(b^2))^2)
-		for(int i=0; i<cents; i++){
-			for(int j=0; j<collEns; j++){
-				cout << "dETdEtaSum["<<i<<"]["<<j<<"] 	= "<<dETdEtaSum[i][j]<<endl;
-				cout << "dNchdEtaSum["<<i<<"]["<<j<<"] 	= "<<dNchdEtaSum[i][j]<<endl;
-				dETdEtaOverNpartBy2Sum[i][j] 		= dETdEtaSum[i][j]/Npart[i][j];
-				dETdEtaOverNpartBy2Sum_err[i][j]	= TMath::Sqrt(
-														(dETdEtaSum_err[i][j]/Npart[i][j])*
-														(dETdEtaSum_err[i][j]/Npart[i][j])
-																 +
-														(-dETdEtaSum[i][j]*Npart_err[i][j]/
-															(Npart[i][j]*Npart[i][j]))*
-														(-dETdEtaSum[i][j]*Npart_err[i][j]/
-															(Npart[i][j]*Npart[i][j]))
-																 );
-				dETdEtaOverdNchdEtaSum[i][j] 		= dETdEtaSum[i][j]/dNchdEtaSum[i][j];
-				dETdEtaOverdNchdEtaSum_err[i][j]	= TMath::Sqrt(
-														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])*
-														(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])
-																 +
-														(-dETdEtaSum[i][j]*dNchdEtaSum_err[i][j]/
-															(dNchdEtaSum[i][j]*dNchdEtaSum[i][j]))*
-														(-dETdEtaSum[i][j]*dNchdEtaSum_err[i][j]/
-															(dNchdEtaSum[i][j]*dNchdEtaSum[i][j]))
-																 );
-			}
+	for(int i=0; i<cents; i++){
+		for(int j=0; j<collEns; j++){
+			cout << "dETdEtaSum["<<i<<"]["<<j<<"] 	= "<<dETdEtaSum[i][j]<<endl;
+			cout << "dNchdEtaSum["<<i<<"]["<<j<<"] 	= "<<dNchdEtaSum[i][j]<<endl;
+			dETdEtaOverNpartBy2Sum[i][j] 		= dETdEtaSum[i][j]/Npart[i][j];
+			dETdEtaOverNpartBy2Sum_err[i][j]	= TMath::Sqrt(
+													(dETdEtaSum_err[i][j]/Npart[i][j])*
+													(dETdEtaSum_err[i][j]/Npart[i][j])
+															 +
+													(-dETdEtaSum[i][j]*Npart_err[i][j]/
+														(Npart[i][j]*Npart[i][j]))*
+													(-dETdEtaSum[i][j]*Npart_err[i][j]/
+														(Npart[i][j]*Npart[i][j]))
+															 );
+			dETdEtaOverdNchdEtaSum[i][j] 		= dETdEtaSum[i][j]/dNchdEtaSum[i][j];
+			dETdEtaOverdNchdEtaSum_err[i][j]	= TMath::Sqrt(
+													(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])*
+													(dETdEtaSum_err[i][j]/dNchdEtaSum[i][j])
+															 +
+													(-dETdEtaSum[i][j]*dNchdEtaSum_err[i][j]/
+														(dNchdEtaSum[i][j]*dNchdEtaSum[i][j]))*
+													(-dETdEtaSum[i][j]*dNchdEtaSum_err[i][j]/
+														(dNchdEtaSum[i][j]*dNchdEtaSum[i][j]))
+															 );
 		}
-	Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
+	}
+	
 
 	/*
 	for(int i=0; i<cents; i++){ // i is cent index
@@ -221,6 +230,7 @@ int interpolateLaCent(){
 		TGraph* g1;
 		g1 = new TGraph(5, collEnArr, dETdEtaOverNpartBy2SumCentByCent);
 		g1 -> SetName("dETdEtaOverNpartBy2Sum_vs_en"); // unique identifier to be used in function:
+		cout << "Now formatting graph: " << g1->GetName() << endl;
 		formatGraph(g1, centArr, centInd);
 		delete g1;	
 	
@@ -228,6 +238,7 @@ int interpolateLaCent(){
 		TGraph* g2;
 		g2 = new TGraph(5, collEnArr, dETdEtaOverdNchdEtaSumCentByCent);
 		g2 -> SetName("dETdEtaOverdNchdEtaSum_vs_en"); // unique identifier to be used in function:
+		cout << "Now formatting graph: " << g2->GetName() << endl;
 		formatGraph(g2, centArr, centInd);
 		delete g2;
 		
@@ -281,15 +292,15 @@ int interpolateLaCent(){
 		}
 
 		TGraph* g1; // okay to use identifier g1 in local scope as was the case in previous use
-		g1 = new TGraph(cents, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
-		interpolateNpartGraph(g1);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
-		datFile << collEnArr[enInd]<< "\t"	
-				<< part << "\t"
-				//<< "centInd" << "\t"
-				<< "npart" << "\t"
-				<< "npart_err" << "\t"
-				<< "dETdEtaByNpartOver2" << "\t"
-				<< "dETdEtaByNpartOver2_err" << "\n";
+		g1 = new TGraph(cents/*=7*/, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
+		Double_t* interpPtr = interpolateNpartGraph(g1, enInd);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+
+		datfile << collEnArr[enInd]<< "\t"	
+				<< *(interpPtr+0) << "\t"
+				<< *(interpPtr+1) << "\t"
+				<< *(interpPtr+2) << "\t"
+				<< *(interpPtr+3) << "\n";
+				//<< "dETdEtaByNpartOver2_err" << "\n"; // FIXME
 		g1 -> SetName("dETdEtaOverNpartBy2Sum_vs_Npart"); // unique identifier for graph
 														// see use in function formatGraph
 		formatGraph(g1, collEnArr, enInd);
@@ -346,7 +357,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverNpartBy2SumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_En/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==snn2){
 		c -> SetLogx();
@@ -357,7 +368,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverdNchdEtaSumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/la_toInterpolate/dETdEtaOverdNchdEta_En/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart1){
 		g->SetMarkerStyle(28);
@@ -367,8 +378,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
-		
+		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart2){
 		g->SetMarkerStyle(28);
@@ -378,7 +388,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/la_toInterpolate/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
 	}
 	//cout << g->GetName() << endl;
 	
@@ -400,18 +410,13 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 	// FIXME t1 -> DrawText(0.2,0.8,graphTextNpartConstCharPtr);
 	
 				//c -> SaveAs("./fittedPlots/trial1.png");
-	TImage *png = TImage::Create();
+	TImage *png = TImage::Create();//TODO try to use canvas method instead of png object
 	png->FromPad(c);
 	const char* imgPathAndNameConstCharPtr1 = imgPathAndName.c_str();
 	png->WriteImage(imgPathAndNameConstCharPtr1);
 	delete t1;
 	delete c;
 	delete png;
-	if (g -> GetName()==npart1)
-	{		interpolateNpartGraph(g1);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
-		return interpolateNpartGraph(g);; // pointer to array of elements that go into the datfile
-	}
-	else return NULL;
 }
 
 std::string centIndToPercent(int centInd){
@@ -432,9 +437,25 @@ std::string centIndToPercent(int centInd){
 // function to interpolate required points in a graph using a spline
 // returns pointer to an array of ET values corresponding to
 	// the last four centrality bins: 40-50%, 50-60%, 60-70%, 70-80%
-Double_t* interpolateNpartGraph(TGraph* tg){
+Double_t* interpolateNpartGraph(TGraph* tg, int en){
+	Double_t x_interp[4] = {0.};// array to hold the npart values...
+							// corresponding to last 4 cents
+	static Double_t y_interp[4]			 = {0.}; // array to hold ET/npart values followed
+								// by the corresponding errors FIXME FIXME
+	//^ if not static, error:
+	//address of stack memory associated with local variable returned
+	
 	// in order to let the Eval() method use binary search:
 	tg->SetBit(TGraph::kIsSortedX);
-	[6]		interpolateNpartGraph(g1);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
-	= *fitBESData5::getNpartAndErr(Double_t en, string cent);
+	///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+	for (int i = 5; i<9; i++) // get x-values for points being interpolated
+						// i.e., npart values corresponding to last 4 cents
+	{
+		x_interp[i-5] = *getNpartAndErr(collEnArr[en], i);
+		// get dET/dEta = (dET/dEta)/npart * npart:
+		y_interp[i-5] = (tg -> Eval(x_interp[i-5], 0,""))*x_interp[i-5];
+	}
+	
+	
+	return y_interp;
 }
