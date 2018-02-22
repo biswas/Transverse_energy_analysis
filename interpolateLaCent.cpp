@@ -23,7 +23,14 @@ void formatGraph(TGraph* g, Double_t collEnArr[], int enInd);
 // main function:
 
 int interpolateLaCent(){
-
+	std::ofstream datFile ("lambdasInterpolated.dat", std::ofstream::out);
+	datFile << "CollEn"<< "\t"	
+			<< "particle" << "\t"
+			<< "centrality" << "\t"
+			<< "npart" << "\t"
+			<< "npart_err" << "\t"
+			<< "dETdEtaByNpartOver2" << "\t"
+			<< "dETdEtaByNpartOver2_err" << "\n";
 	ifstream in;
 	string skipContent;// read and skip content that has no use
 	const int cents = 7; // 7 different centralities for la only
@@ -244,7 +251,6 @@ int interpolateLaCent(){
 	// for each cent, there is the same collEnArr
 	// hence, the above array should be used in a loop instead of directly as in
 	// the usage of collEnArr.
-	// TODO current: populate NpartArr for each energy:
 	/// ------ begin - plot all Npart graphs at once -------------------------------//
 	for(int enInd=0; enInd<collEns; enInd++){ // loop through all coll Ens
 	
@@ -261,7 +267,6 @@ int interpolateLaCent(){
 				// two sub-bins as the npart value for its super-bin. For example,
 				// use the average of the npart values for 40-50% and 50-60% bins
 				// to calculate the npart for the 40-60% bin.
-		///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
 		
 			// first assign values for i = 0 through 8 using the function 
 			// Int_t* getNpartAndErr(Double_t en, string cent)
@@ -274,8 +279,17 @@ int interpolateLaCent(){
 			// new centIndex 5, 6, 7 and 8
 			NpartArrEnByEn[i]				= Npart[i][enInd];
 		}
+
 		TGraph* g1; // okay to use identifier g1 in local scope as was the case in previous use
 		g1 = new TGraph(cents, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
+		interpolateNpartGraph(g1);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+		datFile << collEnArr[enInd]<< "\t"	
+				<< part << "\t"
+				//<< "centInd" << "\t"
+				<< "npart" << "\t"
+				<< "npart_err" << "\t"
+				<< "dETdEtaByNpartOver2" << "\t"
+				<< "dETdEtaByNpartOver2_err" << "\n";
 		g1 -> SetName("dETdEtaOverNpartBy2Sum_vs_Npart"); // unique identifier for graph
 														// see use in function formatGraph
 		formatGraph(g1, collEnArr, enInd);
@@ -290,8 +304,8 @@ int interpolateLaCent(){
 		
 		
 	} // end of for loop with index centInd
-	/// ------ end - plot all graphs at once -------------------------------//
-	
+	/// ------ end - plot all npart graphs at once -------------------------------//
+	datfile.close();
 	return 0;
 }
 
@@ -354,6 +368,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
 		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+		
 	}
 	else if (g -> GetName()==npart2){
 		g->SetMarkerStyle(28);
@@ -385,13 +400,18 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 	// FIXME t1 -> DrawText(0.2,0.8,graphTextNpartConstCharPtr);
 	
 				//c -> SaveAs("./fittedPlots/trial1.png");
-	TImage *png = TImage::Create();//TODO try to use canvas method instead of png object
+	TImage *png = TImage::Create();
 	png->FromPad(c);
 	const char* imgPathAndNameConstCharPtr1 = imgPathAndName.c_str();
 	png->WriteImage(imgPathAndNameConstCharPtr1);
 	delete t1;
 	delete c;
 	delete png;
+	if (g -> GetName()==npart1)
+	{		interpolateNpartGraph(g1);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+		return interpolateNpartGraph(g);; // pointer to array of elements that go into the datfile
+	}
+	else return NULL;
 }
 
 std::string centIndToPercent(int centInd){
@@ -407,4 +427,14 @@ std::string centIndToPercent(int centInd){
 	else if (centInd == 8) centRange = "70-80 %";
 	else centRange = "Error: check centrality!";
 	return centRange;	
+}
+
+// function to interpolate required points in a graph using a spline
+// returns pointer to an array of ET values corresponding to
+	// the last four centrality bins: 40-50%, 50-60%, 60-70%, 70-80%
+Double_t* interpolateNpartGraph(TGraph* tg){
+	// in order to let the Eval() method use binary search:
+	tg->SetBit(TGraph::kIsSortedX);
+	[6]		interpolateNpartGraph(g1);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
+	= *fitBESData5::getNpartAndErr(Double_t en, string cent);
 }
