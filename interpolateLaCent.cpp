@@ -23,6 +23,7 @@ std::string centIndToPercent(int centInd);
 void formatGraph(TGraph* g, Double_t collEnArr[], int enInd);
 Double_t* interpolateNpartGraph(TGraph* tg, int en);
 Int_t* getNpartAndErr(Double_t collisionEnergy, int centrality);
+void printInterpolatedGraph(TGraph* tg, int en, Double_t* x_interp, Double_t* y_interp);
 // main function:
 Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
 int interpolateLaCent(){
@@ -217,7 +218,7 @@ int interpolateLaCent(){
 	}
 	*/
 
-	/// ------ begin - plot all graphs at once -------------------------------//
+	/// ------ begin - plot all snn graphs at once -------------------------------//
 	for(int centInd=0; centInd<cents; centInd++){ // loop through all centralities
 		centArr[centInd] = centInd*1.0; // to avoid double-int conflict
 		Double_t dETdEtaOverNpartBy2SumCentByCent[collEns];// one graph per centInd
@@ -266,6 +267,7 @@ int interpolateLaCent(){
 	for(int enInd=0; enInd<collEns; enInd++){ // loop through all coll Ens
 	
 		Double_t dETdEtaOverNpartBy2SumEnByEn[cents];// one graph per collEn;
+		// FIXME currently just npart instead of npartBy2
 		Double_t dETdEtaOverdNchdEtaSumEnByEn[cents];	// cents = num of Nparts
 		for(int i=0; i<cents; i++){ // loop through all cents/Nparts for current collEn
 		// because TGraphErrors does not take a 2d array as argument
@@ -293,6 +295,16 @@ int interpolateLaCent(){
 
 		TGraph* g1; // okay to use identifier g1 in local scope as was the case in previous use
 		g1 = new TGraph(cents/*=7*/, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
+		cout << "npartArr: "; 
+		for (int i = 0; i<cents; i++){
+			cout << *(NpartArrEnByEn+i) << ", ";
+		}
+		cout << endl;
+		cout << "dETdEtaOverNpartArr: "; 
+		for (int i = 0; i<cents; i++){
+			cout << *(dETdEtaOverNpartBy2SumEnByEn+i) << ", ";
+		}
+		cout << endl;
 		Double_t* interpPtr = interpolateNpartGraph(g1, enInd);///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
 
 		datfile << collEnArr[enInd]<< "\t"	
@@ -348,7 +360,10 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 												// graph with Npart in the X-axis
 	TString npart2("dETdEtaOverdNchdEtaSum_vs_Npart"); // name of second kind of
 												// graph with Npart in the X-axis
+	TString debug("dETdEtaOverdNchdEtaSum_vs_Npart_Final");// test of graph with
+												// interpolated points
 	if (g -> GetName()==snn1){
+		cout << "Working on npart2********" << endl;
 		c -> SetLogx();
 		g->SetMarkerStyle(29);
 		g->SetMarkerColor(kBlue);
@@ -357,9 +372,10 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverNpartBy2SumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==snn2){
+		cout << "Working on npart2********" << endl;
 		c -> SetLogx();
 		g->SetMarkerStyle(29);
 		g->SetMarkerColor(kOrange);
@@ -368,37 +384,54 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverdNchdEtaSumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverdNchdEta_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart1){
+		cout << "Working on npart1********" << endl;
 		g->SetMarkerStyle(28);
 		g->SetMarkerColor(kGreen);
 		xlabel = "#it{N}_{part}";
-		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}/2#GT (GeV)";
+		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}#GT (GeV)";
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+		
 	}
 	else if (g -> GetName()==npart2){
+		cout << "Working on npart2********" << endl;
 		g->SetMarkerStyle(28);
-		g->SetMarkerColor(kRed);
+		g->SetMarkerColor(kGreen);
 		xlabel = "#it{N}_{part}";
-		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LTd#it{N}_{ch}/d#eta#GT (GeV)";
+		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}#GT (GeV)";
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
-		graphName = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
+		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
+		"./finalPlots/la_toInterpolate/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+	}
+	else if (g -> GetName()==debug){
+		cout << "Creating debug plot*********** "<< en_Or_centInd << ": " <<
+			doubToString(collEn_Or_NpartArr[en_Or_centInd]) << endl;
+		g->SetMarkerStyle(28);
+		g->SetMarkerColor(kGreen);
+		xlabel = "#it{N}_{part}";
+		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}#GT (GeV)";
+		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
+		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
+		imgPathAndName = 
+		"./debugPlots/"+graphName+"_debug.png";
 	}
 	//cout << g->GetName() << endl;
 	
 	g->GetHistogram()-> SetTitle(0);
 	g->GetHistogram()->GetXaxis()-> SetTitle(xlabel);
 	g->GetHistogram()->GetXaxis()-> SetTitleOffset(1.05);
+	g->GetHistogram()->GetYaxis()-> SetRangeUser(0., 0.030);
 	g->GetHistogram()->GetXaxis()-> SetTitleSize(0.04);
 	g->GetHistogram()->GetYaxis()-> SetTitle(ylabel);
 	g->GetHistogram()->GetYaxis()-> SetTitleSize(0.04);
 	g->GetHistogram()->GetYaxis()-> SetTitleOffset(1.05);
+	cout << g -> GetName() << " graph formatted" << endl;
 	const char* graphTextConstCharPtr = graphText.c_str();// required for TText constructor
 	//TText* t1 = new TText(200,.62,graphTextNpartConstCharPtr);
 	t1 -> SetNDC(kTRUE);
@@ -417,6 +450,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 	delete t1;
 	delete c;
 	delete png;
+	return;
 }
 
 std::string centIndToPercent(int centInd){
@@ -440,22 +474,95 @@ std::string centIndToPercent(int centInd){
 Double_t* interpolateNpartGraph(TGraph* tg, int en){
 	Double_t x_interp[4] = {0.};// array to hold the npart values...
 							// corresponding to last 4 cents
-	static Double_t y_interp[4]			 = {0.}; // array to hold ET/npart values followed
+	static Double_t y_interpET[4]			 = {0.}; // array to hold dET/dEta values followed
 								// by the corresponding errors FIXME FIXME
 	//^ if not static, error:
 	//address of stack memory associated with local variable returned
-	
+	Double_t y_interp[4]			 = {0.}; // array to hold (dET/dEta)/npart values followed
+								// by the corresponding errors FIXME FIXME
 	// in order to let the Eval() method use binary search:
 	tg->SetBit(TGraph::kIsSortedX);
-	///////////////// HERE TODO TODO TODO TODO TODO TODO TODO TODO TODO
 	for (int i = 5; i<9; i++) // get x-values for points being interpolated
 						// i.e., npart values corresponding to last 4 cents
 	{
 		x_interp[i-5] = *getNpartAndErr(collEnArr[en], i);
+		y_interp[i-5] = (tg -> Eval(x_interp[i-5], 0,"S")); // option S implies third-order spline
 		// get dET/dEta = (dET/dEta)/npart * npart:
-		y_interp[i-5] = (tg -> Eval(x_interp[i-5], 0,""))*x_interp[i-5];
+		y_interpET[i-5] = (tg -> Eval(x_interp[i-5], 0,"S"))*x_interp[i-5];
 	}
+	cout << "x_interp: "; 
+	for (int i = 0; i<4; i++){
+		cout << *(x_interp+i) << ", ";
+	}
+	cout << endl;
+	cout << "y_interp: "; 
+	for (int i = 0; i<4; i++){
+		cout << *(y_interp+i) << ", ";
+	}
+	cout << endl;
+	//cout << "test debug graph iter *************" << endl;
+	printInterpolatedGraph(tg, en, x_interp, y_interp);
+	cout << "En value to pass: " << en << endl;
+	return y_interpET;
+}
+
+void printInterpolatedGraph(TGraph* tg, int en, Double_t* x_interp, Double_t* y_interp)
+{
+	// create new tgraph by adding the elements of the old one -2
+	// with the newly interpolated points
+	// new tgraph constructor:
+	TGraph* gr;
+	// define arguments that go into testG:
+	int sizeFinal; // declaration, defined using the following
+	// get x and y axes of the old TGraph:
+	//	copy(x_interp, x_interp+size2, xArrFinal+size1-2);
+	Double_t xArr1[tg->GetN()];
+	copy(tg->GetX(), tg->GetX()+tg->GetN(), xArr1);
+	cout << "xArr1: "; 
+	for (int i = 0; i<tg->GetN(); i++){
+		cout << *(xArr1+i) << ", ";
+	}
+	cout << endl;
+	Double_t yArr1[tg->GetN()];
+	copy(tg->GetY(), tg->GetY()+tg->GetN(), yArr1);
+	cout << "yArr1: "; 
+	for (int i = 0; i<tg->GetN(); i++){
+		cout << *(yArr1+i) << ", ";
+	}
+	cout << endl;
+	int size1 = tg->GetN(); // size of first array
+	//int size2 = sizeof(x_interp)/sizeof(*x_interp); // size of second array
+	int size2 = 4; // TODO make this more generic
+	// declare array with size size1+size2-2, i.e., the array that can hold
+		// all but the last two elements of the first array followed by
+		// all the elements of the second array
+		// This corresponds to acheiving the regular centralities using
+		// the lambda centralities & the regular centralities
+	Double_t x = *x_interp;
+	sizeFinal = size1+size2-2;
+	cout << "size of arr1: " << size1 << " size of arr2: " << size2<< endl;
+	cout << "final array size: " << sizeFinal << endl;
+	Double_t xArrFinal[sizeFinal];
+	Double_t yArrFinal[sizeFinal];
+	copy(xArr1, xArr1+size1, xArrFinal);
+	copy(x_interp, x_interp+size2, xArrFinal+size1-2);
+	copy(yArr1, yArr1+size1, yArrFinal);
+	copy(y_interp, y_interp+size2, yArrFinal+size1-2);
+	cout << "xArrFinal: "; 
+	for (int i = 0; i<sizeFinal; i++){
+		cout << *(xArrFinal+i) << ", ";
+	}
+	cout << endl;
+	cout << "yArrFinal: ";
+	for (int i = 0; i<sizeFinal; i++){
+		cout << *(yArrFinal+i) << ", ";
+	}
+	cout << endl;
+	gr = new TGraph(sizeFinal, xArrFinal, yArrFinal);
+	gr -> SetName("dETdEtaOverdNchdEtaSum_vs_Npart_Final");
+	cout << "En test: " << en << endl;
+	formatGraph(gr, collEnArr, en);
+	delete gr;
 	
-	
-	return y_interp;
+	//return;
 }
