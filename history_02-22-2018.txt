@@ -1,0 +1,1000 @@
+   14  emacs Rebecca/chapter-1.tex &
+   15  l
+   16  p b_chapter-1.tex &
+   17  cd rhip/analysisCodes/
+   18  l
+   19  hgrep git
+   20  git add .; git commit -m "Add existing file"; git push origin master
+   21  cd publication/
+   22  l
+   23  p b_chapter-1.tex &
+   24  cd ..
+   25  l
+   26  p ALICE2013DataToRootFile.C &
+   27  mv ALICE2013DataToRootFile.C ./oldVersions/
+   28  l
+   29  mv ALICE2013Spec.root ./oldVersions/
+   30  mv fitALICE2013Data_-1.h ./oldVersions/
+   31  mv fitALICE2013Data_-1.cpp ./oldVersions/
+   32  head fitALICE2013Data.cpp
+   33  p fitALICE2013Data.cpp &
+   34  hgrep fitALICE2013Data.cpp
+   35  l
+   36  mv fitALICE2013Data.cpp ./oldVersions/
+   37  l
+   38  head ALICE2013Data.txt 
+   39  head ALICE2013Data.ods
+   40  l
+   41  mv ALICE2013Data.ods ./oldVersions/
+   42  p ALICE2013DataToRootFile_th1.cpp &
+   43  exit
+   44  cd rhip/analysisCodes/
+   45  l
+   46  p ALICE2013DataToRootFile_th1.cpp &
+   47  p fitALICE2013Data.h &
+   48  p fitSampleSpec.cpp &
+   49  p fitALICE2013Data1.cpp &
+   50  p fitSpecFromETAnalasysNote.cpp &
+   51  l
+   52  hgrep git
+   53  history>history_12-12-2017.txt
+   54  git add .; git commit -m "Add existing file"; git push origin master
+   55  exit
+   56  cd rhip/analysisCodes/
+   57  l
+   58  p fitALICE2013Data1.cpp &
+   59  r ALICE2013ToRootFile_trans.cpp 
+   60  l
+   61  p ALICE2013ToRootFile_trans.cpp &
+   62  r ALICE2013ToRootFile_trans.cpp 
+   63  l
+   64  p fitALICE2013Data.h &
+   65  l
+   66  r fitALICE2013Data1_transformed.cpp
+   67  l
+   68  r fitALICE2013Data1.cpp &
+   69  .q
+   70  p fitALICE2013Data1.cpp &
+   71  r fitALICE2013Data1.cpp
+   72  p fitALICE2013Data1.cpp &
+   73  r fitALICE2013Data1.cpp
+   74  r fitALICE2013Data1_transformed.cpp
+   75  exit
+   76  cd rhip/analysisCodes/
+   77  l
+   78  l *.h
+   79  more README
+   80  more README.txt 
+   81  l
+   82  l *.h
+   83  mv fitBESData5_trial.h ./oldVersions/
+   84  p fitBESData5.h &
+   85  p README.txt &
+   86  l *.h
+   87  p fitALICE2013Data_transformed.h &
+   88  l
+   89  clear
+   90  l
+   91  clear
+   92  l
+   93  p fitResultsToTFile.C &
+   94  mv fitResultsToTFile.C ./oldVersions/
+   95  p etVsSqrts.C &
+   96  mv etVsSqrts.C ./oldVersions/
+   97  p parallelCoordinates.py &
+   98  p ALICE2013Data.txt &
+   99  p fitSampleSpec.cpp &
+  100  p fitSpecFromETAnalasysNote.cpp &
+  101  p ALICE2013ToRootFile_trans.cpp &
+  102  p fitALICE2013Data1.cpp &
+  103  hgrep git
+  104  git add .; git commit -m "Add existing file"; git push origin master
+  105  exit
+  106  cd rhip
+  107  l
+  108  cd trialCodes/
+  109  l
+  110  p fibonacci.C &
+  111  r fibonacci.C 
+  112  exittttttt
+  113  exit
+  114  cd rhip/analysisCodes/
+  115  l
+  116  p README.txt &
+  117  r -l
+  118  p fitSpecFromETAnalasysNote.cpp &
+  119  p ETAnalysisNoteSpecResults &
+  120  more ETAnalysisNoteSpecResults
+  121  more ETAnalysisNoteSpecResults.dat 
+  122  p ETAnalysisNoteSpecResults.dat &
+  123  libreoffice --calc ETAnalysisNoteSpecResults.dat &
+  124  l
+  125  l debugPlots/
+  126  r 
+  127  l
+  128  p ALICE2013Data_v2.txt &
+  129  p ALICE2013ToRootFile_trans.cpp &
+  130  r ALICE2013ToRootFile_trans.cpp
+  131  l
+  132  hgrep git
+  133  git add .; git commit -m "Add existing file"; git push origin master
+  134  cd rhip/
+  135  cd analysisCodes/
+  136  l
+  137  r
+  138  hgrep find
+  139  cd ~
+  140  find PiPlus*
+  141  find "PiPlus*"
+  142  find "PiPlus.C"
+  143  find "piPlus.C"
+  144  cd -
+  145  l
+  146  l oldVersions/
+  147  p ../fromCharles/macros/piPlus.C &
+  148  l
+  149  p fitALICE2013Data1_transformed.cpp &
+  150  p ~/.root_hist &
+  151  r
+  152  l
+  153  r
+  154  p fitALICE2013Data1_transformed.cpp &
+  155  p ALICE2013ToRootFile_trans.cpp &
+  156  p ALICE2013Data_v2.txt &
+  157  r
+  158  p ALICE2013DataToRootFile_th1.cpp &
+  159  p BESDataToRootFile.cpp &
+  160  l oldVersions/
+  161  p oldVersions/BESData_sorted_transformed.cpp &
+  162  cd rhip/analysisCodes/
+  163  k
+  164  l
+  165  p ALICE2013DataToRootFile_th1.cpp &
+  166  r
+  167  p ALICE2013DataToRootFile_th1.cpp &
+  168  p README.txt &
+  169  r h->SetBinContent(j+1,
+  170  r ALICE2013DataToRootFile_th1.cpp
+  171  ls -ltr
+  172  r
+  173  r ALICE2013DataToRootFile_th1.cpp
+  174  l
+  175  r
+  176  l
+  177  p fitALICE2013Data1_transformed.cpp &
+  178  p ALICE2013ToRootFile_trans.cpp &
+  179  r ALICE2013ToRootFile_trans.cpp
+  180  l
+  181  r
+  182  p ALICE2013ToRootFile_trans.cpp &
+  183  r ALICE2013ToRootFile_trans.cpp
+  184  l
+  185  r
+  186  hgrep git
+  187  git add .; git commit -m "Add existing file"; git push origin master
+  188  exit
+  189  cd rhip/analysisCodes/
+  190  l
+  191  history
+  192  source *.bash
+  193  exit
+  194  cd rhip/analysisCodes/
+  195  source *.bash
+  196  hgrep git
+  197  git add .; git commit -m "Add existing file"; git push origin master
+  198  exit
+  199  cd rhip/analysisCodes/publication/
+  200  l
+  201  cd references/
+  202  l
+  203  p references-Biswas.bib &
+  204  cd ..
+  205  l
+  206  emacs Rebecca/chapter-1.tex &
+  207  l
+  208  p b_chapter-1.tex &
+  209  l Rebecca/
+  210  emacs Rebecca/chapter-1.tex &
+  211  which latex
+  212  which texlive
+  213  whereis latex
+  214  whereis texlive
+  215  l
+  216  pdflatex b_chapter-1.tex 
+  217  sudo texconfig rehash
+  218  pdflatex b_chapter-1.tex 
+  219  whereis updmap.d
+  220  cd /usr/bin/
+  221  l
+  222  whereis texmf
+  223  cd ../share/
+  224  cd texmf/
+  225  l
+  226  sudo texconfig rehash
+  227  pdflatex b_chapter-1.tex 
+  228  cd /usr/local/
+  229  sudo dnf install texlive
+  230  pdflatex b_chapter-1.tex 
+  231  sudo dnf install texlive-
+  232  sudo dnf install texlive*
+  233  l
+  234  cd ~
+  235  l
+  236  cd rhip/analysisCodes/publication/
+  237  l
+  238  pdflatex b_chapter-1.tex 
+  239  cd ..
+  240  l
+  241  hgrep git
+  242  git add .; git commit -m "Add existing file"; git push origin master
+  243  exit
+  244  l
+  245  sudo dnf install texmaker-5.0.2-fedora_27.x86_64.rpm
+  246  sudo dnf install -- allowerasing texmaker-5.0.2-fedora_27.x86_64.rpm
+  247  sudo dnf --allowerasing install texmaker-5.0.2-fedora_27.x86_64.rpm
+  248  sudo dnf install Qt
+  249  sudo dnf update && sudo dnf upgrade
+  250  sudo dnf --allowerasing install texmaker-5.0.2-fedora_27.x86_64.rpm
+  251  sudo dnf install texmaker-1\:4.5-2.fc25.x86_64 
+  252  which texmaker 
+  253  whereis texmaker
+  254  cd ~/rhip/analysisCodes/publication/
+  255  l
+  256  texmaker &
+  257  cd ..
+  258  git add .; git commit -m "Add existing file"; git push origin master
+  259  l
+  260  r plotsFromResults3.cpp 
+  261  libreoffice --calc fitResults5.dat &
+  262  l
+  263  cp parallelCoordinates.py ./debugPlots/
+  264  python parallelCoordinates.py 
+  265  exit
+  266  p ALICE2013DataToRootFile_th1.cpp &
+  267  p fitBESData5_1.cpp &
+  268  p BESDataToRootFile.cpp &
+  269  l
+  270  r ALICE2013DataToRootFile_th1.cpp
+  271  l
+  272  r
+  273  r ALICE2013ToRootFile_trans.cpp &
+  274  l
+  275  p ALICE2013ToRootFile_trans.cpp &
+  276  r ALICE2013ToRootFile_trans.cpp
+  277  r ALICE2013DataToRootFile_th1.cpp 
+  278  r
+  279  r ALICE2013DataToRootFile_th1.cpp 
+  280  l
+  281  r ALICE2013ToRootFile_trans.cpp
+  282  history
+  283  p ~/.root_hist &
+  284  r
+  285  git add .; git commit -m "Add existing file"; git push origin master
+  286  exit
+  287  cd rhip/analysisCodes/
+  288  l
+  289  p README.txt &
+  290  p ALICE2013ToRootFile_trans.cpp &
+  291  p BESData_sorted.txt &
+  292  p fitSampleSpec.cpp &
+  293  r fitSampleSpec.cpp 
+  294  exit
+  295  cd rhip/analysisCodes/
+  296  r fitSampleSpec.cpp 
+  297  exit
+  298  cd rhip/analysisCodes/
+  299  l
+  300  p ALICE2013ToRootFile_trans.cpp &
+  301  exit
+  302  cd rhip/analysisCodes/
+  303  l
+  304  p ALICE2013ToRootFile_trans.cpp &
+  305  r ALICE2013ToRootFile_trans.cpp
+  306  l
+  307  r
+  308  r fitSampleSpec.cpp 
+  309  exit
+  310  r fitSampleSpec.cpp 
+  311  exit
+  312  r fitSampleSpec.cpp 
+  313  exit
+  314  r fitSpecFromETAnalasysNote.cpp 
+  315  exit
+  316  r main.cpp 
+  317  cd rhip/analysisCodes/
+  318  l
+  319  history > history_01-29-2018.txt
+  320  l
+  321  l ~
+  322  l -a ~
+  323  cp ~/.root_hist ./history_ROOT_01-29-2018.txt
+  324  l
+  325  p README.txt &
+  326  cd ~
+  327  l -a
+  328  p .bash_profile &\
+  329  p .bash_profile &
+  330  p .bashrc &
+  331  l
+  332  cd rhip/analysisCodes/
+  333  l
+  334  p fitSpecFromETAnalasysNote.cpp &
+  335  cd ../trialCodes/piPlus
+  336  l
+  337  r main.cpp 
+  338  r allinone.cpp 
+  339  pwd
+  340  cd ../../analysisCodes/
+  341  l
+  342  r fitSpecFromETAnalasysNote.cpp 
+  343  p fitSpecFromETAnalasysNote.cpp &
+  344  r fitSpecFromETAnalasysNote.cpp 
+  345  l
+  346  libreoffice --calc ETAnalysisNoteSpecResults.dat &\
+  347  libreoffice --calc ETAnalysisNoteSpecResults.dat &
+  348  r fitSpecFromETAnalasysNote.cpp 
+  349  libreoffice --calc ETAnalysisNoteSpecResults.dat &
+  350  cd -.q
+  351  cd -
+  352  p allinone.cpp &
+  353  cd -
+  354  r fitSpecFromETAnalasysNote.cpp 
+  355  l.q
+  356  l
+  357  p fitALICE2013Data1_transformed.cpp &
+  358  l.q
+  359  l
+  360  r fitALICE2013Data_v2_transf.cpp
+  361  l
+  362  p ALICE2013Data_v2.txt &
+  363  p fitSpecFromETAnalasysNote.cpp &
+  364  r fitALICE2013Data_v2_transf.cpp
+  365  hgrep git
+  366  r fitSpecFromETAnalasysNote.cpp 
+  367  r fitALICE2013Data_v2_transf.cpp
+  368  hgrep git.q
+  369  hgrep git
+  370  git add .; git commit -m "Add existing file"; git push origin master
+  371  git status
+  372  git checkout -b match_spec_fit_codes
+  373  ls
+  374  l
+  375  p fitSpecFromETAnalasysNote.cpp &
+  376  p fitALICE2013Data_v2_transf.cpp &
+  377  r fitALICE2013Data_v2_transf.cpp
+  378  git status\
+  379  git status
+  380  git checkout master
+  381  git merge match_spec_fit_codes 
+  382  git reset --hard
+  383  git status
+  384  l
+  385  p ALICE2013ToRootFile_trans.cpp &
+  386  r ALICE2013ToRootFile_trans.cpp
+  387  l
+  388  p fitALICE2013Data_v2_transf.cpp &
+  389  r fitALICE2013Data_v2_transf.cpp
+  390  hgrep git
+  391  git status
+  392  git log
+  393  git add .; git commit -m "Scaled up errors by multiplying each error (stat. and sys.) with 2*pi*pT in order to have good fits procuded"; git push origin master
+  394  git status
+  395  git log
+  396  exit
+  397  cd rhip/analysisCodes/
+  398  l
+  399  libreoffice --calc fitResults5.dat &
+  400  r plotsFromResults3.cpp 
+  401  p README.txt &
+  402  p fitSampleSpec.cpp &
+  403  l
+  404  p fitBESData5_1.cpp &
+  405  p fitBESData5.h &
+  406  r
+  407  r fitSampleSpec.cpp 
+  408  exit
+  409  r
+  410  r fitSampleSpec.cpp 
+  411  cd rhip/analysisCodes/
+  412  r fitSampleSpec.cpp 
+  413  cd rhip/analysisCodes/
+  414  r fitSampleSpec.cpp 
+  415  exit
+  416  r fitSampleSpec.cpp 
+  417  exit
+  418  cd rhip/analysisCodes/
+  419  r fitSampleSpec.cpp 
+  420  exit
+  421  cd rhip/analysisCodes/
+  422  r fitSampleSpec.cpp 
+  423  exit
+  424  cd rhip/analysisCodes/
+  425  r fitSampleSpec.cpp 
+  426  hgrep git
+  427  git add .; git commit -m "After making fixes that Christine suggested, dET/dEta estimates now match publication. Currently fixing initial parameters for several spectra that did not produce fits with converged minimization of chi-square (see README)"; git push origin master
+  428  exit
+  429  cd rhip/analysisCodes/
+  430  l
+  431  p README.txt &
+  432  p fitSampleSpec.cpp &
+  433  r fitSampleSpec.cpp
+  434  exit
+  435  cd rhip/analysisCodes/
+  436  r fitSampleSpec.cpp
+  437  exit
+  438  cd rhip/analysisCodes/
+  439  r fitSampleSpec.cpp
+  440  git add .; git commit -m "maximum likelihood method did not produce good fits; some more chi-square fits converging after increasing the maximum number of function calls to 10000 or 20000 from 1000, still need to test on other spectra in the list"; git push origin master
+  441  exit
+  442  cd rhip/analysisCodes/
+  443  l
+  444  p README.txt &
+  445  r fitSampleSpec.cpp &
+  446  exit
+  447  cd rhip/analysisCodes/
+  448  p fitSampleSpec.cpp &
+  449  r fitSampleSpec.cpp
+  450  l
+  451  p debugZeroErrors.dat &
+  452  libreoffice --calc debugZeroErrors.dat &
+  453  r fitSampleSpec.cpp
+  454  l
+  455  r fitSampleSpec.cpp
+  456  l
+  457  p fitBESData5_1.cpp &
+  458  p fitBESData5_2.cpp &
+  459  find -name ".bash"
+  460  find -name "*.bash"
+  461  r analyzeAllHistos.bash 
+  462  source analyzeAllHistos.bash 
+  463  exit
+  464  cd rhip/analysisCodes/
+  465  source analyzeAllHistos.bash 
+  466  r fitSampleSpec.cpp
+  467  source analyzeAllHistos.bash 
+  468  l
+  469  libreoffice --calc fitResults5.dat &
+  470  l
+  471  hgrep find
+  472  find -name ".py"
+  473  find -name "*.py"
+  474  python parallelCoordinates.py 
+  475  grep -r TGraphAsy*
+  476  hgrep git
+  477  git add .; git commit -m "'zero error problem' fixed after increasing the number of minimization function calls and changing the initial parameters for some spectra"; git push origin master
+  478  l
+  479  exit
+  480  cd rhip/analysisCodes/
+  481  l
+  482  p README.txt &
+  483  p BESDataToRootFile.cpp &
+  484  cd ..
+  485  l
+  486  cd trialCodes/
+  487  l
+  488  p inFileIter.cpp &
+  489  r inFileIter.cpp 
+  490  clang --version
+  491  g++ --version
+  492  gcc --version
+  493  p inFileIter.cpp &
+  494  cd ../analysisCodes/
+  495  libreoffice --calc fitResults5.dat &
+  496  l
+  497  p BESDataToRootFile.cpp &
+  498  l
+  499  r BESLambdasToRootFile.cpp 
+  500  clear
+  501  clear
+  502  r BESLambdasToRootFile.cpp 
+  503  clear
+  504  r BESLambdasToRootFile.cpp 
+  505  clear
+  506  r BESLambdasToRootFile.cpp 
+  507  clear
+  508  r BESLambdasToRootFile.cpp 
+  509  clear
+  510  r BESLambdasToRootFile.cpp 
+  511  clear
+  512  r BESLambdasToRootFile.cpp 
+  513  clear
+  514  r BESLambdasToRootFile.cpp 
+  515  clear
+  516  r BESLambdasToRootFile.cpp 
+  517  l
+  518  hgrep git
+  519  git add .
+  520  git commit -m "modified existing code to read lambdas data and turn it into TGraphErrors objects in TFile BES_lambdas.root using BESLambdasToRootFile.cpp"
+  521  git push origin master
+  522  cd ~
+  523  pwd
+  524  cd -
+  525  l
+  526  git pull
+  527  l
+  528  atril publication/Comments/biswas-thesis.v1.Commented.pdf &
+  529  sudo dnf update atril
+  530  atril publication/Comments/biswas-thesis.v1.Commented.pdf &
+  531  sudo dnf install okular
+  532  okular publication/Comments/biswas-thesis.v1.Commented.pdf &
+  533  l
+  534  p BES_lambdas.txt &
+  535  l
+  536  git add BES_lambdas.txt 
+  537  git commit - m "sorted data in increasing order of collision energy"
+  538  git commit -m "sorted data in increasing order of collision energy"
+  539  git status
+  540  git push
+  541  git status
+  542  l
+  543  r BESLambdasToRootFile.cpp 
+  544  l
+  545  p BESLambdasToRootFile.cpp &
+  546  r BESLambdasToRootFile.cpp 
+  547  l
+  548  root
+  549  r BESLambdasToRootFile.cpp 
+  550  l
+  551  git add BESLambdasToRootFile.cpp, BESLambdas.root
+  552  git add BESLambdasToRootFile.cpp BESLambdas.root
+  553  git commit -m "used sorted data (by collision energy) and changed the TGraphErrors Draw argument from AP to A*; still can't get rid of connecting lines between the points in the plots"
+  554  git push origin master
+  555  git status
+  556  l
+  557  git status
+  558  git add ./publication/Comments/biswas-thesis.v1.Commented.pdf 
+  559  git commit -m "annotations not yet visible in the commented (okulus) version of thesis progress"
+  560  git push origin master
+  561  l
+  562  git status
+  563  p README.txt &
+  564  p chkTGEbins.C &
+  565  p fitSampleSpec_TH_TGE.cpp &
+  566  git status
+  567  git add README.txt 
+  568  git commit -m "updated ToDo with the protocol to obtain the fits and then the integrals from the lambda spectra"
+  569  git push origin master
+  570  git status
+  571  okular publication/Comments/Biswas-Thesisv1OkularArxiv.okular &
+  572  git status
+  573  git add publication/Comments/Biswas-Thesisv1OkularArxiv.okular 
+  574  git commit -m "the okular archive version of the annotated document works, i.e, it shows notes and annotations"
+  575  git push origin master
+  576  git status
+  577  l
+  578  p fitSampleSpec_TH_TGE.cpp &
+  579  git status
+  580  git add fitSampleSpec_TH_TGE.cpp
+  581  git commit -m "modifying TH1-based code to adapt TGraphErrors, currently at line 110"
+  582  git push origin master
+  583  git status
+  584  git add fitSampleSpec_TH_TGE.cpp
+  585  git commit -m "modifying TH1-based code to adapt TGraphErrors, currently at line 180"
+  586  git push origin master
+  587  git status
+  588  git add fitSampleSpec_TH_TGE.cpp
+  589  git commit -m "modifying TH1-based code to adapt TGraphErrors, currently at line 180"
+  590  git push origin master
+  591  git status
+  592  git pull
+  593  git status
+  594  git log fitSampleSpec_TH_TGE.cpp
+  595  exit
+  596  p fitSampleSpec_TH_TGE.cpp &
+  597  r fitSampleSpec_TH_TGE.cpp
+  598  clear
+  599  r fitSampleSpec_TH_TGE.cpp
+  600  clear
+  601  r fitSampleSpec_TH_TGE.cpp
+  602  git status
+  603  git add fitSampleSpec_TH_TGE.cpp
+  604  git commit -m "previous error fixed after realizing the GetPoint(,,) method ASSIGNS values -- pertaining to the first argument -- to the second and third arguments; new error: graph is not being plotted in the canvas"
+  605  git status
+  606  git config --global user.name "biswa in office"
+  607  git config --global user.email bsharma6@vols.utk.edu
+  608  git commit --amend --reset-author
+  609  git push origin master
+  610  git status
+  611  l
+  612  r fitSampleSpec_TH_TGE.cpp
+  613  git add fitSampleSpec_TH_TGE.cpp
+  614  git commit -m "previous error (graph not being plotted on canvas fixed by changing arguments of the Draw() method)"
+  615  git push origin master
+  616  git status
+  617  git add .
+  618  git status
+  619  git reset
+  620  git status
+  621  rm publication/Comments/Save Trial Admission to Candidacy - Masters.pdf
+  622  rm ./publication/Comments/Save\ Trial\ Admission\ to\ Candidacy\ -\ Masters.pdf 
+  623  r fitSampleSpec_TH_TGE.cpp
+  624  p README.txt &
+  625  ls -ltr
+  626  p chkTGEbins.C &
+  627  git status
+  628  git add debugPlots/*
+  629  git commit -m "la/ala plots"
+  630  git push origin master
+  631  git status
+  632  git log fitSampleSpec_TH_TGE.cpp
+  633  git status
+  634  git add fitSampleSpec_TH_TGE.cpp
+  635  git commit -m "fits don't converge for low energy stuff, fit converges but chi-sq/ndf not so good for high energy stuff"
+  636  git push origin master
+  637  git status
+  638  git add fitResults_la.dat
+  639  git commit -m "fits don't converge for low energy stuff, fit converges but chi-sq/ndf not so good for high energy stuff"
+  640  git push origin master
+  641  git add publication/*
+  642  git commit -m "form to fill out for admission to candidacy"
+  643  git push origin master
+  644  git status
+  645  cp fitBESData5.h fitBESData_lam.h
+  646  p fitBESData_lam.h &
+  647  l
+  648  rm fitBESData_lam.h
+  649  r fitSampleSpec_TH_TGE.cpp
+  650  git status
+  651  git add .
+  652  git commit -m "lowered the lower limit of the beta parameter while fitting, and that's giving better results; next: convert the tgraphs to histograms because using the fits to get the integrals from the data points will not be optimal since the blast wave fit is not guaranteed to be reasonable for the entire range of pT, and the data we already have is the most reliable thing to use to get the integral from the data."
+  653  git push origin master
+  654  git status
+  655  l
+  656  git status
+  657  l
+  658  p fitSampleSpec_TH_TGE.cpp &
+  659  r fitSampleSpec_TH_TGE.cpp
+  660  l
+  661  r BESLambdasToRootFile_TH1.cpp 
+  662  clear
+  663  r BESLambdasToRootFile_TH1.cpp 
+  664  clear
+  665  r BESLambdasToRootFile_TH1.cpp 
+  666  clear
+  667  r BESLambdasToRootFile_TH1.cpp 
+  668  clear
+  669  r BESLambdasToRootFile_TH1.cpp 
+  670  exit
+  671  clear
+  672  r BESLambdasToRootFile_TH1.cpp 
+  673  exit
+  674  r BESLambdasToRootFile_TH1.cpp 
+  675  exit
+  676  cd rhip/analysisCodes/
+  677  r BESLambdasToRootFile_TH1.cpp 
+  678  exit
+  679  cd rhip/analysisCodes/
+  680  r BESLambdasToRootFile_TH1.cpp 
+  681  clear
+  682  r BESLambdasToRootFile_TH1.cpp 
+  683  exit
+  684  cd rhip/analysisCodes/
+  685  r BESLambdasToRootFile_TH1.cpp 
+  686  exit
+  687  cd rhip/analysisCodes/
+  688  git status
+  689  r BESLambdasToRootFile_TH1.cpp 
+  690  l
+  691  new TBrowser
+  692  r
+  693  r BESLambdasToRootFile_TH1.cpp 
+  694  clear
+  695  r BESLambdasToRootFile_TH1.cpp 
+  696  clear
+  697  r BESLambdasToRootFile_TH1.cpp 
+  698  clear
+  699  r BESLambdasToRootFile_TH1.cpp 
+  700  clear
+  701  r BESLambdasToRootFile_TH1.cpp 
+  702  l
+  703  p chkTGEbins.C &
+  704  clear
+  705  r BESLambdasToRootFile_TH1.cpp 
+  706  r chkTGEbins.C
+  707  l
+  708  git status
+  709  git add chkTGEbins.C 
+  710  git commit -m "corrected header of the output"
+  711  git diff fitSampleSpec_TH_TGE.cpp
+  712  git add fitSampleSpec_TH_TGE.cpp; git commit -m "changed fit method to S from LS, but haven't implemented it yet"
+  713  git status
+  714  git diff BESLambdasToRootFile_TH1.cpp
+  715  git add BESLambdasToRootFile_TH1.cpp; git commit -m "current algorithm (that uses the distance between the 2nd-last and the 3rd-last x-values as the width of the 2nd-last bin, i.e., the bin that has the 2nd-last x-value) produces bins that have alternatingly large and small widths"
+  716  git status
+  717  git add BESLambdas_TH1.root; git commit -m "result of algorithm that uses the distance between the 2nd-last and the 3rd-last x-values as the width of the 2nd-last bin, i.e., the bin that has the 2nd-last x-value and produces bins that have alternatingly large and small widths"
+  718  git status
+  719  rm debugPlots/cent0_la_Au+Au_7.71518108226.png
+  720  git status
+  721  git push origin master
+  722  git status
+  723  git pull
+  724  l
+  725  p BESLambdasToRootFile_TH1.cpp &
+  726  r BESLambdasToRootFile_TH1.cpp
+  727  l
+  728  r
+  729  r BESLambdasToRootFile_TH1.cpp
+  730  p BESDataToRootFile.cpp &
+  731  r BESLambdasToRootFile_TH1.cpp
+  732  r
+  733  r BESLambdasToRootFile_TH1.cpp
+  734  l
+  735  git log BESLambdasToRootFile_TH1.cpp
+  736  git add BESLambdasToRootFile_TH1.cpp
+  737  hgrep git
+  738  git reset
+  739  l
+  740  git add BESLambdasToRootFile_TH1.cpp
+  741  git commit -m "under function GetOptimalBinEdges, wrote algorithm to optimize the bin edges by minimizing the sum of squared differences between the widths of adjacent bins: good results produced as can be seen in BESLambdas_optBins.root"
+  742  git add BESLambdas_optBins.root
+  743  git commit -m "TFile containing TH1D objects corresponding to Lambda spectra -- bins optimized using algorithm in 2-9-2018 commit of BESLambdasToRootFile_TH1.cpp"
+  744  git status
+  745  git push origin master
+  746  git status
+  747  l
+  748  mv BESLambdas_TH1.root ./oldVersions/
+  749  p fitSampleSpec.cpp &
+  750  l
+  751  r fitSampleSpec.cpp 
+  752  l *fit*
+  753  l fit*
+  754  l
+  755  p fitAllHistosInTFile.cpp &
+  756  p fitBESData5_1.cpp &
+  757  git status
+  758  git add fitSampleSpec.cpp; git commit -m "added functionality to redo fit with different set of initial parameters if first fit is not successful; now this code is more generic, i.e., no need to specify histogram name before compile time in order to try the second set of parameters"
+  759  git push origin master
+  760  git status
+  761  git add debugZeroErrors.dat; git commit -m "accidentally modified by a different-puspose code, but that does not matter because this is a buffer file"
+  762  git push origin master
+  763  git status
+  764   git add .; git commit -m "see filename and date modified"; git push origin master
+  765  git status
+  766  l
+  767  git log fitSampleSpec.cpp
+  768  l
+  769  r fitAllHistosInTFile.cpp 
+  770  clear
+  771  r fitAllHistosInTFile.cpp 
+  772  l
+  773  libreoffice --calc fitResults_la.dat &
+  774  r fitAllHistosInTFile.cpp
+  775  r
+  776  libreoffice --calc fitResults_la.dat &
+  777  l
+  778  r fitAllHistosInTFile.cpp
+  779  clear
+  780  r fitAllHistosInTFile.cpp
+  781  clear
+  782  r fitAllHistosInTFile.cpp
+  783  clear
+  784  r fitAllHistosInTFile.cpp
+  785  clear
+  786  r fitAllHistosInTFile.cpp
+  787  exit
+  788  grep -rn ./ -e 'require'
+  789  grep -rn ./ -e 'requirePackage'
+  790  grep -rn ./ -e 'requireackage'
+  791  grep -rn ./ -e 'requirepackage'
+  792  grep -rn ./ -e 'require'
+  793  grep -rn ./ -e '\require'
+  794  grep -rn ./ -e '\Require'
+  795  cd rhip/analysisCodes/publication/
+  796  l
+  797  cd Biswas/
+  798  l
+  799  p biswas-thesis.tex &
+  800  cd chapters
+  801  l
+  802  p chapter-2.tex &
+  803  p chapter-1.tex &
+  804  hgrep find
+  805  hgrep okular
+  806  hgrep atril
+  807  cd ..
+  808  git status
+  809  git add .; git commit -m "made more progress into writing thesis"; git push origin master
+  810  git status
+  811  l
+  812  git pull
+  813  git log
+  814  git config user.name "biswas@office"
+  815  git status
+  816  git commits
+  817  git log
+  818  p BESLambdasToRootFile_TH1.cpp &
+  819  cd publication/Biswas/chapters/
+  820  l
+  821  p chapter-2.tex &
+  822  git status
+  823  git add.
+  824  git add .
+  825  git commit -m "worked on the thesis, trying to figure out how the equation 1.6 in the analysis note pg 6 makes sense with respect to calorimetric measurements"; git push origin master
+  826  git status
+  827  git add .
+  828  git status
+  829  git add ../../references/*
+  830  git status
+  831  git commit -m "worked on the thesis, trying to figure out how the equation 1.6 in the analysis note pg 6 makes sense with respect to calorimetric measurements"; git push origin master
+  832  git status
+  833  cd ..
+  834  git status
+  835  git add .
+  836  git commit -m "worked on the thesis, trying to figure out how the equation 1.6 in the analysis note pg 6 makes sense with respect to calorimetric measurements"; git push origin master
+  837  git status
+  838  cd ..
+  839  git status
+  840  git log
+  841  git status
+  842  l
+  843  git pull
+  844  cd publication/Biswas/chapters/
+  845  p chapter-2.tex &
+  846  git status
+  847  git add .
+  848  git commit - m "more thesis progress"
+  849  git commit -m "more thesis progress"
+  850  git push origin master
+  851  git status
+  852  cd ../../..
+  853  git add .
+  854  git commit -m "more thesis progress"
+  855  git push origin master
+  856  l
+  857  git status
+  858  git add .
+  859  git commit -m "made some corrections in Chapter 1 based on Christine's comments"
+  860  git push origin master
+  861  git status
+  862  git pull
+  863  git status
+  864  git reset --hard origin/master 
+  865  git status
+  866  cd ~
+  867  hgrep find
+  868  find -name "*.bst"
+  869  find -name ".bst"
+  870  find -name "*.bst"
+  871  find -name "*.py"
+  872  find -name "*.bst"
+  873  cd -
+  874  l
+  875  git status
+  876  git  add .; git commit -m "made more thesis progress"; git push origin master
+  877  git status
+  878  p publication/Biswas/chapters/chapter-2.tex &
+  879  git status
+  880  git  add .; git commit -m "fixed some formatting"; git push origin master
+  881  git status
+  882  git pull
+  883  l
+  884  p publication/Biswas/chapters/chapter-2.tex &
+  885  git status
+  886  git add .; git commit -m "added a lot of math"; git push origin master
+  887  git status
+  888  git pull
+  889  git status
+  890  ls
+  891  l
+  892  display parallelCoordPlot_4Axes.png &
+  893  p parallelCoordinates.py &
+  894  hgrep pyth
+  895  python parallelCoordinates.py 
+  896  python3 parallelCoordinates.py 
+  897  python parallelCoordinates.py 
+  898  git status
+  899  git add .; git commit -m "changed axes ticks and title position"; git push origin master
+  900  git status
+  901  l
+  902  p plotsFromResults3.cpp &
+  903  libreoffice --calc fitResults5.dat 
+  904  hgrep find
+  905  hgrep grep
+  906  grep -r quadrature
+  907  p oldVersions/BESData_sorted_transformed.cpp: &
+  908  p oldVersions/BESData_sorted_transformed.cpp &
+  909  git status
+  910  git add .; git commit -m "added codes for the propagation of errors; now need to construct TGraphErrors to replace the TGraph objects"; git push origin master
+  911  git status
+  912  git pull
+  913  l
+  914  l *.dat
+  915  libreoffice --calc fitResults_la.dat &
+  916  l *lamb*
+  917  libreoffice --calc BES_lambdas.txt &
+  918  p BES_lambdas.txt &
+  919  git status
+  920  git add .; git commit -m "trying to interpolate lambda's missing centralities"; git push origin master
+  921  git status
+  922  git pull
+  923  git status
+  924  l
+  925  p interpolateLaCent.cpp &
+  926  git status
+  927  git log
+  928  l
+  929  git log interpolateLaCent.cpp
+  930  git add .; git commit -m "still under construction... went from line 84 to 146"; git push origin master
+  931  git status
+  932  git pull\
+  933  l
+  934  p interpolateLaCent.cpp &
+  935  git log interpolateLaCent.cpp
+  936  p plotsFromResults3.cpp &
+  937  git status
+  938  git add plotsFromResults3.cpp; git commit -m "changed 'npart' to 'npart/2' in the calculations and proportionally scaled the errors"; git push origin master
+  939  git status
+  940  r plotsFromResults3.cpp 
+  941  l *.txt
+  942  p BES_lambdas.txt &
+  943  l *fit*
+  944  l fit*
+  945  cp fitResults_la.dat oldVersions/
+  946  git status
+  947  git add fitBESData5.h; git commit -m "put description on top of the npart function definition"; git push origin master
+  948  git status
+  949  r fitAllHistosInTFile.cpp
+  950  r
+  951  r fitAllHistosInTFile.cpp
+  952  l
+  953  libreoffice --calc  &
+  954  ll
+  955  l
+  956  libreoffice --calc fitResults_la.dat &
+  957  git status
+  958  git add fit*; git commit -m "updated fitting code to return reasonable values for the last two nparts by the following method: Use the average of the npart values corresponding to the two sub-bins as the npart value for its super-bin. For example, use the average of the npart values for 40-50% and 50-60% bins to calculate the npart for the 40-60% bin."; git push origin master
+  959  l
+  960  git status
+  961  git log interpolateLaCent.cpp
+  962  l
+  963  r interpolateLaCent.cpp 
+  964  l
+  965  git status
+  966  git add interpolateLaCent.cpp
+  967  git add finalPlots/*
+  968  git status
+  969  git commit -m "interpolateLaCent.cpp so far produces good-looking 'ET/npart vs npar't graphs for lambdas; Nch-dependent graphs have errors, but not worring about it for the time being"; git push origin master
+  970  l
+  971  git status
+  972  git add oldVersions/fitResults_la.dat; git commit -m "old version of lambda fit results just to make sure it's quickly accessible when needed"
+  973  git status
+  974  git log
+  975  git status
+  976  git add interpolateLaCent.cpp; git commit -m"still under construction; working at lines marked by 'HERE TODO', trying to output a datfile with the ET (and other variables) corresponding to each collEn, particleID and centrality"
+  977  git status
+  978  git add .; git commit -m "still under construction, at line 210"
+  979  git push origin master
+  980  git status
+  981  l
+  982  git log interpolateLaCent.cpp
+  983  git status
+  984  git add fitBESData5.h; git commit -m "overloaded function getNpartAndErr to take int rather than string as centrality argument"
+  985  git status
+  986  git add fitAllHistosInTFile.cpp
+  987  git commit -m "removed some outdated TODO markers"
+  988  git status
+  989  r interpolateLaCent.cpp 
+  990  git log\
+  991  r interpolateLaCent.cpp 
+  992  exit
+  993  cd rhip/analysisCodes/
+  994  l
+  995  libreoffice --calc lambdasInterpolated.dat &
+  996  clear
+  997  r interpolateLaCent.cpp 
+  998  exir
+  999  exit
+ 1000  r interpolateLaCent.cpp 
+ 1001  cd rhip/analysisCodes/
+ 1002  r interpolateLaCent.cpp 
+ 1003  l
+ 1004  libreoffice --calc lambdasInterpolated.dat &
+ 1005  r interpolateLaCent.cpp 
+ 1006  libreoffice --calc lambdasInterpolated.dat &
+ 1007  git status
+ 1008  git add lambdasInterpolated.dat; git commit -m "lambdasInterpolated.dat contains values of dET/dEta for lambdas+antilambdas corresponding to the centrality bins 40-50%, 50-60%, 60-70%, and 70-80% for all the different collision energies"
+ 1009  git status
+ 1010  git add .; git commit -m "so far intepolateCent.cpp produces interpolations, not the errors. next: use TGraphErrors and find the errors of the interpolated quantities as well"
+ 1011  git status
+ 1012  git log
+ 1013  history > history_02-22-2018.txt
