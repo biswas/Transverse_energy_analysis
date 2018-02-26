@@ -274,6 +274,11 @@ int interpLaCentTGE(){
 			cout << *(NpartArrEnByEn+i) << ", ";
 		}
 		cout << endl;
+		cout << "npartArr_err: "; 
+		for (int i = 0; i<cents; i++){
+			cout << *(NpartArrEnByEn_err+i) << ", ";
+		}
+		cout << endl;
 		cout << "dETdEtaOverNpartArr: "; 
 		for (int i = 0; i<cents; i++){
 			cout << *(dETdEtaOverNpartBy2SumEnByEn+i) << ", ";
@@ -371,7 +376,8 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	}
 	else if (g -> GetName()==npart1){
 		cout << "Working on npart1********" << endl;
-		g->SetMarkerStyle(28);
+		g->SetMarkerStyle(1);
+		//g->SetMarkerSize(1);
 		g->SetMarkerColor(kGreen);
 		xlabel = "#it{N}_{part}";
 		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}#GT (GeV)";
@@ -395,7 +401,8 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	else if (g -> GetName()==debug){
 		cout << "Creating debug plot*********** "<< en_Or_centInd << ": " <<
 			doubToString(collEn_Or_NpartArr[en_Or_centInd]) << endl;
-		g->SetMarkerStyle(28);
+		g->SetMarkerStyle(1);
+		//g->SetMarkerSize(1);
 		g->SetMarkerColor(kGreen);
 		xlabel = "#it{N}_{part}";
 		ylabel= "#LTd#it{E}_{T}/d#eta#GT/#LT#it{N}_{part}#GT (GeV)";
@@ -409,7 +416,7 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	g->GetHistogram()-> SetTitle(0);
 	g->GetHistogram()->GetXaxis()-> SetTitle(xlabel);
 	g->GetHistogram()->GetXaxis()-> SetTitleOffset(1.05);
-	g->GetHistogram()->GetYaxis()-> SetRangeUser(0., 0.030);
+	g->GetHistogram()->GetYaxis()-> SetRangeUser(0., 0.050);
 	g->GetHistogram()->GetXaxis()-> SetTitleSize(0.04);
 	g->GetHistogram()->GetYaxis()-> SetTitle(ylabel);
 	g->GetHistogram()->GetYaxis()-> SetTitleSize(0.04);
@@ -470,16 +477,27 @@ Double_t* interpolateNpartGraph(TGraphErrors* tg, int en){
 						// i.e., npart values corresponding to last 4 cents
 	{
 		x_interp[i-5] 		= *getNpartAndErr(collEnArr[en], i);
-		x_interp_err[i-5] 	= *getNpartAndErr(collEnArr[en], i+1);
+		x_interp_err[i-5] 	= *(getNpartAndErr(collEnArr[en], i) + 1);
 		y_interp[i-5] 		= (tg -> Eval(x_interp[i-5], 0,"S")); // option S implies third-order spline
 		// take the percent error in the next point (i-6)? with the 
 		 //bigger percent error as the conservative estimate
 		 // for the percent error in the above point
-		Double_t x; // temp var to hold (i-5)th x-val
-		Double_t y; // temp var to hold (i-5)th y-val
-		tg -> GetPoint(i-6, x, y); // FIXME: not sure if it should be i-6 always
+		Double_t x; // temp var to hold x-val from tg
+		Double_t y; // temp var to hold y-val from tg
+		tg -> GetPoint(5+(i-1)/5, x, y); // take the relative error of the 
+										//6th bin in the old array as 
+										// the relative error of the 6th bin
+										// in the new array, and
+										// take that of the 7th bin in the old
+										// array for the rest of the bins in
+										// the new array, to be conservative,
+										// since the 7th bin in the old array
+										// has the most relative error 
 		// find absolute error by multiplying the percent error with the y-value
-		y_interp_err[i-5] 	= y_interp[i-5]*(tg->GetErrorY(i-6))/y; // numbering for class TGE starts at 0
+		y_interp_err[i-5] 	= y_interp[i-5]*(tg->GetErrorY(5+(i-1)/5))/y;
+		cout << "***relative error for "<< y_interp[i-5] << ": " 
+				<< tg->GetErrorY(5+(i-1)/5)<< "/"
+				<< y << "=" << y_interp_err[i-5] << endl;
 		// get dET/dEta = (dET/dEta)/npart * npart:
 		y_interpET[i-5] 	= (tg -> Eval(x_interp[i-5], 0,"S"))*x_interp[i-5];
 		// save errors in the same array:
@@ -492,6 +510,11 @@ Double_t* interpolateNpartGraph(TGraphErrors* tg, int en){
 	cout << "x_interp: "; 
 	for (int i = 0; i<4; i++){
 		cout << *(x_interp+i) << ", ";
+	}
+	cout << endl;
+	cout << "x_interp_err: "; 
+	for (int i = 0; i<4; i++){
+		cout << *(x_interp_err+i) << ", ";
 	}
 	cout << endl;
 	cout << "y_interp: "; 
