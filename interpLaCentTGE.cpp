@@ -499,13 +499,18 @@ Double_t* interpolateNpartGraph(TGraphErrors* tg, int en){
 				<< tg->GetErrorY(5+(i-1)/5)<< "/"
 				<< y << "=" << y_interp_err[i-5] << endl;
 		// get dET/dEta = (dET/dEta)/npart * npart:
-		y_interpET[i-5] 	= (tg -> Eval(x_interp[i-5], 0,"S"))*x_interp[i-5];
+		y_interpET[i-5] 	= y_interp[i-5]*x_interp[i-5];
 		// save errors in the same array:
 		Double_t x2;
 		Double_t y2;
 		// assign values to x2 and y2:
 		tg -> GetPoint(i+1, x2, y2);
-		y_interpET[i-1] 	= (tg->GetErrorY(i+1)/y2)*x_interp[i-5];
+		// using uncertainty propagation formula:
+		// error y_interpET[i-1] 	= (tg->GetErrorY(i+1)/y2)*x_interp[i-5];
+		y_interpET[i-1]		= TMath::Sqrt((y_interp[i-5]*x_interp_err[i-5])
+										* (y_interp[i-5]*x_interp_err[i-5])
+										+ (x_interp[i-5]*y_interp_err[i-5])
+										* (x_interp[i-5]*y_interp_err[i-5]));
 	}
 	cout << "x_interp: "; 
 	for (int i = 0; i<4; i++){
