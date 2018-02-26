@@ -182,13 +182,32 @@ directory: publication
 *******************************************************************************
 ToDos:
 ..................................................................................
-- verify previous code to create cross-check plots and add errors in the plots
-- need to add lambda spectra from STAR Preliminary data on BES strangeness
+- add error bars in the final plots: finalPlots_TGE.cpp
+- to the above plots, add lambda spectra from STAR Preliminary data on BES strangeness
 	1. clearify what "raw" means as opposed to "pT" in one of the directories, 
 	 and what cut30 and cut0 mean
 	 -> later
 	 	
-	2. modify existing code to read data that is pointwise instead
+
+..................................................................................
+- add errors to cross-check plots and see if they match better with:
+https://arxiv.org/pdf/1509.06727.pdf#page=12
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+Current debugging note:
+..................................................................................
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+
+
+Past ToDos and debugging notes:
+..................................................................................
+	2. DONE --
+	modify existing code to read data that is pointwise instead
 	 of binned and turn it into TGraphErrors objects instead of TH1D objects
 	 2.0 try to read data from all the input files in the directories within
 	  a directory recursively -- that did not work, so trying 2.1 (see past 
@@ -200,7 +219,8 @@ ToDos:
 	  using BESLambdasToRootFile.cpp
 	--> DONE 
 	
-	3. modify existing code to use the fitting method of the TGraphErrors class
+	3. DONE --
+	modify existing code to use the fitting method of the TGraphErrors class
 	 instead of the TH1 class
 	---> DONE (actually didn't need to use this method after all; constructed bins)
 	 3.1 See if the methods (args) in the header need to be modified: DONE
@@ -228,7 +248,8 @@ ToDos:
 	 3.3 Modify fitBESData5_1. cpp 
 
 	 
-	4. figure out the correct method to take care of the fact that the lambda 
+	4. DONE by interpolating -- 
+	figure out the correct method to take care of the fact that the lambda 
 	 spectra are available for slightly different centralities than the rest
 	 of the spectra; specifically, lambda spectra have centralities 40-60 and
 	 60-80 instead of 40-50, 50-60, 60-70, and 70-80; guess: combine the
@@ -240,22 +261,6 @@ ToDos:
 	  associated uncertainties dk1 and dk2, the uncertainty in k is given
 	  by dk = sqrt(dk1^2 + dk2^2)
 
-..................................................................................
-- add errors to cross-check plots and see if they match better with:
-https://arxiv.org/pdf/1509.06727.pdf#page=12
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-
-Current debugging note:
-..................................................................................
-
-
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
-
-
-
-Past ToDos and debugging notes:
 ..................................................................................
 3. SCRATH THAT, JUST CONVERT THE GRAPHS TO HISTOGRAMS BECAUSE THAT'S WHAT THEY
 ARE SUPPOSED TO BE:
