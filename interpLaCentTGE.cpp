@@ -15,13 +15,13 @@ using namespace std;
 
 std::string doubToString(Double_t);
 std::string centIndToPercent(int centInd);
-void formatGraph(TGraphErrors* g, Double_t collEnArr[], int enInd);
+void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd);
 Double_t* interpolateNpartGraph(TGraphErrors* tg, int en);
 Int_t* getNpartAndErr(Double_t collisionEnergy, int centrality);
 void printInterpolatedGraph(TGraphErrors* tg, int en, Double_t* x_interp, Double_t* y_interp, Double_t* x_interp_err, Double_t* y_interp_err);
 // main function:
 Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
-int interpolateLaCent(){
+int interpLaCentTGE(){
 	std::ofstream datfile ("lambdasInterpWithErr.dat", std::ofstream::out);
 	cout << "CollEn" << "\t"
 		<< "dETdEta1" << "\n";
@@ -233,7 +233,7 @@ int interpolateLaCent(){
 		g1 = new TGraph(5, collEnArr, dETdEtaOverNpartBy2SumCentByCent);
 		g1 -> SetName("dETdEtaOverNpartBy2Sum_vs_en"); // unique identifier to be used in function:
 		cout << "Now formatting graph: " << g1->GetName() << endl;
-		formatGraph(g1, centArr, centInd);
+		// TODO formatGraph(g1, centArr, centInd);
 		delete g1;	
 	
 		// TODO make a function to take care of different types of graph instead of creating new objects here
@@ -241,7 +241,7 @@ int interpolateLaCent(){
 		g2 = new TGraph(5, collEnArr, dETdEtaOverdNchdEtaSumCentByCent);
 		g2 -> SetName("dETdEtaOverdNchdEtaSum_vs_en"); // unique identifier to be used in function:
 		cout << "Now formatting graph: " << g2->GetName() << endl;
-		formatGraph(g2, centArr, centInd);
+		// TODO formatGraph(g2, centArr, centInd);
 		delete g2;
 		
 	} // end of for loop with index centInd
@@ -267,7 +267,7 @@ int interpolateLaCent(){
 
 		TGraphErrors* g1; // okay to use identifier g1 in local scope as was the case in previous use
 		//TGraphErrors *tg = new TGraphErrors(xNum, &xVec[0], &yVec[0], NULL, &yVecErrStat[0])
-		g1 = new TGraph(cents/*=7*/, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn, 
+		g1 = new TGraphErrors(cents/*=7*/, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn, 
 								NpartArrEnByEn_err, dETdEtaOverNpartBy2SumEnByEn_err);
 		cout << "npartArr: "; 
 		for (int i = 0; i<cents; i++){
@@ -305,7 +305,7 @@ int interpolateLaCent(){
 		TGraph* g2;
 		g2 = new TGraph(cents, NpartArrEnByEn, dETdEtaOverdNchdEtaSumEnByEn);
 		g2 -> SetName("dETdEtaOverdNchdEtaSum_vs_Npart");
-		formatGraph(g2, collEnArr, enInd);
+		// TODO formatGraph(g2, collEnArr, enInd);
 		delete g2;
 		
 		
@@ -477,15 +477,17 @@ Double_t* interpolateNpartGraph(TGraphErrors* tg, int en){
 		 // for the percent error in the above point
 		Double_t x; // temp var to hold (i-5)th x-val
 		Double_t y; // temp var to hold (i-5)th y-val
-		tg -> GetPoint(i-6, x, y);
+		tg -> GetPoint(i-6, x, y); // FIXME: not sure if it should be i-6 always
+		// find absolute error by multiplying the percent error with the y-value
 		y_interp_err[i-5] 	= y_interp[i-5]*(tg->GetErrorY(i-6))/y; // numbering for class TGE starts at 0
 		// get dET/dEta = (dET/dEta)/npart * npart:
 		y_interpET[i-5] 	= (tg -> Eval(x_interp[i-5], 0,"S"))*x_interp[i-5];
 		// save errors in the same array:
 		Double_t x2;
 		Double_t y2;
+		// assign values to x2 and y2:
 		tg -> GetPoint(i+1, x2, y2);
-		y_interpET_err[i-1] 	= (tg->GetErrorY(i+1)/y2)*x_interp[i-5];
+		y_interpET[i-1] 	= (tg->GetErrorY(i+1)/y2)*x_interp[i-5];
 	}
 	cout << "x_interp: "; 
 	for (int i = 0; i<4; i++){
@@ -504,7 +506,6 @@ Double_t* interpolateNpartGraph(TGraphErrors* tg, int en){
 	cout << endl;
 	//cout << "test debug graph iter *************" << endl;
 	printInterpolatedGraph(tg, en, x_interp, y_interp, x_interp_err,y_interp_err);
-	// HERE TODO TODO TODO TODO TODO TODO
 	// so far... created everything that will go into the constructor for the debug graph
 	// which is to be created by the function call above
 	cout << "En value to pass: " << en << endl;
@@ -526,7 +527,7 @@ void printInterpolatedGraph(TGraphErrors* tg, int en, Double_t* x_interp, Double
 	copy(arr1, arr1 + size1, result);
 	copy(arr2, arr2 + size2, result + size1);
 	*/
-	Double_t xArr1[tg->GetN()];
+	Double_t xArr1[tg->GetN()]; // see above comment
 	copy(tg->GetX(), tg->GetX()+tg->GetN(), xArr1);
 	cout << "xArr1: "; 
 	for (int i = 0; i<tg->GetN(); i++){
@@ -567,11 +568,18 @@ void printInterpolatedGraph(TGraphErrors* tg, int en, Double_t* x_interp, Double
 	cout << "size of arr1: " << size1 << " size of arr2: " << size2<< endl;
 	cout << "final array size: " << sizeFinal << endl;
 	Double_t xArrFinal[sizeFinal];
+	Double_t xArrFinal_err[sizeFinal];
 	Double_t yArrFinal[sizeFinal];
+	Double_t yArrFinal_err[sizeFinal];
 	copy(xArr1, xArr1+size1, xArrFinal);
 	copy(x_interp, x_interp+size2, xArrFinal+size1-2);
+		// HERE TODO TODO TODO TODO TODO TODO
+	copy(xArr1_err, xArr1_err+size1, xArrFinal_err);
+	copy(x_interp_err, x_interp_err+size2, xArrFinal_err+size1-2);
 	copy(yArr1, yArr1+size1, yArrFinal);
 	copy(y_interp, y_interp+size2, yArrFinal+size1-2);
+	copy(yArr1_err, yArr1_err+size1, yArrFinal_err);
+	copy(y_interp_err, y_interp_err+size2, yArrFinal_err+size1-2);
 	cout << "xArrFinal: "; 
 	for (int i = 0; i<sizeFinal; i++){
 		cout << *(xArrFinal+i) << ", ";
@@ -582,7 +590,7 @@ void printInterpolatedGraph(TGraphErrors* tg, int en, Double_t* x_interp, Double
 		cout << *(yArrFinal+i) << ", ";
 	}
 	cout << endl;
-	gr = new TGraph(sizeFinal, xArrFinal, yArrFinal);
+	gr = new TGraphErrors(sizeFinal, xArrFinal, yArrFinal, xArrFinal_err, yArrFinal_err);
 	gr -> SetName("dETdEtaOverdNchdEtaSum_vs_Npart_Final");
 	cout << "En test: " << en << endl;
 	formatGraph(gr, collEnArr, en);
