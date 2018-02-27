@@ -19,8 +19,10 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 Double_t* interpolateNpartGraph(TGraphErrors* tg, int en);
 Int_t* getNpartAndErr(Double_t collisionEnergy, int centrality);
 void printInterpolatedGraph(TGraphErrors* tg, int en, Double_t* x_interp, Double_t* y_interp, Double_t* x_interp_err, Double_t* y_interp_err);
-// main function:
+
 Double_t collEnArr[5] = {7.7,11.5,19.6,27,39}; // To use in TGraphErrors
+
+// main function:
 int interpLaCentTGE(){
 	std::ofstream datfile ("lambdasInterpWithErr.dat", std::ofstream::out);
 	cout << "CollEn" << "\t"

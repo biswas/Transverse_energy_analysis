@@ -1,10 +1,14 @@
+The Large Hadron Collider (LHC) at CERN and the Relativistic Heavy Ion Collider (RHIC) at the Brookhaven National Laboratory have the ability to collide heavy nuclei, such as those of gold and uranium, at nearly the speed of light, reaching temperatures of trillions of degrees Celcius. These laboratories have provided evidence of the formation of an exotic state of matter, called the quark-gluon plasma (QGP). It only exists for a brief amount of time after such collisions and instantly freezes out into a plethora of new particles, which carry the signatures we can use to deduct QGP properties. It reportedly behaves like an almost perfect quantum fluid with no resistance and exhibits other interesting properties.
+
+One of the methods to probe the properties of this matter is by analyzing the conversion of the beam-direction energy at the time of collision into transverse energy after the collision. This analysis is generally done by using data from the calorimeters placed around the collision site. Under Dr. Christine Nattrass in the Relativistic Heavy Ion Physics (RHIP) group at the University of Tennessee (UT), I am developing C++ codes for a new method to perform the transverse energy analysis by using tracking detectors instead of the conventional calorimeters.
+
+This method involves a manipulation of the transverse momentum spectra, utilizing the mathematical tools pertaining to heavy-ion collision physics, to calculate the transverse energy production. Due to the limited capabilities of the detectors, however, there is a lack of available data points corresponding to low and high momenta. I use the Boltzmann-Gibbs blast wave function to perform a non-linear regression on the available data points and extract the good-fit parameters and other statistics to extrapolate the given spectrum into the low- and high- momentum regions. CERN's ROOT, an object-oriented framework for large-scale data analysis, comes handy in this regard.
+
 *********************************************************************************************
-Descriptions of methods (updated 12/14/2017) available in fitBESData5.h
-	- intentional variance (pertaining to transformations) in fitALICE2013Data_transformed.h
-	- for details, see the beginning of fitALICE2013Data_transformed.h
+Descriptionsof methods available in fitBESData5.h
 *********************************************************************************************
 __________________________________________
-Description of contents in the repository:
+Description (incomplete) of contents in the repository:
 -----------------------------------------
 directory: oldVersions
 	- created before learning git
