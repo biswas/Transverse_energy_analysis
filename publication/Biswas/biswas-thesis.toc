@@ -1,35 +1,37 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Physics Background}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Nuclear Matter}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Phase Transitions}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Quark-Gluon Plasma}{4}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Relativistic Heavy Ion Collisions}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}RHIC and LHC}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Beam Generation}{6}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Collision Cross Sections}{6}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Models of Collision Physics}{6}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Detection of Collision Products}{6}{subsection.2.2.5}
-\contentsline {subsubsection}{Tracking Detectors}{6}{section*.11}
-\contentsline {subsubsection}{Calorimeters}{6}{section*.12}
-\contentsline {section}{\numberline {2.3}Detection of QGP Signatures}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Bjorken Energy Density}{6}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Collective Flow}{6}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Strangeness Enhancement}{6}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Jet Quenching}{6}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Photon Production}{6}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Transverse Energy}{7}{section.2.4}
-\contentsline {section}{\numberline {2.5}RHIC Beam Energy Scan Program}{7}{section.2.5}
-\contentsline {chapter}{\numberline {3}Measurement of Transverse Energy}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}Definition of Transverse Energy}{8}{section.3.1}
-\contentsline {section}{\numberline {3.2}$E_{T}$ Measurement with Calorimeters}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}$E_{T}$ Measurement with Tracking Detectors}{9}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{10}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Tracking Detectors in STAR}{12}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}The Beam Energy Scan Program}{12}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}BES Calorimetry}{14}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}BES $p_{T}$ spectra}{14}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {4}Data Analysis}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Extrapolation of Spectra}{16}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Boltzmann-Gibbs Blast Wave}{16}{subsection.4.1.1}
-\contentsline {chapter}{Bibliography}{17}{section*.15}
-\contentsline {chapter}{Appendices}{48}{section*.16}
+\contentsline {chapter}{\numberline {2}Physics Background}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Nuclear Matter}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Phase Transitions}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Quark-Gluon Plasma}{5}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Relativistic Heavy Ion Collisions}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}RHIC and LHC}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Beam Generation}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Collision Cross Sections}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Models of Collision Physics}{7}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Detection of Collision Products}{7}{subsection.2.2.5}
+\contentsline {subsubsection}{Tracking Detectors}{7}{section*.11}
+\contentsline {subsubsection}{Calorimeters}{7}{section*.12}
+\contentsline {section}{\numberline {2.3}Detection of QGP Signatures}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Bjorken Energy Density}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Collective Flow}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Strangeness Enhancement}{7}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Jet Quenching}{7}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Photon Production}{7}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Transverse Energy}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}RHIC Beam Energy Scan Program}{8}{section.2.5}
+\contentsline {chapter}{\numberline {3}Measurement of Transverse Energy}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Definition of Transverse Energy}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}$E_{T}$ Measurement with Calorimeters}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}$E_{T}$ Measurement with Tracking Detectors}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Tracking Detectors in STAR}{13}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}The Beam Energy Scan Program}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}BES Calorimetry}{15}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}BES $p_{T}$ spectra}{15}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Data Analysis}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Extrapolation of Spectra}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Boltzmann-Gibbs Blast Wave}{17}{subsection.4.1.1}
+\contentsline {chapter}{\numberline {5}Results}{18}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{19}{chapter.6}
+\contentsline {chapter}{Bibliography}{20}{section*.15}
+\contentsline {chapter}{Appendices}{51}{section*.16}

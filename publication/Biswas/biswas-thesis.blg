@@ -9,30 +9,32 @@ A level-1 auxiliary file: chapters/chapter-1.aux
 A level-1 auxiliary file: chapters/chapter-2.aux
 A level-1 auxiliary file: chapters/chapter-3.aux
 A level-1 auxiliary file: chapters/chapter-4.aux
+A level-1 auxiliary file: chapters/chapter-5.aux
+A level-1 auxiliary file: chapters/chapter-6.aux
 The style file: apalike.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
-I was expecting a `{' or a `('---line 90 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 102 of file references-Biswas.bib
  : %\ @phdthesis 
  :               bit undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 91 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 103 of file references-Biswas.bib
  : 
  : @phdthesis{phdthesisnattrass,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 97 of file references-Biswas.bib
+You're missing a field name---line 109 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 102 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 114 of file references-Biswas.bib
  : %\ Bethe Bloch formula @misc 
  :                              but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 103 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 115 of file references-Biswas.bib
  : 
  : @article{bethe1953passage,
 (Error may have been on previous line)
@@ -51,7 +53,7 @@ while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
 You've used 23 entries,
             1935 wiz_defined-function locations,
-            642 strings with 112939 characters,
+            644 strings with 112983 characters,
 and the built_in function-call counts, 197016 in all, are:
 = -- 12986
 > -- 30689
