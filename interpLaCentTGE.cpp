@@ -73,7 +73,7 @@ int interpLaCentTGE(){
 											//and initialize all other elements as if 
 											// they had static storage duration, hence
 											// set them to zero as well
-	// FIXME: faulty assignment of values to centIndex 6 & 7. Fix after interpolation										
+									
 	Double_t dETdEtaSum_errSq[cents][collEns] = {0.}; // errors added in quadrature
 	Double_t dETdEtaSum_err[cents][collEns] = {0.}; // sq root of the above
 	Double_t dNchdEtaSum[cents][collEns] = {0.};
@@ -508,7 +508,6 @@ Double_t* interpolateNpartGraph(TGraphErrors* tg, int en){
 		// assign values to x2 and y2:
 		tg -> GetPoint(i+1, x2, y2);
 		// using uncertainty propagation formula:
-		// error y_interpET[i-1] 	= (tg->GetErrorY(i+1)/y2)*x_interp[i-5];
 		y_interpET[i-1]		= TMath::Sqrt((y_interp[i-5]*x_interp_err[i-5])
 										* (y_interp[i-5]*x_interp_err[i-5])
 										+ (x_interp[i-5]*y_interp_err[i-5])
