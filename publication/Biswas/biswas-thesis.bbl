@@ -1058,6 +1058,13 @@ Elia, D. and the ALICE~Collaboration (2013).
 \newblock Strangeness production in alice.
 \newblock {\em Journal of Physics: Conference Series}, 455(1):012005.
 
+\bibitem[Gyulassy, 2004]{Gyulassy:2004vg}
+Gyulassy, M. (2004).
+\newblock {The QGP discovered at RHIC}.
+\newblock In {\em {Structure and dynamics of elementary matter. Proceedings,
+  NATO Advanced Study Institute, Camyuva-Kemer, Turkey, September 22-October 2,
+  2003}}, pages 159--182.
+
 \bibitem[Hilke, 2010]{0034-4885-73-11-116201}
 Hilke, H.~J. (2010).
 \newblock Time projection chambers.
@@ -1114,6 +1121,11 @@ Preghenella, R. (2011).
   ALICE detector in Pb-Pb collisions at $\sqrt{s_{NN}}$ = 2.76 TeV}.
 \newblock {\em PoS}, EPS-HEP2011:118.
 
+\bibitem[Satz, 2006]{0954-3899-32-3-R01}
+Satz, H. (2006).
+\newblock Colour deconfinement and quarkonium binding.
+\newblock {\em Journal of Physics G: Nuclear and Particle Physics}, 32(3):R25.
+
 \bibitem[Shao et~al., 2006]{Shao:2005iu}
 Shao, M., Barannikova, O.~{\relax Yu}., Dong, X., Fisyak, Y., Ruan, L.,
   Sorensen, P., and Xu, Z. (2006).
@@ -1126,5 +1138,12 @@ Shuryak, E.~V. (1988).
 \newblock The qcd vacuum and quark-gluon plasma.
 \newblock {\em Zeitschrift f{\"u}r Physik C Particles and Fields},
   38(1):141--145.
+
+\bibitem[Stock, 2004]{Ritter:2004xj}
+Stock, R. (2004).
+\newblock {Ultra-relativistic nucleus-nucleus collisions. Proceedings, 17th
+  International Conference, Quark Matter 2004, Oakland, USA, January 11-17,
+  2004}.
+\newblock {\em J. Phys.}, G30:S633--S648.
 
 \end{thebibliography}
