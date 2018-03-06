@@ -41,7 +41,8 @@ where $\alpha_{S}$ is the QCD fine-structure constant and $k$ is is the strengh 
 %, and it is ergonomically more favorable to create a quark-antiquark pair than to produce unbound quarks
 %, and $\alpha\_{QED}$ is the coupling constant.
 
-\section{Phase Transitions}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Phase Transitions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In everyday life, we observe matter existing in four distinct phases: solid, liquid, gas, and plasma. Changes in physical conditions can lead to a transition from one of these phases to another, exemplified by the commonly observed coversion of ice to water. Distinctions among the various phases can be represented in a chart called the phase diagram.
 
 The phase diagram consists of thermodynamic observables such as temperature and density on its axes. Curves in the phase diagram represent boundries of physical conditions at which two or more phases of matter can coexist in equilibrium. Crossing a boundary represents an abrupt transition from one phase to another; this abruptness is mathematically characterized by the discontinuity in the change of the derivative of the free energy -- a thermodynamic varible -- with respect to the physical quantities in the axes. There can also be regions in the diagram representing the ranges of physical conditions in which a smooth phase transition can take place.
@@ -58,7 +59,8 @@ A schematic representing the QCD phase diagram on the temperature (T) and quark 
 \end{figure}
 
 
-\section{Quark-Gluon Plasma}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Quark-Gluon Plasma}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The confinement of quarks into the hardonic phase of QCD matter, as described in section \ref{section:QCD}, has its limitations. At very high densities, when the wave function of a single hadron encompasses the spatial regions covered by multiple such hadrons, it is impossible to classify which pair or triplet of quarks belongs to which meson or baryon. As long as a particular quark is close enough to the other quarks in the volume, it is deconfined in such a way that it can freely move anywhere in the volume. \cite{0954-3899-32-3-R01} QCD predicts such phase transition, at energy densities above 0.2-1 GeV/fm$^{3}$ \cite{Adam:2139456} and around a critical temperature of about 200 MeV \cite{2013arXiv1304.1452M}, of strongly interacting matter to a phase with quarks and gluons in thermal and chemical equilibrium representing the relevant degrees of freedom and behaving like an almost perfect quantum fluid \cite{PhysRevLett.109.152303}. This deconfined state of quarks and gluons is termed the quark-gluon plasma (QGP) in analogy to the quantum electrodynamical plasma phase of matter.
 
 %The deconfinement is what the weakening of the strong interaction due to the polarization of the QCD vacuum is expected to lead to at high energies. The expectation of this phase transition also makes sense in terms of the chiral symmetry of the QCD Lagrangian, which is spontaneously broken at low temperatures, but restored at high temperatures, providing a sufficient condition for the deconfinement.
@@ -113,7 +115,7 @@ Au+Au & 9, 20, 62, 130, 200 \\ [1ex]
 \end{table}
 
 
-In general, any collision between two nuclei is not perfectly head-on. Some collisions are close to being head-on and are called central collisions. Some are far from being head-on and are called peripheral collisions. The amount by which a collision is central is quantitatively represented by a variable called centrality. By convention, 0\% is the centrality of a perfectly head-on collision and 100\% is that of the least head-on, i.e., peripheral collision. In practice, each collision event is deducted to belong to a specific centrality bin, for instance, 0-5\%. Figure \ref{fig:mid-central_collision} illustrates the schematics of the aftermath of a mid-central collision, i.e, a collision in which about half of the volume of each of the nuclei intersects the other.
+In general, any collision between two nuclei is not perfectly head-on. Some collisions are close to being head-on and are called central collisions. Some are far from being head-on and are called peripheral collisions. The amount by which a collision is central is quantitatively represented by a variable called centrality. By convention, 0\% is the centrality of a perfectly head-on collision and 100\% is that of the least head-on, i.e., the most peripheral collision. In practice, each collision event is deducted to belong to a specific centrality bin, for instance, 0-5\%. Figure \ref{fig:mid-central_collision} illustrates the aftermath of a mid-central collision, i.e, a collision in which about half of the volume of each of the nuclei intersects the other.
 \begin{figure}[h]
   \centering
   \includegraphics[width=4.5in]{figures/flow_elliptic_init_v4.pdf}
@@ -128,7 +130,8 @@ The collision of two nuclei can be modeled as a set of collisions of the constit
 \end{figure}
 
 
-Rapidity and pseudorapidity 
+Rapidity and pseudorapidity
+% http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
 %(edu.itp.phys.ethz.ch/hs10/ppp1/PPP1_4.pdf) 
 ...................................................
 ...................................................
@@ -144,19 +147,22 @@ The initial state of the colliding nuclei is not well known and is the topic of 
 \end{figure}
 
 \subsection{Detection of Collision Products}\label{subsection:detection}
-Detectors are placed around the collision site to perform measurements on the final state particles emitting from the thermal freeze-out of the medium. These measurements typically include the estimation of the location and time of production of the final states, the type of particle, and the momentum and energy it carries. Generally, a tracking detector surrounds the collision site, and there are calorimeters followed by particle identifiers around it. A magnetic field is applied parallel to the beam direction around the collision site. Due to this orientation of the magnetic field, the spectators traveling parallel to it move undeflected and the final state charged particles with components of velocity transverse to the beam axis get deflected around the beam axis with angular frequency given by
+%%%The final state particles emit in all directions around the collision site. The symbol $\theta$ is used to denote the polar angle of the direction, i.e., the angle with respect to the beam axis, of a particle. However, it is more convenient to use a different quantity, called the rapidity, to describe the particle's direction.
+Detectors are placed around the collision site to perform measurements on the final state particles emitting from the thermal freeze-out of the medium. These measurements typically include the estimation of the location and time of production of the final states, the type of particle, and the momentum and energy it carries.
+
+Generally, a tracking detector surrounds the collision site, and there are calorimeters followed by particle identifiers around it. A magnetic field is applied parallel to the beam direction around the collision site. Due to this orientation of the magnetic field, the spectators traveling parallel to it move undeflected and the final state charged particles with components of velocity transverse to the beam axis get deflected around the beam axis with angular frequency given by
 \begin{equation}\label{eqn:larmor}
 \omega = \frac{qB}{m},
 \end{equation}
 where $q$ is the electric charge of the particle, $m$ is its mass and $B$ is the applied magnetic field.
-Two kinds of detectors most relevant to this thesis, tracking detectors and calorimeters, are described below.
-\subsubsection{Tracking Detectors}
-\subsubsection{Calorimeters}
+Two kinds of detectors most relevant to this thesis, tracking detectors and calorimeters, are described in chapter \ref{ch:measurement}.
 
 \section{Detection of QGP Signatures}\label{section:signatures}
 http://iopscience.iop.org/article/10.1088/0954-3899/25/3/013/meta, and: 
 
-The existence and properties of the QGP in the aftermath of high-energy heavy-ion collisions can be probed using different techniques relevant to several theoretical characteristics of the phase. For instance, the interacting nuclei  carry no net strangeness before colliding, and so a post-collision observation of strange and multi-strange particles can be a signal for an antecedent existence of deconfined quarks and gluons \cite{1742-6596-455-1-012005}. This signal, when complemented with an observation of the enhancement of strange particles production, provides a strong hint of the formation of QGP. This can be further complemented with the estimate of the energy density and the temperature attained after the collision.
+The existence and properties of the QGP in the aftermath of high-energy heavy-ion collisions can be probed using different techniques relevant to several theoretical characteristics of the phase. Some of these probes are described below.
+
+For instance, the interacting nuclei  carry no net strangeness before colliding, and so a post-collision observation of strange and multi-strange particles can be a signal for an antecedent existence of deconfined quarks and gluons \cite{1742-6596-455-1-012005}. This signal, when complemented with an observation of the enhancement of strange particles production, provides a strong hint of the formation of QGP. This can be further complemented with the estimate of the energy density and the temperature attained after the collision.
 
 Analyses of experimental results have thus far provided signatures of the formation of matter with partonic degrees of freedom at the early stages of the collisions. Such signatures include suppression of high monentum hadrons, known as jet quenching, because the QGP is nearly opaque to colored probes, and large azimuthal anisotropies, indicating that the medium is a liquid of quarks and gluons \cite{PhysRevC.96.044904}?????. Experiments also reveal the initial energy density of this matter to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
 
@@ -172,6 +178,7 @@ The transverse energy and the charged particle pseudorapidity densities have con
 \subsection{Bjorken Energy Density}
 \subsection{Collective Flow}
 \subsection{Strangeness Enhancement}
+% http://shodhganga.inflibnet.ac.in/bitstream/10603/37674/11/11_chapter%202.pdf
 \subsection{Jet Quenching}
 A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering, and it mostly results in partons traveling ...
 \subsection{Photon Production}
