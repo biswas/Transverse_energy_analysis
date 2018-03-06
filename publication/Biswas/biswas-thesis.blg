@@ -16,25 +16,30 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
-I was expecting a `{' or a `('---line 161 of file references-Biswas.bib
- : %\ @phdthesis 
- :               bit undefined so using @article
-I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 162 of file references-Biswas.bib
+I was expecting a `,' or a `}'---line 27 of file references-Biswas.bib
  : 
- : @phdthesis{phdthesisnattrass,
+ : publisher = WORLD SCIENTIFIC
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 168 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 234 of file references-Biswas.bib
+ : %%%\ @phdthesis 
+ :                 bit undefined so using @article
+I'm skipping whatever remains of this entry
+I was expecting a `{' or a `('---line 235 of file references-Biswas.bib
+ : 
+ : @article{phdthesisnattrass,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 240 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 173 of file references-Biswas.bib
- : %\ Bethe Bloch formula @misc 
- :                              but undefined so using @article
+I was expecting a `{' or a `('---line 245 of file references-Biswas.bib
+ : %%%\ Bethe Bloch formula @misc 
+ :                                but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 174 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 246 of file references-Biswas.bib
  : 
  : @article{bethe1953passage,
 (Error may have been on previous line)
@@ -51,45 +56,47 @@ Warning--empty journal in bethe1953passage
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
 while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
-You've used 26 entries,
+Warning--empty journal in Connors:2017ptx
+Warning--empty journal in phdthesisnattrass
+You've used 31 entries,
             1935 wiz_defined-function locations,
-            666 strings with 113590 characters,
-and the built_in function-call counts, 198167 in all, are:
-= -- 13102
-> -- 30710
-< -- 18
-+ -- 12266
-- -- 12258
-* -- 25132
-:= -- 38185
-add.period$ -- 79
-call.type$ -- 26
-change.case$ -- 6257
-chr.to.int$ -- 26
-cite$ -- 27
-duplicate$ -- 373
-empty$ -- 738
-format.name$ -- 12291
-if$ -- 32300
+            693 strings with 114425 characters,
+and the built_in function-call counts, 200106 in all, are:
+= -- 13283
+> -- 30790
+< -- 21
++ -- 12294
+- -- 12284
+* -- 25305
+:= -- 38523
+add.period$ -- 92
+call.type$ -- 31
+change.case$ -- 6296
+chr.to.int$ -- 31
+cite$ -- 34
+duplicate$ -- 443
+empty$ -- 878
+format.name$ -- 12328
+if$ -- 32675
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 25
-newline$ -- 134
-num.names$ -- 78
-pop$ -- 6200
+missing$ -- 31
+newline$ -- 157
+num.names$ -- 93
+pop$ -- 6232
 preamble$ -- 1
-purify$ -- 6258
+purify$ -- 6296
 quote$ -- 0
-skip$ -- 289
+skip$ -- 343
 stack$ -- 0
-substring$ -- 784
-swap$ -- 34
+substring$ -- 927
+swap$ -- 37
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 156
-warning$ -- 1
-while$ -- 77
+type$ -- 186
+warning$ -- 3
+while$ -- 91
 width$ -- 0
-write$ -- 340
-(There were 5 error messages)
+write$ -- 399
+(There were 6 error messages)
