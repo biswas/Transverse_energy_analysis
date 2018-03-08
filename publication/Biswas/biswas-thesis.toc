@@ -8,29 +8,28 @@
 \contentsline {subsection}{\numberline {2.4.2}Collision Energy and Geometry}{8}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}QGP Evolution}{11}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}Detection of Collision Products}{11}{subsection.2.4.4}
-\contentsline {subsubsection}{Tracking Detectors}{12}{section*.16}
-\contentsline {subsubsection}{Calorimeters}{12}{section*.17}
 \contentsline {section}{\numberline {2.5}Detection of QGP Signatures}{12}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Bjorken Energy Density}{14}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Collective Flow}{14}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Strangeness Enhancement}{14}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Jet Quenching}{14}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Photon Production}{14}{subsection.2.5.5}
-\contentsline {section}{\numberline {2.6}Transverse Energy}{14}{section.2.6}
-\contentsline {section}{\numberline {2.7}RHIC Beam Energy Scan Program}{14}{section.2.7}
-\contentsline {chapter}{\numberline {3}Measurement of Transverse Energy}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Definition of Transverse Energy}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}$E_{T}$ Measurement with Calorimeters}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}$E_{T}$ Measurement with Tracking Detectors}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{17}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Tracking Detectors in STAR}{19}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}The Beam Energy Scan Program}{19}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}BES Calorimetry}{21}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}BES $p_{T}$ spectra}{21}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {4}Data Analysis}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Extrapolation of Spectra}{23}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Boltzmann-Gibbs Blast Wave}{23}{subsection.4.1.1}
-\contentsline {chapter}{\numberline {5}Results}{24}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusion}{25}{chapter.6}
-\contentsline {chapter}{Bibliography}{26}{section*.20}
-\contentsline {chapter}{Appendices}{58}{section*.21}
+\contentsline {subsection}{\numberline {2.5.1}Dilepton Production}{14}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Direct photons}{15}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Bjorken Energy Density}{15}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Collective Flow}{16}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Strangeness Enhancement}{16}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Jet Quenching}{16}{subsection.2.5.6}
+\contentsline {section}{\numberline {2.6}Transverse Energy}{16}{section.2.6}
+\contentsline {section}{\numberline {2.7}RHIC Beam Energy Scan Program}{16}{section.2.7}
+\contentsline {chapter}{\numberline {3}Measurement of Transverse Energy}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Definition of Transverse Energy}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}$E_{T}$ Measurement with Calorimeters}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}$E_{T}$ Measurement with Tracking Detectors}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Tracking Detectors in STAR}{21}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}The Beam Energy Scan Program}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}BES Calorimetry}{23}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}BES $p_{T}$ spectra}{23}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Data Analysis}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Extrapolation of Spectra}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Boltzmann-Gibbs Blast Wave}{25}{subsection.4.1.1}
+\contentsline {chapter}{\numberline {5}Results}{26}{chapter.5}
+\contentsline {chapter}{\numberline {6}Conclusion}{27}{chapter.6}
+\contentsline {chapter}{Bibliography}{28}{section*.20}
+\contentsline {chapter}{Appendices}{60}{section*.21}

@@ -16,30 +16,30 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
-I was expecting a `,' or a `}'---line 27 of file references-Biswas.bib
+I was expecting a `,' or a `}'---line 72 of file references-Biswas.bib
  : 
  : publisher = WORLD SCIENTIFIC
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 234 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 279 of file references-Biswas.bib
  : %%%\ @phdthesis 
  :                 bit undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 235 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 280 of file references-Biswas.bib
  : 
  : @article{phdthesisnattrass,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 240 of file references-Biswas.bib
+You're missing a field name---line 285 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 245 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 290 of file references-Biswas.bib
  : %%%\ Bethe Bloch formula @misc 
  :                                but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 246 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 291 of file references-Biswas.bib
  : 
  : @article{bethe1953passage,
 (Error may have been on previous line)
@@ -58,45 +58,45 @@ while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
 Warning--empty journal in Connors:2017ptx
 Warning--empty journal in phdthesisnattrass
-You've used 31 entries,
+You've used 33 entries,
             1935 wiz_defined-function locations,
-            693 strings with 114425 characters,
-and the built_in function-call counts, 200106 in all, are:
-= -- 13283
-> -- 30790
-< -- 21
-+ -- 12294
-- -- 12284
-* -- 25305
-:= -- 38523
-add.period$ -- 92
-call.type$ -- 31
-change.case$ -- 6296
-chr.to.int$ -- 31
-cite$ -- 34
-duplicate$ -- 443
-empty$ -- 878
-format.name$ -- 12328
-if$ -- 32675
+            706 strings with 114825 characters,
+and the built_in function-call counts, 200747 in all, are:
+= -- 13345
+> -- 30804
+< -- 23
++ -- 12298
+- -- 12288
+* -- 25351
+:= -- 38637
+add.period$ -- 98
+call.type$ -- 33
+change.case$ -- 6307
+chr.to.int$ -- 33
+cite$ -- 36
+duplicate$ -- 471
+empty$ -- 932
+format.name$ -- 12334
+if$ -- 32803
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 157
-num.names$ -- 93
-pop$ -- 6232
+missing$ -- 34
+newline$ -- 167
+num.names$ -- 99
+pop$ -- 6243
 preamble$ -- 1
-purify$ -- 6296
+purify$ -- 6308
 quote$ -- 0
-skip$ -- 343
+skip$ -- 364
 stack$ -- 0
-substring$ -- 927
-swap$ -- 37
+substring$ -- 978
+swap$ -- 39
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 196
 warning$ -- 3
-while$ -- 91
+while$ -- 96
 width$ -- 0
-write$ -- 399
+write$ -- 424
 (There were 6 error messages)
