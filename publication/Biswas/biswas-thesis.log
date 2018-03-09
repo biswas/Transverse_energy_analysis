@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  8 MAR 2018 14:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  9 MAR 2018 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,8 +689,6 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
@@ -766,10 +764,6 @@ color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -792,8 +786,6 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
@@ -834,10 +826,6 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -847,6 +835,18 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -920,8 +920,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1127,7 +1125,13 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -1144,35 +1148,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -1196,14 +1172,70 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <figures/1742-6596-761-1-012066.png, id=355, 469.755pt x 374.39874pt>
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] <figures/1742-6596-761-1-012066.png, id=352, 469.755pt x 374.39874pt>
 File: figures/1742-6596-761-1-012066.png Graphic file (type png)
 
 <use figures/1742-6596-761-1-012066.png>
 Package pdftex.def Info: figures/1742-6596-761-1-012066.png used on input line 
-58.
+44.
 (pdftex.def)             Requested size: 397.48499pt x 316.8008pt.
- [5
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1233,6 +1265,21 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]) [6
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
@@ -1242,48 +1289,50 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./figures/1742-6596-761-1-012066.png>] <figures/RHIC_Layout.jpeg, id=372, 308
-.352pt x 224.5188pt>
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/1742-6596-761-1-012066.png>]
+:<-
+:<+ chapters/chapter-3.tex
+\openout2 = `chapters/chapter-3.aux'.
+
+(./chapters/chapter-3.tex
+Chapter 3.
+<figures/RHIC_Layout.jpeg, id=378, 308.352pt x 224.5188pt>
 File: figures/RHIC_Layout.jpeg Graphic file (type jpg)
 
 <use figures/RHIC_Layout.jpeg>
-Package pdftex.def Info: figures/RHIC_Layout.jpeg used on input line 79.
+Package pdftex.def Info: figures/RHIC_Layout.jpeg used on input line 25.
 (pdftex.def)             Requested size: 469.75499pt x 342.04634pt.
- [6
+ [7
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
+
+
+
+
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1318,11 +1367,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [7
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1339,6 +1383,11 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+] [8
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1353,7 +1402,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./figures/RHIC_Layout.jpeg>] [8
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1370,6 +1418,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+ <./figures/RHIC_Layout.jpeg>] [9
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1399,6 +1448,20 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -1417,39 +1480,29 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/flow_elliptic_init_v4.pdf, id=400, 421.575pt x 313.17pt>
+<figures/flow_elliptic_init_v4.pdf, id=402, 421.575pt x 313.17pt>
 File: figures/flow_elliptic_init_v4.pdf Graphic file (type pdf)
 
 <use figures/flow_elliptic_init_v4.pdf>
-Package pdftex.def Info: figures/flow_elliptic_init_v4.pdf used on input line 1
-22.
+Package pdftex.def Info: figures/flow_elliptic_init_v4.pdf used on input line 6
+8.
 (pdftex.def)             Requested size: 325.215pt x 241.59082pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/part_spec_Vovchenko.png, id=404, 803.0pt x 166.6225pt>
+<figures/part_spec_Vovchenko.png, id=406, 803.0pt x 166.6225pt>
 File: figures/part_spec_Vovchenko.png Graphic file (type png)
 
 <use figures/part_spec_Vovchenko.png>
-Package pdftex.def Info: figures/part_spec_Vovchenko.png used on input line 129
-.
+Package pdftex.def Info: figures/part_spec_Vovchenko.png used on input line 75.
+
 (pdftex.def)             Requested size: 469.75499pt x 97.47757pt.
- [9
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1502,50 +1555,123 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]
-Overfull \hbox (32.66986pt too wide) in paragraph at lines 134--140
-[]\OT1/cmr/m/n/12 Rapidity and pseu-do-ra-pid-ity .............................
-...................... ...................................................
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [11
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/flow_elliptic_init_v4.pdf>] [12
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/part_spec_Vovchenko.png (PNG copy)>]
+Overfull \hbox (56.81358pt too wide) in paragraph at lines 114--117
+[]\OT1/cmr/m/n/12 ................................................... .........
+.......................................... ....................................
+............... 
  []
 
-<figures/LightCone1_color-crop_NThesis.pdf, id=413, 517.935pt x 410.53375pt>
+<figures/LightCone1_color-crop_NThesis.pdf, id=521, 517.935pt x 410.53375pt>
 File: figures/LightCone1_color-crop_NThesis.pdf Graphic file (type pdf)
 
 <use figures/LightCone1_color-crop_NThesis.pdf>
 Package pdftex.def Info: figures/LightCone1_color-crop_NThesis.pdf used on inpu
-t line 146.
+t line 121.
 (pdftex.def)             Requested size: 469.75499pt x 372.3585pt.
- [10
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
- <./figures/flow_elliptic_init_v4.pdf> <./figures/part_spec_Vovchenko.png (PNG 
-copy)>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11
+[13
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1588,6 +1714,21 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+] [14
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1596,6 +1737,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+ <./figures/LightCone1_color-crop_NThesis.pdf>] [15
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1608,17 +1750,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [12
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1633,11 +1764,6 @@ color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
- <./figures/LightCone1_color-crop_NThesis.pdf>] [13
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1671,30 +1797,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -1709,32 +1811,18 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/dilepton.PNG, id=577, 495.35063pt x 243.91125pt>
+<figures/dilepton.PNG, id=595, 495.35063pt x 243.91125pt>
 File: figures/dilepton.PNG Graphic file (type png)
 
 <use figures/dilepton.PNG>
-Package pdftex.def Info: figures/dilepton.PNG used on input line 183.
+Package pdftex.def Info: figures/dilepton.PNG used on input line 160.
 (pdftex.def)             Requested size: 325.215pt x 160.13707pt.
- [14
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
 color pop
 color push 0 g 0 G
 color pop
@@ -1762,14 +1850,55 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./figures/dilepton.PNG>]
-<figures/directPhotons.PNG, id=588, 852.18375pt x 374.14781pt>
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] <figures/directPhotons.PNG, id=606, 852.18375pt x 374.14781pt>
 File: figures/directPhotons.PNG Graphic file (type png)
 
 <use figures/directPhotons.PNG>
-Package pdftex.def Info: figures/directPhotons.PNG used on input line 193.
+Package pdftex.def Info: figures/directPhotons.PNG used on input line 170.
 (pdftex.def)             Requested size: 469.75499pt x 206.25006pt.
- [15
+ [17
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1788,7 +1917,20 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+ <./figures/dilepton.PNG> <./figures/directPhotons.PNG>]) [18
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
@@ -1802,21 +1944,8 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
- <./figures/directPhotons.PNG>]) [16
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1837,12 +1966,12 @@ color push 0 g 0 G
 color pop
 ]
 :<-
-:<+ chapters/chapter-3.tex
-\openout2 = `chapters/chapter-3.aux'.
+:<+ chapters/chapter-4.tex
+\openout2 = `chapters/chapter-4.aux'.
 
-(./chapters/chapter-3.tex
-Chapter 3.
-[17
+(./chapters/chapter-4.tex
+Chapter 4.
+[19
 color push 0 g 0 G
 color pop
 
@@ -1906,7 +2035,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 71.
 
-[18
+[20
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1988,7 +2117,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 82.
 
-[19
+[21
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2037,7 +2166,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [20
+] [22
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -2059,7 +2188,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/../figures/0034-4885-73-11-116201_star_PID.jpg, id=662, 306.162pt x 24
+<figures/../figures/0034-4885-73-11-116201_star_PID.jpg, id=681, 306.162pt x 24
 6.375pt>
 File: figures/../figures/0034-4885-73-11-116201_star_PID.jpg Graphic file (type
  jpg)
@@ -2071,7 +2200,7 @@ Package pdftex.def Info: figures/../figures/0034-4885-73-11-116201_star_PID.jpg
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21
+[23
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -2140,7 +2269,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [22
+] [24
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2195,7 +2324,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 153.
 
 
-<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=686, 803.0pt x 452.
+<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=706, 803.0pt x 452.
 69125pt>
 File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
  png)
@@ -2203,7 +2332,7 @@ File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
 Package pdftex.def Info: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png
  used on input line 157.
 (pdftex.def)             Requested size: 397.48499pt x 224.0863pt.
- [23
+ [25
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2265,7 +2394,7 @@ color pop
 color push 0 g 0 G
 color pop
 ])
-[24
+[26
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2306,57 +2435,11 @@ color push 0 g 0 G
 color pop
  <./figures/../figures/PhysRevC-96-044904_pTSpectra_39.png (PNG copy)>]
 :<-
-:<+ chapters/chapter-4.tex
-\openout2 = `chapters/chapter-4.aux'.
-
-(./chapters/chapter-4.tex
-Chapter 4.
-) [25
-color push 0 g 0 G
-color pop
-
-
-
-
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-:<-
 :<+ chapters/chapter-5.tex
 \openout2 = `chapters/chapter-5.aux'.
 
 (./chapters/chapter-5.tex
 Chapter 5.
-) [26
-color push 0 g 0 G
-color pop
-
-
-
-
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-]
-:<-
-:<+ chapters/chapter-6.tex
-\openout2 = `chapters/chapter-6.aux'.
-
-(./chapters/chapter-6.tex
-Chapter 6.
 ) [27
 color push 0 g 0 G
 color pop
@@ -2372,9 +2455,33 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
 ]
 :<-
-[28
+:<+ chapters/chapter-6.tex
+\openout2 = `chapters/chapter-6.aux'.
+
+(./chapters/chapter-6.tex
+Chapter 6.
+) [28
+color push 0 g 0 G
+color pop
+
+
+
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+:<-
+[29
 color push 0 g 0 G
 color pop
 
@@ -2392,74 +2499,9 @@ color pop
 \tf@brf=\write7
 \openout7 = `biswas-thesis.brf'.
 
- [29
+ [30
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [30
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2754,6 +2796,71 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [35
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
@@ -2787,7 +2894,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-[35
+[36
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2813,81 +2920,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [36
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -2952,7 +2984,17 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3120,16 +3162,12 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
 ] [40
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3195,6 +3233,10 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3269,8 +3311,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3336,6 +3376,8 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3389,15 +3431,7 @@ color pop
 ] [44
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3407,17 +3441,11 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3468,7 +3496,15 @@ color pop
 ] [45
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3478,11 +3514,19 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3790,8 +3834,73 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+] [50
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 ]
-[50
+[51
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4013,7 +4122,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [51
+ [52
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4073,79 +4182,14 @@ color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [52
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ] [53
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4456,19 +4500,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4476,13 +4508,90 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ] [58
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+] [59
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4591,7 +4700,7 @@ color push 0 g 0 G
 color pop
 ])
 :<-
-[59
+[60
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4690,11 +4799,13 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 g 0 G
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-] [60
+color push 0 g 0 G
+color pop
+] [61
 color push 0 g 0 G
 color pop
 
@@ -4732,45 +4843,40 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6B7A3CD449DE729C1C531032CA4741E3;2838.
-
-
-Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
-(rerunfilecheck)             Before: F0DEBE4691B0CC4A2A9EAF6A35D1A77F;3559
-(rerunfilecheck)             After:  8F21341B3D025DD56F692DDC1C0FD1E3;3615.
+(rerunfilecheck)             Checksum: 9F27C7B8B3E3D48ADCB79C760F75473B;2815.
+Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
+(rerunfilecheck)             Checksum: D4C3628AD62A0AA48145B1E84F768B9D;3660.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 9740 strings out of 493046
- 146525 string characters out of 6137253
- 314921 words of memory out of 5000000
- 12852 multiletter control sequences out of 15000+600000
- 16460 words of font info for 65 fonts, out of 8000000 for 9000
+ 9755 strings out of 493046
+ 146718 string characters out of 6137253
+ 315107 words of memory out of 5000000
+ 12859 multiletter control sequences out of 15000+600000
+ 17537 words of font info for 68 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  39i,11n,50p,1547b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on biswas-thesis.pdf (67 pages, 1752679 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on biswas-thesis.pdf (68 pages, 1767362 bytes).
 PDF statistics:
- 1001 PDF objects out of 1200 (max. 8388607)
- 829 compressed objects within 9 object streams
- 180 named destinations out of 1000 (max. 500000)
+ 1024 PDF objects out of 1200 (max. 8388607)
+ 850 compressed objects within 9 object streams
+ 187 named destinations out of 1000 (max. 500000)
  374 words of extra memory for PDF output out of 10000 (max. 10000000)
 

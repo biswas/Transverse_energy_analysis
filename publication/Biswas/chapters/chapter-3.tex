@@ -1,190 +1,188 @@
-\chapter{Measurement of Transverse Energy} \label{ch:measurement}
-%\Conventional method using calorimeters
-%\ first the math: definitions 1.3, 1.4 from analysis note
-%\ then the description of the instruments used to get the relevant variables:
-%\ 		primarily STAR (reference 12 from analysis note), include PHENIX and CMS later if needed
+% \chapter{Relativistic Heavy Ion Collisions}
+% \section{RHIC and LHC}
+% \section{Collision Energy and Geometry}
+% \section{Kinematic Variables}
+% \section{QGP Evolution}
+% \section{Detection of Collision Products}
+% \section{Detection of QGP Signatures}
+% \subsection{Dilepton Production}
+% \subsection{Bjorken Energy Density}
+% \subsection{Collective Flow}
+% \subsection{Strangeness Enhancement}
+% \subsection{Jet Quenching}
+% \subsection{Photon Production}
+% \section{Transverse Energy}
+% \section{RHIC Beam Energy Scan Program}
 
-%\ transition to:
+\chapter{Relativistic Heavy Ion Collisions}\label{ch:RHI-collisions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The experimental evidences of the theoretically appealing existence of QGP come from the collisions of large nuclei. The signatures of such evidence are described in section \ref{section:signatures}. Physicists started noting down such evidences since as far back as 1984, when nuclei were accelerated and collided with stationary targets.\cite{Gyulassy:2004vg} They were able to agree on a conclusive discovery of this matter during the 2000s, after colliding accelerated nuclei with other such nuclei or smaller species (protons, deuterons) at unprecedented energies and with improved detection schemes.\cite{Ritter:2004xj} With further increase in collision energies and enhancement in detector technololgy, modern accelerator facilities have not only added such evidences but also provided estimates of some of the properties as well as the dynamics of the evolution of the QGP. The following sections describe two such facilities, the physics of the collisions and what happens after the collisions.
 
-%\Spectra from the BES program
-%\ Beam Energy Scan program
-%\ particle identification
-%\ transverse momentum spectrum (using tracking detectors????)
-%\ errors associated with the spectra
-
-%\Getting ET estimates from the spectra for individual particles
-%\ equations relating dET/dy etc. to the pT integral of d2N/(dydpT)
-%\ extrapolation of spectra to cover regions not covered by the experiment
-%\ using ET estimates for individual particles to estimate total ET and the assumptions involved
-%\ analysis note pg 7: "In this new method, ET is measured from charged hardon tracks...
-%\ and the measured ET is SCALED UP to correct for neutral energy which is not observed...
-%\ in tracking detectors."
-%\ essentially, what really needs to be made clear is how the "scaling up" is done, because...
-%\ even conventionally, STAR "uses information from the tracking detectors to measure ET from...
-%\ charged hadrons and the electromagnetic calorimeter to measure ET from electrons, photons...
-%\ and neutral hadrons which dominantly decay to electromagnetic particles." (hybrid method)
-
-%\ centrality determination
-This chapter indroduces the definitions of transverse energy, ways to measure it using different detectors, and particular examples from the STAR detector.
-
-\section{Definition of Transverse Energy}
-In theory, $E_{T}$ from a collision can be defined as the sum of the transverse masses, $m_{T}$, of all the particles produced in the collision, i.e.,
-\begin{equation}\label{eqn:ETDefTheory}
-E_{T}\equiv\sum_{i}m_{T,i}
-\end{equation}
-with
-\begin{equation}\label{eqn:mT}
-m_{T}\equiv\sqrt{p_{T}^{2}+m^2}
-\end{equation}
-where $m$ is the rest mass of the particle and $p_{T}$ is its transverse momentum. Using this definition to calculate the $E_{T}$ requires perfect identification of all the particles. It has not been possible to do so in experiments, and so a more feasible, operational definition of $E_{T}$ is fabricated. A commonly accepted definition in case of the feasibility of calorimetric measurements is \cite{PhysRevC.89.044905, PhysRevLett.109.152303}:
-\begin{equation}\label{eqn:ETDefSum}
-E_{T} = \sum_{i}E_{i}\sin{\theta_{i}},
-\end{equation}
-\begin{equation}\label{eqn:dETdEta}
-\frac{dE_{T}}{d\eta}=\sin{\theta}\frac{dE}{d\eta},
-\end{equation}
-
-where the index $i$ runs over all the particles going into a fixed solid angle for each event, $\theta$ is the polar angle, i.e, the angle with respect to the beam axis, $\eta$ is the pseudorapidity defined as 
-\begin{equation}\label{eqn:pseudorap}
-\eta\equiv-\ln\tan{\frac{\theta}{2}},
-\end{equation}
-and $E_{i}$ is the energy deposited in the calorimeter by the $i^{th}$ particle. $E_{i}$ is considered to be, by convention \cite{PhysRevC.71.034908}, the following
-\begin{equation}\label{eqn:EiCaseByCase}
-E_{i} = 
-	\begin{cases}
-	E_{i}^{tot}-m_{0} & \text{for baryons} \\
-	E_{i}^{tot}+m_{0} & \text{for anti-baryons} \\	
-	E_{i}^{tot} & \text{otherwise} \\
-	\end{cases}
-\end{equation}
-%\ $E_{i}^{tot}$ - $m_{N}$ in case of baryons, $E_{i}^{tot}$ + $m_{N}$ in case of antibaryons, and the $E_{i}^{tot}$ in case of other particles, 
-where $E_{i}^{tot}$ is the total energy of the $i^{th}$ particle defined canonically as
-\begin{equation}\label{eqn:Etot}
-E^{tot}\equiv\sqrt{p^{2}+m_{0}^2}
-\end{equation}
-and  $m_{0}$ is the particle's rest mass.
-In order to account for the portion of the emitted transverse energy not detected or overestimated by the calorimeters, corrections are made based on GEANT simulations.
-%\ split the following into a sub-chapter
-
-\section{$E_{T}$ Measurement with Calorimeters}
-
-\section{$E_{T}$ Measurement with Tracking Detectors}
-Transverse energy analysis can be done using tracking detectors as well if they are able to produce measurements of other physical quantities that implicitly contain information about the transverse energy. Specifically, the charged particle multiplicity distributions with respect to the transverse momenta can be used to calculate the particle's transverse energy pseudorapidity density. In fact, since the corrections related to the tracking detectors are very different from those related to the calorimeters, results from the two different methods can be used to test the assumptions involved in each.
-
-The tracking detectors in experiments such as the STAR (Solenoidal Tracker At RHIC) experiment and ALICE (A Large Ion Collider Experiment) at CERN include Time Projection Chambers (TPCs) and Time-of-Flight (TOF) detectors that can give us the $p_{T}$ spectra, yields and particle ratios of the identified charged hadrons \cite{Preghenella:2011vy, PhysRevC.96.044904}. The TPCs provide measurements of particle trajectories -- that can be used to determine the momenta for low-momentum particles -- and of their specific energy loss, 
-\begin{equation}\label{eqn:specificEnLoss}
-	\frac{dE}{dx} ,
-\end{equation}
-which can be used with the trajectories to make particle identifications (PID) using the Bethe-Bloch formula \cite{bethe1953passage}. TOF detectors, on the other hand, cover the high-momentum part of the measurements. In ALICE, the combination of the measurements of the TPC with those of the Inner Tracking System (ITS) effectively adds the tracking length, thereby improving the resolution of the measured $p_{T}$ spectrum. Details about the PID and momentum determination capabilities of the detectors in ALICE can be found in \cite{1748-0221-3-08-S08002}.
-
-The $p_{T}$ spectra, available as the counts $\frac{d^{2}N}{dydp_{T}}$ with respect to $p_{T}$, can be used to calculate $\frac{dE_{T}}{d\eta}$ as formulated in the following section.
-
-\subsection{Calculation of $\frac{dE_{T}}{d\eta}$ from $p_{T}$ spectra}
-In relativistic heavy ion collisions, rapidity ($y$) is defined as follows:
-\begin{equation}\label{eqn:rapidity}
-y\equiv\frac{1}{2}\ln{\frac{E + p_{z}}{E - p_{z}}},
-\end{equation}
-where $E$ is given by equation \ref{eqn:Etot} and $p_{z}$ is the component of the momentum parallel to the beam axis.
-Pseudorapidity, $\eta$, is just $y$ with $m_{0} = 0$:
-\begin{align*}\label{derivation:pseudorapidity}
-\eta &= \frac{1}{2}\ln{\frac{p + p_{z}}{p - p_{z}}}\\
-&= \frac{1}{2}\ln{\frac{1 + \cos{\theta}}{1 - \cos{\theta}}}\\
-&= \frac{1}{2}\ln{\frac{2\cos^2{\frac{\theta}{2}}}{2\sin^2{\frac{\theta}{2}}}}
-\end{align*}
-
-\begin{equation}\label{eqn:pseudorapidity}
-\therefore \eta = -\ln{\left|{\tan{\frac{\theta}{2}}}\right|}
-\end{equation}
-Note that the absolute value is not necessary for $0 \leq \theta  \leq \pi$. Then, taking the exponential of both sides of the above equation and using Euler's formula, we get:
-\begin{equation}
-\sin\theta = \frac{1}{\cosh\eta}.
-\end{equation}
-Hence,
-\begin{align*}
-p &= \frac{p_{T}}{\sin\theta}\\
-&= p_{T}\cosh\eta,
-\end{align*}
-and so we have
-\begin{equation}\label{eqn:ET-as-pTOverJacobian}
-E_{T} = E\sin\theta = \frac{\sqrt{p_{T}^2\cosh^2\eta+m_{0}^2}}{\cosh\eta} 
-\end{equation}
-
-The Jacobian for the transformation from $y$-space to $\eta$-space is derived, by differentiating $y$ with respect to $\eta$ (obtained form equations \ref{eqn:rapidity} and \ref{eqn:pseudorapidity}), to be:
-\begin{equation}\label{eqn:Jacobian}
-\frac{\partial y}{\partial \eta} = \frac{p_{T}\cosh\eta}{\sqrt{m_{0}^2+p_{T}^2\cosh^2\eta}}
-\end{equation}
-
-From equations \ref{eqn:ET-as-pTOverJacobian} and \ref{eqn:Jacobian}, we can see that the product of $E_{T}$ with the Jacobian is equal to $p_{T}$. That leads to a formulation of $\frac{dE_{T}}{d\eta}$ as a function of only $\eta$ and $p_{T}$:
-\begin{equation}\label{eqn:dETOverdEta}
-\frac{dE_{T}}{d\eta} = \frac{1}{2a}\int_{0}^{10GeV/c}\int_{-a}^{a} p_{T}\frac{d^{2}N}{dydp_{T}} \,d\eta\,dp_{T}
-\end{equation}
-where $a$ and $-a$ are the bounds for $\eta$.
-
-
-\subsection{Tracking Detectors in STAR}\label{subsec:tracking_STAR}
-In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m long and it cylindrically enshrouds the accelerator beam pipe from its outside, with an inner diameter of 1 m and an outer diameter of 4 m \cite{phdthesisnattrass}. It covers a pseudorapidity range of $|y|$ $<$ 1.8 in all of azimuth in terms of acceptance of charged particles. It can identify particles with momenta over 100 MeV/c up to about 1 GeV/c as well as measure their momenta from 100 MeV/c to 30 GeV/c \cite{Anderson:2003ur}. Figure \ref{fig:STAR_PID} shows the PID capability of the STAR TPC for very high-multiplicity events \cite{0034-4885-73-11-116201}. Separation of pions from protons is demonstrated up to a little more than 1 GeV/c. At higher momenta, separating particles is more difficult because their energy loss has lower dependence on the rest mass \cite{Anderson:2003ur}. The TOF system in STAR, with a time resolution of $\lessapprox$ 100 ps, aids PID at higher momenta. However, at intermediate $p_{T}$, between $\approx$ 2.0 and 4.0 GeV/c, the TPC by itself cannot distinguish between pions and protons and the TOF by itself cannot separate pions from kaons. This problem is resolved by utilizing the fact that the dependence of the particle velocity on $p_{T}$ -- in case of the TPC -- is different from that of the energy loss on $p_{T}$ in case of the TPC; combining the results from the two, hence, makes PID feasible in this $p_{T}$ range. \cite{Shao:2005iu}
-%classification !!!!!!!!!........ more details about the TPC, then its limitation in high momentum resolution, then transition to TOF and some of its details ..........!!!!!!!!!
+\section{RHIC and LHC}
+The Relativistic Heavy Ion Collider (RHIC) is located in Upton, New York in the premises of the Brookhaven National Laboratory (BNL). Its construction started in 1991 and was completed in 1999. Figure \ref{fig:RHIC_layout} shows the layout, at the time of construction, of the collider along with the Alternating Gradient Synchrotron (AGS) complex and the locations of the original four detectors: Solenoidal Tracker At RHIC (STAR), Pioneering High Energy Nuclear Interaction eXperiment (PHENIX), PHOBOS and BRAHMS (Broad RAnge Hadron Magnetic Spectrometers). PHOBOS and BRAHMS were decommissioned after the completion of their science objectives, but STAR and PHENIX are still functional. The AGS was part of BNL before the construction of the RHIC, and its capabilities were augmented with the construction of the AGS Booster in 1991.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=5.5in]{../figures/0034-4885-73-11-116201_star_PID.jpg}\\
-  \caption{Energy loss distribution in the STAR TPC for primary and secondary particles. \cite{0034-4885-73-11-116201}.}\label{fig:STAR_PID}
-  % "Figure 35 shows the energy loss distribution for primary and secondary particles."
+  \includegraphics[width=6.5in]{figures/RHIC_Layout.jpeg}
+  \caption{Initial layout of the RHIC.\cite{doi:10.1093/ptep/ptu093}.}\label{fig:RHIC_layout}
 \end{figure}
-%\Its drift volume is full of P10 gas (10% methane and 90% argon), the electrons from the molecules of which are knocked off by a charged particle travelling through the medium.
 
-%\Spectra from the BES program (PhysRevC.96.044904 : https://arxiv.org/pdf/1701.07065.pdf)
-%\ Beam Energy Scan program
-%\ particle identification
-%\ transverse momentum spectrum (using tracking detectors????)
-%\ errors associated with the spectra
+Heavy ion beams in the RHIC are created in a series of steps before collision. In case of gold ions, a pulsed sputter source produces negatively charged ions, which are stripped of some of their electrons with a foil on the positive end of the high-voltage Tandem Van de Graff. The ions are now positively charged and are accelerated to 1MeV/u toward the negative terminal of the Tandem, upon exiting which some more stripping takes place. The bending magnets then selectively deliver +32 charge states of the ions to the Booster Synchrotron, which accelerates them to 95MeV/u and strips them to +77 charge state before injecting them to the AGS. The AGS accelerates them to 10.8 GeV/u and strips them of the remaining two electrons at the exit. The gold ions are then injected through the AGS-to-RHIC Beam Transfer Line to the two RHIC rings. These rings carry beams moving in opposite directions and intersect at six symmetric locations in the 3.8 km circumference. The original four detectors are located in four of these six locations where the beams undergo head-on collisions.
 
-\section{The Beam Energy Scan Program}
-The RHIC, in 2010, started a multi-phase Beam Energy Scan (BES) program to study the QCD phase diagram. The collider has the unique facility to collide nulclei at a range of center-of-mass energies per nucleon, $\sqrt{s_{NN}}$. It also has two different detectors that are currently operational, STAR and PHENIX (Pioneering High Energy Nuclear Interactions eXperiment), which facilitate the cross-checking of results. Between 2010 and 2011, under the exploratory phase I of the BES program, 7.7, 11.5 (not completed in PHENIX), 19.6, 27, and 39 GeV collisions were completed using pairs of Au nuclei. Together with the data formerly collected by the RHIC at higher collision energies, BES phase I data can scan the interval from 450 MeV to 20 MeV in $\mu_{B}$ space \cite{1742-6596-455-1-012037, LUO201675}. One of the things that can be studied with the data associated with this region of the phase space is statedly the possibility of a ``turn-off of new phenomena already established at higher RHIC energies" (https://drupal.star.bnl.gov/STAR/starnotes/public/sn0493). Results corresponding to the high-$\mu_{B}$ region might provide evidence of a first order phase transition, and possibly the critical point \cite{LUO201675}.
+The Large Hadron Collider (LHC) is located underground (between 45m and 170m) beneath the France-Switzerland border near the city of  Geneva. The two rings of the collider were constructed between 1998 and 2008 by the European Organization for Nuclear Research (CERN) in the 26.7 km circular tunnel originally housing CERN's Large Electron-Positron collider. Analogous to the RHIC, the LHC gets its beams prepared by a series of machines in the CERN accelerator complex. The collisions occur at the locations of the four big LHC experiments: Compact Muon Solenoid (CMS), A Toroidal LHC ApparatuS (ATLAS), Large Hadron Collider beauty (LHCb) experiment, and A Large Ion Collider Experiment (ALICE). ALICE is dedicated to the study of heavy-ion collisions. \cite{1748-0221-3-08-S08001}
 
-The manifestation of such phenomena would be in terms of the fluctuations in the properties of the post-collision system. One can, for instance, study the scaling of the transverse energy after the collision with the longidutional energy at the time of the collision, $\sqrt{s_{NN}}$. This can be done in multiple ways for a detector like STAR or PHENIX that is made up of sub-systems such as the TOF detectors, TPCs/Time Expansion Chambers, as well as calorimeters. 
+\section{Collision Energy and Geometry}
+What happens in the aftermath of a collision depends on how much energy is available at the time of the collision as well as the geometry of the collision. The experimenter controls the collision energy, so it's known before the collision. The geometry of the collision is deducted from the constraints imposed by the static (eg. rest mass) and dynamic (eg. trajectory) properties of the detected products.
 
-\subsection{BES Calorimetry}
-\citet{PhysRevC.93.024901} use calorimetry in PHENIX to analyze the transverse energy corresponding to several different pairs of species colliding at a range of energies. They use the raw transverse energy measured by the EMCal, $E_{{T}EMC}$, to obtain the total hadronic $E_{T}$ by making corrections in three different steps. They first scale the data by a constant factor calculated to account for the fiducial acceptance in azimuth and pseudorapidity. The second factor is calculated to adjust for the effects of the calorimeter towers that are disabled. The third factor, $k$, is computed as follows
-\begin{equation}\label{eqn:AdareKfactor}
-k = k_{response} \times k_{inflow} \times k_{losses}
-\end{equation}
-where $k_{response}$ corresponds to hadronic particles only depositing a fraction of their total energy while passing through the EMCal, $k_{inflow}$ is attributable to the energy deposited by particles coming from outside the EMCal's fiducial aperture, and $k_{losses}$ accounts for the energy not registered in the EMCal due to energy thresholds, edge effects, and more importantly due to the particles that make it into the fiducial aperture but decay into products outside the aperture.
+In collision experiments, it is convenient to use a reference frame in which the net momentum of the pair of colliding species is zero. This frame is called the center-of-mass frame. In this frame, the total energy of the species in the two beams is a function of the number of nucleons and the center-of-mass energy per nucleon. In case of symmetric collisions, i.e, collisions involving identical species in the two beams, the collision energy is reported as the center-of-mass energy per nucleon pair, $\sqrt{s_{NN}}$. The magnitude of this quantity constrains the species that can be produced from any collision.
 
-\subsection{BES $p_{T}$ spectra}
-This thesis details the method of transverse energy analysis through the use of $p_{T}$ spectra from the STAR BES data. As described in section \ref{subsec:tracking_STAR}, the TPCs and TOF detectors in STAR can identify particles as well as their trajectories and ultimately their multiplicity distributions with respect to the momenta. \citet{PhysRevC.96.044904} report the results for the $p_{T}$ spectra for six different identified hadrons, $\pi^+$, $\pi^-$, $K^+$, $K^-$, $p$, and $\bar{p}$, from the STAR experiment. The spectra come from Au+Au collisions -- at $\sqrt{s_{NN}}$ = 7.7, 11.5, and 39 GeV in the year 2010 and at $\sqrt{s_{NN}}$ = 19.6 and 27 GeV in 2011 -- under the BES Program. Figure \ref{fig:BESPaper_pTSpectra} \cite{PhysRevC.96.044904} shows the spectra corresponding to 39 GeV collisions categorized into seven different collision centralitiy classes. These spectra, and their counterparts for the rest of the energies, were used to calculate an estimate of the total transverse energy per event per particle species. This result was then used to estimate the total transverse energy due to all the collision products.
+%!!!!!!!!!!!!!!! Details in:
+%1. https://arxiv.org/pdf/1604.02651.pdf
+%2. http://www.phys.hawaii.edu/~teb/phys481l/relkin.pdf
+%3. http://edu.itp.phys.ethz.ch/hs10/ppp1/PPP1_4.pdf
+
+The RHIC has the unique capability of colliding species at a range of energies spanning almost two orders of magnitude. Table \ref{table:RHIC_specs} lists the collision energies produced so far at RHIC for various collision systems. The LHC, on the other hand, boasts the highest amount of collision energy for any collider on earth. It collided species (p+p, p+A, Pb+Pb) at a center of mass energy upto 2.76 TeV per nucleon pair at the end of 2010. At the end of 2015, 5.02 TeV Pb-Pb collisions were successfully completed. \cite{FOKA2016154}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c||}
+%\tabletypesize{\scriptsize}
+%\rotate
+\hline
+Collision system & $\sqrt{s_{NN}}(GeV)$ \\ [0.5ex]
+\hline
+\hline
+p+p & 200, 500 \\
+d+Au & 200 \\
+Cu+Cu & 62, 200 \\
+Au+Au & 9, 20, 62, 130, 200 \\ [1ex]
+\hline
+\end{tabular}
+\caption{Colliding species and associated collision energies at RHIC \cite{phdthesisnattrass}}
+\label{table:RHIC_specs}
+\end{table}
+
+
+In general, any collision between two nuclei is not perfectly head-on. Some collisions are close to being head-on and are called central collisions. Some are far from being head-on and are called peripheral collisions. The amount by which a collision is central is quantitatively represented by a variable called centrality. By convention, 0\% is the centrality of a perfectly head-on collision and 100\% is that of the least head-on, i.e., the most peripheral collision. In practice, each collision event is deducted to belong to a specific centrality bin, for instance, 0-5\%. Figure \ref{fig:mid-central_collision} illustrates the aftermath of a mid-central collision, i.e, a collision in which about half of the volume of each of the nuclei intersects the other.
 \begin{figure}[h]
   \centering
-  \includegraphics[width=5.5in]{../figures/PhysRevC-96-044904_pTSpectra_39.png}\\
-  \caption{Transverse momentum spectra for $\pi^{+}$, $\pi^{-}$, $K^+$, $K^{-}$, $p$, and $\bar{p}$ at midrapidity ($|y|$ $<$ 0.1) from 39 GeV Au+Au collisions at RHIC. The fitting curves on the 0-5\% central collision spectra for pions, kaons, and protons/anti-protons represent, respectively, the Bose-Einstein, $m_{T}$-exponential, and double-exponential functions. \cite{PhysRevC.96.044904}.}\label{fig:BESPaper_pTSpectra}
+  \includegraphics[width=4.5in]{figures/flow_elliptic_init_v4.pdf}
+  \caption{An illustration of a mid-central collision of two nuclei traveling in the z direction. The X-axis is parallel to the line joining the centers of the two nuclei at the time of collision. \cite{Connors:2017ptx}.}\label{fig:mid-central_collision}
 \end{figure}
 
-The corrections applied by \citet{PhysRevC.96.044904} to the raw data to obtain the spectra and the reported systematic uncertainties in their results are discussed below (under construction)
-
-// Next section will contain the method of extrapolation and the section after that will explain the analysis using the root framework. Then comes the results section, which I will add after I finish analyzing all the data and get all the results including for lambdas.
-
-%...... mathematics involved in getting ET out of pT spectra, including the extrapolation using the BGBW.............
-
-%...... assumption leading to total ET estimate, i.e, how the scaling up is done, and the errors associated with it...............
-
-%chapter 3: data analysis
-%go through the steps from getting the data to getting the final results
-%example fit plots
-%justification of using chi-squared
-
-%chapter 4: results
-%plots and tables compared to what's been published.
-%Anything interesting seen?
-
-%chapter 5: conclusion
-%chapter 6: future work
-
-%acknowledgments
-%christine, adam, charles, soren, andy, will, chrisanne.
-%\ NEXT: WRITE ABOUT THE ALTERNATIVE WAY, THAT IS, USING SPECTRA, AND WHAT DETECTOR THIS METHOD USES INSTEAD
+The collision of two nuclei can be modeled as a set of collisions of the constituents that make up the nuclei. The constituents that take part in the collisions and are called participants. The rest of the constituents are known as spectators. Figure \ref{fig:part_spec} illustrates the distribution of participants and spectators in two colliding nuclei. Expectedly, the number of participants is more in more central collisions.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6.5in]{figures/part_spec_Vovchenko.png}
+  \caption{An illustration of a collision consisting of participants (solid red) and spectators (open blue) within the colliding nuclei labeled A and B. $t_{c}$ denotes the time of maximum overlap of the two nuclei. The apparent narrowing of the volumes of the nuclei in the z-direction is due to Lorentz contraction. \cite{PhysRevC.90.044907}}\label{fig:part_spec}
+\end{figure}
 
 
-%\"The main detectors used to obtain the results on pT spectra, yields and particle ratios for charged hadrons are the Time Projection Chamber (TPC) [41] and Time-Of Flight detectors (TOF) [42]" https://arxiv.org/pdf/1701.07065.pdf
-%\ " The TPC data is used to determine particle trajectories, thereby their momenta, and particle types through ionization energy loss (dE/dx)."
-%\ "For higher momentum, we use time-of-flight information to identify particles. The TOF particle identification for this analysis is used above pT = 0.4 GeV/c."
 
-%\Historically, measurement of $E_{T}$ would be one of the first things done after heavy-ion collisions. Electromagnetic calorimeters (EMCals) would be used to perform the measurement of $E_{T}$. 
+\section{Kinematic Variables}
+The description of the collision physics and the interpretation of its results are aided by the construction of variables that undergo simple transformations under a change of reference frame. Two such variables, rapidity and pseudorapidity, are described in this section.
+
+The rapidity, $y$, of a particle is defined as:
+
+	\begin{align}\label{def:rapidity}
+	y &\equiv \frac{1}{2}\ln{\frac{p_{0} + p_{z}}{p_{0} - p_{z}}}\\
+	&= \frac{1}{2}\ln{\frac{E + p_{z}}{E - p_{z}}},
+	\end{align}
+where $p_{0}$ and $p_{z}$ are the components of its contravariant four-momentum $p = (p_{0}, p_{x}, p_{y} p_{z})$ with $p_{0} = \frac{E}{c}$, $E$ being the relativistic energy of the particle and $c$, the speed of light, being equal to $1$ in natural units.
+
+The rapidity of a particle is used as a relativistic description of its velocity. Unlike the canonical velocity of a particle, its rapidity transforms simply additively under a Lorentz boost of the frame of reference. For example, suppose a particle has a rapidity $y$ in a laboratory frame. Let $y'$ denote its rapidity as measured in a frame that is Lorentz boosted with a velocity $\beta$ in the $z$-direction with respect to the laboratory frame. Then the relationship between the rapidities in the two different frames is simply
+	\begin{equation}\label{eqn:rapidityTransformation}
+	y' = y - y_{\beta}
+	\end{equation}
+Here,
+	\begin{equation}
+	y_{\beta} = \frac{1}{2}\ln{\frac{1 + \beta}{1 - \beta}}
+	\end{equation}
+is the rapidity the particle would have in the laboratory frame if it were moving with a velocity $\beta$ in the $z$-direction with respect to the laboratory frame, as can be verified from equation \ref{def:rapidity} with $p_{0} = \gamma m$ and $p_{z} = \gamma \beta m$, $\gamma$ being the Lorentz factor $\frac{1}{\sqrt{1 - \beta^2}}$.\cite{wong1994introduction}
+
+The convenience provided by this construct comes with a cost. As evident from equation \ref{def:rapidity}, the calculation of the rapidity of a particle requires the measurement of two different observables associated with it, such as the energy and the $z$-direction momentum. However, experimental constraints may sometimes only facilitate the measurement of the direction of the detected particle with respect to the beam axis. What's more convenient in such a case is the use of another variable construct called pseudorapidity, $\eta$, defined as:
+	\begin{equation}\label{def:pseudorapidity}
+	\eta \equiv -\ln{\tan{\frac{\theta}{2}}},
+	\end{equation}
+where $\theta$ is the angle the particle's momentum vector, \textit{\textbf{p}}, makes with the $z$-direction. The above equation can also be written in terms of the momentum as:	
+	\begin{equation}\label{eqn:pseudorapidity2}
+	\eta = \frac{1}{2}\ln{\frac{\left|{\textit{\textbf{p}}}\right| + p_{z}}{\left|{\textit{\textbf{p}}}\right|- p_{z}}}
+	\end{equation}
+From equations \ref{def:rapidity} and \ref{eqn:pseudorapidity2}, it is evident that $\eta \approx y$ when $\left|{\textit{\textbf{p}}}\right| \approx p_{0}$, i.e., when the momentum is large. The transformation of the particle distribution from the $y$-space to the $\eta$-space is discussed in section \ref{section:calcFromSpectra}.
+ 
+% http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
+%(edu.itp.phys.ethz.ch/hs10/ppp1/PPP1_4.pdf) 
+...................................................
+...................................................
+...................................................
+
+\section{QGP Evolution}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6.5in]{figures/LightCone1_color-crop_NThesis.pdf}
+  \caption{Evolution of the QGP represented in a lightcone diagram. $\tau_{0}$ denotes the formation time of the QGP. $T_{c}$ is the critical temperature of the transition from the QGP to the hadron gas phase. $T_{ch}$ and $T_{fo}$ stand for the temperatures at, respectively, chemical freeze-out and thermal freeze-out. \cite{Connors:2017ptx}}\label{fig:lightcone}
+\end{figure}
+The evolution of the QGP is shown in a lightcone diagram in figure \ref{fig:lightcone}.
+The initial state of the colliding nuclei is not well known and is the topic of research for upcoming experiments. During the collision, the participants scatter off of each other while the spectators don't and keep traveling almost unperturbed in their original direction. The immediate aftermath of a central collision of heavy ions at RHIC and LHC energies is the formation of a hot fireball. This fireball evolves in time to form a liquid-like medium of quarks and gluons. This medium attains a local equilibrium and remains in such a state, depending on the collision energy, for about 1-10 fm/c. This equilibrium is broken as the liquid QGP evolves by expanding and cooling to attain a density and temperature at which the deconfinement of quarks and gluons is lost and they undergo a chemical freeze-out to form a hadron gas. Collisions between the constituents of this gas become scant as it evolves with further expansion and cooling, and the hadrons undergo a thermal freeze-out to attain their final energies and momenta.
+
+\section{Detection of Collision Products}\label{subsection:detection}
+%%%The final state particles emit in all directions around the collision site. The symbol $\theta$ is used to denote the polar angle of the direction, i.e., the angle with respect to the beam axis, of a particle. However, it is more convenient to use a different quantity, called the rapidity, to describe the particle's direction.
+Detectors are placed around the collision site to perform measurements on the final state particles emitting from the thermal freeze-out of the medium. These measurements typically include the estimation of the location and time of production of the final states, the type of particle, and the momentum and energy it carries.
+
+Generally, a tracking detector surrounds the collision site, and there are calorimeters followed by particle identifiers around it. A magnetic field is applied parallel to the beam direction around the collision site. Due to this orientation of the magnetic field, the spectators traveling parallel to it move undeflected and the final state charged particles with components of velocity transverse to the beam axis get deflected around the beam axis with angular frequency given by
+\begin{equation}\label{eqn:larmor}
+\omega = \frac{qB}{m},
+\end{equation}
+where $q$ is the electric charge of the particle, $m$ is its mass and $B$ is the applied magnetic field.
+Two kinds of detectors most relevant to this thesis, tracking detectors and calorimeters, are described in chapter \ref{ch:measurement}.
+
+\section{Detection of QGP Signatures}\label{section:signatures}
+http://iopscience.iop.org/article/10.1088/0954-3899/25/3/013/meta, and: 
+
+The existence and properties of the QGP in the aftermath of high-energy heavy-ion collisions can be probed using different techniques relevant to several theoretical characteristics of the phase. Some of these probes are described below.
+
+For instance, the interacting nuclei  carry no net strangeness before colliding, and so a post-collision observation of strange and multi-strange particles can be a signal for an antecedent existence of deconfined quarks and gluons \cite{1742-6596-455-1-012005}. This signal, when complemented with an observation of the enhancement of strange particles production, provides a strong hint of the formation of QGP. This can be further complemented with the estimate of the energy density and the temperature attained after the collision.
+
+Analyses of experimental results have thus far provided signatures of the formation of matter with partonic degrees of freedom at the early stages of the collisions. Such signatures include suppression of high monentum hadrons, known as jet quenching, because the QGP is nearly opaque to colored probes, and large azimuthal anisotropies, indicating that the medium is a liquid of quarks and gluons \cite{PhysRevC.96.044904}?????. Experiments also reveal the initial energy density of this matter to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
+
+The state of the colliding nuclei before the collision at LHC and top RHIC energies has indications of being a Color Glass Condensate -- strongly interacting, weakly coupled highly coherent gluonic matter \cite{1742-6596-458-1-012024}. The characteristics of the initial states of these nuclei affect the partonic distributions within the nuclei and ultimately the products of the collision. The collision products are also affected by variables such as the initial energy and entropy densities of the partonic matter \cite{2005PrPNP..54..443J}.
+
+Different observables can be used to study different aspects of heavy ion collisions. The charged particle multiplicity, $\langle N_{ch} \rangle$, is a global variable that relates to the entropy production during the collision (analysis note). The transverse energy, $E_{T}$, a global variable related to $\langle N_{ch} \rangle$, provides information about the conversion of the initial beam-direction kinetic energy into energy flowing in the transverse direction after the collision. Together, the studies of the fluctuation of the $\langle N_{ch} \rangle$ and the $E_{T}$ pseudorapidity [footnote] density with respect to the beam energy and the collision centrality [footnote] help probe the characteristics of the initial conditions at the time of the collision. One can study, for instance, the distinctions between models based on quark participants against those based on nucleon participants [analysis note]. These quantities can also lead to the rough estimate of the initial energy density through the use of the Bjorken formula \cite{2012ARNPS..62..361M}:
+%\ref{eqn:Bjorken}
+\begin{equation}\label{eqn:Bjorken}
+\epsilon \geq \frac{\frac{dE_{T}}{d\eta}}{\tau_{0}\pi R^{2}} = \frac{3}{2}\langle \frac{E_{T}}{N} \rangle \frac{\frac{dN_{ch}}{d\eta}}{\tau_{0}\pi R^{2}}
+\end{equation}
+\
+The transverse energy and the charged particle pseudorapidity densities have conventionally been calculated by using the transverse energy measurements obtained from calorimeters. This thesis details the use of particle spectra, reported as $\frac{d^{2}N}{dydp_{T}}$, from Au+Au collisions at RHIC to calculate the same global variables and serve as a method to cross check the ones involving calorimeters.
+
+\subsection{Dilepton Production}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=4.5in]{figures/dilepton.PNG}
+  \caption{Feynman diagram representing the production of a lepton pair from a quark and an antiquark. \cite{wong1994introduction}}\label{fig:dilepton}
+\end{figure}
+When the color degree of freedom is liberated in the post-collision system, a quark can interact with an antiquark to produce a virtual photon which decays into a lepton and an antilepton. This pair of leptons is devoid of a color charge and can interact with the particles in the fireball only electromagnetically. This leads to them having a significantly larger mean-free path as compared to colored probes, and the number of collision they undergo before reaching a decector is negligible. However, the thermodynamic state of the fireball affects the momenta of the quarks and the antiquarks, which in turn affect the momenta and the production rates of the lepton pairs. Specifically, the temperature of the QGP can be estimated using the dilepton spectra. The caveat of doing so is that the QGP is not the only possible source of dileptons. Hence, the contributions from other sources, mainly the Drell-Yan process, must be figured out before using the dilepton spectra as a QGP diagnostic. \cite{wong1994introduction}
+% " if the quark-gluon plasma initial temperature is greater than 350 MeV, the dilepton yield from the quark-gluon plasma will be much greater than the dilepton yield from the Drell-Yan process in the region 1 GeV < M < 2.8 GeV and the observation of dileptons from the quark-gluon plasma may be possible"
+% interaction of charged hadrons and decays of hadron resonances and charm particles,
+
+\subsection{Direct photons}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=6.5in]{figures/directPhotons.PNG}
+  \caption{Feynman diagram representing the production of photons from quarks and gluons. $(a)$ and $(b)$ represent annihilation processes, whereas $(c)$ and $(d)$ represent Compton processes.\cite{wong1994introduction}}\label{fig:directPhotons}
+\end{figure}
+
+In the QGP, a quark and an antiquark can annihilate to produce a photon and a gluon. It is also possible for the pair to annihilate and produce two photons, but the probability of this process is smaller than the former by about two orders of magnitude. Furthermore, a quark (or an antiquark) can interact with a gluon to produce an antiquark (or a quark) and a photon, a process analogous to Compton scattering in QED. Just like the leptons described in the previous section, the photons produced in the QGP can only interact with the medium electromagnetically. Therefore, they undergo minimal scattering before being detected, and hence can be used to probe the thermodynamical state of the medium at the time of their creation.\cite{wong1994introduction} Photons can also be produced after hadronization as a result of the scattering of the hadrons within the evolved medium. However, the nature of the $p_{T}$ distribution is different in this case, and this difference helps distinguish these photons from the direct photons produced by partonic interactions.\cite{Wilde:2012wc}
+\subsection{Bjorken Energy Density}
+mostly pg 271 to 275 in \cite{Wilde:2012wc}
+
+
+\subsection{Collective Flow}
+\subsection{Strangeness Enhancement}
+% http://shodhganga.inflibnet.ac.in/bitstream/10603/37674/11/11_chapter%202.pdf
+\subsection{Jet Quenching}
+A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering. The products of the scattering, carrying high transverse momenta in opposite directions, are called jets. In heavy-ion collisions, most of the hard scatterings are the results of two partons from the opposite nuclei scattering off of each other. These partons can lose their momenta by strongly interacting with a medium made of deconfined quarks and gluons. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that don't, and hence they can be used as signatures and probes of QGP. Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis but can be found in 
+
+%The interaction of the jets in the QGP medium can be in the form of gluon bremsstrahlung or parton collision.
+
+\section{Transverse Energy}
+\section{RHIC Beam Energy Scan Program}
