@@ -568,6 +568,12 @@ Bethe, H.~A. and Ashkin, J. (1953).
 \newblock Passage of radiations through matter experimental nuclear physics vol
   1 ed e segre.
 
+\bibitem[Bjorken, 1983]{PhysRevD.27.140}
+Bjorken, J.~D. (1983).
+\newblock Highly relativistic nucleus-nucleus collisions: The central rapidity
+  region.
+\newblock {\em Phys. Rev. D}, 27:140--151.
+
 \bibitem[Chatrchyan et~al., 2012]{PhysRevLett.109.152303}
 Chatrchyan, S., Khachatryan, V., Sirunyan, A.~M., Tumasyan, A., Adam, W.,
   Bergauer, T., Dragicevic, M., Er\"o, J., Fabjan, C., Friedl, M., Fr\"uhwirth,
@@ -1108,17 +1114,6 @@ Luo, X. (2016).
 \newblock {Advances in Quark Gluon Plasma}.
 \newblock {\em ArXiv e-prints}.
 
-\bibitem[McLerran, 2013]{1742-6596-458-1-012024}
-McLerran, L. (2013).
-\newblock The color glass condensate, glasma and the quark gluon plasma in the
-  context of recent ppb results from lhc.
-\newblock {\em Journal of Physics: Conference Series}, 458(1):012024.
-
-\bibitem[{M{\"u}ller} et~al., 2012]{2012ARNPS..62..361M}
-{M{\"u}ller}, B., {Schukraft}, J., and {Wys{\l}ouch}, B. (2012).
-\newblock {First Results from Pb+Pb Collisions at the LHC}.
-\newblock {\em Annual Review of Nuclear and Particle Science}, 62:361--386.
-
 \bibitem[Nattrass, 2009]{phdthesisnattrass}
 Nattrass, C. (2009).
 \newblock System, energy, and flavor dependence of jets through di-hadron
@@ -1140,6 +1135,11 @@ Preghenella, R. (2011).
 \newblock {Transverse momentum spectra of identified charged hadrons with the
   ALICE detector in Pb-Pb collisions at $\sqrt{s_{NN}}$ = 2.76 TeV}.
 \newblock {\em PoS}, EPS-HEP2011:118.
+
+\bibitem[{Qin} and {Wang}, 2015]{2015IJMPE..2430014Q}
+{Qin}, G.-Y. and {Wang}, X.-N. (2015).
+\newblock {Jet quenching in high-energy heavy-ion collisions}.
+\newblock {\em International Journal of Modern Physics E}, 24:1530014--438.
 
 \bibitem[Satz, 2006]{0954-3899-32-3-R01}
 Satz, H. (2006).
@@ -1165,6 +1165,14 @@ Stock, R. (2004).
   International Conference, Quark Matter 2004, Oakland, USA, January 11-17,
   2004}.
 \newblock {\em J. Phys.}, G30:S633--S648.
+
+\bibitem[Stöcker, 2005]{STOCKER2005121}
+Stöcker, H. (2005).
+\newblock Collective flow signals the quark–gluon plasma.
+\newblock {\em Nuclear Physics A}, 750(1):121 -- 147.
+\newblock Quark-Gluon Plasma. New Discoveries at RHIC: Case for the Strongly
+  Interacting Quark-Gluon Plasma. Contributions from the RBRC Workshop held May
+  14-15, 2004.
 
 \bibitem[Vovchenko et~al., 2014]{PhysRevC.90.044907}
 Vovchenko, V., Anchishkin, D., and Csernai, L.~P. (2014).

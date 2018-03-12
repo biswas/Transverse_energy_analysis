@@ -10,26 +10,24 @@
 \contentsline {section}{\numberline {3.4}QGP Evolution}{13}{section.3.4}
 \contentsline {section}{\numberline {3.5}Detection of Collision Products}{13}{section.3.5}
 \contentsline {section}{\numberline {3.6}Detection of QGP Signatures}{15}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Dilepton Production}{16}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Direct photons}{17}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Bjorken Energy Density}{18}{subsection.3.6.3}
-\contentsline {subsection}{\numberline {3.6.4}Collective Flow}{18}{subsection.3.6.4}
-\contentsline {subsection}{\numberline {3.6.5}Strangeness Enhancement}{18}{subsection.3.6.5}
-\contentsline {subsection}{\numberline {3.6.6}Jet Quenching}{18}{subsection.3.6.6}
-\contentsline {section}{\numberline {3.7}Transverse Energy}{18}{section.3.7}
-\contentsline {section}{\numberline {3.8}RHIC Beam Energy Scan Program}{18}{section.3.8}
-\contentsline {chapter}{\numberline {4}Measurement of Transverse Energy}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definition of Transverse Energy}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}$E_{T}$ Measurement with Calorimeters}{20}{section.4.2}
-\contentsline {section}{\numberline {4.3}$E_{T}$ Measurement with Tracking Detectors}{20}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{21}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Tracking Detectors in STAR}{23}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}The Beam Energy Scan Program}{23}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}BES Calorimetry}{25}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}BES $p_{T}$ spectra}{25}{subsection.4.4.2}
-\contentsline {chapter}{\numberline {5}Data Analysis}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Extrapolation of Spectra}{27}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Boltzmann-Gibbs Blast Wave}{27}{subsection.5.1.1}
-\contentsline {chapter}{\numberline {6}Results}{28}{chapter.6}
-\contentsline {chapter}{Bibliography}{29}{section*.20}
-\contentsline {chapter}{Appendices}{61}{section*.21}
+\contentsline {subsection}{\numberline {3.6.1}Dilepton Production}{15}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Direct photons}{16}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Bjorken Energy Density}{17}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Strangeness Enhancement}{17}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Jet Quenching}{18}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Collective Flow}{18}{subsection.3.6.6}
+\contentsline {chapter}{\numberline {4}Measurement of Transverse Energy}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definition of Transverse Energy}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}$E_{T}$ Measurement with Calorimeters}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}$E_{T}$ Measurement with Tracking Detectors}{21}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{22}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Tracking Detectors in STAR}{24}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}The Beam Energy Scan Program}{24}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}BES Calorimetry}{26}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}BES $p_{T}$ spectra}{26}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Data Analysis}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Extrapolation of Spectra}{28}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Boltzmann-Gibbs Blast Wave}{28}{subsection.5.1.1}
+\contentsline {chapter}{\numberline {6}Results}{29}{chapter.6}
+\contentsline {chapter}{Bibliography}{30}{section*.21}
+\contentsline {chapter}{Appendices}{62}{section*.22}
