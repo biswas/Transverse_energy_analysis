@@ -111,9 +111,6 @@ From equations \ref{def:rapidity} and \ref{eqn:pseudorapidity2}, it is evident t
  
 % http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
 %(edu.itp.phys.ethz.ch/hs10/ppp1/PPP1_4.pdf) 
-...................................................
-...................................................
-...................................................
 
 \section{QGP Evolution}
 \begin{figure}[h]
@@ -140,7 +137,6 @@ Two kinds of detectors most relevant to this thesis, tracking detectors and calo
 
 The existence and properties of the QGP in the aftermath of high-energy heavy-ion collisions can be probed using different techniques relevant to several theoretical characteristics of the phase. No such signature can alone be used to claim the production of the QGP, and some of the probes, which should be interpreted together, are described below.
 
-%For instance, the interacting nuclei carry no net strangeness before colliding, and so a post-collision observation of strange and multi-strange particles can be a signal for an antecedent existence of deconfined quarks and gluons \cite{1742-6596-455-1-012005}. This signal, when complemented with an observation of the enhancement of strange particles production, provides a strong hint of the formation of QGP. This can be further complemented with the estimate of the energy density and the temperature attained after the collision.
 
 %Analyses of experimental results have thus far provided signatures of the formation of matter with partonic degrees of freedom at the early stages of the collisions. Such signatures include suppression of high monentum hadrons, known as jet quenching, because the QGP is nearly opaque to colored probes, and large azimuthal anisotropies, indicating that the medium is a liquid of quarks and gluons \cite{PhysRevC.96.044904}?????. %Experiments also reveal the initial energy density of this matter to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
 
@@ -161,6 +157,24 @@ In 1983, J.D. Bjorken\cite{PhysRevD.27.140} prescribed a formula to use the fina
 where $\tau{0}$ is the proper time at the moment of QGP equilibration, $A_{T}$ is the transverse area of the intersection of the two nuclei, and $\langle\frac{dE{T}}{dy}\rangle$ is the mean transverse energy per unit rapidity. $\tau_{0}$ is model-dependent and is normally of the order of $~1 fm$. $A_{T}$ depends on the centrality of the collision. $\langle\frac{dE{T}}{dy}\rangle$ is found from the measurement of the transverse energy carried by the final state particles from the collision and is the central theme of this thesis. Details about it are in the following chapters.
 The estimate of the initial energy density from Bjorken formula can be compared with the QCD prediction of the critical energy density\cite{Adam:2139456} to check if the results from a collision imply the achievement of the critical physical condition required for the phase transition.\cite{2005PrPNP..54..443J}
 %Experiments reveal it to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
+
+\subsection{Elliptic Flow}
+For yet unknown reasons, the evolution of the medium produced after relativistic heavy ion collisions can be well desribed under the framework of relativistic hydrodynamics. \cite{SCHENKE2017105,2014NuPhA.926...92S} This description indicates the presence of a collective flow, and hence a liquid-like and thermalized nature, of the constituents that make up the system. The momentum distribution of the final state particles emitting out of the collectively flowing system can be decomposed into its azimuthal Fourier components. The second harmonic coefficient, $\nu_{2}(y,p_{T})$, of this decomposition characterizes what is known as the ellipltic flow.\cite{2001PhLB..503...58H} The magnitude of the elliptic flow from a non-central collision represents the anisotropy in azimuthal momentum space of the thermalized post-collision system.\cite{2011NJPh...13e5008S}
+%In normal matter, the speed of sound is generally more in solid than in liquid and more in liquid than in gas. This is because it its proportional to the ......
+% HERE HERE HERE HERE HERE TODO TODO TODO TODO
+
+The elliptic flow of the medium, as a function of the momentum or the kinetic energy in the transverse direction, points towards quarks, rather than hadrons, being the relevant degrees of freedom in the QGP. Figure \ref{fig:v2Scaling1} shows $v_{2}$ plotted against the transverse momentum and the transverse kinetic energy for identified particles. The spectra scale consistently at lower values of both $p_{T}$ and $KE_{T}$. However, they branch out at higher values: $p_{T} \gtrsim 2 GeV/c and KE_{T} \gtrsim 1 GeV$. Figure \ref{fig:v2Scaling2}, on the other hand, is similar to figure \ref{fig:v2Scaling1}, with the exception that both the axes have quantities that are normalized by the number of quarks, $n_{q}$. In this case, the $KE_{T}$ spectra strongly exhibits ($p_{T}$ does so less strongly) a scaling which is more comprehensively consistent with the number of quarks than in case of figure \ref{fig:v2Scaling1}. This universal quark-number scaling can be interpreted as the degrees of freedom of the system being quark-like.\cite{2007PhRvL..98p2301A}
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=4.5in]{figures/v2Scaling1.png}
+	  \caption{Minimum-bias Au+Au ($\sqrt{s_{NN}} = 200 GeV$) elliptic flow spectra for identified particles: (a) $v_{2}$ vs $p_{T}$ and (b) $v_{2}$ vs $KE_{T}$.\cite{2007PhRvL..98p2301A}}\label{fig:v2Scaling1}
+	\end{figure}
+	
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=4.5in]{figures/v2Scaling2.png}
+	  \caption{Minimum-bias Au+Au ($\sqrt{s_{NN}} = 200 GeV$) elliptic flow spectra for identified particles: (a) $\frac{v_{2}}{n_{q}}$ vs $\frac{p_{T}}{n_{q}}$ and (b) $\frac{v_{2}}{n_{q}}$ vs $\frac{KE_{T}}{n_{q}}$.\cite{2007PhRvL..98p2301A}}\label{fig:v2Scaling2}
+	\end{figure}
 
 \subsection{Dilepton Production}
 \begin{figure}[h]
@@ -188,18 +202,14 @@ The interacting nuclei carry no net strangeness before colliding, and so a post-
 \subsection{Jet Quenching}
 A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering. The products of the scattering, carrying high transverse momenta in opposite directions, are called jets. In heavy-ion collisions, most of the hard scatterings are the results of two partons from the opposite nuclei scattering off of each other. These partons can lose their momenta by strongly interacting with a medium made of deconfined quarks and gluons. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that don't, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium. %Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. 
 Formalisms developed to study jet quenching due to radiative and collisional energy losses are detailed in \cite{2015IJMPE..2430014Q}. 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=4.5in]{figures/jets.PNG}
-  \caption{Illustration of jet quenching. Two jets are produced from each of the hard scatterings occuring at the locations of the solid dots. Jets originating closer to the initial surface are more probable to propagate outside the medium, as shown. Jets opposite to them interact with the medium, losing their energy and resulting in bow front shock waves.\cite{STOCKER2005121}}\label{fig:jets}
-\end{figure}
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=4.5in]{figures/jets.PNG}
+	  \caption{Illustration of jet quenching. Two jets are produced from each of the hard scatterings occuring at the locations of the solid dots. Jets originating closer to the initial surface are more probable to propagate outside the medium, as shown. Jets opposite to them interact with the medium, losing their energy and resulting in bow front shock waves.\cite{STOCKER2005121}}\label{fig:jets}
+	\end{figure}
 %The interaction of the jets in the QGP medium can be in the form of gluon bremsstrahlung or parton collision.
 
-\subsection{Collective Flow}
-For yet unknown reasons, the evolution of the medium produced after relativistic heavy ion collisions can be well desribed under the framework of relativistic hydrodynamics.\cite{SCHENKE2017105,2014NuPhA.926...92S} In normal matter, the speed of sound is generally more in solid than in liquid and more in liquid than in gas. This is because it its proportional to the ......
-% HERE HERE HERE HERE HERE TODO TODO TODO TODO
-The elliptic flow of the medium, as a function of the kinetic energy in the transverse direction, exhibits a scaling which is more comprehensive with the number of quarks than with the as shown in 
-% v2 nq scaling plot \cite{2007PhRvL..98p2301A}
+
 
 %\section{Transverse Energy}
 %\section{RHIC Beam Energy Scan Program}

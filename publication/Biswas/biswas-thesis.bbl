@@ -405,6 +405,14 @@ Adare, A., Afanasiev, S., Aidala, C., Ajitanand, N.~N., Akiba, Y., Akimoto, R.,
   midrapidity in various systems from $\sqrt{{s}_{NN}}=7.7$ to 200 gev.
 \newblock {\em Phys. Rev. C}, 93:024901.
 
+\bibitem[{Adare} et~al., 2007]{2007PhRvL..98p2301A}
+{Adare}, A., {Afanasiev}, S., {Aidala}, C., {Ajitanand}, N.~N., {Akiba}, Y.,
+  {Al-Bataineh}, H., {Alexander}, J., {Al-Jamel}, A., {Aoki}, K., {Aphecetche},
+  L., and et~al. (2007).
+\newblock {Scaling Properties of Azimuthal Anisotropy in Au+Au and Cu+Cu
+  Collisions at s$_{NN}$=200GeV}.
+\newblock {\em Physical Review Letters}, 98(16):162301.
+
 \bibitem[Adler et~al., 2014]{PhysRevC.89.044905}
 Adler, S.~S., Afanasiev, S., Aidala, C., Ajitanand, N.~N., Akiba, Y., Al-Jamel,
   A., Alexander, J., Aoki, K., Aphecetche, L., Armendariz, R., Aronson, S.~H.,
@@ -1091,6 +1099,12 @@ Hilke, H.~J. (2010).
 \newblock Time projection chambers.
 \newblock {\em Reports on Progress in Physics}, 73(11):116201.
 
+\bibitem[{Huovinen} et~al., 2001]{2001PhLB..503...58H}
+{Huovinen}, P., {Kolb}, P.~F., {Heinz}, U., {Ruuskanen}, P.~V., and {Voloshin},
+  S.~A. (2001).
+\newblock {Radial and elliptic flow at RHIC: further predictions}.
+\newblock {\em Physics Letters B}, 503:58--64.
+
 \bibitem[{Jacobs} and {Wang}, 2005]{2005PrPNP..54..443J}
 {Jacobs}, P. and {Wang}, X.-N. (2005).
 \newblock {Matter in extremis: ultrarelativistic nuclear collisions at RHIC}.
@@ -1146,6 +1160,13 @@ Satz, H. (2006).
 \newblock Colour deconfinement and quarkonium binding.
 \newblock {\em Journal of Physics G: Nuclear and Particle Physics}, 32(3):R25.
 
+\bibitem[Schenke, 2017]{SCHENKE2017105}
+Schenke, B. (2017).
+\newblock Origins of collectivity in small systems.
+\newblock {\em Nuclear Physics A}, 967:105 -- 112.
+\newblock The 26th International Conference on Ultra-relativistic
+  Nucleus-Nucleus Collisions: Quark Matter 2017.
+
 \bibitem[Shao et~al., 2006]{Shao:2005iu}
 Shao, M., Barannikova, O.~{\relax Yu}., Dong, X., Fisyak, Y., Ruan, L.,
   Sorensen, P., and Xu, Z. (2006).
@@ -1159,12 +1180,22 @@ Shuryak, E.~V. (1988).
 \newblock {\em Zeitschrift f{\"u}r Physik C Particles and Fields},
   38(1):141--145.
 
+\bibitem[{Snellings}, 2011]{2011NJPh...13e5008S}
+{Snellings}, R. (2011).
+\newblock {Elliptic flow: a brief review}.
+\newblock {\em New Journal of Physics}, 13(5):055008.
+
 \bibitem[Stock, 2004]{Ritter:2004xj}
 Stock, R. (2004).
 \newblock {Ultra-relativistic nucleus-nucleus collisions. Proceedings, 17th
   International Conference, Quark Matter 2004, Oakland, USA, January 11-17,
   2004}.
 \newblock {\em J. Phys.}, G30:S633--S648.
+
+\bibitem[{Strickland}, 2014]{2014NuPhA.926...92S}
+{Strickland}, M. (2014).
+\newblock {Anisotropic hydrodynamics: Motivation and methodology}.
+\newblock {\em Nuclear Physics A}, 926:92--101.
 
 \bibitem[Stöcker, 2005]{STOCKER2005121}
 Stöcker, H. (2005).
