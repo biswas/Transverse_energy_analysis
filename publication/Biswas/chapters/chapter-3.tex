@@ -152,6 +152,15 @@ The existence and properties of the QGP in the aftermath of high-energy heavy-io
 %\epsilon \geq \frac{\frac{dE_{T}}{d\eta}}{\tau_{0}\pi R^{2}} = \frac{3}{2}\langle \frac{E_{T}}{N} \rangle \frac{\frac{dN_{ch}}{d\eta}}{\tau_{0}\pi R^{2}}
 %\end{equation}
 %The transverse energy and the charged particle pseudorapidity densities have conventionally been calculated by using the transverse energy measurements obtained from calorimeters. This thesis details the use of particle spectra, reported as $\frac{d^{2}N}{dydp_{T}}$, from Au+Au collisions at RHIC to calculate the same global variables and serve as a method to cross check the ones involving calorimeters.
+\subsection{Bjorken Energy Density}
+%mostly pg 271 to 275 in \cite{Wilde:2012wc}
+In 1983, J.D. Bjorken\cite{PhysRevD.27.140} prescribed a formula to use the final state particles to estimate the initial energy density, $\epsilon_{0}$, in a nucleus-nucleus collision. With slight changes in the original formula, the energy density is given by:
+	\begin{equation}\label{eqn:ebj}
+	\epsilon_{0} = \frac{1}{\tau_{0}A_{T}}\langle\frac{dE{T}}{dy}\rangle,
+	\end{equation}
+where $\tau{0}$ is the proper time at the moment of QGP equilibration, $A_{T}$ is the transverse area of the intersection of the two nuclei, and $\langle\frac{dE{T}}{dy}\rangle$ is the mean transverse energy per unit rapidity. $\tau_{0}$ is model-dependent and is normally of the order of $~1 fm$. $A_{T}$ depends on the centrality of the collision. $\langle\frac{dE{T}}{dy}\rangle$ is found from the measurement of the transverse energy carried by the final state particles from the collision and is the central theme of this thesis. Details about it are in the following chapters.
+The estimate of the initial energy density from Bjorken formula can be compared with the QCD prediction of the critical energy density\cite{Adam:2139456} to check if the results from a collision imply the achievement of the critical physical condition required for the phase transition.\cite{2005PrPNP..54..443J}
+%Experiments reveal it to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
 
 \subsection{Dilepton Production}
 \begin{figure}[h]
@@ -171,21 +180,14 @@ When the color degree of freedom is liberated in the post-collision system, a qu
 \end{figure}
 
 In the QGP, a quark and an antiquark can annihilate to produce a photon and a gluon. It is also possible for the pair to annihilate and produce two photons, but the probability of this process is smaller than the former by about two orders of magnitude. Furthermore, a quark (or an antiquark) can interact with a gluon to produce an antiquark (or a quark) and a photon, a process analogous to Compton scattering in QED. Just like the leptons described in the previous section, the photons produced in the QGP can only interact with the medium electromagnetically. Therefore, they undergo minimal scattering before being detected, and hence can be used to probe the thermodynamical state of the medium at the time of their creation.\cite{wong1994introduction} Photons can also be produced after hadronization as a result of the scattering of the hadrons within the evolved medium. However, the nature of the $p_{T}$ distribution is different in this case, and this difference helps distinguish these photons from the direct photons produced by partonic interactions.\cite{Wilde:2012wc}
-\subsection{Bjorken Energy Density}
-%mostly pg 271 to 275 in \cite{Wilde:2012wc}
-In 1983, J.D. Bjorken\cite{PhysRevD.27.140} prescribed a formula to use the final state particles to estimate the initial energy density, $\epsilon_{0}$, in a nucleus-nucleus collision. With slight changes in the original formula, the energy density is given by:
-	\begin{equation}\label{eqn:ebj}
-	\epsilon_{0} = \frac{1}{\tau_{0}A_{T}}\langle\frac{dE{T}}{dy}\rangle,
-	\end{equation}
-where $\tau{0}$ is the proper time at the moment of QGP equilibration, $A_{T}$ is the transverse area of the intersection of the two nuclei, and $\langle\frac{dE{T}}{dy}\rangle$ is the mean transverse energy per unit rapidity. $\tau_{0}$ is model-dependent and is normally of the order of $~1 fm$. $A_{T}$ depends on the centrality of the collision. $\langle\frac{dE{T}}{dy}\rangle$ is found from the measurement of the transverse energy carried by the final state particles from the collision and is the central theme of this thesis. Details about it are in the following chapters.
-The estimate of the initial energy density from Bjorken formula can be compared with the QCD prediction of the critical energy density\cite{Adam:2139456} to check if the results from a collision imply the achievement of the critical physical condition required for the phase transition.\cite{2005PrPNP..54..443J}
-%Experiments reveal it to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
 
 \subsection{Strangeness Enhancement}
 % http://shodhganga.inflibnet.ac.in/bitstream/10603/37674/11/11_chapter%202.pdf
 The interacting nuclei carry no net strangeness before colliding, and so a post-collision observation of strange and multi-strange particles can be a signal for an antecedent existence of deconfined quarks and gluons \cite{1742-6596-455-1-012005}. Strangeness can also be produced in hadron-hadron collisions. However, it is enhanced in nucleus-nucleus collisions in which a large number of hadrons are produced and are in chemical equilibrium at very high temperatures. Consider the ratio of the production of the strange kaons to that of the non-strange pions, which are the most abundant hadrons produced from nucleus-nucleus collisions. Kaon yield increases more rapidly than does pion yield as the temperature increases. This can be shown mathematically by treating the system as a hadron gas in thermal and chemical equilibrium that follows the Bose-Einstein distribution, but it is beyond the scope of this thesis.\cite{wong1994introduction}
+
 \subsection{Jet Quenching}
-A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering. The products of the scattering, carrying high transverse momenta in opposite directions, are called jets. In heavy-ion collisions, most of the hard scatterings are the results of two partons from the opposite nuclei scattering off of each other. These partons can lose their momenta by strongly interacting with a medium made of deconfined quarks and gluons. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that don't, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium. Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. Formalisms developed to study jet quenching due to radiative and collisional energy losses are detailed in \cite{2015IJMPE..2430014Q}. 
+A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering. The products of the scattering, carrying high transverse momenta in opposite directions, are called jets. In heavy-ion collisions, most of the hard scatterings are the results of two partons from the opposite nuclei scattering off of each other. These partons can lose their momenta by strongly interacting with a medium made of deconfined quarks and gluons. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that don't, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium. %Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. 
+Formalisms developed to study jet quenching due to radiative and collisional energy losses are detailed in \cite{2015IJMPE..2430014Q}. 
 \begin{figure}[h]
   \centering
   \includegraphics[width=4.5in]{figures/jets.PNG}
@@ -194,6 +196,10 @@ A scattering event in which the participants transfer a large amount of their or
 %The interaction of the jets in the QGP medium can be in the form of gluon bremsstrahlung or parton collision.
 
 \subsection{Collective Flow}
+For yet unknown reasons, the evolution of the medium produced after relativistic heavy ion collisions can be well desribed under the framework of relativistic hydrodynamics.\cite{SCHENKE2017105,2014NuPhA.926...92S} In normal matter, the speed of sound is generally more in solid than in liquid and more in liquid than in gas. This is because it its proportional to the ......
+% HERE HERE HERE HERE HERE TODO TODO TODO TODO
+The elliptic flow of the medium, as a function of the kinetic energy in the transverse direction, exhibits a scaling which is more comprehensive with the number of quarks than with the as shown in 
+% v2 nq scaling plot \cite{2007PhRvL..98p2301A}
 
 %\section{Transverse Energy}
 %\section{RHIC Beam Energy Scan Program}
