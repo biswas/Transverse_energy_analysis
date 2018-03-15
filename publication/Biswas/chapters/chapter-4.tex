@@ -25,7 +25,7 @@
 %\ and neutral hadrons which dominantly decay to electromagnetic particles." (hybrid method)
 
 %\ centrality determination
-This chapter indroduces the definitions of transverse energy, ways to measure it using different detectors, and particular examples from the STAR detector.
+This chapter indroduces the definitions of transverse energy, ways to measure it using different detectors, and particular examples for the detectors at the RHIC.
 
 \section{Definition of Transverse Energy}
 In theory, $E_{T}$ from a collision can be defined as the sum of the transverse masses, $m_{T}$, of all the particles produced in the collision, i.e.,
@@ -66,11 +66,21 @@ and  $m_{0}$ is the particle's rest mass.
 In order to account for the portion of the emitted transverse energy not detected or overestimated by the calorimeters, corrections are made based on GEANT simulations.
 %\ split the following into a sub-chapter
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{$E_{T}$ Measurement with Calorimeters}
+\subsection{Calorimeter}
+\subsection{$E_{T}$ from PHENIX}
+\citet{PhysRevC.93.024901} use calorimetry in PHENIX to analyze the transverse energy corresponding to several different pairs of species colliding at a range of energies. They use the raw transverse energy measured by the EMCal, $E_{{T}EMC}$, to obtain the total hadronic $E_{T}$ by making corrections in three different steps. They first scale the data by a constant factor calculated to account for the fiducial acceptance in azimuth and pseudorapidity. The second factor is calculated to adjust for the effects of the calorimeter towers that are disabled. The third factor, $k$, is computed as follows
+\begin{equation}\label{eqn:AdareKfactor}
+k = k_{response} \times k_{inflow} \times k_{losses}
+\end{equation}
+where $k_{response}$ corresponds to hadronic particles only depositing a fraction of their total energy while passing through the EMCal, $k_{inflow}$ is attributable to the energy deposited by particles coming from outside the EMCal's fiducial aperture, and $k_{losses}$ accounts for the energy not registered in the EMCal due to energy thresholds, edge effects, and more importantly due to the particles that make it into the fiducial aperture but decay into products outside the aperture.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{$E_{T}$ Measurement with Tracking Detectors}
 Transverse energy analysis can be done using tracking detectors as well if they are able to produce measurements of other physical quantities that implicitly contain information about the transverse energy. Specifically, the charged particle multiplicity distributions with respect to the transverse momenta can be used to calculate the particle's transverse energy pseudorapidity density. In fact, since the corrections related to the tracking detectors are very different from those related to the calorimeters, results from the two different methods can be used to test the assumptions involved in each.
 
+\subsection{Tracking and Particle Identification}
 The tracking detectors in experiments such as the STAR (Solenoidal Tracker At RHIC) experiment and ALICE (A Large Ion Collider Experiment) at CERN include Time Projection Chambers (TPCs) and Time-of-Flight (TOF) detectors that can give us the $p_{T}$ spectra, yields and particle ratios of the identified charged hadrons \cite{Preghenella:2011vy, PhysRevC.96.044904}. The TPCs provide measurements of particle trajectories -- that can be used to determine the momenta for low-momentum particles -- and of their specific energy loss, 
 \begin{equation}\label{eqn:specificEnLoss}
 	\frac{dE}{dx} ,
@@ -120,7 +130,6 @@ From equations \ref{eqn:ET-as-pTOverJacobian} and \ref{eqn:Jacobian}, we can see
 \end{equation}
 where $a$ and $-a$ are the bounds for $\eta$.
 
-
 \subsection{Tracking Detectors in STAR}\label{subsec:tracking_STAR}
 In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m long and it cylindrically enshrouds the accelerator beam pipe from its outside, with an inner diameter of 1 m and an outer diameter of 4 m \cite{phdthesisnattrass}. It covers a pseudorapidity range of $|y|$ $<$ 1.8 in all of azimuth in terms of acceptance of charged particles. It can identify particles with momenta over 100 MeV/c up to about 1 GeV/c as well as measure their momenta from 100 MeV/c to 30 GeV/c \cite{Anderson:2003ur}. Figure \ref{fig:STAR_PID} shows the PID capability of the STAR TPC for very high-multiplicity events \cite{0034-4885-73-11-116201}. Separation of pions from protons is demonstrated up to a little more than 1 GeV/c. At higher momenta, separating particles is more difficult because their energy loss has lower dependence on the rest mass \cite{Anderson:2003ur}. The TOF system in STAR, with a time resolution of $\lessapprox$ 100 ps, aids PID at higher momenta. However, at intermediate $p_{T}$, between $\approx$ 2.0 and 4.0 GeV/c, the TPC by itself cannot distinguish between pions and protons and the TOF by itself cannot separate pions from kaons. This problem is resolved by utilizing the fact that the dependence of the particle velocity on $p_{T}$ -- in case of the TPC -- is different from that of the energy loss on $p_{T}$ in case of the TPC; combining the results from the two, hence, makes PID feasible in this $p_{T}$ range. \cite{Shao:2005iu}
 %classification !!!!!!!!!........ more details about the TPC, then its limitation in high momentum resolution, then transition to TOF and some of its details ..........!!!!!!!!!
@@ -137,30 +146,6 @@ In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m lo
 %\ particle identification
 %\ transverse momentum spectrum (using tracking detectors????)
 %\ errors associated with the spectra
-
-\section{The Beam Energy Scan Program}
-The RHIC, in 2010, started a multi-phase Beam Energy Scan (BES) program to study the QCD phase diagram. The collider has the unique facility to collide nulclei at a range of center-of-mass energies per nucleon, $\sqrt{s_{NN}}$. It also has two different detectors that are currently operational, STAR and PHENIX (Pioneering High Energy Nuclear Interactions eXperiment), which facilitate the cross-checking of results. Between 2010 and 2011, under the exploratory phase I of the BES program, 7.7, 11.5 (not completed in PHENIX), 19.6, 27, and 39 GeV collisions were completed using pairs of Au nuclei. Together with the data formerly collected by the RHIC at higher collision energies, BES phase I data can scan the interval from 450 MeV to 20 MeV in $\mu_{B}$ space \cite{1742-6596-455-1-012037, LUO201675}. One of the things that can be studied with the data associated with this region of the phase space is statedly the possibility of a ``turn-off of new phenomena already established at higher RHIC energies" (https://drupal.star.bnl.gov/STAR/starnotes/public/sn0493). Results corresponding to the high-$\mu_{B}$ region might provide evidence of a first order phase transition, and possibly the critical point \cite{LUO201675}.
-
-The manifestation of such phenomena would be in terms of the fluctuations in the properties of the post-collision system. One can, for instance, study the scaling of the transverse energy after the collision with the longidutional energy at the time of the collision, $\sqrt{s_{NN}}$. This can be done in multiple ways for a detector like STAR or PHENIX that is made up of sub-systems such as the TOF detectors, TPCs/Time Expansion Chambers, as well as calorimeters. 
-
-\subsection{BES Calorimetry}
-\citet{PhysRevC.93.024901} use calorimetry in PHENIX to analyze the transverse energy corresponding to several different pairs of species colliding at a range of energies. They use the raw transverse energy measured by the EMCal, $E_{{T}EMC}$, to obtain the total hadronic $E_{T}$ by making corrections in three different steps. They first scale the data by a constant factor calculated to account for the fiducial acceptance in azimuth and pseudorapidity. The second factor is calculated to adjust for the effects of the calorimeter towers that are disabled. The third factor, $k$, is computed as follows
-\begin{equation}\label{eqn:AdareKfactor}
-k = k_{response} \times k_{inflow} \times k_{losses}
-\end{equation}
-where $k_{response}$ corresponds to hadronic particles only depositing a fraction of their total energy while passing through the EMCal, $k_{inflow}$ is attributable to the energy deposited by particles coming from outside the EMCal's fiducial aperture, and $k_{losses}$ accounts for the energy not registered in the EMCal due to energy thresholds, edge effects, and more importantly due to the particles that make it into the fiducial aperture but decay into products outside the aperture.
-
-\subsection{BES $p_{T}$ spectra}
-This thesis details the method of transverse energy analysis through the use of $p_{T}$ spectra from the STAR BES data. As described in section \ref{subsec:tracking_STAR}, the TPCs and TOF detectors in STAR can identify particles as well as their trajectories and ultimately their multiplicity distributions with respect to the momenta. \citet{PhysRevC.96.044904} report the results for the $p_{T}$ spectra for six different identified hadrons, $\pi^+$, $\pi^-$, $K^+$, $K^-$, $p$, and $\bar{p}$, from the STAR experiment. The spectra come from Au+Au collisions -- at $\sqrt{s_{NN}}$ = 7.7, 11.5, and 39 GeV in the year 2010 and at $\sqrt{s_{NN}}$ = 19.6 and 27 GeV in 2011 -- under the BES Program. Figure \ref{fig:BESPaper_pTSpectra} \cite{PhysRevC.96.044904} shows the spectra corresponding to 39 GeV collisions categorized into seven different collision centralitiy classes. These spectra, and their counterparts for the rest of the energies, were used to calculate an estimate of the total transverse energy per event per particle species. This result was then used to estimate the total transverse energy due to all the collision products.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=6.5in]{../figures/PhysRevC-96-044904_pTSpectra_39.png}\\
-  \caption{Transverse momentum spectra for $\pi^{+}$, $\pi^{-}$, $K^+$, $K^{-}$, $p$, and $\bar{p}$ at midrapidity ($|y|$ $<$ 0.1) from 39 GeV Au+Au collisions at RHIC. The fitting curves on the 0-5\% central collision spectra for pions, kaons, and protons/anti-protons represent, respectively, the Bose-Einstein, $m_{T}$-exponential, and double-exponential functions. \cite{PhysRevC.96.044904}.}\label{fig:BESPaper_pTSpectra}
-\end{figure}
-
-The corrections applied by \citet{PhysRevC.96.044904} to the raw data to obtain the spectra and the reported systematic uncertainties in their results are discussed below (under construction)
-
-// Next section will contain the method of extrapolation and the section after that will explain the analysis using the root framework. Then comes the results section, which I will add after I finish analyzing all the data and get all the results including for lambdas.
 
 %...... mathematics involved in getting ET out of pT spectra, including the extrapolation using the BGBW.............
 
@@ -180,7 +165,6 @@ The corrections applied by \citet{PhysRevC.96.044904} to the raw data to obtain 
 
 %acknowledgments
 %christine, adam, charles, soren, andy, will, chrisanne.
-%\ NEXT: WRITE ABOUT THE ALTERNATIVE WAY, THAT IS, USING SPECTRA, AND WHAT DETECTOR THIS METHOD USES INSTEAD
 
 
 %\"The main detectors used to obtain the results on pT spectra, yields and particle ratios for charged hadrons are the Time Projection Chamber (TPC) [41] and Time-Of Flight detectors (TOF) [42]" https://arxiv.org/pdf/1701.07065.pdf

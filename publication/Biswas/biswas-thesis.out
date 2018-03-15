@@ -26,18 +26,31 @@
 \BOOKMARK [2][-]{subsection.3.6.4}{3.6.4 Direct photons}{section.3.6}% 26
 \BOOKMARK [2][-]{subsection.3.6.5}{3.6.5 Strangeness Enhancement}{section.3.6}% 27
 \BOOKMARK [2][-]{subsection.3.6.6}{3.6.6 Jet Quenching}{section.3.6}% 28
-\BOOKMARK [0][-]{chapter.4}{4 Measurement of Transverse Energy}{}% 29
-\BOOKMARK [1][-]{section.4.1}{4.1 Definition of Transverse Energy}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{4.2 ET Measurement with Calorimeters}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.3}{4.3 ET Measurement with Tracking Detectors}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Calculation of dETd from pT spectra}{section.4.3}% 33
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Tracking Detectors in STAR}{section.4.3}% 34
-\BOOKMARK [1][-]{section.4.4}{4.4 The Beam Energy Scan Program}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 BES Calorimetry}{section.4.4}% 36
-\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 BES pT spectra}{section.4.4}% 37
-\BOOKMARK [0][-]{chapter.5}{5 Data Analysis}{}% 38
-\BOOKMARK [1][-]{section.5.1}{5.1 Extrapolation of Spectra}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Boltzmann-Gibbs Blast Wave}{section.5.1}% 40
-\BOOKMARK [0][-]{chapter.6}{6 Results}{}% 41
-\BOOKMARK [0][-]{section*.23}{Bibliography}{}% 42
-\BOOKMARK [0][-]{section*.24}{Appendices}{}% 43
+\BOOKMARK [1][-]{section.3.7}{3.7 The Beam Energy Scan Program}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{4 Measurement of Transverse Energy}{}% 30
+\BOOKMARK [1][-]{section.4.1}{4.1 Definition of Transverse Energy}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{4.2 ET Measurement with Calorimeters}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Calorimeter}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 ET from PHENIX}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{4.3 ET Measurement with Tracking Detectors}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Tracking and Particle Identification}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Calculation of dETd from pT spectra}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Tracking Detectors in STAR}{section.4.3}% 38
+\BOOKMARK [0][-]{chapter.5}{5 Data Analysis}{}% 39
+\BOOKMARK [1][-]{subsection.5.0.1}{5.0.1 STAR pT spectra}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.1}{5.1 Extrapolation of Spectra}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Boltzmann-Gibbs Blast Wave}{section.5.1}% 42
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Fitting Spectra to BGBW}{section.5.1}% 43
+\BOOKMARK [1][-]{section.5.2}{5.2 Calculations from the Spectral Fits}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Calculation of dETdy, dETd, dNchdy, and dNchd}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Corrections for Unidentified Particles and Estimation of Total ET}{section.5.2}% 46
+\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Lambdas Centralitiy Adjustments and ET Interpolations}{section.5.2}% 47
+\BOOKMARK [1][-]{section.5.3}{5.3 Uncertainties}{chapter.5}% 48
+\BOOKMARK [0][-]{chapter.6}{6 Results}{}% 49
+\BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 50
+\BOOKMARK [0][-]{chapter.8}{8 Future Work}{}% 51
+\BOOKMARK [1][-]{section.8.1}{8.1 Goodness of Fit}{chapter.8}% 52
+\BOOKMARK [1][-]{section.8.2}{8.2 Bjorken Energy Density Estimate}{chapter.8}% 53
+\BOOKMARK [1][-]{section.8.3}{8.3 Asymmetric beams}{chapter.8}% 54
+\BOOKMARK [0][-]{section*.26}{Bibliography}{}% 55
+\BOOKMARK [0][-]{section*.27}{Appendices}{}% 56

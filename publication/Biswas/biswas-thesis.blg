@@ -11,6 +11,10 @@ A level-1 auxiliary file: chapters/chapter-3.aux
 A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
 A level-1 auxiliary file: chapters/chapter-6.aux
+A level-1 auxiliary file: chapters/chapter-7.aux
+A level-1 auxiliary file: chapters/chapter-8.aux
+A level-1 auxiliary file: chapters/chapter-9.aux
+A level-1 auxiliary file: chapters/chapter-10.aux
 The style file: apalike.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
@@ -60,7 +64,7 @@ Warning--empty journal in Connors:2017ptx
 Warning--empty journal in phdthesisnattrass
 You've used 39 entries,
             1935 wiz_defined-function locations,
-            754 strings with 116054 characters,
+            758 strings with 116143 characters,
 and the built_in function-call counts, 203319 in all, are:
 = -- 13594
 > -- 30913
