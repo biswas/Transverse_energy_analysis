@@ -22,6 +22,7 @@ int finalPlots_TGE(){
 	ifstream in2; // input from dat file containing lambda results
 	ifstream in3; // la interpolated results: last 4 centralities
 	*/
+	TFile* f; // .root file to be created
 	string skipContent;// read and skip content that has no use
 	const int CENTS 		= 9; // 9 different centralities
 	const int COLLENS 		= 5; // 5 different collision energies
@@ -54,7 +55,7 @@ int finalPlots_TGE(){
 	Double_t dNchdEta[CENTS][COLLENS][PARTS] = {0.};
 	Double_t dNchdEtaErr[CENTS][COLLENS][PARTS] = {0.};
 	Double_t centArr[CENTS]; // need to pass to formatGraph function
-
+	f = new TFile("crossCheckGraphs.root","RECREATE");
 	for(int j=0; j<=270+70; j++){// for 270 rows below header in the data file in1
 								// and 70 rows below header in data file in2
 		//for(int i=0; i<46; i++){
@@ -338,9 +339,9 @@ int finalPlots_TGE(){
 		
 	} // end of for loop with index enInd
 	/// ------ end - plot all npart graphs at once -------------------------------//
-	
+	delete f;
 	return 0;
-}
+} // end of main function
 
 std::string doubToString(Double_t d)
 {
@@ -423,6 +424,7 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	g->GetHistogram()->GetYaxis()-> SetTitleSize(0.04);
 	g->GetHistogram()->GetYaxis()-> SetTitleOffset(1.05);
 	const char* graphTextConstCharPtr = graphText.c_str();// required for TText constructor
+	const char* graphNameConstCharPtr = graphName.c_str();// required for f->Write(arg)
 	//TText* t1 = new TText(200,.62,graphTextNpartConstCharPtr);
 	t1 -> SetNDC(kTRUE);
 	t1 -> DrawLatex(0.2,0.8,graphTextConstCharPtr);
@@ -437,6 +439,8 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	png->FromPad(c);
 	const char* imgPathAndNameConstCharPtr1 = imgPathAndName.c_str();
 	png->WriteImage(imgPathAndNameConstCharPtr1);
+	// because graphs, unlike histograms, need to be explicitly written to TFile:
+	g -> Write(graphNameConstCharPtr); 
 	delete t1;
 	delete c;
 	delete png;

@@ -1,0 +1,445 @@
+tge->GetXError(1)
+tge->GetErrorX(1)
+tge->GetErrorX(3)
+tge->GetErrorX(2)
+TGraphErrors* tg = new TGraphErrors(3, xArr, yArr, xArr_err, yArr_err)
+tg->GetErrorX(1)
+tg->GetErrorX(2)
+tg->GetXaxis()->GetBinCenter(2)
+tg->GetXaxis()
+*(tg->GetXaxis())
+tg->GetXaxis()->GetXbins
+tg->GetXaxis()->GetXbins()
+*(tg->GetXaxis()->GetXbins())
+tg->GetY(1)
+tg->GetEY(1)
+tg->Eval(1)
+tg->Eval(2)
+tg->Eval(3)
+.q
+double xArr = {70, 8, 0.9}
+double xArr[] = {70, 8, 0.9}
+double xArr_err[] = {3, 3, 0.5}
+double yArr[] = {0.02, 0.018, 0.016}
+double yArr_err[] = {0.002, 0.0019, 0.0017}
+TGraphErrors* tg = new TGraphErrors(3, xArr, yArr, xArr_err, yArr_err)
+tg->GetHistogram()->GetBinCenter(1)
+tg->GetHistogram()->GetBinCenter(3)
+tg->GetHistogram()->GetBinCenter(2)
+tg->GetHistogram()->GetBinCenter(4)
+double x1; double x2
+tg->GetPoint(2, x1, x2)
+x1
+x2
+tg->GetErrorY(2)
+tg->GetErrorY()
+tg->GetEY()
+tg->GetPoint(2, x1, x2)->GetY()
+tg->GetPoint(2, double x3, double x4)
+tg->GetPoint(2, double x3, double x4)
+tg->GetPoint(2, Double_t x3, Double_t x4)
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+5+5%5
+5+6%5
+5+7%5
+5+(5+5)/5
+5+((5-0)+5)/5
+5+((5-5)+5)/5
+5+((6-5)+5)/5
+5+((7-5)+5)/5
+5+((8-5)+5)/5
+5+((4-5)+5)/5
+5+((5-5)+5)/5
+5+((6-5)+5)/5
+5+6/5
+5+4/5
+5+5/5
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+0.0171678/0.0223212
+0.0197883/0.0139537
+0.0171112/0.0120659
+0.0150889/0.01064
+1/0.01064
+0.0223212/0.0171678
+0.0139537/0.0197883
+0.00182495/0.0241043
+0.00267061/0.021212
+.q
+.x interpLaCentTGE.cpp
+0.0163147/0.021212
+0.0113824/0.0161418
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+.x interpLaCentTGE.cpp
+.q
+4%5
+5%5
+6%5
+ifstrem in1
+ifstrem in1;
+ifstream in1;
+ifstream in2;
+ifstream in;
+int j = 3
+if (j<4) in = in1
+if (j==3){in1.close(); in1.open(./fitResults5.dat)}
+if (j==3){in1.close(); in1.open(|"./fitResults5.dat")}
+if (j==3){in1.close(); in1.open("./fitResults5.dat")}
+if (j==3){in1.close(); in1.open("./fitResults5.dat");}
+in1.close()
+delete in1
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+.q
+ifstream in
+in.open(Form("./AdareTables.dat"))
+string buffer
+in >> buffer
+buffer
+in >> buffer
+buffer
+in >> buffer
+buffer
+in >> buffer
+buffer
+in >> buffer
+buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in.close()
+.q
+ifstream in
+in.open(Form("./AdareTables.dat"))
+in >> buffer; buffer
+string buffer
+in >> buffer; buffer\
+in >> buffer; buffer\
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+in >> buffer; buffer
+.q
+.x finalPlots_TGE.cpp
+new TBrowser
+.q
+.x finalPlots_TGE.cpp
+.q
+.x finalPlots_TGE.cpp
+new TBrowser
+TGraphErrors* g2 = new TGraphErrors(4,)
+.q
+.x plt4aAdare.c
+.q
+.x plt4aAdare.c
+.q
+.x plt4aAdare.c
+.q
+.x plt4aAdare.c
+new TBrowser
+.q
+TCanvas *c1 = new TCanvas()
+TGraphErrors* g1 = new TGraphErrors(,,,,,)
+TFile* file = TFile::Open("./plt4aAdare.root")
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TGraphErrors* g1 = new TGraphErrors()
+TGraphErrors* g2 = new TGraphErrors()
+new TBrowser
+g = file->GetObject("dETdEtaOverNpartBy2SumCent0")
+g = file->Get("dETdEtaOverNpartBy2SumCent0")
+g1 = file1->Get("plt4aAdare_PHENIX")
+g1 = file1->GetObject("plt4aAdare_PHENIX")
+g->Draw("A*")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+g1 = file1->Get("dETdEtaOverNpartBy2SumCent0")
+g2 = file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("same")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+g1 = file1->Get("dETdEtaOverNpartBy2SumCent0")
+g2 = file2->Get("plt4aAdare_PHENIX")
+g1->SetMarkerStyle(7); g2->SetMarkerStyle(7)
+g1->SetMarkerStyle(7); g2->SetMarkerStyle(7)
+g1->Draw("A*")
+g1->SetMarkerStyle(7)
+g1->SetMarkerSize(2)
+g2->Draw("A*")
+g2->Draw("same")
+g1->Draw("same")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+g1 = file1->Get("dETdEtaOverNpartBy2SumCent0")
+g2 = file2->Get("plt4aAdare_PHENIX")
+g1->Draw("ACP")
+g1->Draw("A*")
+g2->Draw("same")
+g2->Draw("A*")
+g2->Draw("A*", "same")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+g1 = file1->Get("dETdEtaOverNpartBy2SumCent0")
+g2 = file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("A*Same")
+g1->Draw("Same")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+g1 = file1->Get("dETdEtaOverNpartBy2SumCent0")
+g2 = file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("*Same")
+TLegend leg = new TLegend()
+TLegend* leg = new TLegend()
+leg -> AddEntry("g1", "STAR 0-5% Au+Au (Spectral)")
+leg -> AddEntry("g2", "PHENIX 0-5% Au+Au (Calorimetric)")
+leg -> Draw()
+g1 -> SetName("g1")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TGraphErrors* g1 = new TGraphErrors()
+TGraphErrors* g2 = new TGraphErrors()
+g1 = file1->Get("dETdEtaOverNpartBy2SumCent0")
+g1 = file1->GetObject("dETdEtaOverNpartBy2SumCent0")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TGraphErrors* g1 = (TGraphErrors*)file1->Get("dETdEtaOverNpartBy2SumCent0")
+TGraphErrors* g2 = (TGraphErrors*)file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("*Same")
+TLegend leg = new TLegend()
+TLegend* leg = new TLegend()
+g1 -> SetName("g1")
+g2 -> SetName("g2")
+leg -> AddEntry("g1", "STAR 0-5% Au+Au (Spectral)")
+leg -> AddEntry("g2", "PHENIX 0-5% Au+Au (Calorimetric)")
+g1 -> SetTitle("STAR 0-5% Au+Au (Spectral)")
+g1 -> SetTitle("PHENIX 0-5% Au+Au (Calorimetric)")
+c1->BuildLegend()
+g1 -> SetTitle("PHENIX 0-5% Au+Au (Calorimetric)")
+g1 -> SetTitle("STAR 0-5% Au+Au (Spectral)")
+g2 -> SetTitle("PHENIX 0-5% Au+Au (Calorimetric)")
+c1->BuildLegend()
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TGraphErrors* g1 = (TGraphErrors*)file1->Get("dETdEtaOverNpartBy2SumCent0")
+TGraphErrors* g2 = (TGraphErrors*)file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("*Same")
+TLegend leg = new TLegend()
+TLegend* leg = new TLegend()
+g1 -> SetName("g1")
+g2 -> SetName("g2")
+leg -> AddEntry("g1", "STAR 0-5% Au+Au (Spectral)")
+leg -> AddEntry("g2", "PHENIX 0-5% Au+Au (Calorimetric)")
+leg->Draw()
+leg->GetMargin()
+leg->Print()
+g1 -> SetTitle("STAR 0-5% Au+Au (Spectral)")
+g2 -> SetTitle("PHENIX 0-5% Au+Au (Calorimetric)")
+c1->BuildLegend()
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TGraphErrors* g1 = (TGraphErrors*)file1->Get("dETdEtaOverNpartBy2SumCent0")
+TGraphErrors* g2 = (TGraphErrors*)file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("*Same")
+TLegend* leg = new TLegend()
+delete leg
+TLegend* leg = new TLegend(0.1,0.7,0.48,0.9)
+TLegend* leg1 = new TLegend(0.1,0.7,0.48,0.9)
+g1 -> SetName("g1")
+g2 -> SetName("g2")
+leg -> AddEntry("g1", "STAR 0-5% Au+Au (Spectral)")
+.q
+TCanvas *c1 = new TCanvas()
+TFile* file1 = TFile::Open("./crossCheckGraphs.root")
+TFile* file2 = TFile::Open("./plt4aAdare.root")
+TGraphErrors* g1 = (TGraphErrors*)file1->Get("dETdEtaOverNpartBy2SumCent0")
+TGraphErrors* g2 = (TGraphErrors*)file2->Get("plt4aAdare_PHENIX")
+g1->Draw("A*")
+g2->Draw("*Same")
+TLegend* leg = new TLegend()
+TLegend* leg1 = new TLegend(0.1,0.7,0.48,0.9)
+g1 -> SetName("g1")
+g2 -> SetName("g2")
+leg1 -> AddEntry("g1", "STAR 0-5% Au+Au (Spectral)")
+leg1 -> AddEntry("g2", "PHENIX 0-5% Au+Au (Calorimetric)")
+leg1->Draw()
+.q
