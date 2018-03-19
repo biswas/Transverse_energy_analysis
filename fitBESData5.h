@@ -654,6 +654,22 @@ Int_t* getNpartAndErr(Double_t en, int cent){// args energy and centrality
 	
 	return npartAndErrArr;
 }
+
+std::string centIndToPercent(int centInd){
+	string centRange;
+	if (centInd == 0) centRange = "0-5 %";
+	else if (centInd == 1) centRange = "5-10 %";
+	else if (centInd == 2) centRange = "10-20 %";
+	else if (centInd == 3) centRange = "20-30 %";
+	else if (centInd == 4) centRange = "30-40 %";
+	else if (centInd == 5) centRange = "40-50 %";
+	else if (centInd == 6) centRange = "50-60 %";
+	else if (centInd == 7) centRange = "60-70 %";
+	else if (centInd == 8) centRange = "70-80 %";
+	else centRange = "Error: check centrality!";
+	return centRange;	
+}
+
 void classifyParticleKmeans(){
 
 	

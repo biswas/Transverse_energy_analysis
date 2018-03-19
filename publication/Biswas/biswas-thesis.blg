@@ -55,6 +55,7 @@ Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--I didn't find a database entry for "??????"
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Warning--empty journal in bethe1953passage
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
@@ -64,7 +65,7 @@ Warning--empty journal in Connors:2017ptx
 Warning--empty journal in phdthesisnattrass
 You've used 39 entries,
             1935 wiz_defined-function locations,
-            758 strings with 116143 characters,
+            759 strings with 116149 characters,
 and the built_in function-call counts, 203319 in all, are:
 = -- 13594
 > -- 30913

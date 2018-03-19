@@ -2,7 +2,7 @@
 #include "Riostream.h"
 #include <string>
 #include <fstream>
-#include "fitBESData5.h" // to use the function getNpartAndErr(Double_t en, string cent)
+#include "fitBESData5.h" // to use functions such as getNpartAndErr(Double_t en, string cent)
 using namespace std;
 
 std::string doubToString(Double_t);
@@ -444,21 +444,6 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	delete t1;
 	delete c;
 	delete png;
-}
-
-std::string centIndToPercent(int centInd){
-	string centRange;
-	if (centInd == 0) centRange = "0-5 %";
-	else if (centInd == 1) centRange = "5-10 %";
-	else if (centInd == 2) centRange = "10-20 %";
-	else if (centInd == 3) centRange = "20-30 %";
-	else if (centInd == 4) centRange = "30-40 %";
-	else if (centInd == 5) centRange = "40-50 %";
-	else if (centInd == 6) centRange = "50-60 %";
-	else if (centInd == 7) centRange = "60-70 %";
-	else if (centInd == 8) centRange = "70-80 %";
-	else centRange = "Error: check centrality!";
-	return centRange;	
 }
 
 int enIndex(Double_t collEn)
