@@ -343,13 +343,6 @@ int finalPlots_TGE(){
 	return 0;
 } // end of main function
 
-std::string doubToString(Double_t d)
-{
-	stringstream stream;
-	stream << fixed << setprecision(1) << d;
-	return stream.str();
-}
-
 void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 	// for reference:
 		// g = new TGraph(9, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);

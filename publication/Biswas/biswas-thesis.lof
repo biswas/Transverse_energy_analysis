@@ -18,8 +18,10 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Red curve shows the Boltzmann-Gibbs blast wave functional fit on the PRELIMINARY transverse momentum spectrum for lambda particles identified by the STAR detector for 19.6 GeV Au+Au collisions (10-15\% central). Parameters extracted from the chi-square goodness-of-fit test, as well as other statistics, are shown in the box on the top right.\relax }}{31}{figure.caption.23}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Parallel coordinates plot for 270 diffrent spectra relating 6 different identified particles (color-coded) to their respective collision centrality classes, good-fit parameters, and the transverse energy calculated using said parameters.\relax }}{33}{figure.caption.25}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces $\frac {dE_{T}}{d\eta }/0.5N_{part}$ for 0-5\% central collisions at midrapidity as a function of $\sqrt {s_{NN}}$. The PHENIX data are from \cite {PhysRevC.93.024901}. The error bars represent the total statistical and systematic uncertainties.\relax }}{34}{figure.caption.26}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces $(dE_{T}/d\eta )/0.5N_{part}$ at midrapidity as a function of $\sqrt {s_{NN}}$ for different centralities.\relax }}{34}{figure.caption.27}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces $(dE_{T}/d\eta )/(dN_{ch}/d\eta )$ at midrapidity as a function of $\sqrt {s_{NN}}$ for different centralities.\relax }}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces $(dE_{T}/d\eta )/0.5N_{part}$ at midrapidity as a function of $\sqrt {s_{NN}}$ for different centralities.\relax }}{34}{figure.caption.26}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces $(dE_{T}/d\eta )/(dN_{ch}/d\eta )$ at midrapidity as a function of $\sqrt {s_{NN}}$ for different centralities.\relax }}{34}{figure.caption.27}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces $(dE_{T}/d\eta )/0.5N_{part}$ at midrapidity as a function of ${N_{part}}$ for different centralities.\relax }}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces $(dE_{T}/d\eta )/(dN_{ch}/d\eta )$ at midrapidity as a function of ${N_{part}}$ for different centralities.\relax }}{35}{figure.caption.29}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces $\frac {dE_{T}}{d\eta }/0.5N_{part}$ for 0-5\% central collisions at midrapidity as a function of $\sqrt {s_{NN}}$. The PHENIX data are from \cite {PhysRevC.93.024901}. The error bars represent the total statistical and systematic uncertainties.\relax }}{35}{figure.caption.30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

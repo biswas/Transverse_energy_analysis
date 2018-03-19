@@ -670,6 +670,13 @@ std::string centIndToPercent(int centInd){
 	return centRange;	
 }
 
+std::string doubToString(Double_t d)
+{
+	stringstream stream;
+	stream << fixed << setprecision(1) << d;
+	return stream.str();
+}
+
 void classifyParticleKmeans(){
 
 	
