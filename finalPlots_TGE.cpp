@@ -1,8 +1,12 @@
+// use results from fits to produce individual plots
+// (in pseudorapidity coordinates rather than rapidity)
+// which are appropriately stacked for publication
 
 #include "Riostream.h"
 #include <string>
 #include <fstream>
-#include "fitBESData5.h" // to use functions such as getNpartAndErr(Double_t en, string cent)
+#include "fitBESData5.h"
+// ^ to use functions such as getNpartAndErr(Double_t en, string cent)
 using namespace std;
 
 std::string doubToString(Double_t);

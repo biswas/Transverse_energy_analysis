@@ -60,7 +60,7 @@ int interpLaCentTGE(){
 		return 1;
 	}
 
-	for(int i=0;i<47;i++){ // loop through 47 column names
+	for(int i=0;i<46;i++){ // loop through 46 column names
 		in >> skipContent;
 		// (tested) print first and last header names to check:
 		//if (i==0) cout << "Col. 1: " << skipContent << endl;
@@ -161,7 +161,7 @@ int interpLaCentTGE(){
 		cout << Npart[centIndex][enIndex] << "\t";
 		in >> Npart_err[centIndex][enIndex];
 		cout << Npart_err[centIndex][enIndex] << "\n";
-		in >> skipContent; // last column only contains the fit status
+		//in >> skipContent; // last column only contains the fit status
 
 		// TODO: what about lambdas while adding ET?
 		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam (last term is valid if there's no antilambda)
@@ -322,13 +322,6 @@ int interpLaCentTGE(){
 	return 0;
 }
 
-std::string doubToString(Double_t d){
-	stringstream stream;
-	stream << fixed << setprecision(1) << d;
-	return stream.str();
-
-}
-
 void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 	// for reference:
 		// g = new TGraph(9, NpartArrEnByEn, dETdEtaOverNpartBy2SumEnByEn);
@@ -445,20 +438,6 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 	return;
 }
 
-std::string centIndToPercent(int centInd){
-	string centRange;
-	if (centInd == 0) centRange = "0-5 %";
-	else if (centInd == 1) centRange = "5-10 %";
-	else if (centInd == 2) centRange = "10-20 %";
-	else if (centInd == 3) centRange = "20-30 %";
-	else if (centInd == 4) centRange = "30-40 %";
-	else if (centInd == 5) centRange = "40-50 %";
-	else if (centInd == 6) centRange = "50-60 %";
-	else if (centInd == 7) centRange = "60-70 %";
-	else if (centInd == 8) centRange = "70-80 %";
-	else centRange = "Error: check centrality!";
-	return centRange;	
-}
 
 // function to interpolate required points in a graph using a 3-spline
 // returns pointer to an array of ET values corresponding to

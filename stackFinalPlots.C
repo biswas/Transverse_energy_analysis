@@ -79,10 +79,10 @@ for(int graphInd = 2; graphInd < 4; graphInd++) // two different npart graphs
 		else
 		{ 
 			graphName = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEnArr[enInd]);
-			g1->GetHistogram()->GetYaxis()-> SetRangeUser(0.3, 1.00);
+			g1->GetHistogram()->GetYaxis()-> SetRangeUser(0.4, 1.00);
 		}
 		const char* graphNameConstCharPtr = graphName.c_str();
-		graphText = doubToString(collEnArr[enInd]) + "GeV";
+		graphText = doubToString(collEnArr[enInd]) + " GeV";
 		const char* graphTextConstCharPtr = graphText.c_str();
 		cout << "graphName: " << graphName << endl;
 		g1 = (TGraph*)file1->Get(graphNameConstCharPtr);
