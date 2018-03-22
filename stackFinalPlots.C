@@ -87,7 +87,8 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 		g1->Draw("3");
 		cout << "********************************" << endl;
 	}
-	
+	//c1->SetCanvasSize(1500, 1500);
+	//c1->SetWindowSize(500, 500);
 	imgPathAndName = 
 			"./publication/Biswas/figures/finalStacked/"+graphName+"s.png";
 	c1 -> Update();

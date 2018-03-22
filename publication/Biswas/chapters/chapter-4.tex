@@ -101,7 +101,7 @@ Pseudorapidity, $\eta$, is just $y$ with $m_{0} = 0$:
 \begin{equation}\label{eqn:pseudorapidity}
 \therefore \eta = -\ln{\left|{\tan{\frac{\theta}{2}}}\right|}
 \end{equation}
-Note that the absolute value is not necessary for $0 \leq \theta  \leq \pi$. Then, taking the exponential of both sides of the above equation and using Euler's formula, we get:
+The absolute value is not necessary for $0 \leq \theta  \leq \pi$. Then, taking the exponential of both sides of the above equation and using Euler's formula, we get:
 \begin{equation}
 \sin\theta = \frac{1}{\cosh\eta}.
 \end{equation}
@@ -127,12 +127,12 @@ From equations \ref{eqn:ET-as-pTOverJacobian} and \ref{eqn:Jacobian}, we can see
 where $a$ and $-a$ are the bounds for $\eta$. The estimate for the upper limit of $p_T{}$ makes sense in accordance with the mean $p_{T}$ of the spectra being comfortably an order of magnitude less than 10 GeV/c as discussed in chapter \ref{ch:analysis}.
 
 \subsection{Tracking Detectors in STAR}\label{subsec:tracking_STAR}
-In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m long and it cylindrically encloses the accelerator beam pipe from its outside, with an inner diameter of 1 m and an outer diameter of 4 m \cite{phdthesisnattrass}. It covers a pseudorapidity range of $|y|$ $<$ 1.8 in all of azimuth for charged particles. It can identify particles with momenta over 100 MeV/c up to about 1 GeV/c as well as measure their momenta from 100 MeV/c to 30 GeV/c \cite{Anderson:2003ur}. Figure \ref{fig:STAR_PID} shows the PID capability of the STAR TPC for very high-multiplicity events \cite{0034-4885-73-11-116201}. Separation of pions from protons is demonstrated up to a little more than 1 GeV/c. At higher momenta, separating particles is more difficult because their energy loss has lower dependence on the rest mass \cite{Anderson:2003ur}. The TOF system in STAR, with a time resolution of $\lessapprox$ 100 ps, aids PID at higher momenta. However, at intermediate $p_{T}$, between $\approx$ 2.0 and 4.0 GeV/c, the TPC by itself cannot distinguish between pions and protons and the TOF by itself cannot separate pions from kaons. This problem is resolved by utilizing the fact that the dependence of the particle velocity on $p_{T}$ -- in case of the TPC -- is different from that of the energy loss on $p_{T}$ in case of the TPC; combining the results from the two, hence, makes PID feasible in this $p_{T}$ range. \cite{Shao:2005iu}
+In the STAR experiment, the TPC is the primary tracking detector. It is 4.2 m long and it cylindrically encloses the accelerator beam pipe from its outside, with an inner diameter of 1 m and an outer diameter of 4 m \cite{phdthesisnattrass}. It covers a pseudorapidity range of $|y|$ $<$ 1.8 in all of azimuth for charged particles. It can identify particles with momenta over 100 MeV/c up to about 1 GeV/c as well as measure their momenta from 100 MeV/c to 30 GeV/c \cite{Anderson:2003ur}. Figure \ref{fig:STAR_PID} shows the PID capability of the STAR TPC for very high-multiplicity events \cite{0034-4885-73-11-116201}. Separation of pions from protons is demonstrated up to a little more than 1 GeV/c. At higher momenta, separating particles is more difficult because their energy loss has lower dependence on the rest mass \cite{Anderson:2003ur}. The TOF system in STAR, with a time resolution of $\lessapprox$ 100 ps, aids PID at higher momenta. However, at intermediate $p_{T}$, between $\approx$ 2.0 and 4.0 GeV/c, the TPC by itself cannot distinguish between pions and protons and the TOF by itself cannot separate pions from kaons. This problem is resolved by utilizing the fact that the dependence of the particle velocity on $p_{T}$ -- in case of the TPC -- is different from that of the energy loss on $p_{T}$ in case of the TPC; combining the results from the two, hence, makes PID feasible in this $p_{T}$ range \cite{Shao:2005iu}.
 %classification !!!!!!!!!........ more details about the TPC, then its limitation in high momentum resolution, then transition to TOF and some of its details ..........!!!!!!!!!
 \begin{figure}[h]
   \centering
-  \includegraphics[width=5.5in]{../figures/0034-4885-73-11-116201_star_PID.jpg}\\
-  \caption{Energy loss distribution in the STAR TPC for primary and secondary particles. \cite{0034-4885-73-11-116201}.}\label{fig:STAR_PID}
+  \includegraphics[width=5.5in]{figures/TPCdEdxMod.eps}\\
+  \caption{Energy loss distribution in the STAR TPC for primary and secondary particles \cite{Anderson:2003ur}.}\label{fig:STAR_PID} %{0034-4885-73-11-116201}
   % "Figure 35 shows the energy loss distribution for primary and secondary particles."
 \end{figure}
 %\Its drift volume is full of P10 gas (10% methane and 90% argon), the electrons from the molecules of which are knocked off by a charged particle travelling through the medium.
