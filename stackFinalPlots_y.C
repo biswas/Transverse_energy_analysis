@@ -15,7 +15,7 @@ void stackFinalPlots_y()
 
 TFile* file1 = TFile::Open("./crossCheckGraphs_y.root");
 //TH1D* g1;
-TGraph* g1;
+TGraphErrors* g1;
 string graphName;
 string graphText;
 string imgPathAndName;
@@ -44,7 +44,7 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 		graphText = centIndToPercent(centInd);
 		const char* graphTextConstCharPtr = graphText.c_str();
 		cout << "graphName: " << graphName << endl;
-		g1 = (TGraph*)file1->Get(graphNameConstCharPtr);
+		g1 = (TGraphErrors*)file1->Get(graphNameConstCharPtr);
 		g1->SetMarkerSize(1);
 		if (centInd == 0) g1->Draw("A*X");
 		g1->SetMarkerColor(1+centInd); 
@@ -87,13 +87,15 @@ for(int graphInd = 2; graphInd < 4; graphInd++) // two different npart graphs
 		graphText = doubToString(collEnArr[enInd]) + " GeV";
 		const char* graphTextConstCharPtr = graphText.c_str();
 		cout << "graphName: " << graphName << endl;
-		g1 = (TGraph*)file1->Get(graphNameConstCharPtr);
+		g1 = (TGraphErrors*)file1->Get(graphNameConstCharPtr);
+		// get rid of x-errors:
+		for(int j=0;j<g1->GetN();j++){g1->SetPointError(j,0,g1->GetErrorY(j));}
 		g1->SetMarkerSize(1);
-		if (enInd == 0) g1->Draw("A*X");
-		g1->SetMarkerColor(1+enInd); 
+		if (enInd == 0) g1->Draw("AP");
+		g1->SetMarkerColor(1+enInd); g1 -> SetLineColor(1+enInd);
 		g1 -> SetMarkerStyle(20+enInd);
 		//c1 -> SetLogx();
-		g1 -> Draw("PX");
+		g1 -> Draw("P");
 		g1 -> SetName("g1");
 		leg -> AddEntry(g1, graphTextConstCharPtr, "p");
 		leg -> SetFillStyle(0);

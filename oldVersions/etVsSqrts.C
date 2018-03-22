@@ -426,7 +426,8 @@ void etVsSqrts(Float_t et = 9.01999, Float_t etstaterr = 0.0306423, Float_t etsy
   c2->SetLeftMargin(0.112416);
   c2->SetBottomMargin(0.17);
   allpoints->Draw("AP");
-  TF1 *func = new TF1("func","[0]*pow(x,2*[1])",0,6000);
+  TF1 *func = new TF1("func","[0]*pow(x,2*[1])",0,100);
+  func->SetParameter(0,0.1);
   func->SetParameter(1,0.1);
   func->SetParLimits(1,0.1,0.5);
   allpoints->Fit(func);

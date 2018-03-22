@@ -16,6 +16,10 @@ White space in argument---line 27 of file chapters/chapter-2.aux
  :                  reference than 2013arXiv1304.1452M}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapters/chapter-3.aux
+White space in argument---line 23 of file chapters/chapter-3.aux
+ : \citation{Jet
+ :               Review Paper}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
 A level-1 auxiliary file: chapters/chapter-6.aux
@@ -65,6 +69,7 @@ Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Warning--I didn't find a database entry for "aitchison2003gauge???"
 Warning--I didn't find a database entry for "?????????"
+Warning--I didn't find a database entry for "."
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Warning--empty journal in bethe1953passage
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
@@ -74,7 +79,7 @@ Warning--empty journal in Connors:2017ptx
 Warning--empty journal in phdthesisnattrass
 You've used 39 entries,
             1935 wiz_defined-function locations,
-            760 strings with 116261 characters,
+            761 strings with 116262 characters,
 and the built_in function-call counts, 203377 in all, are:
 = -- 13601
 > -- 30919
@@ -113,4 +118,4 @@ warning$ -- 3
 while$ -- 115
 width$ -- 0
 write$ -- 507
-(There were 8 error messages)
+(There were 9 error messages)
