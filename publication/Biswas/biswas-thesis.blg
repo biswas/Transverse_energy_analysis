@@ -12,10 +12,6 @@ White space in argument---line 3 of file chapters/chapter-1.aux
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapters/chapter-2.aux
 A level-1 auxiliary file: chapters/chapter-3.aux
-White space in argument---line 23 of file chapters/chapter-3.aux
- : \citation{Jet
- :               Review Paper}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
 A level-1 auxiliary file: chapters/chapter-6.aux
@@ -29,30 +25,30 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
-I was expecting a `,' or a `}'---line 231 of file references-Biswas.bib
+I was expecting a `,' or a `}'---line 278 of file references-Biswas.bib
  : 
  : publisher = WORLD SCIENTIFIC
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 438 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 485 of file references-Biswas.bib
  : %%%\ @phdthesis 
  :                 bit undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 439 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 486 of file references-Biswas.bib
  : 
  : @article{phdthesisnattrass,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 444 of file references-Biswas.bib
+You're missing a field name---line 491 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 449 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 496 of file references-Biswas.bib
  : %%%\ Bethe Bloch formula @misc 
  :                                but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 450 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 497 of file references-Biswas.bib
  : 
  : @article{bethe1953passage,
 (Error may have been on previous line)
@@ -64,7 +60,6 @@ Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--I didn't find a database entry for "aitchison2003gauge???"
 Warning--I didn't find a database entry for "."
 Warning--I didn't find a database entry for "PhysRevC.96.044904????"
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
@@ -74,45 +69,45 @@ while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
 Warning--empty journal in Connors:2017ptx
 Warning--empty journal in phdthesisnattrass
-You've used 41 entries,
+You've used 44 entries,
             1935 wiz_defined-function locations,
-            777 strings with 116574 characters,
-and the built_in function-call counts, 204149 in all, are:
-= -- 13681
-> -- 30933
-< -- 30
-+ -- 12342
-- -- 12332
-* -- 25647
-:= -- 39230
-add.period$ -- 127
-call.type$ -- 41
-change.case$ -- 6368
-chr.to.int$ -- 41
-cite$ -- 44
-duplicate$ -- 584
-empty$ -- 1179
-format.name$ -- 12390
-if$ -- 33475
+            795 strings with 117053 characters,
+and the built_in function-call counts, 205489 in all, are:
+= -- 13808
+> -- 31001
+< -- 31
++ -- 12366
+- -- 12356
+* -- 25768
+:= -- 39469
+add.period$ -- 137
+call.type$ -- 44
+change.case$ -- 6395
+chr.to.int$ -- 44
+cite$ -- 47
+duplicate$ -- 626
+empty$ -- 1266
+format.name$ -- 12417
+if$ -- 33734
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 43
-newline$ -- 211
-num.names$ -- 123
-pop$ -- 6279
+missing$ -- 46
+newline$ -- 227
+num.names$ -- 132
+pop$ -- 6298
 preamble$ -- 1
-purify$ -- 6370
+purify$ -- 6397
 quote$ -- 0
-skip$ -- 450
+skip$ -- 481
 stack$ -- 0
-substring$ -- 1276
-swap$ -- 47
+substring$ -- 1375
+swap$ -- 50
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 242
+type$ -- 260
 warning$ -- 3
-while$ -- 121
+while$ -- 130
 width$ -- 0
-write$ -- 537
-(There were 8 error messages)
+write$ -- 578
+(There were 7 error messages)

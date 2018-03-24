@@ -12,40 +12,40 @@
 \BOOKMARK [0][-]{chapter.3}{3 Relativistic Heavy Ion Collisions}{}% 12
 \BOOKMARK [1][-]{section.3.1}{3.1 RHIC and LHC}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.2}{3.2 Collision Energy and Geometry}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{3.3 Kinematic Variables \(will go into Appendix\)}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.4}{3.4 QGP Evolution}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.5}{3.5 Detection of Collision Products}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.6}{3.6 Detection of QGP Signatures}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Bjorken Energy Density}{section.3.6}% 19
-\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Elliptic Flow}{section.3.6}% 20
-\BOOKMARK [2][-]{subsection.3.6.3}{3.6.3 Direct and Thermal Photons}{section.3.6}% 21
-\BOOKMARK [2][-]{subsection.3.6.4}{3.6.4 Strangeness Enhancement}{section.3.6}% 22
-\BOOKMARK [2][-]{subsection.3.6.5}{3.6.5 Jet Quenching}{section.3.6}% 23
-\BOOKMARK [1][-]{section.3.7}{3.7 The Beam Energy Scan Program}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{4 Measurement of Transverse Energy}{}% 25
-\BOOKMARK [1][-]{section.4.1}{4.1 Definition of Transverse Energy}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{4.2 ET Measurement with Calorimeters}{chapter.4}% 27
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Calorimeter}{section.4.2}% 28
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 ET from PHENIX Calorimetry}{section.4.2}% 29
-\BOOKMARK [1][-]{section.4.3}{4.3 ET Measurement with Tracking Detectors}{chapter.4}% 30
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Tracking and Particle Identification}{section.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Calculation of dETd from pT spectra}{section.4.3}% 32
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Tracking Detectors in STAR}{section.4.3}% 33
-\BOOKMARK [0][-]{chapter.5}{5 Data Analysis}{}% 34
-\BOOKMARK [1][-]{subsection.5.0.1}{5.0.1 STAR pT spectra}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.1}{5.1 Extrapolation of Spectra}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Boltzmann-Gibbs Blast Wave}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Fitting Spectra to BGBW}{section.5.1}% 38
-\BOOKMARK [1][-]{section.5.2}{5.2 Calculations from the Spectral Fits}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Calculation of dETdy, dETd, dNchdy, and dNchd}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Corrections for Unidentified Particles and Estimation of Total ET}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Lambdas Centralitiy Adjustments and ET Interpolations}{section.5.2}% 42
-\BOOKMARK [1][-]{section.5.3}{5.3 Uncertainties}{chapter.5}% 43
-\BOOKMARK [0][-]{chapter.6}{6 Results}{}% 44
-\BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 45
-\BOOKMARK [0][-]{chapter.8}{8 Future Work}{}% 46
-\BOOKMARK [1][-]{section.8.1}{8.1 Goodness of Fit}{chapter.8}% 47
-\BOOKMARK [1][-]{section.8.2}{8.2 Bjorken Energy Density Estimate}{chapter.8}% 48
-\BOOKMARK [1][-]{section.8.3}{8.3 Asymmetric beams}{chapter.8}% 49
-\BOOKMARK [0][-]{section*.34}{Bibliography}{}% 50
-\BOOKMARK [0][-]{section*.35}{Appendices}{}% 51
+\BOOKMARK [1][-]{section.3.3}{3.3 QGP Evolution}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.4}{3.4 Detection of Collision Products}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.5}{3.5 Detection of QGP Signatures}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Bjorken Energy Density}{section.3.5}% 18
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Elliptic Flow}{section.3.5}% 19
+\BOOKMARK [2][-]{subsection.3.5.3}{3.5.3 Prompt and Thermal Photons}{section.3.5}% 20
+\BOOKMARK [2][-]{subsection.3.5.4}{3.5.4 Strangeness Enhancement}{section.3.5}% 21
+\BOOKMARK [2][-]{subsection.3.5.5}{3.5.5 Jet Quenching}{section.3.5}% 22
+\BOOKMARK [1][-]{section.3.6}{3.6 The Beam Energy Scan Program}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{4 Measurement of Transverse Energy}{}% 24
+\BOOKMARK [1][-]{section.4.1}{4.1 Definition of Transverse Energy}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{4.2 ET Measurement with Calorimeters}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Calorimeter}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 ET from PHENIX Calorimetry}{section.4.2}% 28
+\BOOKMARK [1][-]{section.4.3}{4.3 ET Measurement with Tracking Detectors}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Tracking and Particle Identification}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Calculation of dETd from pT spectra}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Tracking Detectors in STAR}{section.4.3}% 32
+\BOOKMARK [0][-]{chapter.5}{5 Data Analysis}{}% 33
+\BOOKMARK [1][-]{subsection.5.0.1}{5.0.1 STAR pT spectra}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.1}{5.1 Extrapolation of Spectra}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Boltzmann-Gibbs Blast Wave}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Fitting Spectra to BGBW}{section.5.1}% 37
+\BOOKMARK [1][-]{section.5.2}{5.2 Calculations from the Spectral Fits}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Calculation of dETdy, dETd, dNchdy, and dNchd}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Corrections for Unidentified Particles and Estimation of Total ET}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Lambdas Centralitiy Adjustments and ET Interpolations}{section.5.2}% 41
+\BOOKMARK [1][-]{section.5.3}{5.3 Uncertainties}{chapter.5}% 42
+\BOOKMARK [0][-]{chapter.6}{6 Results}{}% 43
+\BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 44
+\BOOKMARK [0][-]{chapter.8}{8 Future Work}{}% 45
+\BOOKMARK [1][-]{section.8.1}{8.1 Goodness of Fit}{chapter.8}% 46
+\BOOKMARK [1][-]{section.8.2}{8.2 Bjorken Energy Density Estimate}{chapter.8}% 47
+\BOOKMARK [1][-]{section.8.3}{8.3 Asymmetric beams}{chapter.8}% 48
+\BOOKMARK [0][-]{section*.34}{Bibliography}{}% 49
+\BOOKMARK [0][-]{section*.35}{Appendices}{}% 50
+\BOOKMARK [1][-]{section.Alph0.1}{A Kinematic Variables}{section*.35}% 51

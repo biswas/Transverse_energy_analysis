@@ -1,0 +1,34 @@
+\section{Kinematic Variables}\label{app:kinVar}
+The description of the collision physics and the interpretation of its results are aided by the construction of variables that undergo simple transformations under a change of reference frame. Two such variables, rapidity and pseudorapidity, are described in this section.
+
+The rapidity, $y$, of a particle is defined as:
+
+	\begin{align}\label{def:rapidity}
+	y &\equiv \frac{1}{2}\ln{\frac{p_{0} + p_{z}}{p_{0} - p_{z}}}\\
+	&= \frac{1}{2}\ln{\frac{E + p_{z}}{E - p_{z}}},
+	\end{align}
+where $p_{0}$ and $p_{z}$ are the components of its contravariant four-momentum $p = (p_{0}, p_{x}, p_{y} p_{z})$ with $p_{0} = \frac{E}{c}$, $E$ being the relativistic energy of the particle and $c$, the speed of light, being equal to $1$ in natural units.
+
+The rapidity of a particle is used as a relativistic description of its velocity. Unlike the canonical velocity of a particle, its rapidity transforms simply additively under a Lorentz boost of the frame of reference. For example, suppose a particle has a rapidity $y$ in the laboratory frame. Let $y'$ denote its rapidity as measured in a frame that is Lorentz boosted with a velocity $\beta$ in the $z$-direction with respect to the laboratory frame. Then the relationship between the rapidities in the two different frames is simply
+	\begin{equation}\label{eqn:rapidityTransformation}
+	y' = y - y_{\beta}
+	\end{equation}
+Here,
+	\begin{equation}
+	y_{\beta} = \frac{1}{2}\ln{\frac{1 + \beta}{1 - \beta}}
+	\end{equation}
+is the rapidity the particle would have in the laboratory frame if it were moving with a velocity $\beta$ in the $z$-direction with respect to the laboratory frame, as can be verified from equation \ref{def:rapidity} with $p_{0} = \gamma m$ and $p_{z} = \gamma \beta m$, $\gamma$ being the Lorentz factor $\frac{1}{\sqrt{1 - \beta^2}}$ \cite{wong1994introduction}.
+
+The convenience provided by this construct comes with a cost. As evident from equation \ref{def:rapidity}, the calculation of the rapidity of a particle requires the measurement of two different observables associated with it, such as the energy and the $z$-direction momentum. However, experimental constraints may sometimes only facilitate the measurement of the direction of the detected particle with respect to the beam axis. What's more convenient in such a case is the use of another variable construct called pseudorapidity, $\eta$, defined as:
+	\begin{equation}\label{def:pseudorapidity}
+	\eta \equiv -\ln{\tan{\frac{\theta}{2}}},
+	\end{equation}
+where $\theta$ is the angle the particle's momentum vector, \textit{\textbf{p}}, makes with the $z$-direction. The above equation can also be written in terms of the momentum as:	
+	\begin{equation}\label{eqn:pseudorapidity2}
+	\eta = \frac{1}{2}\ln{\frac{\left|{\textit{\textbf{p}}}\right| + p_{z}}{\left|{\textit{\textbf{p}}}\right|- p_{z}}}
+	\end{equation}
+From equations \ref{def:rapidity} and \ref{eqn:pseudorapidity2}, it is evident that $\eta \approx y$ when $\left|{\textit{\textbf{p}}}\right| \approx p_{0}$, i.e., when the momentum is large. The transformation of the particle distribution from the $y$-space to the $\eta$-space is discussed in section \ref{section:calcFromSpectra}.
+ 
+% http://www.hep.shef.ac.uk/edaw/PHY206/Site/2012_course_files/phy206rlec7.pdf
+%(edu.itp.phys.ethz.ch/hs10/ppp1/PPP1_4.pdf) 
+
