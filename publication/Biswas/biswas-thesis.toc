@@ -6,15 +6,15 @@
 \contentsline {chapter}{\numberline {3}Relativistic Heavy Ion Collisions}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}RHIC and LHC}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Collision Energy and Geometry}{9}{section.3.2}
-\contentsline {section}{\numberline {3.3}QGP Evolution}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}Detection of Collision Products}{11}{section.3.4}
+\contentsline {section}{\numberline {3.3}QGP Evolution}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}Detection of Collision Products}{12}{section.3.4}
 \contentsline {section}{\numberline {3.5}Detection of QGP Signatures}{12}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Bjorken Energy Density}{12}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Bjorken Energy Density}{13}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Elliptic Flow}{14}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Prompt and Thermal Photons}{14}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}Prompt and Thermal Photons}{15}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}Strangeness Enhancement}{16}{subsection.3.5.4}
 \contentsline {subsection}{\numberline {3.5.5}Jet Quenching}{17}{subsection.3.5.5}
-\contentsline {section}{\numberline {3.6}The Beam Energy Scan Program}{17}{section.3.6}
+\contentsline {section}{\numberline {3.6}The Beam Energy Scan Program}{18}{section.3.6}
 \contentsline {chapter}{\numberline {4}Measurement of Transverse Energy}{20}{chapter.4}
 \contentsline {section}{\numberline {4.1}Definition of Transverse Energy}{20}{section.4.1}
 \contentsline {section}{\numberline {4.2}$E_{T}$ Measurement with Calorimeters}{21}{section.4.2}
@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {5.1}Extrapolation of Spectra}{28}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Boltzmann-Gibbs Blast Wave}{29}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Fitting Spectra to BGBW}{29}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Calculations from the Spectral Fits}{30}{section.5.2}
+\contentsline {section}{\numberline {5.2}Calculations from the Spectra}{29}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Calculation of $\frac {dE_{T}}{dy}$, $\frac {dE_{T}}{d\eta }$, $\frac {dN_{ch}}{dy}$, and $\frac {dN_{ch}}{d\eta }$}{30}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Corrections for Unidentified Particles and Estimation of Total $E_{T}$}{30}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Lambdas Centralitiy Adjustments and $E_{T}$ Interpolations}{31}{subsection.5.2.3}
@@ -41,5 +41,5 @@
 \contentsline {section}{\numberline {8.2}Bjorken Energy Density Estimate}{39}{section.8.2}
 \contentsline {section}{\numberline {8.3}Asymmetric beams}{40}{section.8.3}
 \contentsline {chapter}{Bibliography}{41}{section*.34}
-\contentsline {chapter}{Appendices}{75}{section*.35}
-\contentsline {section}{\numberline {A}Kinematic Variables}{76}{section.Alph0.1}
+\contentsline {chapter}{Appendices}{77}{section*.35}
+\contentsline {section}{\numberline {A}Kinematic Variables}{78}{section.Alph0.1}
