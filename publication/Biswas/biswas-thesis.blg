@@ -10,10 +10,6 @@ A level-1 auxiliary file: chapters/chapter-2.aux
 A level-1 auxiliary file: chapters/chapter-3.aux
 A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
-White space in argument---line 5 of file chapters/chapter-5.aux
- : \citation{private
- :                   communication with... }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapters/chapter-6.aux
 A level-1 auxiliary file: chapters/chapter-7.aux
 A level-1 auxiliary file: chapters/chapter-8.aux
@@ -25,30 +21,70 @@ A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Database file #1: references-Biswas.bib
-I was expecting a `,' or a `}'---line 362 of file references-Biswas.bib
+You're missing a field name---line 13 of file references-Biswas.bib
+ :       
+ :       %eprint         = "1005.1627",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 30 of file references-Biswas.bib
+ : 
+ : %      eprint         = "1105.3467",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 48 of file references-Biswas.bib
+ : 
+ : %      eprint         = "nucl-ex/0611020",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 66 of file references-Biswas.bib
+ : 
+ : %      eprint         = "1509.06337",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 84 of file references-Biswas.bib
+ : 
+ : %      eprint         = "1005.4916",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 102 of file references-Biswas.bib
+ : 
+ : %      eprint         = "0801.4020",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 119 of file references-Biswas.bib
+ : 
+ : %      eprint         = "1205.5759",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 137 of file references-Biswas.bib
+ : 
+ : %      eprint         = "1304.3410",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 602 of file references-Biswas.bib
  : 
  : publisher = WORLD SCIENTIFIC
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 569 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 809 of file references-Biswas.bib
  : %%%\ @phdthesis 
  :                 bit undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 570 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 810 of file references-Biswas.bib
  : 
  : @article{phdthesisnattrass,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 575 of file references-Biswas.bib
+You're missing a field name---line 815 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 580 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 820 of file references-Biswas.bib
  : %%%\ Bethe Bloch formula @misc 
  :                                but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 581 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 821 of file references-Biswas.bib
  : 
  : @article{bethe1953passage,
 (Error may have been on previous line)
@@ -60,8 +96,6 @@ Reallocated out_buf (elt_size=1) to 40000 items from 20000.
 Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--I didn't find a database entry for "https://arxiv.org/pdf/1408.2549.pdf"
-Warning--I didn't find a database entry for "https://www.annualreviews.org/doi/pdf/10.1146/annurev.nucl.57.090506.123020"
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Warning--empty journal in bethe1953passage
 Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
@@ -69,45 +103,46 @@ while executing--line 1098 of file apalike.bst
 *Please notify the bibstyle designer*
 Warning--empty journal in Connors:2017ptx
 Warning--empty journal in phdthesisnattrass
-You've used 49 entries,
+Warning--empty year in YePrivateCommunication
+You've used 64 entries,
             1935 wiz_defined-function locations,
-            829 strings with 123994 characters,
-and the built_in function-call counts, 218967 in all, are:
-= -- 14733
-> -- 32950
-< -- 32
-+ -- 13140
-- -- 13130
-* -- 27434
-:= -- 42054
-add.period$ -- 153
-call.type$ -- 49
-change.case$ -- 6807
-chr.to.int$ -- 49
-cite$ -- 52
-duplicate$ -- 696
-empty$ -- 1400
-format.name$ -- 13196
-if$ -- 35963
-int.to.chr$ -- 1
+            913 strings with 126668 characters,
+and the built_in function-call counts, 225306 in all, are:
+= -- 15328
+> -- 33288
+< -- 43
++ -- 13260
+- -- 13248
+* -- 27996
+:= -- 43199
+add.period$ -- 197
+call.type$ -- 64
+change.case$ -- 6931
+chr.to.int$ -- 62
+cite$ -- 68
+duplicate$ -- 902
+empty$ -- 1804
+format.name$ -- 13338
+if$ -- 37181
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 51
-newline$ -- 253
-num.names$ -- 147
-pop$ -- 6698
+missing$ -- 65
+newline$ -- 327
+num.names$ -- 192
+pop$ -- 6787
 preamble$ -- 1
-purify$ -- 6809
+purify$ -- 6934
 quote$ -- 0
-skip$ -- 532
+skip$ -- 694
 stack$ -- 0
-substring$ -- 1498
-swap$ -- 55
+substring$ -- 1915
+swap$ -- 69
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 290
-warning$ -- 3
-while$ -- 145
+type$ -- 380
+warning$ -- 4
+while$ -- 189
 width$ -- 0
-write$ -- 645
-(There were 7 error messages)
+write$ -- 836
+(There were 14 error messages)

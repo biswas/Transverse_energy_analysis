@@ -31,22 +31,22 @@
 \BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Calculation of dETd from pT spectra}{section.4.3}% 31
 \BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Tracking Detectors in STAR}{section.4.3}% 32
 \BOOKMARK [0][-]{chapter.5}{5 Data Analysis}{}% 33
-\BOOKMARK [1][-]{subsection.5.0.1}{5.0.1 STAR pT spectra}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.1}{5.1 Extrapolation of Spectra}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Boltzmann-Gibbs Blast Wave}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Fitting Spectra to BGBW}{section.5.1}% 37
-\BOOKMARK [1][-]{section.5.2}{5.2 Calculations from the Spectra}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Calculation of dETdy, dETd, dNchdy, and dNchd}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Corrections, Uncertainties, and Estimation of Total ET}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Lambdas Centralitiy Adjustments and ET Interpolations}{section.5.2}% 41
-\BOOKMARK [1][-]{section.5.3}{5.3 Uncertainties}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.1}{5.1 STAR pT Spectra}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Corrections and Systematic Uncertainties}{section.5.1}% 35
+\BOOKMARK [1][-]{section.5.2}{5.2 Extrapolation of Spectra}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Boltzmann-Gibbs Blast Wave}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Fitting Spectra to BGBW}{section.5.2}% 38
+\BOOKMARK [1][-]{section.5.3}{5.3 Calculations from the Spectra}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Calculation of dETdy, dETd, dNchdy, and dNchd}{section.5.3}% 40
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Assumptions, Estimation of Total ET, and Uncertainties}{section.5.3}% 41
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Lambdas Centrality Adjustments and ET Interpolations}{section.5.3}% 42
 \BOOKMARK [0][-]{chapter.6}{6 Results}{}% 43
 \BOOKMARK [0][-]{chapter.7}{7 Conclusion}{}% 44
 \BOOKMARK [0][-]{chapter.8}{8 Future Work}{}% 45
 \BOOKMARK [1][-]{section.8.1}{8.1 Goodness of Fit}{chapter.8}% 46
 \BOOKMARK [1][-]{section.8.2}{8.2 Bjorken Energy Density Estimate}{chapter.8}% 47
 \BOOKMARK [1][-]{section.8.3}{8.3 Asymmetric beams}{chapter.8}% 48
-\BOOKMARK [0][-]{section*.34}{Bibliography}{}% 49
-\BOOKMARK [0][-]{section*.35}{Appendices}{}% 50
-\BOOKMARK [1][-]{section.Alph0.1}{A Kinematic Variables}{section*.35}% 51
-\BOOKMARK [1][-]{section.Alph0.2}{B Results from BGBW Fits}{section*.35}% 52
+\BOOKMARK [0][-]{section*.36}{Bibliography}{}% 49
+\BOOKMARK [0][-]{section*.37}{Appendices}{}% 50
+\BOOKMARK [1][-]{section.Alph0.1}{A Kinematic Variables}{section*.37}% 51
+\BOOKMARK [1][-]{section.Alph0.2}{B Results from BGBW Fits}{section*.37}% 52

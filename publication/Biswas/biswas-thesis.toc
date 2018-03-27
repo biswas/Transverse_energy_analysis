@@ -14,33 +14,33 @@
 \contentsline {subsection}{\numberline {3.5.3}Prompt and Thermal Photons}{15}{subsection.3.5.3}
 \contentsline {subsection}{\numberline {3.5.4}Strangeness Enhancement}{16}{subsection.3.5.4}
 \contentsline {subsection}{\numberline {3.5.5}Jet Quenching}{17}{subsection.3.5.5}
-\contentsline {section}{\numberline {3.6}The Beam Energy Scan Program}{18}{section.3.6}
-\contentsline {chapter}{\numberline {4}Measurement of Transverse Energy}{20}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definition of Transverse Energy}{20}{section.4.1}
-\contentsline {section}{\numberline {4.2}$E_{T}$ Measurement with Calorimeters}{21}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Calorimeter}{21}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}$E_{T}$ from PHENIX Calorimetry}{22}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}$E_{T}$ Measurement with Tracking Detectors}{23}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Tracking and Particle Identification}{23}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{24}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Tracking Detectors in STAR}{25}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5}Data Analysis}{27}{chapter.5}
-\contentsline {subsection}{\numberline {5.0.1}STAR $p_{T}$ spectra}{27}{subsection.5.0.1}
-\contentsline {section}{\numberline {5.1}Extrapolation of Spectra}{28}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Boltzmann-Gibbs Blast Wave}{29}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Fitting Spectra to BGBW}{29}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Calculations from the Spectra}{29}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Calculation of $\frac {dE_{T}}{dy}$, $\frac {dE_{T}}{d\eta }$, $\frac {dN_{ch}}{dy}$, and $\frac {dN_{ch}}{d\eta }$}{30}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Corrections, Uncertainties, and Estimation of Total $E_{T}$}{30}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Lambdas Centralitiy Adjustments and $E_{T}$ Interpolations}{31}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Uncertainties}{31}{section.5.3}
-\contentsline {chapter}{\numberline {6}Results}{32}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion}{38}{chapter.7}
-\contentsline {chapter}{\numberline {8}Future Work}{39}{chapter.8}
-\contentsline {section}{\numberline {8.1}Goodness of Fit}{39}{section.8.1}
-\contentsline {section}{\numberline {8.2}Bjorken Energy Density Estimate}{39}{section.8.2}
-\contentsline {section}{\numberline {8.3}Asymmetric beams}{40}{section.8.3}
-\contentsline {chapter}{Bibliography}{41}{section*.34}
-\contentsline {chapter}{Appendices}{77}{section*.35}
-\contentsline {section}{\numberline {A}Kinematic Variables}{78}{section.Alph0.1}
-\contentsline {section}{\numberline {B}Results from BGBW Fits}{80}{section.Alph0.2}
+\contentsline {section}{\numberline {3.6}The Beam Energy Scan Program}{19}{section.3.6}
+\contentsline {chapter}{\numberline {4}Measurement of Transverse Energy}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Definition of Transverse Energy}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}$E_{T}$ Measurement with Calorimeters}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Calorimeter}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}$E_{T}$ from PHENIX Calorimetry}{23}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}$E_{T}$ Measurement with Tracking Detectors}{24}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Tracking and Particle Identification}{24}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Calculation of $\frac {dE_{T}}{d\eta }$ from $p_{T}$ spectra}{25}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Tracking Detectors in STAR}{26}{subsection.4.3.3}
+\contentsline {chapter}{\numberline {5}Data Analysis}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}STAR $p_{T}$ Spectra}{28}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Corrections and Systematic Uncertainties}{29}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Extrapolation of Spectra}{30}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Boltzmann-Gibbs Blast Wave}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Fitting Spectra to BGBW}{31}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Calculations from the Spectra}{32}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Calculation of $\frac {dE_{T}}{dy}$, $\frac {dE_{T}}{d\eta }$, $\frac {dN_{ch}}{dy}$, and $\frac {dN_{ch}}{d\eta }$}{32}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Assumptions, Estimation of Total $E_{T}$, and Uncertainties}{33}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Lambdas Centrality Adjustments and $E_{T}$ Interpolations}{34}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}Results}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}
+\contentsline {chapter}{\numberline {8}Future Work}{42}{chapter.8}
+\contentsline {section}{\numberline {8.1}Goodness of Fit}{42}{section.8.1}
+\contentsline {section}{\numberline {8.2}Bjorken Energy Density Estimate}{42}{section.8.2}
+\contentsline {section}{\numberline {8.3}Asymmetric beams}{43}{section.8.3}
+\contentsline {chapter}{Bibliography}{44}{section*.36}
+\contentsline {chapter}{Appendices}{81}{section*.37}
+\contentsline {section}{\numberline {A}Kinematic Variables}{82}{section.Alph0.1}
+\contentsline {section}{\numberline {B}Results from BGBW Fits}{84}{section.Alph0.2}

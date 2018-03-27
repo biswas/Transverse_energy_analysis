@@ -52,10 +52,13 @@ RHIC has the unique capability of colliding species at a range of energies spann
 Collision system & $\sqrt{s_{NN}}(GeV)$ \\ [0.5ex]
 \hline
 \hline
-p+p & 200, 500 \\
-d+Au & 200 \\
-Cu+Cu & 62, 200 \\
-Au+Au & 9, 20, 62, 130, 200 \\ [1ex]
+p+p & 200, 510 \\
+d+Au & 19.6, 39, 62.4, 200 \\
+Cu+Cu & 62.4 \\
+Cu+Au &  200 \\
+p+Au & 200 \\
+$^3$He+Au & 200 \\
+Au+Au & 7, 7.7, 9, 20, 62, 130, 200 \\ [1ex]
 \hline
 \end{tabular}
 \caption{Colliding species and associated collision energies at RHIC \cite{phdthesisnattrass}.}
@@ -66,7 +69,7 @@ Au+Au & 9, 20, 62, 130, 200 \\ [1ex]
 In general, any collision between two nuclei is not perfectly head-on. Some collisions are close to being head-on and are called central collisions. Some are glancing and are called peripheral collisions. %The amount by which a collision is central is quantitatively represented by a variable called centrality. 
 By convention, 0\% is the centrality of a perfectly head-on collision and 100\% is that of the least head-on, i.e., the most peripheral collision. More central collisions generally produce more particles \cite{Connors:2017ptx}.
 
-The centrality is estimated through a model-based correlation between $N_{ch}$ and the impact parameter, defined as the distance between the centers of the two nuclei at the time of their maximum overlap. The Monte Carlo based model, for instance, assumes that all nucleons travel in straight lines along the beam direction \cite{https://arxiv.org/pdf/1408.2549.pdf} and that they collide if they overlap \cite{https://www.annualreviews.org/doi/pdf/10.1146/annurev.nucl.57.090506.123020}. $N_{ch}$ is assumed to scale with the number of participants and the number of binary collisions. The distribution of this quantity is then fit to the data and the fraction of the overlap is estimated from the observed $N_{ch}$ value. 5\% of all collisions with the highest $N_{ch}$ values, for example, are then referred to as being 0-5\% central \cite{Connors:2017ptx}.
+The centrality is estimated through a model-based correlation between $N_{ch}$ and the impact parameter, defined as the distance between the centers of the two nuclei at the time of their maximum overlap. The Monte Carlo based model, for instance, assumes that all nucleons travel in straight lines along the beam direction \cite{Loizides:2014vua} and that they collide if they overlap \cite{Miller:2007ri}. $N_{ch}$ is assumed to scale with the number of participants and the number of binary collisions. The distribution of this quantity is then fit to the data and the fraction of the overlap is estimated from the observed $N_{ch}$ value. 5\% of all collisions with the highest $N_{ch}$ values, for example, are then referred to as being 0-5\% central \cite{Connors:2017ptx}.
 % In practice, each collision event is deducted to belong to a specific centrality bin. For instance, 0-5\% would be the centrality for an identified $N_{ch}$ value which would be the minimum charged particle multiplicity produced by at most 5\% of the total number of collisions. This identification of the $N_{ch}$ value is often acheived by using the a Glauber model \cite{Connors:2017ptx,Miller:2007ri}.
 
 Figure \ref{fig:mid-central_collision} illustrates the aftermath of a mid-central collision, i.e, a collision in which about half of the volume of each of the nuclei intersects the other.%............. add brief discussion of Glauber model and STAR centrality determination.............
@@ -126,7 +129,7 @@ In 1983, J.D. Bjorken\cite{PhysRevD.27.140} prescribed a formula to use the fina
 	\epsilon_{0} = \frac{1}{\tau_{0}A_{T}}\langle\frac{dE_{T}}{dy}\rangle,
 	\end{equation}
 where $\tau_{0}$ is the formation time of the QGP, $A_{T}$ is the transverse area of the intersection of the two nuclei, and $\langle\frac{dE_{T}}{dy}\rangle$ is the mean transverse energy per unit rapidity. $\tau_{0}$ is model-dependent and is normally estimated to be $~1 fm/c$. $A_{T}$ depends on the centrality of the collision and can be estimated using the Glauber model discussed earlier. $\langle\frac{dE_{T}}{dy}\rangle$ is found from the measurement of the transverse energy carried by the final state particles from the collision and is the central theme of this thesis. Details about it are in the following chapters.
-The estimate of the initial energy density from the Bjorken formula is an underestimate of the maximum energy density because the measured $dE_{T}/dy$ is an average over the system as it undergoes expansion and cooling. It can be compared with the QCD prediction of the critical energy density \cite{Adam:2139456} to check if the results from a collision imply the achievement of the critical physical condition required for the phase transition \cite{2005PrPNP..54..443J}.
+The estimate of the initial energy density from the Bjorken formula is an underestimate of the maximum energy density because the measured $dE_{T}/dy$ is an average over the system as it undergoes expansion and cooling. It can be compared with the QCD prediction of the critical energy density \cite{Adam:2139456} to check if the results from a collision imply the achievement of the critical physical condition required for the phase transition \cite{2005PrPNP..54..443J}. Experiments show that ultra-relativistic heavy ion collisions are capable of producing energy densities comfortably higher than those predicted by QCD \cite{Adam:2139456}.
 %Experiments reveal it to be about two orders of magnitude larger than that of low energy nuclear matter -- comfortably more than the deconfinement phase transition critical density predicted by lattice QCD \cite{2005PrPNP..54..443J}.
 
 \subsection{Elliptic Flow}
@@ -158,20 +161,28 @@ In the QGP, a quark and an antiquark can annihilate to produce a photon and a gl
 
 \subsection{Strangeness Enhancement}
 % http://shodhganga.inflibnet.ac.in/bitstream/10603/37674/11/11_chapter%202.pdf
-The interacting nuclei carry no net strangeness before colliding, and so an observation of strange and multi-strange particles after the collision can be used to probe the properties of the post-collision medium \cite{1742-6596-455-1-012005}. Strangeness can also be produced in hadron-hadron collisions. However, it is enhanced in nucleus-nucleus collisions \cite{Behera:2012eq}. This is interesting because it possibly indicates a restoration of chiral symmetry, which is a topic of ongoing research: in the zero baryon chemical potential limit, lattice QCD calculations reveal a transition of QCD matter between a phase with broken and one with restored chiral symmetry \cite{ refId0}. Chiral symmetry restoration has the implication of all the flavors of quarks losing their masses \cite{Sazdjian:2016hrz}. Hence, when chiral symmetry is restored, it is more feasible to produce strange quarks, for instance, which have higher masses than the light quarks, up and down, in a state of broken chiral symmetry. Chiral symmetry restoration is not the only possible reason for the production of many strange quarks. It is also feasible to produce strange quarks as long as the temperature of the system is above the strange flavor mass scale, and so it carries effects of the system temperature. This is exemplified by the ratio of the production of the strange kaons to that of the non-strange pions, which are the most abundant hadrons produced from nucleus-nucleus collisions: kaon yield increases more rapidly than pion yield does as the temperature increases% This can be shown mathematically by treating the system as a hadron gas in thermal and chemical equilibrium that follows the Bose-Einstein distribution, but it is beyond the scope of this thesis
- \cite{wong1994introduction}.
+The interacting nuclei carry no net strangeness before colliding, and so an observation of strange and multi-strange particles after the collision can be used to probe the properties of the post-collision medium \cite{1742-6596-455-1-012005}. Strangeness can also be produced in hadron-hadron collisions. However, it is enhanced in nucleus-nucleus collisions \cite{Behera:2012eq}. This is interesting because it possibly indicates a restoration of chiral symmetry, which is a topic of ongoing research: in the zero baryon chemical potential limit, lattice QCD calculations reveal a transition of QCD matter between a phase with broken and one with restored chiral symmetry \cite{ refId0}. Chiral symmetry restoration has the implication of all the flavors of quarks losing their masses \cite{Sazdjian:2016hrz}. Hence, when chiral symmetry is restored, it is more feasible to produce strange quarks, for instance, which have higher masses than the light quarks, up and down, in a state of broken chiral symmetry. Chiral symmetry restoration is not the only possible reason for the production of many strange quarks. It is also feasible to produce strange quarks as long as the temperature of the system is above the strange flavor mass scale, and so it carries effects of the system temperature. This is exemplified by the ratio of the production of the strange kaons to that of the non-strange pions, which are the most abundant hadrons produced from nucleus-nucleus collisions: kaon yield increases more rapidly than pion yield does as the temperature increases \cite{wong1994introduction}.% This can be shown mathematically by treating the system as a hadron gas in thermal and chemical equilibrium that follows the Bose-Einstein distribution, but it is beyond the scope of this thesis
+
 % https://arxiv.org/pdf/1612.04078.pdf
 % more: https://indico.cern.ch/event/555216/contributions/2414536/attachments/1394348/2125058/Bratkovskaya_WWND-2017.pdf
 
 \subsection{Jet Quenching}
 A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering. The products of the scatterings are called jets. %Ultimately, jets are what are recognized by a jet finder algorithm as jets. 
-In heavy-ion collisions, most hard scatterings are the results of two partons from the opposite nuclei scattering off each other. These partons can lose their momenta by strongly interacting with a medium made of deconfined quarks and gluons. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that do not, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium. %Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. 
+In heavy-ion collisions, most hard scatterings are the results of two partons from the opposite nuclei scattering off each other. These partons can lose their momenta by strongly interacting with the enhanced gluon fields in a QGP medium. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that do not, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium. %Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. 
 %%Formalisms developed to study jet quenching due to radiative and collisional energy losses are detailed in \cite{2015IJMPE..2430014Q}. 
 	\begin{figure}[h]
 	  \centering
 	  \includegraphics[width=4.5in]{figures/jets.PNG}
 	  \caption{Illustration of jet quenching. Two jets are produced from each of the hard scatterings occuring at the locations of the solid dots. Jets originating closer to the initial surface are more probable to propagate outside the medium, as shown. Jets opposite to them interact with the medium, losing their energy and resulting in bow front shock waves \cite{STOCKER2005121}.}\label{fig:jets}
 	\end{figure}
+	
+The nuclear modification factor, $R_{AA}$, is the ratio of the cross section for particle production in nucleus-nucleus collisions scaled by the number of binary nucleon-nucleon collisions divided by the cross section in proton-proton collisions.  It is shown in Fig. \ref{fig:Raa} for several different particle species, demonstrating substantial suppression of high momentum particles. This shows that the medium is nearly opaque to colored probes.
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=6.5in]{figures/Raa.PNG}
+	  \caption{$R_{AA}$ from PHENIX for direct photons \cite{Afanasiev:2012dg}, $\pi^0$ \cite{Adare:2008qa}, $\eta$ \cite{Adare:2010dc}, $\phi$ \cite{Adare:2015ema}, $p$ \cite{Adare:2013esx}, J/$\psi$ \cite{Adare:2006ns}, $\omega$ \cite{Adare:2011ht}, $e^{\pm}$ from heavy flavor decays \cite{Adare:2010de}, and $K^{\pm}$ \cite{Adare:2013esx}.  This demonstrates that colored probes (high-$p_{T}$ final state hadrons) are suppressed while electroweak probes (direct photons) are not at RHIC.}\label{fig:Raa}
+	\end{figure}
+	
 %The interaction of the jets in the QGP medium can be in the form of gluon bremsstrahlung or parton collision.
 
 \section{The Beam Energy Scan Program}
