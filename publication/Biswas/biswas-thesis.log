@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  26 MAR 2018 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  26 MAR 2018 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,6 +920,12 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 ]
@@ -1445,7 +1451,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <figures/1742-6596-761-1-012066.png, id=506, 469.755pt x 374.39874pt>
+] <figures/1742-6596-761-1-012066.png, id=511, 469.755pt x 374.39874pt>
 File: figures/1742-6596-761-1-012066.png Graphic file (type png)
 
 <use figures/1742-6596-761-1-012066.png>
@@ -1565,7 +1571,7 @@ color pop
 
 (./chapters/chapter-3.tex
 Chapter 3.
-<figures/RHIC_Layout.jpeg, id=532, 308.352pt x 224.5188pt>
+<figures/RHIC_Layout.jpeg, id=537, 308.352pt x 224.5188pt>
 File: figures/RHIC_Layout.jpeg Graphic file (type jpg)
 
 <use figures/RHIC_Layout.jpeg>
@@ -1735,7 +1741,7 @@ Package natbib Warning: Citation `https://arxiv.org/pdf/1408.2549.pdf' on page
 Package natbib Warning: Citation `https://www.annualreviews.org/doi/pdf/10.1146
 /annurev.nucl.57.090506.123020' on page 10 undefined on input line 69.
 
-<figures/flow_elliptic_init_v4.pdf, id=558, 421.575pt x 313.17pt>
+<figures/flow_elliptic_init_v4.pdf, id=563, 421.575pt x 313.17pt>
 File: figures/flow_elliptic_init_v4.pdf Graphic file (type pdf)
 
 <use figures/flow_elliptic_init_v4.pdf>
@@ -1746,7 +1752,7 @@ Package pdftex.def Info: figures/flow_elliptic_init_v4.pdf used on input line 7
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/part_spec_Vovchenko.png, id=562, 803.0pt x 166.6225pt>
+<figures/part_spec_Vovchenko.png, id=567, 803.0pt x 166.6225pt>
 File: figures/part_spec_Vovchenko.png Graphic file (type png)
 
 <use figures/part_spec_Vovchenko.png>
@@ -1757,7 +1763,7 @@ Package pdftex.def Info: figures/part_spec_Vovchenko.png used on input line 82.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/LightCone1_color-crop_NThesis.pdf, id=565, 517.935pt x 410.53375pt>
+<figures/LightCone1_color-crop_NThesis.pdf, id=570, 517.935pt x 410.53375pt>
 File: figures/LightCone1_color-crop_NThesis.pdf Graphic file (type pdf)
 
 <use figures/LightCone1_color-crop_NThesis.pdf>
@@ -1949,7 +1955,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/LightCone1_color-crop_NThesis.pdf>]
-<figures/v2Scaling1.png, id=736, 501.875pt x 372.39125pt>
+<figures/v2Scaling1.png, id=741, 501.875pt x 372.39125pt>
 File: figures/v2Scaling1.png Graphic file (type png)
 
 <use figures/v2Scaling1.png>
@@ -2039,7 +2045,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/v2Scaling2.png, id=750, 501.875pt x 349.305pt>
+<figures/v2Scaling2.png, id=755, 501.875pt x 349.305pt>
 File: figures/v2Scaling2.png Graphic file (type png)
 
 <use figures/v2Scaling2.png>
@@ -2049,7 +2055,7 @@ Package pdftex.def Info: figures/v2Scaling2.png used on input line 144.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/directPhotons.PNG, id=754, 852.18375pt x 374.14781pt>
+<figures/directPhotons.PNG, id=759, 852.18375pt x 374.14781pt>
 File: figures/directPhotons.PNG Graphic file (type png)
 
 <use figures/directPhotons.PNG>
@@ -2158,7 +2164,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/v2Scaling2.png>]
-<figures/jets.PNG, id=782, 354.57469pt x 344.78813pt>
+<figures/jets.PNG, id=787, 354.57469pt x 344.78813pt>
 File: figures/jets.PNG Graphic file (type png)
  <use figures/jets.PNG>
 Package pdftex.def Info: figures/jets.PNG used on input line 172.
@@ -2644,7 +2650,7 @@ Package epstopdf Info: Source file: <figures/TPCdEdxMod.eps>
 verted-to.pdf figures/TPCdEdxMod.eps>
 (epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
- <figures/TPCdEdxMod-eps-converted-to.pdf, id=875, 805.0075pt x 610.28pt>
+ <figures/TPCdEdxMod-eps-converted-to.pdf, id=880, 805.0075pt x 610.28pt>
 File: figures/TPCdEdxMod-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/TPCdEdxMod-eps-converted-to.pdf>
@@ -2761,7 +2767,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
 
-<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=898, 803.0pt x 452.
+Package natbib Warning: Citation `private communication with... ' on page 27 un
+defined on input line 5.
+
+
+<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=904, 803.0pt x 452.
 69125pt>
 File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
  png)
@@ -2769,11 +2779,7 @@ File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
 Package pdftex.def Info: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png
  used on input line 8.
 (pdftex.def)             Requested size: 469.75499pt x 264.83366pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[27
+ [27
 color push 0 g 0 G
 color pop
 
@@ -2824,11 +2830,16 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
-] [28
+color push 0 g 0 G
+color pop
+]
+[28
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2836,12 +2847,6 @@ color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -2862,15 +2867,11 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/../figures/PhysRevC-96-044904_pTSpectra_39.png (PNG copy)>]
-
-LaTeX Warning: Reference `app:fitResults' on page 29 undefined on input line 33
-.
-
-<figures/cent3_la_Au+Au_196.png, id=915, 698.61pt x 473.77pt>
+<figures/cent3_la_Au+Au_196.png, id=921, 698.61pt x 473.77pt>
 File: figures/cent3_la_Au+Au_196.png Graphic file (type png)
 
 <use figures/cent3_la_Au+Au_196.png>
-Package pdftex.def Info: figures/cent3_la_Au+Au_196.png used on input line 38.
+Package pdftex.def Info: figures/cent3_la_Au+Au_196.png used on input line 37.
 (pdftex.def)             Requested size: 325.215pt x 220.54655pt.
 
 
@@ -2919,6 +2920,8 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2940,122 +2943,119 @@ color pop
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 45.
+(hyperref)                removing `\begingroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 45.
+(hyperref)                removing `subscript' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 45.
+(hyperref)                removing `\endgroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 45.
+(hyperref)                removing `\@@over' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 45.
+(hyperref)                removing `\begingroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 45.
+(hyperref)                removing `subscript' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 45.
+(hyperref)                removing `\endgroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 45.
+(hyperref)                removing `\@@over' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\eta' on input line 45.
+(hyperref)                removing `\eta' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 45.
+(hyperref)                removing `\begingroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 45.
+(hyperref)                removing `subscript' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 45.
+(hyperref)                removing `\endgroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 45.
+(hyperref)                removing `\@@over' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 45.
+(hyperref)                removing `\begingroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 45.
+(hyperref)                removing `subscript' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 45.
+(hyperref)                removing `\endgroup' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 45.
+(hyperref)                removing `\@@over' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\eta' on input line 45.
+(hyperref)                removing `\eta' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
-
-
-LaTeX Warning: Reference `........' on page 30 undefined on input line 46.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 50.
+(hyperref)                removing `math shift' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 50.
+(hyperref)                removing `subscript' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 50.
+(hyperref)                removing `math shift' on input line 49.
 
 [30
 color push 0 g 0 G
@@ -3065,6 +3065,8 @@ color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3093,15 +3095,15 @@ color pop
  <./figures/cent3_la_Au+Au_196.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 79.
+(hyperref)                removing `subscript' on input line 78.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 78.
 
 ) [31
 color push 0 g 0 G
@@ -3139,7 +3141,7 @@ color pop
 
 (./chapters/chapter-6.tex
 Chapter 6.
-<figures/parallelCoordPlot_4Axes.png, id=935, 1675.2186pt x 792.0792pt>
+<figures/parallelCoordPlot_4Axes.png, id=942, 1675.2186pt x 792.0792pt>
 File: figures/parallelCoordPlot_4Axes.png Graphic file (type png)
 
 <use figures/parallelCoordPlot_4Axes.png>
@@ -3147,7 +3149,7 @@ Package pdftex.def Info: figures/parallelCoordPlot_4Axes.png used on input line
  6.
 (pdftex.def)             Requested size: 469.75499pt x 222.10698pt.
 
-<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=936, 700.6175pt x 47
+<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=943, 700.6175pt x 47
 5.7775pt>
 File: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png Graphic file (type 
 png)
@@ -3160,7 +3162,7 @@ used on input line 14.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=939, 700.6175pt x 47
+<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=946, 700.6175pt x 47
 5.7775pt>
 File: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png Graphic file (type 
 png)
@@ -3173,7 +3175,7 @@ used on input line 20.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=940, 700.6175pt x 4
+<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=947, 700.6175pt x 4
 75.7775pt>
 File: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png Graphic file (type
  png)
@@ -3186,7 +3188,7 @@ Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=941, 700.6175pt x 4
+<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=948, 700.6175pt x 4
 75.7775pt>
 File: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png Graphic file (type
  png)
@@ -3199,7 +3201,7 @@ Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=942, 700.6175pt x 474.
+<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=949, 700.6175pt x 474.
 77374pt>
 File: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png Graphic file (type pn
 g)
@@ -3212,7 +3214,7 @@ ed on input line 40.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=943, 700.6175pt x 474.77
+<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=950, 700.6175pt x 474.77
 374pt>
 File: figures/finalStacked/dETdyOverdNchdySumCent8s.png Graphic file (type png)
 
@@ -3225,7 +3227,7 @@ Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumCent8s.png used
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=944, 700.6175pt x 474
+<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=951, 700.6175pt x 474
 .77374pt>
 File: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png Graphic file (type p
 ng)
@@ -3238,7 +3240,7 @@ sed on input line 52.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=945, 700.6175pt x 474.7
+<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=952, 700.6175pt x 474.7
 7374pt>
 File: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png Graphic file (type png
 )
@@ -3250,7 +3252,7 @@ d on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/PHENIX_comparison2.png, id=946, 700.6175pt x 475.7775pt>
+<figures/PHENIX_comparison2.png, id=953, 700.6175pt x 475.7775pt>
 File: figures/PHENIX_comparison2.png Graphic file (type png)
 
 <use figures/PHENIX_comparison2.png>
@@ -5929,6 +5931,8 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -6203,7 +6207,17 @@ color pop
 :<+ back-matter/appendix-2.tex
 \openout2 = `back-matter/appendix-2.aux'.
 
-No file back-matter/appendix-2.tex.
+(./back-matter/appendix-2.tex) [80
+color push 0 g 0 G
+color pop
+
+
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
 :<-
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
@@ -6226,25 +6240,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B2B7F46D0DDCDDB210494D2ADD40B08C;3661.
-
-
-Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
-(rerunfilecheck)             Before: D0AC17AAFDE7D9D0593773BEF6C267DB;5474
-(rerunfilecheck)             After:  3098E8B8B651B952DC5FEBC83ABB9E48;5540.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: D6377FD030D846232D8390DADAE403BA;3727.
+Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
+(rerunfilecheck)             Checksum: 692FE4F90BEEAD86632AD1B99082F91E;5539.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 10044 strings out of 493046
- 153593 string characters out of 6137253
- 339658 words of memory out of 5000000
- 13045 multiletter control sequences out of 15000+600000
+ 10049 strings out of 493046
+ 153708 string characters out of 6137253
+ 339685 words of memory out of 5000000
+ 13046 multiletter control sequences out of 15000+600000
  17537 words of font info for 68 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  39i,12n,50p,1836b,540s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -6266,10 +6271,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb>
-Output written on biswas-thesis.pdf (87 pages, 3791704 bytes).
+Output written on biswas-thesis.pdf (88 pages, 3792081 bytes).
 PDF statistics:
- 1369 PDF objects out of 1440 (max. 8388607)
- 1151 compressed objects within 12 object streams
- 245 named destinations out of 1000 (max. 500000)
- 519 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1382 PDF objects out of 1440 (max. 8388607)
+ 1163 compressed objects within 12 object streams
+ 247 named destinations out of 1000 (max. 500000)
+ 527 words of extra memory for PDF output out of 10000 (max. 10000000)
 

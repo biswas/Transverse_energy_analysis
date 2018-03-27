@@ -10,6 +10,10 @@ A level-1 auxiliary file: chapters/chapter-2.aux
 A level-1 auxiliary file: chapters/chapter-3.aux
 A level-1 auxiliary file: chapters/chapter-4.aux
 A level-1 auxiliary file: chapters/chapter-5.aux
+White space in argument---line 5 of file chapters/chapter-5.aux
+ : \citation{private
+ :                   communication with... }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapters/chapter-6.aux
 A level-1 auxiliary file: chapters/chapter-7.aux
 A level-1 auxiliary file: chapters/chapter-8.aux
@@ -106,4 +110,4 @@ warning$ -- 3
 while$ -- 145
 width$ -- 0
 write$ -- 645
-(There were 6 error messages)
+(There were 7 error messages)

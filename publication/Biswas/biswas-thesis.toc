@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {5.1.2}Fitting Spectra to BGBW}{29}{subsection.5.1.2}
 \contentsline {section}{\numberline {5.2}Calculations from the Spectra}{29}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Calculation of $\frac {dE_{T}}{dy}$, $\frac {dE_{T}}{d\eta }$, $\frac {dN_{ch}}{dy}$, and $\frac {dN_{ch}}{d\eta }$}{30}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Corrections for Unidentified Particles and Estimation of Total $E_{T}$}{30}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Corrections, Uncertainties, and Estimation of Total $E_{T}$}{30}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Lambdas Centralitiy Adjustments and $E_{T}$ Interpolations}{31}{subsection.5.2.3}
 \contentsline {section}{\numberline {5.3}Uncertainties}{31}{section.5.3}
 \contentsline {chapter}{\numberline {6}Results}{32}{chapter.6}
@@ -43,3 +43,4 @@
 \contentsline {chapter}{Bibliography}{41}{section*.34}
 \contentsline {chapter}{Appendices}{77}{section*.35}
 \contentsline {section}{\numberline {A}Kinematic Variables}{78}{section.Alph0.1}
+\contentsline {section}{\numberline {B}Results from BGBW Fits}{80}{section.Alph0.2}

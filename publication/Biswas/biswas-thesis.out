@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Fitting Spectra to BGBW}{section.5.1}% 37
 \BOOKMARK [1][-]{section.5.2}{5.2 Calculations from the Spectra}{chapter.5}% 38
 \BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Calculation of dETdy, dETd, dNchdy, and dNchd}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Corrections for Unidentified Particles and Estimation of Total ET}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Corrections, Uncertainties, and Estimation of Total ET}{section.5.2}% 40
 \BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Lambdas Centralitiy Adjustments and ET Interpolations}{section.5.2}% 41
 \BOOKMARK [1][-]{section.5.3}{5.3 Uncertainties}{chapter.5}% 42
 \BOOKMARK [0][-]{chapter.6}{6 Results}{}% 43
@@ -49,3 +49,4 @@
 \BOOKMARK [0][-]{section*.34}{Bibliography}{}% 49
 \BOOKMARK [0][-]{section*.35}{Appendices}{}% 50
 \BOOKMARK [1][-]{section.Alph0.1}{A Kinematic Variables}{section*.35}% 51
+\BOOKMARK [1][-]{section.Alph0.2}{B Results from BGBW Fits}{section*.35}% 52
