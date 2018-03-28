@@ -1,4 +1,4 @@
-\backcite {phdthesisnattrass}{{viii}{(document)}{Doc-Start}}
+\backcite {McGlincheyPrivateCommunication}{{viii}{(document)}{Doc-Start}}
 \backcite {1742-6596-761-1-012066}{{ix}{(document)}{Doc-Start}}
 \backcite {doi:10.1093/ptep/ptu093}{{ix}{(document)}{Doc-Start}}
 \backcite {Connors:2017ptx}{{ix}{(document)}{Doc-Start}}
@@ -46,7 +46,7 @@
 \backcite {doi:10.1093/ptep/ptu093}{{8}{3.1}{figure.caption.14}}
 \backcite {1748-0221-3-08-S08001}{{9}{3.1}{figure.caption.14}}
 \backcite {FOKA2016154}{{10}{3.2}{section.3.2}}
-\backcite {phdthesisnattrass}{{10}{3.1}{table.caption.15}}
+\backcite {McGlincheyPrivateCommunication}{{10}{3.1}{table.caption.15}}
 \backcite {Connors:2017ptx}{{10}{3.2}{table.caption.15}}
 \backcite {Loizides:2014vua}{{10}{3.2}{table.caption.15}}
 \backcite {Miller:2007ri}{{10}{3.2}{table.caption.15}}
@@ -117,10 +117,10 @@
 \backcite {Tripathy:2017kwb}{{31}{5.2.1}{subsection.5.2.1}}
 \backcite {PhysRevC.96.044904}{{31}{5.2.1}{subsection.5.2.1}}
 \backcite {Tripathy:2017kwb}{{31}{5.2.1}{subsection.5.2.1}}
-\backcite {PhysRevC.96.044904}{{33}{5.3.2}{equation.5.3.2}}
-\backcite {PhysRevC.93.024901}{{35}{6}{figure.caption.30}}
-\backcite {PhysRevC.93.024901}{{37}{6}{figure.caption.36}}
-\backcite {PhysRevC.93.024901}{{44}{6.9}{figure.caption.37}}
+\backcite {PhysRevC.96.044904}{{34}{5.3.2}{equation.5.3.2}}
+\backcite {PhysRevC.93.024901}{{36}{6}{figure.caption.30}}
+\backcite {PhysRevC.93.024901}{{38}{6}{figure.caption.36}}
+\backcite {PhysRevC.93.024901}{{45}{6.9}{figure.caption.37}}
 \backcite {PhysRevC.93.024901}{{46}{7}{chapter.7}}
-\backcite {PhysRevC.93.024901}{{46}{7}{chapter.7}}
-\backcite {wong1994introduction}{{55}{A}{equation.Alph0.1.4}}
+\backcite {PhysRevC.93.024901}{{47}{7}{chapter.7}}
+\backcite {wong1994introduction}{{56}{A}{equation.Alph0.1.4}}

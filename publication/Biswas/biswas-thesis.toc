@@ -30,13 +30,13 @@
 \contentsline {section}{\numberline {5.2}Extrapolation of Spectra}{31}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Boltzmann-Gibbs Blast Wave}{31}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Fitting Spectra to BGBW}{31}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Calculations from the Spectra}{32}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Calculation of $\frac {dE_{T}}{dy}$, $\frac {dE_{T}}{d\eta }$, $\frac {dN_{ch}}{dy}$, and $\frac {dN_{ch}}{d\eta }$}{32}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.3}Calculations from the Spectra}{33}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Calculation of $\frac {dE_{T}}{dy}$, $\frac {dE_{T}}{d\eta }$, $\frac {dN_{ch}}{dy}$, and $\frac {dN_{ch}}{d\eta }$}{33}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Assumptions, Estimation of Total $E_{T}$, and Uncertainties}{33}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Lambdas Centrality Adjustments and $E_{T}$ Interpolations}{34}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}Results}{35}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{45}{chapter.7}
-\contentsline {chapter}{Bibliography}{47}{section*.38}
-\contentsline {chapter}{Appendices}{54}{section*.39}
-\contentsline {section}{\numberline {A}Kinematic Variables}{55}{section.Alph0.1}
-\contentsline {section}{\numberline {B}Results from BGBW Fits}{57}{section.Alph0.2}
+\contentsline {subsection}{\numberline {5.3.3}Lambda Centrality Adjustments and $E_{T}$ Interpolations}{34}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}Results}{36}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{46}{chapter.7}
+\contentsline {chapter}{Bibliography}{48}{section*.38}
+\contentsline {chapter}{Appendices}{55}{section*.39}
+\contentsline {section}{\numberline {A}Kinematic Variables}{56}{section.Alph0.1}
+\contentsline {section}{\numberline {B}Results from BGBW Fits}{58}{section.Alph0.2}

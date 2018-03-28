@@ -62,30 +62,30 @@ You're missing a field name---line 137 of file references-Biswas.bib
  : %      eprint         = "1304.3410",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 602 of file references-Biswas.bib
+I was expecting a `,' or a `}'---line 609 of file references-Biswas.bib
  : 
  : publisher = WORLD SCIENTIFIC
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 809 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 816 of file references-Biswas.bib
  : %%%\ @phdthesis 
  :                 bit undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 810 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 817 of file references-Biswas.bib
  : 
  : @phdthesis{phdthesisnattrass,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 815 of file references-Biswas.bib
+You're missing a field name---line 822 of file references-Biswas.bib
  : 
  : %  address      = {The address of the publisher},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 820 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 827 of file references-Biswas.bib
  : %%%\ Bethe Bloch formula @misc 
  :                                but undefined so using @article
 I'm skipping whatever remains of this entry
-I was expecting a `{' or a `('---line 821 of file references-Biswas.bib
+I was expecting a `{' or a `('---line 828 of file references-Biswas.bib
  : 
  : @misc{bethe1953passage,
 (Error may have been on previous line)
@@ -100,45 +100,45 @@ Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 64 entries,
+You've used 65 entries,
             3411 wiz_defined-function locations,
-            1660 strings with 134990 characters,
-and the built_in function-call counts, 49223 in all, are:
-= -- 2692
-> -- 1859
-< -- 256
-+ -- 1620
-- -- 466
-* -- 6895
-:= -- 5253
-add.period$ -- 64
-call.type$ -- 64
-change.case$ -- 265
-chr.to.int$ -- 62
-cite$ -- 64
-duplicate$ -- 4352
-empty$ -- 4045
-format.name$ -- 1102
-if$ -- 9250
+            1663 strings with 135068 characters,
+and the built_in function-call counts, 49575 in all, are:
+= -- 2714
+> -- 1866
+< -- 258
++ -- 1624
+- -- 468
+* -- 6929
+:= -- 5303
+add.period$ -- 65
+call.type$ -- 65
+change.case$ -- 269
+chr.to.int$ -- 63
+cite$ -- 65
+duplicate$ -- 4386
+empty$ -- 4078
+format.name$ -- 1107
+if$ -- 9314
 int.to.chr$ -- 3
-int.to.str$ -- 65
-missing$ -- 678
-newline$ -- 207
-num.names$ -- 192
-pop$ -- 805
+int.to.str$ -- 66
+missing$ -- 682
+newline$ -- 210
+num.names$ -- 195
+pop$ -- 820
 preamble$ -- 1
-purify$ -- 256
+purify$ -- 260
 quote$ -- 0
-skip$ -- 2047
+skip$ -- 2059
 stack$ -- 0
-substring$ -- 1558
-swap$ -- 3605
-text.length$ -- 214
+substring$ -- 1569
+swap$ -- 3622
+text.length$ -- 215
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 380
+type$ -- 386
 warning$ -- 0
-while$ -- 183
+while$ -- 185
 width$ -- 0
-write$ -- 720
+write$ -- 728
 (There were 14 error messages)
