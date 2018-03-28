@@ -24,7 +24,7 @@ Double_t collEnArr[5] = {7.7,11.5,19.6,27,39};
 for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 {
 	TCanvas *c1 = new TCanvas();
-	TLegend* leg = new TLegend(0.1,0.7,0.3,0.9);
+	TLegend* leg = new TLegend(0.1,0.6,0.3,0.9);
 	for(int centInd = 0; centInd < CENTS; centInd++)
 	{
 		if (graphInd == 0)
