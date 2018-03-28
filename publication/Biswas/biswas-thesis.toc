@@ -41,6 +41,6 @@
 \contentsline {section}{\numberline {8.2}Bjorken Energy Density Estimate}{43}{section.8.2}
 \contentsline {section}{\numberline {8.3}Asymmetric beams}{44}{section.8.3}
 \contentsline {chapter}{Bibliography}{45}{section*.35}
-\contentsline {chapter}{Appendices}{82}{section*.36}
-\contentsline {section}{\numberline {A}Kinematic Variables}{83}{section.Alph0.1}
-\contentsline {section}{\numberline {B}Results from BGBW Fits}{85}{section.Alph0.2}
+\contentsline {chapter}{Appendices}{52}{section*.36}
+\contentsline {section}{\numberline {A}Kinematic Variables}{53}{section.Alph0.1}
+\contentsline {section}{\numberline {B}Results from BGBW Fits}{55}{section.Alph0.2}

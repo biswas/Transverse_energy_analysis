@@ -16,10 +16,11 @@ A level-1 auxiliary file: chapters/chapter-8.aux
 A level-1 auxiliary file: chapters/chapter-9.aux
 A level-1 auxiliary file: chapters/chapter-10.aux
 A level-1 auxiliary file: back-matter.aux
-The style file: apalike.bst
+The style file: apsrev.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
 A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references-Biswas.bib
 You're missing a field name---line 13 of file references-Biswas.bib
  :       
@@ -97,52 +98,47 @@ Reallocated name_tok (elt_size=4) to 40000 items from 20000.
 Reallocated name_sep_char (elt_size=1) to 40000 items from 20000.
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
-Warning--empty journal in bethe1953passage
-Warning--you've exceeded 20000, the global-string-size, for entry PhysRevLett.109.152303
-while executing--line 1098 of file apalike.bst
-*Please notify the bibstyle designer*
-Warning--empty journal in Connors:2017ptx
-Warning--empty journal in phdthesisnattrass
-Warning--empty year in YePrivateCommunication
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 64 entries,
-            1935 wiz_defined-function locations,
-            913 strings with 126668 characters,
-and the built_in function-call counts, 225306 in all, are:
-= -- 15328
-> -- 33288
-< -- 43
-+ -- 13260
-- -- 13248
-* -- 27996
-:= -- 43199
-add.period$ -- 197
+            3411 wiz_defined-function locations,
+            1660 strings with 134990 characters,
+and the built_in function-call counts, 49222 in all, are:
+= -- 2689
+> -- 1859
+< -- 256
++ -- 1620
+- -- 466
+* -- 6882
+:= -- 5251
+add.period$ -- 64
 call.type$ -- 64
-change.case$ -- 6931
+change.case$ -- 264
 chr.to.int$ -- 62
-cite$ -- 68
-duplicate$ -- 902
-empty$ -- 1804
-format.name$ -- 13338
-if$ -- 37181
+cite$ -- 64
+duplicate$ -- 4356
+empty$ -- 4052
+format.name$ -- 1102
+if$ -- 9254
 int.to.chr$ -- 3
-int.to.str$ -- 0
-missing$ -- 65
-newline$ -- 327
+int.to.str$ -- 65
+missing$ -- 678
+newline$ -- 207
 num.names$ -- 192
-pop$ -- 6787
+pop$ -- 816
 preamble$ -- 1
-purify$ -- 6934
+purify$ -- 256
 quote$ -- 0
-skip$ -- 694
+skip$ -- 2051
 stack$ -- 0
-substring$ -- 1915
-swap$ -- 69
-text.length$ -- 1
+substring$ -- 1558
+swap$ -- 3596
+text.length$ -- 214
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 380
-warning$ -- 4
-while$ -- 189
+warning$ -- 0
+while$ -- 183
 width$ -- 0
-write$ -- 836
+write$ -- 717
 (There were 14 error messages)

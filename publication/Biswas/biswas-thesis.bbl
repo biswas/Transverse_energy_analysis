@@ -1,1442 +1,594 @@
-\begin{thebibliography}{}
-
-\bibitem[Adam et~al., 2016]{Adam:2139456}
-Adam, J., Adamova, D., Aggarwal, M.~M., Aglieri~Rinella, G., Agnello, M.,
-  Agrawal, N., Ahammed, Z., Ahmad, S., Ahn, S.~U., Aiola, S., Akindinov, A.,
-  Alam, S.~N., Silva De~Albuquerque, D., Aleksandrov, D., Alessandro, B.,
-  Alexandre, D., Alfaro~Molina, J.~R., Alici, A., Alkin, A., Millan~Almaraz,
-  J.~R., Alme, J., Alt, T., Altinpinar, S., Altsybeev, I., Alves Garcia~Prado,
-  C., Andrei, C., Andronic, A., Anguelov, V., Anticic, T., Antinori, F.,
-  Antonioli, P., Aphecetche, L.~B., Appelshaeuser, H., Arcelli, S., Arnaldi,
-  R., Arnold, O.~W., Arsene, I.~C., Arslandok, M., Audurier, B., Augustinus,
-  A., Averbeck, R.~P., Azmi, M.~D., Badala, A., Baek, Y.~W., Bagnasco, S.,
-  Bailhache, R.~M., Bala, R., Balasubramanian, S., Baldisseri, A., Baral,
-  R.~C., Barbano, A.~M., Barbera, R., Barile, F., Barnafoldi, G.~G., Barnby,
-  L.~S., Ramillien~Barret, V., Bartalini, P., Barth, K., Bartke, J.~G.,
-  Bartsch, E., Basile, M., Bastid, N., Basu, S., Bathen, B., Batigne, G.,
-  Batista~Camejo, A., Batyunya, B., Batzing, P.~C., Bearden, I.~G., Beck, H.,
-  Bedda, C., Behera, N.~K., Belikov, I., Bellini, F., Bello~Martinez, H.,
-  Bellwied, R., Belmont~Iii, R.~J., Belmont~Moreno, E., Belyaev, V., Bencedi,
-  G., Beole, S., Berceanu, I., Bercuci, A., Berdnikov, Y., Berenyi, D.,
-  Bertens, R.~A., Berzano, D., Betev, L., Bhasin, A., Bhat, I.~R., Bhati,
-  A.~K., Bhattacharjee, B., Bhom, J., Bianchi, L., Bianchi, N., Bianchin, C.,
-  Bielcik, J., Bielcikova, J., Bilandzic, A., Biro, G., Biswas, R., Biswas, S.,
-  Bjelogrlic, S., Blair, J.~T., Blau, D., Blume, C., Bock, F., Bogdanov, A.,
-  Boggild, H., Boldizsar, L., Bombara, M., Book, J.~H., Borel, H., Borissov,
-  A., Borri, M., Bossu, F., Botta, E., Bourjau, C., Braun-Munzinger, P.,
-  Bregant, M., Breitner, T.~G., Broker, T.~A., Browning, T.~A., Broz, M.,
-  Brucken, E.~J., Bruna, E., Bruno, G.~E., Budnikov, D., Buesching, H.,
-  Bufalino, S., Buncic, P., Busch, O., Buthelezi, E.~Z., Bashir~Butt, J.,
-  Buxton, J.~T., Cabala, J., Caffarri, D., Cai, X., Caines, H.~L., Calero~Diaz,
-  L., Caliva, A., Calvo~Villar, E., Camerini, P., Carena, F., Carena, W.,
-  Carnesecchi, F., Castillo~Castellanos, J.~E., Castro, A.~J., Casula, E.
-  A.~R., Ceballos~Sanchez, C., Cepila, J., Cerello, P., Cerkala, J., Chang, B.,
-  Chapeland, S., Chartier, M., Charvet, J.-L.~F., Chattopadhyay, S.,
-  Chattopadhyay, S., Chauvin, A., Chelnokov, V., Cherney, M.~G., Cheshkov,
-  C.~V., Cheynis, B., Chibante~Barroso, V.~M., Dobrigkeit~Chinellato, D., Cho,
-  S., Chochula, P., Choi, K., Chojnacki, M., Choudhury, S., Christakoglou, P.,
-  Christensen, C.~H., Christiansen, P., Chujo, T., Chung, S.-U., Cicalo, C.,
-  Cifarelli, L., Cindolo, F., Cleymans, J. W.~A., Colamaria, F.~F., Colella,
-  D., Collu, A., Colocci, M., Conesa~Balbastre, G., Conesa Del~Valle, Z.,
-  Connors, M.~E., Contreras~Nuno, J.~G., Cormier, T.~M., Corrales~Morales, Y.,
-  Cortes~Maldonado, I., Cortese, P., Cosentino, M.~R., Costa, F., Crochet, P.,
-  Cruz~Albino, R., Cuautle~Flores, E., Cunqueiro~Mendez, L., Dahms, T.,
-  Dainese, A., Danisch, M.~C., Danu, A., Das, D., Das, I., Das, S., Dash,
-  A.~K., Dash, S., De, S., De~Caro, A., De~Cataldo, G., De~Conti, C.,
-  De~Cuveland, J., De~Falco, A., De~Gruttola, D., De~Marco, N., De~Pasquale,
-  S., Deisting, A., Deloff, A., Denes, E.~S., Deplano, C., Dhankher, P.,
-  Di~Bari, D., Di~Mauro, A., Di~Nezza, P., Diaz~Corchero, M.~A., Dietel, T.,
-  Dillenseger, P., Divia, R., Djuvsland, O., Dobrin, A.~F., Domenicis~Gimenez,
-  D., Donigus, B., Dordic, O., Drozhzhova, T., Dubey, A.~K., Dubla, A.,
-  Ducroux, L., Dupieux, P., Ehlers~Iii, R.~J., Elia, D., Endress, E., Engel,
-  H., Epple, E., Erazmus, B.~E., Erdemir, I., Erhardt, F., Espagnon, B.,
-  Estienne, M.~D., Esumi, S., Eum, J., Evans, D., Evdokimov, S., Eyyubova, G.,
-  Fabbietti, L., Fabris, D., Faivre, J., Fantoni, A., Fasel, M., Feldkamp, L.,
-  Feliciello, A., Feofilov, G., Ferencei, J., Fernandez~Tellez, A.,
-  Gonzalez~Ferreiro, E., Ferretti, A., Festanti, A., Feuillard, V. J.~G.,
-  Figiel, J., Araujo Silva~Figueredo, M., Filchagin, S., Finogeev, D., Fionda,
-  F., Fiore, E.~M., Fleck, M.~G., Floris, M., Foertsch, S.~V., Foka, P., Fokin,
-  S., Fragiacomo, E., Francescon, A., Frankenfeld, U.~M., Fronze, G.~G., Fuchs,
-  U., Furget, C., Furs, A., Fusco~Girard, M., Gaardhoeje, J.~J., Gagliardi, M.,
-  Gago~Medina, A.~M., Gallio, M., Gangadharan, D.~R., Ganoti, P., Gao, C.,
-  Garabatos~Cuadrado, J., Garcia-Solis, E.~J., Gargiulo, C., Gasik, P.~J.,
-  Gauger, E.~F., Germain, M., Gheata, M., Ghosh, P., Ghosh, S.~K., Gianotti,
-  P., Giubellino, P., Giubilato, P., Gladysz-Dziadus, E., Glassel, P.,
-  Gomez~Coral, D.~M., Gomez~Ramirez, A., Sanchez~Gonzalez, A., Gonzalez, V.,
-  Gonzalez~Zamora, P., Gorbunov, S., Gorlich, L.~M., Gotovac, S., Grabski, V.,
-  Grachov, O.~A., Graczykowski, L.~K., Graham, K.~L., Grelli, A., Grigoras,
-  A.~G., Grigoras, C., Grigoryev, V., Grigoryan, A., Grigoryan, S., Grynyov,
-  B., Grion, N., Gronefeld, J.~M., Grosse-Oetringhaus, J.~F., Grosso, R.,
-  Guber, F., Guernane, R., Guerzoni, B., Gulbrandsen, K.~H., Gunji, T., Gupta,
-  A., Gupta, R., Haake, R., Haaland, O.~S., Hadjidakis, C.~M., Haiduc, M.,
-  Hamagaki, H., Hamar, G., Hamon, J.~C., Harris, J.~W., Harton, A.~V.,
-  Hatzifotiadou, D., Hayashi, S., Heckel, S.~T., Hellbar, E., Helstrup, H.,
-  Herghelegiu, A.~I., Herrera~Corral, G.~A., Hess, B.~A., Hetland, K.~F.,
-  Hillemanns, H., Hippolyte, B., Horak, D., Hosokawa, R., Hristov, P.~Z.,
-  Humanic, T., Hussain, N., Hussain, T., Hutter, D., Hwang, D.~S., Ilkaev, R.,
-  Inaba, M., Incani, E., Ippolitov, M., Irfan, M., Ivanov, M., Ivanov, V.,
-  Izucheev, V., Jacazio, N., Jacobs, P.~M., Jadhav, M.~B., Jadlovska, S.,
-  Jadlovsky, J., Jahnke, C., Jakubowska, M.~J., Jang, H.~J., Janik, M.~A.,
-  Pahula~Hewage, S., Jena, C., Jena, S., Jimenez~Bustamante, R.~T., Jones,
-  P.~G., Jusko, A., Kalinak, P., Kalweit, A.~P., Kamin, J.~A., Kang, J.~H.,
-  Kaplin, V., Kar, S., Karasu~Uysal, A., Karavichev, O., Karavicheva, T.,
-  Karayan, L., Karpechev, E., Kebschull, U.~W., Keidel, R., Keijdener, D.~L.,
-  Keil, M., Khan, M.~M., Khan, P., Khan, S.~A., Khanzadeev, A., Kharlov, Y.,
-  Kileng, B., Kim, D.~W., Kim, D.~J., Kim, D., Kim, H., Kim, J., Kim, M., Kim,
-  S.~Y., Kim, T., Kirsch, S., Kisel, I., Kiselev, S., Kisiel, A.~R., Kiss, G.,
-  Klay, J.~L., Klein, C., Klein, J., Klein-Boesing, C., Klewin, S., Kluge, A.,
-  Knichel, M.~L., Knospe, A.~G., Kobdaj, C., Kofarago, M., Kollegger, T.,
-  Kolozhvari, A., Kondratev, V., Kondratyeva, N., Kondratyuk, E., Konevskikh,
-  A., Kopcik, M., Kostarakis, P., Kour, M., Kouzinopoulos, C., Kovalenko, O.,
-  Kovalenko, V., Kowalski, M., Koyithatta~Meethaleveedu, G., Kralik, I.,
-  Kravcakova, A., Krivda, M., Krizek, F., Kryshen, E., Krzewicki, M., Kubera,
-  A.~M., Kucera, V., Kuhn, C.~C., Kuijer, P.~G., Kumar, A., Kumar, J., Kumar,
-  L., Kumar, S., Kurashvili, P., Kurepin, A., Kurepin, A., Kuryakin, A., Kweon,
-  M.~J., Kwon, Y., La~Pointe, S.~L., La~Rocca, P., Ladron De~Guevara, P.,
-  Lagana~Fernandes, C., Lakomov, I., Langoy, R., Lapidus, K., Lara~Martinez,
-  C.~E., Lardeux, A.~X., Lattuca, A., Laudi, E., Lea, R., Leardini, L., Lee,
-  G.~R., Lee, S., Lehas, F., Lemmon, R.~C., Lenti, V., Leogrande, E.,
-  Leon~Monzon, I., Leon~Vargas, H., Leoncino, M., Levai, P., Li, S., Li, X.,
-  Lien, J.~A., Lietava, R., Lindal, S., Lindenstruth, V., Lippmann, C., Lisa,
-  M.~A., Ljunggren, H.~M., Lodato, D.~F., Lonne, P.-I., Loginov, V., Loizides,
-  C., Lopez, X.~B., Lopez~Torres, E., Lowe, A.~J., Luettig, P.~J., Lunardon,
-  M., Luparello, G., Lutz, T.~H., Maevskaya, A., Mager, M., Mahajan, S.,
-  Mahmood, S.~M., Maire, A., Majka, R.~D., Malaev, M., Maldonado~Cervantes,
-  I.~A., Malinina, L., Mal'Kevich, D., Malzacher, P., Mamonov, A., Manko, V.,
-  Manso, F., Manzari, V., Marchisone, M., Mares, J., Margagliotti, G.~V.,
-  Margotti, A., Margutti, J., Marin, A.~M., Markert, C., Marquard, M., Martin,
-  N.~A., Martin~Blanco, J., Martinengo, P., Martinez~Hernandez, M.~I.,
-  Martinez-Garcia, G., Martinez~Pedreira, M., Mas, A. J.-M., Masciocchi, S.,
-  Masera, M., Masoni, A., Mastroserio, A., Matyja, A.~T., Mayer, C., Mazer,
-  J.~A., Mazzoni, A.~M., Mcdonald, D., Meddi, F., Melikyan, Y., Menchaca-Rocha,
-  A.~A., Meninno, E., Mercado-Perez, J., Meres, M., Miake, Y., Mieskolainen,
-  M.~M., Mikhaylov, K., Milano, L., Milosevic, J., Mischke, A., Mishra, A.~N.,
-  Miskowiec, D.~C., Mitra, J., Mitu, C.~M., Mohammadi, N., Mohanty, B., Molnar,
-  L., Montano~Zetina, L.~M., Montes~Prado, E., Moreira De~Godoy, D.~A.,
-  Perez~Moreno, L.~A., Moretto, S., Morreale, A., Morsch, A., Muccifora, V.,
-  Mudnic, E., Muhlheim, D.~M., Muhuri, S., Mukherjee, M., Mulligan, J.~D.,
-  Gameiro~Munhoz, M., Munzer, R.~H., Murakami, H., Murray, S., Musa, L.,
-  Musinsky, J., Naik, B., Nair, R., Nandi, B.~K., Nania, R., Nappi, E., Naru,
-  M.~U., Ferreira Natal Da~Luz, P.~H., Nattrass, C., Rosado~Navarro, S., Nayak,
-  K., Nayak, R., Nayak, T.~K., Nazarenko, S., Nedosekin, A., Nellen, L., Ng,
-  F., Nicassio, M., Niculescu, M., Niedziela, J., Nielsen, B.~S., Nikolaev, S.,
-  Nikulin, S., Nikulin, V., Noferini, F., Nomokonov, P., Nooren, G.,
-  Cabanillas~Noris, J.~C., Norman, J., Nyanin, A., Nystrand, J.~I., Oeschler,
-  H.~O., Oh, S., Oh, S.~K., Ohlson, A.~E., Okatan, A., Okubo, T., Olah, L.,
-  Oleniacz, J., Oliveira Da~Silva, A.~C., Oliver, M.~H., Onderwaater, J.,
-  Oppedisano, C., Orava, R., Oravec, M., Ortiz~Velasquez, A., Oskarsson, A.
-  N.~E., Otwinowski, J.~T., Oyama, K., Ozdemir, M., Pachmayer, Y.~C., Pagano,
-  D., Pagano, P., Paic, G., Pal, S.~K., Pan, J., Pandey, A.~K., Papikyan, V.,
-  Pappalardo, G., Pareek, P., Park, W., Parmar, S., Passfeld, A., Paticchio,
-  V., Patra, R.~N., Paul, B., Pei, H., Peitzmann, T., Pereira Da~Costa, H.
-  D.~A., Peresunko, D.~Y., Perez~Lara, C.~E., Perez~Lezama, E., Peskov, V.,
-  Pestov, Y., Petracek, V., Petrov, V., Petrovici, M., Petta, C., Piano, S.,
-  Pikna, M., Pillot, P., Ozelin De Lima~Pimentel, L., Pinazza, O., Pinsky, L.,
-  Piyarathna, D., Ploskon, M.~A., Planinic, M., Pluta, J.~M., Pochybova, S.,
-  Podesta~Lerma, P. L.~M., Poghosyan, M., Polishchuk, B., Poljak, N.,
-  Poonsawat, W., Pop, A., Porteboeuf, S.~J., Porter, R.~J., Pospisil, J.,
-  Prasad, S.~K., Preghenella, R., Prino, F., Pruneau, C.~A., Pshenichnov, I.,
-  Puccio, M., Puddu, G., Pujahari, P.~R., Punin, V., Putschke, J.~H., Qvigstad,
-  H., Rachevski, A., Raha, S., Rajput, S., Rak, J., Rakotozafindrabe, A.~M.,
-  Ramello, L., Rami, F., Raniwala, R., Raniwala, S., Rasanen, S.~S., Rascanu,
-  B.~T., Rathee, D., Read, K.~F., Redlich, K., Reed, R.~J., Rehman, A.~U.,
-  Reichelt, P.~S., Reidt, F., Ren, X., Renfordt, R. A.~E., Reolon, A.~R.,
-  Reshetin, A., Reygers, K.~J., Riabov, V., Ricci, R.~A., Richert, T. O.~H.,
-  Richter, M.~R., Riedler, P., Riegler, W., Riggi, F., Ristea, C.-L., Rocco,
-  E., Rodriguez~Cahuantzi, M., Rodriguez~Manso, A., Roeed, K., Rogochaya, E.,
-  Rohr, D.~M., Roehrich, D., Ronchetti, F., Ronflette, L., Rosnet, P., Rossi,
-  A., Roukoutakis, F., Roy, A., Roy, C.~S., Roy, P.~K., Rubio~Montero, A.~J.,
-  Rui, R., Russo, R., Di~Ruzza, B., Ryabinkin, E., Ryabov, Y., Rybicki, A.,
-  Saarinen, S., Sadhu, S., Sadovskiy, S., Safarik, K., Sahlmuller, B., Sahoo,
-  P., Sahoo, R., Sahoo, S., Sahu, P.~K., Saini, J., Sakai, S., Saleh, M.~A.,
-  Salzwedel, J. S.~N., Sambyal, S.~S., Samsonov, V., Sandor, L., Sandoval, A.,
-  Sano, M., Sarkar, D., Sarkar, N., Sarma, P., Scapparone, E., Scarlassara, F.,
-  Schiaua, C.~C., Schicker, R.~M., Schmidt, C.~J., Schmidt, H.~R., Schuchmann,
-  S., Schukraft, J., Schulc, M., Schutz, Y.~R., Schwarz, K.~E., Schweda, K.~O.,
-  Scioli, G., Scomparin, E., Scott, R.~M., Sefcik, M., Seger, J.~E., Sekiguchi,
-  Y., Sekihata, D., Selyuzhenkov, I., Senosi, K., Senyukov, S.,
-  Serradilla~Rodriguez, E., Sevcenco, A., Shabanov, A., Shabetai, A., Shadura,
-  O., Shahoyan, R., Shahzad, M.~I., Shangaraev, A., Sharma, A., Sharma, M.,
-  Sharma, M., Sharma, N., Sheikh, A.~I., Shigaki, K., Shou, Q., Shtejer~Diaz,
-  K., Sibiryak, Y., Siddhanta, S., Sielewicz, K.~M., Siemiarczuk, T.,
-  Silvermyr, D. O.~R., Silvestre, C.~M., Simatovic, G., Simonetti, G.,
-  Singaraju, R.~N., Singh, R., Singha, S., Singhal, V., Sinha, B.,
-  Sarkar~Sinha, T., Sitar, B., Sitta, M., Skaali, B., Slupecki, M., Smirnov,
-  N., Snellings, R., Snellman, T.~W., Song, J., Song, M., Song, Z., Soramel,
-  F., Sorensen, S.~P., Derradi De~Souza, R., Sozzi, F., Spacek, M., Spiriti,
-  E., Sputowska, I.~A., Spyropoulou-Stassinaki, M., Stachel, J., Stan, I.,
-  Stankus, P., Stenlund, E.~A., Steyn, G.~F., Stiller, J.~H., Stocco, D.,
-  Strmen, P., Alarcon Do Passo~Suaide, A., Sugitate, T., Suire, C.~P.,
-  Suleymanov, M. K.~O., Suljic, M., Sultanov, R., Sumbera, M., Sumowidagdo, S.,
-  Szabo, A., Szanto De~Toledo, A., Szarka, I., Szczepankiewicz, A., Szymanski,
-  M.~P., Tabassam, U., Takahashi, J., Tambave, G.~J., Tanaka, N., Tarhini, M.,
-  Tariq, M., Tarzila, M.-G., Tauro, A., Tejeda~Munoz, G., Telesca, A.,
-  Terasaki, K., Terrevoli, C., Teyssier, B., Thaeder, J.~M., Thakur, D.,
-  Thomas, D., Tieulent, R.~N., Tikhonov, A., Timmins, A.~R., Toia, A., Trogolo,
-  S., Trombetta, G., Trubnikov, V., Trzaska, W.~H., Tsuji, T., Tumkin, A.,
-  Turrisi, R., Tveter, T.~S., Ullaland, K., Uras, A., Usai, G., Utrobicic, A.,
-  Vala, M., Valencia~Palomo, L., Vallero, S., Van Der~Maarel, J., Van~Hoorne,
-  J.~W., Van~Leeuwen, M., Vanat, T., Vande~Vyvre, P., Varga, D., Diozcora
-  Vargas~Trevino, A., Vargyas, M., Varma, R., Vasileiou, M., Vasiliev, A.,
-  Vauthier, A., Vazquez~Doce, O., Vechernin, V., Veen, A.~M., Veldhoen, M.,
-  Velure, A., Vercellin, E., Vergara~Limon, S., Vernet, R., Verweij, M.,
-  Vickovic, L., Viinikainen, J.~S., Vilakazi, Z., Villalobos~Baillie, O.,
-  Villatoro~Tello, A., Vinogradov, A., Vinogradov, L., Vinogradov, Y., Virgili,
-  T., Vislavicius, V., Viyogi, Y., Vodopyanov, A., Volkl, M.~A., Voloshin, K.,
-  Voloshin, S., Volpe, G., Von~Haller, B., Vorobyev, I., Vranic, D., Vrlakova,
-  J., Vulpescu, B., Wagner, B., Wagner, J., Wang, H., Wang, M., Watanabe, D.,
-  Watanabe, Y., Weber, M., Weber, S.~G., Weiser, D.~F., Wessels, J.~P.,
-  Westerhoff, U., Whitehead, A.~M., Wiechula, J., Wikne, J., Wilk, G.~A.,
-  Wilkinson, J.~J., Williams, C., Windelband, B.~S., Winn, M.~A., Yang, P.,
-  Yano, S., Yasin, Z., Yin, Z., Yokoyama, H., Yoo, I.-K., Yoon, J.~H.,
-  Yurchenko, V., Yushmanov, I., Zaborowska, A., Zaccolo, V., Zaman, A.,
-  Zampolli, C., Correia~Zanoli, H.~J., Zaporozhets, S., Zardoshti, N.,
-  Zarochentsev, A., Zavada, P., Zavyalov, N., Zbroszczyk, H.~P., Zgura, S.~I.,
-  Zhalov, M., Zhang, H., Zhang, X., Zhang, Y., Chunhui, Z., Zhang, Z., Zhao,
-  C., Zhigareva, N., Zhou, D., Zhou, Y., Zhou, Z., Zhu, H., Zhu, J., Zichichi,
-  A., Zimmermann, A., Zimmermann, M.~B., Zinovjev, G., and Zyzak, M. (2016).
-\newblock {Measurement of transverse energy at midrapidity in Pb-Pb collisions
-  at $\sqrt{s_{\rm NN}} = 2.76$ TeV}.
-\newblock {\em Phys. Rev. C}, 94(CERN-EP-2016-071. CERN-EP-2016-071):034903. 30
-  p.
-\newblock 30 pages, 14 captioned figures, 2 tables, authors from page 25,
-  published version, figures at
-  http://aliceinfo.cern.ch/ArtSubmission/node/2400.
-
-\bibitem[Adamczyk et~al., 2017]{PhysRevC.96.044904}
-Adamczyk, L., Adkins, J.~K., Agakishiev, G., Aggarwal, M.~M., Ahammed, Z.,
-  Ajitanand, N.~N., Alekseev, I., Anderson, D.~M., Aoyama, R., Aparin, A.,
-  Arkhipkin, D., Aschenauer, E.~C., Ashraf, M.~U., Attri, A., Averichev, G.~S.,
-  Bai, X., Bairathi, V., Behera, A., Bellwied, R., Bhasin, A., Bhati, A.~K.,
-  Bhattarai, P., Bielcik, J., Bielcikova, J., Bland, L.~C., Bordyuzhin, I.~G.,
-  Bouchet, J., Brandenburg, J.~D., Brandin, A.~V., Brown, D., Bunzarov, I.,
-  Butterworth, J., Caines, H., Calder\'on de~la Barca~S\'anchez, M., Campbell,
-  J.~M., Cebra, D., Chakaberia, I., Chaloupka, P., Chang, Z.,
-  Chankova-Bunzarova, N., Chatterjee, A., Chattopadhyay, S., Chen, X., Chen,
-  J.~H., Chen, X., Cheng, J., Cherney, M., Christie, W., Contin, G., Crawford,
-  H.~J., Das, S., De~Silva, L.~C., Debbe, R.~R., Dedovich, T.~G., Deng, J.,
-  Derevschikov, A.~A., Didenko, L., Dilks, C., Dong, X., Drachenberg, J.~L.,
-  Draper, J.~E., Dunkelberger, L.~E., Dunlop, J.~C., Efimov, L.~G., Elsey, N.,
-  Engelage, J., Eppley, G., Esha, R., Esumi, S., Evdokimov, O., Ewigleben, J.,
-  Eyser, O., Fatemi, R., Fazio, S., Federic, P., Federicova, P., Fedorisin, J.,
-  Feng, Z., Filip, P., Finch, E., Fisyak, Y., Flores, C.~E., Fulek, L.,
-  Gagliardi, C.~A., Garand, D., Geurts, F., Gibson, A., Girard, M., Grosnick,
-  D., Gunarathne, D.~S., Guo, Y., Gupta, A., Gupta, S., Guryn, W., Hamad,
-  A.~I., Hamed, A., Harlenderova, A., Harris, J.~W., He, L., Heppelmann, S.,
-  Heppelmann, S., Hirsch, A., Hoffmann, G.~W., Horvat, S., Huang, T., Huang,
-  B., Huang, X., Huang, H.~Z., Humanic, T.~J., Huo, P., Igo, G., Jacobs, W.~W.,
-  Jentsch, A., Jia, J., Jiang, K., Jowzaee, S., Judd, E.~G., Kabana, S.,
-  Kalinkin, D., Kang, K., Kauder, K., Ke, H.~W., Keane, D., Kechechyan, A.,
-  Khan, Z., Kiko\l{}a, D.~P., Kisel, I., Kisiel, A., Kochenda, L., Kocmanek,
-  M., Kollegger, T., Kosarzewski, L.~K., Kraishan, A.~F., Kravtsov, P.,
-  Krueger, K., Kulathunga, N., Kumar, L., Kvapil, J., Kwasizur, J.~H., Lacey,
-  R., Landgraf, J.~M., Landry, K.~D., Lauret, J., Lebedev, A., Lednicky, R.,
-  Lee, J.~H., Li, X., Li, C., Li, W., Li, Y., Lidrych, J., Lin, T., Lisa,
-  M.~A., Liu, H., Liu, P., Liu, Y., Liu, F., Ljubicic, T., Llope, W.~J.,
-  Lomnitz, M., Longacre, R.~S., Luo, S., Luo, X., Ma, G.~L., Ma, L., Ma, Y.~G.,
-  Ma, R., Magdy, N., Majka, R., Mallick, D., Margetis, S., Markert, C., Matis,
-  H.~S., Meehan, K., Mei, J.~C., Miller, Z.~W., Minaev, N.~G., Mioduszewski,
-  S., Mishra, D., Mizuno, S., Mohanty, B., Mondal, M.~M., Morozov, D.~A.,
-  Mustafa, M.~K., Nasim, M., Nayak, T.~K., Nelson, J.~M., Nie, M., Nigmatkulov,
-  G., Niida, T., Nogach, L.~V., Nonaka, T., Nurushev, S.~B., Odyniec, G.,
-  Ogawa, A., Oh, K., Okorokov, V.~A., Olvitt, D., Page, B.~S., Pak, R., Pandit,
-  Y., Panebratsev, Y., Pawlik, B., Pei, H., Perkins, C., Pile, P., Pluta, J.,
-  Poniatowska, K., Porter, J., Posik, M., Poskanzer, A.~M., Pruthi, N.~K.,
-  Przybycien, M., Putschke, J., Qiu, H., Quintero, A., Ramachandran, S., Ray,
-  R.~L., Reed, R., Rehbein, M.~J., Ritter, H.~G., Roberts, J.~B., Rogachevskiy,
-  O.~V., Romero, J.~L., Roth, J.~D., Ruan, L., Rusnak, J., Rusnakova, O.,
-  Sahoo, N.~R., Sahu, P.~K., Salur, S., Sandweiss, J., Saur, M., Schambach, J.,
-  Schmah, A.~M., Schmidke, W.~B., Schmitz, N., Schweid, B.~R., Seger, J.,
-  Sergeeva, M., Seyboth, P., Shah, N., Shahaliev, E., Shanmuganathan, P.~V.,
-  Shao, M., Sharma, A., Sharma, M.~K., Shen, W.~Q., Shi, Z., Shi, S.~S., Shou,
-  Q.~Y., Sichtermann, E.~P., Sikora, R., Simko, M., Singha, S., Skoby, M.~J.,
-  Smirnov, N., Smirnov, D., Solyst, W., Song, L., Sorensen, P., Spinka, H.~M.,
-  Srivastava, B., Stanislaus, T. D.~S., Strikhanov, M., Stringfellow, B.,
-  Sugiura, T., Sumbera, M., Summa, B., Sun, Y., Sun, X.~M., Sun, X., Surrow,
-  B., Svirida, D.~N., Tang, A.~H., Tang, Z., Taranenko, A., Tarnowsky, T.,
-  Tawfik, A., Th\"ader, J., Thomas, J.~H., Timmins, A.~R., Tlusty, D.,
-  Todoroki, T., Tokarev, M., Trentalange, S., Tribble, R.~E., Tribedy, P.,
-  Tripathy, S.~K., Trzeciak, B.~A., Tsai, O.~D., Ullrich, T., Underwood, D.~G.,
-  Upsal, I., Van~Buren, G., van Nieuwenhuizen, G., Vasiliev, A.~N.,
-  Videb\ae{}k, F., Vokal, S., Voloshin, S.~A., Vossen, A., Wang, G., Wang, Y.,
-  Wang, F., Wang, Y., Webb, J.~C., Webb, G., Wen, L., Westfall, G.~D., Wieman,
-  H., Wissink, S.~W., Witt, R., Wu, Y., Xiao, Z.~G., Xie, W., Xie, G., Xu, J.,
-  Xu, N., Xu, Q.~H., Xu, Y.~F., Xu, Z., Yang, Y., Yang, Q., Yang, C., Yang, S.,
-  Ye, Z., Ye, Z., Yi, L., Yip, K., Yoo, I.-K., Yu, N., Zbroszczyk, H., Zha, W.,
-  Zhang, Z., Zhang, X.~P., Zhang, J.~B., Zhang, S., Zhang, J., Zhang, Y.,
-  Zhang, J., Zhang, S., Zhao, J., Zhong, C., Zhou, L., Zhou, C., Zhu, X., Zhu,
-  Z., and Zyzak, M. (2017).
-\newblock Bulk properties of the medium produced in relativistic heavy-ion
-  collisions from the beam energy scan program.
-\newblock {\em Phys. Rev. C}, 96:044904.
-
-\bibitem[Adams et~al., 2005]{ADAMS2005102}
-Adams, J., Aggarwal, M., Ahammed, Z., Amonett, J., Anderson, B., Arkhipkin, D.,
-  Averichev, G., Badyal, S., Bai, Y., Balewski, J., Barannikova, O., Barnby,
-  L., Baudot, J., Bekele, S., Belaga, V., Bellingeri-Laurikainen, A., Bellwied,
-  R., Berger, J., Bezverkhny, B., Bharadwaj, S., Bhasin, A., Bhati, A., Bhatia,
-  V., Bichsel, H., Bielcik, J., Bielcikova, J., Billmeier, A., Bland, L.,
-  Blyth, C., Bonner, B., Botje, M., Boucham, A., Bouchet, J., Brandin, A.,
-  Bravar, A., Bystersky, M., Cadman, R., Cai, X., Caines, H., de~la
-  Barca~Sánchez, M.~C., Castillo, J., Catu, O., Cebra, D., Chajecki, Z.,
-  Chaloupka, P., Chattopadhyay, S., Chen, H., Chen, Y., Cheng, J., Cherney, M.,
-  Chikanian, A., Christie, W., Coffin, J., Cormier, T., Cramer, J., Crawford,
-  H., Das, D., Das, S., de~Moura, M., Dedovich, T., Derevschikov, A., Didenko,
-  L., Dietel, T., Dogra, S., Dong, W., Dong, X., Draper, J., Du, F., Dubey, A.,
-  Dunin, V., Dunlop, J., Mazumdar, M.~D., Eckardt, V., Edwards, W., Efimov, L.,
-  Emelianov, V., Engelage, J., Eppley, G., Erazmus, B., Estienne, M., Fachini,
-  P., Faivre, J., Fatemi, R., Fedorisin, J., Filimonov, K., Filip, P., Finch,
-  E., Fine, V., Fisyak, Y., Fu, J., Gagliardi, C., Gaillard, L., Gans, J.,
-  Ganti, M., Geurts, F., Ghazikhanian, V., Ghosh, P., Gonzalez, J., Gos, H.,
-  Grachov, O., Grebenyuk, O., Grosnick, D., Guertin, S., Guo, Y., Gupta, A.,
-  Gutierrez, T., Hallman, T., Hamed, A., Hardtke, D., Harris, J., Heinz, M.,
-  Henry, T., Hepplemann, S., Hippolyte, B., Hirsch, A., Hjort, E., Hoffmann,
-  G., Huang, H., Huang, S., Hughes, E., Humanic, T., Igo, G., Ishihara, A.,
-  Jacobs, P., Jacobs, W., Jedynak, M., Jiang, H., Jones, P., Judd, E., Kabana,
-  S., Kang, K., Kaplan, M., Keane, D., Kechechyan, A., Khodyrev, V., Kiryluk,
-  J., Kisiel, A., Kislov, E., Klay, J., Klein, S., Koetke, D., Kollegger, T.,
-  Kopytine, M., Kotchenda, L., Kramer, M., Kravtsov, P., Kravtsov, V., Krueger,
-  K., Kuhn, C., Kulikov, A., Kumar, A., Kutuev, R., Kuznetsov, A., Lamont, M.,
-  Landgraf, J., Lange, S., Laue, F., Lauret, J., Lebedev, A., Lednicky, R.,
-  Lehocka, S., LeVine, M., Li, C., Li, Q., Li, Y., Lin, G., Lindenbaum, S.,
-  Lisa, M., Liu, F., Liu, H., Liu, L., Liu, Q., Liu, Z., Ljubicic, T., Llope,
-  W., Long, H., Longacre, R., Lopez-Noriega, M., Love, W., Lu, Y., Ludlam, T.,
-  Lynn, D., Ma, G., Ma, J., Ma, Y., Magestro, D., Mahajan, S., Mahapatra, D.,
-  Majka, R., Mangotra, L., Manweiler, R., Margetis, S., Markert, C., Martin,
-  L., Marx, J., Matis, H., Matulenko, Y., McClain, C., McShane, T., Meissner,
-  F., Melnick, Y., Meschanin, A., Miller, M., Minaev, N., Mironov, C., Mischke,
-  A., Mishra, D., Mitchell, J., Mohanty, B., Molnar, L., Moore, C., Morozov,
-  D., Munhoz, M., Nandi, B., Nayak, S., Nayak, T., Nelson, J., Netrakanti, P.,
-  Nikitin, V., Nogach, L., Nurushev, S., Odyniec, G., Ogawa, A., Okorokov, V.,
-  Oldenburg, M., Olson, D., Pal, S., Panebratsev, Y., Panitkin, S., Pavlinov,
-  A., Pawlak, T., Peitzmann, T., Perevoztchikov, V., Perkins, C., Peryt, W.,
-  Petrov, V., Phatak, S., Picha, R., Planinic, M., Pluta, J., Porile, N.,
-  Porter, J., Poskanzer, A., Potekhin, M., Potrebenikova, E., Potukuchi, B.,
-  Prindle, D., Pruneau, C., Putschke, J., Rakness, G., Raniwala, R., Raniwala,
-  S., Ravel, O., Ray, R., Razin, S., Reichhold, D., Reid, J., Reinnarth, J.,
-  Renault, G., Retiere, F., Ridiger, A., Ritter, H., Roberts, J., Rogachevskiy,
-  O., Romero, J., Rose, A., Roy, C., Ruan, L., Russcher, M., Sahoo, R.,
-  Sakrejda, I., Salur, S., Sandweiss, J., Sarsour, M., Savin, I., Sazhin, P.,
-  Schambach, J., Scharenberg, R., Schmitz, N., Seger, J., Seyboth, P.,
-  Shahaliev, E., Shao, M., Shao, W., Sharma, M., Shen, W., Shestermanov, K.,
-  Shimanskiy, S., Sichtermann, E., Simon, F., Singaraju, R., Smirnov, N.,
-  Snellings, R., Sood, G., Sorensen, P., Sowinski, J., Speltz, J., Spinka, H.,
-  Srivastava, B., Stadnik, A., Stanislaus, T., Stock, R., Stolpovsky, A.,
-  Strikhanov, M., Stringfellow, B., Suaide, A., Sugarbaker, E., Suire, C.,
-  Sumbera, M., Surrow, B., Swanger, M., Symons, T., de~Toledo, A.~S., Tai, A.,
-  Takahashi, J., Tang, A., Tarnowsky, T., Thein, D., Thomas, J., Timoshenko,
-  S., Tokarev, M., Trentalange, S., Tribble, R., Tsai, O., Ulery, J., Ullrich,
-  T., Underwood, D., Buren, G.~V., van Leeuwen, M., Molen, A.~V., Varma, R.,
-  Vasilevski, I., Vasiliev, A., Vernet, R., Vigdor, S., Viyogi, Y., Vokal, S.,
-  Voloshin, S., Waggoner, W., Wang, F., Wang, G., Wang, G., Wang, X., Wang, Y.,
-  Wang, Y., Wang, Z., Ward, H., Watson, J., Webb, J., Westfall, G., Wetzler,
-  A., Whitten, C., Wieman, H., Wissink, S., Witt, R., Wood, J., Wu, J., Xu, N.,
-  Xu, Z., Xu, Z., Yamamoto, E., Yepes, P., Yurevich, V., Zborovsky, I., Zhang,
-  H., Zhang, W., Zhang, Y., Zhang, Z., Zoulkarneev, R., Zoulkarneeva, Y., and
-  Zubarev, A. (2005).
-\newblock Experimental and theoretical challenges in the search for the
-  quark–gluon plasma: The star collaboration's critical assessment of the
-  evidence from rhic collisions.
-\newblock {\em Nuclear Physics A}, 757(1):102 -- 183.
-\newblock First Three Years of Operation of RHIC.
-
-\bibitem[Adare et~al., 2016a]{PhysRevC.93.024901}
-Adare, A., Afanasiev, S., Aidala, C., Ajitanand, N.~N., Akiba, Y., Akimoto, R.,
-  Al-Bataineh, H., Alexander, J., Alfred, M., Al-Jamel, A., Al-Ta'ani, H.,
-  Angerami, A., Aoki, K., Apadula, N., Aphecetche, L., Aramaki, Y., Armendariz,
-  R., Aronson, S.~H., Asai, J., Asano, H., Aschenauer, E.~C., Atomssa, E.~T.,
-  Averbeck, R., Awes, T.~C., Azmoun, B., Babintsev, V., Bai, M., Bai, X.,
-  Baksay, G., Baksay, L., Baldisseri, A., Bandara, N.~S., Bannier, B., Barish,
-  K.~N., Barnes, P.~D., Bassalleck, B., Basye, A.~T., Bathe, S., Batsouli, S.,
-  Baublis, V., Bauer, F., Baumann, C., Baumgart, S., Bazilevsky, A., Beaumier,
-  M., Beckman, S., Belikov, S., Belmont, R., Bennett, R., Berdnikov, A.,
-  Berdnikov, Y., Bhom, J.~H., Bickley, A.~A., Bjorndal, M.~T., Black, D., Blau,
-  D.~S., Boissevain, J.~G., Bok, J.~S., Borel, H., Boyle, K., Brooks, M.~L.,
-  Brown, D.~S., Bryslawskyj, J., Bucher, D., Buesching, H., Bumazhnov, V.,
-  Bunce, G., Burward-Hoy, J.~M., Butsyk, S., Campbell, S., Caringi, A.,
-  Castera, P., Chai, J.-S., Chang, B.~S., Charvet, J.-L., Chen, C.-H.,
-  Chernichenko, S., Chi, C.~Y., Chiba, J., Chiu, M., Choi, I.~J., Choi, J.~B.,
-  Choi, S., Choudhury, R.~K., Christiansen, P., Chujo, T., Chung, P., Churyn,
-  A., Chvala, O., Cianciolo, V., Citron, Z., Cleven, C.~R., Cobigo, Y., Cole,
-  B.~A., Comets, M.~P., Conesa~del Valle, Z., Connors, M., Constantin, P.,
-  Cronin, N., Crossette, N., Csan\'ad, M., Cs\"org\ifmmode~\mbox{\H{o}}\else
-  \H{o}\fi{}, T., Dahms, T., Dairaku, S., Danchev, I., Danley, T.~W., Das, K.,
-  Datta, A., Daugherity, M.~S., David, G., Dayananda, M.~K., Deaton, M.~B.,
-  DeBlasio, K., Dehmelt, K., Delagrange, H., Denisov, A., d'Enterria, D.,
-  Deshpande, A., Desmond, E.~J., Dharmawardane, K.~V., Dietzsch, O., Ding, L.,
-  Dion, A., Diss, P.~B., Do, J.~H., Donadelli, M., D'Orazio, L., Drachenberg,
-  J.~L., Drapier, O., Drees, A., Drees, K.~A., Dubey, A.~K., Durham, J.~M.,
-  Durum, A., Dutta, D., Dzhordzhadze, V., Edwards, S., Efremenko, Y.~V.,
-  Egdemir, J., Ellinghaus, F., Emam, W.~S., Engelmore, T., Enokizono, A.,
-  En'yo, H., Espagnon, B., Esumi, S., Eyser, K.~O., Fadem, B., Feege, N.,
-  Fields, D.~E., Finger, M., Finger, M., Fleuret, F., Fokin, S.~L., Forestier,
-  B., Fraenkel, Z., Frantz, J.~E., Franz, A., Frawley, A.~D., Fujiwara, K.,
-  Fukao, Y., Fung, S.-Y., Fusayasu, T., Gadrat, S., Gainey, K., Gal, C.,
-  Gallus, P., Garg, P., Garishvili, A., Garishvili, I., Gastineau, F., Ge, H.,
-  Germain, M., Giordano, F., Glenn, A., Gong, H., Gong, X., Gonin, M., Gosset,
-  J., Goto, Y., Granier~de Cassagnac, R., Grau, N., Greene, S.~V., Grim, G.,
-  Grosse~Perdekamp, M., Gu, Y., Gunji, T., Guo, L., Guragain, H., Gustafsson,
-  H.-A., Hachiya, T., Hadj~Henni, A., Haegemann, C., Haggerty, J.~S., Hagiwara,
-  M.~N., Hahn, K.~I., Hamagaki, H., Hamblen, J., Hamilton, H.~F., Han, R., Han,
-  S.~Y., Hanks, J., Harada, H., Hartouni, E.~P., Haruna, K., Harvey, M.,
-  Hasegawa, S., Haseler, T. O.~S., Hashimoto, K., Haslum, E., Hasuko, K.,
-  Hayano, R., Hayashi, S., He, X., Heffner, M., Hemmick, T.~K., Hester, T.,
-  Heuser, J.~M., Hiejima, H., Hill, J.~C., Hobbs, R., Hohlmann, M., Hollis,
-  R.~S., Holmes, M., Holzmann, W., Homma, K., Hong, B., Horaguchi, T., Hori,
-  Y., Hornback, D., Hoshino, T., Hotvedt, N., Huang, J., Huang, S., Hur, M.~G.,
-  Ichihara, T., Ichimiya, R., Iinuma, H., Ikeda, Y., Imai, K., Imazu, Y.,
-  Imrek, J., Inaba, M., Inoue, Y., Iordanova, A., Isenhower, D., Isenhower, L.,
-  Ishihara, M., Isinhue, A., Isobe, T., Issah, M., Isupov, A., Ivanishchev, D.,
-  Iwanaga, Y., Jacak, B.~V., Javani, M., Jeon, S.~J., Jezghani, M., Jia, J.,
-  Jiang, X., Jin, J., Jinnouchi, O., Johnson, B.~M., Jones, T., Joo, K.~S.,
-  Jouan, D., Jumper, D.~S., Kajihara, F., Kametani, S., Kamihara, N., Kamin,
-  J., Kanda, S., Kaneta, M., Kaneti, S., Kang, B.~H., Kang, J.~H., Kang, J.~S.,
-  Kanou, H., Kapustinsky, J., Karatsu, K., Kasai, M., Kawagishi, T., Kawall,
-  D., Kawashima, M., Kazantsev, A.~V., Kelly, S., Kempel, T., Key, J.~A.,
-  Khachatryan, V., Khandai, P.~K., Khanzadeev, A., Kijima, K.~M., Kikuchi, J.,
-  Kim, A., Kim, B.~I., Kim, C., Kim, D.~H., Kim, D.~J., Kim, E., Kim, E.-J.,
-  Kim, G.~W., Kim, H.~J., Kim, K.-B., Kim, M., Kim, Y.-J., Kim, Y.~K., Kim,
-  Y.-S., Kimelman, B., Kinney, E., Kiss, A., Kistenev, E., Kitamura, R.,
-  Kiyomichi, A., Klatsky, J., Klay, J., Klein-Boesing, C., Kleinjan, D., Kline,
-  P., Koblesky, T., Kochenda, L., Kochetkov, V., Kofarago, M., Komatsu, Y.,
-  Komkov, B., Konno, M., Koster, J., Kotchetkov, D., Kotov, D., Kozlov, A.,
-  Kr\'al, A., Kravitz, A., Krizek, F., Kroon, P.~J., Kubart, J., Kunde, G.~J.,
-  Kurihara, N., Kurita, K., Kurosawa, M., Kweon, M.~J., Kwon, Y., Kyle, G.~S.,
-  Lacey, R., Lai, Y.~S., Lajoie, J.~G., Lebedev, A., Le~Bornec, Y., Leckey, S.,
-  Lee, B., Lee, D.~M., Lee, G.~H., Lee, J., Lee, K.~B., Lee, K.~S., Lee, M.~K.,
-  Lee, S., Lee, S.~H., Lee, S.~R., Lee, T., Leitch, M.~J., Leite, M. A.~L.,
-  Leitgab, M., Lenzi, B., Lewis, B., Li, X., Li, X.~H., Lichtenwalner, P.,
-  Liebing, P., Lim, H., Lim, S.~H., Linden~Levy, L.~A.,
-  Li\ifmmode~\check{s}\else \v{s}\fi{}ka, T., Litvinenko, A., Liu, H., Liu,
-  M.~X., Love, B., Lynch, D., Maguire, C.~F., Makdisi, Y.~I., Makek, M.,
-  Malakhov, A., Malik, M.~D., Manion, A., Manko, V.~I., Mannel, E., Mao, Y.,
-  Maruyama, T., Ma\ifmmode~\check{s}\else \v{s}\fi{}ek, L., Masui, H.,
-  Masumoto, S., Matathias, F., McCain, M.~C., McCumber, M., McGaughey, P.~L.,
-  McGlinchey, D., McKinney, C., Means, N., Meles, A., Mendoza, M., Meredith,
-  B., Miake, Y., Mibe, T., Midori, J., Mignerey, A.~C.,
-  Mike\ifmmode~\check{s}\else \v{s}\fi{}, P., Miki, K., Miller, T.~E., Milov,
-  A., Mioduszewski, S., Mishra, D.~K., Mishra, G.~C., Mishra, M., Mitchell,
-  J.~T., Mitrovski, M., Miyachi, Y., Miyasaka, S., Mizuno, S., Mohanty, A.~K.,
-  Mohapatra, S., Montuenga, P., Moon, H.~J., Moon, T., Morino, Y., Morreale,
-  A., Morrison, D.~P., Moskowitz, M., Moss, J.~M., Motschwiller, S.,
-  Moukhanova, T.~V., Mukhopadhyay, D., Murakami, T., Murata, J., Mwai, A.,
-  Nagae, T., Nagamiya, S., Nagashima, K., Nagata, Y., Nagle, J.~L., Naglis, M.,
-  Nagy, M.~I., Nakagawa, I., Nakagomi, H., Nakamiya, Y., Nakamura, K.~R.,
-  Nakamura, T., Nakano, K., Nam, S., Nattrass, C., Nederlof, A., Netrakanti,
-  P.~K., Newby, J., Nguyen, M., Nihashi, M., Niida, T., Nishimura, S., Norman,
-  B.~E., Nouicer, R., Nov\'ak, T., Novitzky, N., Nukariya, A., Nyanin, A.~S.,
-  Nystrand, J., Oakley, C., Obayashi, H., O'Brien, E., Oda, S.~X., Ogilvie,
-  C.~A., Ohnishi, H., Oide, H., Ojha, I.~D., Oka, M., Okada, K., Omiwade,
-  O.~O., Onuki, Y., Orjuela~Koop, J.~D., Osborn, J.~D., Oskarsson, A.,
-  Otterlund, I., Ouchida, M., Ozawa, K., Pak, R., Pal, D., Palounek, A. P.~T.,
-  Pantuev, V., Papavassiliou, V., Park, B.~H., Park, I.~H., Park, J., Park,
-  J.~S., Park, S., Park, S.~K., Park, W.~J., Pate, S.~F., Patel, L., Patel, M.,
-  Pei, H., Peng, J.-C., Pereira, H., Perepelitsa, D.~V., Perera, G. D.~N.,
-  Peresedov, V., Peressounko, D., Perry, J., Petti, R., Pinkenburg, C., Pinson,
-  R., Pisani, R.~P., Proissl, M., Purschke, M.~L., Purwar, A.~K., Qu, H., Rak,
-  J., Rakotozafindrabe, A., Ramson, B.~J., Ravinovich, I., Read, K.~F.,
-  Rembeczki, S., Reuter, M., Reygers, K., Reynolds, D., Riabov, V., Riabov, Y.,
-  Richardson, E., Rinn, T., Riveli, N., Roach, D., Roche, G., Rolnick, S.~D.,
-  Romana, A., Rosati, M., Rosen, C.~A., Rosendahl, S. S.~E., Rosnet, P., Rowan,
-  Z., Rubin, J.~G., Rukoyatkin, P., Ru\ifmmode \check{z}\else
-  \v{z}\fi{}i\ifmmode~\check{c}\else \v{c}\fi{}ka, P., Rykov, V.~L., Ryu,
-  M.~S., Ryu, S.~S., Sahlmueller, B., Saito, N., Sakaguchi, T., Sakai, S.,
-  Sakashita, K., Sakata, H., Sako, H., Samsonov, V., Sano, M., Sano, S.,
-  Sarsour, M., Sato, H.~D., Sato, S., Sato, T., Sawada, S., Schaefer, B.,
-  Schmoll, B.~K., Sedgwick, K., Seele, J., Seidl, R., Sekiguchi, Y., Semenov,
-  V., Sen, A., Seto, R., Sett, P., Sexton, A., Sharma, D., Shaver, A., Shea,
-  T.~K., Shein, I., Shevel, A., Shibata, T.-A., Shigaki, K., Shimomura, M.,
-  Shohjoh, T., Shoji, K., Shukla, P., Sickles, A., Silva, C.~L., Silvermyr, D.,
-  Silvestre, C., Sim, K.~S., Singh, B.~K., Singh, C.~P., Singh, V., Skolnik,
-  M., Skutnik, S., Slune\ifmmode~\check{c}\else \v{c}\fi{}ka, M., Smith, W.~C.,
-  Snowball, M., Solano, S., Soldatov, A., Soltz, R.~A., Sondheim, W.~E.,
-  Sorensen, S.~P., Sourikova, I.~V., Staley, F., Stankus, P.~W., Steinberg, P.,
-  Stenlund, E., Stepanov, M., Ster, A., Stoll, S.~P., Stone, M.~R., Sugitate,
-  T., Suire, C., Sukhanov, A., Sullivan, J.~P., Sumita, T., Sun, J., Sziklai,
-  J., Tabaru, T., Takagi, S., Takagui, E.~M., Takahara, A., Taketani, A.,
-  Tanabe, R., Tanaka, K.~H., Tanaka, Y., Taneja, S., Tanida, K., Tannenbaum,
-  M.~J., Tarafdar, S., Taranenko, A., Tarj\'an, P., Tennant, E., Themann, H.,
-  Thomas, D., Thomas, T.~L., Tieulent, R., Timilsina, A., Todoroki, T., Togawa,
-  M., Toia, A., Tojo, J., Tom\'a\ifmmode~\check{s}\else \v{s}\fi{}ek, L.,
-  Tom\'a\ifmmode~\check{s}\else \v{s}\fi{}ek, M., Torii, H., Towell, C.~L.,
-  Towell, R., Towell, R.~S., Tram, V.-N., Tserruya, I., Tsuchimoto, Y., Tsuji,
-  T., Tuli, S.~K., Tydesj\"o, H., Tyurin, N., Vale, C., Valle, H., van Hecke,
-  H.~W., Vargyas, M., Vazquez-Zambrano, E., Veicht, A., Velkovska, J.,
-  V\'ertesi, R., Vinogradov, A.~A., Virius, M., Voas, B., Vossen, A., Vrba, V.,
-  Vznuzdaev, E., Wagner, M., Walker, D., Wang, X.~R., Watanabe, D., Watanabe,
-  K., Watanabe, Y., Watanabe, Y.~S., Wei, F., Wei, R., Wessels, J., Whitaker,
-  S., White, A.~S., White, S.~N., Willis, N., Winter, D., Wolin, S., Woody,
-  C.~L., Wright, R.~M., Wysocki, M., Xia, B., Xie, W., Xue, L., Yalcin, S.,
-  Yamaguchi, Y.~L., Yamaura, K., Yang, R., Yanovich, A., Yasin, Z., Ying, J.,
-  Yokkaichi, S., Yoo, J.~H., Yoon, I., You, Z., Young, G.~R., Younus, I., Yu,
-  H., Yushmanov, I.~E., Zajc, W.~A., Zaudtke, O., Zelenski, A., Zhang, C.,
-  Zhou, S., Zimamyi, J., Zolin, L., and Zou, L. (2016a).
-\newblock Transverse energy production and charged-particle multiplicity at
-  midrapidity in various systems from $\sqrt{{s}_{NN}}=7.7$ to 200 gev.
-\newblock {\em Phys. Rev. C}, 93:024901.
-
-\bibitem[{Adare} et~al., 2007]{2007PhRvL..98p2301A}
-{Adare}, A., {Afanasiev}, S., {Aidala}, C., {Ajitanand}, N.~N., {Akiba}, Y.,
-  {Al-Bataineh}, H., {Alexander}, J., {Al-Jamel}, A., {Aoki}, K., {Aphecetche},
-  L., and et~al. (2007).
-\newblock {Scaling Properties of Azimuthal Anisotropy in Au+Au and Cu+Cu
-  Collisions at s$_{NN}$=200GeV}.
-\newblock {\em Physical Review Letters}, 98(16):162301.
-
-\bibitem[Adare et~al., 2007]{Adare:2006ns}
-Adare, A. et~al. (2007).
-\newblock {$J/\psi$ Production vs Centrality, Transverse Momentum, and Rapidity
-  in Au+Au Collisions at $\sqrt{s_{NN}} = 200$ GeV}.
-\newblock {\em Phys. Rev. Lett.}, 98:232301.
-
-\bibitem[Adare et~al., 2008]{Adare:2008qa}
-Adare, A. et~al. (2008).
-\newblock {Suppression pattern of neutral pions at high transverse momentum in
-  Au + Au collisions at s(NN)**(1/2) = 200-GeV and constraints on medium
-  transport coefficients}.
-\newblock {\em Phys. Rev. Lett.}, 101:232301.
-
-\bibitem[Adare et~al., 2010]{Adare:2010dc}
-Adare, A. et~al. (2010).
-\newblock {Transverse momentum dependence of meson suppression $\eta$
-  suppression in Au+Au collisions at $\sqrt{s_{NN}}$ = 200 GeV}.
-\newblock {\em Phys. Rev.}, C82:011902.
-
-\bibitem[Adare et~al., 2011a]{Adare:2010de}
-Adare, A. et~al. (2011a).
-\newblock {Heavy Quark Production in $p+p$ and Energy Loss and Flow of Heavy
-  Quarks in Au+Au Collisions at $\sqrt{s_NN}=200$ GeV}.
-\newblock {\em Phys.Rev.}, C84:044905.
-
-\bibitem[Adare et~al., 2011b]{Adare:2011ht}
-Adare, A. et~al. (2011b).
-\newblock {Production of $\omega$ mesons in $p+p$, d+Au, Cu+Cu, and Au+Au
-  collisions at $\sqrt{s_NN}=200$ GeV}.
-\newblock {\em Phys. Rev.}, C84:044902.
-
-\bibitem[Adare et~al., 2013]{Adare:2013esx}
-Adare, A. et~al. (2013).
-\newblock {Spectra and ratios of identified particles in Au+Au and $d$+Au
-  collisions at $\sqrt{s_{NN}}=200$ GeV}.
-\newblock {\em Phys. Rev.}, C88(2):024906.
-
-\bibitem[Adare et~al., 2016b]{Adare:2015ema}
-Adare, A. et~al. (2016b).
-\newblock {$\phi$ meson production in the forward/backward rapidity region in
-  Cu$+$Au collisions at $\sqrt{s_{NN}}=200$ GeV}.
-\newblock {\em Phys. Rev.}, C93(2):024904.
-
-\bibitem[Adler et~al., 2014]{PhysRevC.89.044905}
-Adler, S.~S., Afanasiev, S., Aidala, C., Ajitanand, N.~N., Akiba, Y., Al-Jamel,
-  A., Alexander, J., Aoki, K., Aphecetche, L., Armendariz, R., Aronson, S.~H.,
-  Averbeck, R., Awes, T.~C., Azmoun, B., Babintsev, V., Baldisseri, A., Barish,
-  K.~N., Barnes, P.~D., Bassalleck, B., Bathe, S., Batsouli, S., Baublis, V.,
-  Bauer, F., Bazilevsky, A., Belikov, S., Bennett, R., Berdnikov, Y., Bjorndal,
-  M.~T., Boissevain, J.~G., Borel, H., Boyle, K., Brooks, M.~L., Brown, D.~S.,
-  Bruner, N., Bucher, D., Buesching, H., Bumazhnov, V., Bunce, G., Burward-Hoy,
-  J.~M., Butsyk, S., Camard, X., Campbell, S., Chai, J.-S., Chand, P., Chang,
-  W.~C., Chernichenko, S., Chi, C.~Y., Chiba, J., Chiu, M., Choi, I.~J.,
-  Choudhury, R.~K., Chujo, T., Cianciolo, V., Cleven, C.~R., Cobigo, Y., Cole,
-  B.~A., Comets, M.~P., Constantin, P., Csan\'ad, M.,
-  Cs\"org\ifmmode~\mbox{\H{o}}\else \H{o}\fi{}, T., Cussonneau, J.~P., Dahms,
-  T., Das, K., David, G., De\'ak, F., Delagrange, H., Denisov, A., d'Enterria,
-  D., Deshpande, A., Desmond, E.~J., Devismes, A., Dietzsch, O., Dion, A.,
-  Drachenberg, J.~L., Drapier, O., Drees, A., Dubey, A.~K., Durum, A., Dutta,
-  D., Dzhordzhadze, V., Efremenko, Y.~V., Egdemir, J., Enokizono, A., En'yo,
-  H., Espagnon, B., Esumi, S., Fields, D.~E., Finck, C., Fleuret, F., Fokin,
-  S.~L., Forestier, B., Fox, B.~D., Fraenkel, Z., Frantz, J.~E., Franz, A.,
-  Frawley, A.~D., Fukao, Y., Fung, S.-Y., Gadrat, S., Gastineau, F., Germain,
-  M., Glenn, A., Gonin, M., Gosset, J., Goto, Y., Granier~de Cassagnac, R.,
-  Grau, N., Greene, S.~V., Grosse~Perdekamp, M., Gunji, T., Gustafsson, H.-A.,
-  Hachiya, T., Hadj~Henni, A., Haggerty, J.~S., Hagiwara, M.~N., Hamagaki, H.,
-  Hansen, A.~G., Harada, H., Hartouni, E.~P., Haruna, K., Harvey, M., Haslum,
-  E., Hasuko, K., Hayano, R., He, X., Heffner, M., Hemmick, T.~K., Heuser,
-  J.~M., Hidas, P., Hiejima, H., Hill, J.~C., Hobbs, R., Holmes, M., Holzmann,
-  W., Homma, K., Hong, B., Hoover, A., Horaguchi, T., Hur, M.~G., Ichihara, T.,
-  Iinuma, H., Ikonnikov, V.~V., Imai, K., Inaba, M., Inuzuka, M., Isenhower,
-  D., Isenhower, L., Ishihara, M., Isobe, T., Issah, M., Isupov, A., Jacak,
-  B.~V., Jia, J., Jin, J., Jinnouchi, O., Johnson, B.~M., Johnson, S.~C., Joo,
-  K.~S., Jouan, D., Kajihara, F., Kametani, S., Kamihara, N., Kaneta, M., Kang,
-  J.~H., Katou, K., Kawabata, T., Kawagishi, T., Kazantsev, A.~V., Kelly, S.,
-  Khachaturov, B., Khanzadeev, A., Kikuchi, J., Kim, D.~J., Kim, E., Kim,
-  E.~J., Kim, G.-B., Kim, H.~J., Kim, Y.-S., Kinney, E., Kiss, A., Kistenev,
-  E., Kiyomichi, A., Klein-Boesing, C., Kobayashi, H., Kochenda, L., Kochetkov,
-  V., Kohara, R., Komkov, B., Konno, M., Kotchetkov, D., Kozlov, A., Kroon,
-  P.~J., Kuberg, C.~H., Kunde, G.~J., Kurihara, N., Kurita, K., Kweon, M.~J.,
-  Kwon, Y., Kyle, G.~S., Lacey, R., Lajoie, J.~G., Lebedev, A., Le~Bornec, Y.,
-  Leckey, S., Lee, D.~M., Lee, M.~K., Leitch, M.~J., Leite, M. A.~L., Li,
-  X.~H., Lim, H., Litvinenko, A., Liu, M.~X., Maguire, C.~F., Makdisi, Y.~I.,
-  Malakhov, A., Malik, M.~D., Manko, V.~I., Mao, Y., Martinez, G., Masui, H.,
-  Matathias, F., Matsumoto, T., McCain, M.~C., McGaughey, P.~L., Miake, Y.,
-  Miller, T.~E., Milov, A., Mioduszewski, S., Mishra, G.~C., Mitchell, J.~T.,
-  Mohanty, A.~K., Morrison, D.~P., Moss, J.~M., Moukhanova, T.~V.,
-  Mukhopadhyay, D., Muniruzzaman, M., Murata, J., Nagamiya, S., Nagata, Y.,
-  Nagle, J.~L., Naglis, M., Nakamura, T., Newby, J., Nguyen, M., Norman, B.~E.,
-  Nyanin, A.~S., Nystrand, J., O'Brien, E., Ogilvie, C.~A., Ohnishi, H., Ojha,
-  I.~D., Okada, K., Omiwade, O.~O., Oskarsson, A., Otterlund, I., Oyama, K.,
-  Ozawa, K., Pal, D., Palounek, A. P.~T., Pantuev, V., Papavassiliou, V., Park,
-  J., Park, W.~J., Pate, S.~F., Pei, H., Penev, V., Peng, J.-C., Pereira, H.,
-  Peresedov, V., Peressounko, D., Pierson, A., Pinkenburg, C., Pisani, R.~P.,
-  Purschke, M.~L., Purwar, A.~K., Qu, H., Qualls, J.~M., Rak, J., Ravinovich,
-  I., Read, K.~F., Reuter, M., Reygers, K., Riabov, V., Riabov, Y., Roche, G.,
-  Romana, A., Rosati, M., Rosendahl, S. S.~E., Rosnet, P., Rukoyatkin, P.,
-  Rykov, V.~L., Ryu, S.~S., Sahlmueller, B., Saito, N., Sakaguchi, T., Sakai,
-  S., Samsonov, V., Sanfratello, L., Santo, R., Sarsour, M., Sato, H.~D., Sato,
-  S., Sawada, S., Schutz, Y., Semenov, V., Seto, R., Sharma, D., Shea, T.~K.,
-  Shein, I., Shibata, T.-A., Shigaki, K., Shimomura, M., Shohjoh, T., Shoji,
-  K., Sickles, A., Silva, C.~L., Silvermyr, D., Sim, K.~S., Singh, C.~P.,
-  Singh, V., Skutnik, S., Smith, W.~C., Soldatov, A., Soltz, R.~A., Sondheim,
-  W.~E., Sorensen, S.~P., Sourikova, I.~V., Staley, F., Stankus, P.~W.,
-  Stenlund, E., Stepanov, M., Ster, A., Stoll, S.~P., Sugitate, T., Suire, C.,
-  Sullivan, J.~P., Sziklai, J., Tabaru, T., Takagi, S., Takagui, E.~M.,
-  Taketani, A., Tanaka, K.~H., Tanaka, Y., Tanida, K., Tannenbaum, M.~J.,
-  Taranenko, A., Tarj\'an, P., Thomas, T.~L., Togawa, M., Tojo, J., Torii, H.,
-  Towell, R.~S., Tram, V.-N., Tserruya, I., Tsuchimoto, Y., Tuli, S.~K.,
-  Tydesj\"o, H., Tyurin, N., Uam, T.~J., Vale, C., Valle, H., van Hecke, H.~W.,
-  Velkovska, J., Velkovsky, M., V\'ertesi, R., Veszpr\'emi, V., Vinogradov,
-  A.~A., Volkov, M.~A., Vznuzdaev, E., Wagner, M., Wang, X.~R., Watanabe, Y.,
-  Wessels, J., White, S.~N., Willis, N., Winter, D., Wohn, F.~K., Woody, C.~L.,
-  Wysocki, M., Xie, W., Yanovich, A., Yokkaichi, S., Young, G.~R., Younus, I.,
-  Yushmanov, I.~E., Zajc, W.~A., Zaudtke, O., Zhang, C., Zhou, S., Zim\'anyi,
-  J., Zolin, L., and Zong, X. (2014).
-\newblock Transverse-energy distributions at midrapidity in $p+p$,
-  $d+\mathrm{Au}$, and $\mathrm{Au}+\mathrm{Au}$ collisions at
-  $\sqrt{{s}_{\mathit{\text{NN}}}}=62.4$\char21{}200 gev and implications for
-  particle-production models.
-\newblock {\em Phys. Rev. C}, 89:044905.
-
-\bibitem[Adler et~al., 2005]{PhysRevC.71.034908}
-Adler, S.~S., Afanasiev, S., Aidala, C., Ajitanand, N.~N., Akiba, Y.,
-  Alexander, J., Amirikas, R., Aphecetche, L., Aronson, S.~H., Averbeck, R.,
-  Awes, T.~C., Azmoun, R., Babintsev, V., Baldisseri, A., Barish, K.~N.,
-  Barnes, P.~D., Bassalleck, B., Bathe, S., Batsouli, S., Baublis, V.,
-  Bazilevsky, A., Belikov, S., Berdnikov, Y., Bhagavatula, S., Boissevain,
-  J.~G., Borel, H., Borenstein, S., Brooks, M.~L., Brown, D.~S., Bruner, N.,
-  Bucher, D., Buesching, H., Bumazhnov, V., Bunce, G., Burward-Hoy, J.~M.,
-  Butsyk, S., Camard, X., Chai, J.-S., Chand, P., Chang, W.~C., Chernichenko,
-  S., Chi, C.~Y., Chiba, J., Chiu, M., Choi, I.~J., Choi, J., Choudhury, R.~K.,
-  Chujo, T., Cianciolo, V., Cobigo, Y., Cole, B.~A., Constantin, P.,
-  d'Enterria, D.~G., David, G., Delagrange, H., Denisov, A., Deshpande, A.,
-  Desmond, E.~J., Dietzsch, O., Drapier, O., Drees, A., Rietz, R.~d., Durum,
-  A., Dutta, D., Efremenko, Y.~V., Chenawi, K.~E., Enokizono, A., En'yo, H.,
-  Esumi, S., Ewell, L., Fields, D.~E., Fleuret, F., Fokin, S.~L., Fox, B.~D.,
-  Fraenkel, Z., Frantz, J.~E., Franz, A., Frawley, A.~D., Fung, S.-Y., Garpman,
-  S., Ghosh, T.~K., Glenn, A., Gogiberidze, G., Gonin, M., Gosset, J., Goto,
-  Y., Cassagnac, R. G.~d., Grau, N., Greene, S.~V., Perdekamp, M.~G., Guryn,
-  W., Gustafsson, H.-A., Hachiya, T., Haggerty, J.~S., Hamagaki, H., Hansen,
-  A.~G., Hartouni, E.~P., Harvey, M., Hayano, R., He, X., Heffner, M., Hemmick,
-  T.~K., Heuser, J.~M., Hibino, M., Hill, J.~C., Holzmann, W., Homma, K., Hong,
-  B., Hoover, A., Ichihara, T., Ikonnikov, V.~V., Imai, K., Isenhower, D.,
-  Ishihara, M., Issah, M., Isupov, A., Jacak, B.~V., Jang, W.~Y., Jeong, Y.,
-  Jia, J., Jinnouchi, O., Johnson, B.~M., Johnson, S.~C., Joo, K.~S., Jouan,
-  D., Kametani, S., Kamihara, N., Kang, J.~H., Kapoor, S.~S., Katou, K., Kelly,
-  S., Khachaturov, B., Khanzadeev, A., Kikuchi, J., Kim, D.~H., Kim, D.~J.,
-  Kim, D.~W., Kim, E., Kim, G.-B., Kim, H.~J., Kistenev, E., Kiyomichi, A.,
-  Kiyoyama, K., Klein-Boesing, C., Kobayashi, H., Kochenda, L., Kochetkov, V.,
-  Koehler, D., Kohama, T., Kopytine, M., Kotchetkov, D., Kozlov, A., Kroon,
-  P.~J., Kuberg, C.~H., Kurita, K., Kuroki, Y., Kweon, M.~J., Kwon, Y., Kyle,
-  G.~S., Lacey, R., Ladygin, V., Lajoie, J.~G., Lebedev, A., Leckey, S., Lee,
-  D.~M., Lee, S., Leitch, M.~J., Li, X.~H., Lim, H., Litvinenko, A., Liu,
-  M.~X., Liu, Y., Maguire, C.~F., Makdisi, Y.~I., Malakhov, A., Manko, V.~I.,
-  Mao, Y., Martinez, G., Marx, M.~D., Masui, H., Matathias, F., Matsumoto, T.,
-  McGaughey, P.~L., Melnikov, E., Mendenhall, M., Messer, F., Miake, Y., Milan,
-  J., Miller, T.~E., Milov, A., Mioduszewski, S., Mischke, R.~E., Mishra,
-  G.~C., Mitchell, J.~T., Mohanty, A.~K., Morrison, D.~P., Moss, J.~M.,
-  M\"uhlbacher, F., Mukhopadhyay, D., Muniruzzaman, M., Murata, J., Nagamiya,
-  S., Nagle, J.~L., Nakamura, T., Nandi, B.~K., Nara, M., Newby, J., Nilsson,
-  P., Nyanin, A.~S., Nystrand, J., O'Brien, E., Ogilvie, C.~A., Ohnishi, H.,
-  Ojha, I.~D., Okada, K., Ono, M., Onuchin, V., Oskarsson, A., Otterlund, I.,
-  Oyama, K., Ozawa, K., Pal, D., Palounek, A. P.~T., Pantuev, V.~S.,
-  Papavassiliou, V., Park, J., Parmar, A., Pate, S.~F., Peitzmann, T., Peng,
-  J.-C., Peresedov, V., Pinkenburg, C., Pisani, R.~P., Plasil, F., Purschke,
-  M.~L., Purwar, A.~K., Rak, J., Ravinovich, I., Read, K.~F., Reuter, M.,
-  Reygers, K., Riabov, V., Riabov, Y., Roche, G., Romana, A., Rosati, M.,
-  Rosnet, P., Ryu, S.~S., Sadler, M.~E., Saito, N., Sakaguchi, T., Sakai, M.,
-  Sakai, S., Samsonov, V., Sanfratello, L., Santo, R., Sato, H.~D., Sato, S.,
-  Sawada, S., Schutz, Y., Semenov, V., Seto, R., Shaw, M.~R., Shea, T.~K.,
-  Shibata, T.-A., Shigaki, K., Shiina, T., Silva, C.~L., Silvermyr, D., Sim,
-  K.~S., Singh, C.~P., Singh, V., Sivertz, M., Soldatov, A., Soltz, R.~A.,
-  Sondheim, W.~E., Sorensen, S.~P., Sourikova, I.~V., Staley, F., Stankus,
-  P.~W., Stenlund, E., Stepanov, M., Ster, A., Stoll, S.~P., Sugitate, T.,
-  Sullivan, J.~P., Takagui, E.~M., Taketani, A., Tamai, M., Tanaka, K.~H.,
-  Tanaka, Y., Tanida, K., Tannenbaum, M.~J., Tarj\'an, P., Tepe, J.~D., Thomas,
-  T.~L., Tojo, J., Torii, H., Towell, R.~S., Tserruya, I., Tsuruoka, H., Tuli,
-  S.~K., Tydesj\"o, H., Tyurin, N., Hecke, H. W.~v., Velkovska, J., Velkovsky,
-  M., Villatte, L., Vinogradov, A.~A., Volkov, M.~A., Vznuzdaev, E., Wang,
-  X.~R., Watanabe, Y., White, S.~N., Wohn, F.~K., Woody, C.~L., Xie, W., Yang,
-  Y., Yanovich, A., Yokkaichi, S., Young, G.~R., Yushmanov, I.~E., Zajc, W.~A.,
-  Zhang, C., Zhou, S., Zhou, S.~J., and Zolin, L. (2005).
-\newblock Systematic studies of the centrality and
-  $\sqrt{{s}_{{}_{\mathit{NN}}}}$ dependence of the
-  $de{}_{T}/d\ensuremath{\eta}$ and $dn{}_{\mathrm{ch}}/d\ensuremath{\eta}$ in
-  heavy ion collisions at midrapidity.
-\newblock {\em Phys. Rev. C}, 71:034908.
-
-\bibitem[Afanasiev et~al., 2012]{Afanasiev:2012dg}
-Afanasiev, S. et~al. (2012).
-\newblock {Measurement of Direct Photons in Au+Au Collisions at $\sqrt{s\_{NN}}
-  = 200$ GeV}.
-\newblock {\em Phys. Rev. Lett.}, 109:152302.
-
-\bibitem[Aitchison and Hey, 2003]{aitchison2003gauge}
-Aitchison, I. and Hey, A. (2003).
-\newblock {\em Gauge Theories in Particle Physics, Volume II: QCD and the
-  Electroweak Theory, Third Edition}.
-\newblock Graduate Student Series in Physics. CRC Press.
-
-\bibitem[Anderson et~al., 2003]{Anderson:2003ur}
-Anderson, M. et~al. (2003).
-\newblock {The Star time projection chamber: A Unique tool for studying high
-  multiplicity events at RHIC}.
-\newblock {\em Nucl. Instrum. Meth.}, A499:659--678.
-
-\bibitem[Ayala, 2016]{1742-6596-761-1-012066}
-Ayala, A. (2016).
-\newblock Hadronic matter at the edge: A survey of some theoretical approaches
-  to the physics of the qcd phase diagram.
-\newblock {\em Journal of Physics: Conference Series}, 761(1):012066.
-
-\bibitem[Bali, 2001]{Bali:2000gf}
-Bali, G.~S. (2001).
-\newblock {QCD forces and heavy quark bound states}.
-\newblock {\em Phys. Rept.}, 343:1--136.
-
-\bibitem[Behera et~al., 2013]{Behera:2012eq}
-Behera, N.~K., Sahoo, R., and Nandi, B.~K. (2013).
-\newblock {Constituent Quark Scaling of Strangeness Enhancement in Heavy-Ion
-  Collisions}.
-\newblock {\em Adv. High Energy Phys.}, 2013:273248.
-
-\bibitem[{Bennett} et~al., 2013]{2013ApJS..208...20B}
-{Bennett}, C.~L., {Larson}, D., {Weiland}, J.~L., {Jarosik}, N., {Hinshaw}, G.,
-  {Odegard}, N., {Smith}, K.~M., {Hill}, R.~S., {Gold}, B., {Halpern}, M.,
-  {Komatsu}, E., {Nolta}, M.~R., {Page}, L., {Spergel}, D.~N., {Wollack}, E.,
-  {Dunkley}, J., {Kogut}, A., {Limon}, M., {Meyer}, S.~S., {Tucker}, G.~S., and
-  {Wright}, E.~L. (2013).
-\newblock {Nine-year Wilkinson Microwave Anisotropy Probe (WMAP) Observations:
-  Final Maps and Results}.
-\newblock {\em \apjs}, 208:20.
-
-\bibitem[Bethe and Ashkin, 1953]{bethe1953passage}
-Bethe, H.~A. and Ashkin, J. (1953).
-\newblock Passage of radiations through matter experimental nuclear physics vol
-  1 ed e segre.
-
-\bibitem[Bjorken, 1983]{PhysRevD.27.140}
-Bjorken, J.~D. (1983).
-\newblock Highly relativistic nucleus-nucleus collisions: The central rapidity
-  region.
-\newblock {\em Phys. Rev. D}, 27:140--151.
-
-\bibitem[{Bratkovskaya, E.L.} et~al., 2018]{refId0}
-{Bratkovskaya, E.L.}, {Moreau, P.}, {Palmese, A.}, {Cassing, W.}, {Seifert,
-  E.}, and {Steinert, T.} (2018).
-\newblock Signatures of chiral symmetry restoration and its survival throughout
-  the hadronic phase interactions.
-\newblock {\em EPJ Web Conf.}, 171:02004.
-
-\bibitem[Chatrchyan et~al., 2012]{PhysRevLett.109.152303}
-Chatrchyan, S., Khachatryan, V., Sirunyan, A.~M., Tumasyan, A., Adam, W.,
-  Bergauer, T., Dragicevic, M., Er\"o, J., Fabjan, C., Friedl, M., Fr\"uhwirth,
-  R., Ghete, V.~M., Hammer, J., H\"ormann, N., Hrubec, J., Jeitler, M.,
-  Kiesenhofer, W., Kn\"unz, V., Krammer, M., Liko, D., Mikulec, I., Pernicka,
-  M., Rahbaran, B., Rohringer, C., Rohringer, H., Sch\"ofbeck, R., Strauss, J.,
-  Taurok, A., Wagner, P., Waltenberger, W., Walzel, G., Widl, E., Wulz, C.-E.,
-  Mossolov, V., Shumeiko, N., Suarez~Gonzalez, J., Bansal, S., Cornelis, T.,
-  De~Wolf, E.~A., Janssen, X., Luyckx, S., Maes, T., Mucibello, L., Ochesanu,
-  S., Roland, B., Rougny, R., Selvaggi, M., Staykova, Z., Van~Haevermaet, H.,
-  Van~Mechelen, P., Van~Remortel, N., Van~Spilbeeck, A., Blekman, F., Blyweert,
-  S., D'Hondt, J., Gonzalez~Suarez, R., Kalogeropoulos, A., Maes, M.,
-  Olbrechts, A., Van~Doninck, W., Van~Mulders, P., Van~Onsem, G.~P., Villella,
-  I., Clerbaux, B., De~Lentdecker, G., Dero, V., Gay, A. P.~R., Hreus, T.,
-  L\'eonard, A., Marage, P.~E., Reis, T., Thomas, L., Vander~Velde, C.,
-  Vanlaer, P., Wang, J., Adler, V., Beernaert, K., Cimmino, A., Costantini, S.,
-  Garcia, G., Grunewald, M., Klein, B., Lellouch, J., Marinov, A., Mccartin,
-  J., Ocampo~Rios, A.~A., Ryckbosch, D., Strobbe, N., Thyssen, F., Tytgat, M.,
-  Verwilligen, P., Walsh, S., Yazgan, E., Zaganidis, N., Basegmez, S., Bruno,
-  G., Castello, R., Ceard, L., Delaere, C., du~Pree, T., Favart, D., Forthomme,
-  L., Giammanco, A., Hollar, J., Lemaitre, V., Liao, J., Militaru, O., Nuttens,
-  C., Pagano, D., Pin, A., Piotrzkowski, K., Schul, N., Vizan~Garcia, J.~M.,
-  Beliy, N., Caebergs, T., Daubie, E., Hammad, G.~H., Alves, G.~A., Correa
-  Martins~Junior, M., De~Jesus~Damiao, D., Martins, T., Pol, M.~E., Souza, M.
-  H.~G., Ald\'a~J\'unior, W.~L., Carvalho, W., Cust\'odio, A., Da~Costa, E.~M.,
-  De~Oliveira~Martins, C., Fonseca De~Souza, S., Matos~Figueiredo, D., Mundim,
-  L., Nogima, H., Oguri, V., Prado Da~Silva, W.~L., Santoro, A., Soares~Jorge,
-  L., Sznajder, A., Bernardes, C.~A., Dias, F.~A., Fernandez Perez~Tomei,
-  T.~R., Gregores, E.~M., Lagana, C., Marinho, F., Mercadante, P.~G., Novaes,
-  S.~F., Padula, S.~S., Genchev, V., Iaydjiev, P., Piperov, S., Rodozov, M.,
-  Stoykova, S., Sultanov, G., Tcholakov, V., Trayanov, R., Vutova, M.,
-  Dimitrov, A., Hadjiiska, R., Kozhuharov, V., Litov, L., Pavlov, B., Petkov,
-  P., Bian, J.~G., Chen, G.~M., Chen, H.~S., Jiang, C.~H., Liang, D., Liang,
-  S., Meng, X., Tao, J., Wang, J., Wang, X., Wang, Z., Xiao, H., Xu, M., Zang,
-  J., Zhang, Z., Asawatangtrakuldee, C., Ban, Y., Guo, S., Guo, Y., Li, W.,
-  Liu, S., Mao, Y., Qian, S.~J., Teng, H., Wang, S., Zhu, B., Zou, W., Avila,
-  C., Gomez, J.~P., Gomez~Moreno, B., Osorio~Oliveros, A.~F., Sanabria, J.~C.,
-  Godinovic, N., Lelas, D., Plestina, R., Polic, D., Puljak, I., Antunovic, Z.,
-  Kovac, M., Brigljevic, V., Duric, S., Kadija, K., Luetic, J., Morovic, S.,
-  Attikis, A., Galanti, M., Mavromanolakis, G., Mousa, J., Nicolaou, C.,
-  Ptochos, F., Razis, P.~A., Finger, M., Finger, M., Assran, Y., Elgammal, S.,
-  Ellithi~Kamel, A., Khalil, S., Mahmoud, M.~A., Radi, A., Kadastik, M.,
-  M\"untel, M., Raidal, M., Rebane, L., Tiko, A., Azzolini, V., Eerola, P.,
-  Fedi, G., Voutilainen, M., H\"ark\"onen, J., Heikkinen, A., Karim\"aki, V.,
-  Kinnunen, R., Kortelainen, M.~J., Lamp\'en, T., Lassila-Perini, K., Lehti,
-  S., Lind\'en, T., Luukka, P., M\"aenp\"a\"a, T., Peltola, T., Tuominen, E.,
-  Tuominiemi, J., Tuovinen, E., Ungaro, D., Wendland, L., Banzuzi, K.,
-  Karjalainen, A., Korpela, A., Tuuva, T., Besancon, M., Choudhury, S.,
-  Dejardin, M., Denegri, D., Fabbro, B., Faure, J.~L., Ferri, F., Ganjour, S.,
-  Givernaud, A., Gras, P., Hamel~de Monchenault, G., Jarry, P., Locci, E.,
-  Malcles, J., Millischer, L., Nayak, A., Rander, J., Rosowsky, A., Shreyber,
-  I., Titov, M., Baffioni, S., Beaudette, F., Benhabib, L., Bianchini, L.,
-  Bluj, M., Broutin, C., Busson, P., Charlot, C., Daci, N., Dahms, T.,
-  Dobrzynski, L., Granier~de Cassagnac, R., Haguenauer, M., Min\'e, P.,
-  Mironov, C., Nguyen, M., Ochando, C., Paganini, P., Sabes, D., Salerno, R.,
-  Sirois, Y., Veelken, C., Zabi, A., Agram, J.-L., Andrea, J., Bloch, D.,
-  Bodin, D., Brom, J.-M., Cardaci, M., Chabert, E.~C., Collard, C., Conte, E.,
-  Drouhin, F., Ferro, C., Fontaine, J.-C., Gel\'e, D., Goerlach, U., Juillot,
-  P., Le~Bihan, A.-C., Van~Hove, P., Fassi, F., Mercier, D., Beauceron, S.,
-  Beaupere, N., Bondu, O., Boudoul, G., Chasserat, J., Chierici, R., Contardo,
-  D., Depasse, P., El~Mamouni, H., Fay, J., Gascon, S., Gouzevitch, M., Ille,
-  B., Kurca, T., Lethuillier, M., Mirabito, L., Perries, S., Sordini, V., Tosi,
-  S., Tschudi, Y., Verdier, P., Viret, S., Tsamalaidze, Z., Anagnostou, G.,
-  Beranek, S., Edelhoff, M., Feld, L., Heracleous, N., Hindrichs, O., Jussen,
-  R., Klein, K., Merz, J., Ostapchuk, A., Perieanu, A., Raupach, F., Sammet,
-  J., Schael, S., Sprenger, D., Weber, H., Wittmer, B., Zhukov, V., Ata, M.,
-  Caudron, J., Dietz-Laursonn, E., Erdmann, M., G\"uth, A., Hebbeker, T.,
-  Heidemann, C., Hoepfner, K., Klingebiel, D., Kreuzer, P., Lingemann, J.,
-  Magass, C., Merschmeyer, M., Meyer, A., Olschewski, M., Papacz, P., Pieta,
-  H., Reithler, H., Schmitz, S.~A., Sonnenschein, L., Steggemann, J., Teyssier,
-  D., Weber, M., Bontenackels, M., Cherepanov, V., Fl\"ugge, G., Geenen, H.,
-  Geisler, M., Haj~Ahmad, W., Hoehle, F., Kargoll, B., Kress, T., Kuessel, Y.,
-  Nowack, A., Perchalla, L., Pooth, O., Rennefeld, J., Sauerland, P., Stahl,
-  A., Aldaya~Martin, M., Behr, J., Behrenhoff, W., Behrens, U., Bergholz, M.,
-  Bethani, A., Borras, K., Burgmeier, A., Cakir, A., Calligaris, L., Campbell,
-  A., Castro, E., Costanza, F., Dammann, D., Diez~Pardos, C., Eckerlin, G.,
-  Eckstein, D., Flucke, G., Geiser, A., Glushkov, I., Gunnellini, P., Habib,
-  S., Hauk, J., Jung, H., Kasemann, M., Katsas, P., Kleinwort, C., Kluge, H.,
-  Knutsson, A., Kr\"amer, M., Kr\"ucker, D., Kuznetsova, E., Lange, W.,
-  Lohmann, W., Lutz, B., Mankel, R., Marfin, I., Marienfeld, M.,
-  Melzer-Pellmann, I.-A., Meyer, A.~B., Mnich, J., Mussgiller, A.,
-  Naumann-Emme, S., Olzem, J., Perrey, H., Petrukhin, A., Pitzl, D., Raspereza,
-  A., Ribeiro~Cipriano, P.~M., Riedl, C., Ron, E., Rosin, M., Salfeld-Nebgen,
-  J., Schmidt, R., Schoerner-Sadenius, T., Sen, N., Spiridonov, A., Stein, M.,
-  Walsh, R., Wissing, C., Autermann, C., Blobel, V., Draeger, J., Enderle, H.,
-  Erfle, J., Gebbert, U., G\"orner, M., Hermanns, T., H\"oing, R.~S., Kaschube,
-  K., Kaussen, G., Kirschenmann, H., Klanner, R., Lange, J., Mura, B., Nowak,
-  F., Peiffer, T., Pietsch, N., Sander, C., Schettler, H., Schleper, P.,
-  Schlieckau, E., Schmidt, A., Schr\"oder, M., Schum, T., Sola, V., Stadie, H.,
-  Steinbr\"uck, G., Thomsen, J., Vanelderen, L., Barth, C., Berger, J.,
-  Chwalek, T., De~Boer, W., Dierlamm, A., Feindt, M., Guthoff, M., Hackstein,
-  C., Hartmann, F., Heinrich, M., Held, H., Hoffmann, K.~H., Honc, S., Katkov,
-  I., Komaragiri, J.~R., Lobelle~Pardo, P., Martschei, D., Mueller, S.,
-  M\"uller, T., Niegel, M., N\"urnberg, A., Oberst, O., Oehler, A., Ott, J.,
-  Quast, G., Rabbertz, K., Ratnikov, F., Ratnikova, N., R\"ocker, S., Scheurer,
-  A., Schilling, F.-P., Schott, G., Simonis, H.~J., Stober, F.~M., Troendle,
-  D., Ulrich, R., Wagner-Kuhr, J., Weiler, T., Zeise, M., Daskalakis, G.,
-  Geralis, T., Kesisoglou, S., Kyriakis, A., Loukas, D., Manolakos, I., Markou,
-  A., Markou, C., Mavrommatis, C., Ntomari, E., Gouskos, L., Mertzimekis,
-  T.~J., Panagiotou, A., Saoulidou, N., Evangelou, I., Foudas, C., Kokkas, P.,
-  Manthos, N., Papadopoulos, I., Patras, V., Bencze, G., Hajdu, C., Hidas, P.,
-  Horvath, D., Sikler, F., Veszpremi, V., Vesztergombi, G., Beni, N., Czellar,
-  S., Molnar, J., Palinkas, J., Szillasi, Z., Karancsi, J., Raics, P.,
-  Trocsanyi, Z.~L., Ujvari, B., Beri, S.~B., Bhatnagar, V., Dhingra, N., Gupta,
-  R., Jindal, M., Kaur, M., Mehta, M.~Z., Nishu, N., Saini, L.~K., Sharma, A.,
-  Singh, J., Ahuja, S., Bhardwaj, A., Choudhary, B.~C., Kumar, A., Kumar, A.,
-  Malhotra, S., Naimuddin, M., Ranjan, K., Sharma, V., Shivpuri, R.~K.,
-  Banerjee, S., Bhattacharya, S., Dutta, S., Gomber, B., Jain, S., Jain, S.,
-  Khurana, R., Sarkar, S., Sharan, M., Abdulsalam, A., Choudhury, R.~K., Dutta,
-  D., Kailas, S., Kumar, V., Mehta, P., Mohanty, A.~K., Pant, L.~M., Shukla,
-  P., Aziz, T., Ganguly, S., Guchait, M., Maity, M., Majumder, G., Mazumdar,
-  K., Mohanty, G.~B., Parida, B., Sudhakar, K., Wickramage, N., Banerjee, S.,
-  Dugad, S., Arfaei, H., Bakhshiansohi, H., Etesami, S.~M., Fahim, A., Hashemi,
-  M., Hesari, H., Jafari, A., Khakzad, M., Mohammadi~Najafabadi, M.,
-  Paktinat~Mehdiabadi, S., Safarzadeh, B., Zeinali, M., Abbrescia, M., Barbone,
-  L., Calabria, C., Chhibra, S.~S., Colaleo, A., Creanza, D., De~Filippis, N.,
-  De~Palma, M., Fiore, L., Iaselli, G., Lusito, L., Maggi, G., Maggi, M.,
-  Marangelli, B., My, S., Nuzzo, S., Pacifico, N., Pompili, A., Pugliese, G.,
-  Selvaggi, G., Silvestris, L., Singh, G., Zito, G., Abbiendi, G., Benvenuti,
-  A.~C., Bonacorsi, D., Braibant-Giacomelli, S., Brigliadori, L., Capiluppi,
-  P., Castro, A., Cavallo, F.~R., Cuffiani, M., Dallavalle, G.~M., Fabbri, F.,
-  Fanfani, A., Fasanella, D., Giacomelli, P., Grandi, C., Guiducci, L.,
-  Marcellini, S., Masetti, G., Meneghelli, M., Montanari, A., Navarria, F.~L.,
-  Odorici, F., Perrotta, A., Primavera, F., Rossi, A.~M., Rovelli, T., Siroli,
-  G., Travaglini, R., Albergo, S., Cappello, G., Chiorboli, M., Costa, S.,
-  Potenza, R., Tricomi, A., Tuve, C., Barbagli, G., Ciulli, V., Civinini, C.,
-  D'Alessandro, R., Focardi, E., Frosali, S., Gallo, E., Gonzi, S., Meschini,
-  M., Paoletti, S., Sguazzoni, G., Tropiano, A., Benussi, L., Bianco, S.,
-  Colafranceschi, S., Fabbri, F., Piccolo, D., Fabbricatore, P., Musenich, R.,
-  Benaglia, A., De~Guio, F., Di~Matteo, L., Fiorendi, S., Gennai, S., Ghezzi,
-  A., Malvezzi, S., Manzoni, R.~A., Martelli, A., Massironi, A., Menasce, D.,
-  Moroni, L., Paganoni, M., Pedrini, D., Ragazzi, S., Redaelli, N., Sala, S.,
-  Tabarelli~de Fatis, T., Buontempo, S., Carrillo~Montoya, C.~A., Cavallo, N.,
-  De~Cosa, A., Dogangun, O., Fabozzi, F., Iorio, A. O.~M., Lista, L., Meola,
-  S., Merola, M., Paolucci, P., Azzi, P., Bacchetta, N., Bellan, P., Bisello,
-  D., Branca, A., Carlin, R., Checchia, P., Dorigo, T., Dosselli, U.,
-  Gasparini, F., Gasparini, U., Gozzelino, A., Kanishchev, K., Lacaprara, S.,
-  Lazzizzera, I., Margoni, M., Meneguzzo, A.~T., Nespolo, M., Ronchese, P.,
-  Simonetto, F., Torassa, E., Vanini, S., Zotto, P., Zumerle, G., Gabusi, M.,
-  Ratti, S.~P., Riccardi, C., Torre, P., Vitulo, P., Biasini, M., Bilei, G.~M.,
-  Fan\`o, L., Lariccia, P., Lucaroni, A., Mantovani, G., Menichelli, M., Nappi,
-  A., Romeo, F., Saha, A., Santocchia, A., Taroni, S., Azzurri, P., Bagliesi,
-  G., Boccali, T., Broccolo, G., Castaldi, R., D'Agnolo, R.~T., Dell'Orso, R.,
-  Fiori, F., Fo\`a, L., Giassi, A., Kraan, A., Ligabue, F., Lomtadze, T.,
-  Martini, L., Messineo, A., Palla, F., Rizzi, A., Serban, A.~T., Spagnolo, P.,
-  Squillacioti, P., Tenchini, R., Tonelli, G., Venturi, A., Verdini, P.~G.,
-  Barone, L., Cavallari, F., Del~Re, D., Diemoz, M., Grassi, M., Longo, E.,
-  Meridiani, P., Micheli, F., Nourbakhsh, S., Organtini, G., Paramatti, R.,
-  Rahatlou, S., Sigamani, M., Soffi, L., Amapane, N., Arcidiacono, R., Argiro,
-  S., Arneodo, M., Biino, C., Cartiglia, N., Costa, M., Demaria, N., Graziano,
-  A., Mariotti, C., Maselli, S., Migliore, E., Monaco, V., Musich, M.,
-  Obertino, M.~M., Pastrone, N., Pelliccioni, M., Potenza, A., Romero, A.,
-  Ruspa, M., Sacchi, R., Solano, A., Staiano, A., Vilela~Pereira, A., Belforte,
-  S., Candelise, V., Cossutti, F., Della~Ricca, G., Gobbo, B., Marone, M.,
-  Montanino, D., Penzo, A., Schizzi, A., Heo, S.~G., Kim, T.~Y., Nam, S.~K.,
-  Chang, S., Kim, D.~H., Kim, G.~N., Kong, D.~J., Park, H., Ro, S.~R., Son,
-  D.~C., Son, T., Kim, J.~Y., Kim, Z.~J., Song, S., Choi, S., Gyun, D., Hong,
-  B., Jo, M., Kim, H., Kim, T.~J., Lee, K.~S., Moon, D.~H., Park, S.~K., Choi,
-  M., Kim, J.~H., Park, C., Park, I.~C., Park, S., Ryu, G., Cho, Y., Choi, Y.,
-  Choi, Y.~K., Goh, J., Kim, M.~S., Kwon, E., Lee, B., Lee, J., Lee, S., Seo,
-  H., Yu, I., Bilinskas, M.~J., Grigelionis, I., Janulis, M., Juodagalvis, A.,
-  Castilla-Valdez, H., De~La Cruz-Burelo, E., Heredia-de La~Cruz, I.,
-  Lopez-Fernandez, R., Maga\~na Villalba, R., Mart\'{\i}nez-Ortega, J.,
-  S\'anchez-Hern\'andez, A., Villasenor-Cendejas, L.~M., Carrillo~Moreno, S.,
-  Vazquez~Valencia, F., Salazar~Ibarguen, H.~A., Casimiro~Linares, E.,
-  Morelos~Pineda, A., Reyes-Santos, M.~A., Krofcheck, D., Bell, A.~J., Butler,
-  P.~H., Doesburg, R., Reucroft, S., Silverwood, H., Ahmad, M., Asghar, M.~I.,
-  Hoorani, H.~R., Khalid, S., Khan, W.~A., Khurshid, T., Qazi, S., Shah, M.~A.,
-  Shoaib, M., Bialkowska, H., Boimska, B., Frueboes, T., Gokieli, R., G\'orski,
-  M., Kazana, M., Nawrocki, K., Romanowska-Rybinska, K., Szleper, M., Wrochna,
-  G., Zalewski, P., Brona, G., Bunkowski, K., Cwiok, M., Dominik, W., Doroba,
-  K., Kalinowski, A., Konecki, M., Krolikowski, J., Almeida, N., Bargassa, P.,
-  David, A., Faccioli, P., Ferreira~Parracho, P.~G., Gallinaro, M., Seixas, J.,
-  Varela, J., Vischia, P., Belotelov, I., Bunin, P., Gavrilenko, M., Golutvin,
-  I., Gorbunov, I., Kamenev, A., Karjavin, V., Kozlov, G., Lanev, A., Malakhov,
-  A., Moisenz, P., Palichik, V., Perelygin, V., Shmatov, S., Smirnov, V.,
-  Volodko, A., Zarubin, A., Evstyukhin, S., Golovtsov, V., Ivanov, Y., Kim, V.,
-  Levchenko, P., Murzin, V., Oreshkin, V., Smirnov, I., Sulimov, V., Uvarov,
-  L., Vavilov, S., Vorobyev, A., Vorobyev, A., Andreev, Y., Dermenev, A.,
-  Gninenko, S., Golubev, N., Kirsanov, M., Krasnikov, N., Matveev, V.,
-  Pashenkov, A., Tlisov, D., Toropin, A., Epshteyn, V., Erofeeva, M., Gavrilov,
-  V., Kossov, M., Lychkovskaya, N., Popov, V., Safronov, G., Semenov, S.,
-  Stolin, V., Vlasov, E., Zhokin, A., Belyaev, A., Boos, E., Ershov, A.,
-  Gribushin, A., Klyukhin, V., Kodolova, O., Korotkikh, V., Lokhtin, I.,
-  Markina, A., Obraztsov, S., Perfilov, M., Petrushanko, S., Popov, A.,
-  Sarycheva, L., Savrin, V., Snigirev, A., Vardanyan, I., Andreev, V., Azarkin,
-  M., Dremin, I., Kirakosyan, M., Leonidov, A., Mesyats, G., Rusakov, S.~V.,
-  Vinogradov, A., Azhgirey, I., Bayshev, I., Bitioukov, S., Grishin, V.,
-  Kachanov, V., Konstantinov, D., Korablev, A., Krychkine, V., Petrov, V.,
-  Ryutin, R., Sobol, A., Tourtchanovitch, L., Troshin, S., Tyurin, N., Uzunian,
-  A., Volkov, A., Adzic, P., Djordjevic, M., Ekmedzic, M., Krpic, D.,
-  Milosevic, J., Aguilar-Benitez, M., Alcaraz~Maestre, J., Arce, P., Battilana,
-  C., Calvo, E., Cerrada, M., Chamizo~Llatas, M., Colino, N., De~La~Cruz, B.,
-  Delgado~Peris, A., Dom\'{\i}nguez~V\'azquez, D., Fernandez~Bedoya, C.,
-  Fern\'andez~Ramos, J.~P., Ferrando, A., Flix, J., Fouz, M.~C., Garcia-Abia,
-  P., Gonzalez~Lopez, O., Goy~Lopez, S., Hernandez, J.~M., Josa, M.~I., Merino,
-  G., Puerta~Pelayo, J., Quintario~Olmeda, A., Redondo, I., Romero, L.,
-  Santaolalla, J., Soares, M.~S., Willmott, C., Albajar, C., Codispoti, G.,
-  de~Troc\'oniz, J.~F., Brun, H., Cuevas, J., Fernandez~Menendez, J.,
-  Folgueras, S., Gonzalez~Caballero, I., Lloret~Iglesias, L., Piedra~Gomez, J.,
-  Brochero~Cifuentes, J.~A., Cabrillo, I.~J., Calderon, A., Chuang, S.~H.,
-  Duarte~Campderros, J., Felcini, M., Fernandez, M., Gomez, G.,
-  Gonzalez~Sanchez, J., Jorda, C., Lopez~Virto, A., Marco, J., Marco, R.,
-  Martinez~Rivero, C., Matorras, F., Munoz~Sanchez, F.~J., Rodrigo, T.,
-  Rodr\'{\i}guez-Marrero, A.~Y., Ruiz-Jimeno, A., Scodellaro, L.,
-  Sobron~Sanudo, M., Vila, I., Vilar~Cortabitarte, R., Abbaneo, D., Auffray,
-  E., Auzinger, G., Baillon, P., Ball, A.~H., Barney, D., Benitez, J.~F.,
-  Bernet, C., Bianchi, G., Bloch, P., Bocci, A., Bonato, A., Botta, C.,
-  Breuker, H., Camporesi, T., Cerminara, G., Christiansen, T., Coarasa~Perez,
-  J.~A., D'Enterria, D., Dabrowski, A., De~Roeck, A., Di~Guida, S., Dobson, M.,
-  Dupont-Sagorin, N., Elliott-Peisert, A., Frisch, B., Funk, W., Georgiou, G.,
-  Giffels, M., Gigi, D., Gill, K., Giordano, D., Giunta, M., Glege, F.,
-  Gomez-Reino~Garrido, R., Govoni, P., Gowdy, S., Guida, R., Hansen, M.,
-  Harris, P., Hartl, C., Harvey, J., Hegner, B., Hinzmann, A., Innocente, V.,
-  Janot, P., Kaadze, K., Karavakis, E., Kousouris, K., Lecoq, P., Lee, Y.-J.,
-  Lenzi, P., Louren\ifmmode~\mbox{\c{c}}\else \c{c}\fi{}o, C., M\"aki, T.,
-  Malberti, M., Malgeri, L., Mannelli, M., Masetti, L., Meijers, F., Mersi, S.,
-  Meschi, E., Moser, R., Mozer, M.~U., Mulders, M., Musella, P., Nesvold, E.,
-  Orimoto, T., Orsini, L., Palencia~Cortezon, E., Perez, E., Perrozzi, L.,
-  Petrilli, A., Pfeiffer, A., Pierini, M., Pimi\"a, M., Piparo, D., Polese, G.,
-  Quertenmont, L., Racz, A., Reece, W., Rodrigues~Antunes, J., Rolandi, G.,
-  Rommerskirchen, T., Rovelli, C., Rovere, M., Sakulin, H., Santanastasio, F.,
-  Sch\"afer, C., Schwick, C., Segoni, I., Sekmen, S., Sharma, A., Siegrist, P.,
-  Silva, P., Simon, M., Sphicas, P., Spiga, D., Spiropulu, M., Tsirou, A.,
-  Veres, G.~I., Vlimant, J.~R., W\"ohri, H.~K., Worm, S.~D., Zeuner, W.~D.,
-  Bertl, W., Deiters, K., Erdmann, W., Gabathuler, K., Horisberger, R., Ingram,
-  Q., Kaestli, H.~C., K\"onig, S., Kotlinski, D., Langenegger, U., Meier, F.,
-  Renker, D., Rohe, T., Sibille, J., B\"ani, L., Bortignon, P., Buchmann,
-  M.~A., Casal, B., Chanon, N., Deisher, A., Dissertori, G., Dittmar, M.,
-  D\"unser, M., Eugster, J., Freudenreich, K., Grab, C., Hits, D., Lecomte, P.,
-  Lustermann, W., Martinez Ruiz~del Arbol, P., Mohr, N., Moortgat, F.,
-  N\"ageli, C., Nef, P., Nessi-Tedaldi, F., Pandolfi, F., Pape, L., Pauss, F.,
-  Peruzzi, M., Ronga, F.~J., Rossini, M., Sala, L., Sanchez, A.~K., Starodumov,
-  A., Stieger, B., Takahashi, M., Tauscher, L., Thea, A., Theofilatos, K.,
-  Treille, D., Urscheler, C., Wallny, R., Weber, H.~A., Wehrli, L., Aguilo, E.,
-  Amsler, C., Chiochia, V., De~Visscher, S., Favaro, C., Ivova~Rikova, M.,
-  Millan~Mejias, B., Otiougova, P., Robmann, P., Snoek, H., Tupputi, S.,
-  Verzetti, M., Chang, Y.~H., Chen, K.~H., Kuo, C.~M., Li, S.~W., Lin, W., Liu,
-  Z.~K., Lu, Y.~J., Mekterovic, D., Singh, A.~P., Volpe, R., Yu, S.~S.,
-  Bartalini, P., Chang, P., Chang, Y.~H., Chang, Y.~W., Chao, Y., Chen, K.~F.,
-  Dietz, C., Grundler, U., Hou, W.-S., Hsiung, Y., Kao, K.~Y., Lei, Y.~J., Lu,
-  R.-S., Majumder, D., Petrakou, E., Shi, X., Shiu, J.~G., Tzeng, Y.~M., Wan,
-  X., Wang, M., Adiguzel, A., Bakirci, M.~N., Cerci, S., Dozen, C., Dumanoglu,
-  I., Eskut, E., Girgis, S., Gokbulut, G., Gurpinar, E., Hos, I., Kangal,
-  E.~E., Karapinar, G., Kayis~Topaksu, A., Onengut, G., Ozdemir, K., Ozturk,
-  S., Polatoz, A., Sogut, K., Sunar~Cerci, D., Tali, B., Topakli, H., Vergili,
-  L.~N., Vergili, M., Akin, I.~V., Aliev, T., Bilin, B., Bilmis, S., Deniz, M.,
-  Gamsizkan, H., Guler, A.~M., Ocalan, K., Ozpineci, A., Serin, M., Sever, R.,
-  Surat, U.~E., Yalvac, M., Yildirim, E., Zeyrek, M., G\"ulmez, E., Isildak,
-  B., Kaya, M., Kaya, O., Ozkorucuklu, S., Sonmez, N., Cankocak, K., Levchuk,
-  L., Bostock, F., Brooke, J.~J., Clement, E., Cussans, D., Flacher, H.,
-  Frazier, R., Goldstein, J., Grimes, M., Heath, G.~P., Heath, H.~F., Kreczko,
-  L., Metson, S., Newbold, D.~M., Nirunpong, K., Poll, A., Senkin, S., Smith,
-  V.~J., Williams, T., Basso, L., Bell, K.~W., Belyaev, A., Brew, C., Brown,
-  R.~M., Cockerill, D. J.~A., Coughlan, J.~A., Harder, K., Harper, S., Jackson,
-  J., Kennedy, B.~W., Olaiya, E., Petyt, D., Radburn-Smith, B.~C.,
-  Shepherd-Themistocleous, C.~H., Tomalin, I.~R., Womersley, W.~J., Bainbridge,
-  R., Ball, G., Beuselinck, R., Buchmuller, O., Colling, D., Cripps, N.,
-  Cutajar, M., Dauncey, P., Davies, G., Della~Negra, M., Ferguson, W., Fulcher,
-  J., Futyan, D., Gilbert, A., Guneratne~Bryer, A., Hall, G., Hatherell, Z.,
-  Hays, J., Iles, G., Jarvis, M., Karapostoli, G., Lyons, L., Magnan, A.-M.,
-  Marrouche, J., Mathias, B., Nandi, R., Nash, J., Nikitenko, A., Papageorgiou,
-  A., Pela, J., Pesaresi, M., Petridis, K., Pioppi, M., Raymond, D.~M.,
-  Rogerson, S., Rose, A., Ryan, M.~J., Seez, C., Sharp, P., Sparrow, A., Stoye,
-  M., Tapper, A., Vazquez~Acosta, M., Virdee, T., Wakefield, S., Wardle, N.,
-  Whyntie, T., Chadwick, M., Cole, J.~E., Hobson, P.~R., Khan, A., Kyberd, P.,
-  Leslie, D., Martin, W., Reid, I.~D., Symonds, P., Teodorescu, L., Turner, M.,
-  Hatakeyama, K., Liu, H., Scarborough, T., Charaf, O., Henderson, C., Rumerio,
-  P., Avetisyan, A., Bose, T., Fantasia, C., Heiste (2012).
-\newblock Measurement of the pseudorapidity and centrality dependence of the
-  transverse energy density in pb-pb collisions at
-  $\sqrt{{s}_{\mathrm{NN}}}=2.76\text{ }\text{ }\mathrm{TeV}$.
-\newblock {\em Phys. Rev. Lett.}, 109:152303.
-
-\bibitem[Collaboration et~al., 2008]{1748-0221-3-08-S08002}
-Collaboration, T.~A., Aamodt, K., Quintana, A.~A., Achenbach, R., Acounis, S.,
-  Adamová, D., Adler, C., Aggarwal, M., Agnese, F., Rinella, G.~A., Ahammed,
-  Z., Ahmad, A., Ahmad, N., Ahmad, S., Akindinov, A., Akishin, P., Aleksandrov,
-  D., Alessandro, B., Alfaro, R., Alfarone, G., Alici, A., Alme, J., Alt, T.,
-  Altinpinar, S., Amend, W., Andrei, C., Andres, Y., Andronic, A., Anelli, G.,
-  Anfreville, M., Angelov, V., Anzo, A., Anson, C., Anticić, T., Antonenko,
-  V., Antonczyk, D., Antinori, F., Antinori, S., Antonioli, P., Aphecetche, L.,
-  Appelshäuser, H., Aprodu, V., Arba, M., Arcelli, S., Argentieri, A.,
-  Armesto, N., Arnaldi, R., Arefiev, A., Arsene, I., Asryan, A., Augustinus,
-  A., Awes, T.~C., Äysto, J., Azmi, M.~D., Bablock, S., Badalà, A., Badyal,
-  S.~K., Baechler, J., Bagnasco, S., Bailhache, R., Bala, R., Baldisseri, A.,
-  Baldit, A., Bán, J., Barbera, R., Barberis, P.-L., Barbet, J.~M.,
-  Barnäfoldi, G., Barret, V., Bartke, J., Bartos, D., Basile, M., Basmanov,
-  V., Bastid, N., Batigne, G., Batyunya, B., Baudot, J., Baumann, C., Bearden,
-  I., Becker, B., Belikov, J., Bellwied, R., Belmont-Moreno, E., Belogianni,
-  A., Belyaev, S., Benato, A., Beney, J.~L., Benhabib, L., Benotto, F., Beolé,
-  S., Berceanu, I., Bercuci, A., Berdermann, E., Berdnikov, Y., Bernard, C.,
-  Berny, R., Berst, J.~D., Bertelsen, H., Betev, L., Bhasin, A., Baskar, P.,
-  Bhati, A., Bianchi, N., Bielčik, J., Bielčiková, J., Bimbot, L.,
-  Blanchard, G., Blanco, F., Blanco, F., Blau, D., Blume, C., Blyth, S.,
-  Boccioli, M., Bogdanov, A., Bøggild, H., Bogolyubsky, M., Boldizsár, L.,
-  Bombara, M., Bombonati, C., Bondila, M., Bonnet, D., Bonvicini, V., Borel,
-  H., Borotto, F., Borshchov, V., Bortoli, Y., Borysov, O., Bose, S., Bosisio,
-  L., Botje, M., Böttger, S., Bourdaud, G., Bourrion, O., Bouvier, S., Braem,
-  A., Braun, M., Braun-Munzinger, P., Bravina, L., Bregant, M., Bruckner, G.,
-  Brun, R., Bruna, E., Brunasso, O., Bruno, G.~E., Bucher, D., Budilov, V.,
-  Budnikov, D., Buesching, H., Buncic, P., Burns, M., Burachas, S., Busch, O.,
-  Bushop, J., Cai, X., Caines, H., Calaon, F., Caldogno, M., Cali, I.,
-  Camerini, P., Campagnolo, R., Campbell, M., Cao, X., Capitani, G.~P., Romeo,
-  G.~C., Cardenas-Montes, M., Carduner, H., Carena, F., Carena, W., Cariola,
-  P., Carminati, F., Casado, J., Diaz, A.~C., Caselle, M., Castellanos, J.~C.,
-  Castor, J., Catanescu, V., Cattaruzza, E., Cavazza, D., Cerello, P., Ceresa,
-  S., Černý, V., Chambert, V., Chapeland, S., Charpy, A., Charrier, D.,
-  Chartoire, M., Charvet, J.~L., Chattopadhyay, S., Chattopadhyay, S.,
-  Chepurnov, V., Chernenko, S., Cherney, M., Cheshkov, C., Cheynis, B.,
-  Chochula, P., Chiavassa, E., Barroso, V.~C., Choi, J., Christakoglou, P.,
-  Christiansen, P., Christensen, C., Chykalov, O.~A., Cicalo, C.,
-  Cifarelli-Strolin, L., Ciobanu, M., Cindolo, F., Cirstoiu, C., Clausse, O.,
-  Cleymans, J., Cobanoglu, O., Coffin, J.-P., Coli, S., Colla, A., Colledani,
-  C., Combaret, C., Combet, M., Comets, M., Balbastre, G.~C., del Valle, Z.~C.,
-  Contin, G., Contreras, J., Cormier, T., Corsi, F., Cortese, P., Costa, F.,
-  Crescio, E., Crochet, P., Cuautle, E., Cussonneau, J., Dahlinger, M.,
-  Dainese, A., Dalsgaard, H.~H., Daniel, L., Das, I., Das, T., Dash, A., Silva,
-  R.~D., Davenport, M., Daues, H., Caro, A.~D., de~Cataldo, G., Cuveland,
-  J.~D., Falco, A.~D., de~Gaspari, M., de~Girolamo, P., de~Groot, J., Gruttola,
-  D.~D., Haas, A.~D., Marco, N.~D., Pasquale, S.~D., Remigis, P.~D., de~Vaux,
-  D., Decock, G., Delagrange, H., Franco, M.~D., Dellacasa, G., Dell'Olio, C.,
-  Dell'Olio, D., Deloff, A., Demanov, V., Dénes, E., D'Erasmo, G., Derkach,
-  D., Devaux, A., Bari, D.~D., Bartolomeo, A.~D., Giglio, C.~D., Liberto,
-  S.~D., Mauro, A.~D., Nezza, P.~D., Dialinas, M., Diaz, L., Valdes, R.~D.,
-  Dietel, T., Dima, R., Ding, H., Dinca, C., Divià, R., Dobretsov, V., Dobrin,
-  A., Doenigus, B., Dobrowolski, T., Domínguez, I., Dorn, M., Drouet, S.,
-  Dubey, A.~E., Ducroux, L., Dumitrache, F., Dumonteil, E., Dupieux, P., Duta,
-  V., Majumdar, A.~D., Majumdar, M.~D., Dyhre, T., Efimov, L., Efremov, A.,
-  Elia, D., Emschermann, D., Engster, C., Enokizono, A., Espagnon, B.,
-  Estienne, M., Evangelista, A., Evans, D., Evrard, S., Fabjan, C.~W., Fabris,
-  D., Faivre, J., Falchieri, D., Fantoni, A., Farano, R., Fearick, R., Fedorov,
-  O., Fekete, V., Felea, D., Feofilov, G., Téllez, A.~F., Ferretti, A.,
-  Fichera, F., Filchagin, S., Filoni, E., Finck, C., Fini, R., Fiore, E.~M.,
-  Flierl, D., Floris, M., Fodor, Z., Foka, Y., Fokin, S., Force, P., Formenti,
-  F., Fragiacomo, E., Fragkiadakis, M., Fraissard, D., Franco, A., Franco, M.,
-  Frankenfeld, U., Fratino, U., Fresneau, S., Frolov, A., Fuchs, U., Fujita,
-  J., Furget, C., Furini, M., Girard, M.~F., Gaardhøje, J.-J., Gabrielli, A.,
-  Gadrat, S., Gagliardi, M., Gago, A., Gaido, L., Torreira, A.~G., Gallio, M.,
-  Gandolfi, E., Ganoti, P., Ganti, M., Garabatos, J., Lopez, A.~G., Garizzo,
-  L., Gaudichet, L., Gemme, R., Germain, M., Gheata, A., Gheata, M., Ghidini,
-  B., Ghosh, P., Giolu, G., Giraudo, G., Giubellino, P., Glasow, R., Glässel,
-  P., Ferreiro, E.~G., Gutierrez, C.~G., Gonzales-Trueba, L.~H., Gorbunov, S.,
-  Gorbunov, Y., Gos, H., Gosset, J., Gotovac, S., Gottschlag, H., Gottschalk,
-  D., Grabski, V., Grassi, T., Gray, H., Grebenyuk, O., Grebieszkow, K.,
-  Gregory, C., Grigoras, C., Grion, N., Grigoriev, V., Grigoryan, A.,
-  Grigoryan, C., Grigoryan, S., Grishuk, Y., Gros, P., Grosse-Oetringhaus, J.,
-  Grossiord, J.-Y., Grosso, R., Grynyov, B., Guarnaccia, C., Guber, F., Guerin,
-  F., Guernane, R., Guerzoni, M., Guichard, A., Guida, M., Guilloux, G.,
-  Gulkanyan, H., Gulbrandsen, K., Gunji, T., Gupta, A., Gupta, V., Gustafsson,
-  H.-A., Gutbrod, H., Hadjidakis, C., Haiduc, M., Hamar, G., Hamagaki, H.,
-  Hamblen, J., Hansen, J.~C., Hardy, P., Hatzifotiadou, D., Harris, J.~W.,
-  Hartig, M., Harutyunyan, A., Hayrapetyan, A., Hasch, D., Hasegan, D., Hehner,
-  J., Heine, N., Heinz, M., Helstrup, H., Herghelegiu, A., Herlant, S., Corral,
-  G.~H., Herrmann, N., Hetland, K., Hille, P., Hinke, H., Hippolyte, B., Hoch,
-  M., Hoebbel, H., Hoedlmoser, H., Horaguchi, T., Horner, M., Hristov, P.,
-  Hřivnáčová, I., Hu, S., Guo, C.~H., Humanic, T., Hurtado, A., Hwang,
-  D.~S., Ianigro, J.~C., Idzik, M., Igolkin, S., Ilkaev, R., Ilkiv, I., Imhoff,
-  M., Innocenti, P.~G., Ionescu, E., Ippolitov, M., Irfan, M., Insa, C.,
-  Inuzuka, M., Ivan, C., Ivanov, A., Ivanov, M., Ivanov, V., Jacobs, P.,
-  Jacholkowski, A., Jančurová, L., Janik, R., Jasper, M., Jena, C., Jirden,
-  L., Johnson, D.~P., Jones, G.~T., Jorgensen, C., Jouve, F., Jovanović, P.,
-  Junique, A., Jusko, A., Jung, H., Jung, W., Kadija, K., Kamal, A., Kamermans,
-  R., Kapusta, S., Kaidalov, A., Kakoyan, V., Kalcher, S., Kang, E., Kapitan,
-  J., Kaplin, V., Karadzhev, K., Karavichev, O., Karavicheva, T., Karpechev,
-  E., Karpio, K., Kazantsev, A., Kebschull, U., Keidel, R., Khan, M.~M.,
-  Khanzadeev, A., Kharlov, Y., Kikola, D., Kileng, B., Kim, D., Kim, D.~S.,
-  Kim, D.~W., Kim, H.~N., Kim, J.~S., Kim, S., Kinson, J.~B., Kiprich, S.~K.,
-  Kisel, I., Kiselev, S., Kisiel, A., Kiss, T., Kiworra, V., Klay, J., Bösing,
-  C.~K., Kliemant, M., Klimov, A., Klovning, A., Kluge, A., Kluit, R., Kniege,
-  S., Kolevatov, R., Kollegger, T., Kolojvari, A., Kondratiev, V., Kornas, E.,
-  Koshurnikov, E., Kotov, I., Kour, R., Kowalski, M., Kox, S., Kozlov, K.,
-  Králik, I., Kramer, F., Kraus, I., Kravčáková, A., Krawutschke, T.,
-  Krivda, M., Kryshen, E., Kucheriaev, Y., Kugler, A., Kuhn, C., Kuijer, P.,
-  Kumar, L., Kumar, N., Kumpumaeki, P., Kurepin, A., Kurepin, A.~N., Kushpil,
-  S., Kushpil, V., Kutovsky, M., Kvaerno, H., Kweon, M., Labbé, J.-C.,
-  Lackner, F., de~Guevara, P.~L., Lafage, V., Rocca, P.~L., Lamont, M., Lara,
-  C., Larsen, D.~T., Laurenti, G., Lazzeroni, C., Bornec, Y.~L., Bris, N.~L.,
-  Gailliard, C.~L., Lebedev, V., Lecoq, J., Lee, K.~S., Lee, S.~C., Lefévre,
-  F., Legrand, I., Lehmann, T., Leistam, L., Lenoir, P., Lenti, V., Leon, H.,
-  Monzon, I.~L., Lévai, P., Li, Q., Li, X., Librizzi, F., Lietava, R.,
-  Lindegaard, N., Lindenstruth, V., Lippmann, C., Lisa, M., Listratenko, O.~M.,
-  Littel, F., Liu, Y., Lo, J., Lobanov, V., Loginov, V., Noriega, M.~L.,
-  López-Ramírez, R., Torres, E.~L., Lorenzo, P.~M., Løvhøiden, G., Lu, S.,
-  Ludolphs, W., Lunardon, M., Luquin, L., Lusso, S., Lutz, J.-R., Luvisetto,
-  M., Lyapin, V., Maevskaya, A., Magureanu, C., Mahajan, A., Majahan, S.,
-  Mahmoud, T., Mairani, A., Mahapatra, D., Makarov, A., Makhlyueva, I., Malek,
-  M., Malkiewicz, T., Mal'Kevich, D., Malzacher, P., Mamonov, A., Manea, C.,
-  Mangotra, L.~K., Maniero, D., Manko, V., Manso, F., Manzari, V., Mao, Y.,
-  Marcel, A., Marchini, S., Mareš, J., Margagliotti, G.~V., Margotti, A.,
-  Marin, A., Marin, J.-C., Marras, D., Martinengo, P., Martínez, M.~I.,
-  Martinez-Davalos, A., Garcia, G.~M., Martini, S., Chiesa, A.~M., Marzocca,
-  C., Masciocchi, S., Masera, M., Masetti, M., Maslov, N.~I., Masoni, A.,
-  Massera, F., Mast, M., Mastroserio, A., Matthews, Z.~L., Mayer, B., Mazza,
-  G., Mazzaro, M.~D., Mazzoni, A., Meddi, F., Meleshko, E., Menchaca-Rocha, A.,
-  Meneghini, S., Meoni, M., Perez, J.~M., Mereu, P., Meunier, O., Miake, Y.,
-  Michalon, A., Michinelli, R., Miftakhov, N., Mignone, M., Mikhailov, K.,
-  Milosevic, J., Minaev, Y., Minafra, F., Mischke, A., Miśkowiec, D., Mitsyn,
-  V., Mitu, C., Mohanty, B., Moisa, D., Molnar, L., Mondal, M., Mondal, N.,
-  Zetina, L.~M., Monteno, M., Morando, M., Morel, M., Moretto, S., Morhardt,
-  T., Morsch, A., Moukhanova, T., Mucchi, M., Muccifora, V., Mudnic, E.,
-  Müller, H., Müller, W., Munoz, J., Mura, D., Musa, L., Muraz, J.~F., Musso,
-  A., Nania, R., Nandi, B., Nappi, E., Navach, F., Navin, S., Nayak, T.,
-  Nazarenko, S., Nazarov, G., Nellen, L., Nendaz, F., Nianine, A., Nicassio,
-  M., Nielsen, B.~S., Nikolaev, S., Nikolic, V., Nikulin, S., Nikulin, V.,
-  Nilsen, B., Nitti, M., Noferini, F., Nomokonov, P., Nooren, G., Noto, F.,
-  Nouais, D., Nyiri, A., Nystrand, J., Odyniec, G., Oeschler, H., Oinonen, M.,
-  Oldenburg, M., Oleks, I., Olsen, E.~K., Onuchin, V., Oppedisano, C., Orsini,
-  F., Ortiz-Velázquez, A., Oskamp, C., Oskarsson, A., Osmic, F., Österman,
-  L., Otterlund, I., Ovrebekk, G., Oyama, K., Pachr, M., Pagano, P., Paić, G.,
-  Pajares, C., Pal, S., Pal, S., Pálla, G., Palmeri, A., Pancaldi, G., Panse,
-  R., Pantaleo, A., Pappalardo, G.~S., Pastirčák, B., Pastore, C., Patarakin,
-  O., Paticchio, V., Patimo, G., Pavlinov, A., Pawlak, T., Peitzmann, T.,
-  Pénichot, Y., Pepato, A., Pereira, H., Peresunko, D., Perez, C., Griffo,
-  J.~P., Perini, D., Perrino, D., Peryt, W., Pesci, A., Peskov, V., Pestov, Y.,
-  Peters, A.~J., Petráček, V., Petridis, A., Petris, M., Petrov, V., Petrov,
-  V., Petrovici, M., Peyré, J., Piano, S., Piccotti, A., Pichot, P., Piemonte,
-  C., Pikna, M., Pilastrini, R., Pillot, P., Pinazza, O., Pini, B., Pinsky, L.,
-  Morais, V.~P., Pismennaya, V., Piuz, F., Platt, R., Ploskon, M., Plumeri, S.,
-  Pluta, J., Pocheptsov, T., Podesta, P., Poggio, F., Poghosyan, M., Poghosyan,
-  T., Polák, K., Polichtchouk, B., Polozov, P., Polyakov, V., Pommeresch, B.,
-  Pompei, F., Pop, A., Popescu, S., Posa, F., Pospíšil, V., Potukuchi, B.,
-  Pouthas, J., Prasad, S., Preghenella, R., Prino, F., Prodan, L., Prono, G.,
-  Protsenko, M.~A., Pruneau, C.~A., Przybyla, A., Pshenichnov, I., Puddu, G.,
-  Pujahari, P., Pulvirenti, A., Punin, A., Punin, V., Putschke, J., Quartieri,
-  J., Quercigh, E., Rachevskaya, I., Rachevski, A., Rademakers, A., Radomski,
-  S., Radu, A., Rak, J., Ramello, L., Raniwala, R., Raniwala, S., Rasmussen,
-  O.~B., Rasson, J., Razin, V., Read, K., Real, J., Redlich, K., Reichling, C.,
-  Renard, C., Renault, G., Renfordt, R., Reolon, A.~R., Reshetin, A., Revol,
-  J.-P., Reygers, K., Ricaud, H., Riccati, L., Ricci, R.~A., Richter, M.,
-  Riedler, P., Rigalleau, L.~M., Riggi, F., Riegler, W., Rindel, E., Riso, J.,
-  Rivetti, A., Rizzi, M., Rizzi, V., Cahuantzi, M.~R., Røed, K., Röhrich, D.,
-  Román-López, S., Romanato, M., Romita, R., Ronchetti, F., Rosinsky, P.,
-  Rosnet, P., Rossegger, S., Rossi, A., Rostchin, V., Rotondo, F., Roukoutakis,
-  F., Rousseau, S., Roy, C., Roy, D., Roy, P., Royer, L., Rubin, G., Rubio, A.,
-  Rui, R., Rusanov, I., Russo, G., Ruuskanen, V., Ryabinkin, E., Rybicki, A.,
-  Sadovsky, S., Šafařík, K., Sahoo, R., Saini, J., Saiz, P., Salur, S.,
-  Sambyal, S., Samsonov, V., Šándor, L., Sandoval, A., Sann, H., Santiard,
-  J.-C., Santo, R., Santoro, R., Sargsyan, G., Saturnini, P., Scapparone, E.,
-  Scarlassara, F., Schackert, B., Schiaua, C., Schicker, R., Schioler, T.,
-  Schippers, J.~D., Schmidt, C., Schmidt, H., Schneider, R., Schossmaier, K.,
-  Schukraft, J., Schutz, Y., Schwarz, K., Schweda, K., Schyns, E., Scioli, G.,
-  Scomparin, E., Snow, H., Sedykh, S., Segato, G., Sellitto, S., Semeria, F.,
-  Senyukov, S., Seppänen, H., Serci, S., Serkin, L., Serra, S., Sesselmann,
-  T., Sevcenco, A., Sgura, I., Shabratova, G., Shahoyan, R., Sharkov, E.,
-  Sharma, S., Shigaki, K., Shileev, K., Shukla, P., Shurygin, A., Shurygina,
-  M., Sibiriak, Y., Siddi, E., Siemiarczuk, T., Sigward, M.~H., Silenzi, A.,
-  Silvermyr, D., Silvestri, R., Simili, E., Simion, V., Simon, R., Simonetti,
-  L., Singaraju, R., Singhal, V., Sinha, B., Sinha, T., Siska, M., Sitár, B.,
-  Sitta, M., Skaali, B., Skowronski, P., Slodkowski, M., Smirnov, N., Smykov,
-  L., Snellings, R., Snoeys, W., Soegaard, C., Soerensen, J., Sokolov, O.,
-  Soldatov, A., Soloviev, A., Soltveit, H., Soltz, R., Sommer, W., Soos, C.,
-  Soramel, F., Sorensen, S., Soyk, D., Spyropoulou-Stassinaki, M., Stachel, J.,
-  Staley, F., Stan, I., Stavinskiy, A., Steckert, J., Stefanini, G., Stefanek,
-  G., Steinbeck, T., Stelzer, H., Stenlund, E., Stocco, D., Stockmeier, M.,
-  Stoicea, G., Stolpovsky, P., Strmeň, P., Stutzmann, J.~S., Su, G., Sugitate,
-  T., Šumbera, M., Suire, C., Susa, T., Kumar, K.~S., Swoboda, D., Symons, J.,
-  Szarka, I., Szostak, A., Szuba, M., Szymanski, P., Tadel, M., Tagridis, C.,
-  Tan, L., Takaki, D.~T., Taureg, H., Tauro, A., Tavlet, M., Munoz, G.~T.,
-  Thäder, J., Tieulent, R., Timmer, P., Tolyhy, T., Topilskaya, N., de~Matos,
-  C.~T., Torii, H., Toscano, L., Tosello, F., Tournaire, A., Traczyk, T.,
-  Tröger, G., Tromeur, W., Truesdale, D., Trzaska, W., Tsiledakis, G., Tsilis,
-  E., Tsvetkov, A., Turcato, M., Turrisi, R., Tuveri, M., Tveter, T., Tydesjo,
-  H., Tykarski, L., Tywoniuk, K., Ugolini, E., Ullaland, K., Urbán, J.,
-  Urciuoli, G.~M., Usai, G.~L., Usseglio, M., Vacchi, A., Vala, M., Valiev, F.,
-  Vyvre, P.~V., Brink, A. V.~D., Eijndhoven, N.~V., Kolk, N. V.~D., van
-  Leeuwen, M., Vannucci, L., Vanzetto, S., Vanuxem, J.-P., Vargas, M.~A.,
-  Varma, R., Vascotto, A., Vasiliev, A., Vassiliou, M., Vasta, P., Vechernin,
-  V., Venaruzzo, M., Vercellin, E., Vergara, S., Verhoeven, W., Veronese, F.,
-  Vetlitskiy, I., Vernet, R., Victorov, V., Vidak, L., Viesti, G.,
-  Vikhlyantsev, O., Vilakazi, Z., Baillie, O.~V., Vinogradov, A., Vinogradov,
-  L., Vinogradov, Y., Virgili, T., Viyogi, Y., Vodopianov, A., Volpe, G.,
-  Vranic, D., Vrláková, J., Vulpescu, B., Wabnitz, C., Wagner, V., Wallet,
-  L., Wan, R., Wang, Y., Wang, Y., Wheadon, R., Weis, R., Wen, Q., Wessels, J.,
-  Westergaard, J., Wiechula, J., Wiesenaecker, A., Wikne, J., Wilk, A., Wilk,
-  G., Williams, C., Willis, N., Windelband, B., Witt, R., Woehri, H., Wyllie,
-  K., Xu, C., Yang, C., Yang, H., Yermia, F., Yin, Z., Yin, Z., Ky, B.~Y.,
-  Yushmanov, I., Yuting, B., Zabrodin, E., Zagato, S., Zagreev, B., Zaharia,
-  P., Zalite, A., Zampa, G., Zampolli, C., Zanevskiy, Y., Zarochentsev, A.,
-  Zaudtke, O., Závada, P., Zbroszczyk, H., Zepeda, A., Zeter, V., Zgura, I.,
-  Zhalov, M., Zhou, D., Zhou, S., Zhu, G., Zichichi, A., Zinchenko, A.,
-  Zinovjev, G., Zoccarato, Y., Zubarev, A., Zucchini, A., and Zuffa, M. (2008).
-\newblock The alice experiment at the cern lhc.
-\newblock {\em Journal of Instrumentation}, 3(08):S08002.
-
-\bibitem[Connors et~al., 2017]{Connors:2017ptx}
-Connors, M., Nattrass, C., Reed, R., and Salur, S. (2017).
-\newblock {Review of Jet Measurements in Heavy Ion Collisions}.
-
-\bibitem[Elia and the ALICE~Collaboration, 2013]{1742-6596-455-1-012005}
-Elia, D. and the ALICE~Collaboration (2013).
-\newblock Strangeness production in alice.
-\newblock {\em Journal of Physics: Conference Series}, 455(1):012005.
-
-\bibitem[Evans and Bryant, 2008]{1748-0221-3-08-S08001}
-Evans, L. and Bryant, P. (2008).
-\newblock Lhc machine.
-\newblock {\em Journal of Instrumentation}, 3(08):S08001.
-
-\bibitem[Floris, 2014]{FLORIS2014103}
-Floris, M. (2014).
-\newblock Hadron yields and the phase diagram of strongly interacting matter.
-\newblock {\em Nuclear Physics A}, 931:103 -- 112.
-\newblock QUARK MATTER 2014.
-
-\bibitem[Foka and Janik, 2016]{FOKA2016154}
-Foka, P. and Janik, M.~A. (2016).
-\newblock An overview of experimental results from ultra-relativistic heavy-ion
-  collisions at the cern lhc: Bulk properties and dynamical evolution.
-\newblock {\em Reviews in Physics}, 1:154 -- 171.
-
-\bibitem[Gyulassy, 2004]{Gyulassy:2004vg}
-Gyulassy, M. (2004).
-\newblock {The QGP discovered at RHIC}.
-\newblock In {\em {Structure and dynamics of elementary matter. Proceedings,
-  NATO Advanced Study Institute, Camyuva-Kemer, Turkey, September 22-October 2,
-  2003}}, pages 159--182.
-
-\bibitem[Heuser, 2013]{HEUSER2013941c}
-Heuser, J.~M. (2013).
-\newblock The compressed baryonic matter experiment at fair.
-\newblock {\em Nuclear Physics A}, 904-905:941c -- 944c.
-\newblock The Quark Matter 2012.
-
-\bibitem[Hilke, 2010]{0034-4885-73-11-116201}
-Hilke, H.~J. (2010).
-\newblock Time projection chambers.
-\newblock {\em Reports on Progress in Physics}, 73(11):116201.
-
-\bibitem[{Huovinen} et~al., 2001]{2001PhLB..503...58H}
-{Huovinen}, P., {Kolb}, P.~F., {Heinz}, U., {Ruuskanen}, P.~V., and {Voloshin},
-  S.~A. (2001).
-\newblock {Radial and elliptic flow at RHIC: further predictions}.
-\newblock {\em Physics Letters B}, 503:58--64.
-
-\bibitem[{Jacobs} and {Wang}, 2005]{2005PrPNP..54..443J}
-{Jacobs}, P. and {Wang}, X.-N. (2005).
-\newblock {Matter in extremis: ultrarelativistic nuclear collisions at RHIC}.
-\newblock {\em Progress in Particle and Nuclear Physics}, 54:443--534.
-
-\bibitem[Kapusta, 1979]{KAPUSTA1979461}
-Kapusta, J.~I. (1979).
-\newblock Quantum chromodynamics at high temperature.
-\newblock {\em Nuclear Physics B}, 148(3):461 -- 498.
-
-\bibitem[Loizides et~al., 2015]{Loizides:2014vua}
-Loizides, C., Nagle, J., and Steinberg, P. (2015).
-\newblock {Improved version of the PHOBOS Glauber Monte Carlo}.
-\newblock {\em SoftwareX}, 1-2:13--18.
-
-\bibitem[Luo, 2016]{LUO201675}
-Luo, X. (2016).
-\newblock Exploring the qcd phase structure with beam energy scan in heavy-ion
-  collisions.
-\newblock {\em Nuclear Physics A}, 956:75 -- 82.
-\newblock The XXV International Conference on Ultrarelativistic Nucleus-Nucleus
-  Collisions: Quark Matter 2015.
-
-\bibitem[Miller et~al., 2007]{Miller:2007ri}
-Miller, M.~L., Reygers, K., Sanders, S.~J., and Steinberg, P. (2007).
-\newblock {Glauber modeling in high energy nuclear collisions}.
-\newblock {\em Ann. Rev. Nucl. Part. Sci.}, 57:205--243.
-
-\bibitem[Nattrass, 2009]{phdthesisnattrass}
-Nattrass, C. (2009).
-\newblock System, energy, and flavor dependence of jets through di-hadron
-  correlations in heavy ion collisions.
-
-\bibitem[Odyniec, 2013]{1742-6596-455-1-012037}
-Odyniec, G. (2013).
-\newblock The rhic beam energy scan program in star and what's next ...
-\newblock {\em Journal of Physics: Conference Series}, 455(1):012037.
-
-\bibitem[Ozaki and Roser, 2015]{doi:10.1093/ptep/ptu093}
-Ozaki, S. and Roser, T. (2015).
-\newblock Relativistic heavy ion collider, its construction and upgrade.
-\newblock {\em Progress of Theoretical and Experimental Physics},
-  2015(3):03A102.
-
-\bibitem[Paquet et~al., 2016]{PAQUET2016409}
-Paquet, J.-F., Shen, C., Denicol, G., Luzum, M., Schenke, B., Jeon, S., and
-  Gale, C. (2016).
-\newblock Thermal and prompt photons at rhic and the lhc.
-\newblock {\em Nuclear Physics A}, 956:409 -- 412.
-\newblock The XXV International Conference on Ultrarelativistic Nucleus-Nucleus
-  Collisions: Quark Matter 2015.
-
-\bibitem[Patrignani and Group, 2016]{1674-1137-40-10-100001}
-Patrignani, C. and Group, P.~D. (2016).
-\newblock Review of particle physics.
-\newblock {\em Chinese Physics C}, 40(10):100001.
-
-\bibitem[Perlmutter et~al., 1999]{Perlmutter:1998np}
-Perlmutter, S. et~al. (1999).
-\newblock {Measurements of Omega and Lambda from 42 high redshift supernovae}.
-\newblock {\em Astrophys. J.}, 517:565--586.
-
-\bibitem[{Planck Collaboration} et~al., 2016]{2016A&A...594A..13P}
-{Planck Collaboration}, {Ade}, P.~A.~R., {Aghanim}, N., {Arnaud}, M.,
-  {Ashdown}, M., {Aumont}, J., {Baccigalupi}, C., {Banday}, A.~J., {Barreiro},
-  R.~B., {Bartlett}, J.~G., and et~al. (2016).
-\newblock {Planck 2015 results. XIII. Cosmological parameters}.
-\newblock {\em \aap}, 594:A13.
-
-\bibitem[Preghenella, 2011]{Preghenella:2011vy}
-Preghenella, R. (2011).
-\newblock {Transverse momentum spectra of identified charged hadrons with the
-  ALICE detector in Pb-Pb collisions at $\sqrt{s_{NN}}$ = 2.76 TeV}.
-\newblock {\em PoS}, EPS-HEP2011:118.
-
-\bibitem[Satz, 2006]{0954-3899-32-3-R01}
-Satz, H. (2006).
-\newblock Colour deconfinement and quarkonium binding.
-\newblock {\em Journal of Physics G: Nuclear and Particle Physics}, 32(3):R25.
-
-\bibitem[Sazdjian, 2017]{Sazdjian:2016hrz}
-Sazdjian, H. (2017).
-\newblock {Introduction to chiral symmetry in QCD}.
-\newblock {\em EPJ Web Conf.}, 137:02001.
-
-\bibitem[Schenke, 2017]{SCHENKE2017105}
-Schenke, B. (2017).
-\newblock Origins of collectivity in small systems.
-\newblock {\em Nuclear Physics A}, 967:105 -- 112.
-\newblock The 26th International Conference on Ultra-relativistic
-  Nucleus-Nucleus Collisions: Quark Matter 2017.
-
-\bibitem[Scott, 2006]{Scott:2005uf}
-Scott, D. (2006).
-\newblock {The standard cosmological model}.
-\newblock {\em Can. J. Phys.}, 84:419--435.
-
-\bibitem[Shao et~al., 2006]{Shao:2005iu}
-Shao, M., Barannikova, O.~{\relax Yu}., Dong, X., Fisyak, Y., Ruan, L.,
-  Sorensen, P., and Xu, Z. (2006).
-\newblock {Extensive particle identification with TPC and TOF at the STAR
-  experiment}.
-\newblock {\em Nucl. Instrum. Meth.}, A558:419--429.
-
-\bibitem[Shuryak, 1988]{Shuryak1988}
-Shuryak, E.~V. (1988).
-\newblock The qcd vacuum and quark-gluon plasma.
-\newblock {\em Zeitschrift f{\"u}r Physik C Particles and Fields},
-  38(1):141--145.
-
-\bibitem[{Snellings}, 2011]{2011NJPh...13e5008S}
-{Snellings}, R. (2011).
-\newblock {Elliptic flow: a brief review}.
-\newblock {\em New Journal of Physics}, 13(5):055008.
-
-\bibitem[Stock, 2004]{Ritter:2004xj}
-Stock, R. (2004).
-\newblock {Ultra-relativistic nucleus-nucleus collisions. Proceedings, 17th
-  International Conference, Quark Matter 2004, Oakland, USA, January 11-17,
-  2004}.
-\newblock {\em J. Phys.}, G30:S633--S648.
-
-\bibitem[{Strickland}, 2014]{2014NuPhA.926...92S}
-{Strickland}, M. (2014).
-\newblock {Anisotropic hydrodynamics: Motivation and methodology}.
-\newblock {\em Nuclear Physics A}, 926:92--101.
-
-\bibitem[Stöcker, 2005]{STOCKER2005121}
-Stöcker, H. (2005).
-\newblock Collective flow signals the quark–gluon plasma.
-\newblock {\em Nuclear Physics A}, 750(1):121 -- 147.
-\newblock Quark-Gluon Plasma. New Discoveries at RHIC: Case for the Strongly
-  Interacting Quark-Gluon Plasma. Contributions from the RBRC Workshop held May
-  14-15, 2004.
-
-\bibitem[Tang et~al., 2009]{Tang:2008ud}
-Tang, Z., Xu, Y., Ruan, L., van Buren, G., Wang, F., and Xu, Z. (2009).
-\newblock {Spectra and radial flow at RHIC with Tsallis statistics in a
-  Blast-Wave description}.
-\newblock {\em Phys. Rev.}, C79:051901.
-
-\bibitem[Tripathy et~al., 2017]{Tripathy:2017kwb}
-Tripathy, S., Khuntia, A., Tiwari, S.~K., and Sahoo, R. (2017).
-\newblock {Transverse Momentum Spectra and Nuclear Modification Factor using
-  Boltzmann Transport Equation with Flow in Pb+Pb collisions at $\sqrt{s_{NN}}$
-  = 2.76 TeV}.
-\newblock {\em Eur. Phys. J.}, A53(5):99.
-
-\bibitem[Vovchenko et~al., 2014]{PhysRevC.90.044907}
-Vovchenko, V., Anchishkin, D., and Csernai, L.~P. (2014).
-\newblock Time dependence of partition into spectators and participants in
-  relativistic heavy-ion collisions.
-\newblock {\em Phys. Rev. C}, 90:044907.
-
-\bibitem[Wilde, 2013]{Wilde:2012wc}
-Wilde, M. (2013).
-\newblock {Measurement of Direct Photons in pp and Pb-Pb Collisions with
-  ALICE}.
-\newblock {\em Nucl. Phys.}, A904-905:573c--576c.
-
-\bibitem[Wong, 1994]{wong1994introduction}
-Wong, C.-Y. (1994).
-\newblock {\em Introduction to high-energy heavy-ion collisions}.
-\newblock World scientific.
-
-\bibitem[Ye, ]{YePrivateCommunication}
-Ye, Z.
-\newblock private communication.
+\begin{thebibliography}{64}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Nattrass}(2009)}]{phdthesisnattrass}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Nattrass}}
+  (\bibinfo{year}{2009}).
+
+\bibitem[{\citenamefont{Ayala}(2016)}]{1742-6596-761-1-012066}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ayala}},
+  \bibinfo{journal}{Journal of Physics: Conference Series}
+  \textbf{\bibinfo{volume}{761}}, \bibinfo{pages}{012066}
+  (\bibinfo{year}{2016}),
+  \urlprefix\url{http://stacks.iop.org/1742-6596/761/i=1/a=012066}.
+
+\bibitem[{\citenamefont{Ozaki and Roser}(2015)}]{doi:10.1093/ptep/ptu093}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Ozaki}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Roser}},
+  \bibinfo{journal}{Progress of Theoretical and Experimental Physics}
+  \textbf{\bibinfo{volume}{2015}}, \bibinfo{pages}{03A102}
+  (\bibinfo{year}{2015}),
+  \eprint{/oup/backfile/content_public/journal/ptep/2015/3/10.1093_ptep_ptu093/4/ptu093.pdf},
+  \urlprefix\url{+ http://dx.doi.org/10.1093/ptep/ptu093}.
+
+\bibitem[{\citenamefont{Connors et~al.}(2017)\citenamefont{Connors, Nattrass,
+  Reed, and Salur}}]{Connors:2017ptx}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Connors}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Nattrass}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Reed}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Salur}}
+  (\bibinfo{year}{2017}), \eprint{1705.01974}.
+
+\bibitem[{\citenamefont{Vovchenko et~al.}(2014)\citenamefont{Vovchenko,
+  Anchishkin, and Csernai}}]{PhysRevC.90.044907}
+\bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Vovchenko}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Anchishkin}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{L.~P.}
+  \bibnamefont{Csernai}}, \bibinfo{journal}{Phys. Rev. C}
+  \textbf{\bibinfo{volume}{90}}, \bibinfo{pages}{044907}
+  (\bibinfo{year}{2014}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevC.90.044907}.
+
+\bibitem[{\citenamefont{{Adare} et~al.}(2007)\citenamefont{{Adare},
+  {Afanasiev}, {Aidala}, {Ajitanand}, {Akiba}, {Al-Bataineh}, {Alexander},
+  {Al-Jamel}, {Aoki}, {Aphecetche} et~al.}}]{2007PhRvL..98p2301A}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Adare}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Afanasiev}}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Aidala}}},
+  \bibinfo{author}{\bibfnamefont{N.~N.} \bibnamefont{{Ajitanand}}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Akiba}}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{{Al-Bataineh}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Alexander}}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{{Al-Jamel}}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{{Aoki}}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{{Aphecetche}}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Physical Review Letters}
+  \textbf{\bibinfo{volume}{98}}, \bibinfo{eid}{162301} (\bibinfo{year}{2007}),
+  \eprint{nucl-ex/0608033}.
+
+\bibitem[{\citenamefont{Wong}(1994)}]{wong1994introduction}
+\bibinfo{author}{\bibfnamefont{C.-Y.} \bibnamefont{Wong}},
+  \emph{\bibinfo{title}{Introduction to high-energy heavy-ion collisions}}
+  (\bibinfo{publisher}{World scientific}, \bibinfo{year}{1994}).
+
+\bibitem[{\citenamefont{Stöcker}(2005)}]{STOCKER2005121}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Stöcker}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{750}},
+  \bibinfo{pages}{121 } (\bibinfo{year}{2005}), ISSN \bibinfo{issn}{0375-9474},
+  \bibinfo{note}{quark-Gluon Plasma. New Discoveries at RHIC: Case for the
+  Strongly Interacting Quark-Gluon Plasma. Contributions from the RBRC Workshop
+  held May 14-15, 2004},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947404013028}.
+
+\bibitem[{\citenamefont{Afanasiev et~al.}(2012)}]{Afanasiev:2012dg}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Afanasiev}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{PHENIX}),
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{109}},
+  \bibinfo{pages}{152302} (\bibinfo{year}{2012}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2008)}]{Adare:2008qa}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX}), \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{101}}, \bibinfo{pages}{232301}
+  (\bibinfo{year}{2008}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2010)}]{Adare:2010dc}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX}), \bibinfo{journal}{Phys. Rev.}
+  \textbf{\bibinfo{volume}{C82}}, \bibinfo{pages}{011902}
+  (\bibinfo{year}{2010}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2016{\natexlab{a}})}]{Adare:2015ema}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX}), \bibinfo{journal}{Phys. Rev.}
+  \textbf{\bibinfo{volume}{C93}}, \bibinfo{pages}{024904}
+  (\bibinfo{year}{2016}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2013)}]{Adare:2013esx}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX}), \bibinfo{journal}{Phys. Rev.}
+  \textbf{\bibinfo{volume}{C88}}, \bibinfo{pages}{024906}
+  (\bibinfo{year}{2013}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2007)}]{Adare:2006ns}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX}), \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{98}}, \bibinfo{pages}{232301}
+  (\bibinfo{year}{2007}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2011{\natexlab{a}})}]{Adare:2011ht}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX}), \bibinfo{journal}{Phys. Rev.}
+  \textbf{\bibinfo{volume}{C84}}, \bibinfo{pages}{044902}
+  (\bibinfo{year}{2011}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Adare et~al.}(2011{\natexlab{b}})}]{Adare:2010de}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}} \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{PHENIX Collaboration}), \bibinfo{journal}{Phys.Rev.}
+  \textbf{\bibinfo{volume}{C84}}, \bibinfo{pages}{044905}
+  (\bibinfo{year}{2011}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Anderson et~al.}(2003)}]{Anderson:2003ur}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Anderson}}
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nucl. Instrum. Meth.}
+  \textbf{\bibinfo{volume}{A499}}, \bibinfo{pages}{659} (\bibinfo{year}{2003}),
+  \eprint{nucl-ex/0301015}.
+
+\bibitem[{\citenamefont{Adamczyk et~al.}(2017)\citenamefont{Adamczyk, Adkins,
+  Agakishiev, Aggarwal, Ahammed, Ajitanand, Alekseev, Anderson, Aoyama, Aparin
+  et~al.}}]{PhysRevC.96.044904}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Adamczyk}},
+  \bibinfo{author}{\bibfnamefont{J.~K.} \bibnamefont{Adkins}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Agakishiev}},
+  \bibinfo{author}{\bibfnamefont{M.~M.} \bibnamefont{Aggarwal}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ahammed}},
+  \bibinfo{author}{\bibfnamefont{N.~N.} \bibnamefont{Ajitanand}},
+  \bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Alekseev}},
+  \bibinfo{author}{\bibfnamefont{D.~M.} \bibnamefont{Anderson}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Aoyama}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Aparin}},
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{STAR Collaboration}),
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{96}},
+  \bibinfo{pages}{044904} (\bibinfo{year}{2017}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevC.96.044904}.
+
+\bibitem[{\citenamefont{Adare et~al.}(2016{\natexlab{b}})\citenamefont{Adare,
+  Afanasiev, Aidala, Ajitanand, Akiba, Akimoto, Al-Bataineh, Alexander, Alfred,
+  Al-Jamel et~al.}}]{PhysRevC.93.024901}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Adare}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Afanasiev}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Aidala}},
+  \bibinfo{author}{\bibfnamefont{N.~N.} \bibnamefont{Ajitanand}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Akiba}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Akimoto}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Al-Bataineh}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Alexander}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Alfred}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Al-Jamel}},
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{PHENIX Collaboration}),
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{93}},
+  \bibinfo{pages}{024901} (\bibinfo{year}{2016}{\natexlab{b}}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevC.93.024901}.
+
+\bibitem[{\citenamefont{Scott}(2006)}]{Scott:2005uf}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Scott}}, \bibinfo{journal}{Can.
+  J. Phys.} \textbf{\bibinfo{volume}{84}}, \bibinfo{pages}{419}
+  (\bibinfo{year}{2006}), \eprint{astro-ph/0510731}.
+
+\bibitem[{\citenamefont{Perlmutter et~al.}(1999)}]{Perlmutter:1998np}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Perlmutter}}
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{Supernova Cosmology Project}),
+  \bibinfo{journal}{Astrophys. J.} \textbf{\bibinfo{volume}{517}},
+  \bibinfo{pages}{565} (\bibinfo{year}{1999}), \eprint{astro-ph/9812133}.
+
+\bibitem[{\citenamefont{Foka and Janik}(2016)}]{FOKA2016154}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Foka}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~A.} \bibnamefont{Janik}},
+  \bibinfo{journal}{Reviews in Physics} \textbf{\bibinfo{volume}{1}},
+  \bibinfo{pages}{154 } (\bibinfo{year}{2016}), ISSN \bibinfo{issn}{2405-4283},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S2405428316300156}.
+
+\bibitem[{\citenamefont{Gyulassy}(2004)}]{Gyulassy:2004vg}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Gyulassy}}, in
+  \emph{\bibinfo{booktitle}{{Structure and dynamics of elementary matter.
+  Proceedings, NATO Advanced Study Institute, Camyuva-Kemer, Turkey, September
+  22-October 2, 2003}}} (\bibinfo{year}{2004}), pp. \bibinfo{pages}{159--182},
+  \eprint{nucl-th/0403032}.
+
+\bibitem[{\citenamefont{Adams et~al.}(2005)\citenamefont{Adams, Aggarwal,
+  Ahammed, Amonett, Anderson, Arkhipkin, Averichev, Badyal, Bai, Balewski
+  et~al.}}]{ADAMS2005102}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Adams}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aggarwal}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ahammed}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Amonett}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Anderson}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Arkhipkin}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Averichev}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Badyal}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Bai}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Balewski}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nuclear Physics A}
+  \textbf{\bibinfo{volume}{757}}, \bibinfo{pages}{102 } (\bibinfo{year}{2005}),
+  ISSN \bibinfo{issn}{0375-9474}, \bibinfo{note}{first Three Years of Operation
+  of RHIC},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947405005294}.
+
+\bibitem[{\citenamefont{{Bennett} et~al.}(2013)\citenamefont{{Bennett},
+  {Larson}, {Weiland}, {Jarosik}, {Hinshaw}, {Odegard}, {Smith}, {Hill},
+  {Gold}, {Halpern} et~al.}}]{2013ApJS..208...20B}
+\bibinfo{author}{\bibfnamefont{C.~L.} \bibnamefont{{Bennett}}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{{Larson}}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{{Weiland}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Jarosik}}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{{Hinshaw}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Odegard}}},
+  \bibinfo{author}{\bibfnamefont{K.~M.} \bibnamefont{{Smith}}},
+  \bibinfo{author}{\bibfnamefont{R.~S.} \bibnamefont{{Hill}}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{{Gold}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Halpern}}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{\apjs}
+  \textbf{\bibinfo{volume}{208}}, \bibinfo{eid}{20} (\bibinfo{year}{2013}),
+  \eprint{1212.5225}.
+
+\bibitem[{\citenamefont{{Planck Collaboration}
+  et~al.}(2016)\citenamefont{{Planck Collaboration}, {Ade}, {Aghanim},
+  {Arnaud}, {Ashdown}, {Aumont}, {Baccigalupi}, {Banday}, {Barreiro},
+  {Bartlett} et~al.}}]{2016A&A...594A..13P}
+\bibinfo{author}{\bibnamefont{{Planck Collaboration}}},
+  \bibinfo{author}{\bibfnamefont{P.~A.~R.} \bibnamefont{{Ade}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Aghanim}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Arnaud}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Ashdown}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Aumont}}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Baccigalupi}}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{{Banday}}},
+  \bibinfo{author}{\bibfnamefont{R.~B.} \bibnamefont{{Barreiro}}},
+  \bibinfo{author}{\bibfnamefont{J.~G.} \bibnamefont{{Bartlett}}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{\aap} \textbf{\bibinfo{volume}{594}},
+  \bibinfo{eid}{A13} (\bibinfo{year}{2016}), \eprint{1502.01589}.
+
+\bibitem[{\citenamefont{Kapusta}(1979)}]{KAPUSTA1979461}
+\bibinfo{author}{\bibfnamefont{J.~I.} \bibnamefont{Kapusta}},
+  \bibinfo{journal}{Nuclear Physics B} \textbf{\bibinfo{volume}{148}},
+  \bibinfo{pages}{461 } (\bibinfo{year}{1979}), ISSN \bibinfo{issn}{0550-3213},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/0550321379901469}.
+
+\bibitem[{\citenamefont{Shuryak}(1988)}]{Shuryak1988}
+\bibinfo{author}{\bibfnamefont{E.~V.} \bibnamefont{Shuryak}},
+  \bibinfo{journal}{Zeitschrift f{\"u}r Physik C Particles and Fields}
+  \textbf{\bibinfo{volume}{38}}, \bibinfo{pages}{141} (\bibinfo{year}{1988}),
+  ISSN \bibinfo{issn}{1431-5858},
+  \urlprefix\url{https://doi.org/10.1007/BF01574528}.
+
+\bibitem[{\citenamefont{Aitchison and Hey}(2003)}]{aitchison2003gauge}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Aitchison}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Hey}},
+  \emph{\bibinfo{title}{Gauge Theories in Particle Physics, Volume II: QCD and
+  the Electroweak Theory, Third Edition}}, Graduate Student Series in Physics
+  (\bibinfo{publisher}{CRC Press}, \bibinfo{year}{2003}), ISBN
+  \bibinfo{isbn}{9780849387760},
+  \urlprefix\url{https://books.google.com/books?id=-mDjFSUDQsEC}.
+
+\bibitem[{\citenamefont{Bali}(2001)}]{Bali:2000gf}
+\bibinfo{author}{\bibfnamefont{G.~S.} \bibnamefont{Bali}},
+  \bibinfo{journal}{Phys. Rept.} \textbf{\bibinfo{volume}{343}},
+  \bibinfo{pages}{1} (\bibinfo{year}{2001}), \eprint{hep-ph/0001312}.
+
+\bibitem[{\citenamefont{Satz}(2006)}]{0954-3899-32-3-R01}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Satz}},
+  \bibinfo{journal}{Journal of Physics G: Nuclear and Particle Physics}
+  \textbf{\bibinfo{volume}{32}}, \bibinfo{pages}{R25} (\bibinfo{year}{2006}),
+  \urlprefix\url{http://stacks.iop.org/0954-3899/32/i=3/a=R01}.
+
+\bibitem[{\citenamefont{Heuser}(2013)}]{HEUSER2013941c}
+\bibinfo{author}{\bibfnamefont{J.~M.} \bibnamefont{Heuser}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{904-905}},
+  \bibinfo{pages}{941c } (\bibinfo{year}{2013}), ISSN
+  \bibinfo{issn}{0375-9474}, \bibinfo{note}{the Quark Matter 2012},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947413002960}.
+
+\bibitem[{\citenamefont{Adam et~al.}(2016)\citenamefont{Adam, Adamova,
+  Aggarwal, Aglieri~Rinella, Agnello, Agrawal, Ahammed, Ahmad, Ahn, Aiola
+  et~al.}}]{Adam:2139456}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Adam}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Adamova}},
+  \bibinfo{author}{\bibfnamefont{M.~M.} \bibnamefont{Aggarwal}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Aglieri~Rinella}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Agnello}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Agrawal}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ahammed}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Ahmad}},
+  \bibinfo{author}{\bibfnamefont{S.~U.} \bibnamefont{Ahn}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Aiola}}, \bibnamefont{et~al.}
+  (\bibinfo{collaboration}{ALICE Collaboration}), \bibinfo{journal}{Phys. Rev.
+  C} \textbf{\bibinfo{volume}{94}}, \bibinfo{pages}{034903. 30 p}
+  (\bibinfo{year}{2016}), \bibinfo{note}{30 pages, 14 captioned figures, 2
+  tables, authors from page 25, published version, figures at
+  http://aliceinfo.cern.ch/ArtSubmission/node/2400},
+  \urlprefix\url{https://cds.cern.ch/record/2139456}.
+
+\bibitem[{\citenamefont{Floris}(2014)}]{FLORIS2014103}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Floris}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{931}},
+  \bibinfo{pages}{103 } (\bibinfo{year}{2014}), ISSN \bibinfo{issn}{0375-9474},
+  \bibinfo{note}{qUARK MATTER 2014},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947414003716}.
+
+\bibitem[{\citenamefont{Chatrchyan et~al.}(2012)\citenamefont{Chatrchyan,
+  Khachatryan, Sirunyan, Tumasyan, Adam, Bergauer, Dragicevic, Er\"o, Fabjan,
+  Friedl et~al.}}]{PhysRevLett.109.152303}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Chatrchyan}},
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{Khachatryan}},
+  \bibinfo{author}{\bibfnamefont{A.~M.} \bibnamefont{Sirunyan}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Tumasyan}},
+  \bibinfo{author}{\bibfnamefont{W.}~\bibnamefont{Adam}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Bergauer}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Dragicevic}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Er\"o}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Fabjan}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Friedl}},
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{CMS Collaboration}),
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{109}},
+  \bibinfo{pages}{152303} (\bibinfo{year}{2012}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.109.152303}.
+
+\bibitem[{\citenamefont{Stock}(2004)}]{Ritter:2004xj}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Stock}}, \bibinfo{journal}{J.
+  Phys.} \textbf{\bibinfo{volume}{G30}}, \bibinfo{pages}{S633}
+  (\bibinfo{year}{2004}), \eprint{nucl-ex/0405007}.
+
+\bibitem[{\citenamefont{Evans and Bryant}(2008)}]{1748-0221-3-08-S08001}
+\bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Evans}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Bryant}},
+  \bibinfo{journal}{Journal of Instrumentation} \textbf{\bibinfo{volume}{3}},
+  \bibinfo{pages}{S08001} (\bibinfo{year}{2008}),
+  \urlprefix\url{http://stacks.iop.org/1748-0221/3/i=08/a=S08001}.
+
+\bibitem[{\citenamefont{Loizides et~al.}(2015)\citenamefont{Loizides, Nagle,
+  and Steinberg}}]{Loizides:2014vua}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Loizides}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Nagle}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Steinberg}},
+  \bibinfo{journal}{SoftwareX} \textbf{\bibinfo{volume}{1-2}},
+  \bibinfo{pages}{13} (\bibinfo{year}{2015}), \eprint{1408.2549}.
+
+\bibitem[{\citenamefont{Miller et~al.}(2007)\citenamefont{Miller, Reygers,
+  Sanders, and Steinberg}}]{Miller:2007ri}
+\bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Miller}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Reygers}},
+  \bibinfo{author}{\bibfnamefont{S.~J.} \bibnamefont{Sanders}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Steinberg}},
+  \bibinfo{journal}{Ann. Rev. Nucl. Part. Sci.} \textbf{\bibinfo{volume}{57}},
+  \bibinfo{pages}{205} (\bibinfo{year}{2007}), \eprint{nucl-ex/0701025}.
+
+\bibitem[{\citenamefont{Bjorken}(1983)}]{PhysRevD.27.140}
+\bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{Bjorken}},
+  \bibinfo{journal}{Phys. Rev. D} \textbf{\bibinfo{volume}{27}},
+  \bibinfo{pages}{140} (\bibinfo{year}{1983}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevD.27.140}.
+
+\bibitem[{\citenamefont{{Jacobs} and {Wang}}(2005)}]{2005PrPNP..54..443J}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Jacobs}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.-N.} \bibnamefont{{Wang}}},
+  \bibinfo{journal}{Progress in Particle and Nuclear Physics}
+  \textbf{\bibinfo{volume}{54}}, \bibinfo{pages}{443} (\bibinfo{year}{2005}),
+  \eprint{hep-ph/0405125}.
+
+\bibitem[{\citenamefont{Schenke}(2017)}]{SCHENKE2017105}
+\bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Schenke}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{967}},
+  \bibinfo{pages}{105 } (\bibinfo{year}{2017}), ISSN \bibinfo{issn}{0375-9474},
+  \bibinfo{note}{the 26th International Conference on Ultra-relativistic
+  Nucleus-Nucleus Collisions: Quark Matter 2017},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947417301343}.
+
+\bibitem[{\citenamefont{{Strickland}}(2014)}]{2014NuPhA.926...92S}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Strickland}}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{926}},
+  \bibinfo{pages}{92} (\bibinfo{year}{2014}), \eprint{1401.1188}.
+
+\bibitem[{\citenamefont{{Huovinen} et~al.}(2001)\citenamefont{{Huovinen},
+  {Kolb}, {Heinz}, {Ruuskanen}, and {Voloshin}}}]{2001PhLB..503...58H}
+\bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{{Huovinen}}},
+  \bibinfo{author}{\bibfnamefont{P.~F.} \bibnamefont{{Kolb}}},
+  \bibinfo{author}{\bibfnamefont{U.}~\bibnamefont{{Heinz}}},
+  \bibinfo{author}{\bibfnamefont{P.~V.} \bibnamefont{{Ruuskanen}}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{S.~A.}
+  \bibnamefont{{Voloshin}}}, \bibinfo{journal}{Physics Letters B}
+  \textbf{\bibinfo{volume}{503}}, \bibinfo{pages}{58} (\bibinfo{year}{2001}),
+  \eprint{hep-ph/0101136}.
+
+\bibitem[{\citenamefont{{Snellings}}(2011)}]{2011NJPh...13e5008S}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Snellings}}},
+  \bibinfo{journal}{New Journal of Physics} \textbf{\bibinfo{volume}{13}},
+  \bibinfo{eid}{055008} (\bibinfo{year}{2011}), \eprint{1102.3010}.
+
+\bibitem[{\citenamefont{Paquet et~al.}(2016)\citenamefont{Paquet, Shen,
+  Denicol, Luzum, Schenke, Jeon, and Gale}}]{PAQUET2016409}
+\bibinfo{author}{\bibfnamefont{J.-F.} \bibnamefont{Paquet}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Shen}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Denicol}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Luzum}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Schenke}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Jeon}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Gale}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{956}},
+  \bibinfo{pages}{409 } (\bibinfo{year}{2016}), ISSN \bibinfo{issn}{0375-9474},
+  \bibinfo{note}{the XXV International Conference on Ultrarelativistic
+  Nucleus-Nucleus Collisions: Quark Matter 2015},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947416000828}.
+
+\bibitem[{\citenamefont{Wilde}(2013)}]{Wilde:2012wc}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Wilde}}
+  (\bibinfo{collaboration}{ALICE}), \bibinfo{journal}{Nucl. Phys.}
+  \textbf{\bibinfo{volume}{A904-905}}, \bibinfo{pages}{573c}
+  (\bibinfo{year}{2013}), \eprint{1210.5958}.
+
+\bibitem[{\citenamefont{Elia and the
+  ALICE~Collaboration}(2013)}]{1742-6596-455-1-012005}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Elia}} \bibnamefont{and}
+  \bibinfo{author}{\bibnamefont{the ALICE~Collaboration}},
+  \bibinfo{journal}{Journal of Physics: Conference Series}
+  \textbf{\bibinfo{volume}{455}}, \bibinfo{pages}{012005}
+  (\bibinfo{year}{2013}),
+  \urlprefix\url{http://stacks.iop.org/1742-6596/455/i=1/a=012005}.
+
+\bibitem[{\citenamefont{Behera et~al.}(2013)\citenamefont{Behera, Sahoo, and
+  Nandi}}]{Behera:2012eq}
+\bibinfo{author}{\bibfnamefont{N.~K.} \bibnamefont{Behera}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sahoo}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.~K.} \bibnamefont{Nandi}},
+  \bibinfo{journal}{Adv. High Energy Phys.} \textbf{\bibinfo{volume}{2013}},
+  \bibinfo{pages}{273248} (\bibinfo{year}{2013}), \eprint{1206.6616}.
+
+\bibitem[{\citenamefont{{Bratkovskaya, E.L.}
+  et~al.}(2018)\citenamefont{{Bratkovskaya, E.L.}, {Moreau, P.}, {Palmese, A.},
+  {Cassing, W.}, {Seifert, E.}, and {Steinert, T.}}}]{refId0}
+\bibinfo{author}{\bibnamefont{{Bratkovskaya, E.L.}}},
+  \bibinfo{author}{\bibnamefont{{Moreau, P.}}},
+  \bibinfo{author}{\bibnamefont{{Palmese, A.}}},
+  \bibinfo{author}{\bibnamefont{{Cassing, W.}}},
+  \bibinfo{author}{\bibnamefont{{Seifert, E.}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibnamefont{{Steinert, T.}}}, \bibinfo{journal}{EPJ Web
+  Conf.} \textbf{\bibinfo{volume}{171}}, \bibinfo{pages}{02004}
+  (\bibinfo{year}{2018}),
+  \urlprefix\url{https://doi.org/10.1051/epjconf/201817102004}.
+
+\bibitem[{\citenamefont{Sazdjian}(2017)}]{Sazdjian:2016hrz}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Sazdjian}},
+  \bibinfo{journal}{EPJ Web Conf.} \textbf{\bibinfo{volume}{137}},
+  \bibinfo{pages}{02001} (\bibinfo{year}{2017}), \eprint{1612.04078}.
+
+\bibitem[{\citenamefont{Odyniec}(2013)}]{1742-6596-455-1-012037}
+\bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Odyniec}},
+  \bibinfo{journal}{Journal of Physics: Conference Series}
+  \textbf{\bibinfo{volume}{455}}, \bibinfo{pages}{012037}
+  (\bibinfo{year}{2013}),
+  \urlprefix\url{http://stacks.iop.org/1742-6596/455/i=1/a=012037}.
+
+\bibitem[{\citenamefont{Luo}(2016)}]{LUO201675}
+\bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Luo}},
+  \bibinfo{journal}{Nuclear Physics A} \textbf{\bibinfo{volume}{956}},
+  \bibinfo{pages}{75 } (\bibinfo{year}{2016}), ISSN \bibinfo{issn}{0375-9474},
+  \bibinfo{note}{the XXV International Conference on Ultrarelativistic
+  Nucleus-Nucleus Collisions: Quark Matter 2015},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375947416300112}.
+
+\bibitem[{\citenamefont{Adler et~al.}(2014)\citenamefont{Adler, Afanasiev,
+  Aidala, Ajitanand, Akiba, Al-Jamel, Alexander, Aoki, Aphecetche, Armendariz
+  et~al.}}]{PhysRevC.89.044905}
+\bibinfo{author}{\bibfnamefont{S.~S.} \bibnamefont{Adler}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Afanasiev}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Aidala}},
+  \bibinfo{author}{\bibfnamefont{N.~N.} \bibnamefont{Ajitanand}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Akiba}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Al-Jamel}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Alexander}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Aoki}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Aphecetche}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Armendariz}},
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{PHENIX Collaboration}),
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{89}},
+  \bibinfo{pages}{044905} (\bibinfo{year}{2014}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevC.89.044905}.
+
+\bibitem[{\citenamefont{Adler et~al.}(2005)\citenamefont{Adler, Afanasiev,
+  Aidala, Ajitanand, Akiba, Alexander, Amirikas, Aphecetche, Aronson, Averbeck
+  et~al.}}]{PhysRevC.71.034908}
+\bibinfo{author}{\bibfnamefont{S.~S.} \bibnamefont{Adler}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Afanasiev}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Aidala}},
+  \bibinfo{author}{\bibfnamefont{N.~N.} \bibnamefont{Ajitanand}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Akiba}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Alexander}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Amirikas}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Aphecetche}},
+  \bibinfo{author}{\bibfnamefont{S.~H.} \bibnamefont{Aronson}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Averbeck}},
+  \bibnamefont{et~al.} (\bibinfo{collaboration}{PHENIX Collaboration}),
+  \bibinfo{journal}{Phys. Rev. C} \textbf{\bibinfo{volume}{71}},
+  \bibinfo{pages}{034908} (\bibinfo{year}{2005}),
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevC.71.034908}.
+
+\bibitem[{\citenamefont{Patrignani and Group}(2016)}]{1674-1137-40-10-100001}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Patrignani}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.~D.} \bibnamefont{Group}},
+  \bibinfo{journal}{Chinese Physics C} \textbf{\bibinfo{volume}{40}},
+  \bibinfo{pages}{100001} (\bibinfo{year}{2016}),
+  \urlprefix\url{http://stacks.iop.org/1674-1137/40/i=10/a=100001}.
+
+\bibitem[{\citenamefont{Preghenella}(2011)}]{Preghenella:2011vy}
+\bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Preghenella}}
+  (\bibinfo{collaboration}{ALICE}), \bibinfo{journal}{PoS}
+  \textbf{\bibinfo{volume}{EPS-HEP2011}}, \bibinfo{pages}{118}
+  (\bibinfo{year}{2011}), \eprint{1111.0763}.
+
+\bibitem[{\citenamefont{Bethe and Ashkin}(1953)}]{bethe1953passage}
+\bibinfo{author}{\bibfnamefont{H.~A.} \bibnamefont{Bethe}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ashkin}}
+  (\bibinfo{year}{1953}).
+
+\bibitem[{\citenamefont{Collaboration et~al.}(2008)\citenamefont{Collaboration,
+  Aamodt, Quintana, Achenbach, Acounis, Adamová, Adler, Aggarwal, Agnese,
+  Rinella et~al.}}]{1748-0221-3-08-S08002}
+\bibinfo{author}{\bibfnamefont{T.~A.} \bibnamefont{Collaboration}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Aamodt}},
+  \bibinfo{author}{\bibfnamefont{A.~A.} \bibnamefont{Quintana}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Achenbach}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Acounis}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Adamová}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Adler}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Aggarwal}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Agnese}},
+  \bibinfo{author}{\bibfnamefont{G.~A.} \bibnamefont{Rinella}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Journal of Instrumentation}
+  \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{S08002} (\bibinfo{year}{2008}),
+  \urlprefix\url{http://stacks.iop.org/1748-0221/3/i=08/a=S08002}.
+
+\bibitem[{\citenamefont{Hilke}(2010)}]{0034-4885-73-11-116201}
+\bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Hilke}},
+  \bibinfo{journal}{Reports on Progress in Physics}
+  \textbf{\bibinfo{volume}{73}}, \bibinfo{pages}{116201}
+  (\bibinfo{year}{2010}),
+  \urlprefix\url{http://stacks.iop.org/0034-4885/73/i=11/a=116201}.
+
+\bibitem[{\citenamefont{Shao et~al.}(2006)\citenamefont{Shao, Barannikova,
+  Dong, Fisyak, Ruan, Sorensen, and Xu}}]{Shao:2005iu}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Shao}},
+  \bibinfo{author}{\bibfnamefont{O.~{\relax Yu}.} \bibnamefont{Barannikova}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Dong}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Fisyak}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Ruan}},
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Sorensen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Xu}}, \bibinfo{journal}{Nucl.
+  Instrum. Meth.} \textbf{\bibinfo{volume}{A558}}, \bibinfo{pages}{419}
+  (\bibinfo{year}{2006}), \eprint{nucl-ex/0505026}.
+
+\bibitem[{\citenamefont{Ye}()}]{YePrivateCommunication}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Ye}},
+  \bibinfo{howpublished}{private communication}.
+
+\bibitem[{\citenamefont{Tang et~al.}(2009)\citenamefont{Tang, Xu, Ruan, van
+  Buren, Wang, and Xu}}]{Tang:2008ud}
+\bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Tang}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Xu}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Ruan}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{van Buren}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Wang}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Xu}}, \bibinfo{journal}{Phys.
+  Rev.} \textbf{\bibinfo{volume}{C79}}, \bibinfo{pages}{051901}
+  (\bibinfo{year}{2009}), \eprint{0812.1609}.
+
+\bibitem[{\citenamefont{Tripathy et~al.}(2017)\citenamefont{Tripathy, Khuntia,
+  Tiwari, and Sahoo}}]{Tripathy:2017kwb}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Tripathy}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Khuntia}},
+  \bibinfo{author}{\bibfnamefont{S.~K.} \bibnamefont{Tiwari}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Sahoo}},
+  \bibinfo{journal}{Eur. Phys. J.} \textbf{\bibinfo{volume}{A53}},
+  \bibinfo{pages}{99} (\bibinfo{year}{2017}), \eprint{1703.02416}.
 
 \end{thebibliography}
