@@ -12,10 +12,6 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[{\citenamefont{Nattrass}(2009)}]{phdthesisnattrass}
-\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Nattrass}}
-  (\bibinfo{year}{2009}).
-
 \bibitem[{\citenamefont{Ayala}(2016)}]{1742-6596-761-1-012066}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ayala}},
   \bibinfo{journal}{Journal of Physics: Conference Series}
@@ -346,6 +342,10 @@
   \bibinfo{pages}{S08001} (\bibinfo{year}{2008}),
   \urlprefix\url{http://stacks.iop.org/1748-0221/3/i=08/a=S08001}.
 
+\bibitem[{\citenamefont{Nattrass}(2009)}]{phdthesisnattrass}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Nattrass}}, Ph.D. thesis,
+  \bibinfo{school}{Yale University} (\bibinfo{year}{2009}).
+
 \bibitem[{\citenamefont{Loizides et~al.}(2015)\citenamefont{Loizides, Nagle,
   and Steinberg}}]{Loizides:2014vua}
 \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Loizides}},
@@ -528,8 +528,9 @@
 
 \bibitem[{\citenamefont{Bethe and Ashkin}(1953)}]{bethe1953passage}
 \bibinfo{author}{\bibfnamefont{H.~A.} \bibnamefont{Bethe}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ashkin}}
-  (\bibinfo{year}{1953}).
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Ashkin}},
+  \emph{\bibinfo{title}{Passage of radiations through matter experimental
+  nuclear physics vol 1 ed e segre}} (\bibinfo{year}{1953}).
 
 \bibitem[{\citenamefont{Collaboration et~al.}(2008)\citenamefont{Collaboration,
   Aamodt, Quintana, Achenbach, Acounis, Adamová, Adler, Aggarwal, Agnese,

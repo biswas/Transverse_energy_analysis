@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  28 MAR 2018 00:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  28 MAR 2018 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,20 +452,20 @@ LaTeX Info: Redefining \\ on input line 3056.
 (./back-matter/appendix-2.aux) (./back-matter/vita.aux))
 \openout1 = `biswas-thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -502,8 +502,8 @@ LaTeX Font Info:    ... okay on input line 74.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box31
-Package backref Info: ** backref set up for natbib ** on input line 74.
-Package hyperref Info: Link coloring ON on input line 74.
+Package backref Info: ** backref set up for natbib ** on input line 75.
+Package hyperref Info: Link coloring ON on input line 75.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -512,9 +512,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./biswas-thesis.out) (./biswas-thesis.out)
 \@outlinefile=\write3
@@ -590,12 +590,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
  [2
 color push 0 g 0 G
 color pop
@@ -613,12 +613,262 @@ color pop
 :<+ front-matter/dedication.tex
 \openout2 = `front-matter/dedication.aux'.
 
-No file front-matter/dedication.tex.
+(./front-matter/dedication.tex
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¸ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no µ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ® in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¯ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ® in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¾ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¾ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¸ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no µ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¦ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no ‡ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no µ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ® in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¯ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ƒ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¾ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ® in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¾ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¸ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ® in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¾ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¸ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no µ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¯ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no ‡ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ª in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no œ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¯ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no ‡ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no ¥ in font cmr12!
+Missing character: There is no  in font cmr12!
+) [3
+color push 0 g 0 G
+color pop
+
+
+
+
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
 :<-
 :<+ front-matter/acknowledgments.tex
 \openout2 = `front-matter/acknowledgments.aux'.
 
-No file front-matter/acknowledgments.tex.
+(./front-matter/acknowledgments.tex) [4
+color push 0 g 0 G
+color pop
+
+
+
+
+
+
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
 :<-
 :<+ front-matter/abstract.tex
 \openout2 = `front-matter/abstract.aux'.
@@ -638,18 +888,9 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)) [3
+)) [5
 color push 0 g 0 G
 color pop
-
-
-
-
-
-
-
-
-
 
 
 
@@ -678,7 +919,7 @@ color push 0 g 0 G
 color pop
 ]
 :<-
-(./biswas-thesis.toc [4
+(./biswas-thesis.toc [6
 color push 0 g 0 G
 color pop
 
@@ -805,7 +1046,7 @@ color pop
 \tf@toc=\write4
 \openout4 = `biswas-thesis.toc'.
 
- [5
+ [7
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -936,7 +1177,7 @@ color pop
 \tf@lot=\write5
 \openout5 = `biswas-thesis.lot'.
 
- [6
+ [8
 color push 0 g 0 G
 color pop
 
@@ -959,7 +1200,7 @@ color pop
 color push 0 g 0 G
 color pop
 ] (./biswas-thesis.lof
-[7
+[9
 color push 0 g 0 G
 color pop
 
@@ -1055,7 +1296,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [8
+] [10
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -1172,7 +1413,7 @@ color pop
 \tf@lof=\write6
 \openout6 = `biswas-thesis.lof'.
 
- [9
+ [11
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -1254,9 +1495,6 @@ No file front-matter.tex.
 
 (./chapters/chapter-1.tex
 Chapter 1.
-
-LaTeX Warning: Reference `ch:future' on page 1 undefined on input line 13.
-
 ) [1
 color push 0 g 0 G
 color pop
@@ -1490,7 +1728,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <figures/1742-6596-761-1-012066.png, id=527, 469.755pt x 374.39874pt>
+] <figures/1742-6596-761-1-012066.png, id=537, 469.755pt x 374.39874pt>
 File: figures/1742-6596-761-1-012066.png Graphic file (type png)
 
 <use figures/1742-6596-761-1-012066.png>
@@ -1610,7 +1848,7 @@ color pop
 
 (./chapters/chapter-3.tex
 Chapter 3.
-<figures/RHIC_Layout.jpeg, id=552, 308.352pt x 224.5188pt>
+<figures/RHIC_Layout.jpeg, id=562, 308.352pt x 224.5188pt>
 File: figures/RHIC_Layout.jpeg Graphic file (type jpg)
 
 <use figures/RHIC_Layout.jpeg>
@@ -1772,7 +2010,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/flow_elliptic_init_v4.pdf, id=579, 421.575pt x 313.17pt>
+<figures/flow_elliptic_init_v4.pdf, id=590, 421.575pt x 313.17pt>
 File: figures/flow_elliptic_init_v4.pdf Graphic file (type pdf)
 
 <use figures/flow_elliptic_init_v4.pdf>
@@ -1783,7 +2021,7 @@ Package pdftex.def Info: figures/flow_elliptic_init_v4.pdf used on input line 7
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/part_spec_Vovchenko.png, id=583, 803.0pt x 166.6225pt>
+<figures/part_spec_Vovchenko.png, id=594, 803.0pt x 166.6225pt>
 File: figures/part_spec_Vovchenko.png Graphic file (type png)
 
 <use figures/part_spec_Vovchenko.png>
@@ -1862,7 +2100,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/LightCone1_color-crop_NThesis.pdf, id=593, 517.935pt x 410.53375pt>
+<figures/LightCone1_color-crop_NThesis.pdf, id=604, 517.935pt x 410.53375pt>
 File: figures/LightCone1_color-crop_NThesis.pdf Graphic file (type pdf)
 
 <use figures/LightCone1_color-crop_NThesis.pdf>
@@ -1991,7 +2229,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/LightCone1_color-crop_NThesis.pdf>]
-<figures/v2Scaling1.png, id=759, 501.875pt x 372.39125pt>
+<figures/v2Scaling1.png, id=770, 501.875pt x 372.39125pt>
 File: figures/v2Scaling1.png Graphic file (type png)
 
 <use figures/v2Scaling1.png>
@@ -2081,7 +2319,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/v2Scaling2.png, id=773, 501.875pt x 349.305pt>
+<figures/v2Scaling2.png, id=784, 501.875pt x 349.305pt>
 File: figures/v2Scaling2.png Graphic file (type png)
 
 <use figures/v2Scaling2.png>
@@ -2091,7 +2329,7 @@ Package pdftex.def Info: figures/v2Scaling2.png used on input line 147.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/directPhotons.PNG, id=777, 852.18375pt x 374.14781pt>
+<figures/directPhotons.PNG, id=788, 852.18375pt x 374.14781pt>
 File: figures/directPhotons.PNG Graphic file (type png)
 
 <use figures/directPhotons.PNG>
@@ -2200,7 +2438,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/v2Scaling2.png>]
-<figures/jets.PNG, id=805, 354.57469pt x 344.78813pt>
+<figures/jets.PNG, id=815, 354.57469pt x 344.78813pt>
 File: figures/jets.PNG Graphic file (type png)
  <use figures/jets.PNG>
 Package pdftex.def Info: figures/jets.PNG used on input line 175.
@@ -2256,7 +2494,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/directPhotons.PNG>]
-<figures/Raa.PNG, id=816, 798.985pt x 576.1525pt>
+<figures/Raa.PNG, id=826, 798.985pt x 576.1525pt>
 File: figures/Raa.PNG Graphic file (type png)
  <use figures/Raa.PNG>
 Package pdftex.def Info: figures/Raa.PNG used on input line 182.
@@ -2730,7 +2968,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] <figures/TPCdEdxMod.png, id=923, 804.00375pt x 610.32014pt>
+] <figures/TPCdEdxMod.png, id=933, 804.00375pt x 610.32014pt>
 File: figures/TPCdEdxMod.png Graphic file (type png)
 
 <use figures/TPCdEdxMod.png>
@@ -2842,7 +3080,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
 
-<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=944, 803.0pt x 452.
+<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=955, 803.0pt x 452.
 69125pt>
 File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
  png)
@@ -2948,7 +3186,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/../figures/PhysRevC-96-044904_pTSpectra_39.png (PNG copy)>]
-<figures/../figures/Adamzyck_correction1.png, id=958, 1510.64375pt x 640.3925pt
+<figures/../figures/Adamzyck_correction1.png, id=968, 1510.64375pt x 640.3925pt
 >
 File: figures/../figures/Adamzyck_correction1.png Graphic file (type png)
  <use figures/../figures/Adamzyck_correction1.png>
@@ -3056,7 +3294,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/cent3_la_Au+Au_196.png, id=979, 698.61pt x 473.77pt>
+<figures/cent3_la_Au+Au_196.png, id=989, 698.61pt x 473.77pt>
 File: figures/cent3_la_Au+Au_196.png Graphic file (type png)
 
 <use figures/cent3_la_Au+Au_196.png>
@@ -3334,7 +3572,7 @@ color pop
 (./chapters/chapter-6.tex
 Chapter 6.
 
-<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=1007, 1003.75pt x 1
+<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=1017, 1003.75pt x 1
 003.75pt>
 File: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png Graphic file (type
  png)
@@ -3347,7 +3585,7 @@ Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=1008, 1003.75pt x 100
+<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=1018, 1003.75pt x 100
 3.75pt>
 File: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png Graphic file (type p
 ng)
@@ -3431,7 +3669,7 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=1017, 1003.75pt x 1
+<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=1027, 1003.75pt x 1
 003.75pt>
 File: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png Graphic file (type
  png)
@@ -3444,7 +3682,7 @@ Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=1018, 1003.75pt x 1003.
+<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=1028, 1003.75pt x 1003.
 75pt>
 File: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png Graphic file (type png
 )
@@ -3457,7 +3695,7 @@ d on input line 29.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=1022, 2007.5pt x 200
+<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=1032, 2007.5pt x 200
 7.5pt>
 File: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png Graphic file (type 
 png)
@@ -3470,7 +3708,7 @@ used on input line 38.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=1023, 2007.5pt x 2007.
+<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=1033, 2007.5pt x 2007.
 5pt>
 File: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png Graphic file (type pn
 g)
@@ -3483,7 +3721,7 @@ ed on input line 45.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=1026, 2007.5pt x 200
+<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=1036, 2007.5pt x 200
 7.5pt>
 File: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png Graphic file (type 
 png)
@@ -3537,7 +3775,7 @@ color pop
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=1031, 2007.5pt x 2007.5p
+<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=1041, 2007.5pt x 2007.5p
 t>
 File: figures/finalStacked/dETdyOverdNchdySumCent8s.png Graphic file (type png)
 
@@ -3579,7 +3817,7 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>]
-<figures/PHENIX_comparison2.png, id=1038, 700.6175pt x 475.7775pt>
+<figures/PHENIX_comparison2.png, id=1048, 700.6175pt x 475.7775pt>
 File: figures/PHENIX_comparison2.png Graphic file (type png)
 
 <use figures/PHENIX_comparison2.png>
@@ -3803,7 +4041,7 @@ color pop
 \openout7 = `biswas-thesis.brf'.
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 34--34
+Underfull \hbox (badness 1874) in paragraph at lines 30--30
 \OT1/cmr/m/n/12 03A102 (2015), [][]$\OT1/cmtt/m/n/12 /oup / backfile / content 
 _ public / journal / ptep / 2015 / 3 / 10 . 1093 _
  []
@@ -3815,25 +4053,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3847,25 +4069,11 @@ color pop
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3874,10 +4082,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3889,25 +4093,9 @@ color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3921,49 +4109,37 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -3973,7 +4149,18 @@ color pop
 ! Undefined control sequence.
 <argument> \apjs 
                  
-l.234 
+l.230 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \aap 
+                
+l.247 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3986,39 +4173,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4032,19 +4187,49 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 1 0 0 0 k 1 0 0 0 K
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
 color pop
 color push 0 g 0 G
 color pop
@@ -4058,30 +4243,6 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4089,20 +4250,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4113,49 +4260,19 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 ]
-! Undefined control sequence.
-<argument> \aap 
-                
-l.251 
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 2707) in paragraph at lines 318--318
+Underfull \hbox (badness 2707) in paragraph at lines 314--314
 []\OT1/cmr/m/n/12 M. Floris, Nu-clear Physics A \OT1/cmr/bx/n/12 931\OT1/cmr/m/
 n/12 , 103  (2014), ISSN 0375-9474, qUARK
  []
 
 
-Underfull \hbox (badness 8075) in paragraph at lines 318--318
+Underfull \hbox (badness 8075) in paragraph at lines 314--314
 \OT1/cmr/m/n/12 MAT-TER 2014, URL [][]$\OT1/cmtt/m/n/12 http : / / www . scienc
 edirect . com / science / article / pii /
  []
@@ -4165,13 +4282,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
+color pop
 color pop
 color push 0 g 0 G
 color pop
@@ -4180,28 +4293,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4215,15 +4306,11 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4232,10 +4319,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4246,8 +4329,6 @@ color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4263,10 +4344,6 @@ color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4277,7 +4354,17 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color push 0 g 0 G
+color pop
 color pop
 color push 0 g 0 G
 color pop
@@ -4288,25 +4375,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4315,46 +4384,6 @@ color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4366,16 +4395,6 @@ color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4384,7 +4403,15 @@ color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -4392,7 +4419,35 @@ color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
 color pop
 color push 0 g 0 G
 color pop
@@ -4406,9 +4461,19 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
 color pop
 color push 0 g 0 G
 color pop
@@ -4433,29 +4498,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4467,15 +4512,11 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4484,8 +4525,6 @@ color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4496,8 +4535,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4511,8 +4548,6 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4525,8 +4560,6 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4535,15 +4568,23 @@ color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -4554,9 +4595,27 @@ color pop
 [53
 color push 0 g 0 G
 color pop
+color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -4567,20 +4626,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4589,34 +4634,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -4741,36 +4758,43 @@ color pop
 
 No file back-matter/vita.tex.
 :<-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 (./biswas-thesis.aux (./front-matter/dedication.aux)
 (./front-matter/acknowledgments.aux) (./front-matter/abstract.aux)
 (./front-matter.aux) (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
 (./chapters/chapter-3.aux) (./chapters/chapter-4.aux) (./chapters/chapter-5.aux
 ) (./chapters/chapter-6.aux) (./chapters/chapter-7.aux)
 (./chapters/chapter-8.aux) (./chapters/chapter-9.aux)
-(./chapters/chapter-10.aux) (./back-matter.aux) (./back-matter/appendix-1.aux)
-(./back-matter/appendix-2.aux) (./back-matter/vita.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
+(./chapters/chapter-10.aux) (./back-matter.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+(./back-matter/appendix-1.aux) (./back-matter/appendix-2.aux)
+(./back-matter/vita.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 66FFFCCEFDD5287083701C3B2CE8D1D3;3507.
-Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: E6B348C1D920EA2112C93D21F79A9BBE;7222.
+(rerunfilecheck)             Checksum: 8382F6B76AEAB8A2663C4E12B27CC279;3507.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  EB109EE71B0432DC82C152AFF1C68120;7177.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
  ) 
 Here is how much of TeX's memory you used:
- 10147 strings out of 493046
- 155862 string characters out of 6137253
- 274745 words of memory out of 5000000
- 13150 multiletter control sequences out of 15000+600000
+ 10157 strings out of 493046
+ 156059 string characters out of 6137253
+ 274818 words of memory out of 5000000
+ 13152 multiletter control sequences out of 15000+600000
  17706 words of font info for 69 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 39i,12n,50p,1865b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,50p,1865b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
@@ -4789,10 +4813,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msam10.pfb>
-Output written on biswas-thesis.pdf (66 pages, 3033182 bytes).
+Output written on biswas-thesis.pdf (68 pages, 3031614 bytes).
 PDF statistics:
- 1464 PDF objects out of 1728 (max. 8388607)
- 1258 compressed objects within 13 object streams
- 238 named destinations out of 1000 (max. 500000)
+ 1367 PDF objects out of 1440 (max. 8388607)
+ 1160 compressed objects within 12 object streams
+ 242 named destinations out of 1000 (max. 500000)
  500 words of extra memory for PDF output out of 10000 (max. 10000000)
 
