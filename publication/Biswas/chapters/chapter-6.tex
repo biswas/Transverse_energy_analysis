@@ -1,26 +1,8 @@
 \chapter{Results} \label{ch:results}
-Present results and comparisons to Adare et al.....
+The results of the analysis are shown in Figs. \ref{fig:dETdEtaOverNpartBy2SumCents}-\ref{fig:comparison}. The error bars in the figures represent the uncertainties propagated from the available data as explained in section \ref{totalET}.
 
-	\begin{figure}[h]
-	  \centering
-	  \includegraphics[width=6.5in]{figures/parallelCoordPlot_4Axes.png}
-	  \caption{Parallel coordinates plot for 270 diffrent spectra relating 6 different identified particles (color-coded) to their respective collision centrality classes, good-fit parameters, and the transverse energy calculated using said parameters.}\label{fig:parallelCoord}
-	\end{figure}
-	
-% cross-check plots: pseudorapidity
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\begin{figure}[h]
-	  \centering
-	  \includegraphics[width=5.5in]{figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png}
-	  \caption{$(dE_{T}/d\eta)/0.5N_{part}$ at midrapidity as a function of $\sqrt{s_{NN}}$ for different centralities. The dashed line represents a power-law fit to the 0-5\% central data in the form $y = ax^{2b}$, where $x$ and $y$ are the placeholders for the quantities in the plot axes. $\chi^{2}/n.d.f$ for the fit was 1.806, and the good-fit parameters were $a = 0.4838 \pm 0.0429$ and $b = 0.2005 \pm 0.01466$. The shaded area represents the uncertainty bounds for the 0-5\% central PHENIX data from \cite{PhysRevC.93.024901}. }\label{fig:dETdEtaOverNpartBy2SumCents}
-	\end{figure}
-	
-	\begin{figure}[h]
-	  \centering
-	  \includegraphics[width=5.5in]{figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png}
-	  \caption{$(dE_{T}/d\eta)/(dN_{ch}/d\eta)$ at midrapidity as a function of $\sqrt{s_{NN}}$ for different centralities.}\label{fig:dETdEtaOverdNchdEtaSumCents}
-	\end{figure}
-	
+Figure \ref{fig:dETdEtaOverNpartBy2SumEn} shows how the transverse energy per nucleon participant pair scales with the total number of nucleon participants in the collisions. As discussed in section \ref{geometry}, $N_{part}$ is generally proportional to the centrality. The results show that the normalized $E_{T}$ does not vary much with $N_{part}$ for more central collisions (higher $N_{part}$ values). At a comprehensive stance, this quantity tends to increase with increasing $N_{part}$. It is also seen that the shape of the distribution of this quantity as a function of $N_{part}$ stays roughly the same for different collision energies. Furthermore, the normalized $E_{T}$ is found to increase with the collision energy, mostly when the number of participants is high.% There is also a conspicuous gap seen in between the distributions corresponding to the consecutive collision energy values of  
+Figure \ref{fig:dETdyOverNpartBy2SumEn} is similar to Fig. \ref{fig:dETdEtaOverNpartBy2SumEn} but in rapidity instead of pseudorapidity coordinates. It shows a similar trend, but with an upward shift, of $E_{T}$ distributions.
 	\begin{figure}[h]
 	  \centering
 	  \includegraphics[width=5.5in]{{figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s}.png}
@@ -29,16 +11,46 @@ Present results and comparisons to Adare et al.....
 	
 	\begin{figure}[h]
 	  \centering
+	  \includegraphics[width=5.5in]{{figures/finalStacked/dETdyOverNpartBy2SumEn39.0s}.png}
+	  \caption{$(dE_{T}/dy)/0.5N_{part}$ at midrapidity as a function of ${N_{part}}$ for different collision energies.}\label{fig:dETdyOverNpartBy2SumEn}
+	\end{figure}
+	
+Figure \ref{fig:dETdEtaOverdNchdEtaSumEn} shows the dependence of $E_{T}/N_{ch}$ on the number of nucleon participants. This ratio carries information about the average transverse mass of the final state particles produced from heavy ion collisions, and it has been found to not vary with the collision energy and centrality at RHIC energies \cite{PhysRevC.93.024901}. The results of this analysis show that this ratio remains roughly the same at higher values of $N_{part}$ but tends to grow smaller with decreasing $N_{part}$, albeit within the error bounds. It is also seen to increase with increasing collision energy. Figure \ref{fig:dETdyOverdNchdySumEn} is similar to Fig. \ref{fig:dETdEtaOverdNchdEtaSumEn} but in rapidity instead of pseudorapidity coordinates. The distributions show a similar trend although with some upward shift.
+
+	\begin{figure}[h]
+	  \centering
 	  \includegraphics[width=5.5in]{{figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s}.png}
 	  \caption{$(dE_{T}/d\eta)/(dN_{ch}/d\eta)$ at midrapidity as a function of ${N_{part}}$ for different collision energies.}\label{fig:dETdEtaOverdNchdEtaSumEn}
 	\end{figure}
+	
+	
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=5.5in]{{figures/finalStacked/dETdyOverdNchdySumEn39.0s}.png}
+	  \caption{$(dE_{T}/dy)/(dN_{ch}/dy)$ at midrapidity as a function of ${N_{part}}$ for different collision energies.}\label{fig:dETdyOverdNchdySumEn}
+	\end{figure}
 
-% cross-check plots: rapidity
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% snn plots:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+Figure \ref{fig:dETdEtaOverNpartBy2SumCents} shows the normalized $E_{T}$ as a function of collision energy for all the different collision centralities. This quantity increases with increasing collision energy and centrality while staying within the error bounds of the closest neighboring centralities. The slope of the distribution does not seem to vary a lot between centralities. Figure \ref{fig:dETdyOverNpartBy2SumCents} is similar to Fig. \ref{fig:dETdEtaOverNpartBy2SumCents} but in rapidity instead of pseudorapidity coordinates.
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=5.5in]{figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png}
+	  \caption{$(dE_{T}/d\eta)/0.5N_{part}$ at midrapidity as a function of $\sqrt{s_{NN}}$ in logarithmic scale for different centralities. The dashed line represents a power-law fit to the 0-5\% central data in the form $y = ax^{2b}$, where $x$ and $y$ are the placeholders for the quantities in the plot axes. $\chi^{2}/n.d.f$ for the fit was 1.806, and the good-fit parameters were $a = 0.4838 \pm 0.0429$ and $b = 0.2005 \pm 0.01466$. The shaded area represents the uncertainty bounds for the 0-5\% central PHENIX data from \cite{PhysRevC.93.024901}. }\label{fig:dETdEtaOverNpartBy2SumCents}
+	\end{figure}
+	
 	\begin{figure}[h]
 	  \centering
 	  \includegraphics[width=5.5in]{figures/finalStacked/dETdyOverNpartBy2SumCent8s.png}
 	  \caption{$(dE_{T}/dy)/0.5N_{part}$ at midrapidity as a function of $\sqrt{s_{NN}}$ for different centralities.}\label{fig:dETdyOverNpartBy2SumCents}
+	\end{figure}
+	
+%%%%%%%%%%%%%%
+Figures \ref{fig:dETdEtaOverdNchdEtaSumCents} and \ref{fig:dETdyOverdNchdySumCents} show the dependence of $E_{T}/N_{ch}$ on the collision energy in, respectively, pseudorapidity and rapidity coordinates. The $\sqrt{s_{NN}}$ axis is again in logarithmic scale. The ratio $E_{T}/N_{ch}$ increases with increasing collision energy. The slope of the distributions seem to decrease with increasing centrality for the more central collisions.	The more central collisions also show fluctuations in the way $E_{T}/N_{ch}$ increases as a function of $\sqrt{s_{NN}}$.
+	\begin{figure}[h]
+	  \centering
+	  \includegraphics[width=5.5in]{figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png}
+	  \caption{$(dE_{T}/d\eta)/(dN_{ch}/d\eta)$ at midrapidity as a function of $\sqrt{s_{NN}}$ for different centralities.}\label{fig:dETdEtaOverdNchdEtaSumCents}
 	\end{figure}
 	
 	\begin{figure}[h]
@@ -47,19 +59,8 @@ Present results and comparisons to Adare et al.....
 	  \caption{$(dE_{T}/dy)/(dN_{ch}/dy)$ at midrapidity as a function of $\sqrt{s_{NN}}$ for different centralities.}\label{fig:dETdyOverdNchdySumCents}
 	\end{figure}
 	
-	\begin{figure}[h]
-	  \centering
-	  \includegraphics[width=5.5in]{{figures/finalStacked/dETdyOverNpartBy2SumEn39.0s}.png}
-	  \caption{$(dE_{T}/dy)/0.5N_{part}$ at midrapidity as a function of ${N_{part}}$ for different collision energies.}\label{fig:dETdyOverNpartBy2SumEn}
-	\end{figure}
-	
-	\begin{figure}[h]
-	  \centering
-	  \includegraphics[width=5.5in]{{figures/finalStacked/dETdyOverdNchdySumEn39.0s}.png}
-	  \caption{$(dE_{T}/dy)/(dN_{ch}/dy)$ at midrapidity as a function of ${N_{part}}$ for different collision energies.}\label{fig:dETdyOverdNchdySumEn}
-	\end{figure}
-
 % comparison with Adare et al.
+Figure \ref{fig:comparison} puts the 0-5\% collision results of this analysis in perspective with the results from other experiments.
 	\begin{figure}[h]
 	  \centering
 	  \includegraphics[width=4.5in]{figures/PHENIX_comparison2.png}
