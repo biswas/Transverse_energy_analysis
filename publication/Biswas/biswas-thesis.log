@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  27 MAR 2018 21:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  27 MAR 2018 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2857,11 +2857,7 @@ File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
 Package pdftex.def Info: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png
  used on input line 8.
 (pdftex.def)             Requested size: 469.75499pt x 264.83366pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28
+ [28
 color push 0 g 0 G
 color pop
 
@@ -2920,9 +2916,10 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+]
+[29
 color push 0 g 0 G
 color pop
-] [29
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2941,11 +2938,9 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
+color push 0 g 0 G
+color pop
 color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -2993,6 +2988,10 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
@@ -3000,6 +2999,7 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
+ <./figures/../figures/Adamzyck_correction1.png>] [31
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3008,8 +3008,62 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
- <./figures/../figures/Adamzyck_correction1.png>]
-<figures/cent3_la_Au+Au_196.png, id=999, 698.61pt x 473.77pt>
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+]
+<figures/cent3_la_Au+Au_196.png, id=1006, 698.61pt x 473.77pt>
 File: figures/cent3_la_Au+Au_196.png Graphic file (type png)
 
 <use figures/cent3_la_Au+Au_196.png>
@@ -3017,9 +3071,6 @@ Package pdftex.def Info: figures/cent3_la_Au+Au_196.png used on input line 50.
 (pdftex.def)             Requested size: 469.75499pt x 318.57368pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 57.
 
@@ -3123,39 +3174,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 57.
 
-[31
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
+[32
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3165,29 +3184,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-] [32
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color pop
@@ -3196,14 +3192,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3229,6 +3217,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [33
 color push 0 g 0 G
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3273,16 +3269,6 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -3297,6 +3283,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 90.
 
 ) [34
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3345,67 +3341,32 @@ color pop
 (./chapters/chapter-6.tex
 Chapter 6.
 
-<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=1033, 700.6175pt x 
-475.7775pt>
+<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=1033, 1003.75pt x 1
+003.75pt>
 File: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png Graphic file (type
  png)
  <use figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png>
 Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png
  used on input line 8.
-(pdftex.def)             Requested size: 397.48499pt x 269.93279pt.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=1034, 700.6175pt x 47
-4.77374pt>
+<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=1034, 1003.75pt x 100
+3.75pt>
 File: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png Graphic file (type p
 ng)
  <use figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>
 Package pdftex.def Info: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png u
 sed on input line 14.
-(pdftex.def)             Requested size: 397.48499pt x 269.36331pt.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=1039, 700.6175pt x 
-475.7775pt>
-File: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png Graphic file (type
- png)
- <use figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>
-Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png
- used on input line 22.
-(pdftex.def)             Requested size: 397.48499pt x 269.93279pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=1040, 700.6175pt x 474.
-77374pt>
-File: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png Graphic file (type png
-)
- <use figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>
-Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png use
-d on input line 29.
-(pdftex.def)             Requested size: 397.48499pt x 269.36331pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=1044, 700.6175pt x 4
-75.7775pt>
-File: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png Graphic file (type 
-png)
- <use figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>
-Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png 
-used on input line 38.
-(pdftex.def)             Requested size: 397.48499pt x 269.93279pt.
- [35
+[35
 color push 0 g 0 G
 color pop
 
@@ -3423,6 +3384,10 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -3465,14 +3430,6 @@ color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
@@ -3481,118 +3438,165 @@ color pop
 color push 0 g 0 G
 color pop
 ]
+<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=1044, 1003.75pt x 1
+003.75pt>
+File: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png Graphic file (type
+ png)
+ <use figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>
+Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png
+ used on input line 22.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=1052, 700.6175pt x 474
-.77374pt>
+<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=1045, 1003.75pt x 1003.
+75pt>
+File: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png Graphic file (type png
+)
+ <use figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>
+Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png use
+d on input line 29.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=1049, 2007.5pt x 200
+7.5pt>
+File: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png Graphic file (type 
+png)
+ <use figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>
+Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png 
+used on input line 38.
+(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=1050, 2007.5pt x 2007.
+5pt>
 File: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png Graphic file (type pn
 g)
  <use figures/finalStacked/dETdyOverNpartBy2SumCent8s.png>
 Package pdftex.def Info: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png us
-ed on input line 44.
-(pdftex.def)             Requested size: 397.48499pt x 269.36331pt.
+ed on input line 45.
+(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=1055, 700.6175pt x 4
-75.7775pt>
+<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=1053, 2007.5pt x 200
+7.5pt>
 File: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png Graphic file (type 
 png)
  <use figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png>
 Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png 
-used on input line 52.
-(pdftex.def)             Requested size: 397.48499pt x 269.93279pt.
-
+used on input line 53.
+(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
+ [36
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=1056, 700.6175pt x 474.7
-7374pt>
+<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=1058, 2007.5pt x 2007.5p
+t>
 File: figures/finalStacked/dETdyOverdNchdySumCent8s.png Graphic file (type png)
 
  <use figures/finalStacked/dETdyOverdNchdySumCent8s.png>
 Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumCent8s.png used
- on input line 58.
-(pdftex.def)             Requested size: 397.48499pt x 269.36331pt.
+ on input line 59.
+(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/PHENIX_comparison2.png, id=1058, 700.6175pt x 475.7775pt>
+[37
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>]
+<figures/PHENIX_comparison2.png, id=1065, 700.6175pt x 475.7775pt>
 File: figures/PHENIX_comparison2.png Graphic file (type png)
 
 <use figures/PHENIX_comparison2.png>
-Package pdftex.def Info: figures/PHENIX_comparison2.png used on input line 66.
+Package pdftex.def Info: figures/PHENIX_comparison2.png used on input line 68.
 (pdftex.def)             Requested size: 325.215pt x 220.84947pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [36
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png>] [37
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png> <./figures/finalStack
-ed/dETdEtaOverdNchdEtaSumEn39.0s.png>] [38
+) [38
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3601,7 +3605,57 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>] [39
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>] [39
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>] [40
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>] [41
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverNpartBy2SumCent8s.png>] [42
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png>]
+[43
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverdNchdySumCent8s.png>] [44
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3612,45 +3666,14 @@ color pop
 color pop
 color push 0 g 0 G
 color pop
- <./figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>]
-[40
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdyOverNpartBy2SumCent8s.png> <./figures/finalStacke
-d/dETdEtaOverdNchdEtaSumCent8s.png>] [41
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdyOverdNchdySumCent8s.png> <./figures/PHENIX_compar
-ison2.png>]
+ <./figures/PHENIX_comparison2.png>]
 :<-
 :<+ chapters/chapter-7.tex
 \openout2 = `chapters/chapter-7.aux'.
 
 (./chapters/chapter-7.tex
 Chapter 7.
-) [42
+) [45
 color push 0 g 0 G
 color pop
 
@@ -3672,7 +3695,7 @@ color pop
 
 (./chapters/chapter-8.tex
 Chapter 8.
-[43
+[46
 color push 0 g 0 G
 color pop
 
@@ -3715,7 +3738,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) [44
+]) [47
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3745,7 +3768,7 @@ No file chapters/chapter-10.tex.
 
 No file back-matter.tex.
 :<-
-[45
+[48
 color push 0 g 0 G
 color pop
 
@@ -3780,7 +3803,7 @@ _ public / journal / ptep / 2015 / 3 / 10 . 1093 _
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
-[46
+[49
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -3951,7 +3974,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[47
+[50
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4027,6 +4050,8 @@ color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color push 0 g 0 G
 color pop
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -4130,7 +4155,7 @@ Underfull \hbox (badness 8075) in paragraph at lines 318--318
 edirect . com / science / article / pii /
  []
 
-[48
+[51
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4253,7 +4278,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [49
+] [52
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4398,7 +4423,7 @@ l. (PHENIX
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
-[50
+[53
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4521,7 +4546,7 @@ color push 0 g 0 G
 color pop
 ])
 :<-
-[51
+[54
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4592,7 +4617,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-] [52
+] [55
 color push 0 g 0 G
 color pop
 
@@ -4607,7 +4632,7 @@ color pop
 :<+ back-matter/appendix-1.tex
 \openout2 = `back-matter/appendix-1.aux'.
 
-(./back-matter/appendix-1.tex [53
+(./back-matter/appendix-1.tex [56
 color push 0 g 0 G
 color pop
 
@@ -4660,7 +4685,7 @@ color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
-]) [54
+]) [57
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -4694,7 +4719,7 @@ color pop
 :<+ back-matter/appendix-2.tex
 \openout2 = `back-matter/appendix-2.aux'.
 
-(./back-matter/appendix-2.tex) [55
+(./back-matter/appendix-2.tex) [58
 color push 0 g 0 G
 color pop
 
@@ -4719,13 +4744,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
 (./chapters/chapter-3.aux) (./chapters/chapter-4.aux) (./chapters/chapter-5.aux
 ) (./chapters/chapter-6.aux) (./chapters/chapter-7.aux)
 (./chapters/chapter-8.aux) (./chapters/chapter-9.aux)
-(./chapters/chapter-10.aux) (./back-matter.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-(./back-matter/appendix-1.aux) (./back-matter/appendix-2.aux)
-(./back-matter/vita.aux))
+(./chapters/chapter-10.aux) (./back-matter.aux) (./back-matter/appendix-1.aux)
+(./back-matter/appendix-2.aux) (./back-matter/vita.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 146.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 146.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
@@ -4736,46 +4756,43 @@ Package rerunfilecheck Warning: File `biswas-thesis.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `biswas-thesis.brf':
-(rerunfilecheck)             Before: B9C374E0926F8FBCA5E28DBF5C11EBE8;7274
-(rerunfilecheck)             After:  9B3F1568A722247EB22D6DAA37453FFA;7274.
+(rerunfilecheck)             Before: 922628257ABCDD1A43AD716BBA60EDD4;7333
+(rerunfilecheck)             After:  28B8E251918CED519B2C989A946D34D5;7272.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 10149 strings out of 493046
- 155864 string characters out of 6137253
- 276089 words of memory out of 5000000
+ 10151 strings out of 493046
+ 155878 string characters out of 6137253
+ 277135 words of memory out of 5000000
  13153 multiletter control sequences out of 15000+600000
  17706 words of font info for 69 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  39i,12n,50p,1865b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{page.83} has been referenced but does not exist, 
-replaced by a fixed one
-
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msam10.pfb>
-Output written on biswas-thesis.pdf (63 pages, 2817973 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msam10.pfb>
+Output written on biswas-thesis.pdf (66 pages, 3026290 bytes).
 PDF statistics:
- 1485 PDF objects out of 1728 (max. 8388607)
- 1281 compressed objects within 13 object streams
- 239 named destinations out of 1000 (max. 500000)
+ 1497 PDF objects out of 1728 (max. 8388607)
+ 1291 compressed objects within 13 object streams
+ 241 named destinations out of 1000 (max. 500000)
  532 words of extra memory for PDF output out of 10000 (max. 10000000)
 

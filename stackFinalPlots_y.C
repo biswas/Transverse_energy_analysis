@@ -1,10 +1,7 @@
 // ecolved from stackFinalPlots.C
 // macro to create all the final plots, appropriately stacked
 // relevant to rapidity, y, instead of pseudorapidity
-/*
-1. dETdyOverNpartBy2SumCent[i]
-2. dETdyOverdNchdySumCent[i]
-*/
+
 
 #include "fitBESData5.h"
 std::string doubToString(Double_t);
@@ -27,7 +24,7 @@ Double_t collEnArr[5] = {7.7,11.5,19.6,27,39};
 for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 {
 	TCanvas *c1 = new TCanvas();
-	TLegend* leg = new TLegend(0.1,0.5,0.5,0.9);
+	TLegend* leg = new TLegend(0.1,0.7,0.3,0.9);
 	for(int centInd = 0; centInd < CENTS; centInd++)
 	{
 		if (graphInd == 0)
@@ -45,18 +42,29 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 		const char* graphTextConstCharPtr = graphText.c_str();
 		cout << "graphName: " << graphName << endl;
 		g1 = (TGraphErrors*)file1->Get(graphNameConstCharPtr);
-		g1->SetMarkerSize(1);
-		if (centInd == 0) g1->Draw("A*X");
-		g1->SetMarkerColor(1+centInd); 
-		g1 -> SetMarkerStyle(20+centInd);
+		g1->SetMarkerSize(3);
+		if (centInd == 0) g1->Draw("A*E");
+		if(centInd == 4)
+		{
+			g1->SetMarkerColor(28); // 4 is yellow
+			g1->SetLineColor(28);
+		}
+		else
+		{ 
+			g1->SetMarkerColor(1+centInd); // 4 is yellow
+			g1->SetFillColor(1+centInd);
+		}
+		g1 -> SetMarkerStyle(20+centInd); // 4 is yellow
 		c1 -> SetLogx();
-		g1 -> Draw("PX");
+		g1 -> Draw("PX"); // px if errors not wanted
 		g1 -> SetName("g1");
 		leg -> AddEntry(g1, graphTextConstCharPtr, "p");
 		leg -> SetFillStyle(0);
 		leg -> SetFillColor(0);
 		leg -> SetBorderSize(0);
 		leg -> Draw();
+		
+		c1->SetCanvasSize(2000, 2000);
 		imgPathAndName = 
 			"./publication/Biswas/figures/finalStacked/"+graphName+"s.png";
 		c1 -> Update();
@@ -90,9 +98,18 @@ for(int graphInd = 2; graphInd < 4; graphInd++) // two different npart graphs
 		g1 = (TGraphErrors*)file1->Get(graphNameConstCharPtr);
 		// get rid of x-errors:
 		for(int j=0;j<g1->GetN();j++){g1->SetPointError(j,0,g1->GetErrorY(j));}
-		g1->SetMarkerSize(1);
+		g1->SetMarkerSize(2);
 		if (enInd == 0) g1->Draw("AP");
-		g1->SetMarkerColor(1+enInd); g1 -> SetLineColor(1+enInd);
+		if(enInd == 4)
+		{
+			g1->SetMarkerColor(28); // 4 is yellow
+			g1->SetLineColor(28);
+		}
+		else
+		{ 
+			g1->SetMarkerColor(1+enInd); // 4 is yellow
+			g1->SetLineColor(1+enInd);
+		}
 		g1 -> SetMarkerStyle(20+enInd); g1 -> SetLineStyle(9-enInd*2);
 		//c1 -> SetLogx();
 		g1 -> Draw("P");
@@ -102,10 +119,11 @@ for(int graphInd = 2; graphInd < 4; graphInd++) // two different npart graphs
 		leg -> SetFillColor(0);
 		leg -> SetBorderSize(0);
 		leg -> Draw();
+		c1->SetCanvasSize(1000, 1000);
 		imgPathAndName = 
 			"./publication/Biswas/figures/finalStacked/"+graphName+"s.png";
 		c1 -> Update();
-	} // end of for loop with index centInd
+	} // end of for loop with index enInd
 	const char* imgPathAndNameConstCharPtr1 = imgPathAndName.c_str();
 	c1->SaveAs(imgPathAndNameConstCharPtr1);
 	delete c1;
