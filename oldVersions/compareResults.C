@@ -8,7 +8,7 @@
 std::string doubToString(Double_t);
 std::string centIndToPercent(int centInd);
 
-void stackFinalPlots()
+void compareResults()
 {
 
 TFile* file1 = TFile::Open("./crossCheckGraphs.root");
@@ -33,7 +33,8 @@ func->SetLineColor(1);
 for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 {
 	TCanvas *c1 = new TCanvas();
-	TLegend* leg = new TLegend(0.1,0.6,0.3,0.9);
+	TLegend* leg = new TLegend(0.1,0.5,0.5,0.9);
+
 	for(int centInd = 0; centInd < CENTS; centInd++)
 	{
 		if (graphInd == 0)
@@ -51,9 +52,6 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 		const char* graphTextConstCharPtr = graphText.c_str();
 		cout << "graphName: " << graphName << endl;
 		g1 = (TGraphErrors*)file1->Get(graphNameConstCharPtr);
-		
-		// Power law fit temporarity removed:
-		/*
 		if (graphInd == 0 && centInd==0)
 		{
 			g1->Fit(func);
@@ -62,23 +60,13 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 	  			<<func->GetChisquare()/func->GetNDF()<<endl;
 	  		//gStyle->SetOptFit(0111);
 		}
-		*/
-		
-		g1->SetMarkerSize(3);
-		if (centInd == 0) g1->Draw("A*E");
-		if(centInd == 4)
-		{
-			g1->SetMarkerColor(28); // 4 is yellow
-			g1->SetLineColor(28);
-		}
-		else
-		{ 
-			g1->SetMarkerColor(1+centInd); // 4 is yellow
-			g1->SetLineColor(1+centInd);
-		}
-		g1 -> SetMarkerStyle(20+centInd); 
+		g1->SetMarkerSize(1);
+		if (centInd == 0) g1->Draw("A*X");
+		g1->SetMarkerColor(1+centInd); 
+		g1->SetFillColor(1+centInd);
+		g1 -> SetMarkerStyle(20+centInd);
 		c1 -> SetLogx();
-		g1 -> Draw("PX"); // px if errors not wanted
+		g1 -> Draw("PX");
 		//g1 -> Draw("PE");
 		g1 -> SetName("g1");
 		leg -> AddEntry(g1, graphTextConstCharPtr, "p");
@@ -90,7 +78,6 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 	} // end of for loop with index centInd
 						
 	// PHENIX plot for comparison:
-	/*
 	if (graphInd == 0)
 	{
 		TFile* file2 = TFile::Open("./plt4aAdare.root");
@@ -98,11 +85,12 @@ for(int graphInd = 0; graphInd < 2; graphInd++) // two different snn graphs
 		g1->SetFillColorAlpha(kBlue-10, 0.75);
    		g1->SetFillStyle(3002);
 		g1->Draw("3");
+		cout<<graphName<<": Chi^2 "<<func->GetChisquare()
+	  			<<" NDF "<<func->GetNDF()<<" Chi^2/NDF "
+	  			<<func->GetChisquare()/func->GetNDF()<<endl;
 		cout << "********************************" << endl;
 	}
-	*/
-	//c1->SetCanvasSize(2000, 2000);
-	//c1->SetWindowSize(500, 500);
+	
 	imgPathAndName = 
 			"./publication/Biswas/figures/finalStacked/"+graphName+"s.png";
 	c1 -> Update();
@@ -138,19 +126,10 @@ for(int graphInd = 2; graphInd < 4; graphInd++) // two different npart graphs
 		//gStyle -> SetErrorX(0.0001); // does not work
 		//c1->Update();		
 		for(int j=0;j<g1->GetN();j++){g1->SetPointError(j,0,g1->GetErrorY(j));}
-		g1->SetMarkerSize(2);
+		g1->SetMarkerSize(1);
 		if (enInd == 0) g1 -> Draw("AP");
-		if(enInd == 4)
-		{
-			g1->SetMarkerColor(28); // 4 is yellow
-			g1->SetLineColor(28);
-		}
-		else
-		{ 
-			g1->SetMarkerColor(1+enInd); // 4 is yellow
-			g1->SetLineColor(1+enInd);
-		}
-		g1 -> SetMarkerStyle(20+enInd); g1 -> SetLineStyle(9-enInd*2);
+		g1->SetMarkerColor(1+enInd); g1 -> SetLineColor(1+enInd);
+		g1 -> SetMarkerStyle(20+enInd);
 		//c1 -> SetLogx();
 		g1 -> Draw("P");
 		g1 -> SetName("g1");
@@ -159,13 +138,12 @@ for(int graphInd = 2; graphInd < 4; graphInd++) // two different npart graphs
 		leg -> SetFillColor(0);
 		leg -> SetBorderSize(0);
 		leg -> Draw();
-		c1->SetCanvasSize(1000, 1000);
 		
 	} // end of for loop with index enInd
 
 	// save stuff:
 	imgPathAndName = 
-			"./publication/Biswas/figures/finalStacked/"+graphName+"s.png";
+			"./publication/Biswas/figures/finalStacked/"+graphName+"comparisons.png";
 	c1 -> Update();
 	const char* imgPathAndNameConstCharPtr1 = imgPathAndName.c_str();
 	c1->SaveAs(imgPathAndNameConstCharPtr1);
