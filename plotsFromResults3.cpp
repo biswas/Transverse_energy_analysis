@@ -1,7 +1,3 @@
-/*
-	next: calculate uncertainties
-*/
-
 
 #include "Riostream.h"
 //#include <cstdio>
@@ -56,8 +52,10 @@ int plotsFromResults3(){
 											
 	Double_t dETdEtaSum_errSq[cents][collEns] = {0}; // errors added in quadrature
 								// TODO don't forget to take the square root later
+	Double_t dETdEtaSum_err[cents][collEns];
 	Double_t dNchdEtaSum[cents][collEns] = {0};
 	Double_t dNchdEtaSum_errSq[cents][collEns] = {0}; // errors added in quadrature
+	Double_t dNchdEtaSum_err[cents][collEns] = {0};
 	Double_t Npart[cents][collEns];// Npart function of cent and en only
 	Double_t Npart_err[cents][collEns];
 	Double_t dETdEtaOverNpartBy2Sum[cents][collEns];
@@ -152,7 +150,7 @@ int plotsFromResults3(){
 			dNchdEtaSum[centIndex][enIndex] 		+= dNchdEta[centIndex][enIndex][partIndex];
 			dNchdEtaSum_errSq[centIndex][enIndex] 	+= dNchdEtaErr[centIndex][enIndex][partIndex]*
 													   dNchdEtaErr[centIndex][enIndex][partIndex];
-			dNchdEtaSum_errcentIndex][enIndex]		=  TMath::Sqrt(dNchdEtaSum_errSq[centIndex][enIndex]);
+			dNchdEtaSum_err[centIndex][enIndex]		=  TMath::Sqrt(dNchdEtaSum_errSq[centIndex][enIndex]);
 		}
 		else if(partIndex==2 || partIndex==3 || partIndex == 4 || partIndex == 5){
 			dETdEtaSum[centIndex][enIndex] 			+= 2.0*dETdEta[centIndex][enIndex][partIndex];
@@ -308,7 +306,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverNpartBy2SumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverNpartBy2_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==snn2){
 		c -> SetLogx();
@@ -319,7 +317,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverdNchdEtaSumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverdNchdEta_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart1){
 		g->SetMarkerStyle(28);
@@ -329,7 +327,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart2){
 		g->SetMarkerStyle(28);
@@ -339,7 +337,7 @@ void formatGraph(TGraph* g, Double_t collEn_Or_NpartArr[], int en_Or_centInd){
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
 	}
 	//cout << g->GetName() << endl;
 	

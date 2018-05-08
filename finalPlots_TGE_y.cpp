@@ -1,6 +1,5 @@
 // use results from fits to produce individual plots
 // (in rapidity coordinates rather than pseudorapidity)
-// which are appropriately stacked for publication
 // evolved from finalPlots_TGE.cpp
 
 #include "Riostream.h"
@@ -86,7 +85,7 @@ int finalPlots_TGE_y(){
 				cout << "Problem opening file!" << endl;// tested
 				return 3333;
 			}
-			for(int i=0;i<46;i++)
+			for(int i=0;i<47;i++)
 			{ // loop through 46 column names
 				in1 >> skipContent;
 				// (tested) print first and last header names to check:
@@ -118,7 +117,8 @@ int finalPlots_TGE_y(){
 			Npart[centIndex(cent)][enIndex(collEn)] << "\t";
 		in1 >> Npart_err[centIndex(cent)][enIndex(collEn)];
 		cout << Npart_err[centIndex(cent)][enIndex(collEn)] << "\n";
-		
+		if(j>=271) in1 >> 	skipContent;
+
 		if(partIndex(part) == 6 || partIndex(part) == 7)
 		{	// since lambdas aren't charged particles:
 			dNchdy[centIndex(cent)][enIndex(collEn)][partIndex(part)]		= 0.;

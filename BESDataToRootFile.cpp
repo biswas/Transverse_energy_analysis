@@ -23,7 +23,7 @@ int BESDataToRootFile(){ // main
 	//TODO: std::vector<TH1D> 	histoList; // vector (list) of histograms
 	ifstream 			in;
 	
-	in.open(Form("/home/bsharma/rhip/analysisCodes/BESData_sorted.txt"));
+	in.open(Form("./BESData_sorted.txt"));
 	// ^ data file with Beam Scan Energy data, !!!!!!bins sorted!!!!!
 	TFile* f = new TFile("BESData.root","RECREATE");// .root file to be created
 	//const char* collidingSpeciesPtr = NULL;

@@ -57,7 +57,7 @@ int interpLaCentTGE_y(){
 		return 1;
 	}
 
-	for(int i=0;i<46;i++){ // loop through 46 column names
+	for(int i=0;i<47;i++){ // loop through 47 column names
 		in >> skipContent;
 		// (tested) print first and last header names to check:
 		//if (i==0) cout << "Col. 1: " << skipContent << endl;
@@ -144,7 +144,7 @@ int interpLaCentTGE_y(){
 		else if (part == "pro") partIndex = 4;
 		else if (part == "pba") partIndex = 5;
 		*/
-		if 		(part == "ala") partIndex = 6;
+		if 	(part == "ala") partIndex = 6;
 		else if (part == "la_") partIndex = 7;
 		in >> dETdy[centIndex][enIndex][partIndex];
 		cout << dETdy[centIndex][enIndex][partIndex] << "\t";
@@ -158,7 +158,7 @@ int interpLaCentTGE_y(){
 		cout << Npart[centIndex][enIndex] << "\t";
 		in >> Npart_err[centIndex][enIndex];
 		cout << Npart_err[centIndex][enIndex] << "\n";
-		//in >> skipContent; // last column only contains the fit status
+		in >> skipContent; // last column only contains the fit status
 
 		// TODO: what about lambdas while adding ET?
 		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam (last term is valid if there's no antilambda)
