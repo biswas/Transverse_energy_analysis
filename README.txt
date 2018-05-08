@@ -13,8 +13,10 @@ Tutorial sequence:
 4. root fitAllHistosInTFile.cpp (~ 5 mins)
 5. root interpLaCentTGE.cpp
 6. root interpLaCentTGE_y.cpp
-7. root stackFinalPlots.C
-8. root stackFinalPlots_y.C
+7. root finalPlots_TGE.cpp
+8. root finalPlots_TGE_y.cpp
+9. root stackFinalPlots.C
+10. root stackFinalPlots_y.C
 *********************************************************************************************
 Descriptionsof methods available in fitBESData5.h
 *********************************************************************************************
