@@ -23,7 +23,7 @@ int BESDataToRootFile(){ // main
 	//TODO: std::vector<TH1D> 	histoList; // vector (list) of histograms
 	ifstream 			in;
 	
-	in.open(Form("/home/bsharma/rhip/analysisCodes/BESData_sorted.txt"));
+	in.open(Form("./BESData_sorted.txt"));
 	// ^ data file with Beam Scan Energy data, !!!!!!bins sorted!!!!!
 	TFile* f = new TFile("BESData.root","RECREATE");// .root file to be created
 	//const char* collidingSpeciesPtr = NULL;
@@ -55,7 +55,7 @@ nested loop structure:
 			Double_t tempDouble; /////////// flag used in debugging
 			Double_t binHighEdge; // only pushed_back after completion of while loop
 									// to avoid redundancy
-			/////// FIXME binEdgesVec.push_back(0.0);// to set the left-most edge to zero
+			/////// FIXME binEdgesVec.push_back(0.0);// to set the left-most edge to zero  DONE
 			while(in>>myDouble){// get single content from each of the 5 columns, and repeat
 									// until in.fail(), i,e. fail bit encountered
 								// fstream malfunction if input stream statement within loop body

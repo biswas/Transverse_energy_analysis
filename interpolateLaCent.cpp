@@ -1,10 +1,10 @@
-// evolved from fit plotsFromResults3.cpp
+// evolved from plotsFromResults3.cpp
 // trying to get the TGraph for ETlambda/npart vs npart and 
  //interpolate between two points to get the ET for lambdas 
  // corresponding to the intermediate points
  // using  TGraph->Eval()
  // then scale the percentage uncertainties accordingly
- // FIXME: npart, not npart/2
+ // FIXME: npart, not npart/2 DONE
 
 #include "Riostream.h"
 #include "fitBESData5.h" // for the function getNpartAndErr
@@ -72,7 +72,7 @@ int interpolateLaCent(){
 											//and initialize all other elements as if 
 											// they had static storage duration, hence
 											// set them to zero as well
-	// FIXME: faulty assignment of values to centIndex 6 & 7. Fix after interpolation										
+	// FIXME: faulty assignment of values to centIndex 6 & 7. Fix after interpolation DONE										
 	Double_t dETdEtaSum_errSq[cents][collEns] = {0.}; // errors added in quadrature
 	Double_t dETdEtaSum_err[cents][collEns] = {0.}; // sq root of the above
 	Double_t dNchdEtaSum[cents][collEns] = {0.};

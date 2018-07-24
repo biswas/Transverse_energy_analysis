@@ -11,8 +11,6 @@
 #include <fstream>
 #include "fitBESData5.h"
 using namespace std;
-////// FIXME: verify integral values from wolframalpha
-
 // forward declarations for methods in fitBESData.h:
 Double_t getdNdptOverptIntegrand(Double_t* rad, Double_t* par);// not used
 Double_t getdNdpt(Double_t* pT, Double_t* params);
@@ -88,7 +86,9 @@ int fitBESData5_1(){
 	TF1* dNdyIntegrandFunc;
 	int breakOutForTesting =0;
 	int stop =140; // breakOut after this many iterations (if achieved); default: 140
-	while((mikey=(TKey*)next())){// TODO!!! delete mikey at the end of every loop
+	cout << "Flag" << endl;
+	while((mikey=(TKey*)next())){
+		///cout << "Histo iter: " << breakOutForTesting+1 << endl;
 		class1 = gROOT->GetClass(mikey->GetClassName());
 		if(!class1->InheritsFrom("TH1")){
 			delete class1;

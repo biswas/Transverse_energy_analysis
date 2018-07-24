@@ -60,7 +60,7 @@ int interpLaCentTGE(){
 		return 1;
 	}
 
-	for(int i=0;i<46;i++){ // loop through 46 column names
+	for(int i=0;i<47;i++){ // loop through 47 column names
 		in >> skipContent;
 		// (tested) print first and last header names to check:
 		//if (i==0) cout << "Col. 1: " << skipContent << endl;
@@ -103,9 +103,9 @@ int interpLaCentTGE(){
 	
 	for(int j=0; j<70; j++){// for 70 rows below header in the data file
 		//for(int i=0; i<46; i++){
-		in >> collEn; cout << collEn << "\t";
-		in >> part; cout << part << "\t";
-		in >> cent; cout << cent << "\t";
+		in >> collEn; cout << "collEn: " << collEn << "\t";
+		in >> part; cout << "part: " << part << "\t";
+		in >> cent; cout << "cent: " << cent << "\t";
 		for(int k=0; k<15;k++){// skip content in next 15 columns
 		in >> skipContent;
 		}
@@ -161,7 +161,7 @@ int interpLaCentTGE(){
 		cout << Npart[centIndex][enIndex] << "\t";
 		in >> Npart_err[centIndex][enIndex];
 		cout << Npart_err[centIndex][enIndex] << "\n";
-		//in >> skipContent; // last column only contains the fit status
+		in >> skipContent; // last column only contains the fit status
 
 		// TODO: what about lambdas while adding ET?
 		// ET = 3ET_pi + 4ET_k + 4ET_p + 2ET_lam (last term is valid if there's no antilambda)

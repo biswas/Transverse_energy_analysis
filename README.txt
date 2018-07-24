@@ -5,6 +5,19 @@ One of the methods to probe the properties of this matter is by analyzing the co
 This method involves a manipulation of the transverse momentum spectra, utilizing the mathematical tools pertaining to heavy-ion collision physics, to calculate the transverse energy production. Due to the limited capabilities of the detectors, however, there is a lack of available data points corresponding to low and high momenta. I use the Boltzmann-Gibbs blast wave function to perform a non-linear regression on the available data points and extract the good-fit parameters and other statistics to extrapolate the given spectrum into the low- and high- momentum regions. CERN's ROOT, an object-oriented framework for large-scale data analysis, comes handy in this regard.
 
 *********************************************************************************************
+Tutorial sequence:
+
+1. root BESDataToRootFile.cpp
+2. source analyzeAllHistos.bash (~ 5 mins)
+3. root BESLambdasToRootFile_TH1.cpp
+4. root fitAllHistosInTFile.cpp (~ 5 mins)
+5. root interpLaCentTGE.cpp
+6. root interpLaCentTGE_y.cpp
+7. root finalPlots_TGE.cpp
+8. root finalPlots_TGE_y.cpp
+9. root stackFinalPlots.C
+10. root stackFinalPlots_y.C
+*********************************************************************************************
 Descriptionsof methods available in fitBESData5.h
 *********************************************************************************************
 __________________________________________
@@ -73,10 +86,11 @@ directory: publication
 10. fitBESData5.h
 	- contains definitions of functions used by 8. and 9.
 
-11.  fitResults5.dat
+11. fitResults5.dat
 	- contains results from 7.
 
 12. plotsFromResults3.cpp
+	- this is an older version with limited functionality; find newer version below
 	- uses 11. to produce cross-check plots and new plots for publication
 	- plots saved as .png files in subdirectories under directory finalPlots
 
@@ -182,6 +196,78 @@ directory: publication
 	- result of 24. using 31.
 	- ordinate is dN/dpT
 34. fitALICE2013Data_v2_transf.cpp
+
+35. BES_strangeness_data.txt
+	- BES data for strange particles with headers in the correct input format
+	- data without bins and errors are only statistical
+36. BES_lambdas.txt
+	- subset of BES_strangeness_data.txt with only lambdas and antilambdas
+37. BESLambdasToRootFile.cpp
+	- creates BESLambdas.root (containing TGraphErrors objects) using BES_lambdas.txt
+38. BESLambdas.root
+	- contains TGraphErrors objects created from data in BES_lambdas.txt
+
+39. chkTGEbins.C
+	- intermediate macro to estimate the nature of the algorithm to bin unbinned lambdas
+	- details at the beginning of the code file
+
+40. BESLambdasToRootFile_TH1.cpp
+	- modification of BESLambdasToRootFile.cpp
+	- produces BESLambdas_optBins.root
+	- uses algorithm in function "GetOptimalBinEdges(const vector<Double_t> &xV)"...
+	- ... to get a vector of optimal bin edges using the available abscissas
+
+41. BESLambdas_optBins.root
+	- contains histograms corresponding to BES lambdas spectra
+
+42. fitAllHistosInTFile.cpp
+	- evolved from fitBESData5_1.cpp
+	- details found at the beginning of the file
+	- attempt to make the fitting process more generic
+	- used to fit lambdas spectra (from BESLambdas_optBins.root)
+
+43. fitResults_la.dat
+	- result of using fitAllHistosInTFile.cpp on BESLambdas_optBins.root
+
+44. interpLaCentTGE.cpp
+	- interpolates lambdas ET to centrality bins not available for lambdas,
+	- ... but present in the data for the rest of the particles
+	- pseudorapidity coordinate
+45. lambdasInterpWithErr.dat
+	- result of interpolateLaCent.cpp
+
+46. inerpLaCentTGE_y.cpp
+	- same as interpLaCentTGE.cpp but for rapidity coordinate
+
+47. lambdasInterpWithErr_y.dat
+	- same as lambdasInterpWithErr.dat but for rapidity coordinate
+
+48. finalPlots_TGE.cpp
+	- uses results available in fitResults5.dat and fitResults_la.dat to
+	- .. produce individual final plots and save them in crossCheckGraphs.root
+	- pseudorapidity coordinate
+
+49. finalPlots_TGE_y.cpp
+	- same as finalPlots_TGE.cpp but for rapidity coordinate
+	- results in crossCheckGraphs_y.root
+
+50. crossCheckGraphs.root
+	- contains individual final plots as produced by finalPlots_TGE.cpp
+
+51. crossCheckGraphs_y.root
+	- contains individual final plots as produced by finalPlots_TGE_y.cpp
+
+52. stackFinalPlots.C
+	- macro to create final stacked plots (thesis) in pseudorapidity coordinate
+
+53. stackFinalPlots_y.C
+	- macro to create final stacked plots (thesis) in rapidity coordinates
+
+54. compare*.C
+	- macros to compare results with those from other experiments
+
+
+
 *******************************************************************************
 *******************************************************************************
 ToDos:
@@ -381,3 +467,12 @@ Done upto 15. -- DONE
 		TMath::Pi() * pt * norm * dNdptOverpt+type*0.;
 	- need to apply similar transformation in calculating integral from data points
 ..................................................................................
+
+
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+First Intro Meeting Notes
+
+- transverse energy concepts and big picture
+- TODO: email Ben link to master's thesis
+- 

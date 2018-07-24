@@ -1,6 +1,6 @@
 // use results from fits to produce individual plots
 // (in pseudorapidity coordinates rather than rapidity)
-// which are appropriately stacked for publication
+// FIXME two input dat files have different number of columns. easy fix
 
 #include "Riostream.h"
 #include <string>
@@ -91,12 +91,12 @@ int finalPlots_TGE(){
 				cout << "Problem opening file!" << endl;// tested
 				return 3333;
 			}
-			for(int i=0;i<46;i++)
+			for(int i=0;i<47;i++)
 			{ // loop through 46 column names
 				in1 >> skipContent;
 				// (tested) print first and last header names to check:
 				if (i==0) cout << "Col." << i+1<<": " << skipContent << endl;
-				else if (i==45)cout<<"Col."<<i+1<<": "<< skipContent << endl;
+				else if (i==46)cout<<"Col."<<i+1<<": "<< skipContent << endl;
 			}
 		}
 
@@ -123,7 +123,8 @@ int finalPlots_TGE(){
 			Npart[centIndex(cent)][enIndex(collEn)] << "\t";
 		in1 >> Npart_err[centIndex(cent)][enIndex(collEn)];
 		cout << Npart_err[centIndex(cent)][enIndex(collEn)] << "\n";
-		
+		if(j>=271) in1 >> 	skipContent;
+
 		if(partIndex(part) == 6 || partIndex(part) == 7)
 		{	// since lambdas aren't charged particles:
 			dNchdEta[centIndex(cent)][enIndex(collEn)][partIndex(part)]		= 0.;
@@ -378,7 +379,7 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverNpartBy2SumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_En/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverNpartBy2_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==snn2){
 		c -> SetLogx();
@@ -389,7 +390,7 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 		graphText = centIndToPercent(en_Or_centInd)+" centrality";
 		graphName = "dETdEtaOverdNchdEtaSumCent" + std::to_string(en_Or_centInd);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_En/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverdNchdEta_En/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart1){
 		g->SetMarkerColor(kGreen);
@@ -399,7 +400,7 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverNpartBy2SumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverNpartBy2_Npart/"+graphName+".png";
 	}
 	else if (g -> GetName()==npart2){
 		g->SetMarkerColor(kRed);
@@ -409,7 +410,7 @@ void formatGraph(TGraphErrors* g, Double_t collEn_Or_NpartArr[], int en_Or_centI
 		graphText = "#sqrt{#it{s}_{NN}} ="+doubToString(collEn_Or_NpartArr[en_Or_centInd])+" GeV";
 		graphName = "dETdEtaOverdNchdEtaSumEn" + doubToString(collEn_Or_NpartArr[en_Or_centInd]);
 		imgPathAndName = 
-		"./finalPlots/crossCheckPlots/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
+		"./finalPlots/crossCheckPlots/pseudorapidity/dETdEtaOverdNchdEta_Npart/"+graphName+".png";
 	}
 	//cout << g->GetName() << endl;
 	
