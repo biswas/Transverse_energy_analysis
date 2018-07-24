@@ -1,14 +1,16 @@
 \chapter{Data Analysis} \label{ch:analysis}
-This thesis details the method of transverse energy analysis through the use of $p_{T}$ spectra from the STAR BES data. As described in section \ref{subsec:tracking_STAR}, the TPCs and TOF detectors in STAR can identify particles as well as their trajectories and ultimately measure their multiplicity distributions with respect to the momenta. The available distributions were extrapolated to calculate the transverse energies and charged particle multiplicities. Details follow.
+This thesis details the method of transverse energy analysis through the use of $p_{T}$ spectra from the STAR Beam Energy Scan (BES) data. As described in section \ref{subsec:tracking_STAR}, the TPCs and TOF detectors in STAR can identify particles as well as their trajectories and ultimately measure their multiplicity distributions with respect to the momenta. The available distributions were extrapolated to calculate the transverse energies and charged particle multiplicities. Details follow.
 
 \section{STAR $p_{T}$ Spectra}
-\citet{PhysRevC.96.044904} reports the results for the midrapidity ($\left|{y}\right| < 0.1$) $p_{T}$ spectra for six different identified hadrons, $\pi^+$, $\pi^-$, $K^+$, $K^-$, $p$, and $\bar{p}$, from the STAR experiment. The spectra come from $\sqrt{s_{NN}}$ = 7.7, 11.5, and 39 GeV Au+Au collisions data taken in the year 2010, and from $\sqrt{s_{NN}}$ = 19.6 and 27 GeV Au+Au collisions data taken in 2011, both as part of the BES Program. Figure \ref{fig:BESPaper_pTSpectra} \cite{PhysRevC.96.044904} shows the spectra corresponding to 39 GeV collisions categorized into seven different collision centralitiy classes. Additionaly, preliminary spectra were available from the STAR experiment for idenfitied lambdas and anti-lambdas \cite{YePrivateCommunication}. All of these spectra were used to calculate the total transverse energy per event per particle species. This result was then used to estimate the total transverse energy due to all the collision products. The corrections applied by \citet{PhysRevC.96.044904} to the raw data to obtain the spectra and the reported systematic uncertainties in their results are discussed below.
+\citet{PhysRevC.96.044904} reports the results for the midrapidity ($\left|{y}\right| < 0.1$) $p_{T}$ spectra for six different identified hadrons, $\pi^+$, $\pi^-$, $K^+$, $K^-$, $p$, and $\bar{p}$, from the STAR experiment. The spectra come from $\sqrt{s_{NN}}$ = 7.7, 11.5, and 39 GeV Au+Au collisions data taken in the year 2010, and from $\sqrt{s_{NN}}$ = 19.6 and 27 GeV Au+Au collisions data taken in 2011, both as part of the BES Program. Figure \ref{fig:BESPaper_pTSpectra} \cite{PhysRevC.96.044904} shows the spectra corresponding to 39 GeV collisions categorized into seven different collision centralitiy classes. Additionaly, preliminary spectra were available from the STAR experiment for idenfitied lambdas and anti-lambdas \cite{YePrivateCommunication}. All of these spectra were used to calculate the total transverse energy per event per particle species. This result was then used to estimate the total transverse energy due to all the collision products. The correction applied by \citet{PhysRevC.96.044904} to the raw data to obtain the spectra and the reported systematic uncertainties in their results are discussed below.
+\afterpage{%
 \begin{figure}[h]
   \centering
   \includegraphics[width=6.5in]{../figures/PhysRevC-96-044904_pTSpectra_39.png}\\
   \caption{Transverse momentum spectra for $\pi^{+}$, $\pi^{-}$, $K^+$, $K^{-}$, $p$, and $\bar{p}$ at midrapidity ($|y|$ $<$ 0.1) from 39 GeV Au+Au collisions at RHIC. The fitting curves on the 0-5\% central collision spectra for pions, kaons, and protons/anti-protons represent, respectively, the Bose-Einstein, $m_{T}$-exponential, and double-exponential functions \cite{PhysRevC.96.044904}.}\label{fig:BESPaper_pTSpectra}
 \end{figure}
-
+\clearpage
+}
 \subsection{Corrections and Systematic Uncertainties}
 Detector acceptance and efficiency of reconstructing particle tracks account for most of the correction applied to the raw spectra. The efficiency $\times$ acceptance correction factor is obtained as the ratio of the distribution of the reconstructed tracks from the experiment and the tracks simulated using the GEANT model of STAR. The inverse of this factor is used to scale the raw spectra. Figure \ref{fig:AdamczykCorrection1} shows typical efficiency $\times$ acceptance factors as functions of $p_{T}$ for 0-5\% central 7.7 GeV collisions.
 
@@ -18,7 +20,7 @@ The algorithm used by STAR for track reconstruction assumes that each particle i
 
 The systematic uncertainties are obtained by varying the analysis cuts and by estimating the tracking efficiencies for each of the identified particles. The former source contributes 4\%, 3\%, and 6\% respectively and the latter 5\% each for pions, kaons, and protons. Furthermore, the aforementioned energy loss correction contributes 3\% and 5\% systematic uncertainties for kaons and protons, respectively.
 
-\begin{figure}[h]
+\begin{figure}[tb]
   \centering
   \includegraphics[width=6.5in]{../figures/Adamzyck_correction1.png}\\
   \caption{Midrapidity efficiency $\times$ acceptance as a function of $p_{T}$ calculated from STAR TPC Monte Carlo simulation of reconstructing (a) pions, (b) kaons, and (c) protons for 0-5\% central 7.7 GeV Au+Au collisions. The curves represent functional fits of the form $y \propto e^{-\frac{1}{x}}$ \cite{PhysRevC.96.044904}.}\label{fig:AdamczykCorrection1}
@@ -42,15 +44,16 @@ where $\rho = \tanh^{-1}\beta$ is the flow profile, $\beta = \beta_{max}(\frac{r
 
 
 \subsection{Fitting Spectra to BGBW}
-Figure \ref{fig:fit} presents an example of a BGBW fit on one of the individual particle spectra with $\chi^{2}$/ndf as well as other statistics and the associated uncertainties. While this fit function is motivated by the Blast Wave model, the main goal of the fits is to extrapolate the data above and below the range where data are available. As long as the fit describes the data and the fraction of ET from the extrapolation is small compared to the ET calculated where there are data, the sensitivity of the results to the functional form of the fit is minimal. The fitting is done in the ROOT software framework which is widely used in high energy physics data analysis. $T$, $\beta$, and $n$ are treated as free parameters, while $m$ is fixed. The results of the fits for each of the spectra are tabulated in appendix \ref{app:fitResults}. 
+Figure \ref{fig:fit} presents an example of a BGBW fit on one of the individual particle spectra with $\chi^{2}$/ndf as well as other statistics and the associated uncertainties. While this fit function is motivated by the Blast Wave model, the main goal of the fits is to extrapolate the data above and below the range where data are available. As long as the fit describes the data and the fraction of ET from the extrapolation is small compared to the ET calculated where there are data, the sensitivity of the results to the functional form of the fit is minimal. The fitting is done in the ROOT software framework which is widely used in high energy physics data analysis. $T$, $\beta$, and $n$ are treated as free parameters, while $m$ is fixed.
 %A parallel-coordinates plot is presented in the next chapter in fig. \ref{fig:parallelCoord}, which shows the measured centralities, two of the good-fit parameters, and the calculated transverse energies for 270 different particles (lambdas not included).
-
+\afterpage{%
 	\begin{figure}[h]
 	  \centering
 	  \includegraphics[width=6.5in]{figures/cent3_la_Au+Au_196.png}
 	  \caption{Red curve shows the Boltzmann-Gibbs blast wave functional fit on the preliminary transverse momentum spectrum for lambda particles identified by the STAR detector for 19.6 GeV Au+Au collisions (10-15\% central). Parameters extracted from the chi-square goodness-of-fit test, as well as other statistics, are shown in the box on the top right.}\label{fig:fit}
 	\end{figure}
-
+\clearpage
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Calculations from the Spectra}
 
@@ -61,8 +64,9 @@ The available multiplicity distribution for the $p_{T}$ range, $p_{T,low}$ to $p
 It is assumed that most of the $E_{T}$ is attributable to the contributions from pions, kaons, protons, neutrons, lambdas, and their anti-particles. Contributions from heavier particles are assumed to be negligible, and there are some particles which are light but decay very rapidly into $\pi/K/p$ which are included in the spectra. It is also reasonable to assume that, at high energies, there should be roughly the same multiplicity of all the isospin states and anti-particles of a final state particle. This assumption was partially tested by comparing the $E_{T}$ values calculated for the identified charged particles with those independently calculated for their anti-particles for the same values of collision energy and centrality. The comparisons revealed the $E_{T}$ values of the particles being almost exactly equal to those of the anti-particles. This assumption is used to account for the energies of the isospin states of the pions, kaons and protons that were not identified.
 
 Table \ref{table:isospinStates} lists the isospin states and the anti-particles associated with the pion, the kaon, the proton, and the lambda particles.
-	\begin{table}[h!]
+	\begin{table}[!b]
 	\centering
+	\caption{Isospin states of different identified particles.}
 	\begin{tabular}{|c c|}
 	%\tabletypesize{\scriptsize}
 	%\rotate
@@ -76,7 +80,7 @@ Table \ref{table:isospinStates} lists the isospin states and the anti-particles 
 	lambda & $\Lambda, \bar{\Lambda}$  \\ [1ex]
 	\hline
 	\end{tabular}
-	\caption{Isospin states of different identified particles.}
+	%\caption{Isospin states of different identified particles.}
 	\label{table:isospinStates}
 	\end{table}
 	

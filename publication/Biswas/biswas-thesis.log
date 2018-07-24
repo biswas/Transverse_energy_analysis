@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  28 MAR 2018 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2018.1.21)  24 JUL 2018 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,6 +424,12 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks31
+\AP@partial=\box30
+\AP@footins=\box31
+)
 (./biswas-thesis.aux (./front-matter/dedication.aux)
 (./front-matter/acknowledgments.aux) (./front-matter/abstract.aux)
 (./front-matter.aux) (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
@@ -431,23 +437,23 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (./chapters/chapter-6.aux) (./chapters/chapter-7.aux)
 (./chapters/chapter-8.aux) (./chapters/chapter-9.aux)
 (./chapters/chapter-10.aux) (./back-matter.aux) (./back-matter/appendix-1.aux)
-(./back-matter/appendix-2.aux) (./back-matter/vita.aux))
+(./back-matter/vita.aux))
 \openout1 = `biswas-thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -483,9 +489,9 @@ LaTeX Font Info:    ... okay on input line 75.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box30
-Package backref Info: ** backref set up for natbib ** on input line 75.
-Package hyperref Info: Link coloring ON on input line 75.
+\AtBeginShipoutBox=\box32
+Package backref Info: ** backref set up for natbib ** on input line 77.
+Package hyperref Info: Link coloring ON on input line 77.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -494,9 +500,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
 
 (./biswas-thesis.out) (./biswas-thesis.out)
 \@outlinefile=\write3
@@ -507,15 +513,15 @@ LaTeX Info: Redefining \nameref on input line 75.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count134
 \scratchdimen=\dimen149
-\scratchbox=\box31
+\scratchbox=\box33
 \nofMPsegments=\count135
 \nofMParguments=\count136
-\everyMPshowfont=\toks31
+\everyMPshowfont=\toks32
 \MPscratchCnt=\count137
 \MPscratchDim=\dimen150
 \MPnumerator=\count138
 \makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks32
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -536,21 +542,8 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 80.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 80.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 80.
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [1
+[1
 Non-PDF special ignored!
 color push 0 g 0 G
 color pop
@@ -565,12 +558,12 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 87.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
  [2
 color push 0 g 0 G
 color pop
@@ -615,7 +608,22 @@ color pop
 :<+ front-matter/abstract.tex
 \openout2 = `front-matter/abstract.aux'.
 
-(./front-matter/abstract.tex) [5
+(./front-matter/abstract.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)) [5
 color push 0 g 0 G
 color pop
 
@@ -791,8 +799,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color pop
@@ -1069,11 +1075,7 @@ File: figures/1742-6596-761-1-012066.png Graphic file (type png)
 <use figures/1742-6596-761-1-012066.png>
 Package pdftex.def Info: figures/1742-6596-761-1-012066.png used on input line 
 44.
-(pdftex.def)             Requested size: 397.48499pt x 316.8008pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+(pdftex.def)             Requested size: 325.215pt x 259.19804pt.
 ) [5
 color push 0 g 0 G
 color pop
@@ -1115,30 +1117,30 @@ color pop
 
 (./chapters/chapter-3.tex
 Chapter 3.
-<figures/RHIC_Layout.jpeg, id=521, 308.352pt x 224.5188pt>
+[7
+color push 0 g 0 G
+color pop
+
+
+
+
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+] <figures/RHIC_Layout.jpeg, id=526, 308.352pt x 224.5188pt>
 File: figures/RHIC_Layout.jpeg Graphic file (type jpg)
 
 <use figures/RHIC_Layout.jpeg>
-Package pdftex.def Info: figures/RHIC_Layout.jpeg used on input line 25.
+Package pdftex.def Info: figures/RHIC_Layout.jpeg used on input line 32.
 (pdftex.def)             Requested size: 469.75499pt x 342.04634pt.
- [7
-color push 0 g 0 G
-color pop
-
-
-
-
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-] [8
+ [8
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1152,52 +1154,119 @@ color pop
  <./figures/RHIC_Layout.jpeg>] [9
 color push 0 g 0 G
 color pop
+
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
+color push 0 g 0 G
+color pop
+] [10
+color push 0 g 0 G
+color pop
 color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
 color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/flow_elliptic_init_v4.pdf, id=549, 421.575pt x 313.17pt>
+[11
+color push 0 g 0 G
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+] <figures/flow_elliptic_init_v4.pdf, id=563, 421.575pt x 313.17pt>
 File: figures/flow_elliptic_init_v4.pdf Graphic file (type pdf)
 
 <use figures/flow_elliptic_init_v4.pdf>
-Package pdftex.def Info: figures/flow_elliptic_init_v4.pdf used on input line 7
-8.
+Package pdftex.def Info: figures/flow_elliptic_init_v4.pdf used on input line 1
+16.
 (pdftex.def)             Requested size: 325.215pt x 241.59082pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/part_spec_Vovchenko.png, id=553, 803.0pt x 166.6225pt>
+<figures/part_spec_Vovchenko.png, id=566, 803.0pt x 166.6225pt>
 File: figures/part_spec_Vovchenko.png Graphic file (type png)
 
 <use figures/part_spec_Vovchenko.png>
-Package pdftex.def Info: figures/part_spec_Vovchenko.png used on input line 85.
-
+Package pdftex.def Info: figures/part_spec_Vovchenko.png used on input line 116
+.
 (pdftex.def)             Requested size: 469.75499pt x 97.47757pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/LightCone1_color-crop_NThesis.pdf, id=556, 517.935pt x 410.53375pt>
+ [12
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/flow_elliptic_init_v4.pdf> <./figures/part_spec_Vovchenko.png (PNG 
+copy)>]
+<figures/LightCone1_color-crop_NThesis.pdf, id=659, 517.935pt x 410.53375pt>
 File: figures/LightCone1_color-crop_NThesis.pdf Graphic file (type pdf)
 
 <use figures/LightCone1_color-crop_NThesis.pdf>
 Package pdftex.def Info: figures/LightCone1_color-crop_NThesis.pdf used on inpu
-t line 93.
+t line 116.
 (pdftex.def)             Requested size: 397.48499pt x 315.0721pt.
- [10
+ [13
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/LightCone1_color-crop_NThesis.pdf>] [14
+color push 0 g 0 G
+color pop
+
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+] [15
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
-color push 0 g 0 G
-color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
@@ -1206,6 +1275,10 @@ color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -1214,60 +1287,62 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
- <./figures/flow_elliptic_init_v4.pdf>] [12
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
- <./figures/part_spec_Vovchenko.png (PNG copy)>] [13
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
- <./figures/LightCone1_color-crop_NThesis.pdf>]
-<figures/v2Scaling1.png, id=728, 501.875pt x 372.39125pt>
+<figures/v2Scaling1.png, id=743, 501.875pt x 372.39125pt>
 File: figures/v2Scaling1.png Graphic file (type png)
 
 <use figures/v2Scaling1.png>
-Package pdftex.def Info: figures/v2Scaling1.png used on input line 141.
+Package pdftex.def Info: figures/v2Scaling1.png used on input line 168.
 (pdftex.def)             Requested size: 325.215pt x 241.31844pt.
- [14
+
+<figures/v2Scaling2.png, id=746, 501.875pt x 349.305pt>
+File: figures/v2Scaling2.png Graphic file (type png)
+
+<use figures/v2Scaling2.png>
+Package pdftex.def Info: figures/v2Scaling2.png used on input line 168.
+(pdftex.def)             Requested size: 325.215pt x 226.35799pt.
+ [16
+color push 0 g 0 G
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/v2Scaling1.png> <./figures/v2Scaling2.png>] <figures/directPhotons.
+PNG, id=756, 852.18375pt x 374.14781pt>
+File: figures/directPhotons.PNG Graphic file (type png)
+
+<use figures/directPhotons.PNG>
+Package pdftex.def Info: figures/directPhotons.PNG used on input line 173.
+(pdftex.def)             Requested size: 469.75499pt x 206.25006pt.
+ [17
+color push 0 g 0 G
+color pop
+
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color push 0 g 0 G
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/directPhotons.PNG>] [18
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -1284,65 +1359,26 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
+color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
 ]
-<figures/v2Scaling2.png, id=742, 501.875pt x 349.305pt>
-File: figures/v2Scaling2.png Graphic file (type png)
+<figures/jets.PNG, id=786, 354.57469pt x 344.78813pt>
+File: figures/jets.PNG Graphic file (type png)
+ <use figures/jets.PNG>
+Package pdftex.def Info: figures/jets.PNG used on input line 196.
+(pdftex.def)             Requested size: 325.215pt x 316.24615pt.
 
-<use figures/v2Scaling2.png>
-Package pdftex.def Info: figures/v2Scaling2.png used on input line 147.
-(pdftex.def)             Requested size: 325.215pt x 226.35799pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/directPhotons.PNG, id=746, 852.18375pt x 374.14781pt>
-File: figures/directPhotons.PNG Graphic file (type png)
-
-<use figures/directPhotons.PNG>
-Package pdftex.def Info: figures/directPhotons.PNG used on input line 156.
-(pdftex.def)             Requested size: 469.75499pt x 206.25006pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15
+[19
 color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
- <./figures/v2Scaling1.png>] [16
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -1351,44 +1387,17 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
- <./figures/v2Scaling2.png>]
-<figures/jets.PNG, id=774, 354.57469pt x 344.78813pt>
-File: figures/jets.PNG Graphic file (type png)
- <use figures/jets.PNG>
-Package pdftex.def Info: figures/jets.PNG used on input line 175.
-(pdftex.def)             Requested size: 325.215pt x 316.24615pt.
-
-[17
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color pop
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
- <./figures/directPhotons.PNG>]
-<figures/Raa.PNG, id=785, 798.985pt x 576.1525pt>
+] <figures/Raa.PNG, id=799, 798.985pt x 576.1525pt>
 File: figures/Raa.PNG Graphic file (type png)
  <use figures/Raa.PNG>
-Package pdftex.def Info: figures/Raa.PNG used on input line 182.
+Package pdftex.def Info: figures/Raa.PNG used on input line 215.
 (pdftex.def)             Requested size: 469.75499pt x 338.74019pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18
+[20
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
@@ -1396,11 +1405,9 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
 color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
 color push 0 g 0 G
 color pop
- <./figures/jets.PNG>] [19
+ <./figures/jets.PNG>] [21
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1425,19 +1432,12 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
 color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
 color push 0 g 0 G
 color pop
- <./figures/Raa.PNG>]) [20
+ <./figures/Raa.PNG>]) [22
 color push 0 g 0 G
 color pop
+
 color push 0 g 0 G
 color pop
 ]
@@ -1447,7 +1447,7 @@ color pop
 
 (./chapters/chapter-4.tex
 Chapter 4.
-[21
+[23
 color push 0 g 0 G
 color pop
 
@@ -1473,7 +1473,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 68.
 
-[22
+[24
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -1497,7 +1497,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 73.
 
-[23
+[25
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -1517,7 +1517,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 88.
 
-[24
+[26
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -1573,7 +1573,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 96.
 
-[25
+[27
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -1590,42 +1590,38 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-] <figures/TPCdEdxMod.png, id=891, 804.00375pt x 610.32014pt>
+]) [28
+color push 0 g 0 G
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+] <figures/TPCdEdxMod.png, id=910, 804.00375pt x 610.32014pt>
 File: figures/TPCdEdxMod.png Graphic file (type png)
 
 <use figures/TPCdEdxMod.png>
-Package pdftex.def Info: figures/TPCdEdxMod.png used on input line 132.
+Package pdftex.def Info: figures/TPCdEdxMod.png used on input line 116.
 (pdftex.def)             Requested size: 397.48499pt x 301.72292pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [26
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-] [27
+ [29
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1655,38 +1651,38 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 4.
 
+[30
+color push 0 g 0 G
+color pop
 
-<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=915, 803.0pt x 452.
+
+
+
+
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 g 0 G
+color pop
+]
+<figures/../figures/PhysRevC-96-044904_pTSpectra_39.png, id=929, 803.0pt x 452.
 69125pt>
 File: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png Graphic file (type
  png)
  <use figures/../figures/PhysRevC-96-044904_pTSpectra_39.png>
 Package pdftex.def Info: figures/../figures/PhysRevC-96-044904_pTSpectra_39.png
- used on input line 8.
+ used on input line 16.
 (pdftex.def)             Requested size: 469.75499pt x 264.83366pt.
- [28
-color push 0 g 0 G
-color pop
-
-
-
-
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 g 0 G
-color pop
-]
-[29
+ [31
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1694,20 +1690,26 @@ color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
  <./figures/../figures/PhysRevC-96-044904_pTSpectra_39.png (PNG copy)>]
-<figures/../figures/Adamzyck_correction1.png, id=928, 1510.64375pt x 640.3925pt
+<figures/../figures/Adamzyck_correction1.png, id=936, 1510.64375pt x 640.3925pt
 >
 File: figures/../figures/Adamzyck_correction1.png Graphic file (type png)
  <use figures/../figures/Adamzyck_correction1.png>
 Package pdftex.def Info: figures/../figures/Adamzyck_correction1.png used on in
-put line 23.
+put line 25.
 (pdftex.def)             Requested size: 469.75499pt x 199.13522pt.
- [30
+ [32
+color push 0 g 0 G
+color pop
+
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+] [33
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1716,141 +1718,152 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color pop
 color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
+color push 0 1 0 0 k 0 1 0 0 K
+color pop
 color push 0 g 0 G
 color pop
- <./figures/../figures/Adamzyck_correction1.png>] [31
+ <./figures/../figures/Adamzyck_correction1.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\eta' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endgroup' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@@over' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\eta' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 63.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 63.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 63.
+
+[34
 color push 0 g 0 G
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
-color pop
-color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
 color push 0 g 0 G
 color pop
-]
-<figures/cent3_la_Au+Au_196.png, id=949, 698.61pt x 473.77pt>
+] <figures/cent3_la_Au+Au_196.png, id=962, 698.61pt x 473.77pt>
 File: figures/cent3_la_Au+Au_196.png Graphic file (type png)
 
 <use figures/cent3_la_Au+Au_196.png>
-Package pdftex.def Info: figures/cent3_la_Au+Au_196.png used on input line 50.
+Package pdftex.def Info: figures/cent3_la_Au+Au_196.png used on input line 65.
 (pdftex.def)             Requested size: 469.75499pt x 318.57368pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\eta' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\eta' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 57.
-
-[32
+ [35
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
@@ -1859,57 +1872,36 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/cent3_la_Au+Au_196.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[33
+[36
 color push 0 g 0 G
 color pop
+
 color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 90.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 90.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 90.
-
-) [34
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
+color push 0 g 0 G
 color pop
-] [35
+color pop
+color push 0 g 0 G
+color pop
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 94.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 94.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 94.
+
+) [37
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -1921,42 +1913,7 @@ color pop
 
 (./chapters/chapter-6.tex
 Chapter 6.
-
-<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=980, 1003.75pt x 10
-03.75pt>
-File: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png Graphic file (type
- png)
- <use figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png>
-Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png
- used on input line 8.
-(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=981, 1003.75pt x 1003
-.75pt>
-File: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png Graphic file (type p
-ng)
- <use figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>
-Package pdftex.def Info: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png u
-sed on input line 14.
-(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=986, 1003.75pt x 10
-03.75pt>
-File: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png Graphic file (type
- png)
- <use figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>
-Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png
- used on input line 22.
-(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
- [36
+[38
 color push 0 g 0 G
 color pop
 
@@ -1984,103 +1941,97 @@ color pop
 color push 0 g 0 G
 color pop
 ]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=991, 1003.75pt x 1003.7
-5pt>
-File: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png Graphic file (type png
-)
- <use figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>
-Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png use
-d on input line 29.
+<figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png, id=996, 1003.75pt x 10
+03.75pt>
+File: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png Graphic file (type
+ png)
+ <use figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png>
+Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png
+ used on input line 42.
 (pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=995, 2007.5pt x 2007
-.5pt>
-File: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png Graphic file (type 
-png)
- <use figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>
-Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png 
-used on input line 38.
-(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=996, 2007.5pt x 2007.5
-pt>
-File: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png Graphic file (type pn
-g)
- <use figures/finalStacked/dETdyOverNpartBy2SumCent8s.png>
-Package pdftex.def Info: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png us
-ed on input line 45.
-(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=999, 2007.5pt x 2007
-.5pt>
-File: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png Graphic file (type 
-png)
- <use figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png>
-Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png 
-used on input line 53.
-(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
- [37
+ [39
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
  <./figures/finalStacked/dETdEtaOverNpartBy2SumEn39.0s.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=1004, 2007.5pt x 2007.5p
-t>
-File: figures/finalStacked/dETdyOverdNchdySumCent8s.png Graphic file (type png)
-
- <use figures/finalStacked/dETdyOverdNchdySumCent8s.png>
-Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumCent8s.png used
- on input line 59.
-(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[38
+<figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png, id=1001, 1003.75pt x 100
+3.75pt>
+File: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png Graphic file (type p
+ng)
+ <use figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>
+Package pdftex.def Info: figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png u
+sed on input line 42.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
+ [40
 color push 0 g 0 G
 color pop
+
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>]
+<figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png, id=1006, 1003.75pt x 1
+003.75pt>
+File: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png Graphic file (type
+ png)
+ <use figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>
+Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png
+ used on input line 42.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
+ [41
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>]
+<figures/finalStacked/dETdyOverdNchdySumEn39.0s.png, id=1012, 1003.75pt x 1003.
+75pt>
+File: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png Graphic file (type png
+)
+ <use figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>
+Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumEn39.0s.png use
+d on input line 42.
+(pdftex.def)             Requested size: 397.48499pt x 397.49542pt.
+ [42
+color push 0 g 0 G
+color pop
+
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>]) [43
+color push 0 g 0 G
+color pop
+
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2088,56 +2039,57 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
- <./figures/finalStacked/dETdyOverNpartBy2SumEn39.0s.png>]
-<figures/PHENIX_comparison2.png, id=1013, 700.6175pt x 475.7775pt>
-File: figures/PHENIX_comparison2.png Graphic file (type png)
+]
+<figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png, id=1028, 700.6175pt x 4
+75.7775pt>
+File: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png Graphic file (type 
+png)
+ <use figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>
+Package pdftex.def Info: figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png 
+used on input line 118.
+(pdftex.def)             Requested size: 397.48499pt x 269.93279pt.
+ [44
+color push 0 g 0 G
+color pop
 
-<use figures/PHENIX_comparison2.png>
-Package pdftex.def Info: figures/PHENIX_comparison2.png used on input line 69.
-(pdftex.def)             Requested size: 325.215pt x 220.84947pt.
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>]
+<figures/finalStacked/dETdyOverNpartBy2SumCent8s.png, id=1034, 2007.5pt x 2007.
+5pt>
+File: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png Graphic file (type pn
+g)
+ <use figures/finalStacked/dETdyOverNpartBy2SumCent8s.png>
+Package pdftex.def Info: figures/finalStacked/dETdyOverNpartBy2SumCent8s.png us
+ed on input line 118.
+(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
+ [45
+color push 0 g 0 G
+color pop
 
+color push 0 g 0 G
+color push 0 g 0 G
+color pop
+color pop
+color push 0 g 0 G
+color pop
+ <./figures/finalStacked/dETdyOverNpartBy2SumCent8s.png>]
+<figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png, id=1039, 700.6175pt x 4
+75.7775pt>
+File: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png Graphic file (type 
+png)
+ <use figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png>
+Package pdftex.def Info: figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png 
+used on input line 118.
+(pdftex.def)             Requested size: 397.48499pt x 269.93279pt.
+ [46
+color push 0 g 0 G
+color pop
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [39
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdEtaOverdNchdEtaSumEn39.0s.png>] [40
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdyOverdNchdySumEn39.0s.png>] [41
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdEtaOverNpartBy2SumCent8s.png>] [42
-color push 0 g 0 G
-color pop
-color push 0 g 0 G
-color push 0 g 0 G
-color pop
-color pop
-color push 0 g 0 G
-color pop
- <./figures/finalStacked/dETdyOverNpartBy2SumCent8s.png>] [43
-color push 0 g 0 G
-color pop
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
@@ -2145,18 +2097,36 @@ color pop
 color push 0 g 0 G
 color pop
  <./figures/finalStacked/dETdEtaOverdNchdEtaSumCent8s.png>]
-[44
+<figures/finalStacked/dETdyOverdNchdySumCent8s.png, id=1044, 2007.5pt x 2007.5p
+t>
+File: figures/finalStacked/dETdyOverdNchdySumCent8s.png Graphic file (type png)
+
+ <use figures/finalStacked/dETdyOverdNchdySumCent8s.png>
+Package pdftex.def Info: figures/finalStacked/dETdyOverdNchdySumCent8s.png used
+ on input line 118.
+(pdftex.def)             Requested size: 397.48499pt x 397.4801pt.
+ [47
 color push 0 g 0 G
 color pop
+
 color push 0 g 0 G
 color push 0 g 0 G
 color pop
 color pop
 color push 0 g 0 G
 color pop
- <./figures/finalStacked/dETdyOverdNchdySumCent8s.png>] [45
+ <./figures/finalStacked/dETdyOverdNchdySumCent8s.png>]
+<figures/PHENIX_comparison2.png, id=1049, 700.6175pt x 475.7775pt>
+File: figures/PHENIX_comparison2.png Graphic file (type png)
+
+<use figures/PHENIX_comparison2.png>
+Package pdftex.def Info: figures/PHENIX_comparison2.png used on input line 118.
+
+(pdftex.def)             Requested size: 325.215pt x 220.84947pt.
+ [48
 color push 0 g 0 G
 color pop
+
 color push 0 g 0 G
 color push 0 g 0 G
 color push 0 1 0 0 k 0 1 0 0 K
@@ -2172,7 +2142,7 @@ color pop
 
 (./chapters/chapter-7.tex
 Chapter 7.
-[46
+[49
 color push 0 g 0 G
 color pop
 
@@ -2185,7 +2155,7 @@ color push 0 1 0 0 k 0 1 0 0 K
 color pop
 color push 0 g 0 G
 color pop
-]) [47
+]) [50
 color push 0 g 0 G
 color pop
 color push 0 1 0 0 k 0 1 0 0 K
@@ -2214,7 +2184,7 @@ No file chapters/chapter-10.tex.
 
 No file back-matter.tex.
 :<-
-[48
+[51
 color push 0 g 0 G
 color pop
 
@@ -2250,18 +2220,10 @@ _ public / journal / ptep / 2015 / 3 / 10 . 1093 _
 
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
-[49
+[52
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2271,6 +2233,16 @@ color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
 color push 1 0 0 0 k 1 0 0 0 K
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -2280,6 +2252,8 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2369,7 +2343,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[50
+[53
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2403,8 +2377,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2500,7 +2472,7 @@ Underfull \hbox (badness 8075) in paragraph at lines 318--318
 edirect . com / science / article / pii /
  []
 
-[51
+[54
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2569,7 +2541,7 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-] [52
+] [55
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
@@ -2589,12 +2561,6 @@ color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2647,27 +2613,33 @@ color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
 ]
-Underfull \hbox (badness 2237) in paragraph at lines 501--501
+Underfull \hbox (badness 2237) in paragraph at lines 497--497
 []\OT1/cmr/m/n/12 S. S. Adler, S. Afanasiev, C. Aidala, N. N. Aji-tanand, Y. Ak
 -iba, A. Al-
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 519--519
+Underfull \hbox (badness 2088) in paragraph at lines 515--515
 \OT1/cmr/m/n/12 R. Amirikas, L. Aphe-cetche, S. H. Aron-son, R. Aver-beck, et a
 l. (PHENIX
  []
 
-[53
+[56
+color push 0 g 0 G
+color pop
 color push 0 g 0 G
 color pop
 color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2738,28 +2710,10 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 )
 :<-
-[54
+[57
 color push 0 g 0 G
 color pop
 color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
-color pop
-color push 0 0 1 rg 0 0 1 RG
-color pop
-color push 0 g 0 G
-color pop
-color push 1 0 0 0 k 1 0 0 0 K
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
@@ -2787,7 +2741,23 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-] [55
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+color push 1 0 0 0 k 1 0 0 0 K
+color pop
+color push 0 0 1 rg 0 0 1 RG
+color pop
+color push 0 g 0 G
+color pop
+] [58
 color push 0 g 0 G
 color pop
 
@@ -2800,7 +2770,7 @@ color pop
 :<+ back-matter/appendix-1.tex
 \openout2 = `back-matter/appendix-1.aux'.
 
-(./back-matter/appendix-1.tex [56
+(./back-matter/appendix-1.tex [59
 color push 0 g 0 G
 color pop
 
@@ -2813,7 +2783,7 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 g 0 G
 color pop
-]) [57
+]) [60
 color push 0 g 0 G
 color pop
 color push 0 0 1 rg 0 0 1 RG
@@ -2822,19 +2792,6 @@ color push 0 0 1 rg 0 0 1 RG
 color pop
 color push 0 0 1 rg 0 0 1 RG
 color pop
-color push 0 g 0 G
-color pop
-]
-:<-
-:<+ back-matter/appendix-2.tex
-\openout2 = `back-matter/appendix-2.aux'.
-
-(./back-matter/appendix-2.tex) [58
-color push 0 g 0 G
-color pop
-
-
-
 color push 0 g 0 G
 color pop
 ]
@@ -2842,10 +2799,21 @@ color pop
 :<+ back-matter/vita.tex
 \openout2 = `back-matter/vita.aux'.
 
-No file back-matter/vita.tex.
+(./back-matter/vita.tex) [61
+color push 0 g 0 G
+color pop
+
+
+
+
+
+
+color push 0 g 0 G
+color pop
+]
 :<-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
 (./biswas-thesis.aux (./front-matter/dedication.aux)
 (./front-matter/acknowledgments.aux) (./front-matter/abstract.aux)
 (./front-matter.aux) (./chapters/chapter-1.aux) (./chapters/chapter-2.aux)
@@ -2853,23 +2821,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
 ) (./chapters/chapter-6.aux) (./chapters/chapter-7.aux)
 (./chapters/chapter-8.aux) (./chapters/chapter-9.aux)
 (./chapters/chapter-10.aux) (./back-matter.aux) (./back-matter/appendix-1.aux)
-(./back-matter/appendix-2.aux) (./back-matter/vita.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
+(./back-matter/vita.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `biswas-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 79D7AE0EB45BFABF9804E4DE0F5329B5;3506.
+(rerunfilecheck)             Checksum: 4298C115300446FCBDD2979B5F2EA6C9;3469.
 Package rerunfilecheck Info: File `biswas-thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 41303CEBACB77180395259F9F32C390C;7203.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+(rerunfilecheck)             Checksum: 734D152B639DAC7576B13C28643F6CD2;7183.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 9972 strings out of 493046
- 153445 string characters out of 6137253
- 263542 words of memory out of 5000000
+ 9975 strings out of 493046
+ 153411 string characters out of 6137253
+ 262720 words of memory out of 5000000
  12970 multiletter control sequences out of 15000+600000
- 20529 words of font info for 81 fonts, out of 8000000 for 9000
+ 17406 words of font info for 68 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 39i,12n,50p,1865b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,56p,1865b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
@@ -2887,10 +2855,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on biswas-thesis.pdf (69 pages, 3022488 bytes).
+Output written on biswas-thesis.pdf (72 pages, 2943783 bytes).
 PDF statistics:
- 1417 PDF objects out of 1440 (max. 8388607)
- 1209 compressed objects within 13 object streams
- 244 named destinations out of 1000 (max. 500000)
+ 1430 PDF objects out of 1440 (max. 8388607)
+ 1219 compressed objects within 13 object streams
+ 248 named destinations out of 1000 (max. 500000)
  500 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,7 +18,6 @@ A level-1 auxiliary file: chapters/chapter-10.aux
 A level-1 auxiliary file: back-matter.aux
 The style file: apsrev.bst
 A level-1 auxiliary file: back-matter/appendix-1.aux
-A level-1 auxiliary file: back-matter/appendix-2.aux
 A level-1 auxiliary file: back-matter/vita.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references-Biswas.bib
@@ -102,7 +101,7 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 You've used 65 entries,
             3411 wiz_defined-function locations,
-            1663 strings with 135068 characters,
+            1662 strings with 135042 characters,
 and the built_in function-call counts, 49575 in all, are:
 = -- 2714
 > -- 1866

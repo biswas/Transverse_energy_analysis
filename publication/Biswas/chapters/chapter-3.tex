@@ -20,12 +20,14 @@ The experimental evidence for the QGP comes from the collisions of heavy nuclei.
 
 \section{RHIC and LHC}
 The Relativistic Heavy Ion Collider (RHIC) is located in Upton, New York in the premises of the Brookhaven National Laboratory (BNL). Its construction started in 1991 and was completed in 1999. Figure \ref{fig:RHIC_layout} shows the layout, at the time of construction, of the collider along with the Alternating Gradient Synchrotron (AGS) complex and the locations of the original four detectors: Solenoidal Tracker At RHIC (STAR), Pioneering High Energy Nuclear Interaction eXperiment (PHENIX), Phobos, and BRAHMS (Broad RAnge Hadron Magnetic Spectrometers). Phobos, BRAHMS, and PHENIX were decommissioned after the completion of their science objectives, but STAR is still operational. The AGS was part of BNL before the construction of the RHIC, and its capabilities were augmented with the construction of the AGS Booster in 1991.
+\afterpage{%
 \begin{figure}[h]
   \centering
   \includegraphics[width=6.5in]{figures/RHIC_Layout.jpeg}
   \caption{Initial layout of the RHIC \cite{doi:10.1093/ptep/ptu093}.}\label{fig:RHIC_layout}
 \end{figure}
-
+\clearpage
+}
 Heavy ion beams in RHIC are created in a series of steps before collision. In case of gold ions, a pulsed sputter source produces negatively charged ions, which are stripped of some of their electrons with a foil on the positive end of the high-voltage Tandem Van de Graff. The ions are now positively charged and are accelerated to 1MeV/u toward the negative terminal of the Tandem. Upon exiting it, some more stripping takes place. The bending magnets then selectively deliver +32 charge states of the ions to the Booster Synchrotron, which accelerates them to 95MeV/u and strips them to a +77 charge state before injecting them to the AGS. The AGS accelerates them to 10.8 GeV/u and strips them of the remaining two electrons at the exit. The gold ions are then injected through the AGS-to-RHIC Beam Transfer Line to the two RHIC rings. These rings carry beams moving in opposite directions and intersect at six symmetric locations in the 3.8 km circumference. The original four detectors are located in four of these six locations where the beams undergo head-on collisions.
 
 The Large Hadron Collider (LHC) is located underground (between 45m and 170m) beneath the France-Switzerland border near the city of  Geneva. The two rings of the collider were constructed between 1998 and 2008 by the European Organization for Nuclear Research (CERN) in the 26.7 km circular tunnel originally housing CERN's Large Electron-Positron collider. Analogous to the RHIC, the LHC gets its beams prepared by a series of machines in the CERN accelerator complex. The collisions occur at the locations of the four big LHC experiments: Compact Muon Solenoid (CMS), A Toroidal LHC ApparatuS (ATLAS), Large Hadron Collider beauty (LHCb) experiment, and A Large Ion Collider Experiment (ALICE). ALICE is dedicated to the study of heavy-ion collisions \cite{1748-0221-3-08-S08001}.
@@ -43,8 +45,9 @@ In collision experiments, it is convenient to use a reference frame in which the
 
 RHIC has the unique capability of colliding species at a range of energies spanning almost two orders of magnitude. Table \ref{table:RHIC_specs} lists the collision energies produced so far at RHIC for various collision systems. The LHC boasts the highest amount of collision energy for any collider on earth. It collided species (p+p, p+A, Pb+Pb) at a center of mass energy up to 2.76 TeV per nucleon pair at the end of 2010. At the end of 2015, 5.02 TeV Pb+Pb and 13 TeV p+p collisions were successfully completed \cite{FOKA2016154}.
 
-\begin{table}[h!]
+\begin{table}[!b]
 \centering
+\caption{Colliding species and associated collision energies at RHIC \cite{McGlincheyPrivateCommunication}.}
 \begin{tabular}{||c c||}
 %\tabletypesize{\scriptsize}
 %\rotate
@@ -61,7 +64,7 @@ $^3$He+Au & 200 \\
 Au+Au & 7, 7.7, 9, 20, 62, 130, 200 \\ [1ex]
 \hline
 \end{tabular}
-\caption{Colliding species and associated collision energies at RHIC \cite{McGlincheyPrivateCommunication}.}
+%\caption{Colliding species and associated collision energies at RHIC \cite{McGlincheyPrivateCommunication}.}
 \label{table:RHIC_specs}
 \end{table}
 
@@ -73,27 +76,39 @@ The centrality is estimated through a model-based correlation between $N_{ch}$ a
 % In practice, each collision event is deducted to belong to a specific centrality bin. For instance, 0-5\% would be the centrality for an identified $N_{ch}$ value which would be the minimum charged particle multiplicity produced by at most 5\% of the total number of collisions. This identification of the $N_{ch}$ value is often acheived by using the a Glauber model \cite{Connors:2017ptx,Miller:2007ri}.
 
 Figure \ref{fig:mid-central_collision} illustrates the aftermath of a mid-central collision, i.e, a collision in which about half of the volume of each of the nuclei intersects the other.%............. add brief discussion of Glauber model and STAR centrality determination.............
+\afterpage{%
 	\begin{figure}[h]
 	  \centering
 	  \includegraphics[width=4.5in]{figures/flow_elliptic_init_v4.pdf}
 	  \caption{An illustration of a mid-central collision of two nuclei traveling in the z direction. The X-axis is parallel to the line joining the centers of the two nuclei at the time of collision \cite{Connors:2017ptx}.}\label{fig:mid-central_collision}
 	\end{figure}
 
-The collision of two nuclei can be modeled as collisions of the constituents that make up the nuclei. The nucleons that take part in the collisions and are called participants. The rest of the nucleons are known as spectators. Figure \ref{fig:part_spec} illustrates the distribution of participants and spectators in two colliding nuclei.% Expectedly, the number of participants is more in more central collisions.
+
+
+
+
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=6.5in]{figures/part_spec_Vovchenko.png}
   \caption{An illustration of a collision consisting of participants (solid red) and spectators (open blue) within the colliding nuclei labeled A and B. $t_{c}$ denotes the time of maximum overlap of the two nuclei. The apparent narrowing of the volumes of the nuclei in the z-direction is due to Lorentz contraction \cite{PhysRevC.90.044907}.}\label{fig:part_spec}
 \end{figure}
+\clearpage
+}
+
+The collision of two nuclei can be modeled as collisions of the constituents that make up the nuclei. The nucleons that take part in the collisions and are called participants. The rest of the nucleons are known as spectators. Figure \ref{fig:part_spec} illustrates the distribution of participants and spectators in two colliding nuclei.% Expectedly, the number of participants is more in more central collisions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{QGP Evolution}
+\afterpage{%
 \begin{figure}[h]
   \centering
   \includegraphics[width=5.5in]{figures/LightCone1_color-crop_NThesis.pdf}
   \caption{Evolution of the QGP represented in a lightcone diagram. $\tau_{0}$ denotes the formation time of the QGP. $T_{c}$ is the critical temperature of the transition from the QGP to the hadron gas phase. $T_{ch}$ and $T_{fo}$ stand for the temperatures at, respectively, chemical freeze-out and thermal freeze-out \cite{Connors:2017ptx}.}\label{fig:lightcone}
 \end{figure}
-The evolution of the QGP is shown in a lightcone diagram in figure \ref{fig:lightcone} \cite{Connors:2017ptx}. The initial state of the colliding nuclei is not precisely known and is the topic of research for upcoming experiments. During the collision, the participants scatter off of each other while the spectators keep traveling almost unperturbed in their original direction. The immediate aftermath of a central collision of heavy ions at RHIC and LHC energies is the formation of a hot fireball. This fireball evolves in time to form a liquid-like medium of quarks and gluons. This medium attains a local equilibrium and remains in such a state, depending on the collision energy, for about 1-10 fm/c. This equilibrium is broken as the liquid QGP evolves by expanding and cooling to attain a density and temperature at which the medium undergos hadronization followed by a chemical freeze-out to form a hadron gas. The particle ratios are fixed after the chemical freeze-out. Collisions between the constituents of this gas become scant as it evolves with further expansion and cooling, and the hadrons undergo a thermal freeze-out to attain their final energies and momenta \cite{Connors:2017ptx}.
+\clearpage
+}
+The evolution of the QGP is shown in a lightcone diagram in Fig. \ref{fig:lightcone} \cite{Connors:2017ptx}. The initial state of the colliding nuclei is not precisely known and is the topic of research for upcoming experiments. During the collision, the participants scatter off of each other while the spectators keep traveling almost unperturbed in their original direction. The immediate aftermath of a central collision of heavy ions at RHIC and LHC energies is the formation of a hot fireball. This fireball evolves in time to form a liquid-like medium of quarks and gluons. This medium attains a local equilibrium and remains in such a state, depending on the collision energy, for about 1-10 fm/c. This equilibrium is broken as the liquid QGP evolves by expanding and cooling to attain a density and temperature at which the medium undergos hadronization followed by a chemical freeze-out to form a hadron gas. The particle ratios are fixed after the chemical freeze-out. Collisions between the constituents of this gas become scant as it evolves with further expansion and cooling, and the hadrons undergo a thermal freeze-out to attain their final energies and momenta \cite{Connors:2017ptx}.
 
 \section{Detection of Collision Products}\label{subsection:detection}
 %%%The final state particles emit in all directions around the collision site. The symbol $\theta$ is used to denote the polar angle of the direction, i.e., the angle with respect to the beam axis, of a particle. However, it is more convenient to use a different quantity, called the rapidity, to describe the particle's direction.
@@ -135,23 +150,25 @@ The estimate of the initial energy density from the Bjorken formula is an undere
 \subsection{Elliptic Flow}
 The evolution of the medium produced in relativistic heavy ion collisions can be well described under the framework of relativistic hydrodynamics \cite{SCHENKE2017105,2014NuPhA.926...92S}. This description indicates the presence of a collective flow of a locally thermalized liquid. The angular distribution of the momenta of the final state particles emitted out of the collectively flowing system can be decomposed into a Fourier expansion in its azimuthal components. The second harmonic coefficient, $\nu_{2}(y,p_{T})$, of this decomposition characterizes what is known as the elliptic flow \cite{2001PhLB..503...58H}. The magnitude of the elliptic flow from a non-central collision represents the anisotropy in azimuthal momentum space of the thermalized post-collision system \cite{2011NJPh...13e5008S}.
 %In normal matter, the speed of sound is generally more in solid than in liquid and more in liquid than in gas. This is because it its proportional to the ......
-The elliptic flow of the medium, as a function of the momentum or the kinetic energy in the transverse direction, points towards quarks, rather than hadrons, being the relevant degrees of freedom in the QGP. Figure \ref{fig:v2Scaling1} shows $v_{2}$ as a function of the transverse momentum and the transverse kinetic energy for identified particles. The spectra scale consistently at lower values of both $p_{T}$ and $KE_{T}$. However, they branch out as mesons and baryons at higher values: $p_{T} \gtrsim 2 GeV/c and KE_{T} \gtrsim 1 GeV$. Figure \ref{fig:v2Scaling2}, on the other hand, is similar to figure \ref{fig:v2Scaling1}, with the exception that both the axes have quantities that are normalized by the number of quarks, $n_{q}$. In this case, the $KE_{T}$ spectra strongly exhibits a scaling which is more comprehensively consistent with the number of quarks than in case of figure \ref{fig:v2Scaling1}. This universal quark-number scaling can be interpreted as the degrees of freedom of the system being quark-like \cite{2007PhRvL..98p2301A}.
-	\begin{figure}[h]
+The elliptic flow of the medium, as a function of the momentum or the kinetic energy in the transverse direction, points towards quarks, rather than hadrons, being the relevant degrees of freedom in the QGP. Figure \ref{fig:v2Scaling1} shows $v_{2}$ as a function of the transverse momentum and the transverse kinetic energy for identified particles. The spectra scale consistently at lower values of both $p_{T}$ and $KE_{T}$. However, they branch out as mesons and baryons at higher values: $p_{T} \gtrsim 2 GeV/c and KE_{T} \gtrsim 1 GeV$. Figure \ref{fig:v2Scaling2}, on the other hand, is similar to Fig. \ref{fig:v2Scaling1}, with the exception that both the axes have quantities that are normalized by the number of quarks, $n_{q}$. In this case, the $KE_{T}$ spectra strongly exhibits a scaling which is more comprehensively consistent with the number of quarks than in case of Fig. \ref{fig:v2Scaling1}. This universal quark-number scaling can be interpreted as the degrees of freedom of the system being quark-like \cite{2007PhRvL..98p2301A}.
+\afterpage{%
+	\begin{figure}[tb]
 	  \centering
 	  \includegraphics[width=4.5in]{figures/v2Scaling1.png}
 	  \caption{Minimum-bias Au+Au ($\sqrt{s_{NN}} = 200 GeV$) elliptic flow spectra for identified particles: (a) $v_{2}$ vs $p_{T}$ and (b) $v_{2}$ vs $KE_{T}$ \cite{2007PhRvL..98p2301A}.}\label{fig:v2Scaling1}
 	\end{figure}
 	
-	\begin{figure}[h]
+	\begin{figure}[tb]
 	  \centering
 	  \includegraphics[width=4.5in]{figures/v2Scaling2.png}
 	  \caption{Minimum-bias Au+Au ($\sqrt{s_{NN}} = 200 GeV$) elliptic flow spectra for identified particles: (a) $\frac{v_{2}}{n_{q}}$ vs $\frac{p_{T}}{n_{q}}$ and (b) $\frac{v_{2}}{n_{q}}$ vs $\frac{KE_{T}}{n_{q}}$ \cite{2007PhRvL..98p2301A}.}\label{fig:v2Scaling2}
 	\end{figure}
-
+\clearpage
+}
 \subsection{Prompt and Thermal Photons}
 Most of the photons observed after relativistic heavy ion collisions are the results of the decay of the neutral pion into two gammas. %The remaining photons can be divided into direct photons from hard scatterings, which can be calculated in perturbative QCD, and thermal photons.
 When these photons are subtracted from the observations, the remaining photons are called direct photons \cite{PAQUET2016409}. These direct photons are produced within the fireball via different mechanisms as discussed below.
-\begin{figure}[h]
+\begin{figure}[!b]
   \centering
   \includegraphics[width=6.5in]{figures/directPhotons.PNG}
   \caption{Feynman diagram representing the production of photons from quarks and gluons. $(a)$ and $(b)$ represent annihilation processes, whereas $(c)$ and $(d)$ represent Compton processes \cite{wong1994introduction}.}\label{fig:directPhotons}
@@ -168,21 +185,26 @@ The interacting nuclei carry no net strangeness before colliding, and so an obse
 
 \subsection{Jet Quenching}
 A scattering event in which the participants transfer a large amount of their original momenta is called hard scattering. The products of the scatterings are called jets. %Ultimately, jets are what are recognized by a jet finder algorithm as jets. 
-In heavy-ion collisions, most hard scatterings are the results of two partons from the opposite nuclei scattering off each other. These partons can lose their momenta by strongly interacting with the enhanced gluon fields in a QGP medium. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that do not, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium. %Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. 
+In heavy-ion collisions, most hard scatterings are the results of two partons from the opposite nuclei scattering off each other. These partons can lose their momenta by strongly interacting with the enhanced gluon fields in a QGP medium. Therefore, the properties of the jets, as carried by the final state hadrons, should be different for collisions that produce the QGP as compared to those that do not, and hence they can be used as signatures and probes of QGP. Figure \ref{fig:jets} illustrates the quenching of jets that have to travel long distances in the medium.
+
+The nuclear modification factor, $R_{AA}$, is the ratio of the cross section for particle production in nucleus-nucleus collisions scaled by the number of binary nucleon-nucleon collisions divided by the cross section in proton-proton collisions.  It is shown in Fig. \ref{fig:Raa} for several different particle species, demonstrating substantial suppression of high momentum particles. This shows that the medium is nearly opaque to colored probes.
+
+%Details about the forms of interaction of the hard partons with the QGP is beyond the scope of this thesis. 
 %%Formalisms developed to study jet quenching due to radiative and collisional energy losses are detailed in \cite{2015IJMPE..2430014Q}. 
-	\begin{figure}[h]
+	\begin{figure}[!b]
 	  \centering
 	  \includegraphics[width=4.5in]{figures/jets.PNG}
 	  \caption{Illustration of jet quenching. Two jets are produced from each of the hard scatterings occuring at the locations of the solid dots. Jets originating closer to the initial surface are more probable to propagate outside the medium, as shown. Jets opposite to them interact with the medium, losing their energy and resulting in bow front shock waves \cite{STOCKER2005121}.}\label{fig:jets}
 	\end{figure}
 	
-The nuclear modification factor, $R_{AA}$, is the ratio of the cross section for particle production in nucleus-nucleus collisions scaled by the number of binary nucleon-nucleon collisions divided by the cross section in proton-proton collisions.  It is shown in Fig. \ref{fig:Raa} for several different particle species, demonstrating substantial suppression of high momentum particles. This shows that the medium is nearly opaque to colored probes.
-	\begin{figure}[h]
+\afterpage{%
+	\begin{figure}[!h]
 	  \centering
 	  \includegraphics[width=6.5in]{figures/Raa.PNG}
 	  \caption{$R_{AA}$ from PHENIX for direct photons \cite{Afanasiev:2012dg}, $\pi^0$ \cite{Adare:2008qa}, $\eta$ \cite{Adare:2010dc}, $\phi$ \cite{Adare:2015ema}, $p$ \cite{Adare:2013esx}, J/$\psi$ \cite{Adare:2006ns}, $\omega$ \cite{Adare:2011ht}, $e^{\pm}$ from heavy flavor decays \cite{Adare:2010de}, and $K^{\pm}$ \cite{Adare:2013esx}.  This demonstrates that colored probes (high-$p_{T}$ final state hadrons) are suppressed while electroweak probes (direct photons) are not at RHIC.}\label{fig:Raa}
 	\end{figure}
-	
+\clearpage
+}
 %The interaction of the jets in the QGP medium can be in the form of gluon bremsstrahlung or parton collision.
 
 \section{The Beam Energy Scan Program}

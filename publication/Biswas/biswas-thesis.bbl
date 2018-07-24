@@ -12,9 +12,9 @@
 \providecommand{\bibinfo}[2]{#2}
 \providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[{\citenamefont{Nattrass}(2009)}]{phdthesisnattrass}
-\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Nattrass}}, Ph.D. thesis,
-  \bibinfo{school}{Yale University} (\bibinfo{year}{2009}).
+\bibitem[{\citenamefont{McGlinchey}()}]{McGlincheyPrivateCommunication}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{McGlinchey}},
+  \bibinfo{howpublished}{private communication}.
 
 \bibitem[{\citenamefont{Ayala}(2016)}]{1742-6596-761-1-012066}
 \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Ayala}},
@@ -346,10 +346,6 @@
   \bibinfo{pages}{S08001} (\bibinfo{year}{2008}),
   \urlprefix\url{http://stacks.iop.org/1748-0221/3/i=08/a=S08001}.
 
-\bibitem[{\citenamefont{McGlinchey}()}]{McGlincheyPrivateCommunication}
-\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{McGlinchey}},
-  \bibinfo{howpublished}{private communication}.
-
 \bibitem[{\citenamefont{Loizides et~al.}(2015)\citenamefont{Loizides, Nagle,
   and Steinberg}}]{Loizides:2014vua}
 \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Loizides}},
@@ -552,6 +548,10 @@
   \bibnamefont{et~al.}, \bibinfo{journal}{Journal of Instrumentation}
   \textbf{\bibinfo{volume}{3}}, \bibinfo{pages}{S08002} (\bibinfo{year}{2008}),
   \urlprefix\url{http://stacks.iop.org/1748-0221/3/i=08/a=S08002}.
+
+\bibitem[{\citenamefont{Nattrass}(2009)}]{phdthesisnattrass}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Nattrass}}, Ph.D. thesis,
+  \bibinfo{school}{Yale University} (\bibinfo{year}{2009}).
 
 \bibitem[{\citenamefont{Hilke}(2010)}]{0034-4885-73-11-116201}
 \bibinfo{author}{\bibfnamefont{H.~J.} \bibnamefont{Hilke}},
